@@ -88,8 +88,10 @@ const graph: Graph = {
       ],
       author: {
         '@type': 'Organization',
-        logo: 'https://www.aleeconseil.com/logo.png',
+        name: 'Alee Conseil',
+        image: 'https://www.aleeconseil.com/logo.png',
         legalName: 'Alee Conseil',
+        logo: 'https://www.aleeconseil.com/logo.png',
         url: 'https://www.aleeconseil.com',
         keywords: ['Formation', 'Conseil', 'Blog', 'Contact'],
         address: 'Rue Al Borj, Résidence Zineb, Appt12, Rabat 10020, Maroc',

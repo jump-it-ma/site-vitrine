@@ -101,7 +101,7 @@ export default function Page({ params }: Props) {
         },
         provider: {
           '@type': 'Organization',
-          name: "Alee Conseil"
+          name: "Alee Conseil",
         },
         hasCourseInstance: {
           '@type': 'CourseInstance',
@@ -154,6 +154,8 @@ export default function Page({ params }: Props) {
         '@id': "https://www.aleeconseil.com/formations/" + formation_id + "#" + formation_id,
         image: "https://www.aleeconseil.com" + formation?.image_url,
         name: formation?.title,
+        description: formation?.hero,
+        gtin: 'alee-conseil-' + formation_id,
         url: "https://www.aleeconseil.com/formations/" + formation_id,
         aggregateRating: {
           '@type': "AggregateRating",
@@ -165,7 +167,18 @@ export default function Page({ params }: Props) {
         offers: {
           '@type': "Offer",
           price: formation?.price,
-          priceCurrency: currency
+          priceCurrency: currency,
+          availability: 'https://schema.org/InStock',
+          validFrom: nextDates[0],
+          validThrough: nextDates[1],
+          hasMerchantReturnPolicy: {
+            '@type': 'MerchantReturnPolicy',
+            inStoreReturnsOffered: false
+          },
+          shippingDetails: {
+            '@type': 'OfferShippingDetails',
+            doesNotShip: false
+          }
         }
       }
     ]
