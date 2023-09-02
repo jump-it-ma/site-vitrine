@@ -24,6 +24,37 @@ export const metadata = {
       icons: {
         icon: 'https://www.aleeconseil.com/favicon.ico',
         apple: 'https://www.aleeconseil.com/apple-icon.png',
+        shortcut: ['https://www.aleeconseil.com/favicons/shortcut-icon-128.png', 'https://www.aleeconseil.com/favicons/shortcut-icon-192.png'],
+        other: [
+          {
+            rel: 'apple-touch-icon-precomposed',
+            url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-precomposed.png',
+          },
+          {
+            rel: 'apple-touch-icon',
+            url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-76.png',
+          },
+          {
+            rel: 'apple-touch-icon',
+            url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-120.png',
+          },
+          {
+            rel: 'apple-touch-icon',
+            url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-152.png',
+          },
+          {
+            rel: 'icon',
+            url: 'https://www.aleeconseil.com/favicons/icon-16.png',
+          },
+          {
+            rel: 'icon',
+            url: 'https://www.aleeconseil.com/favicons/icon-32.png',
+          },
+          {
+            rel: 'icon',
+            url: 'https://www.aleeconseil.com/favicons/icon-48.png',
+          }
+        ],
       },
       openGraph: {
         title: pageMetadata.title,
