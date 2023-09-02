@@ -170,7 +170,7 @@ export default function Home() {
 
             {/* Formations Service  */}
             <div itemScope itemType='https://schema.org/Offer' className="flex flex-col justify-start items-center gap-4 max-w-[236px]">
-              <Image itemProp='image' className='w-24 h-24' width={96} height={96} src="/Homepage/formations.png" alt='service-formation' />
+              <Image itemProp='image' className='w-24 h-24' width={96} height={96} src="/Homepage/formations.png" alt='Formation Cypress Postman ...' />
               <h2 itemProp='name' className={latoFont.className + " font-semibold text-2xl xm:text-3xl leading-7 text-center text-white"}>Formation</h2>
               <p itemProp='description' className={latoFont.className + " font-medium text-sm xm:text-base leading-5 text-center text-white"}>
                 {homepage.formations}
@@ -183,7 +183,7 @@ export default function Home() {
             </div>
             {/* Conseil Service  */}
             <div itemScope itemType='https://schema.org/Offer' className="flex flex-col justify-start items-center gap-4 max-w-[236px]">
-              <Image itemProp='image' className='w-24 h-24' width={96} height={96} src="/Homepage/conseil.png" alt='service-conseil' />
+              <Image itemProp='image' className='w-24 h-24' width={96} height={96} src="/Homepage/conseil.png" alt='Conseil Automatisation ...' />
               <h2 itemProp='name' className={latoFont.className + " font-semibold text-2xl xm:text-3xl leading-7 text-center text-white"}>Qualité Logicielle</h2>
               <p itemProp='description' className={latoFont.className + " font-medium text-sm xm:text-base leading-5 text-center text-white"}>
                 {homepage.conseil}
@@ -198,13 +198,11 @@ export default function Home() {
         </div>
       </div>
       <div className="hidden">
-        <h2 className="">Formation</h2>
         <h2 className="">Cypress</h2>
         <h2 className="">Postman</h2>
         <h2 className="">Robot framework</h2>
         <h2 className="">Robot</h2>
         <h2 className="">Framework</h2>
-        <h2 className="">Formation soap ui</h2>
         <h2 className="">Soap UI</h2>
         <h2 className="">SoapUI</h2>
         <h2 className="">Formation automatisation des tests</h2>
