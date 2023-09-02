@@ -6,7 +6,7 @@ import Script from "next/script";
 import { BiTimeFive } from "react-icons/bi";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { RiCopperCoinLine } from "react-icons/ri";
-import { Graph, Offer, Product, WithContext } from "schema-dts";
+import { Graph } from "schema-dts";
 import Footer from "../../../components/Footer";
 import FormationsSlider from "../../../components/Formation/SliderComponent";
 import Navbar from "../../../components/Navbar";
@@ -89,7 +89,7 @@ export default function Page({ params }: Props) {
         '@type': 'Course',
         '@id': "https://www.aleeconseil.com/formations/" + formation_id + "#",
         name: formation?.title,
-        description: formation?.description,
+        description: formation?.hero,
         image: formation?.image_url,
         offers: {
           '@type': 'Offer',
@@ -107,7 +107,7 @@ export default function Page({ params }: Props) {
           '@type': 'CourseInstance',
           identifier: formation_id,
           name: formation?.title,
-          description: formation?.description,
+          description: formation?.hero,
           url: "https://www.aleeconseil.com/formations/" + formation_id,
           startDate: nextDates[0],
           endDate: nextDates[1],
@@ -171,13 +171,31 @@ export default function Page({ params }: Props) {
           availability: 'https://schema.org/InStock',
           validFrom: nextDates[0],
           validThrough: nextDates[1],
+          priceValidUntil: '2099-01-01',
           hasMerchantReturnPolicy: {
             '@type': 'MerchantReturnPolicy',
-            inStoreReturnsOffered: false
+            inStoreReturnsOffered: true,
+            applicableCountry: ['FR', 'MA', 'CZ', 'DZ', 'TN', 'BE', 'LB'],
+            returnPolicyCategory: {
+              '@type': 'MerchantReturnEnumeration',
+               name: 'MerchantReturnNotPermitted'
+            }
           },
           shippingDetails: {
             '@type': 'OfferShippingDetails',
-            doesNotShip: false
+            doesNotShip: false,
+            deliveryTime: {
+              '@type': 'ShippingDeliveryTime',
+              handlingTime: {
+                '@type': 'QuantitativeValue',
+                value: 'Instant Receipt'
+              }
+            },
+            shippingRate: {
+              '@type': 'MonetaryAmount',
+              value: "0",
+              currency: currency
+            }
           }
         }
       }
