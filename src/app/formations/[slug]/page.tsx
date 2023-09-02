@@ -6,7 +6,7 @@ import Script from "next/script";
 import { BiTimeFive } from "react-icons/bi";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { RiCopperCoinLine } from "react-icons/ri";
-import { Graph } from "schema-dts";
+import { Graph, Offer, Product, WithContext } from "schema-dts";
 import Footer from "../../../components/Footer";
 import FormationsSlider from "../../../components/Formation/SliderComponent";
 import Navbar from "../../../components/Navbar";
@@ -148,24 +148,28 @@ export default function Page({ params }: Props) {
             description: objective,
           }
         })
+      },
+      {
+        '@type': 'Product',
+        '@id': "https://www.aleeconseil.com/formations/" + formation_id + "#" + formation_id,
+        image: "https://www.aleeconseil.com" + formation?.image_url,
+        name: formation?.title,
+        url: "https://www.aleeconseil.com/formations/" + formation_id,
+        aggregateRating: {
+          '@type': "AggregateRating",
+          ratingCount: 1,
+          ratingValue: 5,
+          worstRating: 5,
+          bestRating: 5
+        },
+        offers: {
+          '@type': "Offer",
+          price: formation?.price,
+          priceCurrency: currency
+        }
       }
     ]
   }
-
-  // Easy Route
-
-  // const jsonLd: WithContext<Offer> = {
-  //   '@context': 'https://schema.org',
-  //   '@type': 'Offer',
-  //   name: formation?.title,
-  //   description: formation?.hero,
-  //   image: formation?.image_url,
-  //   price: formation?.price,
-  //   availabilityStarts: nextDates[0],
-  //   availabilityEnds: nextDates[1],
-  //   leaseLength: "PT" + formation?.duration + "H", // Duration using ISO 8601
-  //   priceCurrency: currency
-  // }
 
   if (!formation) {
     return (
@@ -309,7 +313,7 @@ export default function Page({ params }: Props) {
             </div>
           </div>
           {/* Formation Card + Billing + Available Dates*/}
-          <div className="xm:sticky xm:top-60 flex flex-col justify-start items-stretch gap-10 xm:-translate-y-28 lg:-translate-y-56">
+          <div id={"#" + formation_id} className="xm:sticky xm:top-60 flex flex-col justify-start items-stretch gap-10 xm:-translate-y-28 lg:-translate-y-56">
             <div className={ibmFont.className + " xm:hidden flex justify-start items-center gap-2"}>
               <Link href={"/formations"}>
                 <p className="font-semibold text-base text-center text-black uppercase">Formations</p>
