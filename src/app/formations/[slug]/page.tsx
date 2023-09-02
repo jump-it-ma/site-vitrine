@@ -155,7 +155,6 @@ export default function Page({ params }: Props) {
         image: "https://www.aleeconseil.com" + formation?.image_url,
         name: formation?.title,
         description: formation?.hero,
-        gtin: 'alee-conseil-' + formation_id,
         url: "https://www.aleeconseil.com/formations/" + formation_id,
         aggregateRating: {
           '@type': "AggregateRating",
@@ -175,20 +174,34 @@ export default function Page({ params }: Props) {
           hasMerchantReturnPolicy: {
             '@type': 'MerchantReturnPolicy',
             inStoreReturnsOffered: true,
-            applicableCountry: ['FR', 'MA', 'CZ', 'DZ', 'TN', 'BE', 'LB'],
+            applicableCountry: ['FR', 'MA', 'US', 'KR', 'NL', 'RU', 'IN'],
             returnPolicyCategory: {
               '@type': 'MerchantReturnEnumeration',
-               name: 'MerchantReturnNotPermitted'
+              name: 'MerchantReturnNotPermitted'
             }
           },
           shippingDetails: {
             '@type': 'OfferShippingDetails',
-            doesNotShip: false,
+            doesNotShip: true,
+            shippingDestination: {
+              '@type': 'DefinedRegion',
+              addressCountry: ['FR', 'MA', 'US', 'KR', 'NL', 'RU', 'IN'],
+            },
             deliveryTime: {
               '@type': 'ShippingDeliveryTime',
+              transitTime: {
+                '@type': 'QuantitativeValue',
+                value: 1,
+                maxValue: 10,
+                minValue: 1,
+                unitCode: 'MIN'
+              },
               handlingTime: {
                 '@type': 'QuantitativeValue',
-                value: 'Instant Receipt'
+                value: 1,
+                maxValue: 10,
+                minValue: 1,
+                unitCode: 'MIN'
               }
             },
             shippingRate: {
