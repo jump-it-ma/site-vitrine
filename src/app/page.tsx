@@ -34,6 +34,11 @@ export const metadata = {
   icons: {
     icon: 'https://www.aleeconseil.com/favicon.ico',
     apple: 'https://www.aleeconseil.com/apple-icon.png',
+    shortcut: 'https://www.aleeconseil.com/shortcut-icon.png',
+    other: {
+      rel: 'apple-touch-icon-precomposed',
+      url: 'https://www.aleeconseil.com/apple-touch-icon-precomposed.png',
+    },
   },
   openGraph: {
     title: pageMetadata.title,
