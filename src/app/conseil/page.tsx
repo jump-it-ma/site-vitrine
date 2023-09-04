@@ -65,8 +65,8 @@ export const metadata = {
         url: 'https://www.aleeconseil.com',
         images: {
           url: 'https://www.aleeconseil.com/favicon.ico',
-          width: 96,
-          height: 96,
+          width: 48,
+          height: 48,
         },
         locale: 'fr-MA',
         type: 'website',
