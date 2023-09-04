@@ -179,7 +179,14 @@ export default function Page({ params }: Props) {
             name: objective,
             description: objective,
           }
-        })
+        }),
+        aggregateRating: {
+          '@type': "AggregateRating",
+          ratingCount: 1,
+          ratingValue: 5,
+          worstRating: 5,
+          bestRating: 5
+        },
       }
     ]
   }
