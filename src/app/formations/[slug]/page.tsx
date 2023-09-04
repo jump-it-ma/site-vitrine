@@ -180,69 +180,6 @@ export default function Page({ params }: Props) {
             description: objective,
           }
         })
-      },
-      {
-        '@type': 'Product',
-        '@id': "https://www.aleeconseil.com/formations/" + formation_id + "#" + formation_id,
-        image: "https://www.aleeconseil.com" + formation?.image_url,
-        name: formation?.title,
-        description: formation?.hero,
-        url: "https://www.aleeconseil.com/formations/" + formation_id,
-        aggregateRating: {
-          '@type': "AggregateRating",
-          ratingCount: 1,
-          ratingValue: 5,
-          worstRating: 5,
-          bestRating: 5
-        },
-        offers: {
-          '@type': "Offer",
-          price: formation?.price,
-          priceCurrency: currency,
-          availability: 'https://schema.org/InStock',
-          validFrom: nextDates[0],
-          validThrough: nextDates[1],
-          priceValidUntil: '2099-01-01',
-          hasMerchantReturnPolicy: {
-            '@type': 'MerchantReturnPolicy',
-            inStoreReturnsOffered: true,
-            applicableCountry: ['FR', 'MA', 'US', 'KR', 'NL', 'RU', 'IN'],
-            returnPolicyCategory: {
-              '@type': 'MerchantReturnEnumeration',
-              name: 'MerchantReturnNotPermitted'
-            }
-          },
-          shippingDetails: {
-            '@type': 'OfferShippingDetails',
-            doesNotShip: true,
-            shippingDestination: {
-              '@type': 'DefinedRegion',
-              addressCountry: ['FR', 'MA', 'US', 'KR', 'NL', 'RU', 'IN'],
-            },
-            deliveryTime: {
-              '@type': 'ShippingDeliveryTime',
-              transitTime: {
-                '@type': 'QuantitativeValue',
-                value: 1,
-                maxValue: 10,
-                minValue: 1,
-                unitCode: 'MIN'
-              },
-              handlingTime: {
-                '@type': 'QuantitativeValue',
-                value: 1,
-                maxValue: 10,
-                minValue: 1,
-                unitCode: 'MIN'
-              }
-            },
-            shippingRate: {
-              '@type': 'MonetaryAmount',
-              value: "0",
-              currency: currency
-            }
-          }
-        }
       }
     ]
   }
