@@ -10,6 +10,7 @@ import ReturnToTop from '../../../components/ReturnToTop';
 import { pageMetadata } from '../../../content/general';
 import { blogsData } from '../../../data/blogsData';
 import { readableDate } from '../../../utils/functions';
+import { Graph } from 'schema-dts';
 
 const jostFont = Jost({ subsets: ["latin"] });
 const montserratFont = Montserrat({ subsets: ["latin"] });
@@ -41,36 +42,36 @@ export async function generateMetadata(
             apple: 'https://www.aleeconseil.com/apple-icon.png',
             shortcut: ['https://www.aleeconseil.com/favicons/shortcut-icon-128.png', 'https://www.aleeconseil.com/favicons/shortcut-icon-192.png'],
             other: [
-              {
-                rel: 'apple-touch-icon-precomposed',
-                url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-precomposed.png',
-              },
-              {
-                rel: 'apple-touch-icon',
-                url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-76.png',
-              },
-              {
-                rel: 'apple-touch-icon',
-                url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-120.png',
-              },
-              {
-                rel: 'apple-touch-icon',
-                url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-152.png',
-              },
-              {
-                rel: 'icon',
-                url: 'https://www.aleeconseil.com/favicons/icon-16.png',
-              },
-              {
-                rel: 'icon',
-                url: 'https://www.aleeconseil.com/favicons/icon-32.png',
-              },
-              {
-                rel: 'icon',
-                url: 'https://www.aleeconseil.com/favicons/icon-48.png',
-              }
+                {
+                    rel: 'apple-touch-icon-precomposed',
+                    url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-precomposed.png',
+                },
+                {
+                    rel: 'apple-touch-icon',
+                    url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-76.png',
+                },
+                {
+                    rel: 'apple-touch-icon',
+                    url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-120.png',
+                },
+                {
+                    rel: 'apple-touch-icon',
+                    url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-152.png',
+                },
+                {
+                    rel: 'icon',
+                    url: 'https://www.aleeconseil.com/favicons/icon-16.png',
+                },
+                {
+                    rel: 'icon',
+                    url: 'https://www.aleeconseil.com/favicons/icon-32.png',
+                },
+                {
+                    rel: 'icon',
+                    url: 'https://www.aleeconseil.com/favicons/icon-48.png',
+                }
             ],
-          },
+        },
         openGraph: {
             title: pageMetadata.title,
             description: pageMetadata.description,
@@ -102,6 +103,8 @@ export async function generateMetadata(
     }
 }
 
+
+
 export default function Blog({ params }: Props) {
     const blog_id = params.slug;
     const blog = blogsData.find((blog) => blog.id === blog_id);
@@ -115,12 +118,50 @@ export default function Blog({ params }: Props) {
         )
     }
 
+    const firstParagraph = blog.body.find((section) => section.type === "paragraph" || section.type === "header1" || section.type === "header2");
+
+    const graph: Graph = {
+        '@context': 'https://schema.org',
+        '@graph': [
+            {
+                '@type': 'BlogPosting',
+                '@id': 'https://www.aleeconseil.com/blogs/' + blog_id + "#",
+                headline: blog.title,
+                description: firstParagraph ? firstParagraph.text : "",
+                dateCreated: readableDate(blog.date),
+                articleBody: firstParagraph ? firstParagraph.text : "",
+                articleSection: 'Automated Testing',
+                author: {
+                    '@type': 'Person',
+                    name: blog.author.name,
+                    url: blog.author.contact,
+                    jobTitle: blog.author.job
+                },
+                publisher: {
+                    '@type': 'Organization',
+                    name: 'Alee Conseil',
+                    image: {
+                        '@type': 'ImageObject',
+                        url: 'https://www.aleeconseil.com/favicon.ico'
+                    }
+                },
+                audience: {
+                    '@type': 'Audience',
+                    audienceType: blog.author.job
+                }
+            }
+        ]
+    }
+
     return (
-        <div
-            itemScope
-            itemType='https://schema.org/Blog'
-            className="flex flex-col justify-between items-center w-full min-h-[100vh] bg-ac-gray2"
-        >
+        <div className="flex flex-col justify-between items-center w-full min-h-[100vh] bg-ac-gray2">
+            {/* Add Structured data */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
+            />
+
+            {/* Add Google Analytics data */}
             <Script src="https://www.googletagmanager.com/gtag/js?id=G-6L5ZVZDMVJ" />
             <Script id="google-analytics">
                 {`
@@ -137,11 +178,11 @@ export default function Blog({ params }: Props) {
 
             <div className="flex flex-col justify-start items-center w-full bg-ac-gray2">
                 <div className="flex flex-col justify-start items-start w-full gap-12 pt-10 px-6 sm:px-12 md:px-20 xm:px-6 lg:px-12 xl:px-20 mx-6 sm:mx-12 md:mx-20 xm:mx-6 lg:mx-12 xl:mx-20">
-                    <h1 itemProp='name' className={jostFont.className + " font-bold text-3xl xm:text-5xl lg:text-5xl xl:text-6xl text-left text-black"}>
+                    <h1 className={jostFont.className + " font-bold text-3xl xm:text-5xl lg:text-5xl xl:text-6xl text-left text-black"}>
                         {blog.title}
                     </h1>
                     <div className={montserratFont.className + " flex flex-col xm:flex-row justify-start items-start xm:items-center gap-6 xm:gap-32 font-medium text-xl text-left text-black"}>
-                        <p itemProp='dateCreated'>{readableDate(blog.date)}</p>
+                        <p>{readableDate(blog.date)}</p>
                         <p>par {blog.author.name}</p>
                     </div>
                 </div>
@@ -169,7 +210,7 @@ export default function Blog({ params }: Props) {
                                 }
                                 if (section.type === "dangerousParagraph" && section.text) {
                                     return (
-                                        <h3 dangerouslySetInnerHTML={{__html: section.text}} key={section.section} className={"font-medium text-lg text-black text-left " + (section.section === 1 ? "indent-5" : "")}/>
+                                        <h3 dangerouslySetInnerHTML={{ __html: section.text }} key={section.section} className={"font-medium text-lg text-black text-left " + (section.section === 1 ? "indent-5" : "")} />
                                     )
                                 }
                                 if (section.type === "header1" && section.text) {
@@ -252,8 +293,8 @@ export default function Blog({ params }: Props) {
                         </div>
                         <div className="flex flex-col justify-start items-center gap-4">
                             <div className="flex flex-col justify-start items-center gap-1">
-                                <p itemProp='author' className="uppercase font-bold text-2xl text-black text-center">{blog.author.name}</p>
-                                <p itemProp='audience' className="font-semibold text-xl text-black text-center">{blog.author.job}</p>
+                                <p className="uppercase font-bold text-2xl text-black text-center">{blog.author.name}</p>
+                                <p className="font-semibold text-xl text-black text-center">{blog.author.job}</p>
                             </div>
                             <a target='_blank' rel="noopener" href={blog.author.contact} className="flex justify-center items-center">
                                 <AiFillLinkedin size={20} />

@@ -23,7 +23,7 @@ export default function BlogCard({ id, title, body, author }: Props) {
                 className="w-full flex flex-col justify-start items-start gap-4"
             >
                 <h1
-                    itemProp="name"
+                    itemProp="headline"
                     className={jostFont.className + " font-bold text-2xl text-left line-clamp-2 md:h-16"}
                 >
                     {title}
@@ -38,7 +38,7 @@ export default function BlogCard({ id, title, body, author }: Props) {
                     <span itemProp="name">{author.name}</span>
                     <span itemProp="url">{author.contact}</span>
                 </p>
-                <p itemProp="headline" className="hidden">{firstParagraph ? firstParagraph.text : ""}</p>
+                <p itemProp="articleBody" className="hidden">{firstParagraph ? firstParagraph.text : ""}</p>
                 <Image itemProp="image" className="hidden" src="https://www.aleeconseil.com/logo.png" width={16} height={16} alt="Image" />
             </div>
             <p className={montserratFont.className + " w-full text-[#5C8BFC] group-hover:text-black underline text-left font-semibold text-base"}>
