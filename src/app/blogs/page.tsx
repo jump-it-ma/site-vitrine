@@ -17,7 +17,7 @@ export const metadata = {
   alternates: {
     canonical: '/blogs',
     languages: {
-      'fr-MA': '/blogs',
+      'fr': '/blogs',
     },
   },
   icons: {
@@ -65,7 +65,7 @@ export const metadata = {
       width: 48,
       height: 48,
     },
-    locale: 'fr-MA',
+    locale: 'fr',
     type: 'website',
   },
   robots: {

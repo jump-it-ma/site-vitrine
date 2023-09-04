@@ -12,7 +12,7 @@ export const metadata = {
   alternates: {
     canonical: '/',
     languages: {
-      'fr-MA': '/',
+      'fr': '/',
     },
   },
   icons: {
@@ -60,7 +60,7 @@ export const metadata = {
       width: 48,
       height: 48,
     },
-    locale: 'fr-MA',
+    locale: 'fr',
     type: 'website',
   },
   robots: {
@@ -86,6 +86,7 @@ const graph: Graph = {
     {
       '@type': 'WebSite',
       '@id': 'https://www.aleeconseil.com',
+      inLanguage: 'fr',
       name: 'Alee Conseil',
       alternateName: 'Alee conseil',
       url: 'https://www.aleeconseil.com',
@@ -93,20 +94,22 @@ const graph: Graph = {
         {
           '@type': 'Offer',
           name: 'Formations',
-          description: 'Nous proposons des formations en différentes technologies en automatisation des tests'
+          description: 'Nous proposons des formations en différentes technologies en automatisation des tests',
+          image: 'https://www.aleeconseil.com/Homepage/formations.png'
         },
         {
           '@type': 'Offer',
           name: 'Qualité Logicielle',
-          description: 'Nous vous aidons à accroitre votre confiance dans la qualité de vos produits logiciels'
+          description: 'Nous vous aidons à accroitre votre confiance dans la qualité de vos produits logiciels',
+          image: 'https://www.aleeconseil.com/Homepage/conseil.png'
         },
       ],
       author: {
         '@type': 'Organization',
         name: 'Alee Conseil',
-        image: 'https://www.aleeconseil.com/logo.png',
+        image: 'https://www.aleeconseil.com/favicon.ico',
         legalName: 'Alee Conseil',
-        logo: 'https://www.aleeconseil.com/logo.png',
+        logo: 'https://www.aleeconseil.com/favicon.ico',
         url: 'https://www.aleeconseil.com',
         keywords: ['Formation', 'Conseil', 'Blog', 'Contact'],
         address: 'Rue Al Borj, Résidence Zineb, Appt12, Rabat 10020, Maroc',

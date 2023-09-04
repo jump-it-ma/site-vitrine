@@ -28,7 +28,7 @@ export const metadata = {
   alternates: {
     canonical: '/',
     languages: {
-      'fr-MA': '/',
+      'fr': '/',
     },
   },
   icons: {
@@ -76,7 +76,7 @@ export const metadata = {
       width: 48,
       height: 48,
     },
-    locale: 'fr-MA',
+    locale: 'fr',
     type: 'website',
   },
   robots: {
@@ -102,6 +102,7 @@ const graph: Graph = {
     {
       '@type': 'WebSite',
       '@id': 'https://www.aleeconseil.com',
+      inLanguage: 'fr',
       name: 'Alee Conseil',
       alternateName: 'Alee conseil',
       url: 'https://www.aleeconseil.com',
@@ -120,9 +121,9 @@ const graph: Graph = {
       author: {
         '@type': 'Organization',
         name: 'Alee Conseil',
-        image: 'https://www.aleeconseil.com/logo.png',
+        image: 'https://www.aleeconseil.com/favicon.ico',
         legalName: 'Alee Conseil',
-        logo: 'https://www.aleeconseil.com/logo.png',
+        logo: 'https://www.aleeconseil.com/favicon.ico',
         url: 'https://www.aleeconseil.com',
         keywords: ['Formation', 'Conseil', 'Blog', 'Contact'],
         address: 'Rue Al Borj, Résidence Zineb, Appt12, Rabat 10020, Maroc',
@@ -169,10 +170,10 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-20 md:gap-56">
 
             {/* Formations Service  */}
-            <div itemScope itemType='https://schema.org/Offer' className="flex flex-col justify-start items-center gap-4 max-w-[236px]">
-              <Image itemProp='image' className='w-24 h-24' width={96} height={96} src="/Homepage/formations.png" alt='Formation Cypress Postman ...' />
-              <h2 itemProp='name' className={latoFont.className + " font-semibold text-2xl xm:text-3xl leading-7 text-center text-white"}>Formation</h2>
-              <p itemProp='description' className={latoFont.className + " font-medium text-sm xm:text-base leading-5 text-center text-white"}>
+            <div className="flex flex-col justify-start items-center gap-4 max-w-[236px]">
+              <Image className='w-24 h-24' width={96} height={96} src="/Homepage/formations.png" alt='Formation Cypress Postman ...' />
+              <h2 className={latoFont.className + " font-semibold text-2xl xm:text-3xl leading-7 text-center text-white"}>Formation</h2>
+              <p className={latoFont.className + " font-medium text-sm xm:text-base leading-5 text-center text-white"}>
                 {homepage.formations}
               </p>
               <Link href={"/formations"}>
@@ -182,10 +183,10 @@ export default function Home() {
               </Link>
             </div>
             {/* Conseil Service  */}
-            <div itemScope itemType='https://schema.org/Offer' className="flex flex-col justify-start items-center gap-4 max-w-[236px]">
-              <Image itemProp='image' className='w-24 h-24' width={96} height={96} src="/Homepage/conseil.png" alt='Conseil Automatisation ...' />
-              <h2 itemProp='name' className={latoFont.className + " font-semibold text-2xl xm:text-3xl leading-7 text-center text-white"}>Qualité Logicielle</h2>
-              <p itemProp='description' className={latoFont.className + " font-medium text-sm xm:text-base leading-5 text-center text-white"}>
+            <div className="flex flex-col justify-start items-center gap-4 max-w-[236px]">
+              <Image className='w-24 h-24' width={96} height={96} src="/Homepage/conseil.png" alt='Conseil Automatisation ...' />
+              <h2 className={latoFont.className + " font-semibold text-2xl xm:text-3xl leading-7 text-center text-white"}>Qualité Logicielle</h2>
+              <p className={latoFont.className + " font-medium text-sm xm:text-base leading-5 text-center text-white"}>
                 {homepage.conseil}
               </p>
               <Link href={"/conseil"}>

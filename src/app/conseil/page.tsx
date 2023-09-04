@@ -20,7 +20,7 @@ export const metadata = {
     alternates: {
         canonical: '/conseil',
         languages: {
-          'fr-MA': '/conseil',
+          'fr': '/conseil',
         },
       },
       icons: {
@@ -68,7 +68,7 @@ export const metadata = {
           width: 48,
           height: 48,
         },
-        locale: 'fr-MA',
+        locale: 'fr',
         type: 'website',
       },
       robots: {

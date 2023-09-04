@@ -18,7 +18,7 @@ export const metadata = {
     alternates: {
         canonical: '/formations',
         languages: {
-          'fr-MA': '/formations',
+          'fr': '/formations',
         },
       },
       icons: {
@@ -66,7 +66,7 @@ export const metadata = {
           width: 48,
           height: 48,
         },
-        locale: 'fr-MA',
+        locale: 'fr',
         type: 'website',
       },
       robots: {
