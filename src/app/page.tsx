@@ -130,6 +130,35 @@ const graph: Graph = {
         telephone: '+212 6 62 88 28 41',
         email: 'contact@aleeconseil.com'
       }
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          name: 'Alee Conseil - Formations',
+          item: 'https://www.aleeconseil.com/formations',
+          position: 1
+        },
+        {
+          '@type': 'ListItem',
+          name: 'Alee Conseil - Conseil',
+          item: 'https://www.aleeconseil.com/conseil',
+          position: 2
+        },
+        {
+          '@type': 'ListItem',
+          name: 'Alee Conseil - Blogs',
+          item: 'https://www.aleeconseil.com/blogs',
+          position: 3
+        },
+        {
+          '@type': 'ListItem',
+          name: 'Contactez-nous',
+          item: 'https://www.aleeconseil.com/contactez-nous',
+          position: 4
+        },
+      ]
     }
   ]
 }
