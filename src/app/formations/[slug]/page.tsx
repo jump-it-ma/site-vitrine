@@ -119,6 +119,7 @@ export default function Page({ params }: Props) {
       {
         '@type': 'Course',
         '@id': "https://www.aleeconseil.com/formations/" + formation_id + "#",
+        inLanguage: 'fr',
         name: formation?.title,
         description: formation?.hero,
         image: formation?.image_url,

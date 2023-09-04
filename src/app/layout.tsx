@@ -90,20 +90,6 @@ const graph: Graph = {
       name: 'Alee Conseil',
       alternateName: 'Alee conseil',
       url: 'https://www.aleeconseil.com',
-      offers: [
-        {
-          '@type': 'Offer',
-          name: 'Formations',
-          description: 'Nous proposons des formations en différentes technologies en automatisation des tests',
-          image: 'https://www.aleeconseil.com/Homepage/formations.png'
-        },
-        {
-          '@type': 'Offer',
-          name: 'Qualité Logicielle',
-          description: 'Nous vous aidons à accroitre votre confiance dans la qualité de vos produits logiciels',
-          image: 'https://www.aleeconseil.com/Homepage/conseil.png'
-        },
-      ],
       author: {
         '@type': 'Organization',
         name: 'Alee Conseil',
