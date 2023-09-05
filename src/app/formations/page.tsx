@@ -1,4 +1,6 @@
 import { Lato, Montserrat } from 'next/font/google';
+import Script from 'next/script';
+import { Graph } from 'schema-dts';
 import Footer from '../../components/Footer';
 import FormationCard from '../../components/Formation/FormationCard';
 import Navbar from '../../components/Navbar';
@@ -6,7 +8,6 @@ import ReturnToTop from '../../components/ReturnToTop';
 import { pageMetadata } from '../../content/general';
 import { formations } from '../../content/pages';
 import { formationsData } from '../../data/formationsData';
-import Script from 'next/script';
 
 const montserratFont = Montserrat({ subsets: ["latin"] })
 const latoFont = Lato({ weight: "400", subsets: ["latin"] })
@@ -86,11 +87,46 @@ export const metadata = {
   category: 'technology'
 }
 
+const graph: Graph = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'ItemList',
+      itemListElement: formationsData.map((formation, index) => {
+        return {
+          '@type': 'ListItem',
+          position: index + 1,
+          item: {
+            '@type': 'Course',
+            url: `https://www.aleeconseil.com/formations/${formation.formation_id}`,
+            name: `Formation ${formation.title}`,
+            description: formation.hero,
+            provider: {
+              '@type': 'Organization',
+              name: 'Alee Conseil',
+              sameAs: 'https://www.aleeconseil.com'
+            }
+          }
+        }
+      })
+    }
+  ]
+}
+
 type Props = {}
 
 export default function Formations({ }: Props) {
   return (
     <div className="flex flex-col justify-between items-center bg-ac-gray w-full min-h-[100vh]">
+      {/* Add Structured data */}
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
+        />
+      </head>
+
+      {/* Add Google search console config */}
       <Script src="https://www.googletagmanager.com/gtag/js?id=G-6L5ZVZDMVJ" />
       <Script id="google-analytics">
         {`

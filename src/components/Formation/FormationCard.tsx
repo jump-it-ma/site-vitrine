@@ -28,10 +28,7 @@ export default function FormationCard({ formation_id, title, hero, image_url, pr
                   max-w-[270px] fold:max-w-[320px]"
       href={"/formations/" + formation_id}
     >
-      <div
-        itemScope
-        itemType="https://schema.org/Offer"
-        className="
+      <div className="
                   flex flex-col justify-between items-center w-full
                   gap-6
                   transition ease-in-out duration-100 hover:duration-300"
@@ -41,24 +38,17 @@ export default function FormationCard({ formation_id, title, hero, image_url, pr
         >
           <div className="flex justify-between items-center w-full">
             <Image
-              itemProp="image"
               className='w-16 fold:w-[75px] lg:w-16 lg2:w-[75px] h-16 fold:h-[75px] lg:h-16 lg2:h-[75px]'
               src={image_url}
               width={75}
               height={75}
               alt={title} />
-            <h1
-              itemProp="name"
-              className={montserratFont.className + " text-2xl fold:text-3xl lg:text-2xl lg2:text-3xl text-ac-violet text-left font-medium w-min"}
-            >
+            <h1 className={montserratFont.className + " text-2xl fold:text-3xl lg:text-2xl lg2:text-3xl text-ac-violet text-left font-medium w-min"}>
               {title}
             </h1>
           </div>
           <div className="bg-ac-violet h-0.5 w-full"></div>
-          <h2
-            itemProp="description"
-            className={latoFont.className + " text-black text-base text-center font-medium line-clamp-2"}
-          >
+          <h2 className={latoFont.className + " text-black text-base text-center font-medium line-clamp-2"}>
             {hero}
           </h2>
         </div>
@@ -66,12 +56,12 @@ export default function FormationCard({ formation_id, title, hero, image_url, pr
           <div className="flex justify-start items-center gap-6 w-full">
             <Image src="/Formations/coin.png" width={50} height={50} alt='Prix' />
             <p className={montserratFont.className + " font-medium text-black text-lg text-left"}>
-              <span itemProp="price">{price}</span> <span itemProp="priceCurrency">{currency}</span> HT / personne
+              <span>{price}</span> <span>{currency}</span> HT / personne
             </p>
           </div>
           <div className="flex justify-start items-center gap-6 w-full">
             <Image src="/Formations/hourglass.png" width={50} height={50} alt='Durée' />
-            <p className={montserratFont.className + " font-medium text-black text-lg text-left"}><span itemProp='eligibleDuration'>{Math.ceil(duration / dailyHours)}</span> jours (<span itemProp='leaseLength'>{duration}</span> heures)</p>
+            <p className={montserratFont.className + " font-medium text-black text-lg text-left"}><span>{Math.ceil(duration / dailyHours)}</span> jours (<span>{duration}</span> heures)</p>
           </div>
           <div className="flex justify-center items-center">
             <p className={montserratFont.className + " font-medium text-base text-center text-[#5C8BFC] underline"}>Voir plus</p>
