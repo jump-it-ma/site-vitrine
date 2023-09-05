@@ -233,15 +233,14 @@ export default function Page({ params }: Props) {
               {formation.hero}
             </h2>
             <div className="hidden">
-              <h2 className=""><strong>{`Tests api`}</strong></h2>
-              <h2 className=""><strong>{`Automatisation des tests`}</strong></h2>
+              <h2><strong>{`Tests api`}</strong></h2>
+              <h2><strong>{`Automatisation des tests`}</strong></h2>
               <h3>{`Formation ${formation.title}`}</h3>
-              <h3 className="">{`Formation Cypress`}</h3>
-              <h3 className="">{`Formation Postman`}</h3>
-              <h3 className="">{`Cypress Formation`}</h3>
-              <h3 className="">{`Tests api`}</h3>
-              <h3 className="">{`Tests Cypress`}</h3>
-              <h3 className="">{`Formation Robot framework`}</h3>
+              <h3>{`Formation Cypress`}</h3>
+              <h3>{`Formation Postman`}</h3>
+              <h3>{`Tests api`}</h3>
+              <h3>Tests</h3>
+              <h3>{`Formation Robot framework`}</h3>
             </div>
           </div>
         </div>
