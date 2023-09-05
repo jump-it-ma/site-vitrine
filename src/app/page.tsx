@@ -244,8 +244,8 @@ export default function Home() {
         <h3 className="">{`SoapUI`}</h3>
         <h3 className="">{`Playwright`}</h3>
         <h3 className="">{`Tests api`}</h3>
-        <h3 className="">{`tests visuel`}</h3>
-        <h3 className="">{`automatisation des tests`}</h3>
+        <h3 className="">{`Tests visuel`}</h3>
+        <h3 className="">{`Automatisation des tests`}</h3>
       </div>
 
       {/* Contact Us */}

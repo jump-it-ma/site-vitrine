@@ -233,6 +233,8 @@ export default function Page({ params }: Props) {
               {formation.hero}
             </h2>
             <div className="hidden">
+              <h2 className=""><strong>{`Tests api`}</strong></h2>
+              <h2 className=""><strong>{`Automatisation des tests`}</strong></h2>
               <h3>{`Formation ${formation.title}`}</h3>
               <h3 className="">{`Formation Cypress`}</h3>
               <h3 className="">{`Formation Postman`}</h3>
@@ -253,7 +255,7 @@ export default function Page({ params }: Props) {
                 <h3 className="font-semibold text-base text-center text-black uppercase">Formations</h3>
               </Link>
               <MdOutlineKeyboardArrowRight size={17} color="black" />
-              <h2 className="font-semibold text-base text-center text-black uppercase">{formation.title}</h2>
+              <h2 className="font-semibold text-base text-center text-black uppercase">{`Formation ${formation.title}`}</h2>
             </div>
             <div className={latoFont.className + " flex flex-col justify-start items-start gap-8 max-w-xl"}>
 
