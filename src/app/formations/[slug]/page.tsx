@@ -259,9 +259,9 @@ export default function Page({ params }: Props) {
               <div className="flex flex-col justify-start items-start gap-2">
                 {formation.description.split("\n").map((text) => {
                   return (
-                    <h2 key={text} className=" indent-2 text-lg text-left text-black">
+                    <p key={text} className=" indent-2 text-lg text-left text-black">
                       {text}
-                    </h2>
+                    </p>
                   )
                 })}
               </div>
@@ -292,9 +292,9 @@ export default function Page({ params }: Props) {
                       <div className="flex flex-col justify-start items-start gap-2">
                         {step.parts.map((part) => {
                           return (
-                            <h2 key={part} className="ml-6 text-lg text-left text-black">
+                            <p key={part} className="ml-6 text-lg text-left text-black">
                               • {part}
-                            </h2>
+                            </p>
                           )
                         })}
                       </div>
@@ -310,9 +310,9 @@ export default function Page({ params }: Props) {
               <div className="flex flex-col justify-start items-start gap-2">
                 {formation.targets.map((target) => {
                   return (
-                    <h2 key={target} className="ml-2 text-lg text-left text-black">
+                    <p key={target} className="ml-2 text-lg text-left text-black">
                       • {target}
-                    </h2>
+                    </p>
                   )
                 })}
               </div>
@@ -324,9 +324,9 @@ export default function Page({ params }: Props) {
               <div className="flex flex-col justify-start items-start gap-2">
                 {formation.prerequisites.map((prerequisite) => {
                   return (
-                    <h2 key={prerequisite} className="ml-2 text-lg text-left text-black">
+                    <p key={prerequisite} className="ml-2 text-lg text-left text-black">
                       • {prerequisite}
-                    </h2>
+                    </p>
                   )
                 })}
               </div>
