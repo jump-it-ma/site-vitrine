@@ -233,7 +233,6 @@ export default function Page({ params }: Props) {
               {formation.hero}
             </h2>
             <div className="hidden">
-              <h3><strong>{`Formation ${formation.title}`}</strong></h3>
               <h3>{`Formation ${formation.title}`}</h3>
               <h3 className="">{`Formation Cypress`}</h3>
               <h3 className="">{`Formation Postman`}</h3>

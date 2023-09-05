@@ -200,7 +200,7 @@ export default function Home() {
 
             {/* Formations Service  */}
             <div className="flex flex-col justify-start items-center gap-4 max-w-[236px]">
-              <Image className='w-24 h-24' width={96} height={96} src="/Homepage/formations.png" alt='Formation Cypress Postman ...' />
+              <Image className='w-24 h-24' width={96} height={96} src="/Homepage/formations.png" alt='Cypress Postman ...' />
               <h2 className={latoFont.className + " font-semibold text-2xl xm:text-3xl leading-7 text-center text-white"}>Formation</h2>
               <p className={latoFont.className + " font-medium text-sm xm:text-base leading-5 text-center text-white"}>
                 {homepage.formations}
@@ -236,19 +236,16 @@ export default function Home() {
         <h2 className=""><strong>{`Formation Robot framework`}</strong></h2>
       </div>
       <div className="hidden">
-        <h3 className="">{`Formation Cypress`}</h3>
-        <h3 className="">{`Formation Postman`}</h3>
+        <h3 className="">{`Cypress`}</h3>
+        <h3 className="">{`Postman`}</h3>
         <h3 className="">{`Cypress Formation`}</h3>
+        <h3 className="">{`Robot framework`}</h3>
+        <h3 className="">{`Selenium`}</h3>
+        <h3 className="">{`SoapUI`}</h3>
+        <h3 className="">{`Playwright`}</h3>
         <h3 className="">{`Tests api`}</h3>
-        <h3 className="">{`Tests Cypress`}</h3>
-        <h3 className="">{`Formation Robot framework`}</h3>
-        
-        <h3 className="">{`Formation Selenium`}</h3>
-        <h3 className="">{`Formation SoapUI`}</h3>
-        <h3 className="">{`Formation Playwright`}</h3>
-        <h3 className="">{`Formation automatisation des tests`}</h3>
-        <h3 className="">{`Automatisation des tests`}</h3>
         <h3 className="">{`tests visuel`}</h3>
+        <h3 className="">{`automatisation des tests`}</h3>
       </div>
 
       {/* Contact Us */}
