@@ -113,6 +113,15 @@ export default function Page({ params }: Props) {
 
   const nextDates = getNextMondaysSeparatedBy3Weeks(fixedReferenceDate, datesDisplayedNumber);
 
+  if (!formation) {
+    return (
+      <div className="flex flex-col justify-center items-center gap-6 w-screen h-screen bg-black text-white text-center">
+        <p className="text-5xl font-bold">404</p>
+        <p className="text-3xl font-medium">Formation Non trouvée</p>
+      </div>
+    )
+  }
+
   const graph: Graph = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -120,12 +129,12 @@ export default function Page({ params }: Props) {
         '@type': 'Course',
         '@id': "https://www.aleeconseil.com/formations/" + formation_id + "#",
         inLanguage: 'fr',
-        name: formation?.title,
-        description: formation?.hero,
-        image: formation?.image_url,
+        name: formation.title,
+        description: formation.hero,
+        image: formation.image_url,
         offers: {
           '@type': 'Offer',
-          price: formation?.price,
+          price: formation.price,
           priceCurrency: currency,
           availability: 'https://schema.org/InStock',
           validFrom: nextDates[0],
@@ -138,16 +147,16 @@ export default function Page({ params }: Props) {
         hasCourseInstance: {
           '@type': 'CourseInstance',
           identifier: formation_id,
-          name: formation?.title,
-          description: formation?.hero,
+          name: formation.title,
+          description: formation.hero,
           url: "https://www.aleeconseil.com/formations/" + formation_id,
           startDate: nextDates[0],
           endDate: nextDates[1],
-          duration: "PT" + formation?.duration + "H",
-          image: formation?.image_url,
+          duration: "PT" + formation.duration + "H",
+          image: formation.image_url,
           offers: {
             '@type': 'Offer',
-            price: formation?.price,
+            price: formation.price,
             priceCurrency: currency,
             availability: 'https://schema.org/InStock',
             validFrom: nextDates[0],
@@ -155,7 +164,7 @@ export default function Page({ params }: Props) {
           },
           isAccessibleForFree: false,
         },
-        coursePrerequisites: formation?.prerequisites.map((course) => {
+        coursePrerequisites: formation.prerequisites.map((course) => {
           return {
             '@type': 'Course',
             name: course,
@@ -166,14 +175,14 @@ export default function Page({ params }: Props) {
             },
           }
         }),
-        audience: formation?.targets.map((target) => {
+        audience: formation.targets.map((target) => {
           return {
             '@type': 'Audience',
             audienceType: target,
             description: target
           }
         }),
-        teaches: formation?.objectives.map((objective) => {
+        teaches: formation.objectives.map((objective) => {
           return {
             '@type': 'DefinedTerm',
             name: objective,
@@ -187,18 +196,48 @@ export default function Page({ params }: Props) {
           worstRating: 5,
           bestRating: 5
         },
+      },
+      {
+        '@type': 'Product',
+        '@id': `https://www.aleeconseil.com/Formations/${formation_id}#product`,
+        image: `https://www.aleeconseil.com/Formations/${formation_id}.png`,
+        name: `Formation ${formation.title}`,
+        url: `https://www.aleeconseil.com/Formations/${formation_id}`,
+        aggregateRating: {
+          '@type': "AggregateRating",
+          ratingCount: 1,
+          ratingValue: 5,
+          worstRating: 0,
+          bestRating: 5
+        },
+        offers: {
+          '@type': 'Offer',
+          price: formation.price,
+          priceCurrency: currency,
+          priceValidUntil: nextDates[1],
+          availability: 'https://schema.org/InStock',
+          validFrom: nextDates[0],
+          validThrough: nextDates[1],
+        },
+        review: {
+          '@type': 'Review',
+          reviewBody: 'Formation recommendé!',
+          datePublished: '2023-07-30',
+          author: {
+            '@type': 'Person',
+            name: 'Anonyme M'
+          },
+          reviewRating: {
+            '@type': 'Rating',
+            ratingValue: 5,
+            worstRating: 0,
+            bestRating: 5
+          }
+        }
       }
     ]
   }
 
-  if (!formation) {
-    return (
-      <div className="flex flex-col justify-center items-center gap-6 w-screen h-screen bg-black text-white text-center">
-        <p className="text-5xl font-bold">404</p>
-        <p className="text-3xl font-medium">Formation Non trouvée</p>
-      </div>
-    )
-  }
   return (
     <div className="flex flex-col justify-between items-center bg-ac-gray w-full min-h-[100vh]">
       {/* Add Structured data */}
@@ -339,7 +378,7 @@ export default function Page({ params }: Props) {
             </div>
           </div>
           {/* Formation Card + Billing + Available Dates*/}
-          <div id={"#" + formation_id} className="xm:sticky xm:top-60 flex flex-col justify-start items-stretch gap-10 xm:-translate-y-28 lg:-translate-y-56">
+          <div id="#product" className="xm:sticky xm:top-60 flex flex-col justify-start items-stretch gap-10 xm:-translate-y-28 lg:-translate-y-56">
             <div className={ibmFont.className + " xm:hidden flex justify-start items-center gap-2"}>
               <Link href={"/formations"}>
                 <p className="font-semibold text-base text-center text-black uppercase">Formations</p>
