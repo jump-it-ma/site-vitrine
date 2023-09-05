@@ -232,7 +232,24 @@ export default function Page({ params }: Props) {
             <h2 className={latoFont.className + " text-xs sm:text-sm xm:text-base font-medium text-white text-center max-w-[300px] sm:max-w-sm"}>
               {formation.hero}
             </h2>
-            <h2 className="hidden">Alee Conseil</h2>
+            <div className="hidden">
+              <h2 className="">Formation Cypress</h2>
+              <h2 className="">Cypress</h2>
+              <h2 className="">Postman</h2>
+              <h2 className="">Robot framework</h2>
+              <h2 className="">Robot</h2>
+              <h2 className="">Framework</h2>
+              <h2 className="">Soap UI</h2>
+              <h2 className="">SoapUI</h2>
+              <h2 className="">Formation automatisation des tests</h2>
+              <h2 className="">Automatisation des tests</h2>
+              <h2 className="">Automatisation</h2>
+              <h2 className="">Tests</h2>
+              <h2 className="">Playwright</h2>
+              <h2 className="">Selenium</h2>
+              <h2 className="">Tests api</h2>
+              <h2 className="">Tests visuel</h2>
+            </div>
           </div>
         </div>
         {/* Formation Infos */}
@@ -248,7 +265,6 @@ export default function Page({ params }: Props) {
               <h2 className="font-semibold text-base text-center text-black uppercase">
                 <strong>{formation.title}</strong>
               </h2>
-              <h2 className="hidden">Alee Conseil</h2>
             </div>
             <div className={latoFont.className + " flex flex-col justify-start items-start gap-8 max-w-xl"}>
 
