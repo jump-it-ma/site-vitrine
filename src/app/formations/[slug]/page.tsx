@@ -199,10 +199,10 @@ export default function Page({ params }: Props) {
       },
       {
         '@type': 'Product',
-        '@id': `https://www.aleeconseil.com/Formations/${formation_id}#product`,
+        '@id': `https://www.aleeconseil.com/formations/${formation_id}#product`,
         image: `https://www.aleeconseil.com/Formations/${formation_id}.png`,
         name: `Formation ${formation.title}`,
-        url: `https://www.aleeconseil.com/Formations/${formation_id}`,
+        url: `https://www.aleeconseil.com/formations/${formation_id}`,
         aggregateRating: {
           '@type': "AggregateRating",
           ratingCount: 1,
