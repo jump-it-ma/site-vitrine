@@ -228,26 +228,23 @@ export default function Page({ params }: Props) {
           {/* Overlay */}
           <div className="absolute top-0 left-0 w-full h-full z-20 bg-[#00000050]"></div>
           <div className="flex flex-col justify-start items-center mt-20 mb-24 mx-4 sm:ml-[10%] xm:ml-[5%] formation:ml-[15%] rounded-xl bg-ac-bleu gap-3 py-3 px-4 sm:py-6 sm:px-8 xm:px-12 z-30">
-            <h1 className={montserratFont.className + " text-3xl sm:text-4xl xm:text-5xl font-bold text-white text-center max-w-[270px] fold:max-w-[350px] xs:max-w-md"}>Formation {formation.title}</h1>
+            <h1 className={montserratFont.className + " text-3xl sm:text-4xl xm:text-5xl font-bold text-white text-center max-w-[270px] fold:max-w-[350px] xs:max-w-md"}>{`Formation ${formation.title}`}</h1>
             <h2 className={latoFont.className + " text-xs sm:text-sm xm:text-base font-medium text-white text-center max-w-[300px] sm:max-w-sm"}>
               {formation.hero}
             </h2>
             <div className="hidden">
+              <h2><strong>{`Formation ${formation.title}`}</strong></h2>
+              <h2>{`Formation ${formation.title}`}</h2>
               <h2 className="">Formation Cypress</h2>
-              <h2 className="">Robot framework</h2>
-              <h2 className="">Soap UI</h2>
+              <h2 className="">Formation Postman</h2>
+              <h2 className="">Formation SoapUI</h2>
+              <h2 className="">Formation Playwright</h2>
+              <h2 className="">Formation Selenium</h2>
+              <h2 className="">Formation Robot framework</h2>
               <h2 className="">Formation automatisation des tests</h2>
               <h2 className="">Automatisation des tests</h2>
               <h2 className="">Tests api</h2>
               <h2 className="">Tests visuel</h2>
-              <h2 className=""><strong>Postman</strong></h2>
-              <h2 className=""><strong>Robot</strong></h2>
-              <h2 className=""><strong>Framework</strong></h2>
-              <h2 className=""><strong>SoapUI</strong></h2>
-              <h2 className=""><strong>Automatisation</strong></h2>
-              <h2 className=""><strong>Tests</strong></h2>
-              <h2 className=""><strong>Playwright</strong></h2>
-              <h2 className=""><strong>Selenium</strong></h2>
             </div>
           </div>
         </div>
@@ -352,13 +349,13 @@ export default function Page({ params }: Props) {
                 <p className="font-semibold text-base text-center text-black uppercase">Formations</p>
               </Link>
               <MdOutlineKeyboardArrowRight size={17} color="black" />
-              <h2 className="font-semibold text-base text-center text-black uppercase">{formation.title}</h2>
+              <h2 className="font-bold text-base text-center text-black uppercase">{formation.title}</h2>
             </div>
             {/* Formation Card */}
             <div className="flex flex-col justify-start items-center w-full bg-white shadow-formation-card rounded-xl px-1 fold:px-2 xm:px-5 py-2.5 gap-2.5">
               <div className={montserratFont.className + " flex flex-col justify-start items-center gap-1.5"}>
                 <h3 className="text-sm text-center text-[#5A5A5A]">Se former en</h3>
-                <h2 className="text-2xl text-center font-normal text-black">{formation.title}</h2>
+                <h2 className="text-2xl text-center font-bold text-black">{formation.title}</h2>
               </div>
               <div className="flex flex-col justify-start items-center gap-4 px-4 xs:px-8 xm:px-12">
                 <Image src={formation.image_url} width={200} height={200} alt={`Formation ${formation.title}`} />
