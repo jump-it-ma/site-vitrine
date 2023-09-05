@@ -228,21 +228,27 @@ export default function Home() {
         </div>
       </div>
       <div className="hidden">
-        <h2 className="">Cypress</h2>
-        <h2 className="">Postman</h2>
-        <h2 className="">Robot framework</h2>
-        <h2 className="">Robot</h2>
-        <h2 className="">Framework</h2>
-        <h2 className="">Soap UI</h2>
-        <h2 className="">SoapUI</h2>
-        <h2 className="">Formation automatisation des tests</h2>
-        <h2 className="">Automatisation des tests</h2>
-        <h2 className="">Automatisation</h2>
-        <h2 className="">Tests</h2>
-        <h2 className="">Playwright</h2>
-        <h2 className="">Selenium</h2>
-        <h2 className="">tests api</h2>
-        <h2 className="">tests visuel</h2>
+        <h2 className=""><strong>{`Formation Cypress`}</strong></h2>
+        <h2 className=""><strong>{`Formation Postman`}</strong></h2>
+        <h2 className=""><strong>{`Cypress Formation`}</strong></h2>
+        <h2 className=""><strong>{`Tests api`}</strong></h2>
+        <h2 className=""><strong>{`Tests Cypress`}</strong></h2>
+        <h2 className=""><strong>{`Formation Robot framework`}</strong></h2>
+      </div>
+      <div className="hidden">
+        <h3 className="">{`Formation Cypress`}</h3>
+        <h3 className="">{`Formation Postman`}</h3>
+        <h3 className="">{`Cypress Formation`}</h3>
+        <h3 className="">{`Tests api`}</h3>
+        <h3 className="">{`Tests Cypress`}</h3>
+        <h3 className="">{`Formation Robot framework`}</h3>
+        
+        <h3 className="">{`Formation Selenium`}</h3>
+        <h3 className="">{`Formation SoapUI`}</h3>
+        <h3 className="">{`Formation Playwright`}</h3>
+        <h3 className="">{`Formation automatisation des tests`}</h3>
+        <h3 className="">{`Automatisation des tests`}</h3>
+        <h3 className="">{`tests visuel`}</h3>
       </div>
 
       {/* Contact Us */}

@@ -237,14 +237,10 @@ export default function Page({ params }: Props) {
               <h3>{`Formation ${formation.title}`}</h3>
               <h3 className="">{`Formation Cypress`}</h3>
               <h3 className="">{`Formation Postman`}</h3>
-              <h3 className="">{`Formation SoapUI`}</h3>
-              <h3 className="">{`Formation Playwright`}</h3>
-              <h3 className="">{`Formation Selenium`}</h3>
-              <h3 className="">{`Formation Robot framework`}</h3>
-              <h3 className="">{`Formation automatisation des tests`}</h3>
-              <h3 className="">{`Automatisation des tests`}</h3>
+              <h3 className="">{`Cypress Formation`}</h3>
               <h3 className="">{`Tests api`}</h3>
-              <h3 className="">{`Tests visuel`}</h3>
+              <h3 className="">{`Tests Cypress`}</h3>
+              <h3 className="">{`Formation Robot framework`}</h3>
             </div>
           </div>
         </div>
