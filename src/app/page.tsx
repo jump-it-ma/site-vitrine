@@ -262,14 +262,14 @@ export default function Home() {
         </AnimatedElement>
       </div>
 
-      <div className="flex flex-col justify-center items-center w-full mx-8 my-8 gap-8 xm:gap-16">
+      <div className="flex flex-col justify-center items-center w-full mx-8 mt-16 mb-8 gap-8 xm:gap-16">
         <b className={montserratFont.className + " font-medium text-4xl xm:text-5xl text-center text-ac-bleu"}>Ils Nous Font Confiance</b>
         <div className="grid grid-cols-1 sm:grid-cols-2 xm:grid-cols-3 lg:grid-cols-4 gap-4 justify-items-center items-center justify-center">
           <Image style={{height: "100px", width: "330px"}} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2' src="/trust/RAJA.png" width={128} height={128} alt='RAJA' />
           <Image style={{height: "100px", width: "330px"}} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2' src="/trust/SITENCO.png" width={128} height={128} alt='SITENCO' />
-          <Image style={{height: "100px", width: "441px"}} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2' src="/trust/WERINGROUP.png" width={128} height={128} alt='WERINGROUP' />
+          <Image style={{height: "100px", width: "125px"}} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2' src="/trust/ATA.png" width={128} height={128} alt='ATA' />
           <Image style={{height: "100px", width: "300px"}} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2' src="/trust/3ISCHOOL.png" width={128} height={128} alt='3ISCHOOL' />
-          <Image style={{height: "100px", width: "125px"}} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2 xm:col-start-2' src="/trust/ATA.png" width={128} height={128} alt='ATA' />
+          <Image style={{height: "100px", width: "441px"}} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2 xm:col-start-2' src="/trust/WERINGROUP.png" width={128} height={128} alt='WERINGROUP' />
           <Image style={{height: "100px", width: "294px"}} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2 xm:col-start-3' src="/trust/WILDCODESCHOOL.png" width={128} height={128} alt='WILDCODESCHOOL' />
         </div>
       </div>
