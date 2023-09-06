@@ -227,26 +227,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="hidden">
-        <h2><strong>{`Formation Cypress`}</strong></h2>
-        <h2><strong>{`Formation Postman`}</strong></h2>
-        <h2><strong>{`Cypress Formation`}</strong></h2>
-        <h2><strong>{`Tests api`}</strong></h2>
-        <h2><strong>{`Tests Cypress`}</strong></h2>
-        <h2><strong>{`Formation Robot framework`}</strong></h2>
-      </div>
-      <div className="hidden">
-        <h3>{`Cypress`}</h3>
-        <h3>{`Postman`}</h3>
-        <h3>{`Cypress Formation`}</h3>
-        <h3>{`Robot framework`}</h3>
-        <h3>{`Selenium`}</h3>
-        <h3>{`SoapUI`}</h3>
-        <h3>{`Playwright`}</h3>
-        <h3>{`Tests api`}</h3>
-        <h3>{`Tests visuel`}</h3>
-        <h3>{`Automatisation des tests`}</h3>
-      </div>
 
       {/* Contact Us */}
       <div className="flex flex-col xm:flex-row justify-center items-start gap-8 w-full pt-8 bg-ac-gray -translate-y-6 rounded-t-3xl ">
@@ -282,6 +262,18 @@ export default function Home() {
         </AnimatedElement>
       </div>
 
+      <div className="flex flex-col justify-center items-center w-full mx-8 my-8 gap-8 xm:gap-16">
+        <b className={montserratFont.className + " font-medium text-4xl xm:text-5xl text-center text-ac-bleu"}>Ils Nous Font Confiance</b>
+        <div className="grid grid-cols-1 sm:grid-cols-2 xm:grid-cols-3 lg:grid-cols-4 gap-4 justify-items-center items-center justify-center">
+          <Image style={{height: "100px", width: "330px"}} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2' src="/trust/RAJA.png" width={128} height={128} alt='RAJA' />
+          <Image style={{height: "100px", width: "330px"}} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2' src="/trust/SITENCO.png" width={128} height={128} alt='SITENCO' />
+          <Image style={{height: "100px", width: "441px"}} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2' src="/trust/WERINGROUP.png" width={128} height={128} alt='WERINGROUP' />
+          <Image style={{height: "100px", width: "300px"}} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2' src="/trust/3ISCHOOL.png" width={128} height={128} alt='3ISCHOOL' />
+          <Image style={{height: "100px", width: "125px"}} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2 xm:col-start-2' src="/trust/ATA.png" width={128} height={128} alt='ATA' />
+          <Image style={{height: "100px", width: "294px"}} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2 xm:col-start-3' src="/trust/WILDCODESCHOOL.png" width={128} height={128} alt='WILDCODESCHOOL' />
+        </div>
+      </div>
+
       {/* Footer  */}
       <Footer />
       <ToastContainer
@@ -293,6 +285,27 @@ export default function Home() {
         newestOnTop={true}
         theme="light"
       />
+      
+      <div className="hidden">
+        <h2><strong>{`Formation Cypress`}</strong></h2>
+        <h2><strong>{`Formation Postman`}</strong></h2>
+        <h2><strong>{`Cypress Formation`}</strong></h2>
+        <h2><strong>{`Tests api`}</strong></h2>
+        <h2><strong>{`Tests Cypress`}</strong></h2>
+        <h2><strong>{`Formation Robot framework`}</strong></h2>
+      </div>
+      <div className="hidden">
+        <h3>{`Cypress`}</h3>
+        <h3>{`Postman`}</h3>
+        <h3>{`Cypress Formation`}</h3>
+        <h3>{`Robot framework`}</h3>
+        <h3>{`Selenium`}</h3>
+        <h3>{`SoapUI`}</h3>
+        <h3>{`Playwright`}</h3>
+        <h3>{`Tests api`}</h3>
+        <h3>{`Tests visuel`}</h3>
+        <h3>{`Automatisation des tests`}</h3>
+      </div>
     </div>
   )
 }
