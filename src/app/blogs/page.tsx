@@ -21,37 +21,53 @@ export const metadata = {
     },
   },
   icons: {
-    icon: 'https://www.aleeconseil.com/favicon.ico',
-    apple: 'https://www.aleeconseil.com/apple-icon.png',
-    shortcut: ['https://www.aleeconseil.com/favicons/shortcut-icon-128.png', 'https://www.aleeconseil.com/favicons/shortcut-icon-192.png'],
+    icon: { url: 'https://www.aleeconseil.com/favicon.ico', type: 'image/x-icon', sizes: '48x48' },
+    shortcut: [
+      {
+        url: 'https://www.aleeconseil.com/favicons/shortcut-icon-128.png',
+        sizes: '128x128'
+      },
+      {
+        url: 'https://www.aleeconseil.com/favicons/shortcut-icon-192.png',
+        sizes: '192x192'
+      }],
     other: [
       {
         rel: 'apple-touch-icon-precomposed',
         url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-precomposed.png',
+        sizes: '180x180'
       },
       {
         rel: 'apple-touch-icon',
         url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-76.png',
+        sizes: '76x76'
       },
       {
         rel: 'apple-touch-icon',
         url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-120.png',
+        sizes: '120x120'
       },
       {
         rel: 'apple-touch-icon',
         url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-152.png',
+        sizes: '152x152'
+      },
+      {
+        rel: 'apple-touch-icon',
+        url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-180.png',
+        sizes: '180x180'
       },
       {
         rel: 'icon',
         url: 'https://www.aleeconseil.com/favicons/icon-16.png',
+        type: 'image/x-icon',
+        sizes: '16x16'
       },
       {
         rel: 'icon',
         url: 'https://www.aleeconseil.com/favicons/icon-32.png',
-      },
-      {
-        rel: 'icon',
-        url: 'https://www.aleeconseil.com/favicons/icon-48.png',
+        type: 'image/x-icon',
+        sizes: '32x32'
       }
     ],
   },

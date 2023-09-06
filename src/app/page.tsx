@@ -32,37 +32,53 @@ export const metadata = {
     },
   },
   icons: {
-    icon: 'https://www.aleeconseil.com/favicon.ico',
-    apple: 'https://www.aleeconseil.com/apple-icon.png',
-    shortcut: ['https://www.aleeconseil.com/favicons/shortcut-icon-128.png', 'https://www.aleeconseil.com/favicons/shortcut-icon-192.png'],
+    icon: { url: 'https://www.aleeconseil.com/favicon.ico', type: 'image/x-icon', sizes: '48x48' },
+    shortcut: [
+      {
+        url: 'https://www.aleeconseil.com/favicons/shortcut-icon-128.png',
+        sizes: '128x128'
+      },
+      {
+        url: 'https://www.aleeconseil.com/favicons/shortcut-icon-192.png',
+        sizes: '192x192'
+      }],
     other: [
       {
         rel: 'apple-touch-icon-precomposed',
         url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-precomposed.png',
+        sizes: '180x180'
       },
       {
         rel: 'apple-touch-icon',
         url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-76.png',
+        sizes: '76x76'
       },
       {
         rel: 'apple-touch-icon',
         url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-120.png',
+        sizes: '120x120'
       },
       {
         rel: 'apple-touch-icon',
         url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-152.png',
+        sizes: '152x152'
+      },
+      {
+        rel: 'apple-touch-icon',
+        url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-180.png',
+        sizes: '180x180'
       },
       {
         rel: 'icon',
         url: 'https://www.aleeconseil.com/favicons/icon-16.png',
+        type: 'image/x-icon',
+        sizes: '16x16'
       },
       {
         rel: 'icon',
         url: 'https://www.aleeconseil.com/favicons/icon-32.png',
-      },
-      {
-        rel: 'icon',
-        url: 'https://www.aleeconseil.com/favicons/icon-48.png',
+        type: 'image/x-icon',
+        sizes: '32x32'
       }
     ],
   },
@@ -265,12 +281,12 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center w-full mx-8 mt-16 mb-8 gap-8 xm:gap-16">
         <b className={montserratFont.className + " font-medium text-4xl xm:text-5xl text-center text-ac-bleu"}>Ils Nous Font Confiance</b>
         <div className="grid grid-cols-1 sm:grid-cols-2 xm:grid-cols-3 lg:grid-cols-4 gap-4 justify-items-center items-center justify-center">
-          <Image style={{height: "100px", width: "330px"}} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2' src="/trust/RAJA.png" width={128} height={128} alt='RAJA' />
-          <Image style={{height: "100px", width: "330px"}} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2' src="/trust/SITENCO.png" width={128} height={128} alt='SITENCO' />
-          <Image style={{height: "100px", width: "125px"}} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2' src="/trust/ATA.png" width={128} height={128} alt='ATA' />
-          <Image style={{height: "100px", width: "300px"}} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2' src="/trust/3ISCHOOL.png" width={128} height={128} alt='3ISCHOOL' />
-          <Image style={{height: "100px", width: "441px"}} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2 xm:col-start-2' src="/trust/WERINGROUP.png" width={128} height={128} alt='WERINGROUP' />
-          <Image style={{height: "100px", width: "294px"}} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2 xm:col-start-3' src="/trust/WILDCODESCHOOL.png" width={128} height={128} alt='WILDCODESCHOOL' />
+          <Image style={{ height: "100px", width: "330px" }} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2' src="/trust/RAJA.png" width={128} height={128} alt='RAJA' />
+          <Image style={{ height: "100px", width: "330px" }} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2' src="/trust/SITENCO.png" width={128} height={128} alt='SITENCO' />
+          <Image style={{ height: "100px", width: "125px" }} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2' src="/trust/ATA.png" width={128} height={128} alt='ATA' />
+          <Image style={{ height: "100px", width: "300px" }} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2' src="/trust/3ISCHOOL.png" width={128} height={128} alt='3ISCHOOL' />
+          <Image style={{ height: "100px", width: "441px" }} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2 xm:col-start-2' src="/trust/WERINGROUP.png" width={128} height={128} alt='WERINGROUP' />
+          <Image style={{ height: "100px", width: "294px" }} className='grayscale hover:grayscale-0 cursor-pointer transition duration-200 my-2 xm:col-start-3' src="/trust/WILDCODESCHOOL.png" width={128} height={128} alt='WILDCODESCHOOL' />
         </div>
       </div>
 
@@ -285,7 +301,7 @@ export default function Home() {
         newestOnTop={true}
         theme="light"
       />
-      
+
       <div className="hidden">
         <h2><strong>{`Formation Cypress`}</strong></h2>
         <h2><strong>{`Formation Postman`}</strong></h2>
