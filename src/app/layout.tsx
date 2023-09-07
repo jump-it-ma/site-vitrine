@@ -1,6 +1,6 @@
 import { pageMetadata } from '@/content/general'
 import { Inter } from 'next/font/google'
-import { Graph } from 'schema-dts'
+import { WebSite, WithContext } from 'schema-dts'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -80,59 +80,12 @@ export const metadata = {
   category: 'technology',
 }
 
-const graph: Graph = {
+const jsonLd: WithContext<WebSite> = {
   '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'WebSite',
-      '@id': 'https://www.aleeconseil.com',
-      inLanguage: 'fr',
-      name: 'Alee Conseil',
-      alternateName: 'Alee conseil',
-      url: 'https://www.aleeconseil.com',
-      author: {
-        '@type': 'Organization',
-        name: 'Alee Conseil',
-        image: 'https://www.aleeconseil.com/favicon.ico',
-        legalName: 'Alee Conseil',
-        logo: 'https://www.aleeconseil.com/favicon.ico',
-        url: 'https://www.aleeconseil.com',
-        keywords: ['Formation', 'Conseil', 'Blog', 'Contact'],
-        address: 'Rue Al Borj, Résidence Zineb, Appt12, Rabat 10020, Maroc',
-        telephone: '+212 6 62 88 28 41',
-        email: 'contact@aleeconseil.com'
-      }
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        {
-          '@type': 'ListItem',
-          name: 'Alee Conseil - Formations',
-          item: 'https://www.aleeconseil.com/formations',
-          position: 1
-        },
-        {
-          '@type': 'ListItem',
-          name: 'Alee Conseil - Conseil',
-          item: 'https://www.aleeconseil.com/conseil',
-          position: 2
-        },
-        {
-          '@type': 'ListItem',
-          name: 'Alee Conseil - Blogs',
-          item: 'https://www.aleeconseil.com/blogs',
-          position: 3
-        },
-        {
-          '@type': 'ListItem',
-          name: 'Contactez-nous',
-          item: 'https://www.aleeconseil.com/contactez-nous',
-          position: 4
-        },
-      ]
-    }
-  ]
+  '@type': 'WebSite',
+  name: 'Alee Conseil',
+  alternateName: 'Alee conseil',
+  url: 'https://www.aleeconseil.com',
 }
 
 export default function RootLayout({
@@ -145,7 +98,7 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
       <body className={inter.className}>{children}</body>
