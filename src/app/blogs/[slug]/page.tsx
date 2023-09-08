@@ -3,6 +3,7 @@ import { Jost, Montserrat } from 'next/font/google';
 import Image from 'next/image';
 import Script from 'next/script';
 import { AiFillLinkedin } from 'react-icons/ai';
+import { Graph } from 'schema-dts';
 import CodeViewer from '../../../components/Blog/CodeViewer';
 import Footer from '../../../components/Footer';
 import Navbar from '../../../components/Navbar';
@@ -10,7 +11,6 @@ import ReturnToTop from '../../../components/ReturnToTop';
 import { pageMetadata } from '../../../content/general';
 import { blogsData } from '../../../data/blogsData';
 import { readableDate } from '../../../utils/functions';
-import { Graph } from 'schema-dts';
 
 const jostFont = Jost({ subsets: ["latin"] });
 const montserratFont = Montserrat({ subsets: ["latin"] });
@@ -40,54 +40,54 @@ export async function generateMetadata(
         icons: {
             icon: { url: 'https://www.aleeconseil.com/favicon.ico', type: 'image/x-icon', sizes: '48x48' },
             shortcut: [
-              {
-                url: 'https://www.aleeconseil.com/favicons/shortcut-icon-128.png',
-                sizes: '128x128'
-              },
-              {
-                url: 'https://www.aleeconseil.com/favicons/shortcut-icon-192.png',
-                sizes: '192x192'
-              }],
+                {
+                    url: 'https://www.aleeconseil.com/favicons/shortcut-icon-128.png',
+                    sizes: '128x128'
+                },
+                {
+                    url: 'https://www.aleeconseil.com/favicons/shortcut-icon-192.png',
+                    sizes: '192x192'
+                }],
             other: [
-              {
-                rel: 'apple-touch-icon-precomposed',
-                url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-precomposed.png',
-                sizes: '180x180'
-              },
-              {
-                rel: 'apple-touch-icon',
-                url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-76.png',
-                sizes: '76x76'
-              },
-              {
-                rel: 'apple-touch-icon',
-                url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-120.png',
-                sizes: '120x120'
-              },
-              {
-                rel: 'apple-touch-icon',
-                url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-152.png',
-                sizes: '152x152'
-              },
-              {
-                rel: 'apple-touch-icon',
-                url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-180.png',
-                sizes: '180x180'
-              },
-              {
-                rel: 'icon',
-                url: 'https://www.aleeconseil.com/favicons/icon-16.png',
-                type: 'image/x-icon',
-                sizes: '16x16'
-              },
-              {
-                rel: 'icon',
-                url: 'https://www.aleeconseil.com/favicons/icon-32.png',
-                type: 'image/x-icon',
-                sizes: '32x32'
-              }
+                {
+                    rel: 'apple-touch-icon-precomposed',
+                    url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-precomposed.png',
+                    sizes: '180x180'
+                },
+                {
+                    rel: 'apple-touch-icon',
+                    url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-76.png',
+                    sizes: '76x76'
+                },
+                {
+                    rel: 'apple-touch-icon',
+                    url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-120.png',
+                    sizes: '120x120'
+                },
+                {
+                    rel: 'apple-touch-icon',
+                    url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-152.png',
+                    sizes: '152x152'
+                },
+                {
+                    rel: 'apple-touch-icon',
+                    url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-180.png',
+                    sizes: '180x180'
+                },
+                {
+                    rel: 'icon',
+                    url: 'https://www.aleeconseil.com/favicons/icon-16.png',
+                    type: 'image/x-icon',
+                    sizes: '16x16'
+                },
+                {
+                    rel: 'icon',
+                    url: 'https://www.aleeconseil.com/favicons/icon-32.png',
+                    type: 'image/x-icon',
+                    sizes: '32x32'
+                }
             ],
-          },
+        },
         openGraph: {
             title: pageMetadata.title,
             description: pageMetadata.description,
@@ -164,6 +164,10 @@ export default function Blog({ params }: Props) {
                 audience: {
                     '@type': 'Audience',
                     audienceType: blog.author.job
+                },
+                image: {
+                    '@type': 'ImageObject',
+                    url: 'https://www.aleeconseil.com/favicon.ico'
                 }
             }
         ]
@@ -172,10 +176,12 @@ export default function Blog({ params }: Props) {
     return (
         <div className="flex flex-col justify-between items-center w-full min-h-[100vh] bg-ac-gray2">
             {/* Add Structured data */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
-            />
+            <head>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
+                />
+            </head>
 
             {/* Add Google Analytics data */}
             <Script src="https://www.googletagmanager.com/gtag/js?id=G-6L5ZVZDMVJ" />

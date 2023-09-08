@@ -1,5 +1,7 @@
+import { readableDate } from '@/utils/functions';
 import { Jost } from 'next/font/google';
 import Script from 'next/script';
+import { Graph } from 'schema-dts';
 import BlogCard from '../../components/Blog/BlogCard';
 import BlogPageTitle from '../../components/Blog/BlogPageTitle';
 import Footer from '../../components/Footer';
@@ -105,8 +107,56 @@ type Props = {}
 
 
 export default function Blogs({ }: Props) {
+
+  const graph: Graph = {
+    '@context': 'https://schema.org',
+    '@graph': blogsData.map((blog) => {
+      const firstParagraph = blog.body.find((section) => section.type === "paragraph" || section.type === "header1" || section.type === "header2");
+      return (
+        {
+          '@type': 'BlogPosting',
+          '@id': 'https://www.aleeconseil.com/blogs/' + blog.id + "#",
+          headline: blog.title,
+          description: firstParagraph ? firstParagraph.text : "",
+          dateCreated: readableDate(blog.date),
+          articleBody: firstParagraph ? firstParagraph.text : "",
+          articleSection: 'Automated Testing',
+          author: {
+            '@type': 'Person',
+            name: blog.author.name,
+            url: blog.author.contact,
+            jobTitle: blog.author.job
+          },
+          publisher: {
+            '@type': 'Organization',
+            name: 'Alee Conseil',
+            image: {
+              '@type': 'ImageObject',
+              url: 'https://www.aleeconseil.com/favicon.ico'
+            }
+          },
+          audience: {
+            '@type': 'Audience',
+            audienceType: blog.author.job
+          },
+          image: {
+            '@type': 'ImageObject',
+            url: 'https://www.aleeconseil.com/favicon.ico'
+          }
+        }
+      )
+    })
+  }
+
   return (
     <div className="flex flex-col justify-between items-center w-full h-full min-h-[100vh] bg-ac-gray">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
+        />
+      </head>
+
       <Script src="https://www.googletagmanager.com/gtag/js?id=G-6L5ZVZDMVJ" />
       <Script id="google-analytics">
         {`
