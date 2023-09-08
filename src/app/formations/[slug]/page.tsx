@@ -42,56 +42,56 @@ export async function generateMetadata(
       },
     },
     icons: {
-    icon: { url: 'https://www.aleeconseil.com/favicon.ico', type: 'image/x-icon', sizes: '48x48' },
-    shortcut: [
-      {
-        url: 'https://www.aleeconseil.com/favicons/shortcut-icon-128.png',
-        sizes: '128x128'
-      },
-      {
-        url: 'https://www.aleeconseil.com/favicons/shortcut-icon-192.png',
-        sizes: '192x192'
-      }],
-    other: [
-      {
-        rel: 'apple-touch-icon-precomposed',
-        url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-precomposed.png',
-        sizes: '180x180'
-      },
-      {
-        rel: 'apple-touch-icon',
-        url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-76.png',
-        sizes: '76x76'
-      },
-      {
-        rel: 'apple-touch-icon',
-        url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-120.png',
-        sizes: '120x120'
-      },
-      {
-        rel: 'apple-touch-icon',
-        url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-152.png',
-        sizes: '152x152'
-      },
-      {
-        rel: 'apple-touch-icon',
-        url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-180.png',
-        sizes: '180x180'
-      },
-      {
-        rel: 'icon',
-        url: 'https://www.aleeconseil.com/favicons/icon-16.png',
-        type: 'image/x-icon',
-        sizes: '16x16'
-      },
-      {
-        rel: 'icon',
-        url: 'https://www.aleeconseil.com/favicons/icon-32.png',
-        type: 'image/x-icon',
-        sizes: '32x32'
-      }
-    ],
-  },
+      icon: { url: 'https://www.aleeconseil.com/favicon.ico', type: 'image/x-icon', sizes: '48x48' },
+      shortcut: [
+        {
+          url: 'https://www.aleeconseil.com/favicons/shortcut-icon-128.png',
+          sizes: '128x128'
+        },
+        {
+          url: 'https://www.aleeconseil.com/favicons/shortcut-icon-192.png',
+          sizes: '192x192'
+        }],
+      other: [
+        {
+          rel: 'apple-touch-icon-precomposed',
+          url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-precomposed.png',
+          sizes: '180x180'
+        },
+        {
+          rel: 'apple-touch-icon',
+          url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-76.png',
+          sizes: '76x76'
+        },
+        {
+          rel: 'apple-touch-icon',
+          url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-120.png',
+          sizes: '120x120'
+        },
+        {
+          rel: 'apple-touch-icon',
+          url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-152.png',
+          sizes: '152x152'
+        },
+        {
+          rel: 'apple-touch-icon',
+          url: 'https://www.aleeconseil.com/favicons/apple-touch-icon-180.png',
+          sizes: '180x180'
+        },
+        {
+          rel: 'icon',
+          url: 'https://www.aleeconseil.com/favicons/icon-16.png',
+          type: 'image/x-icon',
+          sizes: '16x16'
+        },
+        {
+          rel: 'icon',
+          url: 'https://www.aleeconseil.com/favicons/icon-32.png',
+          type: 'image/x-icon',
+          sizes: '32x32'
+        }
+      ],
+    },
     openGraph: {
       title: pageMetadata.title,
       description: pageMetadata.description,
@@ -296,6 +296,19 @@ export default function Page({ params }: Props) {
               <h3>{`Tests api`}</h3>
               <h3>Tests</h3>
               <h3>{`Formation Robot framework`}</h3>
+              <h4>{`Tests api`}</h4>
+              <h4>{`Tests visuel`}</h4>
+              <h4>{`Automatisation des tests`}</h4>
+              <h4>{`Formation ${formation.title}`}</h4>
+              <h4>{`Formation Cypress`}</h4>
+              <h4>{`Formation Postman`}</h4>
+              <h4>Tests</h4>
+              <h4>{`Formation Robot framework`}</h4>
+              <h4>{`Formation Selenium`}</h4>
+              <h4>{`Formation Soapui`}</h4>
+              <h4>{`Formation Playwright`}</h4>
+              <h4>{`Formation automatisatin des tests`}</h4>
+              <h4>{`Robot framework`}</h4>
             </div>
           </div>
         </div>
