@@ -309,6 +309,20 @@ export default function Page({ params }: Props) {
               <h4>{`Formation Playwright`}</h4>
               <h4>{`Formation automatisatin des tests`}</h4>
               <h4>{`Robot framework`}</h4>
+
+              <h2><strong>Formations pour l'automatisation des tests</strong></h2>
+              <p>Vous recherchez des formations pour améliorer vos compétences en <strong>automatisation des tests</strong> ? Nous proposons une variété de formations spécialisées pour répondre à vos besoins. Découvrez nos formations sur les outils populaires tels que <strong>Cypress</strong>, <strong>Postman</strong>, <strong>Robot Framework</strong> et <strong>SoapUI</strong>.</p>
+              <h3><strong>Formation Cypress</strong></h3>
+              <p>Notre formation <strong>Cypress</strong> est conçue pour vous aider à maîtriser cet outil d'automatisation des tests moderne et puissant. Apprenez à écrire des tests fonctionnels efficaces, à effectuer des assertions et à exécuter des tests en toute simplicité. Avec <strong>Cypress</strong>, vous pouvez automatiser vos tests web de manière fluide et obtenir des résultats fiables.</p>
+              <h3><strong>Formation Postman</strong></h3>
+              <p>La formation <strong>Postman</strong> vous permettra de tirer le meilleur parti de cet outil populaire pour tester et développer des API. Apprenez à créer des requêtes, à gérer des collections d'API, à effectuer des tests automatisés et à générer des rapports détaillés. Avec <strong>Postman</strong>, vous pouvez simplifier votre processus de test et améliorer la qualité de vos API.</p>
+              <h3><strong>Formation Robot Framework</strong></h3>
+              <p>Notre formation <strong>Robot Framework</strong> vous enseignera les bases de cet outil d'automatisation des tests open-source. Découvrez comment créer des tests automatisés en utilisant une syntaxe simple et lisible. Apprenez à intégrer des bibliothèques externes, à gérer des variables et à générer des rapports détaillés. Avec <strong>Robot Framework</strong>, vous pouvez automatiser vos tests de manière efficace et flexible.</p>
+              <h3><strong>Formation SoapUI</strong></h3>
+              <p>La formation <strong>SoapUI</strong> vous permettra de devenir un expert dans la création et l'exécution de tests fonctionnels et de tests de charge pour les services web SOAP et REST. Apprenez à créer des scénarios de test, à effectuer des assertions avancées et à analyser les résultats des tests. Avec <strong>SoapUI</strong>, vous pouvez automatiser vos tests de services web et garantir leur bon fonctionnement.</p>
+              <h3><strong>Formation à l'automatisation des tests</strong></h3>
+              <p>Notre formation à l'automatisation des tests est conçue pour vous aider à acquérir les compétences nécessaires pour automatiser efficacement vos tests logiciels. Apprenez les meilleures pratiques, les techniques avancées et les outils les plus populaires pour l'automatisation des tests. Améliorez la qualité de vos logiciels, réduisez les coûts et gagnez du temps grâce à l'automatisation des tests.</p>
+              <p>Que vous soyez débutant ou expérimenté, nos formations sont adaptées à tous les niveaux. Rejoignez-nous dès maintenant et développez vos compétences en automatisation des tests.</p>
             </div>
           </div>
         </div>
