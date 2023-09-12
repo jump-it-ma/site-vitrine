@@ -290,12 +290,24 @@ export default function Page({ params }: Props) {
             <div className="hidden">
               <h2><strong>{`Tests api`}</strong></h2>
               <h2><strong>{`Automatisation des tests`}</strong></h2>
+              <h2>{`Postman`}</h2>
+              <h2>{`Cypress`}</h2>
+              <h2>{`Robot framework`}</h2>
+              <h2>{`Playwright`}</h2>
+              <h2>{`Selenium`}</h2>
+              <h2>{`SoapUI`}</h2>
+
               <h3>{`Formation ${formation.title}`}</h3>
               <h3>{`Formation Cypress`}</h3>
               <h3>{`Formation Postman`}</h3>
+              <h3>{`Robot framework`}</h3>
+              <h3>{`Playwright`}</h3>
+              <h3>{`Selenium`}</h3>
+              <h3>{`SoapUI`}</h3>
               <h3>{`Tests api`}</h3>
               <h3>Tests</h3>
               <h3>{`Formation Robot framework`}</h3>
+              
               <h4>{`Tests api`}</h4>
               <h4>{`Tests visuel`}</h4>
               <h4>{`Automatisation des tests`}</h4>

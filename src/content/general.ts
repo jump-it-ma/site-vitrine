@@ -1,7 +1,7 @@
 export const pageMetadata = {
     baseUrl: "https://www.aleeconseil.com",
     siteName: "Alee Conseil",
-    title: "Alee Conseil - Partenaire de qualité en formation et automatisation des tests",
+    title: "Partenaire de qualité en formation et automatisation des tests",
     description: "Alee Conseil est spécialisée dans conseil et la formation en qualité logiciel. Elle propose des produits à destinations du grand public et des entreprises"
 }
 
