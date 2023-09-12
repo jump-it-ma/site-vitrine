@@ -307,7 +307,7 @@ export default function Page({ params }: Props) {
               <h3>{`Tests api`}</h3>
               <h3>Tests</h3>
               <h3>{`Formation Robot framework`}</h3>
-              
+
               <h4>{`Tests api`}</h4>
               <h4>{`Tests visuel`}</h4>
               <h4>{`Automatisation des tests`}</h4>
