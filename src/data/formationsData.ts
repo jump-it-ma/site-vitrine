@@ -86,10 +86,18 @@ export const formationsData: Formation[] = [
     ],
     program: [
       {
-        title: `Introduction à l'automatisationIntroduction à l'automatisation`,
+        title: `Introduction à l'automatisation des tests`,
         parts: [
           `Pourquoi l’automatisation des tests`,
-          `Pattern d’automatisation:  Arrange - Act - Assert`
+          `Patterns d’automatisation`
+        ]
+      },
+      {
+        title: `Présentation de Cypress`,
+        parts: [
+          `Architecture et concepts`,
+          `Installation de l’environnement de développement`,
+          `Les commandes de base`
         ]
       },
       {
@@ -102,17 +110,9 @@ export const formationsData: Formation[] = [
         ]
       },
       {
-        title: `Présentation de Cypress`,
-        parts: [
-          `Architecture et concepts`,
-          `Installation de l’environnement de développement`,
-          `Les commandes de base`
-        ]
-      },
-      {
         title: `Notions avancées`,
         parts: [
-          `Data Driven Test avec Robot Framework`,
+          `Data Driven Test avec Cypress`,
           `Écrire des tests en Gherkin`,
           `Intercepter des requêtes http`
         ]
@@ -169,7 +169,7 @@ export const formationsData: Formation[] = [
         ]
       },
       {
-        title: `Écrire des tests avec les mots-clefs`,
+        title: `Écrire des tests avec les mots-cles`,
         parts: [
           `Structure d’un cas de test, suite de test`,
           `Exécution et reporting des tests`,
