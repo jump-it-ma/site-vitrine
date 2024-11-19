@@ -534,4 +534,77 @@ export const formationsData: Formation[] = [
     duration: 28,
     image_url: `/Formations/reactjs.png`,
   },
+  {
+    formation_id: `appium`,
+    title: `Appium`,
+    hero: `Automatisation des tests mobiles avec Appium : De la théorie à la pratique`,
+    description: `Cette formation vous permettra de découvrir et maîtriser l'automatisation des tests pour les applications mobiles avec Appium. 
+    Vous apprendrez à configurer et à utiliser Appium pour tester des applications Android et iOS, en automatisant les interactions utilisateur et en validant le bon fonctionnement des fonctionnalités. 
+    À travers des exercices pratiques, vous acquerrez les compétences nécessaires pour intégrer Appium dans vos projets de test, automatiser des scénarios de tests complexes et améliorer la qualité des applications mobiles.`,
+    objectives: [
+      `Comprendre le fonctionnement d'Appium`,
+      `Automatiser les tests sur des applications Android et iOS`,
+      `Maîtriser l’écriture de scripts de test`,
+      `Gérer les éléments UI mobiles`,
+      `Mettre en place des tests end-to-end sur des applications mobiles`,
+      `Optimiser et maintenir les tests automatisés`,
+    ],
+    program: [
+      {
+        title: `Comprendre l’automatisation des tests mobiles`,
+        parts: [
+          `Introduction aux tests mobiles`,
+          `Types de tests mobiles `,
+          `Avantages de l’automatisation`,
+          `Présentation d’Appium`,
+          `Installation et configuration d’Appium `,
+        ],
+      },
+      {
+        title: `Prise en main d’Appium et premiers tests`,
+        parts: [
+          `Configuration de l’environnement`,
+          `Exploration de l'interface Appium Desktop`,
+          `Création d'un premier script de test`,
+          `Exécution du test `,
+          `Introduction aux différents types de tests Appium`,
+        ],
+      },
+      {
+        title: `Automatisation avancée et intégration avec les tests`,
+        parts: [
+          `Automatisation des interactions utilisateur complexes`,
+          `Gestion de l’état de l’application `,
+          `Automatisation de tests sur iOS `,
+          `Intégration avec des frameworks de tests`,
+        ],
+      },
+      {
+        title: `Optimisation des tests et bonnes pratiques`,
+        parts: [
+          `Gestion des éléments dynamiques`,
+          `Meilleures pratiques pour des tests efficaces`,
+          `Optimisation des tests Appium`,
+          `Maintenance des scripts de test`,
+          `Intégration dans un pipeline CI/CD`,
+        ],
+      },
+    ],
+    targets: [
+      `Testeurs logiciels`,
+      `Ingénieurs qualité`,
+      `Développeurs d’applications mobiles`,
+      `Professionnels du test`,
+      `Équipes DevOps et CI/CD`,
+    ],
+    prerequisites: [
+      `Connaissances de base en programmation`,
+      `Expérience avec les concepts de tests logiciels`,
+      `Notions de base sur les applications mobiles`,
+      `Aucun prérequis spécifique à Appium n’est nécessaire`,
+    ],
+    price: 3950,
+    duration: 14,
+    image_url: `/Formations/appium.png`,
+  },
 ];
