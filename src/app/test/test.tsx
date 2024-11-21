@@ -33,7 +33,7 @@ export default function Homepage({ }: Props) {
                 <Image src="/logo2.png" className='w-48 xs:w-96 sm:w-[512px] h-48 xs:h-96 sm:h-[512px] absolute opacity-[.03] -rotate-[23deg] left-0 md:left-16 top-36 xs:top-12 z-0' width={512} height={512} alt='Logo2' />
                 <div className="flex flex-col justify-start items-center gap-16 w-full px-4 md:px-16 xm:px-24 py-12 sm:py-16 xm:py-24 border-b-2 fold:border-b-4 border-x-2 fold:border-x-4 border-ac-bleu rounded-b-3xl z-30">
                     <div className="flex flex-col justify-start items-center gap-10 xs:gap-[75px]">
-                        <Image className='w-[374px] h-[187px] object-cover object-center' src="/logo.png" width={374} height={187} alt="Alee Conseil" />
+                        <Image className='w-[374px] h-[187px] object-cover object-center' src="../../public/icone.png" width={374} height={187} alt="Alee Conseil" />
                         <h1 className={k2d.className + " text-center text-black text-4xl md:text-5xl w-10/12"}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit mauris in condimentum
                         </h1>
@@ -84,7 +84,7 @@ export default function Homepage({ }: Props) {
             <div className="flex justify-center items-center w-full bg-ac-bleu">
                 <div className="flex flex-col md:flex-row justify-start md:justify-between items-center w-full py-6 px-24 gap-6 md:gap-2">
                     <div className="flex justify-center md:justify-start items-center w-[200px] lg:w-[300px]">
-                        <Image className='object-cover object-center w-[118px] h-[62px] brightness-150' src="/logo.png" width={118} height={62} alt='Alee Conseil' />
+                        <Image className='object-cover object-center w-[118px] h-[62px] brightness-150' src="/icone.png" width={118} height={62} alt='Alee Conseil' />
                     </div>
                     <div className="relative flex justify-center items-center gap-8">
                         <a target='_blank' rel="noopener" href={footer.socialLinks.linkedin} className="flex justify-center items-center">

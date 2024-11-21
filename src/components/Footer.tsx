@@ -18,11 +18,11 @@ type Props = {}
 export default function Footer({ }: Props) {
     return (
         <>
-            <div id='footer' className='hidden translate-y-1 bg-ac-violet rounded-t-[25px] w-full md:flex justify-between items-stretch py-12 px-6 xm:px-24 lg:px-36 xl:px-48 gap-4'>
+            <div id='footer' className='hidden translate-y-1 bg-violet-700 rounded-t-[25px] w-full md:flex justify-between items-stretch py-12 px-6 xm:px-24 lg:px-36 xl:px-48 gap-4'>
                 <div className="flex flex-col justify-between items-start">
                     <div className="w-full flex justify-start items-center">
                         {/* Logo  */}
-                        <Image className='w-36 h-20 object-cover object-center brightness-150' src="/logo.png" height={400} width={400} alt='Alee Conseil' />
+                        <Image className='w-20 h-20 object-cover object-center brightness-150' src="./icone.png" height={200} width={200} alt='Alee Conseil' />
                     </div>
                     <div className="flex flex-col justify-start items-start">
                         <p className="text-sm text-white">{footer.copyright1}</p>
@@ -79,7 +79,7 @@ export default function Footer({ }: Props) {
             <div className='md:hidden bg-ac-violet rounded-t-[25px] w-full flex flex-col justify-between items-stretch py-8 px-6 xm:px-24 lg:px-36 xl:px-48 gap-4'>
                 <div className="w-full flex justify-center items-center">
                     {/* Logo  */}
-                    <Image className='w-36 h-20 object-cover object-center brightness-150' src="/logo.png" height={400} width={400} alt='Alee Conseil-mobile' />
+                    <Image className='w-20 h-20 object-cover object-center brightness-150' src="../../public/icone.png" height={200} width={200} alt='Alee Conseil-mobile' />
                 </div>
                 <div className="flex flex-col justify-end items-center gap-16">
                     <div className="flex flex-col justify-start items-stretch gap-4">

@@ -29,8 +29,8 @@ export default function Hero({ }: Props) {
                     </h2>
                 </div>
                 <a href="#services">
-                    <div className="flex justify-center items-center bg-ac-bleu p-5 max-w-[200px] group hover:bg-transparent border-2 border-ac-bleu transition duration-300 cursor-pointer">
-                        <p className={buttonFont + " uppercase text-xl font-bold text-white group-hover:text-ac-bleu transition duration-300"}>Nos Services</p>
+                    <div className="flex justify-center items-center bg-violet-700 p-5 max-w-[200px] group hover:bg-transparent border-2 border-violet-700 transition duration-300 cursor-pointer">
+                        <p className={buttonFont + " uppercase text-xl font-bold text-white group-hover:text-violet-700 transition duration-300"}>Nos Services</p>
                     </div>
                 </a>
             </div>
