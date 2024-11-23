@@ -24,7 +24,7 @@ export default function BlogCard({ id, title, body, author }: Props) {
                     {firstParagraph ? firstParagraph.text : ""}
                 </h2>
             </div>
-            <p className={montserratFont.className + " w-full text-[#5C8BFC] group-hover:text-black underline text-left font-semibold text-violet-700"}>
+            <p className={montserratFont.className + " w-full text-[#5C8BFC] group-hover:text-black underline text-left font-semibold text-violet-70"}>
                 Lire plus
             </p>
         </Link>
