@@ -1,54 +1,54 @@
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://www.aleeconseil.com</loc>
+        <loc>https://www.jumpit.ma</loc>
         <lastmod>2023-08-22</lastmod>
     </url>
     <url>
-        <loc>https://www.aleeconseil.com/formations</loc>
+        <loc>https://www.jumpit.ma/formations</loc>
         <lastmod>2023-08-22</lastmod>
     </url>
     <url>
-        <loc>https://www.aleeconseil.com/formations/postman</loc>
+        <loc>https://www.jumpit.ma/formations/postman</loc>
         <lastmod>2023-08-22</lastmod>
     </url>
     <url>
-        <loc>https://www.aleeconseil.com/formations/cypress</loc>
+        <loc>https://www.jumpit.ma/formations/cypress</loc>
         <lastmod>2023-08-22</lastmod>
     </url>
     <url>
-        <loc>https://www.aleeconseil.com/formations/robot-framework</loc>
+        <loc>https://www.jumpit.ma/formations/robot-framework</loc>
         <lastmod>2023-08-22</lastmod>
     </url>
     <url>
-        <loc>https://www.aleeconseil.com/formations/playwright</loc>
+        <loc>https://www.jumpit.ma/formations/playwright</loc>
         <lastmod>2023-08-22</lastmod>
     </url>
     <url>
-        <loc>https://www.aleeconseil.com/formations/selenium</loc>
+        <loc>https://www.jumpit.ma/formations/selenium</loc>
         <lastmod>2023-08-22</lastmod>
     </url>
     <url>
-        <loc>https://www.aleeconseil.com/formations/soapui</loc>
+        <loc>https://www.jumpit.ma/formations/soapui</loc>
         <lastmod>2023-08-22</lastmod>
     </url>
     <url>
-        <loc>https://www.aleeconseil.com/conseil</loc>
+        <loc>https://www.jumpit.ma/conseil</loc>
         <lastmod>2023-08-22</lastmod>
     </url>
     <url>
-        <loc>https://www.aleeconseil.com/blogs</loc>
+        <loc>https://www.jumpit.ma/blogs</loc>
         <lastmod>2023-08-22</lastmod>
     </url>
     <url>
-        <loc>https://www.aleeconseil.com/blogs/tests-api</loc>
+        <loc>https://www.jumpit.ma/blogs/tests-api</loc>
         <lastmod>2023-08-22</lastmod>
     </url>
     <url>
-        <loc>https://www.aleeconseil.com/blogs/test-visuel</loc>
+        <loc>https://www.jumpit.ma/blogs/test-visuel</loc>
         <lastmod>2023-08-22</lastmod>
     </url>
     <url>
-        <loc>https://www.aleeconseil.com/blogs/automatisation-tests</loc>
+        <loc>https://www.jumpit.ma/blogs/automatisation-tests</loc>
         <lastmod>2023-08-31</lastmod>
     </url>
 </urlset>

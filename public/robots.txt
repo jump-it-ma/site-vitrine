@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 
-Sitemap: https://www.aleeconseil.com/sitemap.xml
+Sitemap: https://www.jumpit.ma/sitemap.xml

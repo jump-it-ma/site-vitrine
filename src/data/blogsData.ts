@@ -6,22 +6,22 @@ const users: User[] = [
     job: `Consultant en test et automatisation`,
     description: ``,
     image: `https://i.ibb.co/pK6T2DN/user.png`,
-    contact: `https://www.linkedin.com/in/hamza-jakan-18835727b`
+    contact: `https://www.linkedin.com/in/hamza-jakan-18835727b`,
   },
   {
     name: `Abdelkarim AJEKAL`,
     job: `Consultant en test et automatisation`,
     description: ``,
     image: `https://i.ibb.co/9wGJxdT/4140048.png`,
-    contact: `https://www.linkedin.com/in/abdelkarimaj/`
+    contact: `https://www.linkedin.com/in/abdelkarimaj/`,
   },
   {
     name: `Mohammed Ali`,
     job: `Consultant en test et automatisation`,
     description: ``,
     image: `https://i.ibb.co/9wGJxdT/4140048.png`,
-    contact: `https://www.linkedin.com/company/alee-conseil-ma/`
-  }
+    contact: `https://www.linkedin.com/company/alee-conseil-ma/`,
+  },
 ];
 
 export const blogsData: Blog[] = [
@@ -32,12 +32,12 @@ export const blogsData: Blog[] = [
       {
         section: 1,
         type: `image`,
-        url: `https://miro.medium.com/v2/resize:fit:828/format:webp/1*sFRJH-ISgCobtCDKbnPzPQ.png`
+        url: `https://miro.medium.com/v2/resize:fit:828/format:webp/1*sFRJH-ISgCobtCDKbnPzPQ.png`,
       },
       {
         section: 2,
         type: `paragraph`,
-        text: `Les tests API (Application Programming Interface) sont une partie essentielle du développement de logiciels. Ils permettent de vérifier que les interfaces de programmation de votre application fonctionnent comme prévu, en assurant la communication correcte et l’interaction entre différentes parties de logiciels.`
+        text: `Les tests API (Application Programming Interface) sont une partie essentielle du développement de logiciels. Ils permettent de vérifier que les interfaces de programmation de votre application fonctionnent comme prévu, en assurant la communication correcte et l’interaction entre différentes parties de logiciels.`,
       },
       {
         section: 3,
@@ -48,7 +48,7 @@ export const blogsData: Blog[] = [
         section: 4,
         type: `image`,
         url: `https://miro.medium.com/v2/resize:fit:828/format:webp/1*zsbb6EAtxe_Iqn0_-YTWgg.png`,
-        imageCaption: `Assurance fonctionnement de l’api`
+        imageCaption: `Assurance fonctionnement de l’api`,
       },
       {
         section: 5,
@@ -56,21 +56,21 @@ export const blogsData: Blog[] = [
         items: [
           {
             title: `Fiabilité`,
-            body: `Les tests API garantissent que l’interface fonctionne correctement et peut gérer les demandes prévues, les réponses, les erreurs et les performances attendues.`
+            body: `Les tests API garantissent que l’interface fonctionne correctement et peut gérer les demandes prévues, les réponses, les erreurs et les performances attendues.`,
           },
           {
             title: `Intégration`,
-            body: `Ils permettent de vérifier que différents composants logiciels interagissent correctement entre eux.`
+            body: `Ils permettent de vérifier que différents composants logiciels interagissent correctement entre eux.`,
           },
           {
             title: `Performance`,
-            body: `Les tests de performance API peuvent aider à identifier les goulots d’étranglement et à déterminer la capacité de charge de l’API`
+            body: `Les tests de performance API peuvent aider à identifier les goulots d’étranglement et à déterminer la capacité de charge de l’API`,
           },
           {
             title: `Sécurité`,
-            body: `Les tests API peuvent également aider à identifier les vulnérabilités potentielles dans l’API, comme les fuites de données.`
+            body: `Les tests API peuvent également aider à identifier les vulnérabilités potentielles dans l’API, comme les fuites de données.`,
           },
-        ]
+        ],
       },
       {
         section: 6,
@@ -83,9 +83,9 @@ export const blogsData: Blog[] = [
         items: [
           {
             title: `Comprendre la documentation de l’API`,
-            body: `La première étape consiste à lire attentivement la documentation de l’API que vous souhaitez tester. La documentation fournira des informations sur les points d’extrémité disponibles, les paramètres requis, les méthodes HTTP supportées, les formats de données acceptés et retournés, ainsi que les éventuelles limitations ou restrictions.`
-          }
-        ]
+            body: `La première étape consiste à lire attentivement la documentation de l’API que vous souhaitez tester. La documentation fournira des informations sur les points d’extrémité disponibles, les paramètres requis, les méthodes HTTP supportées, les formats de données acceptés et retournés, ainsi que les éventuelles limitations ou restrictions.`,
+          },
+        ],
       },
       {
         section: 8,
@@ -93,9 +93,9 @@ export const blogsData: Blog[] = [
         items: [
           {
             title: `Configurer l’environnement de test`,
-            body: `Assurez vous d’avoir un environnement de test approprié pour effectuer vos tests. Cela peut inclure l’installation de logiciels supplémentaires, la configuration de variables d’environnement, ou la création de comptes d’accès si nécessaire.`
-          }
-        ]
+            body: `Assurez vous d’avoir un environnement de test approprié pour effectuer vos tests. Cela peut inclure l’installation de logiciels supplémentaires, la configuration de variables d’environnement, ou la création de comptes d’accès si nécessaire.`,
+          },
+        ],
       },
       {
         section: 9,
@@ -103,9 +103,9 @@ export const blogsData: Blog[] = [
         items: [
           {
             title: `Utiliser un outil de test d’API`,
-            body: `Il existe de nombreux outils disponibles pour tester les API. Certains outils populaires incluent Postman, cURL, SoapUI, et Insomnia. Ces outils vous permettent d’envoyer des requêtes HTTP aux points d’extrémité ou les de l’API, de spécifier les paramètres requis, et d’analyser les réponses reçues.`
-          }
-        ]
+            body: `Il existe de nombreux outils disponibles pour tester les API. Certains outils populaires incluent Postman, cURL, SoapUI, et Insomnia. Ces outils vous permettent d’envoyer des requêtes HTTP aux points d’extrémité ou les de l’API, de spécifier les paramètres requis, et d’analyser les réponses reçues.`,
+          },
+        ],
       },
       {
         section: 10,
@@ -113,9 +113,9 @@ export const blogsData: Blog[] = [
         items: [
           {
             title: `Tester les différentes fonctionnalités de l’API`,
-            body: `Une fois que vous avez configuré votre environnement de test et choisi un outil, vous pouvez commencer à tester les différentes fonctionnalités de l’API. Cela peut inclure l’envoi de requêtes GET, POST, PUT, DELETE, ou d’autres méthodes HTTP spécifiques, en fonction des fonctionnalités fournies par l’API.`
-          }
-        ]
+            body: `Une fois que vous avez configuré votre environnement de test et choisi un outil, vous pouvez commencer à tester les différentes fonctionnalités de l’API. Cela peut inclure l’envoi de requêtes GET, POST, PUT, DELETE, ou d’autres méthodes HTTP spécifiques, en fonction des fonctionnalités fournies par l’API.`,
+          },
+        ],
       },
       {
         section: 11,
@@ -123,9 +123,9 @@ export const blogsData: Blog[] = [
         items: [
           {
             title: `Vérifier les réponses et les résultats`,
-            body: `Après avoir envoyé une requête, assurez vous de vérifier la réponse reçue. Vérifiez si la réponse correspond à ce que vous attendiez, si les données sont correctes, et si les codes de statut HTTP sont appropriés. Vous pouvez également vérifier les journaux ou les rapports d’erreurs pour identifier d’éventuels problèmes.`
-          }
-        ]
+            body: `Après avoir envoyé une requête, assurez vous de vérifier la réponse reçue. Vérifiez si la réponse correspond à ce que vous attendiez, si les données sont correctes, et si les codes de statut HTTP sont appropriés. Vous pouvez également vérifier les journaux ou les rapports d’erreurs pour identifier d’éventuels problèmes.`,
+          },
+        ],
       },
       {
         section: 12,
@@ -133,9 +133,9 @@ export const blogsData: Blog[] = [
         items: [
           {
             title: `Gérer les erreurs et les exceptions`,
-            body: `Pendant les tests, il est important de gérer les erreurs et les exceptions qui peuvent survenir. Assurez vous de tester les scénarios d’erreur en envoyant des requêtes incorrectes ou en simulant des conditions d’erreur spécifiques. Vérifiez si l’API renvoie des messages d’erreur appropriés et si elle gère correctement les exceptions.`
-          }
-        ]
+            body: `Pendant les tests, il est important de gérer les erreurs et les exceptions qui peuvent survenir. Assurez vous de tester les scénarios d’erreur en envoyant des requêtes incorrectes ou en simulant des conditions d’erreur spécifiques. Vérifiez si l’API renvoie des messages d’erreur appropriés et si elle gère correctement les exceptions.`,
+          },
+        ],
       },
       {
         section: 13,
@@ -143,9 +143,9 @@ export const blogsData: Blog[] = [
         items: [
           {
             title: `Automatiser les tests`,
-            body: `Si vous prévoyez de tester l’API de manière régulière ou si vous souhaitez intégrer les tests dans un processus d’intégration continue, vous pouvez envisager d’automatiser les tests à l’aide d’outils tels que Newman (pour Postman), cURL avec des scripts, ou des bibliothèques de test spécifiques à votre langage de programmation.`
-          }
-        ]
+            body: `Si vous prévoyez de tester l’API de manière régulière ou si vous souhaitez intégrer les tests dans un processus d’intégration continue, vous pouvez envisager d’automatiser les tests à l’aide d’outils tels que Newman (pour Postman), cURL avec des scripts, ou des bibliothèques de test spécifiques à votre langage de programmation.`,
+          },
+        ],
       },
       {
         section: 14,
@@ -153,19 +153,19 @@ export const blogsData: Blog[] = [
         items: [
           {
             title: `Documenter les résultats des tests`,
-            body: `Il est important de documenter les résultats de vos tests, y compris les requêtes envoyées, les réponses reçues, les problèmes rencontrés, et les corrections apportées. Cela vous aidera à suivre les progrès des tests et à partager les résultats avec d’autres membres de l’équipe.`
-          }
-        ]
+            body: `Il est important de documenter les résultats de vos tests, y compris les requêtes envoyées, les réponses reçues, les problèmes rencontrés, et les corrections apportées. Cela vous aidera à suivre les progrès des tests et à partager les résultats avec d’autres membres de l’équipe.`,
+          },
+        ],
       },
       {
         section: 15,
         type: `paragraph`,
-        text: `En suivant ces étapes, vous devriez être en mesure de tester efficacement une API et de vous assurer qu’elle fonctionne correctement selon les spécifications fournies.`
+        text: `En suivant ces étapes, vous devriez être en mesure de tester efficacement une API et de vous assurer qu’elle fonctionne correctement selon les spécifications fournies.`,
       },
       {
         section: 16,
         type: `paragraph`,
-        text: `Il existe plusieurs types de tests API, qui sont utilisés pour vérifier le bon fonctionnement des interfaces de programmation d'applications (API). Voici quelques-uns des types de tests API les plus courants :`
+        text: `Il existe plusieurs types de tests API, qui sont utilisés pour vérifier le bon fonctionnement des interfaces de programmation d'applications (API). Voici quelques-uns des types de tests API les plus courants :`,
       },
       {
         section: 17,
@@ -173,30 +173,29 @@ export const blogsData: Blog[] = [
         items: [
           {
             title: `Tests d'intégration`,
-            body: `Ces tests vérifient la communication et l'intégration entre différentes parties de l'API, telles que les modules, les services ou les composants. Ils permettent de s'assurer que les différentes parties de l'API fonctionnent correctement ensemble.`
+            body: `Ces tests vérifient la communication et l'intégration entre différentes parties de l'API, telles que les modules, les services ou les composants. Ils permettent de s'assurer que les différentes parties de l'API fonctionnent correctement ensemble.`,
           },
           {
             title: `Tests de performance`,
-            body: `Ces tests évaluent les performances de l'API en termes de temps de réponse, de débit, de charge et de scalabilité. Ils permettent de s'assurer que l'API peut gérer un volume élevé de requêtes et de trafic sans compromettre ses performances.`
+            body: `Ces tests évaluent les performances de l'API en termes de temps de réponse, de débit, de charge et de scalabilité. Ils permettent de s'assurer que l'API peut gérer un volume élevé de requêtes et de trafic sans compromettre ses performances.`,
           },
-        ]
+        ],
       },
       {
         section: 18,
         type: `paragraph`,
-        text: `Il existe de nombreux outils disponibles pour aider à automatiser ce processus, comme Postman, JMeter, et Rest-Assured pour les tests API REST, ou SoapUI pour les tests API SOAP. Ces outils peuvent aider à créer, exécuter et gérer des tests API de manière plus efficace.`
+        text: `Il existe de nombreux outils disponibles pour aider à automatiser ce processus, comme Postman, JMeter, et Rest-Assured pour les tests API REST, ou SoapUI pour les tests API SOAP. Ces outils peuvent aider à créer, exécuter et gérer des tests API de manière plus efficace.`,
       },
       {
         section: 19,
         type: `paragraph`,
-        text: `Ces outils offrent différents niveaux de fonctionnalités et de complexité, il est donc recommandé de choisir celui qui s’adapte le mieux à vos besoins spécifiques.`
+        text: `Ces outils offrent différents niveaux de fonctionnalités et de complexité, il est donc recommandé de choisir celui qui s’adapte le mieux à vos besoins spécifiques.`,
       },
       {
         section: 20,
         type: `code`,
         language: `javascript`,
-        code: 
-`// Function to fetch data from an API
+        code: `// Function to fetch data from an API
 async function fetchData(url: string) {
   try {
     const response = await axios.get(url);
@@ -220,13 +219,13 @@ describe('API Tests', () => {
     const invalidUrl = 'https://jsonplaceholder.typicode.com/nonexistent';
     await expect(fetchData(invalidUrl)).rejects.toThrowError('Failed to fetch data');
   });
-});`
+});`,
       },
       {
         section: 21,
         type: `iframe`,
-        url: `https://www.youtube.com/embed/xg3CpNGyfA0?wmode=opaque&widget_referrer=https%3A%2F%2Fmedium.com%2F%40jakanhamza%2Fles-tests-api-pourquoi-et-comment-207e22a33ea2&enablejsapi=1&origin=https%3A%2F%2Fcdn.embedly.com&widgetid=1`
-      }
+        url: `https://www.youtube.com/embed/xg3CpNGyfA0?wmode=opaque&widget_referrer=https%3A%2F%2Fmedium.com%2F%40jakanhamza%2Fles-tests-api-pourquoi-et-comment-207e22a33ea2&enablejsapi=1&origin=https%3A%2F%2Fcdn.embedly.com&widgetid=1`,
+      },
     ],
     author: users[0],
     date: new Date(`2023-07-25`),
@@ -238,7 +237,7 @@ describe('API Tests', () => {
       {
         section: 1,
         type: `header1`,
-        text: `Qu'est-ce que le Test Visuel?`
+        text: `Qu'est-ce que le Test Visuel?`,
       },
       {
         section: 2,
@@ -249,12 +248,12 @@ describe('API Tests', () => {
         section: 3,
         type: `image`,
         url: `/Blog/test-visuel-1.png`,
-        imageCaption: `Détection de changement`
+        imageCaption: `Détection de changement`,
       },
       {
         section: 4,
         type: `header1`,
-        text: `Pourquoi effectuer un Test Visuel?`
+        text: `Pourquoi effectuer un Test Visuel?`,
       },
       {
         section: 5,
@@ -266,18 +265,18 @@ describe('API Tests', () => {
         type: `itemize`,
         items: [
           {
-            body: `L'identification des défauts ou des problèmes dans l'interface utilisateur`
+            body: `L'identification des défauts ou des problèmes dans l'interface utilisateur`,
           },
           {
-            body: `Détecter les variations de l'interface utilisateur qui ne correspondent pas aux instantanés de base`
+            body: `Détecter les variations de l'interface utilisateur qui ne correspondent pas aux instantanés de base`,
           },
           {
-            body: `Détecter les variations de l'interface utilisateur qui ne correspondent pas aux instantanés de base`
+            body: `Détecter les variations de l'interface utilisateur qui ne correspondent pas aux instantanés de base`,
           },
           {
-            body: `Détecter les variations de l'interface utilisateur qui ne correspondent pas aux instantanés de base`
+            body: `Détecter les variations de l'interface utilisateur qui ne correspondent pas aux instantanés de base`,
           },
-        ]
+        ],
       },
       {
         section: 7,
@@ -298,7 +297,7 @@ describe('API Tests', () => {
         section: 10,
         type: `image`,
         url: `/Blog/test-visuel-2.png`,
-        imageCaption: `une illustration d’un diff visuel`
+        imageCaption: `une illustration d’un diff visuel`,
       },
       {
         section: 11,
@@ -310,24 +309,24 @@ describe('API Tests', () => {
         type: `enumerate`,
         items: [
           {
-            body: `Utiliser un Test Runner pour écrire et exécuter des tests.`
+            body: `Utiliser un Test Runner pour écrire et exécuter des tests.`,
           },
           {
-            body: `Utiliser un navigateur d'automatisation pour reproduire les actions de l'utilisateur sur l'application ou le site web.`
+            body: `Utiliser un navigateur d'automatisation pour reproduire les actions de l'utilisateur sur l'application ou le site web.`,
           },
           {
-            body: `Réaliser des captures d'écran initiales des éléments de l'interface utilisateur de l'application afin de créer une base de comparaison.`
+            body: `Réaliser des captures d'écran initiales des éléments de l'interface utilisateur de l'application afin de créer une base de comparaison.`,
           },
           {
-            body: `Exécuter le code de test en arrière-plan pour simuler les interactions de l'utilisateur et faire des captures d'écran lorsque des changements sont identifiés.`
+            body: `Exécuter le code de test en arrière-plan pour simuler les interactions de l'utilisateur et faire des captures d'écran lorsque des changements sont identifiés.`,
           },
           {
-            body: `Comparer les captures d'écran capturées aux images de référence afin de détecter toute différence visuelle.`
+            body: `Comparer les captures d'écran capturées aux images de référence afin de détecter toute différence visuelle.`,
           },
           {
-            body: `Comparer les captures d'écran capturées aux images de référence afin de détecter toute différence visuelle.`
+            body: `Comparer les captures d'écran capturées aux images de référence afin de détecter toute différence visuelle.`,
           },
-        ]
+        ],
       },
       {
         section: 13,
@@ -343,7 +342,7 @@ describe('API Tests', () => {
         section: 15,
         type: `image`,
         url: "/Blog/test-visuel-3.png",
-        imageCaption: "Comparaison entre le test visuel et fonctionnel"
+        imageCaption: "Comparaison entre le test visuel et fonctionnel",
       },
       {
         section: 16,
@@ -353,7 +352,7 @@ describe('API Tests', () => {
       {
         section: 17,
         type: `paragraph`,
-        text: `Les tests visuels manuels font référence au processus d'inspection et de vérification manuelles des aspects visuels d'une application logicielle ou d'un site web, afin de s'assurer qu'ils répondent à la conception souhaitée et aux exigences fonctionnelles. Ce type de test est généralement effectué par des testeurs humains qui utilisent leurs yeux pour évaluer l'apparence, la présentation et le comportement de l'application ou du site web.`
+        text: `Les tests visuels manuels font référence au processus d'inspection et de vérification manuelles des aspects visuels d'une application logicielle ou d'un site web, afin de s'assurer qu'ils répondent à la conception souhaitée et aux exigences fonctionnelles. Ce type de test est généralement effectué par des testeurs humains qui utilisent leurs yeux pour évaluer l'apparence, la présentation et le comportement de l'application ou du site web.`,
       },
       {
         section: 18,
@@ -365,15 +364,15 @@ describe('API Tests', () => {
         type: `enumerate`,
         items: [
           {
-            body: `Parcourez l'application et faites des captures d'écran de la version de base connue.`
+            body: `Parcourez l'application et faites des captures d'écran de la version de base connue.`,
           },
           {
-            body: `Faites une autre série de captures d'écran de la dernière version de l'application.`
+            body: `Faites une autre série de captures d'écran de la dernière version de l'application.`,
           },
           {
-            body: `Comparez manuellement ces captures d'écran (de base par rapport à la version actuelle) pour identifier les bogues visuels.`
-          }
-        ]
+            body: `Comparez manuellement ces captures d'écran (de base par rapport à la version actuelle) pour identifier les bogues visuels.`,
+          },
+        ],
       },
       {
         section: 20,
@@ -383,126 +382,126 @@ describe('API Tests', () => {
       {
         section: 21,
         type: `paragraph`,
-        text: `Les tests visuels automatisés consistent à utiliser des outils logiciels spécialisés pour vérifier automatiquement l'aspect visuel et le comportement d'une application logicielle ou d'un site web. Contrairement aux tests visuels manuels, qui sont effectués par des testeurs humains, les tests visuels automatisés sont réalisés à l’aide d'outils de test capables de simuler les actions d'un utilisateur humain et d'évaluer les éléments visuels d’un site web.`
+        text: `Les tests visuels automatisés consistent à utiliser des outils logiciels spécialisés pour vérifier automatiquement l'aspect visuel et le comportement d'une application logicielle ou d'un site web. Contrairement aux tests visuels manuels, qui sont effectués par des testeurs humains, les tests visuels automatisés sont réalisés à l’aide d'outils de test capables de simuler les actions d'un utilisateur humain et d'évaluer les éléments visuels d’un site web.`,
       },
       {
         section: 22,
         type: `paragraph`,
-        text: `Voici quelques-uns des outils permettant de réaliser des tests visuels automatisés :`
+        text: `Voici quelques-uns des outils permettant de réaliser des tests visuels automatisés :`,
       },
       {
         section: 23,
         type: `header2`,
-        text: `1. Applitools`
+        text: `1. Applitools`,
       },
       {
         section: 24,
         type: `image`,
-        url: `/Blog/test-visuel-4.png`
+        url: `/Blog/test-visuel-4.png`,
       },
       {
         section: 25,
         type: `paragraph`,
-        text: `Cet outil est connu pour ses tests visuels utilisant l'intelligence artificielle et ses capacités de tests intermédiaires entièrement automatisés. Il peut analyser les applications web et mobiles et identifier toute modification des éléments visuels.`
+        text: `Cet outil est connu pour ses tests visuels utilisant l'intelligence artificielle et ses capacités de tests intermédiaires entièrement automatisés. Il peut analyser les applications web et mobiles et identifier toute modification des éléments visuels.`,
       },
       {
         section: 26,
         type: `header2`,
-        text: `2. Percy`
+        text: `2. Percy`,
       },
       {
         section: 27,
         type: `image`,
-        url: `/Blog/test-visuel-5.png`
+        url: `/Blog/test-visuel-5.png`,
       },
       {
         section: 28,
         type: `paragraph`,
-        text: `Cet outil est idéal pour les tests d'applications web ou de bureau. Il offre des capacités de test visuel et s'intègre à d'autres frameworks de test.`
+        text: `Cet outil est idéal pour les tests d'applications web ou de bureau. Il offre des capacités de test visuel et s'intègre à d'autres frameworks de test.`,
       },
       {
         section: 29,
         type: `header2`,
-        text: `3. Galen Framework`
+        text: `3. Galen Framework`,
       },
       {
         section: 30,
         type: `image`,
-        url: `/Blog/test-visuel-6.png`
+        url: `/Blog/test-visuel-6.png`,
       },
       {
         section: 31,
         type: `paragraph`,
-        text: `C’est un outil de test visuel qui offre un large éventail de fonctionnalités et d'intégrations pour aider les testeurs à automatiser leur processus de test. Il permet aux utilisateurs de tester la mise en page des applications web à l'aide d'une syntaxe simple.`
+        text: `C’est un outil de test visuel qui offre un large éventail de fonctionnalités et d'intégrations pour aider les testeurs à automatiser leur processus de test. Il permet aux utilisateurs de tester la mise en page des applications web à l'aide d'une syntaxe simple.`,
       },
       {
         section: 32,
         type: `header2`,
-        text: `4. VisualEyes`
+        text: `4. VisualEyes`,
       },
       {
         section: 33,
         type: `image`,
-        url: `/Blog/test-visuel-7.png`
+        url: `/Blog/test-visuel-7.png`,
       },
       {
         section: 34,
         type: `paragraph`,
-        text: `VisualEyes is a visual testing tool that offers automated visual testing and review for web applications. It uses machine learning to detect even the slightest visual changes in web pages with heat maps.`
+        text: `VisualEyes is a visual testing tool that offers automated visual testing and review for web applications. It uses machine learning to detect even the slightest visual changes in web pages with heat maps.`,
       },
       {
         section: 35,
         type: `header2`,
-        text: `5. Happo.io`
+        text: `5. Happo.io`,
       },
       {
         section: 36,
         type: `image`,
-        url: `/Blog/test-visuel-8.png`
+        url: `/Blog/test-visuel-8.png`,
       },
       {
         section: 37,
         type: `paragraph`,
-        text: `Happo.io est un service de test de capture d’écran multi-navigateur qui aide à prévenir les régressions visuelles et vous permet de visualiser les changements dans votre interface utilisateur (UI), Il vous permet de comparer l’apparence visuelle des composants de l’interface utilisateur avant et après les changements.`
+        text: `Happo.io est un service de test de capture d’écran multi-navigateur qui aide à prévenir les régressions visuelles et vous permet de visualiser les changements dans votre interface utilisateur (UI), Il vous permet de comparer l’apparence visuelle des composants de l’interface utilisateur avant et après les changements.`,
       },
       {
         section: 38,
         type: `header1`,
-        text: `Ressources`
+        text: `Ressources`,
       },
       {
         section: 39,
         type: `link`,
-        text: `https://www.browserstack.com/guide/visual-testing-beginners-guide`
+        text: `https://www.browserstack.com/guide/visual-testing-beginners-guide`,
       },
       {
         section: 40,
         type: `link`,
-        text: `https://www.geeksforgeeks.org/software-testing-visual-testing`
+        text: `https://www.geeksforgeeks.org/software-testing-visual-testing`,
       },
       {
         section: 41,
         type: `link`,
-        text: `https://saucelabs.com/resources/blog/what-is-visual-testing`
+        text: `https://saucelabs.com/resources/blog/what-is-visual-testing`,
       },
       {
         section: 42,
         type: `link`,
-        text: `https://www.youtube.com/watch?v=MXfZeE9RQDw&t=939s`
+        text: `https://www.youtube.com/watch?v=MXfZeE9RQDw&t=939s`,
       },
       {
         section: 43,
         type: `link`,
-        text: `https://docs.percy.io/v1/docs`
+        text: `https://docs.percy.io/v1/docs`,
       },
       {
         section: 44,
         type: `link`,
-        text: `https://smartbear.com/blog/what-is-visual-testing`
-      }
+        text: `https://smartbear.com/blog/what-is-visual-testing`,
+      },
     ],
     author: users[1],
-    date: new Date(`2023-07-27`)
+    date: new Date(`2023-07-27`),
   },
   {
     id: "automatisation-tests",
@@ -511,121 +510,121 @@ describe('API Tests', () => {
       {
         section: 1,
         type: `paragraph`,
-        text: `Dans le monde numérique en constante évolution, la qualité des applications logicielles joue un rôle critique dans la réussite des entreprises. L'automatisation des tests est devenue un élément clé pour garantir la fiabilité, les performances et la convivialité des logiciels.`
+        text: `Dans le monde numérique en constante évolution, la qualité des applications logicielles joue un rôle critique dans la réussite des entreprises. L'automatisation des tests est devenue un élément clé pour garantir la fiabilité, les performances et la convivialité des logiciels.`,
       },
       {
         section: 2,
         type: `paragraph`,
-        text: `Parmi les nombreux outils disponibles, Cypress, Robot Framework, Postman, Selenium WebDriver, SoapUI et Playwright se démarquent. Dans cet article, nous explorerons en détail l'importance de la formation en automatisation des tests en mettant en avant les avantages de se former sur ces outils essentiels.`
+        text: `Parmi les nombreux outils disponibles, Cypress, Robot Framework, Postman, Selenium WebDriver, SoapUI et Playwright se démarquent. Dans cet article, nous explorerons en détail l'importance de la formation en automatisation des tests en mettant en avant les avantages de se former sur ces outils essentiels.`,
       },
       {
         section: 3,
         type: `header1`,
-        text: `Le Paysage Dynamique de l'Automatisation des Tests`
+        text: `Le Paysage Dynamique de l'Automatisation des Tests`,
       },
       {
         section: 3,
         type: `dangerousParagraph`,
         text: `L'automatisation des tests a évolué pour devenir un élément central des méthodologies de développement logiciel modernes. Alors que les attentes des utilisateurs continuent de croître, les entreprises doivent s'assurer que leurs applications sont fiables et performantes.
-              Se former sur des outils d'automatisation tels que <strong>Cypress</strong>, <strong>Robot Framework</strong>, <strong>Postman</strong>, <strong>Selenium WebDriver</strong>, <strong>SoapUI</strong> et <strong>Playwright</strong> permet aux professionnels de relever ces défis avec succès.`
+              Se former sur des outils d'automatisation tels que <strong>Cypress</strong>, <strong>Robot Framework</strong>, <strong>Postman</strong>, <strong>Selenium WebDriver</strong>, <strong>SoapUI</strong> et <strong>Playwright</strong> permet aux professionnels de relever ces défis avec succès.`,
       },
       {
         section: 4,
         type: `dangerousParagraph`,
-        text: `Le <strong>Cypress</strong>, un framework de test JavaScript, se distingue par sa simplicité et sa rapidité, permettant des tests end-to-end fluides et efficaces. Le <strong>Robot Framework</strong> offre une flexibilité inégalée et des scripts lisibles, simplifiant la création de tests automatisés. Avec <strong>Postman</strong>, les testeurs peuvent automatiser les tests d'API de manière collaborative, améliorant l'intégration entre les systèmes.`
+        text: `Le <strong>Cypress</strong>, un framework de test JavaScript, se distingue par sa simplicité et sa rapidité, permettant des tests end-to-end fluides et efficaces. Le <strong>Robot Framework</strong> offre une flexibilité inégalée et des scripts lisibles, simplifiant la création de tests automatisés. Avec <strong>Postman</strong>, les testeurs peuvent automatiser les tests d'API de manière collaborative, améliorant l'intégration entre les systèmes.`,
       },
       {
         section: 5,
         type: `dangerousParagraph`,
-        text: `L'ajout de <strong>Selenium WebDriver</strong> à la liste renforce encore les capacités d'automatisation. Il est largement utilisé pour tester des applications web à travers différents navigateurs, assurant une couverture complète des tests.`
+        text: `L'ajout de <strong>Selenium WebDriver</strong> à la liste renforce encore les capacités d'automatisation. Il est largement utilisé pour tester des applications web à travers différents navigateurs, assurant une couverture complète des tests.`,
       },
       {
         section: 6,
         type: `dangerousParagraph`,
-        text: `Quant à <strong>SoapUI</strong>, il se concentre sur les tests d'API, en simulant les requêtes et les réponses pour évaluer la fiabilité et la performance des interfaces.`
+        text: `Quant à <strong>SoapUI</strong>, il se concentre sur les tests d'API, en simulant les requêtes et les réponses pour évaluer la fiabilité et la performance des interfaces.`,
       },
       {
         section: 7,
         type: `dangerousParagraph`,
-        text: `Enfin, <strong>Playwright</strong> gagne en popularité en tant qu'outil d'automatisation de tests nouvelle génération, permettant des tests multi-navigateurs et multi-plateformes.`
+        text: `Enfin, <strong>Playwright</strong> gagne en popularité en tant qu'outil d'automatisation de tests nouvelle génération, permettant des tests multi-navigateurs et multi-plateformes.`,
       },
       {
         section: 8,
         type: `header1`,
-        text: `Les Avantages de la Formation en Automatisation des Tests`
+        text: `Les Avantages de la Formation en Automatisation des Tests`,
       },
       {
         section: 9,
         type: `header2`,
-        text: `1. Qualité Renforcée :`
+        text: `1. Qualité Renforcée :`,
       },
       {
         section: 10,
         type: `paragraph`,
-        text: `Les tests automatisés garantissent une cohérence et une précision accrues par rapport aux tests manuels. Les formations en automatisation des tests préparent les professionnels à créer des scénarios de test complets et à les exécuter de manière fiable, améliorant ainsi la qualité globale du logiciel.`
+        text: `Les tests automatisés garantissent une cohérence et une précision accrues par rapport aux tests manuels. Les formations en automatisation des tests préparent les professionnels à créer des scénarios de test complets et à les exécuter de manière fiable, améliorant ainsi la qualité globale du logiciel.`,
       },
       {
         section: 11,
         type: `header2`,
-        text: `2. Efficacité Opérationnelle :`
+        text: `2. Efficacité Opérationnelle :`,
       },
       {
         section: 12,
         type: `paragraph`,
-        text: `Les formations en automatisation des tests permettent de réduire considérablement le temps nécessaire pour exécuter des tests répétitifs. Les professionnels formés sont en mesure de créer des scripts de test robustes et de les exécuter rapidement, libérant du temps pour des tâches plus complexes.`
+        text: `Les formations en automatisation des tests permettent de réduire considérablement le temps nécessaire pour exécuter des tests répétitifs. Les professionnels formés sont en mesure de créer des scripts de test robustes et de les exécuter rapidement, libérant du temps pour des tâches plus complexes.`,
       },
       {
         section: 13,
         type: `header2`,
-        text: `3. Agilité Améliorée :`
+        text: `3. Agilité Améliorée :`,
       },
       {
         section: 14,
         type: `paragraph`,
-        text: `L'automatisation des tests permet des itérations plus rapides, favorisant un développement agile et réactif. Les tests automatisés peuvent être facilement ajustés et exécutés à chaque nouvelle version, facilitant l'intégration continue.`
+        text: `L'automatisation des tests permet des itérations plus rapides, favorisant un développement agile et réactif. Les tests automatisés peuvent être facilement ajustés et exécutés à chaque nouvelle version, facilitant l'intégration continue.`,
       },
       {
         section: 15,
         type: `header2`,
-        text: `4. Économies à Long Terme :`
+        text: `4. Économies à Long Terme :`,
       },
       {
         section: 16,
         type: `paragraph`,
-        text: `Bien que les formations en automatisation des tests impliquent un investissement initial, elles se traduisent par des économies à long terme grâce à la réduction des tests manuels coûteux et à une meilleure utilisation des ressources.`
+        text: `Bien que les formations en automatisation des tests impliquent un investissement initial, elles se traduisent par des économies à long terme grâce à la réduction des tests manuels coûteux et à une meilleure utilisation des ressources.`,
       },
       {
         section: 17,
         type: `header2`,
-        text: `5. Polyvalence Technologique :`
+        text: `5. Polyvalence Technologique :`,
       },
       {
         section: 18,
         type: `paragraph`,
-        text: `Les formations sur Cypress, Robot Framework, Postman, Selenium WebDriver, SoapUI et Playwright offrent une polyvalence précieuse. Les professionnels formés sont capables de travailler sur divers projets et d'adopter rapidement de nouvelles technologies.`
+        text: `Les formations sur Cypress, Robot Framework, Postman, Selenium WebDriver, SoapUI et Playwright offrent une polyvalence précieuse. Les professionnels formés sont capables de travailler sur divers projets et d'adopter rapidement de nouvelles technologies.`,
       },
       {
         section: 19,
         type: `header2`,
-        text: `Conclusion`
+        text: `Conclusion`,
       },
       {
         section: 20,
         type: `paragraph`,
-        text: `Dans un paysage numérique en constante évolution, l'automatisation des tests est devenue une exigence fondamentale pour garantir la qualité et la fiabilité des applications logicielles. Les formations en automatisation des tests sur des outils tels que Cypress, Robot Framework, Postman, Selenium WebDriver, SoapUI et Playwright offrent une voie claire vers l'excellence. En investissant dans ces formations, les individus et les entreprises peuvent non seulement optimiser le référencement SEO de leur site web, mais aussi renforcer leurs compétences et leur valeur sur le marché.`
+        text: `Dans un paysage numérique en constante évolution, l'automatisation des tests est devenue une exigence fondamentale pour garantir la qualité et la fiabilité des applications logicielles. Les formations en automatisation des tests sur des outils tels que Cypress, Robot Framework, Postman, Selenium WebDriver, SoapUI et Playwright offrent une voie claire vers l'excellence. En investissant dans ces formations, les individus et les entreprises peuvent non seulement optimiser le référencement SEO de leur site web, mais aussi renforcer leurs compétences et leur valeur sur le marché.`,
       },
       {
         section: 21,
         type: `dangerousParagraph`,
-        text: `Pour en savoir plus sur les formations en <strong>Cypress</strong>, <strong>Robot Framework</strong>, <strong>Postman</strong>, <strong>Selenium WebDriver</strong>, <strong>SoapUI</strong> et <strong>Playwright</strong>, visitez notre site web :`
+        text: `Pour en savoir plus sur les formations en <strong>Cypress</strong>, <strong>Robot Framework</strong>, <strong>Postman</strong>, <strong>Selenium WebDriver</strong>, <strong>SoapUI</strong> et <strong>Playwright</strong>, visitez notre site web :`,
       },
       {
         section: 22,
         type: `link`,
-        text: `https://www.aleeconseil.com/formations`
-      }
+        text: `https://www.jumpit.ma/formations`,
+      },
     ],
     author: users[2],
-    date: new Date(`2023-07-30`)
-  }
+    date: new Date(`2023-07-30`),
+  },
 ];
