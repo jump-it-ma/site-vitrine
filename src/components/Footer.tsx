@@ -76,7 +76,7 @@ export default function Footer({ }: Props) {
             </div>
 
             {/* Mobile Version  */}
-            <div className='md:hidden bg-ac-violet rounded-t-[25px] w-full flex flex-col justify-between items-stretch py-8 px-6 xm:px-24 lg:px-36 xl:px-48 gap-4'>
+            <div className='md:hidden bg-purple-600 rounded-t-[25px] w-full flex flex-col justify-between items-stretch py-8 px-6 xm:px-24 lg:px-36 xl:px-48 gap-4'>
                 <div className="w-full flex justify-center items-center">
                     {/* Logo  */}
                     <Image className='w-30 h-30 object-contain object-center brightness-150' src="/logo.png" height={200} width={200} alt='Alee Conseil-mobile' />
