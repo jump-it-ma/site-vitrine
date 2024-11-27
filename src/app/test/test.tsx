@@ -30,7 +30,7 @@ export default function Homepage({}: Props) {
 
       <div className="relative flex flex-col justify-start items-center gap-9 mb-9 w-[95%] md:w-11/12 background-logo">
         <Image
-          src="/logo2.png"
+          src="/logo.png"
           className="w-48 xs:w-96 sm:w-[512px] h-48 xs:h-96 sm:h-[512px] absolute opacity-[.03] -rotate-[23deg] left-0 md:left-16 top-36 xs:top-12 z-0"
           width={512}
           height={512}
