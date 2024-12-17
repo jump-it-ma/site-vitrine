@@ -607,4 +607,151 @@ export const formationsData: Formation[] = [
     duration: 14,
     image_url: `/Formations/appium.png`,
   },
+  {
+    formation_id: `uipath-debutant`,
+    title: `UiPath débutants`,
+    hero: `Automatisation des workflows simples avec UiPath`,
+    description: `Cette formation a pour but de permettre aux participants de découvrir les concepts fondamentaux de l'automatisation avec UiPath et de devenir autonomes dans la création de workflows simples.`,
+    objectives: [
+      `Comprendre les bases de l'automatisation robotique des processus (RPA)`,
+      `Découvrir l’environnement UiPath Studio et ses outils`,
+      `Apprendre à concevoir, développer et exécuter des robots simples`,
+      `Connaître les bonnes pratiques en matière de conception de workflows`,
+    ],
+    program: [
+      {
+        title: `Introduction à l’automatisation RPA`,
+        parts: [
+          `Qu'est-ce que la RPA ?`,
+          `Les avantages de l’automatisation`,
+          `Les différents outils RPA du marché`,
+        ],
+      },
+      {
+        title: `Prise en main d’UiPath`,
+        parts: [
+          `Installation et configuration d’UiPath Studio`,
+          `Exploration de l’interface utilisateur`,
+          `Introduction à UiPath Assistant`,
+        ],
+      },
+      {
+        title: `Création de workflows simples`,
+        parts: [
+          `Comprendre les activités de base (Assign, Write Line, Input Dialog)`,
+          `Automatisation d’une tâche simple avec Excel`,
+          `Gestion des erreurs et débogage`,
+          `Atelier pratique : Créer un robot pour traiter des fichiers`,
+        ],
+      },
+      {
+        title: `Gestion des données`,
+        parts: [
+          `Variables et arguments`,
+          `Types de données en UiPath`,
+          `Manipulation des tableaux et des collections`,
+        ],
+      },
+      {
+        title: `Introduction à l’automatisation UI`,
+        parts: [
+          `Identifier des éléments UI avec UiPath`,
+          `Enregistrement et lecture`,
+          `Gestion des actions clavier et souris`,
+        ],
+      },
+      {
+        title: `Publication et exécution`,
+        parts: [
+          `Publier un projet`,
+          `Exécuter un robot via UiPath Assistant`,
+          `Notions sur Orchestrateur`,
+        ],
+      },
+    ],
+    targets: [
+      `Débutants en RPA`,
+      `Analystes métiers`,
+      `Employés souhaitant optimiser leurs processus`,
+      `Toute personne intéressée par l’automatisation de tâches répétitives`,
+    ],
+    prerequisites: [
+      `Notions de base en informatique`,
+      `Connaissance de Microsoft Office (Excel, Word)`,
+    ],
+    price: 4250,
+    duration: 14,
+    image_url: `/Formations/uipath.png`,
+  },
+  {
+    formation_id: `uipath-advanced`,
+    title: `UiPath avancé`,
+    hero: `Automatisation des workflows complexes avec UiPath`,
+    description: `Cette formation avancée s\'adresse aux utilisateurs ayant déjà des bases en RPA avec UiPath et souhaitant 
+    approfondir leurs compétences pour concevoir des workflows complexes et optimiser l’intégration avec d’autres systèmes`,
+    objectives: [
+      `Maîtriser les fonctionnalités avancées d’UiPath Studio`,
+      `Automatiser des processus complexes et gérer les exceptions`,
+      `Intégrer UiPath avec des outils externes (bases de données, API, SAP)`,
+      `Exploiter UiPath Orchestrator pour la gestion et la supervision des robots`,
+    ],
+    program: [
+      {
+        title: `Rappel des concepts essentiels`,
+        parts: [
+          `Variables, arguments, et types de données complexes`,
+          `Gestion des exceptions`,
+          `Utilisation des événements`,
+        ],
+      },
+      {
+        title: `Automatisation avancée`,
+        parts: [
+          `Introduction au ReFramework`,
+          `Comprendre la structure modulaire du ReFramework`,
+          `Mise en place des workflows Init, Get Transaction Data, Process et End Process`,
+          `Atelier pratique : Implémentation d’un processus complexe avec le ReFramework`,
+        ],
+      },
+      {
+        title: `Intégration avec des systèmes tiers`,
+        parts: [
+          `Utilisation des activités API (HTTP Request, JSON)`,
+          `Connexion aux bases de données (Query, Transactions)`,
+          `Intégration avec des outils ERP comme SAP`,
+        ],
+      },
+      {
+        title: `Orchestrateur et gestion des robots`,
+        parts: [
+          `Présentation d’UiPath Orchestrateur`,
+          `Gestion des environnements et des queues`,
+          `Planification et supervision des robots`,
+          `Atelier pratique : Déployer un processus sur Orchestrateur`,
+        ],
+      },
+      {
+        title: `Optimisation et bonnes pratiques`,
+        parts: [
+          `Conception modulaire et réutilisable`,
+          `Optimisation des workflows (performances)`,
+          `Rédaction de la documentation technique`,
+        ],
+      },
+    ],
+    targets: [
+      `Développeurs RPA`,
+      `Administrateurs RPA`,
+      `Analystes techniques`,
+      `Toute personne souhaitant se spécialiser en automatisation avancée`,
+    ],
+    prerequisites: [
+      `Connaissance de base d’UiPath Studio`,
+      `Notions de programmation (C#, VB.Net, ou Python)`,
+      `Compréhension des processus métiers`,
+    ],
+    price: 5350,
+    duration: 14,
+    image_url: `/Formations/uipath.png`,
+  },
 ];
