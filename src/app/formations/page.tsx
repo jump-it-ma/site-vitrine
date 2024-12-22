@@ -2,12 +2,13 @@ import { Lato, Montserrat } from "next/font/google";
 import Script from "next/script";
 import { Graph } from "schema-dts";
 import Footer from "../../components/Footer";
-import FormationCard from "../../components/Formation/FormationCard";
 import Navbar from "../../components/Navbar";
 import ReturnToTop from "../../components/ReturnToTop";
 import { pageMetadata } from "../../content/general";
 import { formations } from "../../content/pages";
 import { formationsData } from "../../data/formationsData";
+import { categoriesData } from "../../data/categoriesData";
+import FormationsClient from "./FormationsClient";
 
 const montserratFont = Montserrat({ subsets: ["latin"] });
 const latoFont = Lato({ weight: "400", subsets: ["latin"] });
@@ -133,6 +134,7 @@ const graph: Graph = {
 type Props = {};
 
 export default function Formations({}: Props) {
+  const categories = Array.from(new Set(formationsData.map((f) => f.category)));
   return (
     <div className="flex flex-col justify-between items-center bg-ac-gray w-full min-h-[100vh]">
       {/* Add Structured data */}
@@ -232,22 +234,10 @@ export default function Formations({}: Props) {
             </div>
             <div className="absolute w-full h-px bg-purple-600 z-10"></div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-10">
-            {formationsData.map((formation) => {
-              return (
-                <FormationCard
-                  key={formation.formation_id}
-                  formation_id={formation.formation_id}
-                  title={formation.title}
-                  hero={formation.hero ? formation.hero : ""}
-                  description={formation.description}
-                  image_url={formation.image_url}
-                  price={formation.price}
-                  duration={formation.duration}
-                />
-              );
-            })}
-          </div>
+          <FormationsClient 
+            categories={categoriesData} 
+            formationsData={formationsData} 
+          />
         </div>
       </div>
       <Footer />
