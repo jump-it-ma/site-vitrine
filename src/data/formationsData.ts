@@ -6,6 +6,7 @@ export const formationsData: Formation[] = [
   {
     formation_id: `postman`,
     title: `Postman`,
+    category: `test`,
     hero: `Apprenez à mettre en place des tests automatisés sur vos APIs avec Postman en suivant notre module alliant théorie, pratique et coaching.`,
     description: `Postman est un outil de développement d'API qui permet aux développeurs de tester, de déboguer et de documenter leurs API. La formation Postman est un programme de formation qui permet aux développeurs d'apprendre à utiliser cet outil de manière efficace.
                   La formation Postman couvre différents aspects de l'utilisation de l'outil, tels que la création de requêtes HTTP, l'envoi de données, la validation des réponses et la gestion des environnements. Les développeurs apprennent également à utiliser des fonctionnalités avancées telles que la collaboration en équipe, l'automatisation des tests et la génération de rapports.
@@ -70,6 +71,7 @@ export const formationsData: Formation[] = [
   {
     formation_id: `cypress`,
     title: `Cypress`,
+    category: `test`,
     hero: `Apprends à écrire des tests rapide et stable, du back comme du front end. Cypress est un outil d'automatisation de tests incontournable de nos jours pour les projets de développement logiciel.`,
     description: `Découvrez notre formation sur Cypress, le framework de tests end-to-end pour les applications web. Apprenez à automatiser vos tests et à assurer la qualité de vos développements grâce à cette technologie moderne et performante. 
                   Notre programme vous permettra de maîtriser les différents aspects de Cypress, depuis l'installation jusqu'à l'écriture de scénarios complets en passant par la gestion des assertions et des commandes. 
@@ -134,6 +136,7 @@ export const formationsData: Formation[] = [
   {
     formation_id: `robot-framework`,
     title: `Robot Framework`,
+    category: `test`,
     hero: `Robot Framework est un framework générique et open source qui permet d'automatiser facilement les tests d'acceptation.`,
     description: `Robot Framework est un framework open-source utilisé pour l'automatisation des tests logiciels. Il permet de créer des tests automatisés pour différents types d'applications, tels que les applications web, les applications de bureau et les applications mobiles.
                   Robot Framework utilise une syntaxe simple et facile à apprendre pour écrire des tests, basée sur le langage naturel anglais. Il prend en charge différents types de tests tels que les tests unitaires, les tests fonctionnels, les tests de performance et les tests d'acceptation.
@@ -196,6 +199,7 @@ export const formationsData: Formation[] = [
   {
     formation_id: `playwright`,
     title: `Playwright`,
+    category: `test`,
     hero: `Apprends à écrire des tests rapide et stable, du back comme du front end. Playwright est un outil d'automatisation de tests incontournable de nos jours pour les projets de développement logiciel.`,
     description: `Découvrez les possibilités passionnantes de l’automatisation de tests web avec notre formation approfondie axée sur l’utilisation de Playwright.
                   Cette formation pratique est conçue pour les professionnels qui souhaitent maîtriser l’automatisation des tests pour les applications web, en mettant en avant les fonctionnalités avancées et intuitives de Playwright.`,
@@ -275,6 +279,7 @@ export const formationsData: Formation[] = [
   {
     formation_id: `selenium`,
     title: `Selenium`,
+    category: `test`,
     hero: `Notre formation Selenium WebDriver vous enseignera comment utiliser Selenium pour automatiser vos tests de développement.`,
     description: `Plongez au cœur de l’automatisation web de niveau avancé avec notre formation dédiée exclusivement à Selenium WebDriver. Cette formation intensive vous permettra de maîtriser les compétences essentielles de Selenium WebDriver, en mettant l’accent sur son application dans l’automatisation de tests et de tâches spécifiques.
                   Que vous soyez un professionnel du développement, un testeur logiciel ou un passionné d’automatisation, cette formation en Selenium WebDriver vous fournira une expertise précieuse pour automatiser efficacement les tâches web et améliorer votre productivité. Rejoignez notre formation dès maintenant et explorez les possibilités passionnantes de l’automatisation web avec Selenium WebDriver.
@@ -331,6 +336,7 @@ export const formationsData: Formation[] = [
   {
     formation_id: `soapui`,
     title: `SoapUI`,
+    category: `test`,
     hero: `Apprenez à mettre en place des tests automatisés sur vos APIs avec SoapUI, l'outil de test d'API Open Source le plus largement utilisé pour les API SOAP et REST.`,
     description: `Explorez les bases de l’automatisation des tests API avec notre formation en utilisant SoapUI.
                   Cette formation pratique est conçue pour les testeurs qui souhaitent acquérir les compétences nécessaires pour automatiser les tests de services web et d’API en utilisant l’outil SoapUI.`,
@@ -409,6 +415,7 @@ export const formationsData: Formation[] = [
   {
     formation_id: `reactjs`,
     title: `ReactJS`,
+    category: `dev`,
     hero: `Construire des applications ReactJS : Un formation étape par étape`,
     description: `Cette formation d'initiation à ReactJS vous apprend à créer des interfaces utilisateur interactives en utilisant les bases de React. Vous découvrirez les composants, la gestion de l'état et les hooks, avec des exercices pratiques pour construire vos premières applications React.`,
     objectives: [
@@ -537,6 +544,7 @@ export const formationsData: Formation[] = [
   {
     formation_id: `appium`,
     title: `Appium`,
+    category: `test`,
     hero: `Automatisation des tests mobiles avec Appium : De la théorie à la pratique`,
     description: `Cette formation vous permettra de découvrir et maîtriser l'automatisation des tests pour les applications mobiles avec Appium. 
     Vous apprendrez à configurer et à utiliser Appium pour tester des applications Android et iOS, en automatisant les interactions utilisateur et en validant le bon fonctionnement des fonctionnalités. 
@@ -610,6 +618,7 @@ export const formationsData: Formation[] = [
   {
     formation_id: `uipath-debutant`,
     title: `UiPath débutants`,
+    category: `rpa`,
     hero: `Automatisation des workflows simples avec UiPath`,
     description: `Cette formation a pour but de permettre aux participants de découvrir les concepts fondamentaux de l'automatisation avec UiPath et de devenir autonomes dans la création de workflows simples.`,
     objectives: [
@@ -686,6 +695,7 @@ export const formationsData: Formation[] = [
   {
     formation_id: `uipath-advanced`,
     title: `UiPath avancé`,
+    category: `rpa`,
     hero: `Automatisation des workflows complexes avec UiPath`,
     description: `Cette formation avancée s\'adresse aux utilisateurs ayant déjà des bases en RPA avec UiPath et souhaitant 
     approfondir leurs compétences pour concevoir des workflows complexes et optimiser l’intégration avec d’autres systèmes`,

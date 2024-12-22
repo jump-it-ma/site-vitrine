@@ -31,6 +31,7 @@ export interface User {
 export interface Formation {
   formation_id: string;
   title: string;
+  category: string;
   hero: string;
   description: string;
   objectives: string[];
@@ -43,6 +44,13 @@ export interface Formation {
   price: number;
   duration: number;
   image_url: string;
+}
+
+export interface Category{
+  category_id: string;
+  name: string;
+  description: string;
+  image: string
 }
 
 export interface DevisInputs {
