@@ -57,20 +57,19 @@ const FormationsClient: React.FC<FormationsClientProps> = ({
                 </div>
             ) : (
                 <div className="py-8 px-4">
-                    <div className="flex justify-between items-center">
+                    <div className="xm:relative flex flex-col xm:flex-row justify-center items-center ">
                         <div
                             onClick={() => setSelectedCategory(null)}
-                            className="cursor-pointer flex justify-between gap-3 items-center bg-gray-200 px-4 py-2 rounded-lg mb-6"
+                            className="xm:absolute left-0 cursor-pointer flex justify-between gap-1 xs:gap-3 items-center bg-gray-200 px-2 lg:px-4 py-1 lg:py-2 rounded-lg mb-6"
                         >
-                            <GrReturn size={18} />
-                            <p className="text-gray-800 text-base font-bold">Retour aux Categories</p>
+                            <GrReturn className="h-3 xs:h-5 w-3 xs:w-5" />
+                            <p className="text-gray-800 text-xs xs:text-sm font-bold w-20 lg2:w-24 lg2:text-base xl:w-full">Retour aux Categories</p>
                         </div>
-                        <h2 className="text-3xl font-bold text-center mb-8">
+                        <h2 className="text-lg xm:text-2xl lg:text-3xl font-bold text-center mb-8">
                             Formations de {selectedCategory.name}
                         </h2>
-                        <div></div>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {filteredFormations.map((formation) => (
                             <FormationCard
                                 key={formation.formation_id}
