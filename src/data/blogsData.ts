@@ -22,6 +22,13 @@ const users: User[] = [
     image: `https://i.ibb.co/9wGJxdT/4140048.png`,
     contact: `https://www.linkedin.com/company/alee-conseil-ma/`,
   },
+  {
+    name: `Ayoub Elmenssouri`,
+    job: `Ingénieur QA - Automatisation des tests`,
+    description: ``,
+    image: `https://i.ibb.co/9wGJxdT/4140048.png`,
+    contact: `https://www.linkedin.com/in/ayoub-elmenssouri-964552262/`,
+  },
 ];
 
 export const blogsData: Blog[] = [
@@ -626,5 +633,194 @@ describe('API Tests', () => {
     ],
     author: users[2],
     date: new Date(`2023-07-30`),
+  },
+  {
+    id: "reporting-notion",
+    title:
+      "Centraliser vos rapports de test dans Notion : simple, gratuit et collaboratif",
+    body: [
+      {
+        section: 1,
+        type: "paragraph",
+        text: "Le reporting des tests est souvent réservé aux équipes techniques. Les outils comme Allure, ReportPortal ou TestRail sont puissants, mais peu accessibles pour les non-développeurs . Pourquoi ne pas centraliser automatiquement les résultats dans un outil simple, gratuit et accessible par tous ?",
+      },
+      {
+        section: 2,
+        type: "header2",
+        text: "🌟 Problèmes fréquents",
+      },
+      {
+        section: 3,
+        type: "itemize",
+        items: [
+          {
+            title: "Rapports peu lisibles",
+            body: "Générés en HTML, JSON ou XML, ils sont difficiles à comprendre pour les profils non techniques.",
+          },
+          {
+            title: "Données dispersées",
+            body: "Les résultats sont éparpillés dans plusieurs outils ou pipelines, ce qui complique leur analyse.",
+          },
+          {
+            title: "Feedback lent",
+            body: "Les anomalies ne sont pas toujours visibles rapidement, ralentissant les corrections.",
+          },
+          {
+            title: "Solutions coûteuses",
+            body: "Les outils de reporting avancés nécessitent souvent des licences ou une infrastructure complexe.",
+          },
+        ],
+      },
+      {
+        section: 4,
+        type: "header2",
+        text: "🚀 Pourquoi choisir Notion ?",
+      },
+      {
+        section: 5,
+        type: "itemize",
+        items: [
+          {
+            title: "Simple et collaboratif",
+            body: "Notion offre une interface claire, accessible à tous les profils (QA, Dev, PO, etc.).",
+          },
+          {
+            title: "Intégration facile",
+            body: "L'API officielle `@notionhq/client` permet d'envoyer des données avec quelques lignes de code en Node.js.",
+          },
+          {
+            title: "Base de données flexible",
+            body: "Filtres, tris, vues personnalisées : organisez vos résultats comme vous le souhaitez.",
+          },
+          {
+            title: "Visualisation intégrée",
+            body: "Ajoutez des graphiques et des vues dynamiques directement dans Notion.",
+          },
+          {
+            title: "Zéro coût",
+            body: "Notion est gratuit pour un usage individuel ou d’équipe de petite taille.",
+          },
+        ],
+      },
+      {
+        section: 6,
+        type: "header2",
+        text: "🧑‍💻 Comment ça fonctionne ?",
+      },
+      {
+        section: 7,
+        type: "paragraph",
+        text: "Un petit script Node.js lit les résultats de vos tests (ex. `cypress-report.json`) à chaque exécution, et les envoie vers une base Notion via l’API. Alimente un tableau qui se met à jour et s’enrichit à chaque nouvelle exécution.",
+      },
+
+      {
+        section: 9,
+        type: "paragraph",
+        text: "Installez les dépendances nécessaires à l’envoi des données vers Notion :",
+      },
+      {
+        section: 10,
+        type: "code",
+        language: "bash",
+        code: "npm install @notionhq/client dotenv",
+      },
+      {
+        section: 11,
+        type: "code",
+        language: "typescript",
+        code: `import * as fs from \"fs\";
+import * as dotenv from \"dotenv\";
+import { Client } from \"@notionhq/client\";
+
+dotenv.config();
+const notion = new Client({ auth: process.env.NOTION_TOKEN });
+const databaseId = process.env.NOTION_DB_ID;
+
+async function sendReportToNotion() {
+  try {
+    const raw = fs.readFileSync(\"cypress-report.json\", \"utf8\");
+    const data = JSON.parse(raw);
+    const stats = data.stats;
+    const status = stats.failures > 0 ? \"Failed\" : \"Passed\";
+    const environment = process.env.ENVIRONMENT || \"staging\";
+
+    await notion.pages.create({
+      parent: { database_id: databaseId },
+      properties: {
+        Status: { select: { name: status } },
+        Date: { date: { start: new Date().toISOString() } },
+        Total_Tests: { number: stats.tests || 0 },
+        Passed_Tests: { number: stats.passes || 0 },
+        Failed_Tests: { number: stats.failures || 0 },
+        Environment: { select: { name: environment } },
+      },
+    });
+  } catch (error) {
+    console.error(\"Erreur lors de l'envoi du rapport à Notion :\", error);
+  }
+}
+
+sendReportToNotion();`,
+      },
+      {
+        section: 12,
+        type: "paragraph",
+        text: "Alimente un tableau qui se met à jour et s’enrichit à chaque nouvelle exécution.",
+      },
+      {
+        section: 13,
+        type: "image",
+        url: "/Blog/automation-repport-1.png",
+      },
+      {
+        section: 14,
+        type: "paragraph",
+        text: "Permet de créer des vues dynamiques : par exemple, afficher uniquement les tests échoués aujourd’hui, ou les régressions critiques à corriger en priorité.",
+      },
+      {
+        section: 15,
+        type: "image",
+        url: "/Blog/automation-repport-3.png",
+      },
+      {
+        section: 16,
+        type: "paragraph",
+        text: "Affiche des graphiques pour visualiser les statistiques clés : taux de réussite, durée moyenne, tendances dans le temps.",
+      },
+      {
+        section: 7,
+        type: "image",
+        url: "/Blog/automation-repport-2.png",
+      },
+      {
+        section: 18,
+        type: "header2",
+        text: "🤝 Bénéfices pour l’équipe",
+      },
+      {
+        section: 19,
+        type: "itemize",
+        items: [
+          {
+            title: "Résultats visibles par tous",
+            body: "Plus besoin d’accès à un outil technique pour voir l’état des tests.",
+          },
+          {
+            title: "Réaction rapide",
+            body: "Les anomalies sont visibles en temps réel, permettant des corrections immédiates.",
+          },
+          {
+            title: "Suivi qualité facilité",
+            body: "Le management peut suivre les KPIs qualité facilement, sans demande au QA.",
+          },
+          {
+            title: "Culture qualité partagée",
+            body: "Toute l’équipe peut contribuer au maintien de la stabilité du produit.",
+          },
+        ],
+      },
+    ],
+    author: users[3],
+    date: new Date("2025-05-23"),
   },
 ];
