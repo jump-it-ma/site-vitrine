@@ -1,66 +1,94 @@
-import {
-  IBM_Plex_Sans,
-  IBM_Plex_Sans_Condensed,
-  Inter,
-  Jost,
-  K2D,
-  Lato,
-  Montserrat,
-  Poppins,
-  Roboto,
-} from "next/font/google";
+import localFont from "next/font/local";
 
-// Variable fonts (no weight needed usually, but can be specified)
-export const montserratFont = Montserrat({
-  subsets: ["latin"],
+// Variable fonts
+export const montserratFont = localFont({
+  src: "../../public/fonts/Montserrat-Variable.woff2",
   display: "swap",
 });
 
-
-
-export const jostFont = Jost({
-  subsets: ["latin"],
+export const jostFont = localFont({
+  src: "../../public/fonts/Jost-Variable.woff2",
   display: "swap",
 });
 
-// Static fonts (must specify weights)
-export const latoFont = Lato({
-  weight: ["400", "700"],
-  subsets: ["latin"],
+// Static fonts
+export const latoFont = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Lato-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Lato-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
   display: "swap",
 });
 
-export const robotoFont = Roboto({
-  weight: ["400"],
-  subsets: ["latin"],
+export const robotoFont = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Roboto-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+  ],
   display: "swap",
 });
 
-export const ibmFont = IBM_Plex_Sans({
-  weight: ["700"],
-  subsets: ["latin"],
+export const ibmFont = localFont({
+  src: [
+    {
+      path: "../../public/fonts/IBMPlexSans-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
   display: "swap",
 });
 
-export const ibmCondensedFont = IBM_Plex_Sans_Condensed({
-  weight: ["700"],
-  subsets: ["latin"],
+export const ibmCondensedFont = localFont({
+  src: [
+    {
+      path: "../../public/fonts/IBMPlexSansCondensed-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
   display: "swap",
 });
 
-export const poppinsFont = Poppins({
-  weight: ["400", "600"],
-  subsets: ["latin"],
+export const poppinsFont = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Poppins-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Poppins-SemiBold.woff2",
+      weight: "600",
+      style: "normal",
+    },
+  ],
   display: "swap",
 });
 
-export const k2dFont = K2D({
-    weight: ["400"],
-    subsets: ["latin"],
-    display: 'swap',
+export const k2dFont = localFont({
+  src: [
+    {
+      path: "../../public/fonts/K2D-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  display: "swap",
 });
 
-export const interFont = Inter({
-    subsets: ["latin"],
-    display: 'swap',
+export const interFont = localFont({
+  src: "../../public/fonts/Inter-Variable.woff2",
+  display: "swap",
 });
