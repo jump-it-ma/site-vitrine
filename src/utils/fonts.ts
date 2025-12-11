@@ -16,12 +16,7 @@ export const montserratFont = Montserrat({
   display: "swap",
 });
 
-// Explicit weight for specific usage if needed (e.g. matching existing variable names)
-export const montserratBoldFont = Montserrat({
-  weight: "700",
-  subsets: ["latin"],
-  display: "swap",
-});
+
 
 export const jostFont = Jost({
   subsets: ["latin"],

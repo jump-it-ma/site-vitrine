@@ -1,9 +1,4 @@
-import {
-  ibmFont,
-  latoFont,
-  montserratBoldFont,
-  montserratFont,
-} from "@/utils/fonts";
+import { ibmFont, latoFont, montserratFont } from "@/utils/fonts";
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
@@ -319,7 +314,7 @@ export default function Home() {
         >
           <h2
             className={
-              montserratBoldFont.className +
+              montserratFont.className +
               " font-bold text-4xl text-black text-left"
             }
           >
@@ -350,7 +345,7 @@ export default function Home() {
           <div className="flex flex-col justify-start items-center gap-4 w-full">
             <h2
               className={
-                montserratBoldFont.className +
+                montserratFont.className +
                 " font-bold text-4xl text-black text-left"
               }
             >

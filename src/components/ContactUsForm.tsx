@@ -3,7 +3,7 @@
 import { contactus } from "@/content/general";
 import { ContactUsPayload } from "@/utils/interfaces";
 
-import { montserratBoldFont, montserratFont } from "@/utils/fonts";
+import { montserratFont } from "@/utils/fonts";
 import { useRouter } from "next/navigation";
 import { ChangeEvent, useState } from "react";
 
@@ -247,7 +247,7 @@ export default function ContactUsForm({}: Props) {
         {!loading ? (
           <p
             className={
-              montserratBoldFont.className +
+              montserratFont.className +
               " text-white text-base font-bold text-center uppercase"
             }
           >

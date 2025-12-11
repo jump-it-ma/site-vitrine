@@ -1,7 +1,7 @@
 import { devis } from "@/content/general";
 import { formationsData } from "@/data/formationsData";
 
-import { montserratBoldFont, montserratFont } from "@/utils/fonts";
+import { montserratFont } from "@/utils/fonts";
 import { useRouter } from "next/navigation";
 import { ChangeEvent, useState } from "react";
 
@@ -161,7 +161,7 @@ export default function DevisForm({ formation, formationDate }: Props) {
       <div className="flex flex-col justify-start items-start w-full gap-3">
         <h2
           className={
-            montserratBoldFont.className +
+            montserratFont.className +
             " font-bold text-4xl text-purple-600 text-left"
           }
         >
@@ -344,7 +344,7 @@ export default function DevisForm({ formation, formationDate }: Props) {
         {!loading ? (
           <p
             className={
-              montserratBoldFont.className +
+              montserratFont.className +
               " text-white text-base font-bold text-center uppercase"
             }
           >

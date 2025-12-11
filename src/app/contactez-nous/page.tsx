@@ -11,7 +11,7 @@ import ReturnToTop from "../../components/ReturnToTop";
 import { calendlyEmbed } from "../../utils/constants";
 import Script from "next/script";
 
-import { montserratBoldFont } from "@/utils/fonts";
+import { montserratFont } from "@/utils/fonts";
 
 type Props = {};
 
@@ -52,7 +52,7 @@ export default function ContactUs({}: Props) {
       <div className="flex flex-col justify-center items-center gap-4 w-full pt-8 bg-ac-gray -translate-y-6 rounded-t-3xl ">
         <h2
           className={
-            montserratBoldFont.className +
+            montserratFont.className +
             " font-bold text-4xl text-black text-left"
           }
         >
