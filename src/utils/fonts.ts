@@ -30,19 +30,19 @@ export const jostFont = Jost({
 
 // Static fonts (must specify weights)
 export const latoFont = Lato({
-  weight: ["300", "400", "700", "900"],
+  weight: ["400", "700"],
   subsets: ["latin"],
   display: "swap",
 });
 
 export const robotoFont = Roboto({
-  weight: ["300", "400", "500", "700"],
+  weight: ["400"],
   subsets: ["latin"],
   display: "swap",
 });
 
 export const ibmFont = IBM_Plex_Sans({
-  weight: ["400", "500", "600", "700"],
+  weight: ["700"],
   subsets: ["latin"],
   display: "swap",
 });
@@ -54,7 +54,7 @@ export const ibmCondensedFont = IBM_Plex_Sans_Condensed({
 });
 
 export const poppinsFont = Poppins({
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "600"],
   subsets: ["latin"],
   display: "swap",
 });
