@@ -162,8 +162,6 @@ export default function Page({ params }: Props) {
         image: formation.image_url,
         offers: {
           "@type": "Offer",
-          price: formation.price,
-          priceCurrency: currency,
           availability: "https://schema.org/InStock",
           validFrom: nextDates[0],
           validThrough: nextDates[1],
@@ -184,8 +182,6 @@ export default function Page({ params }: Props) {
           image: formation.image_url,
           offers: {
             "@type": "Offer",
-            price: formation.price,
-            priceCurrency: currency,
             availability: "https://schema.org/InStock",
             validFrom: nextDates[0],
             validThrough: nextDates[1],
@@ -240,8 +236,6 @@ export default function Page({ params }: Props) {
         },
         offers: {
           "@type": "Offer",
-          price: formation.price,
-          priceCurrency: currency,
           priceValidUntil: nextDates[1],
           availability: "https://schema.org/InStock",
           validFrom: nextDates[0],
@@ -667,19 +661,6 @@ export default function Page({ params }: Props) {
                 " flex flex-col xm:flex-row justify-between items-stretch w-full gap-8 xm:gap-0"
               }
             >
-              <div className="flex flex-col justify-start items-center gap-4 xm:gap-10 xm:max-w-[125px]">
-                <div className="flex justify-center items-center gap-2.5">
-                  <RiCopperCoinLine className="fill-purple-600" size={25} />
-                  <p className="text-xl font-bold uppercase text-black text-center">
-                    Prix
-                  </p>
-                </div>
-                <p className="text-base font-medium text-center text-black uppsercase whitespace-normal">
-                  <span className="font-bold">{formation.price}</span>{" "}
-                  <span>{currency}</span> HT / personne
-                </p>
-              </div>
-              <div className="hidden xm:block w-0.5 bg-[#888888]"></div>
               <div className="flex flex-col justify-start items-center gap-4 xm:gap-10 xm:max-w-[125px]">
                 <div className="flex justify-center items-center gap-2.5">
                   <BiTimeFive className="fill-purple-600" size={25} />

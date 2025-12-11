@@ -1,5 +1,4 @@
-import { currency, dailyHours } from "@/utils/constants";
-
+import { dailyHours } from "@/utils/constants";
 import { latoFont, montserratFont } from "@/utils/fonts";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,9 +7,7 @@ type Props = {
   formation_id: string;
   title: string;
   hero: string;
-  description: string;
   image_url: string;
-  price: number;
   duration: number;
 };
 
@@ -19,99 +16,69 @@ export default function FormationCard({
   title,
   hero,
   image_url,
-  price,
   duration,
 }: Props) {
   return (
     <Link
-      className="
-                  flex flex-col justify-between items-center w-full
-                  bg-white py-5 px-6 
-                  rounded-xl border shadow-formation-unhover xm:hover:shadow-formation-hover
-                  transition ease-in-out duration-100 hover:duration-300 
-                  xm:hover:scale-105 hover:z-50 
-                  max-w-[270px] fold:max-w-[320px]"
       href={"/formations/" + formation_id}
+      className="group relative flex flex-col justify-between w-full max-w-[320px] bg-white rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 border border-zinc-100"
     >
-      <div
-        className="
-                  flex flex-col justify-between items-center w-full
-                  gap-6
-                  transition ease-in-out duration-100 hover:duration-300"
-      >
-        <div className="flex flex-col justify-start items-center gap-3 w-full">
-          <div className="flex justify-between items-center w-full">
+      <div className="p-6 flex flex-col gap-4">
+        {/* Header with Icon and Title */}
+        <div className="flex items-start justify-between gap-4">
+          <div className="relative w-16 h-16 shrink-0 md:w-[70px] md:h-[70px] bg-purple-50 rounded-xl flex items-center justify-center p-2 group-hover:scale-105 transition-transform duration-300">
             <Image
-              className="w-16 fold:w-[75px] lg:w-16 lg2:w-[75px] h-16 fold:h-[75px] lg:h-16 lg2:h-[75px]"
               src={image_url}
-              width={75}
-              height={75}
+              width={50}
+              height={50}
               alt={title}
+              className="object-contain w-full h-full"
             />
-            <h1
-              className={
-                montserratFont.className +
-                " text-2xl fold:text-3xl lg:text-2xl lg2:text-3xl text-purple-600 text-left font-medium w-min"
-              }
-            >
-              {title}
-            </h1>
           </div>
-          <div className="bg-purple-600 h-0.5 w-full"></div>
-          <h2
-            className={
-              latoFont.className +
-              " text-black text-base text-center font-medium line-clamp-2"
-            }
+          <div className="flex flex-col items-end">
+            <span
+              className={`${montserratFont.className} text-xs font-semibold text-purple-600 bg-purple-50 px-2 py-1 rounded-md`}
+            >
+              Formation
+            </span>
+          </div>
+        </div>
+
+        {/* Title and Description */}
+        <div className="flex flex-col gap-2">
+          <h3
+            className={`${montserratFont.className} text-xl font-bold text-gray-900 group-hover:text-purple-600 transition-colors`}
+          >
+            {title}
+          </h3>
+          <p
+            className={`${latoFont.className} text-sm text-gray-500 line-clamp-3 leading-relaxed`}
           >
             {hero}
-          </h2>
+          </p>
         </div>
-        <div className="flex flex-col justify-start items-stretch gap-3 w-full">
-          <div className="flex justify-start items-center gap-6 w-full">
-            <Image
-              src="/Formations/coin.png"
-              width={50}
-              height={50}
-              alt="Prix"
-            />
-            <p
-              className={
-                montserratFont.className +
-                " font-medium text-black text-lg text-left"
-              }
-            >
-              <span>{price}</span> <span>{currency}</span> HT / personne
-            </p>
-          </div>
-          <div className="flex justify-start items-center gap-6 w-full">
-            <Image
-              src="/Formations/hourglass.png"
-              width={50}
-              height={50}
-              alt="Durée"
-            />
-            <p
-              className={
-                montserratFont.className +
-                " font-medium text-black text-lg text-left"
-              }
-            >
-              <span>{Math.ceil(duration / dailyHours)}</span> jours (
-              <span>{duration}</span> heures)
-            </p>
-          </div>
-          <div className="flex justify-center items-center">
-            <p
-              className={
-                montserratFont.className +
-                " font-medium text-base text-center text-[#5C8BFC] underline"
-              }
-            >
-              Voir plus
-            </p>
-          </div>
+      </div>
+
+      {/* Footer with Metadata */}
+      <div className="px-6 py-4 bg-gray-50/50 border-t border-gray-100 flex items-center justify-between mt-auto">
+        <div className="flex items-center gap-2 text-gray-600">
+          <Image
+            src="/Formations/hourglass.png"
+            width={18}
+            height={18}
+            alt="Durée"
+            className="opacity-60"
+          />
+          <span className={`${montserratFont.className} text-sm font-medium`}>
+            {Math.ceil(duration / dailyHours)} jours ({duration}h)
+          </span>
         </div>
+
+        <span
+          className={`${montserratFont.className} text-sm font-bold text-purple-600 group-hover:underline decoration-2 underline-offset-4`}
+        >
+          Découvrir
+        </span>
       </div>
     </Link>
   );

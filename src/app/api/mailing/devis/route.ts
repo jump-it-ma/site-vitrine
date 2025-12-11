@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
                 subject: 'Reçu de devis', 
                 react: DevisEmail({
                     formation: data.formation,
-                    price: data.price,
+
                     duration: data.duration,
                     entreprise: data.entreprise,
                     fullname: data.fullname,

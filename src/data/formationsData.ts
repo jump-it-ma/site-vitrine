@@ -64,7 +64,7 @@ export const formationsData: Formation[] = [
       `Connaissances en test logiciel`,
       `Une expérience avec un langage de programmation est un plus`,
     ],
-    price: 2850,
+
     duration: 14,
     image_url: `/Formations/postman.png`,
   },
@@ -129,7 +129,7 @@ export const formationsData: Formation[] = [
       `Connaissances en test logiciel`,
       `Une expérience avec un langage de programmation est un plus`,
     ],
-    price: 3250,
+
     duration: 14,
     image_url: `/Formations/cypress.png`,
   },
@@ -192,7 +192,7 @@ export const formationsData: Formation[] = [
       `Connaissances en test logiciel`,
       `Une expérience avec un langage de programmation est un plus est une nouvelle ligne`,
     ],
-    price: 2950,
+
     duration: 14,
     image_url: `/Formations/robot-framework.png`,
   },
@@ -272,7 +272,7 @@ export const formationsData: Formation[] = [
       `Familiarité avec les Technologies Web`,
       `Notions de Tests Logiciels`,
     ],
-    price: 3150,
+
     duration: 14,
     image_url: `/Formations/playwright.png`,
   },
@@ -329,7 +329,7 @@ export const formationsData: Formation[] = [
       `Familiarité avec un langage de programmation comme Java, Python, C#, PHP ou Javascript`,
       `Compréhension des tests logiciels`,
     ],
-    price: 3250,
+
     duration: 14,
     image_url: `/Formations/selenium.png`,
   },
@@ -408,7 +408,7 @@ export const formationsData: Formation[] = [
       `Compétences de Navigation et d’Interface Utilisateur`,
       `Familiarité avec les Services Web et API (Optionnel)`,
     ],
-    price: 2550,
+
     duration: 14,
     image_url: `/Formations/soapui.png`,
   },
@@ -537,7 +537,7 @@ export const formationsData: Formation[] = [
       `Notions de base en HTML/CSS`,
       `Familiarité avec un IDE`,
     ],
-    price: 5450,
+
     duration: 28,
     image_url: `/Formations/reactjs.png`,
   },
@@ -611,7 +611,7 @@ export const formationsData: Formation[] = [
       `Notions de base sur les applications mobiles`,
       `Aucun prérequis spécifique à Appium n’est nécessaire`,
     ],
-    price: 3950,
+
     duration: 14,
     image_url: `/Formations/appium.png`,
   },
@@ -688,7 +688,7 @@ export const formationsData: Formation[] = [
       `Notions de base en informatique`,
       `Connaissance de Microsoft Office (Excel, Word)`,
     ],
-    price: 4250,
+
     duration: 14,
     image_url: `/Formations/uipath.png`,
   },
@@ -760,7 +760,7 @@ export const formationsData: Formation[] = [
       `Notions de programmation (C#, VB.Net, ou Python)`,
       `Compréhension des processus métiers`,
     ],
-    price: 5350,
+
     duration: 14,
     image_url: `/Formations/uipath.png`,
   },

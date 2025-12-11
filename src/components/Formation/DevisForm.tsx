@@ -85,7 +85,6 @@ export default function DevisForm({ formation, formationDate }: Props) {
           },
           body: JSON.stringify({
             formation: searchFormation.title,
-            price: searchFormation.price,
             duration: searchFormation.duration,
             entreprise: args.entreprise,
             fullname: args.fullname,

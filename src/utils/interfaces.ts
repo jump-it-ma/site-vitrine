@@ -41,7 +41,7 @@ export interface Formation {
   }[],
   targets: string[],
   prerequisites: string[],
-  price: number;
+
   duration: number;
   image_url: string;
 }
@@ -64,7 +64,7 @@ export interface DevisInputs {
 
 export interface DevisPayload {
   formation: string;
-  price: number;
+
   duration: number;
   entreprise: string;
   fullname: string;
