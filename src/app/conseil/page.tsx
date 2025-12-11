@@ -1,4 +1,4 @@
-import { Lato, Montserrat, Poppins } from "next/font/google";
+import { latoFont, montserratFont, poppinsFont } from "../../utils/fonts";
 import Image from "next/image";
 import AnimatedElement from "../../components/AnimatedElement";
 import ConseilCurvyLine from "../../components/Conseil/ConseilCurvyLine";
@@ -8,10 +8,6 @@ import ReturnToTop from "../../components/ReturnToTop";
 import { pageMetadata } from "../../content/general";
 import { conseil } from "../../content/pages";
 import Script from "next/script";
-
-const montserratFont = Montserrat({ subsets: ["latin"] });
-const latoFont = Lato({ weight: "400", subsets: ["latin"] });
-const poppinsFont = Poppins({ weight: "600", subsets: ["latin"] });
 
 export const metadata = {
   title: "JumpIT - Conseil",

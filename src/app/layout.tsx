@@ -1,8 +1,7 @@
 import { pageMetadata } from "@/content/general";
-import { Inter } from "next/font/google";
+import { interFont } from "@/utils/fonts";
 import { WebSite, WithContext } from "schema-dts";
 import "./globals.css";
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: pageMetadata.title,
@@ -100,7 +99,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={interFont.className}>{children}</body>
     </html>
   );
 }

@@ -1,16 +1,14 @@
 import { readableDate } from "@/utils/functions";
-import { Jost } from "next/font/google";
+import { jostFont } from "@/utils/fonts";
 import Script from "next/script";
+import { pageMetadata } from "@/content/general";
+import { blogsData } from "@/data/blogsData";
 import { Graph } from "schema-dts";
 import BlogCard from "../../components/Blog/BlogCard";
-import BlogPageTitle from "../../components/Blog/BlogPageTitle";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import ReturnToTop from "../../components/ReturnToTop";
-import { pageMetadata } from "../../content/general";
-import { blogsData } from "../../data/blogsData";
-
-const jostFont = Jost({ subsets: ["latin"] });
+import BlogPageTitle from "@/components/Blog/BlogPageTitle";
 
 export const metadata = {
   title: "JumpIT - Blogs",

@@ -1,4 +1,9 @@
-import { IBM_Plex_Sans, Lato, Montserrat } from "next/font/google";
+import {
+  ibmFont,
+  latoFont,
+  montserratBoldFont,
+  montserratFont,
+} from "@/utils/fonts";
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
@@ -14,11 +19,6 @@ import ReturnToTop from "../components/ReturnToTop";
 import { pageMetadata } from "../content/general";
 import { homepage } from "../content/pages";
 import { googleMapsEmbed } from "../utils/constants";
-
-const montserratFont = Montserrat({ weight: "400", subsets: ["latin"] });
-const latoFont = Lato({ weight: "400", subsets: ["latin"] });
-const ibmFont = IBM_Plex_Sans({ weight: "700", subsets: ["latin"] });
-const montserratBoldFont = Montserrat({ weight: "700", subsets: ["latin"] });
 
 export const metadata = {
   title: pageMetadata.title,

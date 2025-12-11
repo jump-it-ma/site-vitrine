@@ -4,15 +4,15 @@
 
 import AnimatedElement from "@/components/AnimatedElement";
 import { footer } from "@/content/general";
-import { K2D, Poppins, Roboto } from "next/font/google";
+import { k2dFont, poppinsFont, robotoFont } from "@/utils/fonts";
 import Image from "next/image";
 import Script from "next/script";
 import { AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 
 type Props = {};
-const k2d = K2D({ weight: "500", subsets: ["latin"] });
-const poppins = Poppins({ weight: "600", subsets: ["latin"] });
-const roboto = Roboto({ weight: "400", subsets: ["latin"] });
+const k2d = k2dFont;
+const poppins = poppinsFont;
+const roboto = robotoFont;
 
 export default function Homepage({}: Props) {
   return (

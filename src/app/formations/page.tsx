@@ -1,4 +1,4 @@
-import { Lato, Montserrat } from "next/font/google";
+import { latoFont, montserratFont } from "@/utils/fonts";
 import Script from "next/script";
 import { Graph } from "schema-dts";
 import Footer from "../../components/Footer";
@@ -9,9 +9,6 @@ import { formations } from "../../content/pages";
 import { formationsData } from "../../data/formationsData";
 import { categoriesData } from "../../data/categoriesData";
 import FormationsClient from "./FormationsClient";
-
-const montserratFont = Montserrat({ subsets: ["latin"] });
-const latoFont = Lato({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
   title: "JumpIT - Formations",
@@ -234,9 +231,9 @@ export default function Formations({}: Props) {
             </div>
             <div className="absolute w-full h-px bg-purple-600 z-10"></div>
           </div>
-          <FormationsClient 
-            categories={categoriesData} 
-            formationsData={formationsData} 
+          <FormationsClient
+            categories={categoriesData}
+            formationsData={formationsData}
           />
         </div>
       </div>

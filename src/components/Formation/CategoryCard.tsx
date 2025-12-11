@@ -1,7 +1,7 @@
-import { currency, dailyHours } from '@/utils/constants';
+import { currency, dailyHours } from "@/utils/constants";
 
-import { Lato, Montserrat } from 'next/font/google';
-import Image from 'next/image';
+import { latoFont, montserratFont } from "@/utils/fonts";
+import Image from "next/image";
 
 interface CategoryCardProps {
   id: string;
@@ -11,9 +11,6 @@ interface CategoryCardProps {
   onClick: () => void;
 }
 
-const montserratFont = Montserrat({ subsets: ["latin"] });
-const latoFont = Lato({ weight: "400", subsets: ["latin"] });
-
 const CategoryCard: React.FC<CategoryCardProps> = ({
   name,
   description,
@@ -21,7 +18,8 @@ const CategoryCard: React.FC<CategoryCardProps> = ({
   onClick,
 }) => {
   return (
-    <div className="
+    <div
+      className="
                   flex flex-col justify-between items-center w-full cursor-pointer
                   bg-white py-5 px-6 
                   rounded-xl border shadow-formation-unhover xm:hover:shadow-formation-hover
@@ -31,29 +29,37 @@ const CategoryCard: React.FC<CategoryCardProps> = ({
                   gap-6"
       onClick={onClick}
     >
-      <div
-        className="flex flex-col justify-between items-center gap-3 w-full h-full"
-      >
+      <div className="flex flex-col justify-between items-center gap-3 w-full h-full">
         <div className="flex flex-col justify-start items-center gap-3">
           <Image
-            className='w-16 fold:w-[75px] lg:w-16 lg2:w-[75px] h-16 fold:h-[75px] lg:h-16 lg2:h-[75px]'
+            className="w-16 fold:w-[75px] lg:w-16 lg2:w-[75px] h-16 fold:h-[75px] lg:h-16 lg2:h-[75px]"
             src={image}
             width={75}
             height={75}
-            alt={name} />
-          <h1 className={montserratFont.className + " text-lg fold:text-xl lg:text-2xl lg2:text-xl text-purple-600 text-center font-medium w-min"}>
+            alt={name}
+          />
+          <h1
+            className={
+              montserratFont.className +
+              " text-lg fold:text-xl lg:text-2xl lg2:text-xl text-purple-600 text-center font-medium w-min"
+            }
+          >
             {name}
           </h1>
         </div>
         <div className="flex flex-col justify-start items-center gap-3">
           <div className="bg-purple-600 h-0.5 w-full"></div>
-          <h2 className={latoFont.className + " text-black text-base text-center font-medium line-clamp-2"}>
+          <h2
+            className={
+              latoFont.className +
+              " text-black text-base text-center font-medium line-clamp-2"
+            }
+          >
             {description}
           </h2>
         </div>
       </div>
     </div>
-
   );
 };
 

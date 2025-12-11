@@ -1,5 +1,5 @@
 import { footer } from "@/content/general";
-import { Lato, Roboto } from "next/font/google";
+import { latoFont, robotoFont } from "@/utils/fonts";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,9 +7,6 @@ import { AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import { MdOutlinePhone } from "react-icons/md";
 import { PiMapPinLine } from "react-icons/pi";
 import { TbMailFilled } from "react-icons/tb";
-
-const latoFont = Lato({ weight: ["400", "700"], subsets: ["latin"] });
-const robotoFont = Roboto({ weight: ["300", "400", "500"], subsets: ["latin"] });
 
 type Props = {};
 
@@ -47,22 +44,30 @@ export default function Footer({}: Props) {
             </p>
             <div className="flex flex-col justify-start items-start gap-3">
               <Link href={"/formations"}>
-                <p className={`${robotoFont.className} text-sm text-purple-50 hover:text-white transition-colors`}>
+                <p
+                  className={`${robotoFont.className} text-sm text-purple-50 hover:text-white transition-colors`}
+                >
                   Formation
                 </p>
               </Link>
               <Link href={"/conseil"}>
-                <p className={`${robotoFont.className} text-sm text-purple-50 hover:text-white transition-colors`}>
+                <p
+                  className={`${robotoFont.className} text-sm text-purple-50 hover:text-white transition-colors`}
+                >
                   Conseil
                 </p>
               </Link>
               <Link href={"/blogs"}>
-                <p className={`${robotoFont.className} text-sm text-purple-50 hover:text-white transition-colors`}>
+                <p
+                  className={`${robotoFont.className} text-sm text-purple-50 hover:text-white transition-colors`}
+                >
                   Blog
                 </p>
               </Link>
               <Link href={"/contactez-nous"}>
-                <p className={`${robotoFont.className} text-sm text-purple-50 hover:text-white transition-colors`}>
+                <p
+                  className={`${robotoFont.className} text-sm text-purple-50 hover:text-white transition-colors`}
+                >
                   Contact
                 </p>
               </Link>
@@ -108,7 +113,10 @@ export default function Footer({}: Props) {
               >
                 {/* Social Icon: Semi-transparent background that becomes solid white on hover */}
                 <div className="relative flex items-center justify-center w-10 h-10 rounded-full bg-white/10 group-hover:bg-white transition-all duration-300">
-                  <AiFillLinkedin size={20} className="text-white group-hover:text-purple-600 transition-colors" />
+                  <AiFillLinkedin
+                    size={20}
+                    className="text-white group-hover:text-purple-600 transition-colors"
+                  />
                 </div>
               </a>
               <a
@@ -118,7 +126,10 @@ export default function Footer({}: Props) {
                 className="flex justify-center items-center group"
               >
                 <div className="relative flex items-center justify-center w-10 h-10 rounded-full bg-white/10 group-hover:bg-white transition-all duration-300">
-                  <AiFillYoutube size={20} className="text-white group-hover:text-purple-600 transition-colors" />
+                  <AiFillYoutube
+                    size={20}
+                    className="text-white group-hover:text-purple-600 transition-colors"
+                  />
                 </div>
               </a>
             </div>
@@ -148,22 +159,30 @@ export default function Footer({}: Props) {
             </p>
             <div className="flex flex-col justify-start items-center gap-3">
               <Link href={"/formations"}>
-                <p className={`${robotoFont.className} text-sm text-purple-50 active:text-white`}>
+                <p
+                  className={`${robotoFont.className} text-sm text-purple-50 active:text-white`}
+                >
                   Formation
                 </p>
               </Link>
               <Link href={"/conseil"}>
-                <p className={`${robotoFont.className} text-sm text-purple-50 active:text-white`}>
+                <p
+                  className={`${robotoFont.className} text-sm text-purple-50 active:text-white`}
+                >
                   Conseil
                 </p>
               </Link>
               <Link href={"/blogs"}>
-                <p className={`${robotoFont.className} text-sm text-purple-50 active:text-white`}>
+                <p
+                  className={`${robotoFont.className} text-sm text-purple-50 active:text-white`}
+                >
                   Blog
                 </p>
               </Link>
               <Link href={"/contactez-nous"}>
-                <p className={`${robotoFont.className} text-sm text-purple-50 active:text-white`}>
+                <p
+                  className={`${robotoFont.className} text-sm text-purple-50 active:text-white`}
+                >
                   Contact
                 </p>
               </Link>
@@ -198,7 +217,7 @@ export default function Footer({}: Props) {
                 </a>
               </div>
             </div>
-            
+
             <div className="flex justify-center items-center gap-6">
               <a
                 target="_blank"
@@ -207,7 +226,10 @@ export default function Footer({}: Props) {
                 className="flex justify-center items-center"
               >
                 <div className="relative flex items-center justify-center w-10 h-10 rounded-full bg-white/10 active:bg-white">
-                    <AiFillLinkedin size={20} className="text-white active:text-purple-600" />
+                  <AiFillLinkedin
+                    size={20}
+                    className="text-white active:text-purple-600"
+                  />
                 </div>
               </a>
               <a
@@ -216,8 +238,11 @@ export default function Footer({}: Props) {
                 href={footer.socialLinks.youtube}
                 className="flex justify-center items-center"
               >
-                 <div className="relative flex items-center justify-center w-10 h-10 rounded-full bg-white/10 active:bg-white">
-                    <AiFillYoutube size={20} className="text-white active:text-purple-600" />
+                <div className="relative flex items-center justify-center w-10 h-10 rounded-full bg-white/10 active:bg-white">
+                  <AiFillYoutube
+                    size={20}
+                    className="text-white active:text-purple-600"
+                  />
                 </div>
               </a>
             </div>

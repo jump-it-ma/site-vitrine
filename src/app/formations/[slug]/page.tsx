@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Sans_Condensed, Lato, Montserrat } from "next/font/google";
+import { ibmCondensedFont, latoFont, montserratFont } from "@/utils/fonts";
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
@@ -24,9 +24,7 @@ import {
   readableDateFromString,
 } from "../../../utils/functions";
 
-const montserratFont = Montserrat({ subsets: ["latin"] });
-const ibmFont = IBM_Plex_Sans_Condensed({ weight: "700", subsets: ["latin"] });
-const latoFont = Lato({ weight: "400", subsets: ["latin"] });
+const ibmFont = ibmCondensedFont;
 
 type Props = {
   params: {

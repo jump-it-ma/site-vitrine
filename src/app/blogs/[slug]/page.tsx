@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Jost, Montserrat } from "next/font/google";
+import { jostFont, montserratFont } from "@/utils/fonts";
 import Image from "next/image";
 import Script from "next/script";
 import { AiFillLinkedin } from "react-icons/ai";
@@ -11,9 +11,6 @@ import ReturnToTop from "../../../components/ReturnToTop";
 import { pageMetadata } from "../../../content/general";
 import { blogsData } from "../../../data/blogsData";
 import { readableDate } from "../../../utils/functions";
-
-const jostFont = Jost({ subsets: ["latin"] });
-const montserratFont = Montserrat({ subsets: ["latin"] });
 
 type Props = {
   params: {
