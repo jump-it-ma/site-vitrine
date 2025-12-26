@@ -11,16 +11,27 @@ import digitalTrustData from "@/data/programs/digital-trust.json";
 import agileManagementData from "@/data/programs/agile-management.json";
 import projectManagementData from "@/data/programs/project-management.json";
 import itsmData from "@/data/programs/it-service-management.json";
+import softwareEngineeringData from "@/data/programs/software-engineering.json";
+import itGovernanceData from "@/data/programs/it-governance.json";
 
 const programs: {
   data: ProgramData;
-  variant: "ai" | "security" | "agile" | "project" | "itsm";
+  variant:
+    | "ai"
+    | "security"
+    | "agile"
+    | "project"
+    | "itsm"
+    | "software"
+    | "governance";
 }[] = [
   { data: aiGovernanceData as ProgramData, variant: "ai" },
   { data: digitalTrustData as ProgramData, variant: "security" },
   { data: agileManagementData as ProgramData, variant: "agile" },
   { data: projectManagementData as ProgramData, variant: "project" },
   { data: itsmData as ProgramData, variant: "itsm" },
+  { data: softwareEngineeringData as ProgramData, variant: "software" },
+  { data: itGovernanceData as ProgramData, variant: "governance" },
 ];
 
 export default function ProgramsOverview() {

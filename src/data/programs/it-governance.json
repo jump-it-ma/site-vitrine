@@ -1,0 +1,66 @@
+{
+  "program": {
+    "id": "it-governance",
+    "title": "IT GOVERNANCE",
+    "description": "Frameworks for IT governance and project offices.",
+    "categories": ["COBIT 2019", "P3O"]
+  },
+
+  "filters": {
+    "categories": ["COBIT 2019", "P3O"],
+    "editors": ["ISACA", "PEOPLECERT"],
+    "durations": [2, 3],
+    "levels": ["IP2+", "IP3+"],
+    "languages": ["FR", "EN"]
+  },
+
+  "trainings": [
+    {
+      "id": "GV001",
+      "category": "COBIT 2019",
+      "title": "Foundation",
+      "editor": "ISACA",
+      "duration_days": 3,
+      "level": "IP3+",
+      "languages": ["EN"],
+      "price": {
+        "lms": 155,
+        "exam_voucher": 210
+      },
+      "tags": ["COBIT", "Governance", "Foundation"],
+      "search_keywords": ["cobit 2019", "it governance", "isaca"]
+    },
+    {
+      "id": "GV101",
+      "category": "P3O",
+      "title": "Foundation",
+      "editor": "PEOPLECERT",
+      "duration_days": 2,
+      "level": "IP2+",
+      "languages": ["FR", "EN"],
+      "price": {
+        "exam_voucher": 525
+      },
+      "tags": ["P3O", "PMO", "Foundation"],
+      "search_keywords": [
+        "p3o foundation",
+        "project office",
+        "portfolio management"
+      ]
+    },
+    {
+      "id": "GV102",
+      "category": "P3O",
+      "title": "Practitioner",
+      "editor": "PEOPLECERT",
+      "duration_days": 2,
+      "level": "IP3+",
+      "languages": ["FR", "EN"],
+      "price": {
+        "exam_voucher": 525
+      },
+      "tags": ["P3O", "Practitioner", "PMO"],
+      "search_keywords": ["p3o practitioner", "portfolio office"]
+    }
+  ]
+}

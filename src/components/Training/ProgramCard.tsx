@@ -11,6 +11,8 @@ import {
   HiClipboardDocumentList,
   HiCog6Tooth,
   HiRocketLaunch,
+  HiCodeBracket,
+  HiBuildingOffice2,
 } from "react-icons/hi2";
 import { IconType } from "react-icons";
 
@@ -24,7 +26,9 @@ interface ProgramCardProps {
     | "agile"
     | "agile2"
     | "project"
-    | "itsm";
+    | "itsm"
+    | "software"
+    | "governance";
 }
 
 // Variant styles configuration
@@ -101,6 +105,24 @@ const variantStyles: Record<
     badge: "bg-cyan-500/20 text-cyan-200",
     cta: "text-cyan-400",
     Icon: HiCog6Tooth,
+  },
+  software: {
+    gradient:
+      "bg-gradient-to-br from-lime-600/20 via-transparent to-green-600/20",
+    glow: "bg-lime-500/30",
+    icon: "bg-gradient-to-br from-lime-500 to-lime-700",
+    badge: "bg-lime-500/20 text-lime-200",
+    cta: "text-lime-400",
+    Icon: HiCodeBracket,
+  },
+  governance: {
+    gradient:
+      "bg-gradient-to-br from-slate-500/20 via-transparent to-gray-600/20",
+    glow: "bg-slate-500/30",
+    icon: "bg-gradient-to-br from-slate-500 to-slate-700",
+    badge: "bg-slate-500/20 text-slate-200",
+    cta: "text-slate-400",
+    Icon: HiBuildingOffice2,
   },
 };
 

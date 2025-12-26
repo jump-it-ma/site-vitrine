@@ -30,6 +30,8 @@ import digitalTrustData from "@/data/programs/digital-trust.json";
 import agileManagementData from "@/data/programs/agile-management.json";
 import projectManagementData from "@/data/programs/project-management.json";
 import itsmData from "@/data/programs/it-service-management.json";
+import softwareEngineeringData from "@/data/programs/software-engineering.json";
+import itGovernanceData from "@/data/programs/it-governance.json";
 
 // Map program slugs to data
 const programsMap: Record<string, ProgramData> = {
@@ -38,6 +40,8 @@ const programsMap: Record<string, ProgramData> = {
   "agile-management": agileManagementData as ProgramData,
   "project-management": projectManagementData as ProgramData,
   "it-service-management": itsmData as ProgramData,
+  "software-engineering": softwareEngineeringData as ProgramData,
+  "it-governance": itGovernanceData as ProgramData,
 };
 
 const ibmFont = ibmCondensedFont;
