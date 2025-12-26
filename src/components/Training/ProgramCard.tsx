@@ -13,6 +13,7 @@ import {
   HiRocketLaunch,
   HiCodeBracket,
   HiBuildingOffice2,
+  HiCloud,
 } from "react-icons/hi2";
 import { IconType } from "react-icons";
 
@@ -28,7 +29,8 @@ interface ProgramCardProps {
     | "project"
     | "itsm"
     | "software"
-    | "governance";
+    | "governance"
+    | "digital";
 }
 
 // Variant styles configuration
@@ -123,6 +125,15 @@ const variantStyles: Record<
     badge: "bg-slate-500/20 text-slate-200",
     cta: "text-slate-400",
     Icon: HiBuildingOffice2,
+  },
+  digital: {
+    gradient:
+      "bg-gradient-to-br from-blue-600/20 via-transparent to-sky-600/20",
+    glow: "bg-blue-500/30",
+    icon: "bg-gradient-to-br from-blue-500 to-blue-700",
+    badge: "bg-blue-500/20 text-blue-200",
+    cta: "text-blue-400",
+    Icon: HiCloud,
   },
 };
 
