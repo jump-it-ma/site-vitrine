@@ -2,14 +2,16 @@
   "program": {
     "id": "digital-trust",
     "title": "DIGITAL TRUST (CYBERSECURITY - DIGITAL RESILIENCE - DATA PROTECTION)",
-    "description": "Cybersecurity, risk management, resilience and regulatory frameworks.",
+    "description": "Cybersecurity, risk management, data protection and privacy management systems.",
     "categories": [
       "ISO 27001",
       "ISO 27035",
       "ISO 27005 / EBIOS",
       "NIS2",
       "ISO 27032",
-      "DORA"
+      "DORA",
+      "GDPR",
+      "ISO 27701"
     ]
   },
 
@@ -20,7 +22,9 @@
       "ISO 27005 / EBIOS",
       "NIS2",
       "ISO 27032",
-      "DORA"
+      "DORA",
+      "GDPR",
+      "ISO 27701"
     ],
     "editors": ["PECB"],
     "durations": [2, 3, 5],
@@ -112,6 +116,70 @@
       },
       "tags": ["DORA", "Digital Resilience"],
       "search_keywords": ["dora regulation", "digital resilience"]
+    },
+    {
+      "id": "ISR016",
+      "category": "GDPR",
+      "title": "GDPR Foundation",
+      "editor": "PECB",
+      "duration_days": 2,
+      "level": "IP2",
+      "languages": ["FR", "EN"],
+      "price": {
+        "exam_voucher": 265
+      },
+      "tags": ["GDPR", "Data Protection", "Foundation"],
+      "search_keywords": ["gdpr foundation", "data privacy", "pecb"]
+    },
+    {
+      "id": "ISR017",
+      "category": "GDPR",
+      "title": "Certified Data Protection Officer",
+      "editor": "PECB",
+      "duration_days": 5,
+      "level": "IP3",
+      "languages": ["FR", "EN"],
+      "price": {
+        "exam_voucher": 665
+      },
+      "tags": ["GDPR", "DPO", "Data Protection"],
+      "search_keywords": [
+        "dpo certification",
+        "data protection officer",
+        "gdpr lead"
+      ]
+    },
+    {
+      "id": "ISR018",
+      "category": "ISO 27701",
+      "title": "ISO 27701 Foundation",
+      "editor": "PECB",
+      "duration_days": 2,
+      "level": "IP3",
+      "languages": ["FR", "EN"],
+      "price": {
+        "exam_voucher": 265
+      },
+      "tags": ["ISO 27701", "Privacy", "Foundation", "New"],
+      "search_keywords": ["iso 27701 foundation", "pims", "privacy information"]
+    },
+    {
+      "id": "ISR019",
+      "category": "ISO 27701",
+      "title": "ISO 27701 Lead Implementer / Lead Auditor",
+      "editor": "PECB",
+      "duration_days": 5,
+      "level": "IP3 / IP3+",
+      "languages": ["FR", "EN"],
+      "price": {
+        "exam_voucher": 665
+      },
+      "tags": ["ISO 27701", "Audit", "Implementation", "New"],
+      "search_keywords": [
+        "iso 27701 lead",
+        "privacy auditor",
+        "lead implementer"
+      ]
     }
   ]
 }

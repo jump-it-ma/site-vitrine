@@ -1,0 +1,85 @@
+{
+  "program": {
+    "id": "project-management",
+    "title": "PROJECT MANAGEMENT",
+    "description": "Standard project management methodologies: PM², PMI, and PRINCE2.",
+    "categories": ["PM²", "PMBOK 7", "PRINCE2 v7"]
+  },
+  "filters": {
+    "categories": ["PM²", "PMBOK 7", "PRINCE2 v7"],
+    "editors": ["APMG", "PMI", "PEOPLECERT"],
+    "durations": [3, 5],
+    "levels": ["IP2", "IP2+", "IP3", "IP3+"],
+    "languages": ["FR", "EN"]
+  },
+  "trainings": [
+    {
+      "id": "PM301",
+      "category": "PM²",
+      "title": "PM² Foundation",
+      "editor": "APMG",
+      "duration_days": 3,
+      "level": "IP2+",
+      "languages": ["EN"],
+      "price": { "lms": 90, "exam_voucher": 220 },
+      "tags": ["PM²", "European Commission", "Foundation"],
+      "search_keywords": ["pm2 foundation", "open pm2", "apmg"]
+    },
+    {
+      "id": "PM101",
+      "category": "PMBOK 7",
+      "title": "PMP Preparation",
+      "editor": "PMI",
+      "duration_days": 5,
+      "level": "IP3+",
+      "languages": ["FR", "EN"],
+      "price": { "lms": 155, "exam_voucher": 680 },
+      "tags": ["PMP", "PMI", "PMBOK", "Certification"],
+      "search_keywords": [
+        "pmp prep",
+        "project management professional",
+        "pmi membership"
+      ]
+    },
+    {
+      "id": "PM201",
+      "category": "PRINCE2 v7",
+      "title": "Foundation",
+      "editor": "PEOPLECERT",
+      "duration_days": 3,
+      "level": "IP2",
+      "languages": ["FR", "EN"],
+      "price": { "exam_voucher": 525 },
+      "tags": ["PRINCE2", "Foundation", "v7"],
+      "search_keywords": [
+        "prince2 foundation",
+        "peoplecert",
+        "project management"
+      ]
+    },
+    {
+      "id": "PM202",
+      "category": "PRINCE2 v7",
+      "title": "Practitioner",
+      "editor": "PEOPLECERT",
+      "duration_days": 3,
+      "level": "IP3",
+      "languages": ["FR", "EN"],
+      "price": { "exam_voucher": 525 },
+      "tags": ["PRINCE2", "Practitioner", "v7"],
+      "search_keywords": ["prince2 practitioner", "peoplecert"]
+    },
+    {
+      "id": "PM203",
+      "category": "PRINCE2 v7",
+      "title": "Combined (Found. + Practi)",
+      "editor": "PEOPLECERT",
+      "duration_days": 5,
+      "level": "IP3",
+      "languages": ["FR", "EN"],
+      "price": { "exam_voucher": 1050 },
+      "tags": ["PRINCE2", "Combined", "Bootcamp"],
+      "search_keywords": ["prince2 combined", "fast track"]
+    }
+  ]
+}

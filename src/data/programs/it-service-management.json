@@ -1,0 +1,149 @@
+{
+  "program": {
+    "id": "it-service-management",
+    "title": "IT SERVICE MANAGEMENT",
+    "description": "IT Service Management frameworks including ITIL 4 and SIAM.",
+    "categories": ["SIAM", "ITIL4"]
+  },
+  "filters": {
+    "categories": ["SIAM", "ITIL4"],
+    "editors": ["BCS", "PEOPLECERT"],
+    "durations": [1, 2, 3],
+    "levels": ["IP1+", "IP2+", "IP3", "IP3+", "IP4"],
+    "languages": ["FR", "EN"]
+  },
+  "trainings": [
+    {
+      "id": "SM301",
+      "category": "SIAM",
+      "title": "Foundation",
+      "editor": "BCS",
+      "duration_days": 2,
+      "level": "IP2+",
+      "languages": ["FR", "EN"],
+      "price": { "lms": 90, "exam_voucher": 225 },
+      "tags": ["SIAM", "Service Integration", "Foundation"],
+      "search_keywords": ["siam foundation", "bcs", "multi-vendor"]
+    },
+    {
+      "id": "SM101",
+      "category": "ITIL4",
+      "title": "Foundation",
+      "editor": "PEOPLECERT",
+      "duration_days": 3,
+      "level": "IP1+",
+      "languages": ["FR", "EN"],
+      "price": { "exam_voucher": 475 },
+      "tags": ["ITIL4", "Foundation", "ITSM"],
+      "search_keywords": ["itil foundation", "peoplecert", "service management"]
+    },
+    {
+      "id": "SM102-105",
+      "category": "ITIL4",
+      "title": "Specialist: CDS, HVIT, DSV, DPI",
+      "editor": "PEOPLECERT",
+      "duration_days": 3,
+      "level": "IP3",
+      "languages": ["FR", "EN"],
+      "price": { "exam_voucher": 600 },
+      "tags": ["ITIL4", "Specialist", "Advanced"],
+      "search_keywords": ["itil specialist", "cds", "hvit", "dsv", "dpi"]
+    },
+    {
+      "id": "SM110",
+      "category": "ITIL4",
+      "title": "Strategic Leader: DITS",
+      "editor": "PEOPLECERT",
+      "duration_days": 3,
+      "level": "IP4",
+      "languages": ["FR", "EN"],
+      "price": { "exam_voucher": 600 },
+      "tags": ["ITIL4", "Strategic Leader", "DITS"],
+      "search_keywords": ["itil strategic leader", "digital and it strategy"]
+    },
+    {
+      "id": "SM111-15",
+      "category": "ITIL4",
+      "title": "Practitioner - Monitor, Sup. & Fufill : SD, IM, PM, SRM, MEM",
+      "editor": "PEOPLECERT",
+      "duration_days": 1,
+      "level": "IP3",
+      "languages": ["FR", "EN"],
+      "price": { "exam_voucher": 195 },
+      "tags": ["ITIL4", "Practitioner", "Monitor"],
+      "search_keywords": ["itil practitioner", "monitor support fulfill"]
+    },
+    {
+      "id": "SM116-20",
+      "category": "ITIL4",
+      "title": "Practitioner - Plan, Imp. & Ctrl : CE, RM, SCM, DM, ITAM",
+      "editor": "PEOPLECERT",
+      "duration_days": 1,
+      "level": "IP3",
+      "languages": ["FR", "EN"],
+      "price": { "exam_voucher": 195 },
+      "tags": ["ITIL4", "Practitioner", "Plan"],
+      "search_keywords": ["itil practitioner", "plan implement control"]
+    },
+    {
+      "id": "SM121-25",
+      "category": "ITIL4",
+      "title": "Practitioner - Collab., Assure & Impr. : CI, SLM, RSM, ISM, SM",
+      "editor": "PEOPLECERT",
+      "duration_days": 1,
+      "level": "IP3",
+      "languages": ["FR", "EN"],
+      "price": { "exam_voucher": 195 },
+      "tags": ["ITIL4", "Practitioner", "Collaborate"],
+      "search_keywords": ["itil practitioner", "collaborate assure improve"]
+    },
+    {
+      "id": "SM126-28",
+      "category": "ITIL4",
+      "title": "Specialist / Combined Practi. : MSF, PIC, CAI",
+      "editor": "PEOPLECERT",
+      "duration_days": 3,
+      "level": "IP3",
+      "languages": ["FR", "EN"],
+      "price": { "exam_voucher": 600 },
+      "tags": ["ITIL4", "Combined", "Specialist"],
+      "search_keywords": ["itil combined", "practice manager"]
+    },
+    {
+      "id": "SM108-09",
+      "category": "ITIL4",
+      "title": "Specialist : ITAM, BRM, SDIT, AMCS",
+      "editor": "PEOPLECERT",
+      "duration_days": 3,
+      "level": "IP3+",
+      "languages": ["FR", "EN"],
+      "price": { "exam_voucher": 600 },
+      "tags": ["ITIL4", "Specialist", "Extension"],
+      "search_keywords": ["itam", "brm", "it asset management"]
+    },
+    {
+      "id": "SM129",
+      "category": "ITIL4",
+      "title": "Sales Professional",
+      "editor": "PEOPLECERT",
+      "duration_days": 3,
+      "level": "IP3+",
+      "languages": ["FR", "EN"],
+      "price": { "exam_voucher": 180 },
+      "tags": ["ITIL4", "Sales", "Business"],
+      "search_keywords": ["itil sales", "itil for sales"]
+    },
+    {
+      "id": "SM130",
+      "category": "ITIL4",
+      "title": "How to Implement",
+      "editor": "PEOPLECERT",
+      "duration_days": 3,
+      "level": "IP3+",
+      "languages": ["FR", "EN"],
+      "price": { "exam_voucher": 400 },
+      "tags": ["ITIL4", "Implementation", "Practical"],
+      "search_keywords": ["itil implementation", "how to implement itil"]
+    }
+  ]
+}
