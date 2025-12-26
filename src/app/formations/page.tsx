@@ -9,6 +9,7 @@ import { formations } from "../../content/pages";
 import { formationsData } from "../../data/formationsData";
 import { categoriesData } from "../../data/categoriesData";
 import FormationsClient from "./FormationsClient";
+import { ProgramsOverview } from "@/components/Training";
 
 export const metadata = {
   title: "JumpIT - Formations",
@@ -213,28 +214,33 @@ export default function Formations({}: Props) {
             <strong>{`Formation Robot framework`}</strong>
           </h2>
         </div>
-        {/* Nos Formations */}
-        <div
-          id="formations"
-          className="flex flex-col justify-start items-center w-full rounded-t-3xl px-4 xs:px-8 sm:px-12 md:px-16 xm:px-20 lg:px-24 py-24 bg-ac-gray -translate-y-5 z-30 gap-16"
-        >
-          <div className="flex justify-center items-center w-full relative">
-            <div className="flex justify-center items-center bg-ac-gray z-20 p-2 xm:p-4">
-              <h2
-                className={
-                  montserratFont.className +
-                  " text-purple-600 text-3xl xm:text-5xl font-semibold text-center"
-                }
-              >
-                Nos Formations
-              </h2>
-            </div>
-            <div className="absolute w-full h-px bg-purple-600 z-10"></div>
+        {/* New Programs Section */}
+        <div id="formations" className="w-full -translate-y-5 z-30">
+          {/* Programs Section with dark gradient */}
+          <div className="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 px-4 xs:px-8 sm:px-12 md:px-16 xm:px-20 lg:px-24 py-24">
+            <ProgramsOverview />
           </div>
-          <FormationsClient
-            categories={categoriesData}
-            formationsData={formationsData}
-          />
+
+          {/* Existing Formations Section */}
+          <div className="flex flex-col justify-start items-center w-full px-4 xs:px-8 sm:px-12 md:px-16 xm:px-20 lg:px-24 py-24 bg-ac-gray gap-16">
+            <div className="flex justify-center items-center w-full relative">
+              <div className="flex justify-center items-center bg-ac-gray z-20 p-2 xm:p-4">
+                <h2
+                  className={
+                    montserratFont.className +
+                    " text-purple-600 text-3xl xm:text-5xl font-semibold text-center"
+                  }
+                >
+                  Formations Techniques
+                </h2>
+              </div>
+              <div className="absolute w-full h-px bg-purple-600 z-10"></div>
+            </div>
+            <FormationsClient
+              categories={categoriesData}
+              formationsData={formationsData}
+            />
+          </div>
         </div>
       </div>
       <Footer />

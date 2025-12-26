@@ -23,6 +23,16 @@ import {
   getNextMondaysSeparatedBy3Weeks,
   readableDateFromString,
 } from "../../../utils/functions";
+import { TrainingCatalog } from "@/components/Training";
+import { ProgramData } from "@/types/training";
+import aiGovernanceData from "@/data/programs/ai-governance.json";
+import digitalTrustData from "@/data/programs/digital-trust.json";
+
+// Map program slugs to data
+const programsMap: Record<string, ProgramData> = {
+  "ai-governance-management": aiGovernanceData as ProgramData,
+  "digital-trust": digitalTrustData as ProgramData,
+};
 
 const ibmFont = ibmCondensedFont;
 
@@ -33,7 +43,34 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const formation_id = params.slug;
+  const slug = params.slug;
+
+  // Check if this is a program page
+  const programData = programsMap[slug];
+  if (programData) {
+    return {
+      title: `JumpIT - ${programData.program.title}`,
+      description: programData.program.description,
+      metadataBase: new URL(pageMetadata.baseUrl),
+      alternates: {
+        canonical: `/formations/${slug}`,
+        languages: { fr: `/formations/${slug}` },
+      },
+      openGraph: {
+        title: `JumpIT - ${programData.program.title}`,
+        description: programData.program.description,
+        siteName: pageMetadata.siteName,
+        url: `https://www.jumpit.ma/formations/${slug}`,
+        locale: "fr",
+        type: "website",
+      },
+      themeColor: "#644E9B",
+      category: "technology",
+    };
+  }
+
+  // Otherwise handle as formation
+  const formation_id = slug;
   const formation = formationsData.find(
     (formation) => formation.formation_id === formation_id
   );
@@ -131,7 +168,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default function Page({ params }: Props) {
-  const formation_id = params.slug;
+  const slug = params.slug;
+
+  // Check if this is a new program page
+  const programData = programsMap[slug];
+  if (programData) {
+    return (
+      <div className="flex min-h-screen flex-col bg-ac-gray">
+        <ReturnToTop />
+        <Navbar />
+        <main className="flex-1">
+          <TrainingCatalog programData={programData} />
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+
+  // Otherwise, handle as existing formation
+  const formation_id = slug;
   const formation = formationsData.find(
     (formation) => formation.formation_id === formation_id
   );
