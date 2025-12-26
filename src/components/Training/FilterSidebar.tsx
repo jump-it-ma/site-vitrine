@@ -11,6 +11,7 @@ interface FilterSidebarProps {
   onToggleCategory: (category: string) => void;
   onToggleDuration: (duration: number) => void;
   onToggleLanguage: (language: string) => void;
+  onToggleLevel: (level: string) => void;
   onClearFilters: () => void;
   hasActiveFilters: boolean;
   resultsCount: number;
@@ -23,6 +24,7 @@ export default function FilterSidebar({
   onToggleCategory,
   onToggleDuration,
   onToggleLanguage,
+  onToggleLevel,
   onClearFilters,
   hasActiveFilters,
   resultsCount,
@@ -100,6 +102,33 @@ export default function FilterSidebar({
               }`}
             >
               {duration} jours
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Divider */}
+      <hr className="border-gray-200" />
+
+      {/* Levels */}
+      <div>
+        <h4
+          className={`${montserratFont.className} mb-3 text-sm font-semibold text-gray-700`}
+        >
+          Niveau
+        </h4>
+        <div className="flex flex-wrap gap-2">
+          {filters.levels.map((level) => (
+            <button
+              key={level}
+              onClick={() => onToggleLevel(level)}
+              className={`rounded-full px-3 py-1.5 text-xs font-medium transition-all ${
+                activeFilters.selectedLevels.includes(level)
+                  ? "bg-purple-600 text-white"
+                  : "bg-gray-100 text-gray-600 hover:bg-purple-100 hover:text-purple-700"
+              }`}
+            >
+              {level}
             </button>
           ))}
         </div>

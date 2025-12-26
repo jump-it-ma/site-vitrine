@@ -24,26 +24,12 @@ import {
   readableDateFromString,
 } from "../../../utils/functions";
 import { TrainingCatalog } from "@/components/Training";
-import { ProgramData } from "@/types/training";
-import aiGovernanceData from "@/data/programs/ai-governance.json";
+import { HierarchicalProgramData } from "@/types/training";
 import digitalTrustData from "@/data/programs/digital-trust.json";
-import agileManagementData from "@/data/programs/agile-management.json";
-import projectManagementData from "@/data/programs/project-management.json";
-import itsmData from "@/data/programs/it-service-management.json";
-import softwareEngineeringData from "@/data/programs/software-engineering.json";
-import itGovernanceData from "@/data/programs/it-governance.json";
-import digitalManagementData from "@/data/programs/digital-management-technologies.json";
 
-// Map program slugs to data
-const programsMap: Record<string, ProgramData> = {
-  "ai-governance-management": aiGovernanceData as ProgramData,
-  "digital-trust": digitalTrustData as ProgramData,
-  "agile-management": agileManagementData as ProgramData,
-  "project-management": projectManagementData as ProgramData,
-  "it-service-management": itsmData as ProgramData,
-  "software-engineering": softwareEngineeringData as ProgramData,
-  "it-governance": itGovernanceData as ProgramData,
-  "digital-management-technologies": digitalManagementData as ProgramData,
+// Map program slugs to data - only digital-trust exists for now
+const programsMap: Record<string, HierarchicalProgramData> = {
+  "digital-trust": digitalTrustData as HierarchicalProgramData,
 };
 
 const ibmFont = ibmCondensedFont;

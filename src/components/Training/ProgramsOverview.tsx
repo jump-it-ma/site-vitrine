@@ -2,21 +2,17 @@
 
 import { useRouter } from "next/navigation";
 import { ProgramCard } from "@/components/Training";
-import { ProgramData } from "@/types/training";
+import { HierarchicalProgramData, Program } from "@/types/training";
 import { montserratFont } from "@/utils/fonts";
 
-// Import JSON data
-import aiGovernanceData from "@/data/programs/ai-governance.json";
+// Import JSON data - only digital-trust exists for now
 import digitalTrustData from "@/data/programs/digital-trust.json";
-import agileManagementData from "@/data/programs/agile-management.json";
-import projectManagementData from "@/data/programs/project-management.json";
-import itsmData from "@/data/programs/it-service-management.json";
-import softwareEngineeringData from "@/data/programs/software-engineering.json";
-import itGovernanceData from "@/data/programs/it-governance.json";
-import digitalManagementData from "@/data/programs/digital-management-technologies.json";
+
+// Type assertion helper to extract Program from hierarchical data
+const extractProgram = (data: HierarchicalProgramData): Program => data.program;
 
 const programs: {
-  data: ProgramData;
+  data: HierarchicalProgramData;
   variant:
     | "ai"
     | "security"
@@ -27,14 +23,8 @@ const programs: {
     | "governance"
     | "digital";
 }[] = [
-  { data: aiGovernanceData as ProgramData, variant: "ai" },
-  { data: digitalTrustData as ProgramData, variant: "security" },
-  { data: agileManagementData as ProgramData, variant: "agile" },
-  { data: projectManagementData as ProgramData, variant: "project" },
-  { data: itsmData as ProgramData, variant: "itsm" },
-  { data: softwareEngineeringData as ProgramData, variant: "software" },
-  { data: itGovernanceData as ProgramData, variant: "governance" },
-  { data: digitalManagementData as ProgramData, variant: "digital" },
+  { data: digitalTrustData as HierarchicalProgramData, variant: "security" },
+  // Other programs can be added here as they are created
 ];
 
 export default function ProgramsOverview() {
@@ -61,7 +51,7 @@ export default function ProgramsOverview() {
         {programs.map(({ data, variant }) => (
           <ProgramCard
             key={data.program.id}
-            program={data.program}
+            program={extractProgram(data)}
             variant={variant}
             onClick={() => router.push(`/formations/${data.program.id}`)}
           />

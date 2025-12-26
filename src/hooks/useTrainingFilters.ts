@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState, useCallback } from "react";
-import { Training, TrainingFilterState } from "@/types/training";
+import { FlattenedTraining, TrainingFilterState } from "@/types/training";
 
 const initialFilterState: TrainingFilterState = {
   searchQuery: "",
@@ -12,7 +12,7 @@ const initialFilterState: TrainingFilterState = {
   selectedLevels: [],
 };
 
-export function useTrainingFilters(trainings: Training[]) {
+export function useTrainingFilters(trainings: FlattenedTraining[]) {
   const [filters, setFilters] = useState<TrainingFilterState>(initialFilterState);
 
   // Toggle a value in an array filter (for checkboxes)
@@ -109,16 +109,11 @@ export function useTrainingFilters(trainings: Training[]) {
       }
 
       // Level filter
-      if (filters.selectedLevels.length > 0) {
-        const trainingLevels = Array.isArray(training.level)
-          ? training.level
-          : [training.level];
-        const hasMatchingLevel = trainingLevels.some((level) =>
-          filters.selectedLevels.includes(level)
-        );
-        if (!hasMatchingLevel) {
-          return false;
-        }
+      if (
+        filters.selectedLevels.length > 0 &&
+        !filters.selectedLevels.includes(training.level)
+      ) {
+        return false;
       }
 
       return true;
