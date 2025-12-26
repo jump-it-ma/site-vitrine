@@ -1,0 +1,117 @@
+{
+  "program": {
+    "id": "digital-trust",
+    "title": "DIGITAL TRUST (CYBERSECURITY - DIGITAL RESILIENCE - DATA PROTECTION)",
+    "description": "Cybersecurity, risk management, resilience and regulatory frameworks.",
+    "categories": [
+      "ISO 27001",
+      "ISO 27035",
+      "ISO 27005 / EBIOS",
+      "NIS2",
+      "ISO 27032",
+      "DORA"
+    ]
+  },
+
+  "filters": {
+    "categories": [
+      "ISO 27001",
+      "ISO 27035",
+      "ISO 27005 / EBIOS",
+      "NIS2",
+      "ISO 27032",
+      "DORA"
+    ],
+    "editors": ["PECB"],
+    "durations": [2, 3, 5],
+    "levels": ["IP2", "IP2+", "IP3", "IP3+"],
+    "languages": ["FR", "EN"]
+  },
+
+  "trainings": [
+    {
+      "id": "ISR001",
+      "category": "ISO 27001",
+      "title": "ISO 27001 Foundation",
+      "editor": "PECB",
+      "duration_days": 2,
+      "level": "IP2",
+      "languages": ["FR", "EN"],
+      "price": {
+        "exam_voucher": 265
+      },
+      "tags": ["ISO 27001", "Cybersecurity", "Foundation"],
+      "search_keywords": ["iso 27001", "isms", "information security"]
+    },
+    {
+      "id": "ISR002_003",
+      "category": "ISO 27001",
+      "title": "ISO 27001 Lead Implementer / Lead Auditor",
+      "editor": "PECB",
+      "duration_days": 5,
+      "level": ["IP3", "IP3+"],
+      "languages": ["FR", "EN"],
+      "price": {
+        "exam_voucher": 665
+      },
+      "tags": ["ISO 27001", "Audit", "Lead"],
+      "search_keywords": ["iso 27001 audit", "lead implementer"]
+    },
+    {
+      "id": "ISR005",
+      "category": "ISO 27035",
+      "title": "ISO 27035 Foundation",
+      "editor": "PECB",
+      "duration_days": 2,
+      "level": "IP2",
+      "languages": ["FR", "EN"],
+      "price": {
+        "exam_voucher": 265
+      },
+      "tags": ["Incident Management", "ISO 27035"],
+      "search_keywords": ["incident management", "iso 27035"]
+    },
+    {
+      "id": "ISR007",
+      "category": "ISO 27005 / EBIOS",
+      "title": "ISO 27005 Foundation",
+      "editor": "PECB",
+      "duration_days": 2,
+      "level": "IP2",
+      "languages": ["FR", "EN"],
+      "price": {
+        "exam_voucher": 265
+      },
+      "tags": ["Risk Management", "ISO 27005"],
+      "search_keywords": ["risk management", "iso 27005"]
+    },
+    {
+      "id": "ISR011",
+      "category": "NIS2",
+      "title": "NIS2 Directive Foundation",
+      "editor": "PECB",
+      "duration_days": 2,
+      "level": "IP2+",
+      "languages": ["EN"],
+      "price": {
+        "exam_voucher": 265
+      },
+      "tags": ["NIS2", "Regulation"],
+      "search_keywords": ["nis2", "eu cybersecurity regulation"]
+    },
+    {
+      "id": "ISR015",
+      "category": "DORA",
+      "title": "DORA Lead Manager",
+      "editor": "PECB",
+      "duration_days": 5,
+      "level": "IP3+",
+      "languages": ["FR", "EN"],
+      "price": {
+        "exam_voucher": 665
+      },
+      "tags": ["DORA", "Digital Resilience"],
+      "search_keywords": ["dora regulation", "digital resilience"]
+    }
+  ]
+}

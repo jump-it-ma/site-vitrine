@@ -1,0 +1,112 @@
+{
+  "program": {
+    "id": "ai-governance-management",
+    "title": "AI GOVERNANCE & MANAGEMENT",
+    "description": "AI governance, risk management, compliance and security frameworks.",
+    "categories": ["ISO 42001", "ISO 27090", "AI ACT", "AIPGF"]
+  },
+
+  "filters": {
+    "categories": ["ISO 42001", "ISO 27090", "AI ACT", "AIPGF"],
+    "editors": ["EXIN", "PECB", "APMG"],
+    "durations": [2, 3, 5],
+    "levels": ["IP2", "IP2+", "IP3", "IP3+"],
+    "languages": ["FR", "EN"]
+  },
+
+  "trainings": [
+    {
+      "id": "AIM004",
+      "category": "AI ACT",
+      "title": "AI Foundation",
+      "editor": "EXIN",
+      "duration_days": 2,
+      "level": "IP2",
+      "languages": ["FR", "EN"],
+      "price": {
+        "lms": 90,
+        "exam_voucher": 225
+      },
+      "tags": ["AI", "Foundation", "Governance"],
+      "search_keywords": [
+        "ai foundation",
+        "artificial intelligence",
+        "ai governance"
+      ]
+    },
+    {
+      "id": "AIM005",
+      "category": "AI ACT",
+      "title": "AI Compliance Professional",
+      "editor": "EXIN",
+      "duration_days": 2,
+      "level": "IP3",
+      "languages": ["FR", "EN"],
+      "price": {
+        "lms": 135,
+        "exam_voucher": 270
+      },
+      "tags": ["AI", "Compliance", "Regulation"],
+      "search_keywords": ["ai act", "ai compliance", "regulation"]
+    },
+    {
+      "id": "AIM006",
+      "category": "ISO 27090",
+      "title": "AI Security Professional",
+      "editor": "EXIN",
+      "duration_days": 2,
+      "level": "IP3",
+      "availability": "Q3 2026",
+      "languages": ["FR", "EN"],
+      "price": {
+        "lms": 135,
+        "exam_voucher": 270
+      },
+      "tags": ["AI", "Security", "ISO 27090"],
+      "search_keywords": ["ai security", "iso 27090", "ai risk"]
+    },
+    {
+      "id": "AIM001",
+      "category": "ISO 42001",
+      "title": "ISO 42001 Foundation",
+      "editor": "PECB",
+      "duration_days": 2,
+      "level": "IP2+",
+      "languages": ["EN"],
+      "price": {
+        "exam_voucher": 265
+      },
+      "tags": ["ISO 42001", "AI Management"],
+      "search_keywords": ["iso 42001", "ai management system"]
+    },
+    {
+      "id": "AIM002_003",
+      "category": "ISO 42001",
+      "title": "ISO 42001 Lead Implementer / Auditor",
+      "editor": "PECB",
+      "duration_days": 5,
+      "level": ["IP3", "IP3+"],
+      "languages": ["EN"],
+      "price": {
+        "exam_voucher": 665
+      },
+      "tags": ["ISO 42001", "Audit", "Implementation"],
+      "search_keywords": ["iso 42001 audit", "ai governance lead"]
+    },
+    {
+      "id": "AIM009",
+      "category": "AIPGF",
+      "title": "AI Project Governance Foundation",
+      "editor": "APMG",
+      "duration_days": 3,
+      "level": "IP3",
+      "languages": ["FR", "EN"],
+      "price": {
+        "lms": 135,
+        "exam_voucher": 250
+      },
+      "tags": ["Project Governance", "AI"],
+      "search_keywords": ["ai project governance", "aipgf"]
+    }
+  ]
+}
