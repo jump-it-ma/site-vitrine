@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import TrainingDetailPage from "@/components/Training/TrainingDetailPage";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import digitalTrustData from "@/data/programs/digital-trust.json";
 import { HierarchicalProgramData, FlattenedTraining } from "@/types/training";
 
@@ -87,6 +89,24 @@ export async function generateMetadata({
   };
 }
 
+// Get other trainings from same category
+function getOtherTrainings(
+  programData: HierarchicalProgramData,
+  trainingId: string,
+  categoryId: string
+): FlattenedTraining[] {
+  const category = programData.categories.find((c) => c.id === categoryId);
+  if (!category) return [];
+
+  return category.trainings
+    .filter((t) => t.id !== trainingId)
+    .map((t) => ({
+      ...t,
+      category: category.name,
+      categoryId: category.id,
+    }));
+}
+
 // Page component
 export default async function TrainingPage({
   params,
@@ -106,5 +126,21 @@ export default async function TrainingPage({
     notFound();
   }
 
-  return <TrainingDetailPage training={training} programId={slug} />;
+  const otherTrainings = getOtherTrainings(
+    programData,
+    trainingId,
+    training.categoryId
+  );
+
+  return (
+    <>
+      <Navbar />
+      <TrainingDetailPage
+        training={training}
+        programId={slug}
+        otherTrainings={otherTrainings}
+      />
+      <Footer />
+    </>
+  );
 }

@@ -165,8 +165,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function Page({ params }: Props) {
+export default async function Page({
+  params,
+  searchParams,
+}: {
+  params: { slug: string };
+  searchParams: Promise<{ category?: string }>;
+}) {
   const slug = params.slug;
+  const resolvedSearchParams = await searchParams;
+  const categoryId = resolvedSearchParams.category;
 
   // Check if this is a new program page
   const programData = programsMap[slug];
@@ -176,7 +184,10 @@ export default function Page({ params }: Props) {
         <ReturnToTop />
         <Navbar />
         <main className="flex-1">
-          <TrainingCatalog programData={programData} />
+          <TrainingCatalog
+            programData={programData}
+            initialCategoryId={categoryId}
+          />
         </main>
         <Footer />
       </div>

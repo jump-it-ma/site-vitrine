@@ -30,11 +30,13 @@ import {
 interface TrainingDetailPageProps {
   training: FlattenedTraining;
   programId: string;
+  otherTrainings?: FlattenedTraining[];
 }
 
 export default function TrainingDetailPage({
   training,
   programId,
+  otherTrainings = [],
 }: TrainingDetailPageProps) {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [openDay, setOpenDay] = useState<number>(1);
@@ -54,7 +56,9 @@ export default function TrainingDetailPage({
         <div className="relative mx-auto max-w-7xl px-4 pb-16 pt-8 sm:px-6 lg:px-8">
           {/* Back Button */}
           <Link
-            href={`/formations/${programId}`}
+            href={`/formations/${programId}?category=${encodeURIComponent(
+              training.categoryId
+            )}`}
             className="mb-8 inline-flex items-center gap-2 rounded-lg bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur transition-all hover:bg-white/20"
           >
             <HiArrowLeft className="h-4 w-4" />
@@ -431,6 +435,94 @@ export default function TrainingDetailPage({
           </div>
         </div>
       </div>
+
+      {/* Autres Formations Section */}
+      {otherTrainings.length > 0 && (
+        <div className="bg-gradient-to-b from-gray-50 to-white py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mb-10 text-center">
+              <h2
+                className={`${montserratFont.className} mb-3 text-2xl font-bold text-gray-900 sm:text-3xl`}
+              >
+                Autres Formations
+              </h2>
+              <p
+                className={`${latoFont.className} mx-auto max-w-2xl text-gray-600`}
+              >
+                Découvrez nos autres formations dans la catégorie{" "}
+                {training.category}
+              </p>
+            </div>
+
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {otherTrainings.slice(0, 3).map((otherTraining) => (
+                <Link
+                  key={otherTraining.id}
+                  href={`/formations/${programId}/${otherTraining.id}`}
+                  className="group relative overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-purple-200 hover:shadow-xl"
+                >
+                  {/* Header */}
+                  <div className="flex items-center justify-between border-b border-gray-100 bg-gray-50 px-4 py-3">
+                    <span className="rounded-full bg-purple-100 px-3 py-1 text-xs font-semibold text-purple-700">
+                      {otherTraining.category}
+                    </span>
+                    {otherTraining.is_best_seller && (
+                      <span className="flex items-center gap-1 rounded-full bg-amber-100 px-2.5 py-1 text-xs font-medium text-amber-700">
+                        <HiStar className="h-3 w-3" />
+                        Best Seller
+                      </span>
+                    )}
+                  </div>
+
+                  {/* Content */}
+                  <div className="p-4">
+                    <h3
+                      className={`${montserratFont.className} mb-3 text-lg font-bold text-gray-900 transition-colors group-hover:text-purple-600`}
+                    >
+                      {otherTraining.title}
+                    </h3>
+
+                    <div className="mb-4 flex flex-wrap gap-3 text-sm text-gray-600">
+                      <div className="flex items-center gap-1">
+                        <HiClock className="h-4 w-4 text-gray-400" />
+                        <span>{otherTraining.duration_days} jours</span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <HiAcademicCap className="h-4 w-4 text-gray-400" />
+                        <span>{otherTraining.level}</span>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center justify-between">
+                      <span
+                        className={`${montserratFont.className} text-lg font-bold text-purple-600`}
+                      >
+                        {otherTraining.price_voucher}€
+                      </span>
+                      <span className="text-sm font-medium text-purple-600 transition-colors group-hover:text-purple-700">
+                        Voir détails →
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+
+            {/* View All Button */}
+            <div className="mt-10 text-center">
+              <Link
+                href={`/formations/${programId}?category=${encodeURIComponent(
+                  training.categoryId
+                )}`}
+                className="inline-flex items-center gap-2 rounded-xl border-2 border-purple-600 px-6 py-3 font-semibold text-purple-600 transition-all hover:bg-purple-600 hover:text-white"
+              >
+                Voir toutes les formations {training.category}
+                <HiArrowLeft className="h-4 w-4 rotate-180" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

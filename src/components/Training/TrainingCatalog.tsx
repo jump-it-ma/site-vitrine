@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import {
   HierarchicalProgramData,
   Category,
@@ -21,12 +21,21 @@ import Link from "next/link";
 
 interface TrainingCatalogProps {
   programData: HierarchicalProgramData;
+  initialCategoryId?: string;
 }
 
-export default function TrainingCatalog({ programData }: TrainingCatalogProps) {
+export default function TrainingCatalog({
+  programData,
+  initialCategoryId,
+}: TrainingCatalogProps) {
+  // Find initial category from props
+  const initialCategory = initialCategoryId
+    ? programData.categories.find((c) => c.id === initialCategoryId) || null
+    : null;
+
   // State for selected category
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(
-    null
+    initialCategory
   );
 
   // Flatten trainings from selected category for filtering
