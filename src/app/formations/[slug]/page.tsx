@@ -27,11 +27,17 @@ import { TrainingCatalog } from "@/components/Training";
 import { ProgramData } from "@/types/training";
 import aiGovernanceData from "@/data/programs/ai-governance.json";
 import digitalTrustData from "@/data/programs/digital-trust.json";
+import agileManagementData from "@/data/programs/agile-management.json";
+import projectManagementData from "@/data/programs/project-management.json";
+import itsmData from "@/data/programs/it-service-management.json";
 
 // Map program slugs to data
 const programsMap: Record<string, ProgramData> = {
   "ai-governance-management": aiGovernanceData as ProgramData,
   "digital-trust": digitalTrustData as ProgramData,
+  "agile-management": agileManagementData as ProgramData,
+  "project-management": projectManagementData as ProgramData,
+  "it-service-management": itsmData as ProgramData,
 };
 
 const ibmFont = ibmCondensedFont;

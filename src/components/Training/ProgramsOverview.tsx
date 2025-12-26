@@ -8,10 +8,19 @@ import { montserratFont } from "@/utils/fonts";
 // Import JSON data
 import aiGovernanceData from "@/data/programs/ai-governance.json";
 import digitalTrustData from "@/data/programs/digital-trust.json";
+import agileManagementData from "@/data/programs/agile-management.json";
+import projectManagementData from "@/data/programs/project-management.json";
+import itsmData from "@/data/programs/it-service-management.json";
 
-const programs: { data: ProgramData; variant: "ai" | "security" }[] = [
+const programs: {
+  data: ProgramData;
+  variant: "ai" | "security" | "agile" | "project" | "itsm";
+}[] = [
   { data: aiGovernanceData as ProgramData, variant: "ai" },
   { data: digitalTrustData as ProgramData, variant: "security" },
+  { data: agileManagementData as ProgramData, variant: "agile" },
+  { data: projectManagementData as ProgramData, variant: "project" },
+  { data: itsmData as ProgramData, variant: "itsm" },
 ];
 
 export default function ProgramsOverview() {
