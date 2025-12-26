@@ -1,11 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import {
-  FlattenedTraining,
-  TrainingDetails,
-  CurriculumDay,
-} from "@/types/training";
+import { FlattenedTraining, CurriculumDay } from "@/types/training";
 import { montserratFont, latoFont } from "@/utils/fonts";
 import Link from "next/link";
 import {
@@ -13,7 +9,6 @@ import {
   HiClock,
   HiAcademicCap,
   HiLanguage,
-  HiCurrencyEuro,
   HiStar,
   HiCheckCircle,
   HiChevronDown,
@@ -459,6 +454,10 @@ export default function TrainingDetailPage({
                 <Link
                   key={otherTraining.id}
                   href={`/formations/${programId}/${otherTraining.id}`}
+                  scroll={true}
+                  onClick={() =>
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
                   className="group relative overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-purple-200 hover:shadow-xl"
                 >
                   {/* Header */}
