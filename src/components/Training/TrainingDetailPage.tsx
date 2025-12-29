@@ -40,14 +40,33 @@ export default function TrainingDetailPage({
   const details = training.details;
 
   return (
-    <div className="mx-auto w-full max-w-6xl min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-to-br from-purple-800 via-purple-700 to-indigo-800">
+      <div className="relative overflow-hidden bg-gradient-to-br from-purple-700 to-purple-600">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute -left-4 -top-24 h-96 w-96 rounded-full bg-white blur-3xl" />
           <div className="absolute -right-12 top-20 h-80 w-80 rounded-full bg-purple-300 blur-3xl" />
         </div>
+
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/30 via-transparent to-transparent" />
+
+        {/* Floating orbs - Left side */}
+        <div className="absolute -left-20 top-1/4 h-64 w-64 rounded-full bg-purple-400/20 blur-3xl" />
+        <div className="absolute left-10 top-10 h-32 w-32 rounded-full bg-white/5 blur-2xl" />
+
+        {/* Floating orbs - Right side */}
+        <div className="absolute -right-20 top-1/3 h-72 w-72 rounded-full bg-indigo-400/20 blur-3xl" />
+        <div className="absolute right-20 bottom-20 h-40 w-40 rounded-full bg-pink-400/10 blur-2xl" />
+
+        {/* Geometric shapes - Floating circles */}
+        <div className="absolute left-[10%] top-[20%] h-3 w-3 rounded-full bg-white/20" />
+        <div className="absolute left-[15%] top-[60%] h-2 w-2 rounded-full bg-white/30" />
+        <div className="absolute left-[25%] top-[80%] h-4 w-4 rounded-full bg-white/10" />
+        <div className="absolute right-[10%] top-[30%] h-2 w-2 rounded-full bg-white/25" />
+        <div className="absolute right-[20%] top-[70%] h-3 w-3 rounded-full bg-white/15" />
+        <div className="absolute right-[30%] top-[15%] h-2 w-2 rounded-full bg-white/20" />
 
         <div className="relative mx-auto max-w-7xl px-4 pb-16 pt-8 sm:px-6 lg:px-8">
           {/* Back Button */}
@@ -150,7 +169,7 @@ export default function TrainingDetailPage({
                   </div>
                 </div>
 
-                <button className="mb-3 w-full rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 py-3 font-semibold text-white shadow-lg transition-all hover:from-purple-700 hover:to-indigo-700 hover:shadow-xl">
+                <button className="mb-3 w-full rounded-xl bg-gradient-to-r from-purple-600 to-purple-700 py-3 font-semibold text-white shadow-lg transition-all hover:from-purple-700 hover:to-indigo-700 hover:shadow-xl">
                   S&apos;inscrire maintenant
                 </button>
 
@@ -409,7 +428,7 @@ export default function TrainingDetailPage({
               </div>
 
               {/* Contact Card */}
-              <div className="rounded-2xl bg-gradient-to-br from-purple-600 to-indigo-600 p-6 text-white shadow-lg">
+              <div className="rounded-2xl bg-gradient-to-br from-purple-600 to-purple-700 p-6 text-white shadow-lg">
                 <h3 className={`${montserratFont.className} mb-2 font-bold`}>
                   Besoin d&apos;aide ?
                 </h3>

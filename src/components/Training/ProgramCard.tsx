@@ -149,7 +149,7 @@ export default function ProgramCard({
 
       {/* Title */}
       <h3
-        className={`${montserratFont.className} mb-3 text-xl font-bold text-slate-900 sm:text-2xl`}
+        className={`${montserratFont.className} mb-3 text-lg font-bold text-slate-900`}
       >
         {program.title}
       </h3>

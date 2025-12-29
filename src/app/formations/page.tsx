@@ -113,14 +113,32 @@ export default function Formations() {
       <ReturnToTop />
       <Navbar />
 
-      {/* Hero Section - Clean, professional design */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-purple-700 to-purple-600 px-4 pb-20 pt-32 sm:px-8 md:px-16 lg:px-24">
-        {/* Subtle background pattern */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/20 via-transparent to-transparent" />
+      {/* Hero Section - Clean, professional design with decorations */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-purple-700 to-purple-600 px-4 pb-16 pt-16 sm:px-8 md:px-16 lg:px-24">
+        {/* Background decorations */}
+
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/30 via-transparent to-transparent" />
+
+        {/* Floating orbs - Left side */}
+        <div className="absolute -left-20 top-1/4 h-64 w-64 rounded-full bg-purple-400/20 blur-3xl" />
+        <div className="absolute left-10 top-10 h-32 w-32 rounded-full bg-white/5 blur-2xl" />
+
+        {/* Floating orbs - Right side */}
+        <div className="absolute -right-20 top-1/3 h-72 w-72 rounded-full bg-indigo-400/20 blur-3xl" />
+        <div className="absolute right-20 bottom-20 h-40 w-40 rounded-full bg-pink-400/10 blur-2xl" />
+
+        {/* Geometric shapes - Floating circles */}
+        <div className="absolute left-[10%] top-[20%] h-3 w-3 rounded-full bg-white/20" />
+        <div className="absolute left-[15%] top-[60%] h-2 w-2 rounded-full bg-white/30" />
+        <div className="absolute left-[25%] top-[80%] h-4 w-4 rounded-full bg-white/10" />
+        <div className="absolute right-[10%] top-[30%] h-2 w-2 rounded-full bg-white/25" />
+        <div className="absolute right-[20%] top-[70%] h-3 w-3 rounded-full bg-white/15" />
+        <div className="absolute right-[30%] top-[15%] h-2 w-2 rounded-full bg-white/20" />
 
         {/* Content */}
         <div className="relative z-10 mx-auto max-w-4xl text-center">
-          <span className="mb-4 inline-block rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium text-white backdrop-blur">
+          <span className="mb-4 inline-block rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-medium text-white backdrop-blur-sm">
             Centre de Formation Professionnelle
           </span>
 
@@ -141,7 +159,7 @@ export default function Formations() {
       {/* Programs Section - Clean neutral background */}
       <section
         id="formations"
-        className="bg-slate-50 px-4 py-20 sm:px-8 md:px-16 lg:px-24"
+        className="bg-slate-50 px-4 py-10 sm:px-8 md:px-16 lg:px-24"
       >
         <ProgramsOverview />
       </section>
