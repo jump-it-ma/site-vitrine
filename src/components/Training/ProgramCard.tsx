@@ -5,13 +5,13 @@ import { montserratFont, latoFont } from "@/utils/fonts";
 import {
   HiArrowRight,
   HiShieldCheck,
+  HiCodeBracket,
   HiCpuChip,
   HiDocumentCheck,
   HiLightBulb,
   HiClipboardDocumentList,
   HiCog6Tooth,
   HiRocketLaunch,
-  HiCodeBracket,
   HiBuildingOffice2,
   HiCloud,
 } from "react-icons/hi2";
@@ -33,106 +33,96 @@ interface ProgramCardProps {
     | "digital";
 }
 
-// Variant styles configuration
+// Clean, professional variant styles for light backgrounds
 const variantStyles: Record<
   string,
   {
-    gradient: string;
-    glow: string;
-    icon: string;
+    iconBg: string;
+    iconColor: string;
     badge: string;
-    cta: string;
+    accent: string;
+    border: string;
     Icon: IconType;
   }
 > = {
   ai: {
-    gradient:
-      "bg-gradient-to-br from-purple-600/20 via-transparent to-blue-600/20",
-    glow: "bg-purple-500/30",
-    icon: "bg-gradient-to-br from-purple-500 to-purple-700",
-    badge: "bg-purple-500/20 text-purple-200",
-    cta: "text-purple-400",
+    iconBg: "bg-purple-100",
+    iconColor: "text-purple-600",
+    badge: "bg-purple-50 text-purple-700 ring-purple-200",
+    accent: "text-purple-600",
+    border: "hover:border-purple-300",
     Icon: HiCpuChip,
   },
   security: {
-    gradient:
-      "bg-gradient-to-br from-emerald-600/20 via-transparent to-cyan-600/20",
-    glow: "bg-emerald-500/30",
-    icon: "bg-gradient-to-br from-emerald-500 to-emerald-700",
-    badge: "bg-emerald-500/20 text-emerald-200",
-    cta: "text-emerald-400",
+    iconBg: "bg-emerald-100",
+    iconColor: "text-emerald-600",
+    badge: "bg-emerald-50 text-emerald-700 ring-emerald-200",
+    accent: "text-emerald-600",
+    border: "hover:border-emerald-300",
     Icon: HiShieldCheck,
   },
   privacy: {
-    gradient:
-      "bg-gradient-to-br from-rose-600/20 via-transparent to-pink-600/20",
-    glow: "bg-rose-500/30",
-    icon: "bg-gradient-to-br from-rose-500 to-rose-700",
-    badge: "bg-rose-500/20 text-rose-200",
-    cta: "text-rose-400",
+    iconBg: "bg-rose-100",
+    iconColor: "text-rose-600",
+    badge: "bg-rose-50 text-rose-700 ring-rose-200",
+    accent: "text-rose-600",
+    border: "hover:border-rose-300",
     Icon: HiDocumentCheck,
   },
   agile: {
-    gradient:
-      "bg-gradient-to-br from-amber-600/20 via-transparent to-orange-600/20",
-    glow: "bg-amber-500/30",
-    icon: "bg-gradient-to-br from-amber-500 to-amber-700",
-    badge: "bg-amber-500/20 text-amber-200",
-    cta: "text-amber-400",
+    iconBg: "bg-amber-100",
+    iconColor: "text-amber-600",
+    badge: "bg-amber-50 text-amber-700 ring-amber-200",
+    accent: "text-amber-600",
+    border: "hover:border-amber-300",
     Icon: HiLightBulb,
   },
   agile2: {
-    gradient:
-      "bg-gradient-to-br from-orange-600/20 via-transparent to-red-600/20",
-    glow: "bg-orange-500/30",
-    icon: "bg-gradient-to-br from-orange-500 to-orange-700",
-    badge: "bg-orange-500/20 text-orange-200",
-    cta: "text-orange-400",
+    iconBg: "bg-orange-100",
+    iconColor: "text-orange-600",
+    badge: "bg-orange-50 text-orange-700 ring-orange-200",
+    accent: "text-orange-600",
+    border: "hover:border-orange-300",
     Icon: HiRocketLaunch,
   },
   project: {
-    gradient:
-      "bg-gradient-to-br from-indigo-600/20 via-transparent to-violet-600/20",
-    glow: "bg-indigo-500/30",
-    icon: "bg-gradient-to-br from-indigo-500 to-indigo-700",
-    badge: "bg-indigo-500/20 text-indigo-200",
-    cta: "text-indigo-400",
+    iconBg: "bg-indigo-100",
+    iconColor: "text-indigo-600",
+    badge: "bg-indigo-50 text-indigo-700 ring-indigo-200",
+    accent: "text-indigo-600",
+    border: "hover:border-indigo-300",
     Icon: HiClipboardDocumentList,
   },
   itsm: {
-    gradient:
-      "bg-gradient-to-br from-cyan-600/20 via-transparent to-teal-600/20",
-    glow: "bg-cyan-500/30",
-    icon: "bg-gradient-to-br from-cyan-500 to-cyan-700",
-    badge: "bg-cyan-500/20 text-cyan-200",
-    cta: "text-cyan-400",
+    iconBg: "bg-cyan-100",
+    iconColor: "text-cyan-600",
+    badge: "bg-cyan-50 text-cyan-700 ring-cyan-200",
+    accent: "text-cyan-600",
+    border: "hover:border-cyan-300",
     Icon: HiCog6Tooth,
   },
   software: {
-    gradient:
-      "bg-gradient-to-br from-lime-600/20 via-transparent to-green-600/20",
-    glow: "bg-lime-500/30",
-    icon: "bg-gradient-to-br from-lime-500 to-lime-700",
-    badge: "bg-lime-500/20 text-lime-200",
-    cta: "text-lime-400",
+    iconBg: "bg-violet-100",
+    iconColor: "text-violet-600",
+    badge: "bg-violet-50 text-violet-700 ring-violet-200",
+    accent: "text-violet-600",
+    border: "hover:border-violet-300",
     Icon: HiCodeBracket,
   },
   governance: {
-    gradient:
-      "bg-gradient-to-br from-slate-500/20 via-transparent to-gray-600/20",
-    glow: "bg-slate-500/30",
-    icon: "bg-gradient-to-br from-slate-500 to-slate-700",
-    badge: "bg-slate-500/20 text-slate-200",
-    cta: "text-slate-400",
+    iconBg: "bg-slate-100",
+    iconColor: "text-slate-600",
+    badge: "bg-slate-50 text-slate-700 ring-slate-200",
+    accent: "text-slate-600",
+    border: "hover:border-slate-300",
     Icon: HiBuildingOffice2,
   },
   digital: {
-    gradient:
-      "bg-gradient-to-br from-blue-600/20 via-transparent to-sky-600/20",
-    glow: "bg-blue-500/30",
-    icon: "bg-gradient-to-br from-blue-500 to-blue-700",
-    badge: "bg-blue-500/20 text-blue-200",
-    cta: "text-blue-400",
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-600",
+    badge: "bg-blue-50 text-blue-700 ring-blue-200",
+    accent: "text-blue-600",
+    border: "hover:border-blue-300",
     Icon: HiCloud,
   },
 };
@@ -148,59 +138,47 @@ export default function ProgramCard({
   return (
     <button
       onClick={onClick}
-      className="group relative w-full max-w-lg overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-8 backdrop-blur-xl transition-all duration-500 hover:scale-[1.02] hover:border-white/20 hover:shadow-2xl hover:shadow-purple-500/20"
+      className={`group flex w-full flex-col items-start rounded-2xl border border-slate-200 bg-white p-6 text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg sm:p-8 ${styles.border}`}
     >
-      {/* Gradient Overlay */}
+      {/* Icon */}
       <div
-        className={`absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 ${styles.gradient}`}
-      />
+        className={`mb-5 flex h-12 w-12 items-center justify-center rounded-xl ${styles.iconBg}`}
+      >
+        <IconComponent className={`h-6 w-6 ${styles.iconColor}`} />
+      </div>
 
-      {/* Glow Effect */}
+      {/* Title */}
+      <h3
+        className={`${montserratFont.className} mb-3 text-xl font-bold text-slate-900 sm:text-2xl`}
+      >
+        {program.title}
+      </h3>
+
+      {/* Description */}
+      <p
+        className={`${latoFont.className} mb-5 line-clamp-3 text-sm leading-relaxed text-slate-600 sm:text-base`}
+      >
+        {program.description}
+      </p>
+
+      {/* Categories */}
+      <div className="mb-6 flex flex-wrap gap-2">
+        {program.categories.map((category) => (
+          <span
+            key={category}
+            className={`rounded-full px-3 py-1 text-xs font-medium ring-1 ring-inset ${styles.badge}`}
+          >
+            {category}
+          </span>
+        ))}
+      </div>
+
+      {/* CTA - Pushed to bottom with margin-top auto */}
       <div
-        className={`absolute -top-20 -right-20 h-40 w-40 rounded-full blur-3xl transition-all duration-500 group-hover:scale-150 ${styles.glow}`}
-      />
-
-      <div className="relative z-10 flex flex-col items-start gap-6">
-        {/* Icon */}
-        <div
-          className={`flex h-14 w-14 items-center justify-center rounded-xl ${styles.icon} shadow-lg`}
-        >
-          <IconComponent className="h-7 w-7 text-white" />
-        </div>
-
-        {/* Title */}
-        <h3
-          className={`${montserratFont.className} text-left text-xl font-bold text-white sm:text-2xl`}
-        >
-          {program.title}
-        </h3>
-
-        {/* Description */}
-        <p
-          className={`${latoFont.className} text-left text-sm text-gray-300 sm:text-base`}
-        >
-          {program.description}
-        </p>
-
-        {/* Categories */}
-        <div className="flex flex-wrap gap-2">
-          {program.categories.map((category) => (
-            <span
-              key={category}
-              className={`rounded-full px-3 py-1 text-xs font-medium ${styles.badge}`}
-            >
-              {category}
-            </span>
-          ))}
-        </div>
-
-        {/* CTA */}
-        <div
-          className={`flex items-center gap-2 text-sm font-semibold transition-all duration-300 group-hover:gap-3 ${styles.cta}`}
-        >
-          <span>Explorer les formations</span>
-          <HiArrowRight className="h-4 w-4" />
-        </div>
+        className={`mt-auto flex items-center gap-2 text-sm font-semibold transition-all duration-300 group-hover:gap-3 ${styles.accent}`}
+      >
+        <span>Explorer les formations</span>
+        <HiArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
       </div>
     </button>
   );

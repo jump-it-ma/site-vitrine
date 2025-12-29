@@ -29,7 +29,6 @@
           "level": "IP2",
           "evaluation": "MCQ",
           "package_includes": "Official Training Package (incl. voucher)",
-          "price_voucher": 265,
           "languages": ["FR", "EN"],
           "tags": ["foundation", "security", "isms"],
           "search_keywords": [
@@ -101,7 +100,6 @@
           "level": "IP3 / IP3+",
           "evaluation": "MCQ",
           "package_includes": "Official Training Package (incl. voucher)",
-          "price_voucher": 665,
           "languages": ["FR", "EN"],
           "tags": ["lead", "implementer", "auditor", "security"],
           "search_keywords": [
@@ -206,7 +204,6 @@
           "level": "IP3+",
           "evaluation": "MCQ",
           "package_includes": "Official Training Package (incl. voucher)",
-          "price_voucher": 665,
           "languages": ["EN"],
           "tags": ["ciso", "executive", "security", "management"],
           "search_keywords": [
@@ -313,7 +310,6 @@
           "level": "IP2",
           "evaluation": "MCQ",
           "package_includes": "Official Training Package (incl. voucher)",
-          "price_voucher": 265,
           "languages": ["FR", "EN"],
           "tags": ["foundation", "incident", "security"],
           "search_keywords": [
@@ -376,7 +372,6 @@
           "level": "IP3",
           "evaluation": "MCQ",
           "package_includes": "Official Training Package (incl. voucher)",
-          "price_voucher": 665,
           "languages": ["FR", "EN"],
           "tags": ["lead", "incident", "manager", "security"],
           "search_keywords": [
@@ -483,7 +478,6 @@
           "level": "IP2",
           "evaluation": "MCQ",
           "package_includes": "Official Training Package (incl. voucher)",
-          "price_voucher": 265,
           "languages": ["FR", "EN"],
           "tags": ["foundation", "risk", "security"],
           "search_keywords": [
@@ -546,7 +540,6 @@
           "level": "IP3",
           "evaluation": "MCQ",
           "package_includes": "Official Training Package (incl. voucher)",
-          "price_voucher": 400,
           "languages": ["FR", "EN"],
           "tags": ["risk", "manager", "security"],
           "search_keywords": [
@@ -619,7 +612,6 @@
           "level": "IP3",
           "evaluation": "MCQ",
           "package_includes": "Official Training Package (incl. voucher)",
-          "price_voucher": 665,
           "languages": ["FR", "EN"],
           "tags": ["lead", "risk", "manager", "security"],
           "search_keywords": [
@@ -712,7 +704,6 @@
           "level": "IP3",
           "evaluation": "MCQ",
           "package_includes": "Official Training Package (incl. voucher)",
-          "price_voucher": 400,
           "languages": ["FR", "EN"],
           "tags": ["ebios", "risk", "manager", "french"],
           "search_keywords": [
@@ -798,7 +789,6 @@
           "level": "IP2+",
           "evaluation": "MCQ",
           "package_includes": "Official Training Package (incl. voucher)",
-          "price_voucher": 265,
           "languages": ["FR", "EN"],
           "tags": ["foundation", "cybersecurity", "security"],
           "search_keywords": [
@@ -861,7 +851,6 @@
           "level": "IP3+",
           "evaluation": "MCQ",
           "package_includes": "Official Training Package (incl. voucher)",
-          "price_voucher": 665,
           "languages": ["FR", "EN"],
           "tags": ["lead", "cybersecurity", "manager", "security"],
           "search_keywords": [
@@ -967,7 +956,6 @@
           "level": "IP3+",
           "evaluation": "MCQ",
           "package_includes": "Official Training Package (incl. voucher)",
-          "price_voucher": 665,
           "languages": ["FR", "EN"],
           "tags": ["dora", "resilience", "digital", "regulation"],
           "search_keywords": [
@@ -1079,7 +1067,6 @@
           "level": "IP2",
           "evaluation": "MCQ",
           "package_includes": "Official Training Package (incl. voucher)",
-          "price_voucher": 265,
           "languages": ["FR", "EN"],
           "tags": ["foundation", "gdpr", "privacy", "data protection"],
           "search_keywords": [
@@ -1147,7 +1134,6 @@
           "level": "IP3",
           "evaluation": "MCQ",
           "package_includes": "Official Training Package (incl. voucher)",
-          "price_voucher": 665,
           "languages": ["FR", "EN"],
           "tags": ["dpo", "data protection", "officer", "gdpr"],
           "search_keywords": [

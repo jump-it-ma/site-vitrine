@@ -4,11 +4,14 @@ import TrainingDetailPage from "@/components/Training/TrainingDetailPage";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import digitalTrustData from "@/data/programs/digital-trust.json";
+import technicalTrainingData from "@/data/programs/technical-training.json";
 import { HierarchicalProgramData, FlattenedTraining } from "@/types/training";
 
 // Type assertion for the imported JSON
 const programsMap: Record<string, HierarchicalProgramData> = {
   "digital-trust": digitalTrustData as unknown as HierarchicalProgramData,
+  "technical-training":
+    technicalTrainingData as unknown as HierarchicalProgramData,
 };
 
 // Find training by ID in program data

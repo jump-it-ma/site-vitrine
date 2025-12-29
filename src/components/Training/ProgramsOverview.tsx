@@ -3,10 +3,11 @@
 import { useRouter } from "next/navigation";
 import { ProgramCard } from "@/components/Training";
 import { HierarchicalProgramData, Program } from "@/types/training";
-import { montserratFont } from "@/utils/fonts";
+import { montserratFont, latoFont } from "@/utils/fonts";
 
-// Import JSON data - only digital-trust exists for now
+// Import JSON data
 import digitalTrustData from "@/data/programs/digital-trust.json";
+import technicalTrainingData from "@/data/programs/technical-training.json";
 
 // Type assertion helper to extract Program from hierarchical data
 const extractProgram = (data: HierarchicalProgramData): Program => data.program;
@@ -24,30 +25,19 @@ const programs: {
     | "digital";
 }[] = [
   { data: digitalTrustData as HierarchicalProgramData, variant: "security" },
-  // Other programs can be added here as they are created
+  {
+    data: technicalTrainingData as HierarchicalProgramData,
+    variant: "software",
+  },
 ];
 
 export default function ProgramsOverview() {
   const router = useRouter();
 
   return (
-    <section className="w-full">
-      {/* Section Header */}
-      <div className="mb-12 text-center">
-        <h2
-          className={`${montserratFont.className} mb-4 text-3xl font-bold text-white sm:text-4xl`}
-        >
-          Nos Programmes de Formation
-        </h2>
-        <p className="mx-auto max-w-2xl text-lg text-gray-300">
-          Explorez nos programmes certifiants en gouvernance de l&apos;IA et
-          cybersécurité, conçus pour les professionnels souhaitant acquérir des
-          compétences de pointe.
-        </p>
-      </div>
-
+    <section className="mx-auto w-full max-w-6xl">
       {/* Programs Grid */}
-      <div className="mx-auto grid max-w-4xl gap-8 sm:grid-cols-2">
+      <div className="grid gap-6 sm:grid-cols-2 lg:gap-8">
         {programs.map(({ data, variant }) => (
           <ProgramCard
             key={data.program.id}

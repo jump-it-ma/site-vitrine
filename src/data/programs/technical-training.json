@@ -1,0 +1,653 @@
+{
+  "program": {
+    "id": "technical-training",
+    "title": "TECHNICAL TRAINING (TEST AUTOMATION - DEVELOPMENT - RPA)",
+    "description": "Formations techniques pour développeurs et testeurs : Automatisation des tests, Développement Web et RPA.",
+    "categories": ["Test Logiciel", "Développement Web", "RPA"]
+  },
+  "filters": {
+    "categories": ["Test Logiciel", "Développement Web", "RPA"],
+    "editors": ["JumpIT"],
+    "durations": [2, 4],
+    "levels": ["Débutant", "Intermédiaire", "Avancé", "Débutant/Intermédiaire"],
+    "languages": ["FR"]
+  },
+  "categories": [
+    {
+      "id": "software-testing",
+      "name": "Test Logiciel",
+      "description": "Apprenez les techniques et outils de test logiciel pour garantir la qualité, la fiabilité et les performances des applications.",
+      "reference": "TEST-AUTO",
+      "trainings": [
+        {
+          "id": "postman",
+          "title": "Postman",
+          "editor": "JumpIT",
+          "reference": "POSTMAN",
+          "is_best_seller": true,
+          "duration_days": 2,
+          "level": "Débutant",
+          "evaluation": "TP",
+          "package_includes": "Support de cours et exercices pratiques",
+          "languages": ["FR"],
+          "tags": ["test", "api", "automation"],
+          "search_keywords": ["postman", "api", "test", "automation", "rest"],
+          "details": {
+            "description": "Postman est un outil de développement d'API qui permet aux développeurs de tester, de déboguer et de documenter leurs API. La formation Postman permet aux développeurs d'apprendre à utiliser cet outil de manière efficace. Elle couvre la création de requêtes HTTP, l'envoi de données, la validation des réponses et la gestion des environnements. Les participants apprennent également à utiliser des fonctionnalités avancées comme la collaboration, l'automatisation des tests et la génération de rapports.",
+            "target_audience": [
+              "Testeurs manuels et testeurs automatisés",
+              "Développeurs Back-end",
+              "Managers et Product Owners",
+              "Product Managers, Business Analysts"
+            ],
+            "objectives": [
+              "Comprendre les bases du protocole HTTP",
+              "Tester manuellement des APIs avec Postman",
+              "Ecrire des scripts automatiques d'APIs",
+              "Exécuter les tests Postman en ligne de commande"
+            ],
+            "prerequisites": [
+              "Connaissances en test logiciel",
+              "Une expérience avec un langage de programmation est un plus"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Découverte de l'API et Bases de Postman",
+                "topics": [
+                  "Présentation des formats de données: Json, CSV, XML",
+                  "Protocole HTTP",
+                  "Présentation des APIs",
+                  "Présentation de l'interface Postman",
+                  "Exemples pratiques de requêtes avec Postman"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Variables, Scripts et Industrialisation",
+                "topics": [
+                  "Utilisation des variables Postman et portée",
+                  "Scripts de pré-requêtes en Javascript",
+                  "Scripts de tests et vérifications avancées",
+                  "Utiliser le Collection Runner",
+                  "Jeux De Données de test avec Postman",
+                  "Utiliser newman pour exécuter les tests en ligne de commande"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "cypress",
+          "title": "Cypress",
+          "editor": "JumpIT",
+          "reference": "CYPRESS",
+          "is_best_seller": true,
+          "duration_days": 2,
+          "level": "Intermédiaire",
+          "evaluation": "TP",
+          "package_includes": "Support de cours et exercices pratiques",
+          "languages": ["FR"],
+          "tags": ["test", "e2e", "frontend", "automation"],
+          "search_keywords": [
+            "cypress",
+            "test",
+            "e2e",
+            "javascript",
+            "automation"
+          ],
+          "details": {
+            "description": "Découvrez notre formation sur Cypress, le framework de tests end-to-end pour les applications web. Apprenez à automatiser vos tests et à assurer la qualité de vos développements grâce à cette technologie moderne et performante. Notre programme vous permettra de maîtriser les différents aspects de Cypress, depuis l'installation jusqu'à l'écriture de scénarios complets.",
+            "target_audience": ["Testeurs", "Chefs de projets", "Développeurs"],
+            "objectives": [
+              "Maitriser les bases du tests automatiques avec Cypress",
+              "Comprendre les commandes Cypress",
+              "Comprendre l'intérêt de l'intégration continue dans un contexte Agile",
+              "Industrialiser des tests Cypress sur Github Actions"
+            ],
+            "prerequisites": [
+              "Connaissances en test logiciel",
+              "Une expérience avec un langage de programmation est un plus"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction et Bases de Cypress",
+                "topics": [
+                  "Pourquoi l'automatisation des tests et patterns",
+                  "Architecture et concepts de Cypress",
+                  "Installation de l'environnement",
+                  "Les commandes de base"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Tests Avancés et Industrialisation",
+                "topics": [
+                  "Mécanisme de retry et hooks Cypress",
+                  "Configuration et commandes personnalisées",
+                  "Data Driven Test avec Cypress",
+                  "Écrire des tests en Gherkin",
+                  "Intercepter des requêtes http",
+                  "Générer des rapports et exécution sur Github Actions"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "robot-framework",
+          "title": "Robot Framework",
+          "editor": "JumpIT",
+          "reference": "ROBOT",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Intermédiaire",
+          "evaluation": "TP",
+          "package_includes": "Support de cours et exercices pratiques",
+          "languages": ["FR"],
+          "tags": ["test", "keyword-driven", "automation", "python"],
+          "search_keywords": [
+            "robot framework",
+            "python",
+            "test",
+            "automation",
+            "rpa"
+          ],
+          "details": {
+            "description": "Robot Framework est un framework générique et open source qui permet d'automatiser facilement les tests d'acceptation. Il utilise une syntaxe simple basée sur des mots-clés. Apprenez à créer des tests automatisés pour différents types d'applications et à étendre le framework avec des bibliothèques Python.",
+            "target_audience": [
+              "Testeurs/automaticiens",
+              "Chefs de projets",
+              "Développeurs"
+            ],
+            "objectives": [
+              "Maitriser les bases du tests automatiques avec RobotFramework",
+              "Écrire, analyser, structurer un test par mots-clés",
+              "Comprendre l'intérêt de l'intégration continue dans un contexte Agile",
+              "Industrialiser des tests Robot Framework sur Github Actions"
+            ],
+            "prerequisites": [
+              "Connaissances en test logiciel",
+              "Une expérience avec un langage de programmation est un plus"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction et Présentation",
+                "topics": [
+                  "Pattern d'automatisation: Arrange - Act - Assert",
+                  "Architecture et concepts de Robot Framework",
+                  "Installation de l'environnement",
+                  "Librairies standard"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Écriture de tests et Selenium",
+                "topics": [
+                  "Structure d'un cas de test et suite de test",
+                  "Exécution et reporting",
+                  "Variables, SetUp, TearDown et Tag",
+                  "Data Driven et Behavior Driven Test",
+                  "Tests front end avec la librairie Selenium",
+                  "Page Object Model avec Robot Framework"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "playwright",
+          "title": "Playwright",
+          "editor": "JumpIT",
+          "reference": "PLAYWRIGHT",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Intermédiaire",
+          "evaluation": "TP",
+          "package_includes": "Support de cours et exercices pratiques",
+          "languages": ["FR"],
+          "tags": ["test", "e2e", "modern", "automation"],
+          "search_keywords": [
+            "playwright",
+            "microsoft",
+            "test",
+            "e2e",
+            "automation"
+          ],
+          "details": {
+            "description": "Découvrez les possibilités passionnantes de l'automatisation de tests web avec Playwright. Cette formation pratique est conçue pour les professionnels qui souhaitent maîtriser l'automatisation des tests pour les applications web, en mettant en avant les fonctionnalités avancées et intuitives de Playwright, comme le support multi-navigateurs et la gestion des éléments dynamiques.",
+            "target_audience": [
+              "Testeurs Logiciels",
+              "Professionnels du Développement",
+              "Analystes en Tests"
+            ],
+            "objectives": [
+              "Maîtrise de l'Automatisation des Tests Web avec Playwright",
+              "Création de Scénarios de Test Complexes",
+              "Intégration des Tests dans les Pipelines de Développement"
+            ],
+            "prerequisites": [
+              "Connaissance de Base en Programmation",
+              "Familiarité avec les Technologies Web",
+              "Notions de Tests Logiciels"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Fondamentaux de Playwright",
+                "topics": [
+                  "Aperçu et avantages de Playwright",
+                  "Installation et configuration",
+                  "Création de scénarios de test basiques",
+                  "Interaction avec les éléments UI",
+                  "Validation automatique et assertions",
+                  "Gestion des attentes (SLA)"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Avancé et Intégration",
+                "topics": [
+                  "Tests multi-navigateurs",
+                  "Interaction avec pop-ups et éléments dynamiques",
+                  "Intégration CI/CD et débogage avancé",
+                  "Génération de rapports",
+                  "Pratique guidée et projets réels"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "selenium",
+          "title": "Selenium",
+          "editor": "JumpIT",
+          "reference": "SELENIUM",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Intermédiaire",
+          "evaluation": "TP",
+          "package_includes": "Support de cours et exercices pratiques",
+          "languages": ["FR"],
+          "tags": ["test", "webdriver", "java", "legacy"],
+          "search_keywords": [
+            "selenium",
+            "webdriver",
+            "test",
+            "automation",
+            "java"
+          ],
+          "details": {
+            "description": "Plongez au cœur de l'automatisation web de niveau avancé avec Selenium WebDriver. Cette formation intensive vous permettra de maîtriser les compétences essentielles de Selenium WebDriver. Que vous soyez un professionnel du développement ou un testeur logiciel, vous apprendrez à automatiser efficacement les tâches web et à améliorer votre productivité.",
+            "target_audience": [
+              "Professionnels du Développement",
+              "Testeurs Logiciels"
+            ],
+            "objectives": [
+              "Maîtriser les Fondamentaux de Selenium WebDriver",
+              "Écrire des Scripts de Test Avancés",
+              "Intégrer l'automatisation dans le processus de développement",
+              "Déboguer et résoudre les problèmes de test"
+            ],
+            "prerequisites": [
+              "Connaissance de base en programmation",
+              "Familiarité avec un langage de programmation comme Java, Python, C#, PHP ou Javascript",
+              "Compréhension des tests logiciels"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction à Selenium WebDriver",
+                "topics": [
+                  "Installation et configuration de l'environnement",
+                  "Premiers pas et écriture de scripts simples",
+                  "Interaction avec les éléments UI (boutons, champs)",
+                  "Gestion des attentes et éléments asynchrones"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Automatisation Avancée",
+                "topics": [
+                  "Interaction avec fenêtres et onglets",
+                  "Sélecteurs avancés",
+                  "Tests de régression et intégration CI/CD",
+                  "Stratégies de débogage et rapports",
+                  "Projet pratique - Scénario réaliste"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "soapui",
+          "title": "SoapUI",
+          "editor": "JumpIT",
+          "reference": "SOAPUI",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Intermédiaire",
+          "evaluation": "TP",
+          "package_includes": "Support de cours et exercices pratiques",
+          "languages": ["FR"],
+          "tags": ["test", "api", "soap", "rest"],
+          "search_keywords": ["soapui", "api", "test", "soap", "rest"],
+          "details": {
+            "description": "Apprenez à mettre en place des tests automatisés sur vos APIs avec SoapUI, l'outil de test d'API Open Source le plus utilisé pour les API SOAP et REST. Cette formation pratique est conçue pour les testeurs qui souhaitent acquérir les compétences nécessaires pour automatiser les tests de services web.",
+            "target_audience": [
+              "Professionnels du Développement",
+              "Testeurs Logiciels",
+              "Analystes en Tests"
+            ],
+            "objectives": [
+              "Compréhension de base de l'Automatisation des Tests API",
+              "Maîtrise de l'Utilisation de SoapUI",
+              "Création et Exécution de Scénarios de Test Automatisés",
+              "Intégration dans le Processus de Développement"
+            ],
+            "prerequisites": [
+              "Connaissance de Base de l’Informatique",
+              "Compétences de Navigation et d’Interface Utilisateur",
+              "Familiarité avec les Services Web et API (Optionnel)"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Fondamentaux de SoapUI",
+                "topics": [
+                  "Installation et configuration",
+                  "Concepts clés et scénarios basiques",
+                  "Requêtes et réponses API (SOAP/REST)",
+                  "Validation automatique et assertions",
+                  "Gestion des données de sortie"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Automatisation Avancée",
+                "topics": [
+                  "Scripts Groovy pour tests avancés",
+                  "Tests de performance avec SoapUI",
+                  "Intégration Pipelines CI/CD",
+                  "Stratégies de débogage",
+                  "Projets pratiques et tendances actuelles"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "appium",
+          "title": "Appium",
+          "editor": "JumpIT",
+          "reference": "APPIUM",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Intermédiaire",
+          "evaluation": "TP",
+          "package_includes": "Support de cours et exercices pratiques",
+          "languages": ["FR"],
+          "tags": ["test", "mobile", "android", "ios"],
+          "search_keywords": ["appium", "mobile", "test", "android", "ios"],
+          "details": {
+            "description": "Cette formation vous permettra de découvrir et maîtriser l'automatisation des tests pour les applications mobiles avec Appium. Vous apprendrez à configurer et à utiliser Appium pour tester des applications Android et iOS, en automatisant les interactions utilisateur et en validant le bon fonctionnement des fonctionnalités.",
+            "target_audience": [
+              "Testeurs logiciels",
+              "Ingénieurs qualité",
+              "Développeurs mobile",
+              "Équipes DevOps"
+            ],
+            "objectives": [
+              "Comprendre le fonctionnement d'Appium",
+              "Automatiser les tests sur Android et iOS",
+              "Maîtriser l'écriture de scripts de test",
+              "Mettre en place des tests end-to-end mobiles"
+            ],
+            "prerequisites": [
+              "Connaissances de base en programmation",
+              "Expérience avec les concepts de tests logiciels",
+              "Notions de base sur les applications mobiles",
+              "Aucun prérequis spécifique à Appium n’est nécessaire"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction et Prise en main",
+                "topics": [
+                  "Introduction aux tests mobiles et Appium",
+                  "Installation et configuration de l'environnement",
+                  "Interface Appium Desktop",
+                  "Création d'un premier script de test",
+                  "Types de tests Appium"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Automatisation Avancée",
+                "topics": [
+                  "Automatisation d'interactions complexes",
+                  "Gestion de l'état de l'application",
+                  "Tests sur iOS",
+                  "Gestion des éléments dynamiques",
+                  "Intégration CI/CD et bonnes pratiques"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "web-development",
+      "name": "Développement Web",
+      "description": "Maîtrisez les compétences nécessaires pour créer des sites web modernes, interactifs et responsives adaptés aux besoins actuels.",
+      "reference": "DEV-WEB",
+      "trainings": [
+        {
+          "id": "reactjs",
+          "title": "ReactJS",
+          "editor": "JumpIT",
+          "reference": "REACT",
+          "is_best_seller": true,
+          "duration_days": 4,
+          "level": "Débutant/Intermédiaire",
+          "evaluation": "Projet",
+          "package_includes": "Support de cours et projet fil rouge",
+          "languages": ["FR"],
+          "tags": ["dev", "frontend", "javascript", "react"],
+          "search_keywords": ["react", "javascript", "frontend", "web", "ui"],
+          "details": {
+            "description": "Cette formation d'initiation à ReactJS vous apprend à créer des interfaces utilisateur interactives. Vous découvrirez les composants, la gestion de l'état et les hooks, avec des exercices pratiques pour construire vos premières applications React. Idéal pour les développeurs souhaitant monter en compétence sur le framework front-end le plus populaire.",
+            "target_audience": [
+              "Développeurs JavaScript",
+              "Développeurs front-end",
+              "Étudiants en informatique"
+            ],
+            "objectives": [
+              "Comprendre les concepts fondamentaux de ReactJS",
+              "Créer des interfaces utilisateur dynamiques",
+              "Utiliser les hooks pour gérer l'état",
+              "Développer des applications web interactives"
+            ],
+            "prerequisites": [
+              "Connaissances de base en JavaScript",
+              "Notions de base en HTML/CSS",
+              "Familiarité avec un IDE"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Bases JS et Découverte de React",
+                "topics": [
+                  "Rappels JavaScript ES6 (let, const, fléchées)",
+                  "Mise en place de l'environnement (Node.js, CRA)",
+                  "Introduction à React et concepts de base",
+                  "Syntaxe JSX et création de premiers composants"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "État, Props et Navigation",
+                "topics": [
+                  "Props et useState pour l'état local",
+                  "Communication entre composants",
+                  "Navigation avec React Router",
+                  "Routes dynamiques et paramètres"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Événements, Listes et Formulaires",
+                "topics": [
+                  "Gestion des événements utilisateurs",
+                  "Rendu conditionnel",
+                  "Manipulation des listes et clés",
+                  "Gestion des formulaires et refs"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Hooks et Bonnes Pratiques",
+                "topics": [
+                  "Le hook useEffect pour les effets de bord",
+                  "Règles et organisation des Hooks",
+                  "Tests unitaires avec Jest",
+                  "Bonnes pratiques et structure du code"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "rpa",
+      "name": "RPA",
+      "description": "Découvrez comment automatiser les tâches répétitives et améliorer l'efficacité opérationnelle grâce aux technologies d’automatisation robotisée des processus.",
+      "reference": "RPA",
+      "trainings": [
+        {
+          "id": "uipath-debutant",
+          "title": "UiPath Débutant",
+          "editor": "JumpIT",
+          "reference": "UIPATH-BASICS",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Débutant",
+          "evaluation": "TP",
+          "package_includes": "Support de cours et licence d'essai",
+          "languages": ["FR"],
+          "tags": ["rpa", "automation", "uipath", "low-code"],
+          "search_keywords": ["uipath", "rpa", "automation", "robot"],
+          "details": {
+            "description": "Cette formation permet de découvrir les concepts fondamentaux de l'automatisation avec UiPath et de devenir autonome dans la création de workflows simples. Idéal pour débuter dans le monde de la RPA.",
+            "target_audience": [
+              "Débutants en RPA",
+              "Analystes métiers",
+              "Employés en optimisation de processus"
+            ],
+            "objectives": [
+              "Comprendre les bases de la RPA",
+              "Découvrir l'environnement UiPath Studio",
+              "Concevoir et exécuter des robots simples",
+              "Connaître les bonnes pratiques de workflow"
+            ],
+            "prerequisites": [
+              "Notions de base en informatique",
+              "Connaissance de Microsoft Office (Excel, Word)"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction et Prise en main",
+                "topics": [
+                  "Qu'est-ce que la RPA ?",
+                  "Installation et interface UiPath Studio",
+                  "Activités de base (Assign, Write Line)",
+                  "Automatisation de tâches Excel simples"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Données et UI Automation",
+                "topics": [
+                  "Variables, arguments et types de données",
+                  "Identifier des éléments UI",
+                  "Enregistrement et lecture d'actions",
+                  "Publication et exécution via Assistant"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "uipath-advanced",
+          "title": "UiPath Avancé",
+          "editor": "JumpIT",
+          "reference": "UIPATH-ADV",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Avancé",
+          "evaluation": "Projet",
+          "package_includes": "Support de cours expert",
+          "languages": ["FR"],
+          "tags": ["rpa", "automation", "uipath", "reframework"],
+          "search_keywords": ["uipath", "advanced", "rpa", "orchestrator"],
+          "details": {
+            "description": "Cette formation avancée s'adresse aux utilisateurs ayant déjà des bases en RPA avec UiPath. Approfondissez vos compétences pour concevoir des workflows complexes, utiliser le ReFramework et intégrer vos robots avec d'autres systèmes via API et bases de données.",
+            "target_audience": [
+              "Développeurs RPA",
+              "Administrateurs RPA",
+              "Analystes techniques"
+            ],
+            "objectives": [
+              "Maîtriser les fonctionnalités avancées d'UiPath Studio",
+              "Automatiser des processus complexes avec ReFramework",
+              "Intégrer UiPath avec des outils externes (API, DB)",
+              "Exploiter UiPath Orchestrator"
+            ],
+            "prerequisites": [
+              "Connaissance de base d’UiPath Studio",
+              "Notions de programmation (C#, VB.Net, ou Python)",
+              "Compréhension des processus métiers"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Concepts Avancés et ReFramework",
+                "topics": [
+                  "Gestion des exceptions et types complexes",
+                  "Introduction au ReFramework",
+                  "Structure modulaire du ReFramework",
+                  "Implémentation d'un processus complexe"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Intégration et Orchestration",
+                "topics": [
+                  "Activités API (HTTP Request/JSON)",
+                  "Connexion bases de données",
+                  "UiPath Orchestrateur (Queues, Assets)",
+                  "Optimisation et bonnes pratiques"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    }
+  ]
+}

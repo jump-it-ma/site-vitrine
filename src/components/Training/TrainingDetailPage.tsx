@@ -6,6 +6,7 @@ import { montserratFont, latoFont } from "@/utils/fonts";
 import Link from "next/link";
 import {
   HiArrowLeft,
+  HiCheckBadge,
   HiClock,
   HiAcademicCap,
   HiLanguage,
@@ -39,7 +40,7 @@ export default function TrainingDetailPage({
   const details = training.details;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="mx-auto w-full max-w-6xl min-h-screen bg-gray-50">
       {/* Hero Section */}
       <div className="relative overflow-hidden bg-gradient-to-br from-purple-800 via-purple-700 to-indigo-800">
         {/* Background Pattern */}
@@ -125,19 +126,14 @@ export default function TrainingDetailPage({
               </div>
             </div>
 
-            {/* Right - Price Card */}
+            {/* Right - Info Card */}
             <div className="lg:row-span-1">
               <div className="rounded-2xl bg-white p-6 shadow-xl">
-                <div className="mb-4 text-center">
-                  <p className="text-sm text-gray-500">
-                    Prix formation + Voucher examen
-                  </p>
-                  <p
-                    className={`${montserratFont.className} text-4xl font-bold text-purple-600`}
-                  >
-                    {training.price_voucher}€
-                  </p>
-                </div>
+                <h3
+                  className={`${montserratFont.className} mb-4 text-center font-bold text-gray-900`}
+                >
+                  Votre formation inclut
+                </h3>
 
                 <div className="mb-6 space-y-3 text-sm text-gray-600">
                   <div className="flex items-center gap-2">
@@ -193,6 +189,32 @@ export default function TrainingDetailPage({
                       </span>
                       <span className={`${latoFont.className} text-gray-700`}>
                         {objective}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
+            {/* Prerequisites Section */}
+            {details?.prerequisites && details.prerequisites.length > 0 && (
+              <section className="rounded-2xl bg-white p-6 shadow-sm sm:p-8">
+                <div className="mb-6 flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-purple-100">
+                    <HiCheckBadge className="h-5 w-5 text-purple-600" />
+                  </div>
+                  <h2
+                    className={`${montserratFont.className} text-xl font-bold text-gray-900 sm:text-2xl`}
+                  >
+                    Prérequis
+                  </h2>
+                </div>
+                <ul className="space-y-3">
+                  {details.prerequisites.map((prerequisite, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <div className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-purple-600" />
+                      <span className={`${latoFont.className} text-gray-700`}>
+                        {prerequisite}
                       </span>
                     </li>
                   ))}
@@ -492,12 +514,7 @@ export default function TrainingDetailPage({
                       </div>
                     </div>
 
-                    <div className="flex items-center justify-between">
-                      <span
-                        className={`${montserratFont.className} text-lg font-bold text-purple-600`}
-                      >
-                        {otherTraining.price_voucher}€
-                      </span>
+                    <div className="flex items-center justify-end">
                       <span className="text-sm font-medium text-purple-600 transition-colors group-hover:text-purple-700">
                         Voir détails →
                       </span>

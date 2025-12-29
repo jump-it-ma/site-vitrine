@@ -28,6 +28,7 @@ export interface TrainingDetails {
   description: string;
   target_audience: string[];
   objectives: string[];
+  prerequisites?: string[];
   curriculum: CurriculumDay[];
   faqs: TrainingFAQ[];
 }
@@ -46,7 +47,6 @@ export interface CategoryTraining {
   level: string;
   evaluation: string;
   package_includes: string;
-  price_voucher: number;
   languages: string[];
   tags: string[];
   search_keywords: string[];
@@ -114,7 +114,6 @@ export interface FlattenedTraining {
   level: string;
   evaluation: string;
   package_includes: string;
-  price_voucher: number;
   languages: string[];
   tags: string[];
   search_keywords: string[];
@@ -169,9 +168,11 @@ export interface ProgramData {
 /**
  * Flatten hierarchical program data into array of trainings with category info
  */
-export function flattenProgramData(data: HierarchicalProgramData): FlattenedTraining[] {
+export function flattenProgramData(
+  data: HierarchicalProgramData
+): FlattenedTraining[] {
   const trainings: FlattenedTraining[] = [];
-  
+
   for (const category of data.categories) {
     for (const training of category.trainings) {
       trainings.push({
@@ -181,15 +182,17 @@ export function flattenProgramData(data: HierarchicalProgramData): FlattenedTrai
       });
     }
   }
-  
+
   return trainings;
 }
 
 /**
  * Flatten a single category's trainings
  */
-export function flattenCategoryTrainings(category: Category): FlattenedTraining[] {
-  return category.trainings.map(training => ({
+export function flattenCategoryTrainings(
+  category: Category
+): FlattenedTraining[] {
+  return category.trainings.map((training) => ({
     ...training,
     category: category.name,
     categoryId: category.id,
@@ -201,12 +204,14 @@ export function flattenCategoryTrainings(category: Category): FlattenedTraining[
  */
 export function extractFilters(data: HierarchicalProgramData): ProgramFilters {
   const trainings = flattenProgramData(data);
-  
+
   return {
-    categories: Array.from(new Set(trainings.map(t => t.category))),
-    editors: Array.from(new Set(trainings.map(t => t.editor))),
-    durations: Array.from(new Set(trainings.map(t => t.duration_days))).sort((a, b) => a - b),
-    levels: Array.from(new Set(trainings.map(t => t.level))),
-    languages: Array.from(new Set(trainings.flatMap(t => t.languages))),
+    categories: Array.from(new Set(trainings.map((t) => t.category))),
+    editors: Array.from(new Set(trainings.map((t) => t.editor))),
+    durations: Array.from(new Set(trainings.map((t) => t.duration_days))).sort(
+      (a, b) => a - b
+    ),
+    levels: Array.from(new Set(trainings.map((t) => t.level))),
+    languages: Array.from(new Set(trainings.flatMap((t) => t.languages))),
   };
 }

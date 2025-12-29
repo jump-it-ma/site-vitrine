@@ -14,7 +14,6 @@ import ReturnToTop from "../../../components/ReturnToTop";
 import { pageMetadata } from "../../../content/general";
 import { formationsData } from "../../../data/formationsData";
 import {
-  currency,
   dailyHours,
   datesDisplayedNumber,
   fixedReferenceDate,
@@ -26,10 +25,12 @@ import {
 import { TrainingCatalog } from "@/components/Training";
 import { HierarchicalProgramData } from "@/types/training";
 import digitalTrustData from "@/data/programs/digital-trust.json";
+import technicalTrainingData from "@/data/programs/technical-training.json";
 
-// Map program slugs to data - only digital-trust exists for now
+// Map program slugs to data
 const programsMap: Record<string, HierarchicalProgramData> = {
   "digital-trust": digitalTrustData as HierarchicalProgramData,
+  "technical-training": technicalTrainingData as HierarchicalProgramData,
 };
 
 const ibmFont = ibmCondensedFont;

@@ -1,13 +1,12 @@
 "use client";
 
 import { FlattenedTraining } from "@/types/training";
-import { montserratFont, latoFont } from "@/utils/fonts";
+import { montserratFont } from "@/utils/fonts";
 import Link from "next/link";
 import {
   HiClock,
   HiAcademicCap,
   HiLanguage,
-  HiCurrencyEuro,
   HiStar,
   HiDocumentCheck,
   HiArrowRight,
@@ -96,21 +95,6 @@ export default function TrainingCard({
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Footer - Price */}
-      <div className="flex items-center justify-between border-t border-gray-100 bg-gradient-to-r from-purple-50 to-indigo-50 px-5 py-3">
-        <div className="flex items-center gap-1.5">
-          <HiCurrencyEuro className="h-4 w-4 text-purple-600" />
-          <span className={`${latoFont.className} text-sm text-gray-600`}>
-            Voucher examen
-          </span>
-        </div>
-        <span
-          className={`${montserratFont.className} text-lg font-bold text-purple-600`}
-        >
-          {training.price_voucher}€
-        </span>
       </div>
 
       {/* View Details Indicator */}
