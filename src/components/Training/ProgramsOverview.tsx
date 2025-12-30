@@ -5,7 +5,12 @@ import { useRouter } from "next/navigation";
 import { ProgramCard } from "@/components/Training";
 import { HierarchicalProgramData, Program } from "@/types/training";
 import { montserratFont, latoFont } from "@/utils/fonts";
-import { HiMagnifyingGlass, HiFunnel, HiXMark } from "react-icons/hi2";
+import {
+  HiMagnifyingGlass,
+  HiFunnel,
+  HiXMark,
+  HiChevronDown,
+} from "react-icons/hi2";
 
 // Import JSON data
 import digitalTrustData from "@/data/programs/digital-trust.json";
@@ -129,6 +134,7 @@ export default function ProgramsOverview() {
   const router = useRouter();
   const [searchQuery, setSearchQuery] = useState("");
   const [activeFilter, setActiveFilter] = useState<FilterCategory>("all");
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
 
   // Filter and search programs
   const filteredPrograms = useMemo(() => {
@@ -159,45 +165,105 @@ export default function ProgramsOverview() {
   return (
     <section className="mx-auto w-full max-w-7xl">
       {/* Search and Filter Bar */}
-      <div className="mb-10 space-y-4">
-        {/* Search Input */}
-        <div className="relative">
-          <HiMagnifyingGlass className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-slate-400" />
+      <div className="mb-10 relative z-20">
+        <div
+          className={`flex items-center rounded-2xl border bg-white p-2 shadow-sm transition-all duration-300 focus-within:border-purple-500 focus-within:ring-4 focus-within:ring-purple-500/10 ${
+            activeFilter !== "all" ? "border-purple-200" : "border-slate-200"
+          }`}
+        >
+          {/* Search Icon */}
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center text-slate-400">
+            <HiMagnifyingGlass className="h-5 w-5" />
+          </div>
+
+          {/* Input */}
           <input
             type="text"
             placeholder="Rechercher une formation..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className={`${latoFont.className} w-full rounded-xl border border-slate-200 bg-white py-3.5 pl-12 pr-4 text-slate-900 placeholder:text-slate-400 focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500/20 transition-all duration-200`}
+            className={`${latoFont.className} min-w-0 flex-1 border-none bg-transparent py-2 text-slate-900 placeholder:text-slate-400 focus:ring-0`}
           />
-          {searchQuery && (
+
+          {/* Right Actions */}
+          <div className="flex shrink-0 items-center gap-2 pr-2">
+            {/* Clear Search */}
+            {searchQuery && (
+              <button
+                onClick={() => setSearchQuery("")}
+                className="flex h-8 w-8 items-center justify-center rounded-full text-slate-400 hover:bg-slate-100 hover:text-slate-600 focus:outline-none"
+                aria-label="Effacer la recherche"
+              >
+                <HiXMark className="h-5 w-5" />
+              </button>
+            )}
+
+            {/* Divider */}
+            <div className="h-6 w-px bg-slate-200" />
+
+            {/* Filter Toggle */}
             <button
-              onClick={() => setSearchQuery("")}
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600"
+              onClick={() => setIsFilterOpen(!isFilterOpen)}
+              className={`flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold transition-all duration-200 focus:outline-none ${
+                activeFilter !== "all"
+                  ? "bg-purple-50 text-purple-700 ring-1 ring-purple-200 hover:bg-purple-100"
+                  : "bg-slate-50 text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+              }`}
+              aria-label="Filtrer par catégorie"
+              aria-expanded={isFilterOpen}
             >
-              <HiXMark className="h-5 w-5" />
+              <span className="hidden sm:block">
+                {activeFilter !== "all"
+                  ? filterCategories.find((c) => c.id === activeFilter)?.label
+                  : "Filtres"}
+              </span>
+              <HiChevronDown
+                className={`h-5 w-5 transition-transform duration-200 ${
+                  activeFilter !== "all" ? "text-purple-600" : "text-slate-500"
+                } ${isFilterOpen ? "rotate-180" : ""}`}
+              />
             </button>
-          )}
+          </div>
         </div>
 
-        {/* Filter Buttons */}
-        <div className="flex flex-wrap items-center gap-3">
-          {filterCategories.map((category) => (
-            <button
-              key={category.id}
-              onClick={() => setActiveFilter(category.id)}
-              className={`${
-                latoFont.className
-              } rounded-full px-4 py-2 text-sm font-medium transition-all duration-200 ${
-                activeFilter === category.id
-                  ? "bg-purple-600 text-white shadow-sm"
-                  : "bg-white text-slate-600 hover:bg-slate-100 border border-slate-200"
-              }`}
-            >
-              {category.label}
-            </button>
-          ))}
-        </div>
+        {/* Filters Dropdown */}
+        {isFilterOpen && (
+          <>
+            {/* Backdrop to close on click outside */}
+            <div
+              className="fixed inset-0 z-10"
+              onClick={() => setIsFilterOpen(false)}
+            />
+
+            {/* Menu */}
+            <div className="absolute right-0 top-full z-20 mt-2 w-full max-w-sm origin-top-right rounded-2xl border border-slate-100 bg-white p-2 shadow-xl ring-1 ring-slate-900/5 sm:w-80">
+              <div className="mb-2 px-3 py-2 text-xs font-semibold uppercase tracking-wider text-slate-400">
+                Catégories
+              </div>
+              <div className="max-h-80 overflow-y-auto px-1 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-purple-200 hover:scrollbar-thumb-purple-300 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:rounded-full">
+                {filterCategories.map((category) => (
+                  <button
+                    key={category.id}
+                    onClick={() => {
+                      setActiveFilter(category.id);
+                      setIsFilterOpen(false);
+                    }}
+                    className={`flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-left text-sm font-medium transition-colors ${
+                      activeFilter === category.id
+                        ? "bg-purple-50 text-purple-700"
+                        : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+                    }`}
+                  >
+                    <span>{category.label}</span>
+                    {activeFilter === category.id && (
+                      <div className="h-1.5 w-1.5 rounded-full bg-purple-600" />
+                    )}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </>
+        )}
       </div>
 
       {/* Results count */}

@@ -202,7 +202,7 @@ export default function ProgramCard({
   return (
     <button
       onClick={onClick}
-      className={`group flex w-full flex-col items-start rounded-2xl border border-slate-200 bg-white p-6 text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg sm:p-8 ${styles.border}`}
+      className={`group flex w-full h-full flex-col items-start rounded-2xl border border-slate-200 bg-white p-6 text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg sm:p-8 ${styles.border}`}
     >
       {/* Icon */}
       <div
@@ -225,24 +225,27 @@ export default function ProgramCard({
         {program.description}
       </p>
 
-      {/* Categories */}
-      <div className="mb-6 flex flex-wrap gap-2">
-        {program.categories.map((category) => (
-          <span
-            key={category}
-            className={`rounded-full px-3 py-1 text-xs font-medium ring-1 ring-inset ${styles.badge}`}
-          >
-            {category}
-          </span>
-        ))}
-      </div>
+      {/* Footer (Categories + CTA) */}
+      <div className="mt-auto flex w-full flex-col gap-6">
+        {/* Categories */}
+        <div className="flex flex-wrap gap-2">
+          {program.categories.map((category) => (
+            <span
+              key={category}
+              className={`rounded-full px-3 py-1 text-xs font-medium ring-1 ring-inset ${styles.badge}`}
+            >
+              {category}
+            </span>
+          ))}
+        </div>
 
-      {/* CTA - Pushed to bottom with margin-top auto */}
-      <div
-        className={`mt-auto flex items-center gap-2 text-sm font-semibold transition-all duration-300 group-hover:gap-3 ${styles.accent}`}
-      >
-        <span>Explorer les formations</span>
-        <HiArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+        {/* CTA */}
+        <div
+          className={`flex items-center gap-2 text-sm font-semibold transition-all duration-300 group-hover:gap-3 ${styles.accent}`}
+        >
+          <span>Explorer les formations</span>
+          <HiArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+        </div>
       </div>
     </button>
   );
