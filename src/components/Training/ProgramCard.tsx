@@ -32,7 +32,9 @@ interface ProgramCardProps {
     | "governance"
     | "digital"
     | "ea"
-    | "sweng";
+    | "sweng"
+    | "gov"
+    | "process";
 }
 
 // Clean, professional variant styles for light backgrounds
@@ -142,6 +144,22 @@ const variantStyles: Record<
     accent: "text-fuchsia-600",
     border: "hover:border-fuchsia-300",
     Icon: HiDocumentCheck,
+  },
+  gov: {
+    iconBg: "bg-slate-100",
+    iconColor: "text-slate-600",
+    badge: "bg-slate-50 text-slate-700 ring-slate-200",
+    accent: "text-slate-600",
+    border: "hover:border-slate-300",
+    Icon: HiBuildingOffice2,
+  },
+  process: {
+    iconBg: "bg-lime-100",
+    iconColor: "text-lime-600",
+    badge: "bg-lime-50 text-lime-700 ring-lime-200",
+    accent: "text-lime-600",
+    border: "hover:border-lime-300",
+    Icon: HiClipboardDocumentList,
   },
 };
 

@@ -10,6 +10,8 @@ import projectManagementData from "@/data/programs/project-management.json";
 import itServiceManagementData from "@/data/programs/it-service-management.json";
 import enterpriseArchitectureData from "@/data/programs/enterprise-architecture.json";
 import softwareEngineeringData from "@/data/programs/software-engineering.json";
+import itGovernanceData from "@/data/programs/it-governance.json";
+import processManagementData from "@/data/programs/process-management.json";
 import { HierarchicalProgramData, FlattenedTraining } from "@/types/training";
 
 // Type assertion for the imported JSON
@@ -26,6 +28,9 @@ const programsMap: Record<string, HierarchicalProgramData> = {
     enterpriseArchitectureData as unknown as HierarchicalProgramData,
   "software-engineering":
     softwareEngineeringData as unknown as HierarchicalProgramData,
+  "it-governance": itGovernanceData as unknown as HierarchicalProgramData,
+  "process-management":
+    processManagementData as unknown as HierarchicalProgramData,
 };
 
 // Find training by ID in program data
