@@ -7,6 +7,8 @@ import digitalTrustData from "@/data/programs/digital-trust.json";
 import technicalTrainingData from "@/data/programs/technical-training.json";
 import agileManagementData from "@/data/programs/agile-management.json";
 import projectManagementData from "@/data/programs/project-management.json";
+import itServiceManagementData from "@/data/programs/it-service-management.json";
+import enterpriseArchitectureData from "@/data/programs/enterprise-architecture.json";
 import { HierarchicalProgramData, FlattenedTraining } from "@/types/training";
 
 // Type assertion for the imported JSON
@@ -17,6 +19,10 @@ const programsMap: Record<string, HierarchicalProgramData> = {
   "agile-management": agileManagementData as unknown as HierarchicalProgramData,
   "project-management":
     projectManagementData as unknown as HierarchicalProgramData,
+  "it-service-management":
+    itServiceManagementData as unknown as HierarchicalProgramData,
+  "enterprise-architecture":
+    enterpriseArchitectureData as unknown as HierarchicalProgramData,
 };
 
 // Find training by ID in program data

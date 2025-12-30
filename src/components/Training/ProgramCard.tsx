@@ -30,7 +30,8 @@ interface ProgramCardProps {
     | "itsm"
     | "software"
     | "governance"
-    | "digital";
+    | "digital"
+    | "ea";
 }
 
 // Clean, professional variant styles for light backgrounds
@@ -124,6 +125,14 @@ const variantStyles: Record<
     accent: "text-blue-600",
     border: "hover:border-blue-300",
     Icon: HiCloud,
+  },
+  ea: {
+    iconBg: "bg-teal-100",
+    iconColor: "text-teal-600",
+    badge: "bg-teal-50 text-teal-700 ring-teal-200",
+    accent: "text-teal-600",
+    border: "hover:border-teal-300",
+    Icon: HiBuildingOffice2,
   },
 };
 
