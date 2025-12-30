@@ -34,7 +34,8 @@ interface ProgramCardProps {
     | "ea"
     | "sweng"
     | "gov"
-    | "process";
+    | "process"
+    | "qhse";
 }
 
 // Clean, professional variant styles for light backgrounds
@@ -160,6 +161,14 @@ const variantStyles: Record<
     accent: "text-lime-600",
     border: "hover:border-lime-300",
     Icon: HiClipboardDocumentList,
+  },
+  qhse: {
+    iconBg: "bg-sky-100",
+    iconColor: "text-sky-600",
+    badge: "bg-sky-50 text-sky-700 ring-sky-200",
+    accent: "text-sky-600",
+    border: "hover:border-sky-300",
+    Icon: HiShieldCheck,
   },
 };
 
