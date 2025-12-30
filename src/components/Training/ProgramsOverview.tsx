@@ -10,6 +10,7 @@ import { HiMagnifyingGlass, HiFunnel, HiXMark } from "react-icons/hi2";
 // Import JSON data
 import digitalTrustData from "@/data/programs/digital-trust.json";
 import technicalTrainingData from "@/data/programs/technical-training.json";
+import agileManagementData from "@/data/programs/agile-management.json";
 
 // Type assertion helper to extract Program from hierarchical data
 const extractProgram = (data: HierarchicalProgramData): Program => data.program;
@@ -19,6 +20,7 @@ const filterCategories = [
   { id: "all", label: "Tous les programmes" },
   { id: "security", label: "Cybersécurité" },
   { id: "software", label: "Développement & Test" },
+  { id: "agile", label: "Management & Agile" },
 ] as const;
 
 type FilterCategory = (typeof filterCategories)[number]["id"];
@@ -45,6 +47,11 @@ const programs: {
     data: technicalTrainingData as HierarchicalProgramData,
     variant: "software",
     filterCategory: "software",
+  },
+  {
+    data: agileManagementData as HierarchicalProgramData,
+    variant: "agile",
+    filterCategory: "agile",
   },
 ];
 

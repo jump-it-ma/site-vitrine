@@ -18,6 +18,7 @@ import {
   HiXMark,
 } from "react-icons/hi2";
 import Link from "next/link";
+import Pagination from "../Pagination";
 
 interface TrainingCatalogProps {
   programData: HierarchicalProgramData;
@@ -68,6 +69,21 @@ export default function TrainingCatalog({
       languages: Array.from(new Set(trainings.flatMap((t) => t.languages))),
     };
   }, [selectedCategory, programData.filters]);
+
+  // Pagination State
+  const [currentPage, setCurrentPage] = useState(1);
+  const ITEMS_PER_PAGE = 6;
+
+  // Reset pagination when filters or category change
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [filters, selectedCategory]);
+
+  const totalPages = Math.ceil(filteredTrainings.length / ITEMS_PER_PAGE);
+  const paginatedTrainings = filteredTrainings.slice(
+    (currentPage - 1) * ITEMS_PER_PAGE,
+    currentPage * ITEMS_PER_PAGE
+  );
 
   return (
     <div className="min-h-screen bg-gray-50/50">
@@ -313,15 +329,26 @@ export default function TrainingCatalog({
               </div>
 
               {filteredTrainings.length > 0 ? (
-                <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-2">
-                  {filteredTrainings.map((training) => (
-                    <TrainingCard
-                      key={training.id}
-                      training={training}
-                      programId={programData.program.id}
+                <>
+                  <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-2">
+                    {paginatedTrainings.map((training) => (
+                      <TrainingCard
+                        key={training.id}
+                        training={training}
+                        programId={programData.program.id}
+                      />
+                    ))}
+                  </div>
+
+                  {/* Pagination */}
+                  <div className="mt-8">
+                    <Pagination
+                      currentPage={currentPage}
+                      totalPages={totalPages}
+                      onPageChange={setCurrentPage}
                     />
-                  ))}
-                </div>
+                  </div>
+                </>
               ) : (
                 <div className="flex flex-col items-center justify-center rounded-2xl border border-gray-200 bg-white px-8 py-16 text-center">
                   <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-purple-100">
