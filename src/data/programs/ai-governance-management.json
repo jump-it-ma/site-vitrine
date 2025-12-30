@@ -1,0 +1,349 @@
+{
+  "program": {
+    "id": "ai-governance-management",
+    "title": "AI GOVERNANCE & MANAGEMENT",
+    "description": "Formations certifiantes pour la gouvernance de l'IA, la conformité au EU AI Act et la norme ISO 42001.",
+    "categories": [
+      "AI Management & Compliance (EXIN)",
+      "ISO 42001 - AI Management System (PECB)"
+    ]
+  },
+  "filters": {
+    "categories": [
+      "AI Management & Compliance (EXIN)",
+      "ISO 42001 - AI Management System (PECB)"
+    ],
+    "editors": ["EXIN", "PECB"],
+    "durations": [2, 5],
+    "levels": ["Intermédiaire (IP2)", "Avancé (IP3/IP3+)"],
+    "languages": ["FR", "EN"]
+  },
+  "categories": [
+    {
+      "id": "ai-compliance-exin",
+      "name": "AI Management & Compliance (EXIN)",
+      "description": "Certifications axées sur les fondations de l'IA, la conformité réglementaire (EU AI Act) et la sécurité.",
+      "reference": "EXIN-AI",
+      "trainings": [
+        {
+          "id": "exin-ai-foundation",
+          "title": "AI Foundation",
+          "editor": "EXIN",
+          "reference": "AIM004",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Intermédiaire (IP2)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "exam_price": 90,
+            "training_price": 225
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["ai", "foundation", "exin", "ethics"],
+          "search_keywords": [
+            "ai foundation",
+            "machine learning basics",
+            "ai ethics"
+          ],
+          "details": {
+            "description": "Comprendre les principes de base de l'IA, ses usages, ses risques et les défis éthiques. Un point d'entrée essentiel pour les managers.",
+            "target_audience": [
+              "Managers",
+              "Chefs de projet",
+              "Professionnels IT"
+            ],
+            "objectives": [
+              "Définir l'IA et le Machine Learning",
+              "Comprendre les défis éthiques et durables",
+              "Identifier les cas d'usage business"
+            ],
+            "prerequisites": ["Aucun"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction à l'IA",
+                "topics": [
+                  "Définitions et Histoire",
+                  "Machine Learning vs Deep Learning",
+                  "IA Générative (GenAI)"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "IA Responsable",
+                "topics": [
+                  "Éthique et Biais",
+                  "Interaction Homme-Machine",
+                  "Futur du travail"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "exin-ai-compliance",
+          "title": "AI Compliance Professional (EU AI Act)",
+          "editor": "EXIN",
+          "reference": "AIM005",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Avancé (IP3)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "exam_price": 135,
+            "training_price": 270
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["ai act", "compliance", "regulation", "law"],
+          "search_keywords": [
+            "eu ai act",
+            "conformité ia",
+            "règlement européen"
+          ],
+          "details": {
+            "description": "Maîtrisez les exigences du règlement européen sur l'IA (EU AI Act). Apprenez à classifier les systèmes IA et à assurer leur conformité.",
+            "target_audience": [
+              "DPO",
+              "Compliance Officers",
+              "Risk Managers",
+              "Juristes"
+            ],
+            "objectives": [
+              "Comprendre la pyramide des risques de l'AI Act",
+              "Gérer les obligations des systèmes à haut risque",
+              "Mettre en place la gouvernance des données"
+            ],
+            "prerequisites": ["AI Foundation recommandé"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Cadre Réglementaire",
+                "topics": [
+                  "Structure de l'EU AI Act",
+                  "Définitions et Champ d'application",
+                  "Pratiques interdites"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Conformité Pratique",
+                "topics": [
+                  "Systèmes à Haut Risque (Exigences)",
+                  "Analyse d'impact (FRIA)",
+                  "Transparence et Documentation"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "exin-ai-security",
+          "title": "AI Security Professional (ISO 27090)",
+          "editor": "EXIN",
+          "reference": "AIM006",
+          "is_best_seller": false,
+          "is_new": true,
+          "duration_days": 2,
+          "level": "Avancé (IP3)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "exam_price": 135,
+            "training_price": 270
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": [
+            "ai security",
+            "iso 27090",
+            "cybersecurity",
+            "adversarial ai"
+          ],
+          "availability_note": "From Q3'26",
+          "search_keywords": ["sécurité ia", "iso 27090", "ai hardening"],
+          "details": {
+            "description": "Focus sur la sécurité spécifique aux systèmes d'IA selon la future norme ISO 27090. Protection contre les attaques adverses, l'empoisonnement de données et le vol de modèles.",
+            "target_audience": [
+              "CISO",
+              "Ingénieurs Sécurité",
+              "Architectes IA"
+            ],
+            "objectives": [
+              "Identifier les menaces spécifiques à l'IA (OWASP Top 10 LLM)",
+              "Sécuriser le cycle de vie MLOps",
+              "Auditer la sécurité des modèles"
+            ],
+            "prerequisites": ["Connaissances en cybersécurité"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Menaces IA",
+                "topics": [
+                  "Adversarial Attacks",
+                  "Data Poisoning",
+                  "Model Inversion & Theft"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Défense & Normes",
+                "topics": [
+                  "Cadre ISO 27090",
+                  "Contrôles de sécurité techniques",
+                  "Red Teaming pour l'IA"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "iso-42001-pecb",
+      "name": "ISO 42001 - AI Management System (PECB)",
+      "description": "Première norme internationale pour les Systèmes de Management de l'IA (AIMS). Certifications PECB reconnues mondialement.",
+      "reference": "ISO42001",
+      "trainings": [
+        {
+          "id": "iso-42001-foundation",
+          "title": "ISO 42001 Foundation",
+          "editor": "PECB",
+          "reference": "AIM001",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Intermédiaire (IP2+)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 265,
+            "note": "Official Training Package (incl. voucher)"
+          },
+          "package_includes": "Support officiel PECB et Voucher Examen",
+          "languages": ["EN"],
+          "tags": ["iso 42001", "aims", "governance", "foundation"],
+          "search_keywords": [
+            "iso 42001 foundation",
+            "ai management system",
+            "aipgf"
+          ],
+          "details": {
+            "description": "Découvrez les éléments fondamentaux pour mettre en œuvre et gérer un Système de Management de l'IA (AIMS) conforme à la norme ISO/IEC 42001:2023.",
+            "target_audience": [
+              "Responsables IA",
+              "Consultants",
+              "Membres de comités d'éthique"
+            ],
+            "objectives": [
+              "Comprendre les concepts de l'AIMS",
+              "Connaître les exigences ISO 42001",
+              "Lier l'IA à la stratégie d'entreprise"
+            ],
+            "prerequisites": ["Aucun"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction AIMS",
+                "topics": [
+                  "Terminologie et Concepts IA",
+                  "Structure de la norme ISO 42001",
+                  "Contexte de l'organisme"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Exigences Normatives",
+                "topics": [
+                  "Leadership et Planification",
+                  "Évaluation des risques IA",
+                  "Contrôles opérationnels"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "iso-42001-lead",
+          "title": "ISO 42001 Lead Implementer / Auditor",
+          "editor": "PECB",
+          "reference": "AIM002, 003",
+          "is_best_seller": false,
+          "duration_days": 5,
+          "level": "Avancé (IP3 / IP3+)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 665,
+            "note": "Official Training Package (incl. voucher)"
+          },
+          "package_includes": "Support officiel PECB et Voucher Examen",
+          "languages": ["EN"],
+          "tags": ["iso 42001", "lead implementer", "lead auditor", "expert"],
+          "search_keywords": [
+            "lead implementer ai",
+            "auditeur iso 42001",
+            "certification expert"
+          ],
+          "details": {
+            "description": "Certification de niveau Expert. Choisissez Lead Implementer pour piloter le projet AIMS ou Lead Auditor pour auditer la conformité des systèmes d'IA.",
+            "target_audience": [
+              "Chefs de projet IA",
+              "Auditeurs internes/externes",
+              "Responsables conformité"
+            ],
+            "objectives": [
+              "Mener l'implémentation de ISO 42001 (LI)",
+              "Planifier et réaliser un audit d'IA (LA)",
+              "Gérer l'amélioration continue de l'AIMS"
+            ],
+            "prerequisites": ["Foundation recommandé"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Cadre ISO 42001",
+                "topics": [
+                  "Normes et cadres réglementaires",
+                  "Lancement du projet AIMS"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Planification & Risques",
+                "topics": [
+                  "Appréciation des risques IA",
+                  "Déclaration d'applicabilité"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Mise en œuvre / Audit",
+                "topics": ["Contrôles de l'Annexe A", "Preuves d'audit"]
+              },
+              {
+                "day": 4,
+                "title": "Surveillance",
+                "topics": [
+                  "Audit interne et Revue de direction",
+                  "Préparation à la certification"
+                ]
+              },
+              {
+                "day": 5,
+                "title": "Examen",
+                "topics": ["Examen de certification (3h)"]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    }
+  ]
+}

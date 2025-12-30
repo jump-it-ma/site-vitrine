@@ -18,6 +18,8 @@ import softwareEngineeringData from "@/data/programs/software-engineering.json";
 import itGovernanceData from "@/data/programs/it-governance.json";
 import processManagementData from "@/data/programs/process-management.json";
 import qhseRiskCsrData from "@/data/programs/qhse-risk-csr.json";
+import digitalManagementTechnologiesData from "@/data/programs/digital-management-technologies.json";
+import aiGovernanceManagementData from "@/data/programs/ai-governance-management.json";
 
 // Type assertion helper to extract Program from hierarchical data
 const extractProgram = (data: HierarchicalProgramData): Program => data.program;
@@ -35,6 +37,8 @@ const filterCategories = [
   { id: "gov", label: "IT Governance" },
   { id: "process", label: "Process Management & Optimisation" },
   { id: "qhse", label: "QHSE & Risk Management" },
+  { id: "digital-mgmt", label: "Digital Management & Tech" },
+  { id: "ai-gov", label: "AI Governance & Compliance" },
 ] as const;
 
 type FilterCategory = (typeof filterCategories)[number]["id"];
@@ -54,7 +58,9 @@ const programs: {
     | "sweng"
     | "gov"
     | "process"
-    | "qhse";
+    | "qhse"
+    | "cloud"
+    | "ai-gov";
   filterCategory: FilterCategory;
 }[] = [
   {
@@ -106,6 +112,16 @@ const programs: {
     data: qhseRiskCsrData as HierarchicalProgramData,
     variant: "qhse",
     filterCategory: "qhse",
+  },
+  {
+    data: digitalManagementTechnologiesData as HierarchicalProgramData,
+    variant: "cloud",
+    filterCategory: "digital-mgmt",
+  },
+  {
+    data: aiGovernanceManagementData as HierarchicalProgramData,
+    variant: "ai-gov",
+    filterCategory: "ai-gov",
   },
 ];
 

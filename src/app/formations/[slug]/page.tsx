@@ -34,6 +34,8 @@ import softwareEngineeringData from "@/data/programs/software-engineering.json";
 import itGovernanceData from "@/data/programs/it-governance.json";
 import processManagementData from "@/data/programs/process-management.json";
 import qhseRiskCsrData from "@/data/programs/qhse-risk-csr.json";
+import digitalManagementTechnologiesData from "@/data/programs/digital-management-technologies.json";
+import aiGovernanceManagementData from "@/data/programs/ai-governance-management.json";
 
 // Map program slugs to data
 const programsMap: Record<string, HierarchicalProgramData> = {
@@ -52,6 +54,10 @@ const programsMap: Record<string, HierarchicalProgramData> = {
   "process-management":
     processManagementData as unknown as HierarchicalProgramData,
   "qhse-risk-csr": qhseRiskCsrData as unknown as HierarchicalProgramData,
+  "digital-management-technologies":
+    digitalManagementTechnologiesData as unknown as HierarchicalProgramData,
+  "ai-governance-management":
+    aiGovernanceManagementData as unknown as HierarchicalProgramData,
 };
 
 const ibmFont = ibmCondensedFont;

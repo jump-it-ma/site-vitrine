@@ -14,6 +14,7 @@ import {
   HiRocketLaunch,
   HiBuildingOffice2,
   HiCloud,
+  HiScale,
 } from "react-icons/hi2";
 import { IconType } from "react-icons";
 
@@ -35,7 +36,9 @@ interface ProgramCardProps {
     | "sweng"
     | "gov"
     | "process"
-    | "qhse";
+    | "qhse"
+    | "cloud"
+    | "ai-gov";
 }
 
 // Clean, professional variant styles for light backgrounds
@@ -169,6 +172,22 @@ const variantStyles: Record<
     accent: "text-sky-600",
     border: "hover:border-sky-300",
     Icon: HiShieldCheck,
+  },
+  cloud: {
+    iconBg: "bg-purple-100",
+    iconColor: "text-purple-600",
+    badge: "bg-purple-50 text-purple-700 ring-purple-200",
+    accent: "text-purple-600",
+    border: "hover:border-purple-300",
+    Icon: HiCloud,
+  },
+  "ai-gov": {
+    iconBg: "bg-teal-100",
+    iconColor: "text-teal-600",
+    badge: "bg-teal-50 text-teal-700 ring-teal-200",
+    accent: "text-teal-600",
+    border: "hover:border-teal-300",
+    Icon: HiScale,
   },
 };
 
