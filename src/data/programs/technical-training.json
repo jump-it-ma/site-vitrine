@@ -3,10 +3,22 @@
     "id": "technical-training",
     "title": "TECHNICAL TRAINING (TEST AUTOMATION - DEVELOPMENT - RPA)",
     "description": "Formations techniques pour développeurs et testeurs : Automatisation des tests, Développement Web et RPA.",
-    "categories": ["Test Logiciel", "Développement Web", "RPA"]
+    "categories": [
+      "Test Logiciel",
+      "Développement Web",
+      "Développement Mobile",
+      "DevOps",
+      "RPA"
+    ]
   },
   "filters": {
-    "categories": ["Test Logiciel", "Développement Web", "RPA"],
+    "categories": [
+      "Test Logiciel",
+      "Développement Web",
+      "Développement Mobile",
+      "DevOps",
+      "RPA"
+    ],
     "editors": ["JumpIT"],
     "durations": [2, 4],
     "levels": ["Débutant", "Intermédiaire", "Avancé", "Débutant/Intermédiaire"],
@@ -522,6 +534,1171 @@
                   "Règles et organisation des Hooks",
                   "Tests unitaires avec Jest",
                   "Bonnes pratiques et structure du code"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "reactjs-advanced",
+          "title": "ReactJS Avancé",
+          "editor": "JumpIT",
+          "reference": "REACT-ADV",
+          "is_best_seller": false,
+          "duration_days": 3,
+          "level": "Avancé",
+          "evaluation": "Projet",
+          "package_includes": "Support de cours et exercices avancés",
+          "languages": ["FR"],
+          "tags": ["dev", "frontend", "react", "performance"],
+          "search_keywords": [
+            "react",
+            "redux",
+            "performance",
+            "hooks",
+            "patterns"
+          ],
+          "details": {
+            "description": "Perfectionnez vos compétences ReactJS avec cette formation avancée. Maîtrisez la gestion d'état globale avec Redux, l'optimisation des performances, les patterns de conception avancés et les tests. Idéal pour les développeurs souhaitant construire des applications complexes et performantes.",
+            "target_audience": [
+              "Développeurs React expérimentés",
+              "Lead Developers Front-End"
+            ],
+            "objectives": [
+              "Maîtriser les Hooks avancés et personnalisés",
+              "Gérer l'état global avec Redux Toolkit ou Context API avancé",
+              "Optimiser les performances (memoization, lazy loading)",
+              "Mettre en place des tests robustes"
+            ],
+            "prerequisites": ["Maîtrise de ReactJS et JavaScript ES6+"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Architecture et State Management",
+                "topics": [
+                  "Architecture des applications React complexes",
+                  "Context API vs Redux vs Zustand",
+                  "Mise en place de Redux Toolkit",
+                  "Gestion des effets de bord asynchrones"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Performance et Patterns",
+                "topics": [
+                  "React.memo, useMemo et useCallback",
+                  "Code Splitting et Lazy Loading",
+                  "Patterns: HOC, Render Props, Compound Components",
+                  "Virtualisation des listes"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Tests et Écosystème",
+                "topics": [
+                  "Tests unitaires et d'intégration (React Testing Library)",
+                  "Server-Side Rendering (intro Next.js)",
+                  "Sécurité dans React",
+                  "Déploiement et CI/CD"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "angular-beginner",
+          "title": "Angular Débutant",
+          "editor": "JumpIT",
+          "reference": "ANGULAR-BASICS",
+          "is_best_seller": false,
+          "duration_days": 4,
+          "level": "Débutant",
+          "evaluation": "TP",
+          "package_includes": "Support de cours et projet guidé",
+          "languages": ["FR"],
+          "tags": ["dev", "frontend", "angular", "typescript"],
+          "search_keywords": [
+            "angular",
+            "typescript",
+            "frontend",
+            "google",
+            "web"
+          ],
+          "details": {
+            "description": "Découvrez le framework Angular de Google pour créer des applications web robustes et évolutives. Cette formation couvre les bases de TypeScript, les composants, le routing et la gestion des formulaires. Un choix solide pour le développement d'applications d'entreprise.",
+            "target_audience": [
+              "Développeurs Web",
+              "Développeurs Back-End souhaitant faire du Front"
+            ],
+            "objectives": [
+              "Comprendre l'architecture MVC d'Angular",
+              "Utiliser TypeScript pour le développement",
+              "Créer des composants et gérer le data-binding",
+              "Gérer la navigation et les formulaires"
+            ],
+            "prerequisites": [
+              "Bonnes connaissances en JavaScript",
+              "Notions de HTML/CSS"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction et TypeScript",
+                "topics": [
+                  "Présentation du framework et CLI",
+                  "Bases de TypeScript (Types, Interfaces)",
+                  "Architecture d'un projet Angular",
+                  "Premier composant"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Composants et Templates",
+                "topics": [
+                  "Data Binding (Interpolation, Property, Event)",
+                  "Directives structurelles (*ngIf, *ngFor)",
+                  "Communication entre composants (@Input, @Output)",
+                  "Pipes de transformation"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Services et Routing",
+                "topics": [
+                  "Injection de dépendances",
+                  "Création de Services",
+                  "Routing et Navigation",
+                  "Appels HTTP basiques"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Formulaires et Modules",
+                "topics": [
+                  "Template-driven Forms",
+                  "Introduction aux Reactive Forms",
+                  "Validation des données",
+                  "Organisation en modules"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "angular-advanced",
+          "title": "Angular Avancé",
+          "editor": "JumpIT",
+          "reference": "ANGULAR-ADV",
+          "is_best_seller": false,
+          "duration_days": 3,
+          "level": "Avancé",
+          "evaluation": "TP",
+          "package_includes": "Support de cours expert",
+          "languages": ["FR"],
+          "tags": ["dev", "frontend", "angular", "rxjs"],
+          "search_keywords": [
+            "angular",
+            "rxjs",
+            "ngrx",
+            "performance",
+            "architecture"
+          ],
+          "details": {
+            "description": "Maîtrisez les concepts avancés d'Angular : programmation réactive avec RxJS, gestion d'état avec NgRx, optimisation des performances et tests. Devenez un expert capable de concevoir des applications d'envergure.",
+            "target_audience": ["Développeurs Angular expérimentés"],
+            "objectives": [
+              "Maîtriser la programmation réactive avec RxJS",
+              "Gérer l'état applicatif complexe (NgRx)",
+              "Optimiser les performances (Change Detection, Lazy Loading)",
+              "Sécuriser et tester l'application"
+            ],
+            "prerequisites": ["Maîtrise d'Angular et TypeScript"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "RxJS et Programmation Réactive",
+                "topics": [
+                  "Observables et souscriptions",
+                  "Opérateurs RxJS avancés",
+                  "Gestion des flux de données asynchrones",
+                  "RxJS dans les services et composants"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "State Management et Performance",
+                "topics": [
+                  "Principes Redux avec NgRx",
+                  "Store, Actions, Reducers, Effects",
+                  "Stratégies de Change Detection (OnPush)",
+                  "Lazy Loading de modules"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Sécurité, Tests et Déploiement",
+                "topics": [
+                  "Intercepus HTTP et Gardes (Guards)",
+                  "Tests unitaires et E2E",
+                  "Internationalisation (i18n)",
+                  "Optimisation du build et déploiement"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "nextjs-beginner",
+          "title": "Next.js Débutant",
+          "editor": "JumpIT",
+          "reference": "NEXT-BASICS",
+          "is_best_seller": true,
+          "duration_days": 2,
+          "level": "Débutant",
+          "evaluation": "TP",
+          "package_includes": "Support de cours et projet",
+          "languages": ["FR"],
+          "tags": ["dev", "frontend", "react", "nextjs", "ssr"],
+          "search_keywords": ["nextjs", "react", "ssr", "seo", "web"],
+          "details": {
+            "description": "Apprenez à créer des applications React performantes et optimisées pour le SEO avec Next.js. Découvrez le rendu côté serveur (SSR), la génération statique (SSG) et le routing système de fichiers.",
+            "target_audience": ["Développeurs React"],
+            "objectives": [
+              "Comprendre les avantages de Next.js (SSR, SSG)",
+              "Maîtriser le système de routing",
+              "Gérer le chargement des données",
+              "Optimiser les images et les polices"
+            ],
+            "prerequisites": ["Connaissances solides en ReactJS"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Fondamentaux et Routing",
+                "topics": [
+                  "Introduction à Next.js et installation",
+                  "App Router vs Pages Router",
+                  "Routing statique et dynamique",
+                  "Layouts et composants"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Data Fetching et Rendu",
+                "topics": [
+                  "Server Components vs Client Components",
+                  "Fetching de données (Server Actions)",
+                  "Static Site Generation (SSG)",
+                  "Server-Side Rendering (SSR)"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "nextjs-advanced",
+          "title": "Next.js Avancé",
+          "editor": "JumpIT",
+          "reference": "NEXT-ADV",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Avancé",
+          "evaluation": "TP",
+          "package_includes": "Support de cours expert",
+          "languages": ["FR"],
+          "tags": ["dev", "fullstack", "react", "nextjs"],
+          "search_keywords": [
+            "nextjs",
+            "fullstack",
+            "server actions",
+            "middleware",
+            "auth"
+          ],
+          "details": {
+            "description": "Exploitez tout le potentiel de Next.js pour créer des applications Full Stack. Au programme : Server Actions, Middlewares, Authentification, et optimisation avancée.",
+            "target_audience": ["Développeurs Next.js/React confirmés"],
+            "objectives": [
+              "Maîtriser les Server Actions",
+              "Mettre en place une authentification robuste",
+              "Utiliser les Middlewares",
+              "Optimiser les performances Web Vitals"
+            ],
+            "prerequisites": ["Connaissance de base de Next.js"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Fonctionnalités Full Stack",
+                "topics": [
+                  "Deep dive Server Actions",
+                  "API Routes Handlers",
+                  "Middleware et Edge Functions",
+                  "Gestion de l'authentification (NextAuth / Auth.js)"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Optimisation et Production",
+                "topics": [
+                  "Caching et Revalidation (ISR)",
+                  "Optimisation SEO avancée et Metadata",
+                  "Gestion des erreurs et Loading UI",
+                  "Déploiement sur Vercel/Docker"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "spring-java-intro",
+          "title": "Introduction à Spring Java",
+          "editor": "JumpIT",
+          "reference": "SPRING-BASICS",
+          "is_best_seller": false,
+          "duration_days": 4,
+          "level": "Débutant",
+          "evaluation": "TP",
+          "package_includes": "Support de cours",
+          "languages": ["FR"],
+          "tags": ["dev", "backend", "java", "spring", "boot"],
+          "search_keywords": ["java", "spring", "boot", "backend", "api"],
+          "details": {
+            "description": "Entrez dans l'univers du développement Java d'entreprise avec Spring Boot. Apprenez à créer des API REST, à interagir avec des bases de données et à structurer vos applications backend.",
+            "target_audience": ["Développeurs Java débutants", "Étudiants"],
+            "objectives": [
+              "Comprendre l'écosystème Spring",
+              "Créer une application Spring Boot",
+              "Développer une API REST",
+              "Gérer la persistance des données avec JPA"
+            ],
+            "prerequisites": ["Bonnes connaissances en Java (POO)"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction et Core",
+                "topics": [
+                  "Architecture Spring et Inversion de Contrôle",
+                  "Configuration et Beans",
+                  "Démarrage avec Spring Boot",
+                  "Injection de dépendances"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Développement Web REST",
+                "topics": [
+                  "Spring MVC",
+                  "Création de contrôleurs REST",
+                  "Gestion des requêtes et réponses",
+                  "Gestion des erreurs"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Accès aux Données",
+                "topics": [
+                  "Introduction à Spring Data JPA",
+                  "Entités et Relations",
+                  "Repositories et requêtes",
+                  "Transactions"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Tests et Sécurité basique",
+                "topics": [
+                  "Tests unitaires avec JUnit et Mockito",
+                  "Tests d'intégration Spring Boot",
+                  "Introduction à Spring Security",
+                  "Packaging et exécution"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "spring-java-advanced",
+          "title": "Spring Java Avancé",
+          "editor": "JumpIT",
+          "reference": "SPRING-ADV",
+          "is_best_seller": false,
+          "duration_days": 3,
+          "level": "Avancé",
+          "evaluation": "TP",
+          "package_includes": "Support de cours expert",
+          "languages": ["FR"],
+          "tags": ["dev", "backend", "java", "microservices", "security"],
+          "search_keywords": [
+            "spring",
+            "microservices",
+            "security",
+            "cloud",
+            "reactive"
+          ],
+          "details": {
+            "description": "Allez plus loin avec Spring : Architecture Microservices, Spring Security avancé, Programmation Réactive et Cloud.",
+            "target_audience": ["Développeurs Java/Spring confirmés"],
+            "objectives": [
+              "Sécuriser les applications avec Spring Security",
+              "Comprendre l'architecture Microservices",
+              "Introduction à la programmation réactive",
+              "Monitoring et Cloud"
+            ],
+            "prerequisites": ["Maîtrise de Spring Boot"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Sécurité Avancée",
+                "topics": [
+                  "Architecture Spring Security",
+                  "Authentification JWT / OAuth2",
+                  "Gestion des rôles et permissions",
+                  "Protection CSRF/CORS"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Microservices et Cloud",
+                "topics": [
+                  "Concepts Microservices",
+                  "Spring Cloud (Config, Discovery)",
+                  "API Gateway",
+                  "Resilience Pattern (Circuit Breaker)"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Reactive et Monitoring",
+                "topics": [
+                  "Spring WebFlux et Project Reactor",
+                  "Accès données réactif (R2DBC)",
+                  "Monitoring avec Actuator et Prometheus",
+                  "Dockerisation"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "nestjs-beginner",
+          "title": "NestJS Débutant",
+          "editor": "JumpIT",
+          "reference": "NEST-BASICS",
+          "is_best_seller": false,
+          "duration_days": 3,
+          "level": "Débutant",
+          "evaluation": "TP",
+          "package_includes": "Support de cours et projet",
+          "languages": ["FR"],
+          "tags": ["dev", "backend", "nodejs", "typescript", "nestjs"],
+          "search_keywords": ["nestjs", "node", "typescript", "backend", "api"],
+          "details": {
+            "description": "Apprenez à développer des applications Node.js scalables et maintenables avec NestJS. Profitez de la puissance de TypeScript et de l'architecture modulaire inspirée d'Angular.",
+            "target_audience": [
+              "Développeurs Node.js",
+              "Développeurs Angular (back-end transition)"
+            ],
+            "objectives": [
+              "Comprendre l'architecture de NestJS",
+              "Créer des API RESTful",
+              "Utiliser TypeORM pour la base de données",
+              "Valider les données"
+            ],
+            "prerequisites": ["JavaScript/TypeScript", "Bases de Node.js"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Fondamentaux",
+                "topics": [
+                  "Architecture (Modules, Controllers, Services)",
+                  "Installation et CLI",
+                  "Injection de dépendances",
+                  "Routing et Verbes HTTP"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Base de données et Validation",
+                "topics": [
+                  "Intégration TypeORM / Mongoose",
+                  "DTO et Validation (class-validator)",
+                  "Relations entre entités",
+                  "CRUD complet"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Gardes et Intercepteurs",
+                "topics": [
+                  "Gestion des erreurs",
+                  "Pipes de transformation",
+                  "Introduction aux Guards (Auth)",
+                  "Déploiement basique"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "nestjs-advanced",
+          "title": "NestJS Avancé",
+          "editor": "JumpIT",
+          "reference": "NEST-ADV",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Avancé",
+          "evaluation": "TP",
+          "package_includes": "Support de cours expert",
+          "languages": ["FR"],
+          "tags": ["dev", "backend", "nodejs", "microservices"],
+          "search_keywords": [
+            "nestjs",
+            "microservices",
+            "graphql",
+            "websockets",
+            "queue"
+          ],
+          "details": {
+            "description": "Expertise NestJS : Microservices, GraphQL, WebSockets et architectures complexes.",
+            "target_audience": ["Développeurs NestJS confirmés"],
+            "objectives": [
+              "Mettre en place une architecture Microservices",
+              "Créer une API GraphQL",
+              "Gérer le temps réel avec WebSockets",
+              "Utiliser les files d'attente"
+            ],
+            "prerequisites": ["Maîtrise de NestJS bases"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Microservices et Event-Driven",
+                "topics": [
+                  "Architecture Microservices avec NestJS",
+                  "Communication (TCP, Redis, RabbitMQ)",
+                  "CQRS Pattern",
+                  "Gestion des tâches (Queues/Bull)"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "GraphQL et Temps Réel",
+                "topics": [
+                  "API GraphQL (Code First vs Schema First)",
+                  "Resolvers et Mutations",
+                  "WebSockets et Gateways",
+                  "Tests E2E et Unitaires avancés"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "express-js",
+          "title": "Express.js",
+          "editor": "JumpIT",
+          "reference": "EXPRESS",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Débutant/Intermédiaire",
+          "evaluation": "TP",
+          "package_includes": "Support de cours et projet API",
+          "languages": ["FR"],
+          "tags": ["dev", "backend", "nodejs", "javascript", "api"],
+          "search_keywords": [
+            "express",
+            "node",
+            "api",
+            "backend",
+            "middleware"
+          ],
+          "details": {
+            "description": "Développez des API RESTful rapides et légères avec Express.js, le framework standard pour Node.js. Maîtrisez le routing, les middlewares et l'interaction avec les bases de données.",
+            "target_audience": [
+              "Développeurs JavaScript Front-end",
+              "Débutants Backend"
+            ],
+            "objectives": [
+              "Créer un serveur Web avec Node.js et Express",
+              "Construire une API RESTful complète",
+              "Mettre en œuvre des Middlewares",
+              "Connecter une base de données (MongoDB/SQL)"
+            ],
+            "prerequisites": ["Bonnes connaissances en JavaScript (ES6+)"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Fondamentaux et Routing",
+                "topics": [
+                  "Architecture Node.js et Event Loop",
+                  "Configuration d'un serveur Express",
+                  "Gestion des Routes et Verbes HTTP",
+                  "Gestion des requêtes et réponses (JSON)"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Middlewares et Data",
+                "topics": [
+                  "Concept et création de Middlewares",
+                  "Gestion des erreurs",
+                  "Connexion Base de données (Mongoose/Sequelize)",
+                  "Séurisation basique (Helmet, CORS)"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "laravel-beginner",
+          "title": "Laravel Débutant",
+          "editor": "JumpIT",
+          "reference": "LARAVEL-BASICS",
+          "is_best_seller": false,
+          "duration_days": 3,
+          "level": "Débutant",
+          "evaluation": "TP",
+          "package_includes": "Support de cours et projet",
+          "languages": ["FR"],
+          "tags": ["dev", "backend", "php", "laravel"],
+          "search_keywords": ["laravel", "php", "web", "backend", "mvc"],
+          "details": {
+            "description": "Initiez-vous au framework PHP le plus élégant. Apprenez le pattern MVC, Eloquent ORM, Blade et créez votre première application web complète.",
+            "target_audience": ["Développeurs PHP", "Étudiants"],
+            "objectives": [
+              "Installer et configurer Laravel",
+              "Comprendre le routage et MVC",
+              "Utiliser Eloquent ORM",
+              "Créer des interfaces avec Blade"
+            ],
+            "prerequisites": ["Connaissances en PHP et POO"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Bases et Routing",
+                "topics": [
+                  "Installation (Composer, Artisan)",
+                  "Structure de dossier",
+                  "Système de Routing",
+                  "Contrôleurs et Middleware"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Données et Eloquent",
+                "topics": [
+                  "Migrations et Seeders",
+                  "Eloquent ORM (Modèles)",
+                  "Relations basic",
+                  "Query Builder"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Vue et Formulaires",
+                "topics": [
+                  "Moteur de template Blade",
+                  "Validation de formulaires",
+                  "Authentification native",
+                  "CRUD complet"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "laravel-advanced",
+          "title": "Laravel Avancé",
+          "editor": "JumpIT",
+          "reference": "LARAVEL-ADV",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Avancé",
+          "evaluation": "TP",
+          "package_includes": "Support de cours expert",
+          "languages": ["FR"],
+          "tags": ["dev", "backend", "php", "laravel", "api"],
+          "search_keywords": ["laravel", "api", "test", "queue", "performance"],
+          "details": {
+            "description": "Maîtrisez les aspects avancés de Laravel : Développement d'API, Tests automatisés, Files d'attente et optimisation.",
+            "target_audience": ["Développeurs Laravel confirmés"],
+            "objectives": [
+              "Développer des API RESTful robustes",
+              "Écrire des tests automatisés (Pest/PHPUnit)",
+              "Gérer les tâches asynchrones (Jobs/Queues)",
+              "Optimiser les performances"
+            ],
+            "prerequisites": ["Maîtrise de Laravel bases"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "API et Architecture",
+                "topics": [
+                  "API Resources et Transformations",
+                  "Authentification API (Sanctum/Passport)",
+                  "Service Container et Injection",
+                  "Design Patterns dans Laravel"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Performance et Tests",
+                "topics": [
+                  "Queues, Jobs et Workers",
+                  "Caching et Optimisation de requêtes",
+                  "Tests Feature et Unitaires",
+                  "Events et Listeners"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "mobile-development",
+      "name": "Développement Mobile",
+      "description": "Apprenez à développer des applications mobiles performantes et multiplateformes.",
+      "reference": "DEV-MOBILE",
+      "trainings": [
+        {
+          "id": "react-native-beginner",
+          "title": "React Native Débutant",
+          "editor": "JumpIT",
+          "reference": "RN-BASICS",
+          "is_best_seller": false,
+          "duration_days": 3,
+          "level": "Débutant",
+          "evaluation": "TP",
+          "package_includes": "Support de cours et projet",
+          "languages": ["FR"],
+          "tags": ["dev", "mobile", "react-native", "ios", "android"],
+          "search_keywords": [
+            "mobile",
+            "react native",
+            "ios",
+            "android",
+            "app"
+          ],
+          "details": {
+            "description": "Créez des applications mobiles natives pour iOS et Android avec une seule base de code JavaScript. Comprenez les composants natifs, la navigation et le style.",
+            "target_audience": [
+              "Développeurs Web (React)",
+              "Développeurs Mobile débutants"
+            ],
+            "objectives": [
+              "Configurer l'environnement de développement",
+              "Créer des interfaces avec des composants natifs",
+              "Gérer la navigation (React Navigation)",
+              "Styliser l'application (Flexbox)"
+            ],
+            "prerequisites": ["Connaissances ReactJS indispensables"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Bases et UI",
+                "topics": [
+                  "Architecture React Native vs Native",
+                  "Composants de base (View, Text, Image)",
+                  "Layouts avec Flexbox",
+                  "Styles et thèmes"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Interactivité et Navigation",
+                "topics": [
+                  "Gestion des événements tactiles",
+                  "React Navigation (Stack, Tab, Drawer)",
+                  "Listes performantes (FlatList)",
+                  "Inputs et Formulaires"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Données et Natif",
+                "topics": [
+                  "Appels API et useEffect",
+                  "Stockage local (AsyncStorage)",
+                  "Utilisation de la Caméra/Géolocalisation (Expo)",
+                  "Build et déploiement (Expo EAS)"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "expo-go",
+          "title": "Expo Go (React Native)",
+          "editor": "JumpIT",
+          "reference": "EXPO-GO",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Débutant",
+          "evaluation": "Projet",
+          "package_includes": "Support de cours et app mobile",
+          "languages": ["FR"],
+          "tags": ["dev", "mobile", "react-native", "expo", "rapid-dev"],
+          "search_keywords": [
+            "expo",
+            "react native",
+            "mobile",
+            "ios",
+            "android"
+          ],
+          "details": {
+            "description": "Accélérez votre développement mobile avec Expo Go. Apprenez à créer, tester et déployer des applications React Native sans configuration complexe, directement sur votre appareil.",
+            "target_audience": [
+              "Développeurs Web",
+              "Débutants en développement mobile"
+            ],
+            "objectives": [
+              "Configurer un environnement de développement mobile rapide",
+              "Utiliser les API natives Expo via JavaScript",
+              "Tester en temps réel sur appareils physiques",
+              "Déployer avec Expo Application Services (EAS)"
+            ],
+            "prerequisites": ["Bases de JavaScript et React"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Écosystème Expo",
+                "topics": [
+                  "Installation et Expo CLI",
+                  "Architecture Expo vs Bare Workflow",
+                  "Utilisation d'Expo Go sur Device",
+                  "Navigation avec Expo Router"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "APIs et Déploiement",
+                "topics": [
+                  "Accès aux capteurs (Caméra, Location)",
+                  "Notifications Push",
+                  "Updates Over-The-Air (OTA)",
+                  "Introduction à EAS Build & Submit"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "react-native-advanced",
+          "title": "React Native Avancé",
+          "editor": "JumpIT",
+          "reference": "RN-ADV",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Avancé",
+          "evaluation": "Projet",
+          "package_includes": "Support de cours expert",
+          "languages": ["FR"],
+          "tags": ["dev", "mobile", "react-native", "performance"],
+          "search_keywords": [
+            "react native",
+            "performance",
+            "native modules",
+            "ci/cd"
+          ],
+          "details": {
+            "description": "Optimisez vos applications React Native et accédez aux fonctionnalités natives avancées. Performance, animations, modules natifs et déploiement sur les stores.",
+            "target_audience": ["Développeurs React Native confirmés"],
+            "objectives": [
+              "Optimiser les performances (JS thread vs UI thread)",
+              "Créer des animations complexes",
+              "Intégrer du code natif (Java/Swift)",
+              "Automatiser les builds (CI/CD)"
+            ],
+            "prerequisites": ["Expérience en React Native"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Performance et Animations",
+                "topics": [
+                  "Profiling et debugging avancé",
+                  "Optimisation du rendu (Reanimated)",
+                  "Animations gestuelles (Gesture Handler)",
+                  "Gestion de la mémoire"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Architecture et Natif",
+                "topics": [
+                  "Architecture pour grandes apps",
+                  "Modules Natifs (TurboModules)",
+                  "Bridge et JSI",
+                  "Publication Apple Store / Google Play"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "devops",
+      "name": "DevOps",
+      "description": "Adoptez la culture DevOps. Automatisez le déploiement, gérez les conteneurs et orchestrez vos applications pour plus d'agilité.",
+      "reference": "DEVOPS",
+      "trainings": [
+        {
+          "id": "docker",
+          "title": "Docker",
+          "editor": "JumpIT",
+          "reference": "DOCKER",
+          "is_best_seller": true,
+          "duration_days": 2,
+          "level": "Débutant/Intermédiaire",
+          "evaluation": "TP",
+          "package_includes": "Support de cours et labs",
+          "languages": ["FR"],
+          "tags": ["devops", "container", "docker", "cloud"],
+          "search_keywords": [
+            "docker",
+            "container",
+            "devops",
+            "cloud",
+            "virtualization"
+          ],
+          "details": {
+            "description": "Révolutionnez votre manière de livrer des logiciels avec Docker. Apprenez à créer, déployer et gérer des conteneurs légers et portables pour vos applications.",
+            "target_audience": [
+              "Développeurs",
+              "SysAdmins",
+              "DevOps Engineers"
+            ],
+            "objectives": [
+              "Comprendre le concept de conteneurisation",
+              "Créer des images Docker (Dockerfile)",
+              "Gérer les conteneurs et les volumes",
+              "Orchestrer avec Docker Compose"
+            ],
+            "prerequisites": ["Notions de base Linux/Command Line"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Fondamentaux Docker",
+                "topics": [
+                  "Virtualisation vs Conteneurisation",
+                  "Architecture Docker",
+                  "Commandes de base (run, ps, images)",
+                  "Création d'images (Dockerfile best practices)"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Orchestration et Production",
+                "topics": [
+                  "Réseaux Docker",
+                  "Volumes et persistance",
+                  "Docker Compose pour multi-conteneurs",
+                  "Sécurité et Registry"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "docker-advanced",
+          "title": "Docker Avancé",
+          "editor": "JumpIT",
+          "reference": "DOCKER-ADV",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Avancé",
+          "evaluation": "Projet",
+          "package_includes": "Support de cours et labs avancés",
+          "languages": ["FR"],
+          "tags": ["devops", "container", "docker", "security", "network"],
+          "search_keywords": [
+            "docker",
+            "security",
+            "networking",
+            "swarm",
+            "orchestration"
+          ],
+          "details": {
+            "description": "Maîtrisez les aspects avancés de Docker : Sécurisation des conteneurs, gestion réseaux complexes, orchestration avec Swarm et optimisation pour la production.",
+            "target_audience": [
+              "DevOps Engineers",
+              "Architectes Cloud",
+              "SysAdmins expérimentés"
+            ],
+            "objectives": [
+              "Sécuriser l'environnement Docker et les images",
+              "Configurer des réseaux Docker avancés (Overlay, Macvlan)",
+              "Orchestrer des services avec Docker Swarm",
+              "Optimiser les builds et le stockage"
+            ],
+            "prerequisites": ["Maîtrise des fondamentaux Docker"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Sécurité et Réseaux",
+                "topics": [
+                  "Sécurité des conteneurs (Capabilities, Seccomp)",
+                  "Scan de vulnérabilités et Content Trust",
+                  "Réseaux avancés (Overlay, Macvlan)",
+                  "Service Discovery et Load Balancing"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Orchestration Swarm et Ops",
+                "topics": [
+                  "Architecture Docker Swarm",
+                  "Déploiement de Stacks et Services",
+                  "Monitoring et Logging centralisé",
+                  "Builds multi-stage et optimisation"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "kubernetes",
+          "title": "Kubernetes",
+          "editor": "JumpIT",
+          "reference": "K8S",
+          "is_best_seller": false,
+          "duration_days": 3,
+          "level": "Intermédiaire",
+          "evaluation": "TP",
+          "package_includes": "Support de cours et labs k8s",
+          "languages": ["FR"],
+          "tags": ["devops", "orchestration", "kubernetes", "cloud"],
+          "search_keywords": [
+            "kubernetes",
+            "k8s",
+            "container",
+            "orchestration",
+            "cluster"
+          ],
+          "details": {
+            "description": "Devenez maître de l'orchestration de conteneurs avec Kubernetes. Apprenez à déployer, scaler et gérer des applications conteneurisées à grande échelle.",
+            "target_audience": [
+              "DevOps Engineers",
+              "Architectes Cloud",
+              "SysAdmins confirmés"
+            ],
+            "objectives": [
+              "Comprendre l'architecture K8s",
+              "Déployer des applications (Pods, Deployments)",
+              "Exposer des services (Services, Ingress)",
+              "Gérer la configuration et le stockage"
+            ],
+            "prerequisites": ["Maîtrise de Docker indispensable"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Architecture et Concepts",
+                "topics": [
+                  "Architecture Cluster (Master/Node)",
+                  "Objets K8s : Pods, Namespaces",
+                  "Deployments et ReplicaSets",
+                  "Services et Networking basique"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Configuration et Stockage",
+                "topics": [
+                  "ConfigMaps et Secrets",
+                  "Persistent Volumes (PV/PVC)",
+                  "Ingress Controllers",
+                  "Sondes (Liveness/Readiness)"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Maintenance et Helm",
+                "topics": [
+                  "Mise à jour sans interruption (Rolling Update)",
+                  "Scalabilité (HPA)",
+                  "Packaging avec Helm",
+                  "Monitoring basique"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "kubernetes-advanced",
+          "title": "Kubernetes Avancé",
+          "editor": "JumpIT",
+          "reference": "K8S-ADV",
+          "is_best_seller": false,
+          "duration_days": 3,
+          "level": "Avancé",
+          "evaluation": "TP/Certification Prep",
+          "package_includes": "Support de cours expert et labs CKA/CKS",
+          "languages": ["FR"],
+          "tags": ["devops", "kubernetes", "security", "cka", "cks"],
+          "search_keywords": [
+            "kubernetes",
+            "security",
+            "networking",
+            "cka",
+            "cks",
+            "rbac"
+          ],
+          "details": {
+            "description": "Expertise Kubernetes pour la production. Sécurité (CKS), Networking avancé, Troubleshooting et préparation aux certifications avancées.",
+            "target_audience": ["DevOps Engineers", "SRE", "Architectes K8s"],
+            "objectives": [
+              "Sécuriser le cluster et la supply chain (CKS scope)",
+              "Gérer le networking avancé (CNI, Network Policies)",
+              "Debugger et troubleshooter des clusters complexes",
+              "Gérer le stockage et la persistance avancée"
+            ],
+            "prerequisites": ["Certification CKA ou niveau équivalent"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Sécurité Avancée (CKS)",
+                "topics": [
+                  "Sécurisation du Cluster (CIS Benchmark)",
+                  "RBAC avancé et Service Accounts",
+                  "Pod Security Standards",
+                  "Sécurité Runtime (Falco, AppArmor)"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Networking et Storage",
+                "topics": [
+                  "Architecture CNI et Plugins",
+                  "Network Policies complexes",
+                  "Service Mesh (Intro Istio/Linkerd)",
+                  "Storage Classes et CSI"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Troubleshooting et Ops",
+                "topics": [
+                  "Debugging de Noeuds et Pods",
+                  "Gestion des Certificats (TLS)",
+                  "Backup et Restore (Velero)",
+                  "Stratégies de mise à jour Cluster"
                 ]
               }
             ],
