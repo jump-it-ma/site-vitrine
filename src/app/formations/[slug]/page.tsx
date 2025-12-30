@@ -27,12 +27,15 @@ import { HierarchicalProgramData } from "@/types/training";
 import digitalTrustData from "@/data/programs/digital-trust.json";
 import technicalTrainingData from "@/data/programs/technical-training.json";
 import agileManagementData from "@/data/programs/agile-management.json";
+import projectManagementData from "@/data/programs/project-management.json";
 
 // Map program slugs to data
 const programsMap: Record<string, HierarchicalProgramData> = {
   "digital-trust": digitalTrustData as HierarchicalProgramData,
   "technical-training": technicalTrainingData as HierarchicalProgramData,
   "agile-management": agileManagementData as unknown as HierarchicalProgramData,
+  "project-management":
+    projectManagementData as unknown as HierarchicalProgramData,
 };
 
 const ibmFont = ibmCondensedFont;
