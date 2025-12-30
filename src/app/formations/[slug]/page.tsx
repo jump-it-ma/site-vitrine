@@ -30,6 +30,7 @@ import agileManagementData from "@/data/programs/agile-management.json";
 import projectManagementData from "@/data/programs/project-management.json";
 import itServiceManagementData from "@/data/programs/it-service-management.json";
 import enterpriseArchitectureData from "@/data/programs/enterprise-architecture.json";
+import softwareEngineeringData from "@/data/programs/software-engineering.json";
 
 // Map program slugs to data
 const programsMap: Record<string, HierarchicalProgramData> = {
@@ -42,6 +43,8 @@ const programsMap: Record<string, HierarchicalProgramData> = {
     itServiceManagementData as unknown as HierarchicalProgramData,
   "enterprise-architecture":
     enterpriseArchitectureData as unknown as HierarchicalProgramData,
+  "software-engineering":
+    softwareEngineeringData as unknown as HierarchicalProgramData,
 };
 
 const ibmFont = ibmCondensedFont;

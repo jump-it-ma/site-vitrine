@@ -31,7 +31,8 @@ interface ProgramCardProps {
     | "software"
     | "governance"
     | "digital"
-    | "ea";
+    | "ea"
+    | "sweng";
 }
 
 // Clean, professional variant styles for light backgrounds
@@ -133,6 +134,14 @@ const variantStyles: Record<
     accent: "text-teal-600",
     border: "hover:border-teal-300",
     Icon: HiBuildingOffice2,
+  },
+  sweng: {
+    iconBg: "bg-fuchsia-100",
+    iconColor: "text-fuchsia-600",
+    badge: "bg-fuchsia-50 text-fuchsia-700 ring-fuchsia-200",
+    accent: "text-fuchsia-600",
+    border: "hover:border-fuchsia-300",
+    Icon: HiDocumentCheck,
   },
 };
 

@@ -14,6 +14,7 @@ import agileManagementData from "@/data/programs/agile-management.json";
 import projectManagementData from "@/data/programs/project-management.json";
 import itServiceManagementData from "@/data/programs/it-service-management.json";
 import enterpriseArchitectureData from "@/data/programs/enterprise-architecture.json";
+import softwareEngineeringData from "@/data/programs/software-engineering.json";
 
 // Type assertion helper to extract Program from hierarchical data
 const extractProgram = (data: HierarchicalProgramData): Program => data.program;
@@ -27,6 +28,7 @@ const filterCategories = [
   { id: "project", label: "Gestion de Projet" },
   { id: "itsm", label: "IT Service Management" },
   { id: "ea", label: "Architecture d'Entreprise" },
+  { id: "sweng", label: "Ingénierie Logicielle" },
 ] as const;
 
 type FilterCategory = (typeof filterCategories)[number]["id"];
@@ -42,7 +44,8 @@ const programs: {
     | "software"
     | "governance"
     | "digital"
-    | "ea";
+    | "ea"
+    | "sweng";
   filterCategory: FilterCategory;
 }[] = [
   {
@@ -74,6 +77,11 @@ const programs: {
     data: enterpriseArchitectureData as HierarchicalProgramData,
     variant: "ea",
     filterCategory: "ea",
+  },
+  {
+    data: softwareEngineeringData as HierarchicalProgramData,
+    variant: "sweng",
+    filterCategory: "sweng",
   },
 ];
 
