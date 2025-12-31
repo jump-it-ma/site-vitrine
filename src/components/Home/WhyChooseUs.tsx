@@ -1,98 +1,156 @@
 "use client";
 
+import React from "react";
+import Image from "next/image";
 import { latoFont, montserratFont } from "@/utils/fonts";
-import { HiLightBulb, HiBolt, HiChartBar } from "react-icons/hi2";
-
-const features = [
-  {
-    title: "Expertise Reconnue",
-    description:
-      "Une équipe d'experts certifiés avec plus de 10 ans d'expérience dans les technologies de pointe.",
-    icon: HiLightBulb,
-    color: "text-yellow-500",
-    bg: "bg-yellow-50",
-  },
-  {
-    title: "Approche Agile",
-    description:
-      "Des méthodologies flexibles et itératives pour s'adapter rapidement à vos besoins évolutifs.",
-    icon: HiBolt,
-    color: "text-purple-600",
-    bg: "bg-purple-50",
-  },
-  {
-    title: "Résultats Mesurables",
-    description:
-      "Un focus constant sur la qualité et le retour sur investissement pour votre entreprise.",
-    icon: HiChartBar,
-    color: "text-emerald-500",
-    bg: "bg-emerald-50",
-  },
-];
+import {
+  HiLightBulb,
+  HiBolt,
+  HiChartBar,
+  HiAcademicCap,
+} from "react-icons/hi2";
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-24 bg-white border-t border-slate-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <h2
-              className={`${montserratFont.className} text-3xl sm:text-4xl font-bold text-slate-900 mb-6`}
-            >
-              Pourquoi choisir <span className="text-purple-600">JumpIT</span> ?
-            </h2>
-            <p
-              className={`${latoFont.className} text-lg text-slate-600 mb-8 leading-relaxed`}
-            >
-              Nous combinons expertise technique et vision stratégique pour vous
-              offrir des solutions qui font la différence. Notre engagement
-              envers l&apos;excellence est au cœur de tout ce que nous faisons.
-            </p>
+    <section className="py-16 bg-slate-50 relative overflow-hidden">
+      <div className="z-10 max-w-7xl mx-auto px-6 relative">
+        {/* Header */}
+        <div className="text-center mb-32 relative z-20">
+          <div className="inline-block py-1 px-3 rounded-full bg-purple-50 border border-purple-100 text-purple-600 text-xs font-bold tracking-wider uppercase mb-4">
+            Pourquoi Nous ?
+          </div>
+          <h2
+            className={`${montserratFont.className} text-3xl sm:text-4xl font-bold text-slate-900 mb-4`}
+          >
+            L&apos;Excellence Tech
+          </h2>
+          <p
+            className={`${latoFont.className} text-slate-600 text-lg max-w-xl mx-auto font-light`}
+          >
+            Une méthodologie éprouvée et une expertise certifiée pour propulser
+            la réussite de vos projets et de vos équipes.
+          </p>
+        </div>
 
-            <div className="space-y-8">
-              {features.map((feature, index) => (
-                <div key={index} className="flex gap-4">
-                  <div
-                    className={`flex-shrink-0 w-12 h-12 rounded-xl ${feature.bg} flex items-center justify-center`}
-                  >
-                    <feature.icon className={`w-6 h-6 ${feature.color}`} />
-                  </div>
-                  <div>
-                    <h3
-                      className={`${montserratFont.className} text-xl font-bold text-slate-900 mb-2`}
-                    >
-                      {feature.title}
-                    </h3>
-                    <p className={`${latoFont.className} text-slate-600`}>
-                      {feature.description}
-                    </p>
-                  </div>
+        {/* Integration Grid (Hub) */}
+        <div className="relative max-w-5xl mx-auto">
+          {/* Axis Lines */}
+          <div className="absolute top-1/2 left-[-50%] right-[-50%] h-[1px] bg-gradient-to-r from-transparent via-slate-300/50 to-transparent -translate-y-1/2"></div>
+          <div className="absolute left-1/2 top-[-50%] bottom-[-50%] w-[1px] bg-gradient-to-b from-transparent via-slate-300/50 to-transparent -translate-x-1/2"></div>
+
+          {/* Center Hub */}
+          <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
+            <div className="relative w-[260px] h-[260px]">
+              {/* 3 filled concentric circles */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="center-circle center-circle--3 w-56 h-56 rounded-full bg-purple-100/50"></div>
+              </div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="center-circle center-circle--2 w-40 h-40 rounded-full bg-purple-200/50"></div>
+              </div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="center-circle w-24 h-24 rounded-full bg-purple-300/50"></div>
+              </div>
+
+              {/* Rays */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="center-ray-horizontal center-ray-left bg-gradient-to-l from-purple-500/50 via-purple-400/20 to-transparent w-14 h-[1px] absolute right-1/2 translate-x-[-40px]"></div>
+              </div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="center-ray-horizontal center-ray-right bg-gradient-to-r from-purple-500/50 via-purple-400/20 to-transparent w-14 h-[1px] absolute left-1/2 translate-x-[40px]"></div>
+              </div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="center-ray-vertical center-ray-top bg-gradient-to-t from-purple-500/50 via-purple-400/20 to-transparent h-14 w-[1px] absolute bottom-1/2 translate-y-[-40px]"></div>
+              </div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="center-ray-vertical center-ray-bottom bg-gradient-to-b from-purple-500/50 via-purple-400/20 to-transparent h-14 w-[1px] absolute top-1/2 translate-y-[40px]"></div>
+              </div>
+
+              {/* Core Icon */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="flex bg-white w-20 h-20 rounded-full ring-slate-50 ring-8 relative shadow-xl shadow-purple-200 items-center justify-center z-30">
+                  <Image
+                    src="/Homepage/icon-jumpit.png"
+                    alt="Jump It Logo"
+                    width={48}
+                    height={48}
+                    className="object-contain"
+                  />
                 </div>
-              ))}
+              </div>
             </div>
           </div>
 
-          <div className="relative">
-            <div className="absolute -inset-4 bg-gradient-to-r from-purple-100 to-blue-100 rounded-3xl transform rotate-3 opacity-50 blur-lg"></div>
-            <div className="relative aspect-square rounded-3xl overflow-hidden bg-slate-100 border border-slate-200 shadow-2xl">
-              {/* Abstract visual representation instead of generic stock photo */}
-              <div className="absolute inset-0 bg-slate-900 overflow-hidden">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-purple-500/30 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-                <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/30 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
-
-                {/* Grid pattern overlay */}
-                <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:40px_40px]"></div>
-
-                <div className="absolute inset-0 flex items-center justify-center p-8">
-                  <div className="w-full h-full border border-white/10 rounded-2xl flex items-center justify-center backdrop-blur-sm bg-white/5">
-                    <span
-                      className={`${montserratFont.className} text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-white to-white/20`}
-                    >
-                      JUMP IT
-                    </span>
-                  </div>
-                </div>
+          {/* Grid Items */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-32 gap-y-32 relative z-10">
+            {/* Item 1 (Top Left) - Expertise */}
+            <div className="flex flex-col items-center text-center group">
+              <div className="w-16 h-16 rounded-2xl bg-white border border-slate-200 flex items-center justify-center mb-6 group-hover:border-purple-500 group-hover:shadow-[0_0_20px_rgba(147,51,234,0.15)] transition-all duration-300 z-10 relative shadow-sm">
+                <HiLightBulb className="w-7 h-7 text-slate-400 group-hover:text-purple-600 transition-colors" />
               </div>
+              <h3
+                className={`${montserratFont.className} text-slate-900 text-lg font-bold mb-2`}
+              >
+                Expertise Reconnue
+              </h3>
+              <p
+                className={`${latoFont.className} text-sm text-slate-500 max-w-[240px]`}
+              >
+                Une équipe d&apos;experts certifiés avec plus de 10 ans
+                d&apos;expérience IT.
+              </p>
+            </div>
+
+            {/* Item 2 (Top Right) - Agility */}
+            <div className="flex flex-col items-center text-center group">
+              <div className="w-16 h-16 rounded-2xl bg-white border border-slate-200 flex items-center justify-center mb-6 group-hover:border-purple-500 group-hover:shadow-[0_0_20px_rgba(147,51,234,0.15)] transition-all duration-300 z-10 relative shadow-sm">
+                <HiBolt className="w-7 h-7 text-slate-400 group-hover:text-purple-600 transition-colors" />
+              </div>
+              <h3
+                className={`${montserratFont.className} text-slate-900 text-lg font-bold mb-2`}
+              >
+                Approche Agile
+              </h3>
+              <p
+                className={`${latoFont.className} text-sm text-slate-500 max-w-[240px]`}
+              >
+                Des méthodes flexibles pour s&apos;adapter à vos besoins
+                évolutifs.
+              </p>
+            </div>
+
+            {/* Item 3 (Bottom Left) - Results */}
+            <div className="flex flex-col items-center text-center group">
+              <div className="w-16 h-16 rounded-2xl bg-white border border-slate-200 flex items-center justify-center mb-6 group-hover:border-purple-500 group-hover:shadow-[0_0_20px_rgba(147,51,234,0.15)] transition-all duration-300 z-10 relative shadow-sm">
+                <HiChartBar className="w-7 h-7 text-slate-400 group-hover:text-purple-600 transition-colors" />
+              </div>
+              <h3
+                className={`${montserratFont.className} text-slate-900 text-lg font-bold mb-2`}
+              >
+                Résultats Mesurables
+              </h3>
+              <p
+                className={`${latoFont.className} text-sm text-slate-500 max-w-[240px]`}
+              >
+                Un focus constant sur le ROI et la performance.
+              </p>
+            </div>
+
+            {/* Item 4 (Bottom Right) - Certification */}
+            <div className="flex flex-col items-center text-center group">
+              <div className="w-16 h-16 rounded-2xl bg-white border border-slate-200 flex items-center justify-center mb-6 group-hover:border-purple-500 group-hover:shadow-[0_0_20px_rgba(147,51,234,0.15)] transition-all duration-300 z-10 relative shadow-sm">
+                <HiAcademicCap className="w-7 h-7 text-slate-400 group-hover:text-purple-600 transition-colors" />
+              </div>
+              <h3
+                className={`${montserratFont.className} text-slate-900 text-lg font-bold mb-2`}
+              >
+                Certifications
+              </h3>
+              <p
+                className={`${latoFont.className} text-sm text-slate-500 max-w-[240px]`}
+              >
+                Formations accréditées et reconnues (PMP, ISO, etc.).
+              </p>
             </div>
           </div>
         </div>

@@ -129,3 +129,84 @@ html::-webkit-scrollbar-thumb:hover {
   text-decoration: underline;
   word-break: break-all;
 }
+/* Program Showcase Scroll Animations */
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-33.33%);
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(-33.33%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.scrollColumn1 {
+  animation: scrollUp 40s linear infinite;
+}
+
+.scrollColumn2 {
+  animation: scrollDown 40s linear infinite;
+}
+
+.scrollColumn3 {
+  animation: scrollUp 40s linear infinite;
+}
+
+.scrollColumn1:hover,
+.scrollColumn2:hover,
+.scrollColumn3:hover {
+  animation-play-state: paused;
+}
+
+/* Why Choose Us Center Circle Pulse Animation */
+@keyframes centerCirclePulse {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  15% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2.2);
+  }
+}
+
+.center-circle {
+  animation: centerCirclePulse 5s linear infinite;
+}
+
+.center-circle--2 {
+  animation-delay: -1.6s;
+}
+
+.center-circle--3 {
+  animation-delay: -3.3s;
+}
+
+/* Trust Section Horizontal Mraquee */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scrollLeft 30s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}

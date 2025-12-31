@@ -3,7 +3,6 @@
 import React from "react";
 import Link from "next/link";
 import { HiChatBubbleBottomCenterText, HiAcademicCap } from "react-icons/hi2";
-import styles from "./ProgramShowcase.module.css";
 import { montserratFont, latoFont } from "@/utils/fonts";
 
 // Import data
@@ -108,10 +107,10 @@ export default function ProgramShowcase() {
   );
 
   return (
-    <section className="py-24 bg-slate-50 overflow-hidden">
+    <section className="py-16 bg-slate-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="inline-block py-1 px-3 rounded-full bg-rose-50 border border-rose-100 text-rose-500 text-xs font-bold tracking-wider uppercase mb-4">
+          <span className="inline-block py-1 px-3 rounded-full bg-purple-50 border border-purple-100 text-purple-600 text-xs font-bold tracking-wider uppercase mb-4">
             Aperçu des Programmes
           </span>
           <h2
@@ -136,9 +135,9 @@ export default function ProgramShowcase() {
               "linear-gradient(to bottom, transparent, black 10%, black 90%, transparent)",
           }}
         >
-          {renderColumn(column1, styles.scrollColumn1)}
-          {renderColumn(column2, styles.scrollColumn2)}
-          {renderColumn(column3, styles.scrollColumn3)}
+          {renderColumn(column1, "scrollColumn1")}
+          {renderColumn(column2, "scrollColumn2")}
+          {renderColumn(column3, "scrollColumn3")}
         </div>
       </div>
     </section>
