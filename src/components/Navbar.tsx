@@ -61,6 +61,14 @@ export default function Navbar({}: Props) {
                 Blog
               </p>
             </Link>
+            <Link
+              className="w-11/12 sm:w-10/12 flex justify-center items-center bg-gray-100 hover:bg-gray-200 rounded-lg cursor-pointer"
+              href={"/faq"}
+            >
+              <p className="block py-2 pl-3 pr-4 text-gray-900 rounded md:border-0 ">
+                FAQ
+              </p>
+            </Link>
             <Link href={"/contactez-nous"}>
               <li className="w-11/12 sm:w-10/12 flex justify-center items-center bg-purple-600 rounded-lg gap-1 py-2.5 px-5 mt-2 cursor-pointer">
                 <p className="text-base uppercase font-bold text-center text-white whitespace-nowrap">
@@ -98,6 +106,11 @@ export default function Navbar({}: Props) {
           <Link href={"/blogs"}>
             <p className="text-sm lg:text-base uppercase font-semibold text-center text-black whitespace-nowrap select-none cursor-pointer hover:text-gray-600">
               Blog
+            </p>
+          </Link>
+          <Link href={"/faq"}>
+            <p className="text-sm lg:text-base uppercase font-semibold text-center text-black whitespace-nowrap select-none cursor-pointer hover:text-gray-600">
+              FAQ
             </p>
           </Link>
           {/* <p className="text-sm lg:text-base uppercase font-semibold text-center text-black whitespace-nowrap select-none cursor-pointer hover:text-gray-600">Qui sommes-nous?</p> */}

@@ -182,7 +182,7 @@ export default function ProgramsOverview() {
             placeholder="Rechercher une formation..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className={`${latoFont.className} min-w-0 flex-1 border-none bg-transparent py-2 text-slate-900 placeholder:text-slate-400 focus:ring-0`}
+            className={`${latoFont.className} min-w-0 flex-1 border-none bg-transparent py-2 text-slate-900 placeholder:text-slate-400 focus:ring-0 outline-none`}
           />
 
           {/* Right Actions */}
