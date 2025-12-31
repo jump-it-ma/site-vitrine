@@ -1,0 +1,317 @@
+{
+  "program": {
+    "id": "enterprise-architecture",
+    "title": "ENTERPRISE ARCHITECTURE",
+    "description": "Formations en Architecture d'Entreprise basées sur les standards de The Open Group : TOGAF® et ArchiMate®.",
+    "categories": ["TOGAF EA", "ArchiMate 3"]
+  },
+  "filters": {
+    "categories": ["TOGAF EA", "ArchiMate 3"],
+    "editors": ["TOG"],
+    "durations": [2, 3, 4, 5],
+    "levels": ["Intermédiaire", "Avancé"],
+    "languages": ["FR", "EN"]
+  },
+  "categories": [
+    {
+      "id": "togaf-ea",
+      "name": "TOGAF EA",
+      "description": "Le cadre de référence mondial pour l'architecture d'entreprise. Alignez l'IT sur la stratégie métier.",
+      "reference": "TOGAF",
+      "trainings": [
+        {
+          "id": "togaf-understanding",
+          "title": "Understanding EA with TOGAF",
+          "editor": "TOG",
+          "reference": "AE101",
+          "is_best_seller": false,
+          "duration_days": 3,
+          "duration_display": "2 or 3d",
+          "level": "Intermédiaire (IP3+)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 650,
+            "note": "Training Package (incl. 1 voucher) - Tbc"
+          },
+          "package_includes": "Formation et Voucher Examen (Foundation)",
+          "languages": ["FR", "EN"],
+          "tags": ["togaf", "architecture", "foundation", "theory"],
+          "search_keywords": [
+            "togaf foundation",
+            "enterprise architecture",
+            "adm"
+          ],
+          "details": {
+            "description": "Comprendre les bases de l'Architecture d'Entreprise selon TOGAF. Couvre la terminologie, la structure et les concepts de base du cadre (Niveau 1 / Foundation).",
+            "target_audience": [
+              "Architectes d'Entreprise débutants",
+              "Architectes IT",
+              "Chefs de projet"
+            ],
+            "objectives": [
+              "Comprendre le cycle ADM (Architecture Development Method)",
+              "Maîtriser le vocabulaire TOGAF",
+              "Préparer la certification Partie 1"
+            ],
+            "prerequisites": ["Aucun"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction & Concepts",
+                "topics": [
+                  "Concepts de base de l'EA",
+                  "Le cycle ADM (Aperçu)",
+                  "Le Continuum d'Entreprise"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Terminologie",
+                "topics": [
+                  "Gouvernance de l'architecture",
+                  "Vues et points de vue",
+                  "Modèles de référence"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "togaf-practicing",
+          "title": "Practicing EA with TOGAF",
+          "editor": "TOG",
+          "reference": "AE102",
+          "is_best_seller": false,
+          "duration_days": 3,
+          "duration_display": "2 or 3d",
+          "level": "Avancé (IP4)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 650,
+            "note": "Training Package (incl. 1 voucher) - Tbc"
+          },
+          "package_includes": "Formation et Voucher Examen (Certified)",
+          "languages": ["FR", "EN"],
+          "tags": ["togaf", "practitioner", "certified", "application"],
+          "search_keywords": [
+            "togaf certified",
+            "adm application",
+            "architecture scenarios"
+          ],
+          "details": {
+            "description": "Mise en pratique de l'Architecture d'Entreprise. Apprenez à appliquer l'ADM et à produire des artefacts d'architecture (Niveau 2 / Certified).",
+            "target_audience": ["Architectes confirmés", "Consultants"],
+            "objectives": [
+              "Appliquer l'ADM à un scénario",
+              "Créer des livrables d'architecture",
+              "Préparer la certification Partie 2"
+            ],
+            "prerequisites": [
+              "Formation Understanding EA (AE101) ou certification Foundation"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Application de l'ADM",
+                "topics": [
+                  "Phases A à H en détail",
+                  "Gestion des exigences",
+                  "Techniques de migration"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Scénarios",
+                "topics": [
+                  "Études de cas pratiques",
+                  "Adaptation de l'ADM",
+                  "Examens blancs basés sur des scénarios"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "togaf-combined",
+          "title": "Combined (Understanding + Practicing)",
+          "editor": "TOG",
+          "reference": "AE103",
+          "is_best_seller": false,
+          "duration_days": 5,
+          "duration_display": "4 or 5d",
+          "level": "Avancé (IP4)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 1300,
+            "note": "Training Package (incl. 2 vouchers) - Tbc"
+          },
+          "package_includes": "Formation complète et 2 Vouchers Examens (Part 1 & 2)",
+          "languages": ["FR", "EN"],
+          "tags": ["togaf", "combined", "bootcamp", "complete"],
+          "search_keywords": [
+            "togaf combined",
+            "togaf bootcamp",
+            "full certification"
+          ],
+          "details": {
+            "description": "Parcours intensif combinant les niveaux 'Understanding' et 'Practicing'. De zéro à la certification complète TOGAF Certified en une semaine.",
+            "target_audience": [
+              "Architectes souhaitant une certification rapide",
+              "Consultants"
+            ],
+            "objectives": [
+              "Maîtriser la théorie et la pratique TOGAF",
+              "Passer les certifications Niveau 1 et 2"
+            ],
+            "prerequisites": ["Expérience en IT recommandée"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Fondamentaux",
+                "topics": ["Introduction et ADM", "Concepts clés"]
+              },
+              {
+                "day": 2,
+                "title": "Structure",
+                "topics": [
+                  "Guidelines et Techniques",
+                  "Contenu de l'architecture"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Transition",
+                "topics": [
+                  "Passage de la théorie à la pratique",
+                  "Examen blanc Niveau 1"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Pratique Avancée",
+                "topics": ["Application complexe de l'ADM", "Gouvernance"]
+              },
+              {
+                "day": 5,
+                "title": "Certification",
+                "topics": ["Révisions intensives", "Examen blanc Niveau 2"]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "archimate-3",
+      "name": "ArchiMate 3",
+      "description": "Le langage de modélisation standard pour l'Architecture d'Entreprise. Visualisez, analysez et communiquez vos architectures.",
+      "reference": "ARCHIMATE",
+      "trainings": [
+        {
+          "id": "archimate-foundation",
+          "title": "ArchiMate 3 Foundation",
+          "editor": "TOG",
+          "reference": "AE201",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Intermédiaire",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 0,
+            "note": "Contact for pricing"
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["archimate", "modeling", "foundation", "visual"],
+          "search_keywords": [
+            "archimate 3",
+            "modeling language",
+            "certification"
+          ],
+          "details": {
+            "description": "Apprenez les bases du langage de modélisation ArchiMate®. Comprendre la structure, les concepts et les relations pour modéliser l'architecture.",
+            "target_audience": [
+              "Architectes d'Entreprise",
+              "Business Analysts"
+            ],
+            "objectives": [
+              "Comprendre les couches (Business, App, Tech)",
+              "Maîtriser la notation de base",
+              "Réussir l'examen Foundation"
+            ],
+            "prerequisites": ["Aucun"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Concepts de base",
+                "topics": [
+                  "Introduction et définitions",
+                  "Structure du langage",
+                  "Le métamodèle"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Les Couches",
+                "topics": [
+                  "Couche Business",
+                  "Couche Application",
+                  "Couche Technologie"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "archimate-practitioner",
+          "title": "ArchiMate 3 Practitioner",
+          "editor": "TOG",
+          "reference": "AE202",
+          "is_best_seller": false,
+          "duration_days": 1,
+          "level": "Avancé",
+          "evaluation": "Scenario-based MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 0,
+            "note": "Contact for pricing"
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["archimate", "practitioner", "advanced modeling"],
+          "search_keywords": ["archimate practitioner", "complex modeling"],
+          "details": {
+            "description": "Niveau avancé pour les praticiens. Apprenez à appliquer le langage ArchiMate pour des situations de modélisation complexes.",
+            "target_audience": ["Architectes certifiés Foundation"],
+            "objectives": [
+              "Utiliser les éléments avancés",
+              "Créer des vues complexes",
+              "Réussir l'examen Practitioner"
+            ],
+            "prerequisites": ["Certification ArchiMate Foundation"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Application Avancée",
+                "topics": [
+                  "Éléments de motivation et de stratégie",
+                  "Implémentation et Migration",
+                  "Points de vue et perspectives"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    }
+  ]
+}

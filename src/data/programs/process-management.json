@@ -1,0 +1,292 @@
+{
+  "program": {
+    "id": "process-management",
+    "title": "PROCESS MANAGEMENT & OPTIMISATION",
+    "description": "Formations certifiantes pour l'optimisation des processus : RPA (Automatisation), Lean Six Sigma (Qualité) et Lean Management (Amélioration continue).",
+    "categories": [
+      "Robotic Process Automation",
+      "Lean Six Sigma",
+      "Lean Management"
+    ]
+  },
+  "filters": {
+    "categories": [
+      "Robotic Process Automation",
+      "Lean Six Sigma",
+      "Lean Management"
+    ],
+    "editors": ["APMG", "PEOPLECERT"],
+    "durations": [2, 5],
+    "levels": ["Intermédiaire", "Avancé", "Expert"],
+    "languages": ["FR", "EN"]
+  },
+  "categories": [
+    {
+      "id": "lean-six-sigma",
+      "name": "Lean Six Sigma",
+      "description": "La combinaison de Lean (vitesse) et Six Sigma (qualité) pour éliminer les gaspillages et réduire la variabilité.",
+      "reference": "LEAN6S",
+      "trainings": [
+        {
+          "id": "lss-yellow-belt",
+          "title": "Lean Six Sigma Yellow Belt",
+          "editor": "PEOPLECERT",
+          "reference": "PR101",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Intermédiaire (IP3)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "exam_price": 90,
+            "training_price": 240
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["lean six sigma", "yellow belt", "dmaic", "quality"],
+          "search_keywords": ["yellow belt", "process improvement", "dmaic"],
+          "details": {
+            "description": "Comprendre les fondamentaux du Lean Six Sigma. Apprenez à participer activement à des projets d'amélioration en tant que membre d'équipe.",
+            "target_audience": [
+              "Membres d'équipe projet",
+              "Toute personne intéressée par la qualité"
+            ],
+            "objectives": [
+              "Comprendre la méthodologie DMAIC",
+              "Identifier les gaspillages (Muda)",
+              "Soutenir les Green/Black Belts"
+            ],
+            "prerequisites": ["Aucun"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Define & Measure",
+                "topics": [
+                  "Introduction au Lean et Six Sigma",
+                  "La voix du client (VOC)",
+                  "Cartographie des processus (SIPOC)"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Analyze, Improve, Control",
+                "topics": [
+                  "Analyse des causes racines (5 Pourquoi, Ishikawa)",
+                  "Techniques d'amélioration",
+                  "Standardisation (5S)"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "lss-green-belt",
+          "title": "Lean Six Sigma Green Belt",
+          "editor": "PEOPLECERT",
+          "reference": "PR102",
+          "is_best_seller": false,
+          "duration_days": 5,
+          "level": "Avancé (IP3+)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "exam_price": 180,
+            "training_price": 340
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": [
+            "lean six sigma",
+            "green belt",
+            "statistics",
+            "project lead"
+          ],
+          "search_keywords": [
+            "green belt",
+            "data analysis",
+            "process optimization"
+          ],
+          "details": {
+            "description": "Devenez un chef de projet d'amélioration continue. Apprenez à mener des projets DMAIC et à utiliser des outils statistiques pour résoudre des problèmes.",
+            "target_audience": [
+              "Chefs de projet Qualité",
+              "Ingénieurs",
+              "Managers"
+            ],
+            "objectives": [
+              "Diriger des projets Green Belt",
+              "Collecter et analyser des données",
+              "Mettre en place des solutions durables"
+            ],
+            "prerequisites": ["Yellow Belt recommandé"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Define",
+                "topics": ["Project Charter", "Gestion des parties prenantes"]
+              },
+              {
+                "day": 2,
+                "title": "Measure",
+                "topics": [
+                  "Plan de collecte de données",
+                  "Analyse du système de mesure (MSA)"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Analyze",
+                "topics": ["Analyse graphique", "Tests d'hypothèses"]
+              },
+              {
+                "day": 4,
+                "title": "Improve",
+                "topics": [
+                  "Génération de solutions",
+                  "Plan d'expériences (DOE - Intro)"
+                ]
+              },
+              {
+                "day": 5,
+                "title": "Control",
+                "topics": ["Cartes de contrôle (SPC)", "Plan de contrôle"]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "lss-black-belt",
+          "title": "Lean Six Sigma Black Belt",
+          "editor": "PEOPLECERT",
+          "reference": "PR103",
+          "is_best_seller": false,
+          "duration_days": 5,
+          "level": "Expert (IP4+)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "exam_price": 240,
+            "training_price": 575
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["lean six sigma", "black belt", "expert", "strategy"],
+          "search_keywords": [
+            "black belt",
+            "advanced statistics",
+            "change management"
+          ],
+          "details": {
+            "description": "Niveau Expert. Maîtrisez les statistiques avancées, la gestion du changement et le management de programmes d'amélioration continue.",
+            "target_audience": [
+              "Responsables Qualité",
+              "Futurs Black Belts",
+              "Consultants Senior"
+            ],
+            "objectives": [
+              "Gérer des projets complexes et transverses",
+              "Coacher les Green Belts",
+              "Maîtriser Minitab/SigmaXL"
+            ],
+            "prerequisites": ["Certification Green Belt requise"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Leadership & Change",
+                "topics": [
+                  "Gestion du changement organisationnel",
+                  "Sélection de projets stratégiques"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Advanced Measure",
+                "topics": ["Analyse avancée des processus", "Non-Normal Data"]
+              },
+              {
+                "day": 3,
+                "title": "Advanced Analyze",
+                "topics": ["Régression multiple", "ANOVA avancé"]
+              },
+              {
+                "day": 4,
+                "title": "Advanced Improve",
+                "topics": ["Full Factorial DOE", "Lean Enterprise"]
+              },
+              {
+                "day": 5,
+                "title": "Sustain",
+                "topics": ["Design for Six Sigma (DFSS)", "Certification"]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "lean-management",
+      "name": "Lean Management",
+      "description": "L'approche Lean pure pour l'IT et les services. Optimisation du flux de valeur.",
+      "reference": "LEAN",
+      "trainings": [
+        {
+          "id": "lean-it-foundation",
+          "title": "Lean IT Foundation",
+          "editor": "APMG",
+          "reference": "PR001",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Intermédiaire (IP2+)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "exam_price": 90,
+            "training_price": 270
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["lean it", "foundation", "waste reduction"],
+          "search_keywords": ["lean it", "kaizen", "value stream"],
+          "details": {
+            "description": "Application des principes du Lean Manufacturing à l'environnement IT. Créer de la valeur pour le client en éliminant les gaspillages.",
+            "target_audience": [
+              "Managers IT",
+              "Professionnels Service Desk",
+              "DevOps"
+            ],
+            "objectives": [
+              "Comprendre les 5 principes du Lean",
+              "Identifier les 8 types de gaspillage",
+              "Appliquer le cycle Kaizen"
+            ],
+            "prerequisites": ["Aucun"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Principes Lean",
+                "topics": [
+                  "Valeur client",
+                  "Flux de valeur (Value Stream)",
+                  "Flow et Pull"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Outils Lean IT",
+                "topics": [
+                  "A3 Thinking",
+                  "Gestion visuelle",
+                  "Performance et Attitude"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    }
+  ]
+}
