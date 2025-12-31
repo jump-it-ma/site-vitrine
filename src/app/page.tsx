@@ -11,6 +11,7 @@ import WhyChooseUs from "../components/Home/WhyChooseUs";
 import TrustSection from "../components/Home/TrustSection";
 import ContactSection from "../components/Home/ContactSection";
 import FeaturedTrainings from "../components/Home/FeaturedTrainings";
+import ProgramShowcase from "../components/Home/ProgramShowcase";
 import { pageMetadata } from "../content/general";
 
 export const metadata = {
@@ -166,6 +167,7 @@ export default function Home() {
         <UnicornHero />
         <ServicesSection />
         <FeaturedTrainings />
+        <ProgramShowcase />
         <WhyChooseUs />
         <TrustSection />
         <ContactSection />

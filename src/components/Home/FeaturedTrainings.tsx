@@ -31,7 +31,7 @@ export default function FeaturedTrainings() {
   );
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="inline-block py-1 px-3 rounded-full bg-purple-50 border border-purple-100 text-purple-600 text-xs font-bold tracking-wider uppercase mb-4">
@@ -57,54 +57,57 @@ export default function FeaturedTrainings() {
               <Link
                 key={training.id}
                 href={`/formations/technical-training/${training.id}`}
-                className="group flex flex-col bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-xl hover:border-purple-200 transition-all duration-300 transform hover:-translate-y-1"
+                className="group flex flex-col bg-white rounded-xl p-8 hover:shadow-xl hover:shadow-purple-100 transition-all duration-300 transform hover:-translate-y-1"
               >
-                {/* Image Container */}
-                <div className="relative h-48 w-full bg-slate-50 overflow-hidden group flex items-center justify-center">
-                  <div className="absolute inset-0 bg-purple-900/5 group-hover:bg-transparent transition-colors z-10" />
-                  {IconComponent ? (
-                    <IconComponent className="w-24 h-24 object-contain group-hover:scale-110 transition-transform duration-500" />
-                  ) : (
-                    <Image
-                      src={`/Formations/${training.id}.png`}
-                      alt={training.title}
-                      fill
-                      className="object-contain p-8 group-hover:scale-110 transition-transform duration-500"
-                    />
-                  )}
+                {/* Icon Container */}
+                <div className="flex justify-center mb-6">
+                  <div className="relative w-24 h-24 flex items-center justify-center">
+                    {IconComponent ? (
+                      <IconComponent className="w-full h-full object-contain filter drop-shadow-sm group-hover:scale-110 transition-transform duration-500" />
+                    ) : (
+                      <Image
+                        src={`/Formations/${training.id}.png`}
+                        alt={training.title}
+                        fill
+                        className="object-contain group-hover:scale-110 transition-transform duration-500"
+                      />
+                    )}
+                  </div>
+                </div>
+
+                {/* Badges */}
+                <div className="flex flex-wrap items-center justify-center gap-2 mb-4">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-slate-200/50 text-slate-600">
+                    <HiAcademicCap className="w-3.5 h-3.5" />
+                    {training.categoryName}
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-purple-100 text-purple-700">
+                    <HiClock className="w-3.5 h-3.5" />
+                    {training.duration_days} jours
+                  </span>
                 </div>
 
                 {/* Content */}
-                <div className="flex flex-col flex-grow p-6">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-100 text-slate-600">
-                      <HiAcademicCap className="w-3 h-3" />
-                      {training.categoryName}
-                    </span>
-                    <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-50 text-purple-600">
-                      <HiClock className="w-3 h-3" />
-                      {training.duration_days} jours
-                    </span>
-                  </div>
-
+                <div className="text-center flex-grow">
                   <h3
-                    className={`${montserratFont.className} text-xl font-bold text-slate-900 mb-2 group-hover:text-purple-600 transition-colors`}
+                    className={`${montserratFont.className} text-xl font-bold text-slate-900 mb-3 group-hover:text-purple-700 transition-colors`}
                   >
                     {training.title}
                   </h3>
 
                   <p
-                    className={`${latoFont.className} text-slate-600 text-sm mb-6 line-clamp-3`}
+                    className={`${latoFont.className} text-slate-600 text-sm leading-relaxed mb-6 line-clamp-3`}
                   >
                     {training.details?.description}
                   </p>
+                </div>
 
-                  <div className="mt-auto pt-4 border-t border-slate-100">
-                    <div className="inline-flex items-center text-sm font-semibold text-purple-600 hover:text-purple-700 transition-colors gap-1 group/link">
-                      Voir le programme
-                      <HiArrowRight className="w-4 h-4 transition-transform group-hover/link:translate-x-1" />
-                    </div>
-                  </div>
+                {/* Footer Link */}
+                <div className="mt-auto pt-2 text-center">
+                  <span className="inline-flex items-center text-sm font-bold text-purple-600 hover:text-purple-800 transition-colors gap-1 group/link">
+                    Voir le programme
+                    <HiArrowRight className="w-4 h-4 transition-transform group-hover/link:translate-x-1" />
+                  </span>
                 </div>
               </Link>
             );
