@@ -8,6 +8,7 @@ import ReturnToTop from "../components/ReturnToTop";
 import UnicornHero from "../components/Home/UnicornHero";
 import ServicesSection from "../components/Home/ServicesSection";
 import WhyChooseUs from "../components/Home/WhyChooseUs";
+import TestimonialsSection from "../components/Home/TestimonialsSection";
 import TrustSection from "../components/Home/TrustSection";
 import ContactSection from "../components/Home/ContactSection";
 import FeaturedTrainings from "../components/Home/FeaturedTrainings";
@@ -169,6 +170,7 @@ export default function Home() {
         <FeaturedTrainings />
         <ProgramShowcase />
         <WhyChooseUs />
+        <TestimonialsSection />
         <TrustSection />
         <ContactSection />
       </main>
