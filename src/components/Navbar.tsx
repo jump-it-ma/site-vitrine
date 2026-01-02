@@ -44,14 +44,14 @@ export default function Navbar() {
             flex items-center justify-between px-6 py-3
             ${
               scrolled
-                ? "bg-white/90 backdrop-blur-md shadow-lg shadow-purple-500/5 border border-purple-100/50"
-                : "bg-white/80 backdrop-blur-sm shadow-md border border-white/50"
+                ? "bg-white/90 backdrop-blur-xl shadow-lg shadow-purple-500/5 border border-purple-100/50"
+                : "bg-white/80 backdrop-blur-xl border-4 border-purple-100"
             }
           `}
         >
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
-            <div className="relative h-10 w-28 overflow-hidden">
+            <div className="relative h-12 w-24 overflow-hidden">
               <Image
                 src="/icone.png"
                 alt="JumpIT"
@@ -86,7 +86,7 @@ export default function Navbar() {
           {/* CTA & Mobile Menu Toggle */}
           <div className="flex items-center gap-3">
             <Link href="/contactez-nous" className="hidden sm:block">
-              <div className="group relative flex items-center gap-2 bg-slate-900 hover:bg-purple-600 text-white px-5 py-2.5 rounded-full transition-all duration-300 active:scale-95 shadow-md hover:shadow-purple-500/25">
+              <div className="group relative flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-5 py-2.5 rounded-full transition-all duration-300 active:scale-95 shadow-md hover:shadow-purple-500/25">
                 <span
                   className={`text-xs font-bold uppercase tracking-wide ${montserratFont.className}`}
                 >
@@ -167,7 +167,7 @@ export default function Navbar() {
             <div className="h-px bg-slate-100 my-4" />
 
             <Link href="/contactez-nous" onClick={() => setShowMenu(false)}>
-              <div className="w-full bg-slate-900 text-white rounded-2xl py-4 flex items-center justify-center gap-2 font-bold uppercase tracking-wider shadow-lg active:scale-95 transition-transform">
+              <div className="w-full bg-purple-600 text-white rounded-2xl py-4 flex items-center justify-center gap-2 font-bold uppercase tracking-wider shadow-lg shadow-purple-600/20 active:scale-95 transition-transform">
                 <span>Contactez-nous</span>
                 <HiOutlineArrowRight className="w-5 h-5" />
               </div>

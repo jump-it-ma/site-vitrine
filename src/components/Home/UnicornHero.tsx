@@ -6,7 +6,7 @@ import { HiGlobeAlt } from "react-icons/hi2";
 
 export default function UnicornHero() {
   return (
-    <section className="relative w-full bg-slate-50 pt-20 pb-20 overflow-hidden">
+    <section className="relative w-full bg-slate-50 pt-32 pb-20 overflow-hidden">
       {/* Dashed Center Fade Grid */}
       <div
         className="absolute inset-0 z-0"
