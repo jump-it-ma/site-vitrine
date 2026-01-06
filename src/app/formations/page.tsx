@@ -145,7 +145,7 @@ export default function Formations() {
           <h1
             className={`${montserratFont.className} mb-6 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl`}
           >
-            Nos Formations
+            NOS FORMATIONS
           </h1>
 
           <p

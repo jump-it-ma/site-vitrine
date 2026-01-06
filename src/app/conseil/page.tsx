@@ -136,7 +136,7 @@ export default function Conseil() {
               <h3
                 className={`${montserratFont.className} mb-4 text-xl font-bold text-slate-900`}
               >
-                Audit & Diagnostic
+                Développement des solutions
               </h3>
               <p className={`${latoFont.className} mb-6 text-slate-600`}>
                 {conseil.audit}
@@ -169,7 +169,7 @@ export default function Conseil() {
               <h3
                 className={`${montserratFont.className} mb-4 text-xl font-bold text-slate-900`}
               >
-                Prestation de Service
+                Consulting
               </h3>
               <p className={`${latoFont.className} mb-6 text-slate-600`}>
                 {conseil.prestation}
@@ -202,7 +202,7 @@ export default function Conseil() {
               <h3
                 className={`${montserratFont.className} mb-4 text-xl font-bold text-slate-900`}
               >
-                Solutions Off-Shore
+                Services nearshore
               </h3>
               <p className={`${latoFont.className} mb-6 text-slate-600`}>
                 {conseil.offshore}

@@ -1,7 +1,7 @@
 {
   "program": {
     "id": "technical-training",
-    "title": "TECHNICAL TRAINING",
+    "title": "LANGAGES ET FRAMEWORKS",
     "description": "Formations techniques pour développeurs et testeurs : Automatisation des tests, Développement Web et RPA.",
     "categories": [
       "Test Logiciel",

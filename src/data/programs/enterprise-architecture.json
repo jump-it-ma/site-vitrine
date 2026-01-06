@@ -1,7 +1,7 @@
 {
   "program": {
     "id": "enterprise-architecture",
-    "title": "ENTERPRISE ARCHITECTURE",
+    "title": "ARCHITECTURE D'ENTREPRISE",
     "description": "Formations en Architecture d'Entreprise basées sur les standards de The Open Group : TOGAF® et ArchiMate®.",
     "categories": ["TOGAF EA", "ArchiMate 3"]
   },

@@ -50,7 +50,7 @@ export default function ServicesSection() {
                 href="/formations"
                 className="inline-flex items-center gap-2 text-purple-600 font-bold hover:gap-3 transition-all text-sm uppercase tracking-wide"
               >
-                Découvrir
+                Notre catalogue
                 <HiArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -65,7 +65,7 @@ export default function ServicesSection() {
               <h3
                 className={`${montserratFont.className} text-xl font-bold text-slate-900 mb-3 group-hover:text-emerald-600 transition-colors`}
               >
-                Audit & Analyse de Projet
+                Développement des solutions
               </h3>
               <p
                 className={`${latoFont.className} text-slate-600 text-base mb-6 leading-relaxed flex-grow line-clamp-3`}
@@ -91,7 +91,7 @@ export default function ServicesSection() {
               <h3
                 className={`${montserratFont.className} text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors`}
               >
-                Prestation & Assistance
+                Consulting
               </h3>
               <p
                 className={`${latoFont.className} text-slate-600 text-base mb-6 leading-relaxed flex-grow line-clamp-3`}
@@ -117,7 +117,7 @@ export default function ServicesSection() {
               <h3
                 className={`${montserratFont.className} text-xl font-bold text-slate-900 mb-3 group-hover:text-orange-600 transition-colors`}
               >
-                Centre de Services (Offshore)
+                Services nearshore
               </h3>
               <p
                 className={`${latoFont.className} text-slate-600 text-base mb-6 leading-relaxed flex-grow line-clamp-3`}
