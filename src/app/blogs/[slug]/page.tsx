@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { jostFont, montserratFont } from "@/utils/fonts";
+import { jostFont, montserratFont, latoFont } from "@/utils/fonts";
 import Image from "next/image";
 import Script from "next/script";
 import { AiFillLinkedin } from "react-icons/ai";
@@ -11,6 +11,7 @@ import ReturnToTop from "../../../components/ReturnToTop";
 import { pageMetadata } from "../../../content/general";
 import { blogsData } from "../../../data/blogsData";
 import { readableDate } from "../../../utils/functions";
+import { HiCalendarDays, HiUser } from "react-icons/hi2";
 
 type Props = {
   params: {
@@ -32,17 +33,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         fr: "/blogs/" + blog_id,
       },
     },
+    // ... preserve existing icons configuration
     icons: {
       icon: { url: "/icones.png", type: "image/x-icon", sizes: "48x48" },
       shortcut: [
-        {
-          url: "/icones.png",
-          sizes: "128x128",
-        },
-        {
-          url: "/icones.png",
-          sizes: "192x192",
-        },
+        { url: "/icones.png", sizes: "128x128" },
+        { url: "/icones.png", sizes: "192x192" },
       ],
       other: [
         {
@@ -50,26 +46,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           url: "/icones.png",
           sizes: "180x180",
         },
-        {
-          rel: "apple-touch-icon",
-          url: "/icones.png",
-          sizes: "76x76",
-        },
-        {
-          rel: "apple-touch-icon",
-          url: "/icones.png",
-          sizes: "120x120",
-        },
-        {
-          rel: "apple-touch-icon",
-          url: "/icones.png",
-          sizes: "152x152",
-        },
-        {
-          rel: "apple-touch-icon",
-          url: "/icones.png",
-          sizes: "180x180",
-        },
+        { rel: "apple-touch-icon", url: "/icones.png", sizes: "76x76" },
+        { rel: "apple-touch-icon", url: "/icones.png", sizes: "120x120" },
+        { rel: "apple-touch-icon", url: "/icones.png", sizes: "152x152" },
+        { rel: "apple-touch-icon", url: "/icones.png", sizes: "180x180" },
         {
           rel: "icon",
           url: "/icones.png",
@@ -89,11 +69,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: pageMetadata.description,
       siteName: pageMetadata.siteName,
       url: "https://www.jumpit.ma",
-      images: {
-        url: "/icones.png",
-        width: 48,
-        height: 48,
-      },
+      images: { url: "/icones.png", width: 48, height: 48 },
       locale: "fr",
       type: "website",
     },
@@ -123,7 +99,13 @@ export default function Blog({ params }: Props) {
     return (
       <div className="flex flex-col justify-center items-center gap-6 w-screen h-screen bg-black text-white text-center">
         <p className="text-5xl font-bold">404</p>
-        <p className="text-3xl font-medium">Article Non trouvée</p>
+        <p className="text-3xl font-medium">Article Non trouvé</p>
+        <a
+          href="/blogs"
+          className="text-purple-400 hover:text-purple-300 underline"
+        >
+          Retour aux blogs
+        </a>
       </div>
     );
   }
@@ -145,7 +127,7 @@ export default function Blog({ params }: Props) {
         description: firstParagraph ? firstParagraph.text : "",
         dateCreated: readableDate(blog.date),
         articleBody: firstParagraph ? firstParagraph.text : "",
-        articleSection: "Automated Testing",
+        articleSection: "Technology",
         author: {
           "@type": "Person",
           name: blog.author.name,
@@ -173,23 +155,18 @@ export default function Blog({ params }: Props) {
   };
 
   return (
-    <div className="flex flex-col justify-between items-center w-full min-h-[100vh] bg-ac-gray2">
-      {/* Add Structured data */}
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
-        />
-      </head>
+    <div className="flex min-h-screen flex-col bg-slate-50">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
+      />
 
-      {/* Add Google Analytics data */}
       <Script src="https://www.googletagmanager.com/gtag/js?id=G-6L5ZVZDMVJ" />
       <Script id="google-analytics">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
- 
           gtag('config', 'G-6L5ZVZDMVJ');
         `}
       </Script>
@@ -197,231 +174,245 @@ export default function Blog({ params }: Props) {
       <ReturnToTop />
       <Navbar />
 
-      <div className="flex flex-col justify-start items-center w-full bg-ac-gray2">
-        <div className="flex flex-col justify-start items-start w-full gap-12 pt-10 px-6 sm:px-12 md:px-20 xm:px-6 lg:px-12 xl:px-20 mx-6 sm:mx-12 md:mx-20 xm:mx-6 lg:mx-12 xl:mx-20">
+      {/* Hero Section */}
+      <div className="relative overflow-hidden bg-gradient-to-br from-purple-700 to-purple-600">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute -left-4 -top-24 h-96 w-96 rounded-full bg-white blur-3xl" />
+          <div className="absolute -right-12 top-20 h-80 w-80 rounded-full bg-purple-300 blur-3xl" />
+        </div>
+
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/30 via-transparent to-transparent" />
+
+        {/* Floating circles */}
+        <div className="absolute left-[10%] top-[20%] h-3 w-3 rounded-full bg-white/20" />
+        <div className="absolute right-[20%] top-[70%] h-3 w-3 rounded-full bg-white/15" />
+
+        <div className="relative mx-auto max-w-5xl px-4 py-16 pt-36 sm:px-6 lg:px-8 text-center">
           <h1
-            className={
-              jostFont.className +
-              " font-bold text-3xl xm:text-5xl lg:text-5xl xl:text-6xl text-left text-black"
-            }
+            className={`${montserratFont.className} mb-8 text-3xl font-bold text-white sm:text-4xl lg:text-5xl leading-tight`}
           >
             {blog.title}
           </h1>
-          <div
-            className={
-              montserratFont.className +
-              " flex flex-col xm:flex-row justify-start items-start xm:items-center gap-6 xm:gap-32 font-medium text-xl text-left text-black"
-            }
-          >
-            <p>{readableDate(blog.date)}</p>
-            <p>par {blog.author.name}</p>
+
+          <div className="flex flex-wrap items-center justify-center gap-6 text-purple-100">
+            <div className="flex items-center gap-2">
+              <HiCalendarDays className="h-5 w-5" />
+              <span className="font-medium">{readableDate(blog.date)}</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <HiUser className="h-5 w-5" />
+              <span className="font-medium">Par {blog.author.name}</span>
+            </div>
           </div>
         </div>
-        <div
-          className={
-            montserratFont.className +
-            " w-[97%] flex flex-col xm:flex-row justify-start items-center xm:items-start rounded-md bg-white gap-16 py-8 px-2 fold:px-6 sm:px-12 md:px-20 xm:px-6 lg:px-12 xl:px-20 mx-2 fold:mx-6 sm:mx-12 md:mx-20 xm:mx-6 lg:mx-12 xl:mx-20 my-11"
-          }
-        >
-          {/* Article Body */}
-          <div className="flex w-full flex-col justify-start items-start gap-8">
-            <p className="uppercase font-medium text-base text-black text-left">
-              Share
-            </p>
-            <div className="w-full h-px bg-black"></div>
-            <div className="flex flex-col justify-start items-start gap-10 break-words">
-              {blog.body.map((section) => {
-                if (section.type === "image" && section.url) {
-                  return (
-                    <figure
-                      key={section.section}
-                      className="flex flex-col justify-center items-center self-center text-center"
-                    >
-                      <Image
-                        className="max-h-[500px] max-w-[500px] w-[90%]"
-                        width={500}
-                        height={500}
-                        src={section.url}
-                        alt={blog.id}
+      </div>
+
+      {/* Main Content */}
+      <div className="mx-auto w-full max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+          {/* Article Column */}
+          <div className="lg:col-span-2">
+            <article className="rounded-2xl bg-white p-6 shadow-sm sm:p-10 md:p-12">
+              <div
+                className={`space-y-8 ${latoFont.className} text-gray-700 leading-relaxed text-lg`}
+              >
+                {blog.body.map((section, index) => {
+                  if (section.type === "image" && section.url) {
+                    return (
+                      <figure
+                        key={index}
+                        className="my-8 flex flex-col items-center justify-center"
+                      >
+                        <div className="relative overflow-hidden rounded-xl shadow-md w-full">
+                          <Image
+                            className="w-full h-auto object-cover"
+                            width={800}
+                            height={500}
+                            src={section.url}
+                            alt={section.imageCaption || blog.title}
+                          />
+                        </div>
+                        {section.imageCaption && (
+                          <figcaption className="mt-3 text-center text-sm text-gray-500 italic">
+                            {section.imageCaption}
+                          </figcaption>
+                        )}
+                      </figure>
+                    );
+                  }
+                  if (section.type === "paragraph" && section.text) {
+                    return (
+                      <p key={index} className="mb-4">
+                        {section.text}
+                      </p>
+                    );
+                  }
+                  if (section.type === "dangerousParagraph" && section.text) {
+                    return (
+                      <div
+                        key={index}
+                        dangerouslySetInnerHTML={{ __html: section.text }}
+                        className="mb-4"
                       />
-                      <figcaption>{section.imageCaption}</figcaption>
-                    </figure>
-                  );
-                }
-                if (section.type === "paragraph" && section.text) {
-                  return (
-                    <h3
-                      key={section.section}
-                      className={
-                        "font-medium text-lg text-black text-left " +
-                        (section.section === 1 ? "indent-5" : "")
-                      }
-                    >
-                      {section.text}
-                    </h3>
-                  );
-                }
-                if (section.type === "dangerousParagraph" && section.text) {
-                  return (
-                    <h3
-                      dangerouslySetInnerHTML={{ __html: section.text }}
-                      key={section.section}
-                      className={
-                        "font-medium text-lg text-black text-left " +
-                        (section.section === 1 ? "indent-5" : "")
-                      }
-                    />
-                  );
-                }
-                if (section.type === "header1" && section.text) {
-                  return (
-                    <h2
-                      key={section.section}
-                      className={
-                        "font-semibold text-2xl text-black text-left " +
-                        (section.section === 1 ? "indent-5" : "")
-                      }
-                    >
-                      <strong>{section.text}</strong>
-                    </h2>
-                  );
-                }
-                if (section.type === "header2" && section.text) {
-                  return (
-                    <h2
-                      key={section.section}
-                      className={
-                        "font-semibold text-xl text-black text-left " +
-                        (section.section === 1 ? "indent-5" : "")
-                      }
-                    >
-                      {section.text}
-                    </h2>
-                  );
-                }
-                if (section.type === "itemize" && section.items) {
-                  return (
-                    <div
-                      key={section.section}
-                      className="flex flex-col justify-start items-start gap-3 ml-5"
-                    >
-                      {section.items.map((item) => {
-                        if (item.title === "" && item.body === "") {
-                          return <></>;
-                        }
-                        return (
-                          <h4
-                            key={item.title ? item.title : item.body}
-                            className="font-medium text-lg text-black text-left"
-                          >
-                            <span>● </span>
+                    );
+                  }
+                  if (section.type === "header1" && section.text) {
+                    return (
+                      <h2
+                        key={index}
+                        className={`${montserratFont.className} mt-12 mb-6 text-2xl font-bold text-gray-900 border-l-4 border-purple-500 pl-4`}
+                      >
+                        {section.text}
+                      </h2>
+                    );
+                  }
+                  if (section.type === "header2" && section.text) {
+                    return (
+                      <h3
+                        key={index}
+                        className={`${montserratFont.className} mt-8 mb-4 text-xl font-bold text-gray-900`}
+                      >
+                        {section.text}
+                      </h3>
+                    );
+                  }
+                  if (section.type === "itemize" && section.items) {
+                    return (
+                      <ul
+                        key={index}
+                        className="list-disc pl-6 space-y-2 mb-6 text-gray-700"
+                      >
+                        {section.items.map((item, idx) => (
+                          <li key={idx}>
                             {item.title && (
-                              <>
-                                <span className="italic font-semibold">
-                                  {item.title}
-                                </span>{" "}
-                                :{" "}
-                              </>
+                              <strong className="text-gray-900">
+                                {item.title}:{" "}
+                              </strong>
                             )}
                             {item.body}
-                          </h4>
-                        );
-                      })}
-                    </div>
-                  );
-                }
-                if (section.type === "enumerate" && section.items) {
-                  return (
-                    <div
-                      key={section.section}
-                      className="flex flex-col justify-start items-start gap-3 ml-5"
-                    >
-                      {section.items.map((item, index) => {
-                        if (item.title === "" && item.body === "") {
-                          return <></>;
-                        }
-                        return (
-                          <h4
-                            key={item.title ? item.title : item.body}
-                            className="font-medium text-lg text-black text-left"
-                          >
-                            <span>{index + 1}. </span>
+                          </li>
+                        ))}
+                      </ul>
+                    );
+                  }
+                  if (section.type === "enumerate" && section.items) {
+                    return (
+                      <ol
+                        key={index}
+                        className="list-decimal pl-6 space-y-2 mb-6 text-gray-700"
+                      >
+                        {section.items.map((item, idx) => (
+                          <li key={idx}>
+                            {item.title && (
+                              <strong className="text-gray-900">
+                                {item.title}:{" "}
+                              </strong>
+                            )}
                             {item.body}
-                          </h4>
-                        );
-                      })}
-                    </div>
-                  );
-                }
-                if (section.type === "link" && section.text) {
-                  return (
-                    <a
-                      key={section.section}
-                      target="_blank"
-                      rel="noopener"
-                      href={section.text}
-                      className="anchor-style"
-                    >
-                      {section.text}
-                    </a>
-                  );
-                }
-                if (section.type === "code" && section.code) {
-                  return (
-                    <CodeViewer
-                      key={section.section}
-                      code={section.code}
-                      showLines={true}
-                    />
-                  );
-                }
-                if (section.type === "iframe" && section.url) {
-                  return (
-                    <iframe
-                      key={section.section}
-                      style={{ height: 100 * (9 / 16) + "vw" }}
-                      className={
-                        "max-w-full xm:!h-[280px] lg:!h-[360px] self-center"
-                      }
-                      allow="fullscreen"
-                      width={640}
-                      height={360}
-                      src={section.url}
-                    ></iframe>
-                  );
-                }
-              })}
-            </div>
+                          </li>
+                        ))}
+                      </ol>
+                    );
+                  }
+                  if (section.type === "link" && section.text) {
+                    return (
+                      <a
+                        key={index}
+                        target="_blank"
+                        rel="noopener"
+                        href={section.text}
+                        className="text-purple-600 underline hover:text-purple-800 break-words"
+                      >
+                        {section.text}
+                      </a>
+                    );
+                  }
+                  if (section.type === "code" && section.code) {
+                    return (
+                      <div
+                        key={index}
+                        className="my-6 overflow-hidden rounded-lg shadow-sm"
+                      >
+                        <CodeViewer code={section.code} showLines={true} />
+                      </div>
+                    );
+                  }
+                  if (section.type === "iframe" && section.url) {
+                    return (
+                      <div
+                        key={index}
+                        className="my-8 aspect-video w-full overflow-hidden rounded-xl bg-gray-100"
+                      >
+                        <iframe
+                          className="w-full h-full"
+                          src={section.url}
+                          allowFullScreen
+                          title="Embedded content"
+                        />
+                      </div>
+                    );
+                  }
+                  return null;
+                })}
+              </div>
+            </article>
           </div>
-          {/* Auteur Card */}
-          <div className="sticky top-48 flex flex-col justify-start items-center gap-6 px-2 fold:px-6 py-6 rounded-2xl bg-ac-gray mt-24">
-            <div className="flex justify-center items-center w-full relative -mt-24">
-              <div className="w-32 xs:w-40 h-32 xs:h-40 rounded-full absolute overflow-hidden bg-zinc-300"></div>
-              <Image
-                className="object-contain object-center w-32 xs:w-40 h-32 xs:h-40 rounded-full border-2 border-zinc-500 z-30"
-                src={blog.author.image}
-                width={160}
-                height={160}
-                alt="user"
-              />
-            </div>
-            <div className="flex flex-col justify-start items-center gap-4">
-              <div className="flex flex-col justify-start items-center gap-1">
-                <p className="uppercase font-bold text-2xl text-black text-center">
+
+          {/* Sidebar Column */}
+          <div className="lg:col-span-1">
+            <div className="sticky top-28 space-y-6">
+              {/* Author Card */}
+              <div className="rounded-2xl bg-white p-6 shadow-sm text-center">
+                <div className="relative mx-auto mb-4 h-24 w-24">
+                  <div className="absolute inset-0 rounded-full bg-purple-100" />
+                  <Image
+                    className="relative h-24 w-24 rounded-full border-4 border-white object-cover shadow-md"
+                    src={blog.author.image}
+                    width={96}
+                    height={96}
+                    alt={blog.author.name}
+                  />
+                </div>
+
+                <h3
+                  className={`${montserratFont.className} mb-1 text-lg font-bold text-gray-900`}
+                >
                   {blog.author.name}
-                </p>
-                <p className="font-semibold text-xl text-black text-center">
+                </h3>
+                <p className="mb-4 text-sm font-medium text-purple-600">
                   {blog.author.job}
                 </p>
+
+                {blog.author.contact && (
+                  <a
+                    href={blog.author.contact}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700 transition-colors hover:bg-blue-100"
+                  >
+                    <AiFillLinkedin className="h-4 w-4" />
+                    Connecter
+                  </a>
+                )}
               </div>
-              <a
-                target="_blank"
-                rel="noopener"
-                href={blog.author.contact}
-                className="flex justify-center items-center"
-              >
-                <AiFillLinkedin size={20} />
-              </a>
+
+              {/* Share/CTA Placeholder - Optional addition for engagement */}
+              <div className="rounded-2xl bg-gradient-to-br from-purple-700 to-purple-600 p-6 text-white text-center shadow-lg">
+                <h4 className={`${montserratFont.className} mb-2 font-bold`}>
+                  Vous avez aimé cet article ?
+                </h4>
+                <p className="text-sm text-purple-200 mb-4">
+                  Découvrez nos programmes de formation pour aller plus loin.
+                </p>
+                <a
+                  href="/formations"
+                  className="block w-full rounded-lg bg-white py-2 text-sm font-bold text-purple-900 transition hover:bg-purple-50"
+                >
+                  Voir les formations
+                </a>
+              </div>
             </div>
           </div>
         </div>
