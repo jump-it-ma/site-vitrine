@@ -169,9 +169,14 @@ export default function TrainingDetailPage({
                   </div>
                 </div>
 
-                <button className="mb-3 w-full rounded-xl bg-gradient-to-r from-purple-600 to-purple-700 py-3 font-semibold text-white shadow-lg transition-all hover:from-purple-700 hover:to-indigo-700 hover:shadow-xl">
+                <Link
+                  href={`/inscription?trainingId=${
+                    training.id
+                  }&title=${encodeURIComponent(training.title)}`}
+                  className="mb-3 block w-full rounded-xl bg-gradient-to-r from-purple-600 to-purple-700 py-3 text-center font-semibold text-white shadow-lg transition-all hover:from-purple-700 hover:to-indigo-700 hover:shadow-xl"
+                >
                   S&apos;inscrire maintenant
-                </button>
+                </Link>
 
                 <Link
                   href="/demander-un-devis"

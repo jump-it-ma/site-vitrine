@@ -1,26 +1,35 @@
 "use client";
 
-import { useState } from "react";
+import { useState, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import { montserratFont, latoFont } from "@/utils/fonts";
 import {
   HiCheckCircle,
-  HiEnvelope,
-  HiPhone,
-  HiBuildingOffice2,
   HiUser,
-  HiChatBubbleLeftRight,
+  HiCalendarDays,
+  HiCreditCard,
   HiPaperAirplane,
+  HiPhone,
+  HiEnvelope,
 } from "react-icons/hi2";
 
-export default function DemanderUnDevis() {
+function InscriptionContent() {
+  const searchParams = useSearchParams();
+  const trainingTitle = searchParams.get("title") || "Formation";
+  // const trainingId = searchParams.get("trainingId");
+
   const [formData, setFormData] = useState({
+    // Participant
     firstName: "",
     lastName: "",
     email: "",
     phone: "",
     company: "",
-    role: "",
-    requestType: "",
+    // Session
+    preferredDate: "",
+    mode: "remote", // remote, presential
+    // Funding
+    fundingType: "company", // company, personal, cpf
     message: "",
     acceptPolicy: false,
   });
@@ -70,16 +79,19 @@ export default function DemanderUnDevis() {
         <div className="absolute right-[30%] top-[15%] h-2 w-2 rounded-full bg-white/20" />
 
         <div className="relative mx-auto max-w-7xl px-4 py-16 pt-24 sm:px-6 lg:px-8 text-center">
+          <p className="mb-2 text-sm font-medium uppercase tracking-wider text-purple-200">
+            Inscription à la formation
+          </p>
           <h1
-            className={`${montserratFont.className} mb-6 text-3xl font-bold text-white sm:text-4xl lg:text-5xl`}
+            className={`${montserratFont.className} mb-6 text-2xl font-bold text-white sm:text-3xl lg:text-4xl`}
           >
-            Demander un devis
+            {trainingTitle}
           </h1>
           <p
             className={`${latoFont.className} mx-auto max-w-2xl text-lg text-purple-100`}
           >
-            Décrivez votre projet de formation ou de conseil. Notre équipe vous
-            répondra sous 24h ouvrées avec une proposition sur mesure.
+            Réservez votre place dès maintenant. Une fois votre inscription
+            envoyée, un conseiller vous contactera pour finaliser les détails.
           </p>
         </div>
       </div>
@@ -98,28 +110,29 @@ export default function DemanderUnDevis() {
                   <h2
                     className={`${montserratFont.className} mb-2 text-2xl font-bold text-gray-900`}
                   >
-                    Demande envoyée !
+                    Pré-inscription validée !
                   </h2>
                   <p className="mb-8 text-gray-600">
-                    Merci de nous avoir contactés. Notre équipe a bien reçu
-                    votre demande et reviendra vers vous très rapidement.
+                    Votre demande d&apos;inscription pour &quot;{trainingTitle}
+                    &quot; a bien été enregistrée. Notre équipe administrative
+                    va revenir vers vous sous 24h pour confirmer votre dossier.
                   </p>
                   <button
                     onClick={() => setIsSuccess(false)}
-                    className="text-purple-600 hover:text-purple-700 font-medium"
+                    className="font-medium text-purple-600 hover:text-purple-700"
                   >
-                    Envoyer une autre demande
+                    Retour au formulaire
                   </button>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-8">
-                  {/* Section: Identity */}
+                  {/* Fieldset 1: Participant */}
                   <fieldset>
                     <legend
                       className={`${montserratFont.className} mb-6 flex items-center gap-2 text-xl font-bold text-gray-900`}
                     >
                       <HiUser className="h-6 w-6 text-purple-600" />
-                      Vos coordonnées
+                      Informations Participant
                     </legend>
                     <div className="grid gap-6 sm:grid-cols-2">
                       <div>
@@ -137,7 +150,7 @@ export default function DemanderUnDevis() {
                           value={formData.firstName}
                           onChange={handleInputChange}
                           className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-900 placeholder:text-gray-400 focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-200"
-                          placeholder="Jean"
+                          placeholder="Ex: Sarah"
                         />
                       </div>
                       <div>
@@ -155,7 +168,7 @@ export default function DemanderUnDevis() {
                           value={formData.lastName}
                           onChange={handleInputChange}
                           className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-900 placeholder:text-gray-400 focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-200"
-                          placeholder="Dupont"
+                          placeholder="Ex: Connor"
                         />
                       </div>
                       <div>
@@ -174,7 +187,7 @@ export default function DemanderUnDevis() {
                           value={formData.email}
                           onChange={handleInputChange}
                           className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-900 placeholder:text-gray-400 focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-200"
-                          placeholder="jean.dupont@entreprise.com"
+                          placeholder="sarah.connor@sky.net"
                         />
                       </div>
                       <div>
@@ -192,96 +205,139 @@ export default function DemanderUnDevis() {
                           value={formData.phone}
                           onChange={handleInputChange}
                           className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-900 placeholder:text-gray-400 focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-200"
-                          placeholder="+212 6 12 34 56 78"
+                          placeholder="+212 6 34 56 78 90"
                         />
                       </div>
-                    </div>
-                  </fieldset>
-
-                  {/* Section: Company */}
-                  <fieldset>
-                    <legend
-                      className={`${montserratFont.className} mb-6 flex items-center gap-2 text-xl font-bold text-gray-900`}
-                    >
-                      <HiBuildingOffice2 className="h-6 w-6 text-purple-600" />
-                      Votre entreprise
-                    </legend>
-                    <div className="grid gap-6 sm:grid-cols-2">
-                      <div>
+                      <div className="sm:col-span-2">
                         <label
                           htmlFor="company"
                           className="mb-1.5 block text-sm font-medium text-gray-700"
                         >
-                          Nom de l&apos;entreprise{" "}
-                          <span className="text-red-500">*</span>
+                          Entreprise (Optionnel)
                         </label>
                         <input
                           type="text"
                           id="company"
                           name="company"
-                          required
                           value={formData.company}
                           onChange={handleInputChange}
                           className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-900 placeholder:text-gray-400 focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-200"
-                          placeholder="Tech Solutions"
-                        />
-                      </div>
-                      <div>
-                        <label
-                          htmlFor="role"
-                          className="mb-1.5 block text-sm font-medium text-gray-700"
-                        >
-                          Fonction <span className="text-red-500">*</span>
-                        </label>
-                        <input
-                          type="text"
-                          id="role"
-                          name="role"
-                          required
-                          value={formData.role}
-                          onChange={handleInputChange}
-                          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-900 placeholder:text-gray-400 focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-200"
-                          placeholder="Responsable Formation"
+                          placeholder="Nom de votre société"
                         />
                       </div>
                     </div>
                   </fieldset>
 
-                  {/* Section: Project */}
+                  {/* Fieldset 2: Session */}
                   <fieldset>
                     <legend
                       className={`${montserratFont.className} mb-6 flex items-center gap-2 text-xl font-bold text-gray-900`}
                     >
-                      <HiChatBubbleLeftRight className="h-6 w-6 text-purple-600" />
-                      Votre projet
+                      <HiCalendarDays className="h-6 w-6 text-purple-600" />
+                      Préférences de Session
+                    </legend>
+                    <div className="space-y-6">
+                      <div>
+                        <label className="mb-3 block text-sm font-medium text-gray-700">
+                          Format souhaité{" "}
+                          <span className="text-red-500">*</span>
+                        </label>
+                        <div className="flex flex-wrap gap-4">
+                          <label className="flex cursor-pointer items-center gap-3 rounded-lg border border-gray-200 p-4 transition-all hover:bg-gray-50 has-[:checked]:border-purple-500 has-[:checked]:bg-purple-50">
+                            <input
+                              type="radio"
+                              name="mode"
+                              value="remote"
+                              checked={formData.mode === "remote"}
+                              onChange={handleInputChange}
+                              className="h-4 w-4 border-gray-300 text-purple-600 focus:ring-purple-500"
+                            />
+                            <div>
+                              <span className="block font-medium text-gray-900">
+                                À distance (Online)
+                              </span>
+                              <span className="text-sm text-gray-500">
+                                Classe virtuelle live
+                              </span>
+                            </div>
+                          </label>
+                          <label className="flex cursor-pointer items-center gap-3 rounded-lg border border-gray-200 p-4 transition-all hover:bg-gray-50 has-[:checked]:border-purple-500 has-[:checked]:bg-purple-50">
+                            <input
+                              type="radio"
+                              name="mode"
+                              value="presential"
+                              checked={formData.mode === "presential"}
+                              onChange={handleInputChange}
+                              className="h-4 w-4 border-gray-300 text-purple-600 focus:ring-purple-500"
+                            />
+                            <div>
+                              <span className="block font-medium text-gray-900">
+                                En présentiel
+                              </span>
+                              <span className="text-sm text-gray-500">
+                                Dans nos locaux
+                              </span>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div>
+                        <label
+                          htmlFor="preferredDate"
+                          className="mb-1.5 block text-sm font-medium text-gray-700"
+                        >
+                          Période souhaitée{" "}
+                          <span className="text-red-500">*</span>
+                        </label>
+                        <select
+                          id="preferredDate"
+                          name="preferredDate"
+                          required
+                          value={formData.preferredDate}
+                          onChange={handleInputChange}
+                          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-900 focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-200"
+                        >
+                          <option value="">Sélectionnez une période</option>
+                          <option value="asap">Dès que possible</option>
+                          <option value="next-month">Mois prochain</option>
+                          <option value="q1">1er Trimestre</option>
+                          <option value="q2">2ème Trimestre</option>
+                          <option value="later">
+                            Plus tard dans l&apos;année
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                  </fieldset>
+
+                  {/* Fieldset 3: Funding */}
+                  <fieldset>
+                    <legend
+                      className={`${montserratFont.className} mb-6 flex items-center gap-2 text-xl font-bold text-gray-900`}
+                    >
+                      <HiCreditCard className="h-6 w-6 text-purple-600" />
+                      Financement
                     </legend>
                     <div className="space-y-6">
                       <div>
                         <label
-                          htmlFor="requestType"
+                          htmlFor="fundingType"
                           className="mb-1.5 block text-sm font-medium text-gray-700"
                         >
-                          Type de demande{" "}
-                          <span className="text-red-500">*</span>
+                          Mode de financement
                         </label>
                         <select
-                          id="requestType"
-                          name="requestType"
-                          required
-                          value={formData.requestType}
+                          id="fundingType"
+                          name="fundingType"
+                          value={formData.fundingType}
                           onChange={handleInputChange}
                           className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-900 focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-200"
                         >
-                          <option value="">Sélectionnez une option</option>
-                          <option value="formation-intra">
-                            Formation Intra-entreprise
-                          </option>
-                          <option value="formation-inter">
-                            Formation Inter-entreprise
-                          </option>
-                          <option value="conseil">Conseil / Audit</option>
-                          <option value="partenariat">Partenariat</option>
-                          <option value="autre">Autre</option>
+                          <option value="company">Entreprise</option>
+                          <option value="personal">Personnel</option>
+                          <option value="cpf">CPF / OPCO</option>
+                          <option value="other">Autre / Ne sais pas</option>
                         </select>
                       </div>
                       <div>
@@ -289,18 +345,16 @@ export default function DemanderUnDevis() {
                           htmlFor="message"
                           className="mb-1.5 block text-sm font-medium text-gray-700"
                         >
-                          Détails de votre demande{" "}
-                          <span className="text-red-500">*</span>
+                          Message ou besoins spécifiques (Optionnel)
                         </label>
                         <textarea
                           id="message"
                           name="message"
-                          required
-                          rows={6}
+                          rows={4}
                           value={formData.message}
                           onChange={handleInputChange}
                           className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-gray-900 placeholder:text-gray-400 focus:border-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-200"
-                          placeholder="Décrivez vos besoins, le nombre de personnes à former, vos contraintes de dates, etc."
+                          placeholder="Questions particulières, handicap, etc."
                         />
                       </div>
                     </div>
@@ -322,15 +376,8 @@ export default function DemanderUnDevis() {
                         htmlFor="acceptPolicy"
                         className="text-sm text-gray-600"
                       >
-                        J&apos;accepte que JumpIT collecte mes données pour
-                        traiter ma demande. Consultez notre{" "}
-                        <a
-                          href="/privacy"
-                          className="text-purple-600 hover:underline"
-                        >
-                          politique de confidentialité
-                        </a>{" "}
-                        pour en savoir plus.
+                        En soumettant ce formulaire, j&apos;accepte que JumpIT
+                        traite mes données pour gérer mon inscription.
                       </label>
                     </div>
 
@@ -342,99 +389,89 @@ export default function DemanderUnDevis() {
                       {isSubmitting ? (
                         <div className="flex items-center justify-center gap-2">
                           <div className="h-5 w-5 animate-spin rounded-full border-2 border-white border-t-transparent" />
-                          Envoi en cours...
+                          Traitement...
                         </div>
                       ) : (
                         <div className="flex items-center justify-center gap-2">
-                          <span>Envoyer ma demande</span>
+                          <span>Valider mon inscription</span>
                           <HiPaperAirplane className="h-5 w-5" />
                         </div>
                       )}
                     </button>
-                    <p className="mt-4 text-center text-sm text-gray-500 sm:text-left">
-                      * Champs obligatoires
-                    </p>
                   </div>
                 </form>
               )}
             </div>
           </div>
 
-          {/* Right Column: Sidebar */}
+          {/* Right Column: Trust Sidebar */}
           <div className="space-y-6">
-            {/* Why Choose Us Card */}
             <div className="rounded-2xl bg-white p-6 shadow-sm">
               <h3
-                className={`${montserratFont.className} mb-6 text-lg font-bold text-gray-900`}
+                className={`${montserratFont.className} mb-4 text-lg font-bold text-gray-900`}
               >
-                Pourquoi choisir JumpIT ?
+                Inclus dans votre formation
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg bg-purple-100 text-purple-600">
-                    <HiCheckCircle className="h-5 w-5" />
+                  <div className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-green-100 text-green-600">
+                    <HiCheckCircle className="h-4 w-4" />
                   </div>
-                  <div>
-                    <p className="font-semibold text-gray-900">
-                      Expertise reconnue
-                    </p>
-                    <p className="text-sm text-gray-500">
-                      Formateurs certifiés et expérimentés
-                    </p>
-                  </div>
+                  <span className="text-sm text-gray-600">
+                    Support de cours officiel et accrédité
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg bg-indigo-100 text-indigo-600">
-                    <HiCheckCircle className="h-5 w-5" />
+                  <div className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-green-100 text-green-600">
+                    <HiCheckCircle className="h-4 w-4" />
                   </div>
-                  <div>
-                    <p className="font-semibold text-gray-900">Sur mesure</p>
-                    <p className="text-sm text-gray-500">
-                      Programmes adaptés à vos besoins
-                    </p>
-                  </div>
+                  <span className="text-sm text-gray-600">
+                    Voucher de certification (examen inclus)
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg bg-green-100 text-green-600">
-                    <HiCheckCircle className="h-5 w-5" />
+                  <div className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-green-100 text-green-600">
+                    <HiCheckCircle className="h-4 w-4" />
                   </div>
-                  <div>
-                    <p className="font-semibold text-gray-900">
-                      Certifications
-                    </p>
-                    <p className="text-sm text-gray-500">
-                      Partenaire accrédité (PECB, etc.)
-                    </p>
+                  <span className="text-sm text-gray-600">
+                    Attestation de participation
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-green-100 text-green-600">
+                    <HiCheckCircle className="h-4 w-4" />
                   </div>
+                  <span className="text-sm text-gray-600">
+                    Pauses café et déjeuner (présentiel)
+                  </span>
                 </li>
               </ul>
             </div>
 
-            {/* Direct Contact Card */}
             <div className="rounded-2xl bg-gradient-to-br from-purple-600 to-purple-800 p-6 text-white shadow-lg">
               <h3
                 className={`${montserratFont.className} mb-4 text-lg font-bold`}
               >
-                Besoin d&apos;une réponse immédiate ?
+                Des questions ?
               </h3>
-              <p className="mb-6 text-sm text-purple-100">
-                Nos conseillers sont disponibles du lundi au vendredi de 9h à
-                18h.
+              <p className="mb-6 text-sm text-indigo-100">
+                Notre équipe pédagogique est à votre écoute pour vous
+                conseiller.
               </p>
-              <div className="space-y-4">
+              <div className="space-y-3">
                 <a
                   href="tel:+212520000000"
-                  className="flex items-center gap-3 rounded-lg bg-white/10 px-4 py-3 transition-colors hover:bg-white/20"
+                  className="flex items-center gap-3 rounded-lg bg-white/10 px-4 py-2 transition-colors hover:bg-white/20"
                 >
                   <HiPhone className="h-5 w-5" />
                   <span className="font-semibold">+212 5 20 00 00 00</span>
                 </a>
                 <a
-                  href="mailto:contact@jumpit.ma"
-                  className="flex items-center gap-3 rounded-lg bg-white/10 px-4 py-3 transition-colors hover:bg-white/20"
+                  href="mailto:formation@jumpit.ma"
+                  className="flex items-center gap-3 rounded-lg bg-white/10 px-4 py-2 transition-colors hover:bg-white/20"
                 >
                   <HiEnvelope className="h-5 w-5" />
-                  <span className="font-semibold">contact@jumpit.ma</span>
+                  <span className="font-semibold">formation@jumpit.ma</span>
                 </a>
               </div>
             </div>
@@ -442,5 +479,13 @@ export default function DemanderUnDevis() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function InscriptionPage() {
+  return (
+    <Suspense>
+      <InscriptionContent />
+    </Suspense>
   );
 }
