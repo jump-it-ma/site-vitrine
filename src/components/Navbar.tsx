@@ -44,8 +44,8 @@ export default function Navbar() {
             flex items-center justify-between px-6 py-3
             ${
               scrolled
-                ? "bg-white/90 backdrop-blur-xl shadow-lg shadow-purple-500/5 border border-purple-100/50"
-                : "bg-white/80 backdrop-blur-xl border-4 border-purple-100"
+                ? "bg-white/60 backdrop-blur-xl shadow-lg shadow-purple-500/5 border border-purple-100"
+                : "bg-white backdrop-blur-xl border-4 border-purple-100"
             }
           `}
         >
@@ -73,7 +73,7 @@ export default function Navbar() {
                     ${
                       isActive(link.href)
                         ? "text-purple-600 bg-purple-50"
-                        : "text-slate-600 hover:text-purple-600 hover:bg-slate-50"
+                        : "text-slate-900 hover:text-purple-600 hover:bg-slate-50"
                     }
                   `}
                 >

@@ -68,7 +68,7 @@ export default function TrainingDetailPage({
         <div className="absolute right-[20%] top-[70%] h-3 w-3 rounded-full bg-white/15" />
         <div className="absolute right-[30%] top-[15%] h-2 w-2 rounded-full bg-white/20" />
 
-        <div className="relative mx-auto max-w-7xl px-4 pb-16 pt-8 sm:px-6 lg:px-8">
+        <div className="relative mx-auto max-w-7xl px-4 pb-16 pt-36 sm:px-6 lg:px-8">
           {/* Back Button */}
           <Link
             href={`/formations/${programId}?category=${encodeURIComponent(

@@ -88,7 +88,7 @@ export default function TrainingCatalog({
   return (
     <div className="min-h-screen bg-gray-50/50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-purple-700 to-purple-600 px-4 pb-12 pt-8">
+      <div className="bg-gradient-to-br from-purple-700 to-purple-600 px-4 pb-12 pt-36">
         <div className="mx-auto max-w-7xl">
           {/* Gradient overlay */}
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/30 via-transparent to-transparent" />
