@@ -173,9 +173,12 @@ export default function TrainingDetailPage({
                   S&apos;inscrire maintenant
                 </button>
 
-                <button className="w-full rounded-xl border-2 border-purple-200 py-3 font-semibold text-purple-600 transition-all hover:border-purple-300 hover:bg-purple-50">
+                <Link
+                  href="/demander-un-devis"
+                  className="block w-full rounded-xl border-2 border-purple-200 py-3 text-center font-semibold text-purple-600 transition-all hover:border-purple-300 hover:bg-purple-50"
+                >
                   Demander un devis
-                </button>
+                </Link>
               </div>
             </div>
           </div>
