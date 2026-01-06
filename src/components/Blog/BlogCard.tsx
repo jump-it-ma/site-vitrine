@@ -1,6 +1,7 @@
 import { BlogBody, User } from "@/utils/interfaces";
-import { jostFont, montserratFont } from "@/utils/fonts";
+import { montserratFont, latoFont } from "@/utils/fonts";
 import Link from "next/link";
+import { HiArrowRight } from "react-icons/hi2";
 
 type Props = {
   id: string;
@@ -16,37 +17,50 @@ export default function BlogCard({ id, title, body, author }: Props) {
       section.type === "header1" ||
       section.type === "header2"
   );
+
   return (
     <Link
       href={"/blogs/" + id}
-      className="w-full flex flex-col justify-between items-start py-5 px-6 border-2 gap-4 cursor-pointer transition duration-300 border-purple-600 group text-black hover:text-white hover:bg-purple-600"
+      className="group relative flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-purple-500/10"
     >
-      <div className="w-full flex flex-col justify-start items-start gap-4">
-        <h1
-          className={
-            jostFont.className +
-            " font-bold text-2xl text-left line-clamp-2 md:h-16"
-          }
-        >
-          {title}
-        </h1>
-        <h2
-          className={
-            montserratFont.className +
-            " font-normal text-sm text-left line-clamp-6"
-          }
-        >
-          {firstParagraph ? firstParagraph.text : ""}
-        </h2>
+      {/* Decorative accent top bar */}
+      <div className="h-2 w-full bg-gradient-to-r from-purple-500 to-indigo-500" />
+
+      <div className="flex flex-1 flex-col p-6">
+        <div className="mb-4">
+          <span className="mb-2 inline-block rounded-full bg-purple-50 px-3 py-1 text-xs font-semibold text-purple-600">
+            Article
+          </span>
+          <h2
+            className={`${montserratFont.className} mb-3 text-xl font-bold text-gray-900 line-clamp-2 group-hover:text-purple-600 transition-colors`}
+          >
+            {title}
+          </h2>
+          <p
+            className={`${latoFont.className} line-clamp-3 text-sm text-gray-600`}
+          >
+            {firstParagraph ? firstParagraph.text : ""}
+          </p>
+        </div>
+
+        <div className="mt-auto flex items-center justify-between border-t border-gray-100 pt-4">
+          <div className="flex items-center gap-2">
+            <div className="h-8 w-8 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 font-bold text-xs">
+              {author.name.charAt(0)}
+            </div>
+            <div className="flex flex-col">
+              <span className="text-xs font-semibold text-gray-900">
+                {author.name}
+              </span>
+              <span className="text-[10px] text-gray-500">{author.job}</span>
+            </div>
+          </div>
+
+          <span className="flex items-center gap-1 text-sm font-semibold text-purple-600 transition-all group-hover:gap-2">
+            Lire plus <HiArrowRight className="h-4 w-4" />
+          </span>
+        </div>
       </div>
-      <p
-        className={
-          montserratFont.className +
-          " w-full text-[#5C8BFC] group-hover:text-black underline text-left font-semibold text-violet-70"
-        }
-      >
-        Lire plus
-      </p>
     </Link>
   );
 }
