@@ -115,7 +115,7 @@ export default function FAQPage() {
         <div className="absolute right-[20%] top-[70%] h-3 w-3 rounded-full bg-white/15" />
 
         {/* Content */}
-        <div className="relative z-10 mx-auto max-w-4xl text-center">
+        <div className="relative z-10 mx-auto max-w-4xl pt-24 text-center">
           <span className="mb-4 inline-block rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-medium text-white backdrop-blur-sm">
             Centre d&apos;aide
           </span>
@@ -155,7 +155,7 @@ export default function FAQPage() {
               Vous ne trouvez pas la réponse à votre question ?
             </p>
             <a
-              href="/contact"
+              href="/contactez-nous"
               className="inline-flex items-center gap-2 rounded-full bg-purple-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-purple-500 hover:shadow-lg"
             >
               Contactez-nous

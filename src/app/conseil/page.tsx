@@ -86,7 +86,7 @@ export default function Conseil() {
         <div className="absolute right-[30%] top-[15%] h-2 w-2 rounded-full bg-white/20" />
 
         {/* Content */}
-        <div className="relative z-10 mx-auto max-w-4xl text-center">
+        <div className="relative z-10 mx-auto max-w-4xl text-center pt-24">
           <span className="mb-4 inline-block rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-medium text-white backdrop-blur-sm">
             Expertise IT & Accompagnement
           </span>
@@ -282,10 +282,10 @@ export default function Conseil() {
           </p>
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
-              href="/contact"
+              href="/contactez-nous"
               className="rounded-full bg-purple-600 px-8 py-3.5 text-sm font-semibold text-white shadow-lg transition-all hover:bg-purple-500 hover:shadow-purple-500/25"
             >
-              Nous contacter
+              Contactez-nous
             </a>
             <a
               href="mailto:contact@jumpit.ma"

@@ -29,7 +29,7 @@ export default function ContactUs() {
       <ReturnToTop />
       <Navbar />
 
-      <main className="flex-grow pt-24 pb-20">
+      <main className="flex-grow pt-36 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-16">
