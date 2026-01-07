@@ -91,13 +91,12 @@ export default function WhyChooseUs() {
               <h3
                 className={`${montserratFont.className} text-slate-900 text-lg font-bold mb-2`}
               >
-                Expertise Reconnue
+                Expertise reconnue
               </h3>
               <p
                 className={`${latoFont.className} text-sm text-slate-500 max-w-[240px]`}
               >
-                Une équipe d&apos;experts certifiés avec plus de 10 ans
-                d&apos;expérience IT.
+                Une équipe d&apos;experts
               </p>
             </div>
 
@@ -109,7 +108,7 @@ export default function WhyChooseUs() {
               <h3
                 className={`${montserratFont.className} text-slate-900 text-lg font-bold mb-2`}
               >
-                Approche Agile
+                Approche agile
               </h3>
               <p
                 className={`${latoFont.className} text-sm text-slate-500 max-w-[240px]`}

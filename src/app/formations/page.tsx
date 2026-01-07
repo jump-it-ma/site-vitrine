@@ -139,7 +139,7 @@ export default function Formations() {
         {/* Content */}
         <div className="relative z-10 mx-auto max-w-4xl text-center pt-24">
           <span className="mb-4 inline-block rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-medium text-white backdrop-blur-sm">
-            Centre de Formation Professionnelle
+            Centre de formation professionnelle
           </span>
 
           <h1
