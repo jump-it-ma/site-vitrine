@@ -31,16 +31,19 @@ export default function Footer({}: Props) {
         {/* DESKTOP CONTENT */}
         <div className="hidden md:flex justify-between items-stretch px-6 xm:px-24 lg:px-36 xl:px-48 gap-4 w-full">
           <div className="flex flex-col justify-between items-start">
-            <Link href="/" className="w-full flex justify-start items-center mb-6">
+            <Link
+              href="/"
+              className="w-full flex justify-start items-center mb-6"
+            >
               <Image
                 className="w-32 h-auto object-contain object-center brightness-200"
                 src="/logo.png"
                 height={200}
                 width={200}
-                alt="JumpIT"
+                alt="Jump iT"
               />
             </Link>
-            
+
             <div className="flex flex-col justify-start items-start gap-1">
               <p className="text-sm text-purple-100">{footer.copyright1}</p>
               <p className="text-sm text-purple-100">{footer.copyright2}</p>
@@ -52,7 +55,7 @@ export default function Footer({}: Props) {
               <p
                 className={`${latoFont.className} text-sm font-bold text-white uppercase tracking-wider`}
               >
-                JumpIT
+                Jump iT
               </p>
               <div className="flex flex-col justify-start items-start gap-3">
                 <Link href={"/formations"}>
@@ -156,7 +159,7 @@ export default function Footer({}: Props) {
               src="/logo.png"
               height={200}
               width={200}
-              alt="JumpIT-mobile"
+              alt="Jump iT-mobile"
             />
           </div>
           <div className="flex flex-col justify-end items-center gap-12 mt-6">
@@ -164,7 +167,7 @@ export default function Footer({}: Props) {
               <p
                 className={`${latoFont.className} text-sm font-bold text-white uppercase tracking-wider`}
               >
-                JumpIT
+                Jump iT
               </p>
               <div className="flex flex-col justify-start items-center gap-3">
                 <Link href={"/formations"}>

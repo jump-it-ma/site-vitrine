@@ -75,7 +75,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const programData = programsMap[slug];
   if (programData) {
     return {
-      title: `JumpIT - ${programData.program.title}`,
+      title: `Jump iT - ${programData.program.title}`,
       description: programData.program.description,
       metadataBase: new URL(pageMetadata.baseUrl),
       alternates: {
@@ -83,7 +83,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         languages: { fr: `/formations/${slug}` },
       },
       openGraph: {
-        title: `JumpIT - ${programData.program.title}`,
+        title: `Jump iT - ${programData.program.title}`,
         description: programData.program.description,
         siteName: pageMetadata.siteName,
         url: `https://www.jumpit.ma/formations/${slug}`,
@@ -101,7 +101,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     (formation) => formation.formation_id === formation_id
   );
   return {
-    title: formation ? "JumpIT - Formation " + formation.title : "JumpIT - 404",
+    title: formation
+      ? "Jump iT - Formation " + formation.title
+      : "Jump iT - 404",
     description: pageMetadata.description,
     metadataBase: new URL(pageMetadata.baseUrl),
     alternates: {
@@ -260,7 +262,7 @@ export default async function Page({
         },
         provider: {
           "@type": "Organization",
-          name: "JumpIT",
+          name: "Jump iT",
         },
         hasCourseInstance: {
           "@type": "CourseInstance",
@@ -287,7 +289,7 @@ export default async function Page({
             description: course,
             provider: {
               "@type": "Organization",
-              name: "JumpIT",
+              name: "Jump iT",
             },
           };
         }),

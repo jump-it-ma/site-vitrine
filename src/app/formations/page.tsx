@@ -10,7 +10,7 @@ import { formationsData } from "../../data/formationsData";
 import { ProgramsOverview } from "@/components/Training";
 
 export const metadata = {
-  title: "JumpIT - Formations",
+  title: "Jump iT - Formations",
   description: pageMetadata.description,
   metadataBase: new URL(pageMetadata.baseUrl),
   alternates: {
@@ -81,7 +81,7 @@ const graph: Graph = {
           description: formation.hero,
           provider: {
             "@type": "Organization",
-            name: "JumpIT",
+            name: "Jump iT",
             sameAs: "https://www.jumpit.ma",
           },
         },

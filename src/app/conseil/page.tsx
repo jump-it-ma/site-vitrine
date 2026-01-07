@@ -13,7 +13,7 @@ import {
 } from "react-icons/hi2";
 
 export const metadata = {
-  title: "JumpIT - Conseil & Audit IT",
+  title: "Jump iT - Conseil & Audit IT",
   description: pageMetadata.description,
   metadataBase: new URL(pageMetadata.baseUrl),
   alternates: {

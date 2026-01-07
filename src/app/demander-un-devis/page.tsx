@@ -322,7 +322,7 @@ export default function DemanderUnDevis() {
                         htmlFor="acceptPolicy"
                         className="text-sm text-gray-600"
                       >
-                        J&apos;accepte que JumpIT collecte mes données pour
+                        J&apos;accepte que Jump iT collecte mes données pour
                         traiter ma demande. Consultez notre{" "}
                         <a
                           href="/privacy"
@@ -367,7 +367,7 @@ export default function DemanderUnDevis() {
               <h3
                 className={`${montserratFont.className} mb-6 text-lg font-bold text-gray-900`}
               >
-                Pourquoi choisir JumpIT ?
+                Pourquoi choisir Jump iT ?
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">

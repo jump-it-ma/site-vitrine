@@ -17,7 +17,7 @@ const testimonials = [
   {
     id: 2,
     content:
-      "L'audit de nos processus QA a été un déclic. Grâce à l'accompagnement de JumpIT, nous avons réduit nos bugs de production de 40% en seulement 3 mois.",
+      "L'audit de nos processus QA a été un déclic. Grâce à l'accompagnement de Jump iT, nous avons réduit nos bugs de production de 40% en seulement 3 mois.",
     author: "Sofia M.",
     role: "Directrice Projet",
     company: "Grand Compte Assurances",

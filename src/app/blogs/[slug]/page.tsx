@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const blog = blogsData.find((blog) => blog.id === blog_id);
 
   return {
-    title: blog ? blog.title : "JumpIT - 404",
+    title: blog ? blog.title : "Jump iT - 404",
     description: pageMetadata.description,
     metadataBase: new URL(pageMetadata.baseUrl),
     alternates: {
@@ -136,7 +136,7 @@ export default function Blog({ params }: Props) {
         },
         publisher: {
           "@type": "Organization",
-          name: "JumpIT",
+          name: "Jump iT",
           image: {
             "@type": "ImageObject",
             url: "/icones.png",

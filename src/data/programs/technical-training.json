@@ -19,7 +19,7 @@
       "DevOps",
       "RPA"
     ],
-    "editors": ["JumpIT"],
+    "editors": ["Jump iT"],
     "durations": [2, 4],
     "levels": ["Débutant", "Intermédiaire", "Avancé", "Débutant/Intermédiaire"],
     "languages": ["FR"]
@@ -34,7 +34,7 @@
         {
           "id": "postman",
           "title": "Postman",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "POSTMAN",
           "is_best_seller": true,
           "duration_days": 2,
@@ -93,7 +93,7 @@
         {
           "id": "cypress",
           "title": "Cypress",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "CYPRESS",
           "is_best_seller": true,
           "duration_days": 2,
@@ -152,7 +152,7 @@
         {
           "id": "robot-framework",
           "title": "Robot Framework",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "ROBOT",
           "is_best_seller": false,
           "duration_days": 2,
@@ -215,7 +215,7 @@
         {
           "id": "playwright",
           "title": "Playwright",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "PLAYWRIGHT",
           "is_best_seller": false,
           "duration_days": 2,
@@ -279,7 +279,7 @@
         {
           "id": "selenium",
           "title": "Selenium",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "SELENIUM",
           "is_best_seller": false,
           "duration_days": 2,
@@ -341,7 +341,7 @@
         {
           "id": "soapui",
           "title": "SoapUI",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "SOAPUI",
           "is_best_seller": false,
           "duration_days": 2,
@@ -399,7 +399,7 @@
         {
           "id": "appium",
           "title": "Appium",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "APPIUM",
           "is_best_seller": false,
           "duration_days": 2,
@@ -467,7 +467,7 @@
         {
           "id": "reactjs",
           "title": "ReactJS",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "REACT",
           "is_best_seller": true,
           "duration_days": 4,
@@ -543,7 +543,7 @@
         {
           "id": "reactjs-advanced",
           "title": "ReactJS Avancé",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "REACT-ADV",
           "is_best_seller": false,
           "duration_days": 3,
@@ -610,7 +610,7 @@
         {
           "id": "angular-beginner",
           "title": "Angular Débutant",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "ANGULAR-BASICS",
           "is_best_seller": false,
           "duration_days": 4,
@@ -690,7 +690,7 @@
         {
           "id": "angular-advanced",
           "title": "Angular Avancé",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "ANGULAR-ADV",
           "is_best_seller": false,
           "duration_days": 3,
@@ -754,7 +754,7 @@
         {
           "id": "nextjs-beginner",
           "title": "Next.js Débutant",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "NEXT-BASICS",
           "is_best_seller": true,
           "duration_days": 2,
@@ -802,7 +802,7 @@
         {
           "id": "nextjs-advanced",
           "title": "Next.js Avancé",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "NEXT-ADV",
           "is_best_seller": false,
           "duration_days": 2,
@@ -856,7 +856,7 @@
         {
           "id": "spring-java-intro",
           "title": "Introduction à Spring Java",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "SPRING-BASICS",
           "is_best_seller": false,
           "duration_days": 4,
@@ -924,7 +924,7 @@
         {
           "id": "spring-java-advanced",
           "title": "Spring Java Avancé",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "SPRING-ADV",
           "is_best_seller": false,
           "duration_days": 3,
@@ -988,7 +988,7 @@
         {
           "id": "nestjs-beginner",
           "title": "NestJS Débutant",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "NEST-BASICS",
           "is_best_seller": false,
           "duration_days": 3,
@@ -1049,7 +1049,7 @@
         {
           "id": "nestjs-advanced",
           "title": "NestJS Avancé",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "NEST-ADV",
           "is_best_seller": false,
           "duration_days": 2,
@@ -1103,7 +1103,7 @@
         {
           "id": "express-js",
           "title": "Express.js",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "EXPRESS",
           "is_best_seller": false,
           "duration_days": 2,
@@ -1160,7 +1160,7 @@
         {
           "id": "laravel-beginner",
           "title": "Laravel Débutant",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "LARAVEL-BASICS",
           "is_best_seller": false,
           "duration_days": 3,
@@ -1218,7 +1218,7 @@
         {
           "id": "laravel-advanced",
           "title": "Laravel Avancé",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "LARAVEL-ADV",
           "is_best_seller": false,
           "duration_days": 2,
@@ -1274,7 +1274,7 @@
         {
           "id": "react-native-beginner",
           "title": "React Native Débutant",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "RN-BASICS",
           "is_best_seller": false,
           "duration_days": 3,
@@ -1341,7 +1341,7 @@
         {
           "id": "expo-go",
           "title": "Expo Go (React Native)",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "EXPO-GO",
           "is_best_seller": false,
           "duration_days": 2,
@@ -1398,7 +1398,7 @@
         {
           "id": "react-native-advanced",
           "title": "React Native Avancé",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "RN-ADV",
           "is_best_seller": false,
           "duration_days": 2,
@@ -1459,7 +1459,7 @@
         {
           "id": "docker",
           "title": "Docker",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "DOCKER",
           "is_best_seller": true,
           "duration_days": 2,
@@ -1517,7 +1517,7 @@
         {
           "id": "docker-advanced",
           "title": "Docker Avancé",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "DOCKER-ADV",
           "is_best_seller": false,
           "duration_days": 2,
@@ -1575,7 +1575,7 @@
         {
           "id": "kubernetes",
           "title": "Kubernetes",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "K8S",
           "is_best_seller": false,
           "duration_days": 3,
@@ -1643,7 +1643,7 @@
         {
           "id": "kubernetes-advanced",
           "title": "Kubernetes Avancé",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "K8S-ADV",
           "is_best_seller": false,
           "duration_days": 3,
@@ -1716,7 +1716,7 @@
         {
           "id": "uipath-debutant",
           "title": "UiPath Débutant",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "UIPATH-BASICS",
           "is_best_seller": false,
           "duration_days": 2,
@@ -1771,7 +1771,7 @@
         {
           "id": "uipath-advanced",
           "title": "UiPath Avancé",
-          "editor": "JumpIT",
+          "editor": "Jump iT",
           "reference": "UIPATH-ADV",
           "is_best_seller": false,
           "duration_days": 2,

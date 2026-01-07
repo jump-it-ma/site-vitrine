@@ -54,7 +54,7 @@ export default function Navbar() {
             <div className="relative h-12 w-24 overflow-hidden">
               <Image
                 src="/icone.png"
-                alt="JumpIT"
+                alt="Jump iT"
                 fill
                 className="object-contain object-left"
                 priority

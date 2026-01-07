@@ -108,8 +108,8 @@ const graph: Graph = {
       "@type": "WebSite",
       "@id": "https://www.jumpit.ma",
       inLanguage: "fr",
-      name: "JumpIT",
-      alternateName: "JumpIT",
+      name: "Jump iT",
+      alternateName: "Jump iT",
       url: "https://www.jumpit.ma",
       offers: [
         {
@@ -127,14 +127,14 @@ const graph: Graph = {
       ],
       author: {
         "@type": "Organization",
-        name: "JumpIT",
+        name: "Jump iT",
         image: "/icones.png",
-        legalName: "JumpIT",
+        legalName: "Jump iT",
         logo: "/icones.png",
         url: "https://www.jumpit.ma",
         keywords: ["Formation", "Conseil", "Blog", "Contact"],
         address: "Rue Al Borj, Résidence Zineb, Appt12, Rabat 10020, Maroc",
-        telephone: "+212 6 62 88 28 41",
+        telephone: "+212 5 37 20 09 98",
         email: "contact@jumpit.ma",
       },
     },

@@ -10,7 +10,7 @@ import Navbar from "../../components/Navbar";
 import ReturnToTop from "../../components/ReturnToTop";
 
 export const metadata = {
-  title: "JumpIT - Le Blog",
+  title: "Jump iT - Le Blog",
   description: pageMetadata.description,
   metadataBase: new URL(pageMetadata.baseUrl),
   alternates: {
@@ -93,7 +93,7 @@ export default function Blogs() {
         },
         publisher: {
           "@type": "Organization",
-          name: "JumpIT",
+          name: "Jump iT",
           image: {
             "@type": "ImageObject",
             url: "/icones.png",
@@ -151,7 +151,7 @@ export default function Blogs() {
           <h1
             className={`${montserratFont.className} mb-6 text-4xl font-bold text-white sm:text-5xl lg:text-6xl`}
           >
-            Le Blog JumpIT
+            Le Blog Jump iT
           </h1>
           <p
             className={`${latoFont.className} mx-auto max-w-2xl text-lg text-purple-100 sm:text-xl`}

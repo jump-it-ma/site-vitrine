@@ -376,7 +376,7 @@ function InscriptionContent() {
                         htmlFor="acceptPolicy"
                         className="text-sm text-gray-600"
                       >
-                        En soumettant ce formulaire, j&apos;accepte que JumpIT
+                        En soumettant ce formulaire, j&apos;accepte que Jump iT
                         traite mes données pour gérer mon inscription.
                       </label>
                     </div>

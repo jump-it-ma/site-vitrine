@@ -21,7 +21,7 @@ const faqData: FAQItem[] = [
   {
     question: "Les formations sont-elles certifiantes ?",
     answer:
-      "Oui, la plupart de nos formations préparent à des certifications reconnues internationalement (ISTQB, Scrum, ISO, etc.). Vous recevrez également une attestation de formation JumpIT.",
+      "Oui, la plupart de nos formations préparent à des certifications reconnues internationalement (ISTQB, Scrum, ISO, etc.). Vous recevrez également une attestation de formation Jump iT.",
   },
   {
     question: "Proposez-vous des formations sur site ?",
