@@ -6,8 +6,6 @@ import { montserratFont, latoFont } from "@/utils/fonts";
 const partners = [
   { name: "RAJA", src: "/trustBy/RAJA.png", width: 200, height: 150 },
   { name: "SITENCO", src: "/trustBy/SITENCO.png", width: 200, height: 150 },
-  { name: "ATA", src: "/trustBy/ATA.png", width: 150, height: 150 },
-  { name: "3ISCHOOL", src: "/trustBy/3ISCHOOL.png", width: 200, height: 150 },
   {
     name: "WERINGROUP",
     src: "/trustBy/WERINGROUP.png",
@@ -17,6 +15,12 @@ const partners = [
   {
     name: "WILDCODESCHOOL",
     src: "/trustBy/WILDCODESCHOOL.png",
+    width: 200,
+    height: 150,
+  },
+  {
+    name: "SOFRECOM",
+    src: "/trustBy/SOFRECOM.png",
     width: 200,
     height: 150,
   },

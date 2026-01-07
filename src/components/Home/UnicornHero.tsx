@@ -59,16 +59,16 @@ export default function UnicornHero() {
       <div className="relative z-10 max-w-7xl max-h-screen mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-12 sm:pt-24">
         <div className="max-w-4xl mx-auto text-center">
           <span className="inline-block py-1 px-3 rounded-full bg-purple-100 border border-purple-200 text-purple-700 text-xs font-semibold tracking-wider uppercase mb-6 backdrop-blur-sm">
-            Nouveau : Catalogue de Formation 2025
+            Nouvelles offres de formation disponibles !
           </span>
 
           <h1
             className={`${montserratFont.className} mt-3 text-4xl sm:text-5xl lg:text-7xl leading-tight font-bold text-slate-900 tracking-tight`}
           >
-            Formation d&apos;excellence.
+            Formations d&apos;excellence
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-purple-700">
-              Conseil stratégique.
+              Conseil et expertise IT
             </span>
           </h1>
 

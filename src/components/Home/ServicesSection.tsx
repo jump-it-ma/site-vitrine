@@ -19,13 +19,12 @@ export default function ServicesSection() {
           <h2
             className={`${montserratFont.className} text-3xl sm:text-4xl font-bold text-slate-900 mb-4`}
           >
-            Nos Services
+            Nos services
           </h2>
           <p
             className={`${latoFont.className} text-lg text-slate-600 max-w-2xl mx-auto`}
           >
-            Des solutions complètes pour accompagner votre réussite
-            technologique
+            Des solutions pour accompagner votre transformation digitale
           </p>
         </div>
 

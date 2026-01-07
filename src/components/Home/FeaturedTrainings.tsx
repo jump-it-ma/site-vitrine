@@ -35,12 +35,12 @@ export default function FeaturedTrainings() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="inline-block py-1 px-3 rounded-full bg-purple-50 border border-purple-100 text-purple-600 text-xs font-bold tracking-wider uppercase mb-4">
-            Catalogue 2025
+            Catalogue 2026
           </span>
           <h2
             className={`${montserratFont.className} text-3xl sm:text-4xl font-bold text-slate-900 mb-4`}
           >
-            Formations à la Une
+            Formations à la une
           </h2>
           <p
             className={`${latoFont.className} text-lg text-slate-600 max-w-2xl mx-auto`}

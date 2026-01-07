@@ -1,15 +1,15 @@
 export const pageMetadata = {
   baseUrl: "https://www.jumpit.ma",
   siteName: "Jump iT",
-  title: "Partenaire de qualité en formation et automatisation des tests",
+  title: "Partenaire de qualité en formation et consulting IT",
   description:
-    "Jump iT est spécialisée dans conseil et la formation en qualité logiciel. Elle propose des produits à destinations du grand public et des entreprises",
+    "Jump iT est spécialisée dans conseil et la formation en informatique. Nous proposons un large catalogue de formations et de services de consulting pour répondre aux besoins des entreprises et des professionnels.",
 };
 
 export const footer = {
-  copyright1: `Copyright © 2024 Jump iT`,
+  copyright1: `Copyright © 2026 Jump iT`,
   copyright2: `Tous droits réservés`,
-  address: `Rue Al Borj, Résidence Zineb, Appt12, Rabat 10020, Maroc`,
+  address: `Bureau N° 20, Imm 11, Rue sebata, Hassan, Rabat 10020, Maroc`,
   phone: `+212 5 37 20 09 98`,
   email: `contact@jumpit.ma`,
   socialLinks: {
