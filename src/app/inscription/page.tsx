@@ -464,7 +464,7 @@ function InscriptionContent() {
                   className="flex items-center gap-3 rounded-lg bg-white/10 px-4 py-2 transition-colors hover:bg-white/20"
                 >
                   <HiPhone className="h-5 w-5" />
-                  <span className="font-semibold">+212 5 20 00 00 00</span>
+                  <span className="font-semibold">+212 6 62 88 28 41</span>
                 </a>
                 <a
                   href="mailto:formation@jumpit.ma"

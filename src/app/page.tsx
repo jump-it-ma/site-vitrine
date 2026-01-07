@@ -134,7 +134,7 @@ const graph: Graph = {
         url: "https://www.jumpit.ma",
         keywords: ["Formation", "Conseil", "Blog", "Contact"],
         address: "Rue Al Borj, Résidence Zineb, Appt12, Rabat 10020, Maroc",
-        telephone: "+212 5 37 20 09 98",
+        telephone: "+212 6 62 88 28 41",
         email: "contact@jumpit.ma",
       },
     },

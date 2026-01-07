@@ -59,7 +59,7 @@ export default function UnicornHero() {
       <div className="relative z-10 max-w-7xl max-h-screen mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-12 sm:pt-24">
         <div className="max-w-4xl mx-auto text-center">
           <span className="inline-block py-1 px-3 rounded-full bg-purple-100 border border-purple-200 text-purple-700 text-xs font-semibold tracking-wider uppercase mb-6 backdrop-blur-sm">
-            Nouvelles offres de formation disponibles !
+            Nouvelles offres de formation disponible !
           </span>
 
           <h1

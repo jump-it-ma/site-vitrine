@@ -456,7 +456,7 @@ export default function TrainingDetailPage({
                     className="flex items-center gap-2 text-sm hover:text-purple-200"
                   >
                     <HiPhone className="h-4 w-4" />
-                    +212 5 20 00 00 00
+                    +212 6 62 88 28 41
                   </a>
                 </div>
               </div>
