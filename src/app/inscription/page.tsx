@@ -466,11 +466,11 @@ function InscriptionContent() {
                   <span className="font-semibold">+212 6 62 88 28 41</span>
                 </a>
                 <a
-                  href="mailto:formation@jumpit.ma"
+                  href="mailto:contact@jumpit.ma"
                   className="flex items-center gap-3 rounded-lg bg-white/10 px-4 py-2 transition-colors hover:bg-white/20"
                 >
                   <HiEnvelope className="h-5 w-5" />
-                  <span className="font-semibold">formation@jumpit.ma</span>
+                  <span className="font-semibold">contact@jumpit.ma</span>
                 </a>
               </div>
             </div>
