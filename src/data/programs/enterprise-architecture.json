@@ -1,15 +1,15 @@
 {
   "program": {
     "id": "enterprise-architecture",
-    "title": "ARCHITECTURE D'ENTREPRISE",
-    "description": "Formations en Architecture d'Entreprise basées sur les standards de The Open Group : TOGAF® et ArchiMate®.",
-    "categories": ["TOGAF EA", "ArchiMate 3"]
+    "title": "ARCHITECTURE & GOUVERNANCE IT",
+    "description": "Formations en Architecture et gouvernance IT basées sur les standards de The Open Group : TOGAF® et ArchiMate®.",
+    "categories": ["TOGAF EA", "ArchiMate 3", "COBIT 2019"]
   },
   "filters": {
-    "categories": ["TOGAF EA", "ArchiMate 3"],
-    "editors": ["TOG"],
+    "categories": ["TOGAF EA", "ArchiMate 3", "COBIT 2019"],
+    "editors": ["TOG", "ISACA"],
     "durations": [2, 3, 4, 5],
-    "levels": ["Intermédiaire", "Avancé"],
+    "levels": ["Intermédiaire", "Avancé", "Avancé (IP3+)"],
     "languages": ["FR", "EN"]
   },
   "categories": [
@@ -305,6 +305,82 @@
                   "Éléments de motivation et de stratégie",
                   "Implémentation et Migration",
                   "Points de vue et perspectives"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "cobit-2019",
+      "name": "COBIT 2019",
+      "description": "Le cadre mondialement reconnu d'ISACA pour une gouvernance I&T efficace, flexible et stratégique.",
+      "reference": "COBIT",
+      "trainings": [
+        {
+          "id": "cobit-2019-foundation",
+          "title": "COBIT 2019 Foundation",
+          "editor": "ISACA",
+          "reference": "GV001",
+          "is_best_seller": false,
+          "duration_days": 3,
+          "level": "Avancé (IP3+)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "exam_price": 155,
+            "training_price": 210
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["EN"],
+          "tags": ["cobit", "governance", "isaca", "strategy"],
+          "search_keywords": [
+            "cobit 2019",
+            "it governance",
+            "isaca foundation"
+          ],
+          "details": {
+            "description": "Comprendre les concepts, modèles et définitions du cadre COBIT 2019. Apprenez à concevoir un système de gouvernance sur mesure pour maximiser la valeur de l'IT.",
+            "target_audience": [
+              "Directeurs IT / DSI",
+              "Auditeurs IT",
+              "Consultants en gouvernance",
+              "Risk Managers"
+            ],
+            "objectives": [
+              "Comprendre les 6 principes du système de gouvernance",
+              "Maîtriser les 40 objectifs de gouvernance et de gestion",
+              "Concevoir un système de gouvernance adapté (Tailoring)"
+            ],
+            "prerequisites": ["Expérience en IT ou gouvernance recommandée"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction & Principes",
+                "topics": [
+                  "Introduction au cadre COBIT 2019",
+                  "Les 6 Principes du système de gouvernance",
+                  "Les 3 Principes du cadre de référence"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Système & Composantes",
+                "topics": [
+                  "Les 7 Composantes de la gouvernance",
+                  "Objectifs de Gouvernance et de Gestion",
+                  "Gestion de la performance (CMMI)"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Design & Implémentation",
+                "topics": [
+                  "Facteurs de conception (Tailoring)",
+                  "Mise en œuvre d'une solution",
+                  "Préparation à l'examen"
                 ]
               }
             ],

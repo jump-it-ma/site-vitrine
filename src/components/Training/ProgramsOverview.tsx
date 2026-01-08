@@ -20,9 +20,7 @@ import projectManagementData from "@/data/programs/project-management.json";
 import itServiceManagementData from "@/data/programs/it-service-management.json";
 import enterpriseArchitectureData from "@/data/programs/enterprise-architecture.json";
 import softwareEngineeringData from "@/data/programs/software-engineering.json";
-import itGovernanceData from "@/data/programs/it-governance.json";
 import processManagementData from "@/data/programs/process-management.json";
-import qhseRiskCsrData from "@/data/programs/qhse-risk-csr.json";
 import digitalManagementTechnologiesData from "@/data/programs/digital-management-technologies.json";
 import aiGovernanceManagementData from "@/data/programs/ai-governance-management.json";
 
@@ -104,19 +102,9 @@ const programs: {
     filterCategory: "sweng",
   },
   {
-    data: itGovernanceData as HierarchicalProgramData,
-    variant: "gov",
-    filterCategory: "gov",
-  },
-  {
     data: processManagementData as HierarchicalProgramData,
     variant: "process",
     filterCategory: "process",
-  },
-  {
-    data: qhseRiskCsrData as HierarchicalProgramData,
-    variant: "qhse",
-    filterCategory: "qhse",
   },
   {
     data: digitalManagementTechnologiesData as HierarchicalProgramData,

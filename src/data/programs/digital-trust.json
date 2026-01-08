@@ -1,16 +1,46 @@
 {
   "program": {
     "id": "digital-trust",
-    "title": "CYBER RESILIENCE",
-    "description": "Cybersecurity, risk management, data protection and privacy management systems.",
+    "title": "CYBER RESILIENCE & QHSE",
+    "description": "Formations en Cyber Résilience, Sécurité de l'Information, Gestion des Risques, Qualité, Hygiène, Sécurité, Environnement (QHSE), RSE et Continuité d'Activité.",
     "categories": [
       "ISO 27001",
       "ISO 27035",
       "ISO 27005 / EBIOS",
       "ISO 27032",
       "DORA",
-      "GDPR / ISO 27701"
+      "GDPR / ISO 27701",
+      "ISO 9001",
+      "ISO 14001",
+      "ISO 22301",
+      "ISO 31000"
     ]
+  },
+  "filters": {
+    "categories": [
+      "ISO 27001",
+      "ISO 27035",
+      "ISO 27005 / EBIOS",
+      "ISO 27032",
+      "DORA",
+      "GDPR / ISO 27701",
+      "ISO 9001",
+      "ISO 14001",
+      "ISO 22301",
+      "ISO 31000"
+    ],
+    "editors": ["PECB"],
+    "durations": [2, 3, 5],
+    "levels": [
+      "IP2",
+      "IP2+",
+      "IP3",
+      "IP3+",
+      "IP3 / IP3+",
+      "Intermédiaire (IP2)",
+      "Avancé (IP3/IP3+)"
+    ],
+    "languages": ["FR", "EN"]
   },
   "categories": [
     {
@@ -1228,20 +1258,427 @@
           }
         }
       ]
+    },
+    {
+      "id": "iso-9001",
+      "name": "ISO 9001 - Quality Management",
+      "description": "Systèmes de Management de la Qualité (SMQ). La norme internationale pour assurer la satisfaction client et l'amélioration continue.",
+      "reference": "ISO9001",
+      "trainings": [
+        {
+          "id": "iso-9001-foundation",
+          "title": "ISO 9001 Foundation",
+          "editor": "PECB",
+          "reference": "ISR001",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Intermédiaire (IP2)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 265,
+            "note": "Official Training Package (incl. voucher)"
+          },
+          "package_includes": "Support de cours officiel et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["iso 9001", "quality", "foundation", "pecb"],
+          "search_keywords": [
+            "iso 9001 foundation",
+            "quality management",
+            "qms"
+          ],
+          "details": {
+            "description": "Ce cours permet d'appréhender les éléments fondamentaux pour mettre en œuvre et gérer un Système de Management de la Qualité (SMQ) conforme à la norme ISO 9001:2015.",
+            "target_audience": [
+              "Responsables Qualité",
+              "Membres d'une équipe qualité",
+              "Auditeurs débutants"
+            ],
+            "objectives": [
+              "Comprendre les principes du management de la qualité",
+              "Connaître les exigences de la norme ISO 9001",
+              "Comprendre les approches processus et PDCA"
+            ],
+            "prerequisites": ["Aucun"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction & Principes",
+                "topics": [
+                  "Introduction aux normes ISO",
+                  "Les 7 principes de management de la qualité",
+                  "Contexte de l'organisme et Leadership"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Exigences & Opérations",
+                "topics": [
+                  "Planification et Support",
+                  "Réalisation des activités opérationnelles",
+                  "Évaluation des performances et Amélioration"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "iso-14001",
+      "name": "ISO 14001 - Environmental Management",
+      "description": "Systèmes de Management Environnemental (SME). Réduire l'impact environnemental et respecter la conformité réglementaire.",
+      "reference": "ISO14001",
+      "trainings": [
+        {
+          "id": "iso-14001-foundation",
+          "title": "ISO 14001 Foundation",
+          "editor": "PECB",
+          "reference": "ISR005",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Intermédiaire (IP2)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 265,
+            "note": "Official Training Package (incl. voucher)"
+          },
+          "package_includes": "Support de cours officiel et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["iso 14001", "environment", "foundation", "sme", "green"],
+          "search_keywords": [
+            "iso 14001",
+            "environmental management",
+            "sustainability"
+          ],
+          "details": {
+            "description": "Appréhender les éléments fondamentaux pour mettre en œuvre et gérer un Système de Management Environnemental (SME) conforme à la norme ISO 14001:2015.",
+            "target_audience": [
+              "Responsables Environnement",
+              "Responsables RSE",
+              "Toute personne impliquée dans le management environnemental"
+            ],
+            "objectives": [
+              "Comprendre les concepts et principes environnementaux",
+              "Identifier les aspects et impacts environnementaux",
+              "Comprendre les exigences de la norme ISO 14001"
+            ],
+            "prerequisites": ["Aucun"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Fondamentaux Environnementaux",
+                "topics": [
+                  "Introduction à ISO 14001",
+                  "Contexte de l'organisme",
+                  "Leadership et Politique environnementale"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Planification & Opérations",
+                "topics": [
+                  "Aspects environnementaux et obligations de conformité",
+                  "Planification et Support",
+                  "Fonctionnement et Évaluation des performances"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "iso-22301",
+      "name": "ISO 22301 - Business Continuity Management",
+      "description": "Assurez la résilience de votre entreprise face aux perturbations avec un Système de Management de la Continuité d'Activité (SMCA).",
+      "reference": "ISO22301",
+      "trainings": [
+        {
+          "id": "iso-22301-foundation",
+          "title": "ISO 22301 Foundation",
+          "editor": "PECB",
+          "reference": "ISR016",
+          "is_best_seller": true,
+          "duration_days": 2,
+          "level": "Intermédiaire (IP2)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 265,
+            "note": "Official Training Package (incl. voucher)"
+          },
+          "package_includes": "Support de cours officiel et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": [
+            "iso 22301",
+            "business continuity",
+            "resilience",
+            "foundation"
+          ],
+          "search_keywords": [
+            "business continuity",
+            "pca",
+            "plan de continuité",
+            "iso 22301"
+          ],
+          "details": {
+            "description": "Apprenez les éléments fondamentaux pour mettre en œuvre et gérer un Système de Management de la Continuité d'Activité (SMCA) conforme à la norme ISO 22301.",
+            "target_audience": [
+              "Responsables Continuité d'Activité",
+              "Risk Managers",
+              "Membres de l'équipe BCMS"
+            ],
+            "objectives": [
+              "Comprendre les concepts de continuité d'activité",
+              "Connaître les exigences ISO 22301",
+              "Participer à la mise en œuvre d'un SMCA"
+            ],
+            "prerequisites": ["Aucun"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction & Principes",
+                "topics": [
+                  "Concepts de la continuité d'activité",
+                  "Norme ISO 22301",
+                  "Analyse d'impact métier (BIA)"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Mise en œuvre",
+                "topics": [
+                  "Stratégie de continuité",
+                  "Plans de continuité",
+                  "Tests et exercices"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "iso-22301-lead-implementer-auditor",
+          "title": "ISO 22301 Lead Implementer / Lead Auditor",
+          "editor": "PECB",
+          "reference": "ISR017",
+          "is_best_seller": true,
+          "duration_days": 5,
+          "level": "Avancé (IP3 / IP3+)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 665,
+            "note": "Official Training Package (incl. voucher)"
+          },
+          "package_includes": "Support de cours officiel et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["iso 22301", "lead implementer", "lead auditor", "advanced"],
+          "search_keywords": [
+            "lead implementer",
+            "lead auditor",
+            "certification expert",
+            "iso 22301"
+          ],
+          "details": {
+            "description": "Niveau Expert. Choisissez entre Lead Implementer (pour mettre en place le SMCA) ou Lead Auditor (pour auditer le SMCA).",
+            "target_audience": [
+              "Consultants",
+              "Auditeurs",
+              "Responsables BCMS expérimentés"
+            ],
+            "objectives": [
+              "Mener une implémentation complète (LI)",
+              "Planifier et diriger un audit (LA)",
+              "Préparer la certification Lead"
+            ],
+            "prerequisites": ["Connaissance de base ISO 22301 recommandée"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction",
+                "topics": [
+                  "Cadre normatif",
+                  "Lancement du projet (LI) / Principes d'audit (LA)"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Planification",
+                "topics": [
+                  "Leadership et planification",
+                  "Analyse d'Impact (BIA) et Risques"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Mise en œuvre / Audit",
+                "topics": [
+                  "Procédures de continuité",
+                  "Réalisation de l'audit (LA)"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Évaluation",
+                "topics": ["Tests et exercices", "Rapport d'audit et clôture"]
+              },
+              {
+                "day": 5,
+                "title": "Examen",
+                "topics": ["Passage de l'examen de certification"]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "iso-31000",
+      "name": "ISO 31000 - Risk Management",
+      "description": "Lignes directrices pour gérer les risques auxquels les organisations sont confrontées. Une approche stratégique et opérationnelle.",
+      "reference": "ISO31000",
+      "trainings": [
+        {
+          "id": "iso-31000-foundation",
+          "title": "ISO 31000 Foundation",
+          "editor": "PECB",
+          "reference": "ISR016",
+          "is_best_seller": true,
+          "duration_days": 2,
+          "level": "Intermédiaire (IP2)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 265,
+            "note": "Official Training Package (incl. voucher)"
+          },
+          "package_includes": "Support de cours officiel et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["iso 31000", "risk", "foundation", "management"],
+          "search_keywords": [
+            "risk management",
+            "gestion des risques",
+            "iso 31000 foundation"
+          ],
+          "details": {
+            "description": "Comprendre les principes fondamentaux, le cadre et le processus de management du risque selon la norme ISO 31000.",
+            "target_audience": [
+              "Risk Managers débutants",
+              "Chefs de projet",
+              "Direction"
+            ],
+            "objectives": [
+              "Comprendre le vocabulaire du risque",
+              "Maîtriser les principes de l'ISO 31000",
+              "Comprendre le processus de gestion des risques"
+            ],
+            "prerequisites": ["Aucun"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Principes du Risque",
+                "topics": [
+                  "Définitions et concepts",
+                  "Principes de management du risque",
+                  "Cadre organisationnel"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Processus",
+                "topics": [
+                  "Appréciation du risque (Identification, Analyse, Évaluation)",
+                  "Traitement du risque",
+                  "Communication et consultation"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "iso-31000-risk-manager",
+          "title": "ISO 31000 Risk Manager / Lead Risk Manager",
+          "editor": "PECB",
+          "reference": "ISR017",
+          "is_best_seller": true,
+          "duration_days": 3,
+          "duration_display": "3d / 5d",
+          "level": "Avancé (IP3)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": "400 / 665",
+            "note": "Risk Manager (3d): 400€ / Lead Risk Manager (5d): 665€"
+          },
+          "package_includes": "Support de cours officiel et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["iso 31000", "risk manager", "lead risk manager", "expert"],
+          "search_keywords": [
+            "risk manager certification",
+            "iec 31010",
+            "analyse de risques avancée"
+          ],
+          "details": {
+            "description": "Maîtrisez la mise en œuvre des processus de gestion des risques. Certification Risk Manager (3 jours) ou Lead Risk Manager (5 jours) incluant les techniques d'évaluation IEC 31010.",
+            "target_audience": [
+              "Risk Managers",
+              "Consultants",
+              "Responsables conformité"
+            ],
+            "objectives": [
+              "Établir un cadre de gestion des risques",
+              "Appliquer les techniques d'appréciation (IEC 31010)",
+              "Intégrer le risque dans la prise de décision"
+            ],
+            "prerequisites": ["Certification Foundation recommandée"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction & Cadre",
+                "topics": [
+                  "Cadre de référence ISO 31000",
+                  "Intégration dans l'organisation"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Appréciation du Risque",
+                "topics": [
+                  "Identification et Analyse",
+                  "Techniques d'évaluation des risques (IEC 31010)"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Traitement & Examen",
+                "topics": [
+                  "Options de traitement",
+                  "Suivi et revue",
+                  "Examen Risk Manager"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Lead Manager (Option 5j)",
+                "topics": ["Gestion avancée", "Communication de crise"]
+              },
+              {
+                "day": 5,
+                "title": "Examen Lead",
+                "topics": ["Examen Lead Risk Manager"]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
     }
-  ],
-  "filters": {
-    "categories": [
-      "ISO 27001",
-      "ISO 27035",
-      "ISO 27005 / EBIOS",
-      "ISO 27032",
-      "DORA",
-      "GDPR / ISO 27701"
-    ],
-    "editors": ["PECB"],
-    "durations": [2, 3, 5],
-    "levels": ["IP2", "IP2+", "IP3", "IP3+", "IP3 / IP3+"],
-    "languages": ["FR", "EN"]
-  }
+  ]
 }

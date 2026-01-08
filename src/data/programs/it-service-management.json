@@ -2,11 +2,11 @@
   "program": {
     "id": "it-service-management",
     "title": "GESTION DES SERVICES IT",
-    "description": "Formations certifiantes en gestion des services IT : SIAM (Service Integration) et ITIL® 4 (Foundation & Specialist).",
-    "categories": ["SIAM", "ITIL4"]
+    "description": "Formations certifiantes en gestion des services IT :TIL® 4",
+    "categories": ["ITIL4"]
   },
   "filters": {
-    "categories": ["SIAM", "ITIL4"],
+    "categories": ["ITIL4"],
     "editors": ["BCS", "PEOPLECERT"],
     "durations": [2, 3],
     "levels": ["Débutant", "Intermédiaire", "Avancé"],

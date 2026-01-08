@@ -10,9 +10,7 @@ import projectManagementData from "@/data/programs/project-management.json";
 import itServiceManagementData from "@/data/programs/it-service-management.json";
 import enterpriseArchitectureData from "@/data/programs/enterprise-architecture.json";
 import softwareEngineeringData from "@/data/programs/software-engineering.json";
-import itGovernanceData from "@/data/programs/it-governance.json";
 import processManagementData from "@/data/programs/process-management.json";
-import qhseRiskCsrData from "@/data/programs/qhse-risk-csr.json";
 import digitalManagementTechnologiesData from "@/data/programs/digital-management-technologies.json";
 import aiGovernanceManagementData from "@/data/programs/ai-governance-management.json";
 import { HierarchicalProgramData, FlattenedTraining } from "@/types/training";
@@ -31,10 +29,8 @@ const programsMap: Record<string, HierarchicalProgramData> = {
     enterpriseArchitectureData as unknown as HierarchicalProgramData,
   "software-engineering":
     softwareEngineeringData as unknown as HierarchicalProgramData,
-  "it-governance": itGovernanceData as unknown as HierarchicalProgramData,
   "process-management":
     processManagementData as unknown as HierarchicalProgramData,
-  "qhse-risk-csr": qhseRiskCsrData as unknown as HierarchicalProgramData,
   "digital-management-technologies":
     digitalManagementTechnologiesData as unknown as HierarchicalProgramData,
   "ai-governance-management":
