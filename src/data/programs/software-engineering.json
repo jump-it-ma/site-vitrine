@@ -1,0 +1,249 @@
+{
+  "program": {
+    "id": "software-engineering",
+    "title": "INGENIERIE LOGICIELLE",
+    "description": "Certifications internationales en ingénierie logicielle : Ingénierie des exigences (IREB), Tests Logiciels (ISTQB) et Business Analysis (IQBBA).",
+    "categories": ["IREB", "ISTQB", "IQBBA"]
+  },
+  "filters": {
+    "categories": ["IREB", "ISTQB", "IQBBA"],
+    "editors": ["CERTIBLE", "GASQ"],
+    "durations": [2, 3],
+    "levels": ["Intermédiaire (IP2)"],
+    "languages": ["FR", "EN"]
+  },
+  "categories": [
+    {
+      "id": "ireb",
+      "name": "IREB",
+      "description": "International Requirements Engineering Board. Le standard pour la gestion des exigences.",
+      "reference": "IREB",
+      "trainings": [
+        {
+          "id": "ireb-cpre-fl",
+          "title": "CPRE Foundation Level (CPRE FL)",
+          "editor": "CERTIBLE",
+          "reference": "IL001",
+          "is_best_seller": false,
+          "duration_days": 3,
+          "duration_display": "2 or 3d",
+          "level": "Intermédiaire (IP2)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "exam_price": 40,
+            "training_price": 335
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["ireb", "requirements", "cpre", "business analysis"],
+          "search_keywords": [
+            "ireb foundation",
+            "requirements engineering",
+            "cpre fl"
+          ],
+          "details": {
+            "description": "Certified Professional for Requirements Engineering. Apprenez à éliciter, documenter, valider et gérer les exigences logicielles.",
+            "target_audience": [
+              "Business Analysts",
+              "Requirements Engineers",
+              "Chefs de projet"
+            ],
+            "objectives": [
+              "Maîtriser la terminologie des exigences",
+              "Utiliser les techniques d'élicitation",
+              "Documenter les exigences (UML, SysML)"
+            ],
+            "prerequisites": [
+              "Connaissances de base en développement logiciel"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Fondamentaux",
+                "topics": [
+                  "Introduction et Principes",
+                  "Élicitation des exigences",
+                  "Documentation (Langage naturel vs Modèles)"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Gestion",
+                "topics": [
+                  "Validation et Négociation",
+                  "Gestion des changements",
+                  "Outillage"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "istqb",
+      "name": "ISTQB",
+      "description": "International Software Testing Qualifications Board. La référence mondiale pour les testeurs logiciels.",
+      "reference": "ISTQB",
+      "trainings": [
+        {
+          "id": "istqb-ctfl-v4",
+          "title": "Certified Tester Foundation Level (CTFL v4)",
+          "editor": "GASQ",
+          "reference": "IL002",
+          "is_best_seller": true,
+          "duration_days": 3,
+          "duration_display": "2 or 3d",
+          "level": "Intermédiaire (IP2)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "exam_price": 40,
+            "training_price": 285
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["istqb", "testing", "ctfl", "qa"],
+          "search_keywords": ["istqb foundation", "v4", "software testing"],
+          "details": {
+            "description": "La certification essentielle pour tout professionnel du test. Couvre le cycle de vie, les techniques statiques et dynamiques et la gestion des tests.",
+            "target_audience": ["Testeurs", "Développeurs", "Chefs de projet"],
+            "objectives": [
+              "Comprendre les fondamentaux du test",
+              "Appliquer les techniques de test (Boîte noire/blanche)",
+              "Gérer les incidents"
+            ],
+            "prerequisites": ["Aucun"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Les Bases",
+                "topics": [
+                  "Que sont les tests ?",
+                  "Cycle de développement",
+                  "Tests statiques"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Techniques",
+                "topics": [
+                  "Analyse et conception des tests",
+                  "Techniques boîte noire / boîte blanche",
+                  "Gestion des tests"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "istqb-agile-tester",
+          "title": "Certified Agile Tester",
+          "editor": "GASQ",
+          "reference": "IL003",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Intermédiaire (IP2)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "exam_price": 40,
+            "training_price": 285
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["istqb", "agile", "scrum", "testing"],
+          "search_keywords": ["agile tester", "istqb agile", "scrum testing"],
+          "details": {
+            "description": "Apprenez à intégrer les pratiques de test dans un environnement Agile (Scrum/Kanban).",
+            "target_audience": ["Testeurs en environnement Agile"],
+            "objectives": [
+              "Collaborer dans une équipe Agile",
+              "Adapter les techniques de test",
+              "Automatisation et TDD/BDD"
+            ],
+            "prerequisites": ["ISTQB Foundation (CTFL)"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Méthodes Agiles",
+                "topics": [
+                  "Développement Agile et Tests",
+                  "Statut du testeur Agile"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Techniques",
+                "topics": [
+                  "Techniques de test Agile",
+                  "Outils et Automatisation",
+                  "Préparation examen"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "istqb-gen-ai",
+          "title": "Certified Tester with GEN-AI",
+          "editor": "GASQ",
+          "reference": "IL004",
+          "is_best_seller": false,
+          "is_new": true,
+          "duration_days": 2,
+          "level": "Intermédiaire (IP2)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "exam_price": 40,
+            "training_price": 285
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["istqb", "ai", "genai", "innovation"],
+          "search_keywords": [
+            "ai testing",
+            "generative ai",
+            "prompt engineering"
+          ],
+          "details": {
+            "description": "Nouvelle certification explorant l'impact de l'IA Générative sur le test logiciel. Apprenez à tester les systèmes d'IA et à utiliser l'IA pour tester.",
+            "target_audience": ["Testeurs", "QA Engineers"],
+            "objectives": [
+              "Comprendre les risques de l'IA générative",
+              "Tester les applications basées sur l'IA",
+              "Utiliser l'IA pour générer des cas de test"
+            ],
+            "prerequisites": ["ISTQB Foundation recommandé"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction IA",
+                "topics": [
+                  "Concepts Gen-AI",
+                  "Prompt Engineering pour testeurs",
+                  "Risques et Éthique"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Application",
+                "topics": [
+                  "Génération de données de test par IA",
+                  "Validation des sorties IA",
+                  "Futur du métier de testeur"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    }
+  ]
+}

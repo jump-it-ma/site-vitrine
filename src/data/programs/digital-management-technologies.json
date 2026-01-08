@@ -1,0 +1,343 @@
+{
+  "program": {
+    "id": "digital-management-technologies",
+    "title": "TECHNOLOGIES CLOUD & IA",
+    "description": "Formations sur les technologies émergentes : Automatisation Agentique (UiPath), Microsoft Azure AI & Data et Cloud Infrastructure.",
+    "categories": [
+      "UiPath - Agentic Automation",
+      "Microsoft AI-Data",
+      "Microsoft Azure Cloud"
+    ]
+  },
+  "filters": {
+    "categories": [
+      "UiPath - Agentic Automation",
+      "Microsoft AI-Data",
+      "Microsoft Azure Cloud"
+    ],
+    "editors": ["UIPATH", "MICROSOFT"],
+    "durations": [1, 2, 3, 5],
+    "levels": ["Débutant (IP1)", "Intermédiaire (IP2)", "Avancé"],
+    "languages": ["FR", "EN"]
+  },
+  "categories": [
+    {
+      "id": "microsoft-ai-data",
+      "name": "Microsoft AI-Data",
+      "description": "Fondamentaux de l'Intelligence Artificielle et de la Data sur le cloud Microsoft Azure.",
+      "reference": "MICROSOFT",
+      "trainings": [
+        {
+          "id": "ms-ai-900",
+          "title": "Introduction to AI in Azure (AI-900)",
+          "editor": "MICROSOFT",
+          "reference": "MS006",
+          "is_best_seller": false,
+          "duration_days": 1,
+          "level": "Débutant (IP1)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 145,
+            "note": "Training Package (incl. voucher)"
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["ai-900", "azure", "ai"],
+          "details": {
+            "description": "Découvrir les concepts de l'IA et les services associés dans Microsoft Azure.",
+            "target_audience": ["Débutants en IA"],
+            "objectives": ["Charges de travail IA", "Principes IA responsable"],
+            "prerequisites": ["Aucun"],
+            "curriculum": [],
+            "faqs": []
+          }
+        },
+        {
+          "id": "ms-ab-900",
+          "title": "Copilot and Agent Administration Fundamentals (AB-900)",
+          "editor": "MICROSOFT",
+          "reference": "MS013",
+          "is_best_seller": false,
+          "is_new": true,
+          "duration_days": 1,
+          "level": "Débutant (IP1+)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 145,
+            "note": "Training Package (incl. voucher)"
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["ab-900", "copilot", "admin"],
+          "details": {
+            "description": "Administrer, sécuriser et gérer Microsoft Copilot et les agents IA.",
+            "target_audience": ["Admins M365"],
+            "objectives": ["Configurer Copilot", "Gérer la sécurité"],
+            "prerequisites": ["Aucun"],
+            "curriculum": [],
+            "faqs": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "microsoft-azure-cloud",
+      "name": "Microsoft Azure Cloud",
+      "description": "Architecture, Administration, Sécurité et DevOps sur la plateforme Cloud Azure.",
+      "reference": "CLOUD",
+      "trainings": [
+        {
+          "id": "ms-az-900",
+          "title": "Introduction to Microsoft Azure (AZ-900)",
+          "editor": "MICROSOFT",
+          "reference": "MS001",
+          "is_best_seller": false,
+          "duration_days": 1,
+          "level": "Débutant (IP1)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 145,
+            "note": "Training Package (incl. voucher)"
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["azure", "cloud", "az-900", "foundation"],
+          "search_keywords": ["az-900", "azure fundamentals", "cloud basics"],
+          "details": {
+            "description": "La première étape pour découvrir le Cloud Computing et Microsoft Azure. Comprendre les concepts de base, les services core et la tarification.",
+            "target_audience": [
+              "Tous profils",
+              "Commerciaux",
+              "Managers",
+              "Débutants techniques"
+            ],
+            "objectives": [
+              "Comprendre les concepts du Cloud (IaaS, PaaS, SaaS)",
+              "Décrire l'architecture Azure",
+              "Comprendre la gestion des coûts et SLAs"
+            ],
+            "prerequisites": ["Aucun"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Azure Fundamentals",
+                "topics": [
+                  "Concepts du Cloud",
+                  "Services Azure Core (Compute, Network, Storage)",
+                  "Sécurité, Confidentialité, Conformité"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "ms-az-104",
+          "title": "Microsoft Azure Administrator (AZ-104)",
+          "editor": "MICROSOFT",
+          "reference": "MS002",
+          "is_best_seller": false,
+          "duration_days": 1,
+          "level": "Débutant (IP1)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 215,
+            "note": "Training Package (incl. voucher)"
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["azure", "admin", "az-104", "infrastructure"],
+          "search_keywords": ["az-104", "azure administrator", "cloud admin"],
+          "details": {
+            "description": "Apprenez à gérer votre abonnement Azure, sécuriser les identités, administrer l'infrastructure et configurer les réseaux virtuels.",
+            "target_audience": ["Administrateurs Azure", "Ingénieurs Système"],
+            "objectives": [
+              "Gérer les identités Azure AD",
+              "Implémenter et gérer le stockage",
+              "Déployer et gérer les ressources de calcul (VMs, Containers)"
+            ],
+            "prerequisites": ["AZ-900 recommandé", "Expérience système"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Administration Azure",
+                "topics": [
+                  "Identité et Gouvernance",
+                  "Stockage Azure",
+                  "Réseaux Virtuels"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "ms-az-400",
+          "title": "Designing and Implementing Microsoft DevOps solutions (AZ-400)",
+          "editor": "MICROSOFT",
+          "reference": "MS003",
+          "is_best_seller": false,
+          "duration_days": 3,
+          "level": "Débutant (IP1)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 260,
+            "note": "Training Package (incl. voucher)"
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["azure", "devops", "az-400", "ci/cd"],
+          "search_keywords": ["az-400", "devops engineer", "pipelines"],
+          "details": {
+            "description": "Devenez expert DevOps sur Azure. Apprenez à concevoir et implémenter des stratégies de collaboration, de code, d'infrastructure et de livraison continue.",
+            "target_audience": ["Ingénieurs DevOps", "Développeurs", "Ops"],
+            "objectives": [
+              "Concevoir une stratégie DevOps",
+              "Implémenter CI/CD avec Azure Pipelines",
+              "Gérer la configuration et les secrets"
+            ],
+            "prerequisites": ["Certification AZ-104 ou AZ-204"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Stratégie & Source Control",
+                "topics": ["Planification DevOps", "Gestion de version (Git)"]
+              },
+              {
+                "day": 2,
+                "title": "CI/CD & Infrastructure",
+                "topics": [
+                  "Pipelines de build et release",
+                  "Infrastructure as Code (IaC)"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Feedback & Sécurité",
+                "topics": ["Monitoring et Feedback", "DevSecOps"]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "ms-az-305",
+          "title": "Designing and Implementing Azure Infrastructure Solutions (AZ-305)",
+          "editor": "MICROSOFT",
+          "reference": "MS004",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Intermédiaire (IP2)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 260,
+            "note": "Training Package (incl. voucher)"
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["azure", "architecture", "az-305", "solutions"],
+          "search_keywords": ["az-305", "solution architect", "cloud design"],
+          "details": {
+            "description": "Certification pour les Architectes de Solutions Azure. Apprenez à concevoir des solutions d'infrastructure, de données et de sécurité.",
+            "target_audience": [
+              "Architectes de Solutions",
+              "Ingénieurs Senior"
+            ],
+            "objectives": [
+              "Concevoir des solutions d'identité et de gouvernance",
+              "Concevoir des solutions de stockage et de données",
+              "Concevoir des solutions de continuité d'activité"
+            ],
+            "prerequisites": [
+              "Certification AZ-104 recommandée",
+              "Expérience en architecture"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Design Architecture",
+                "topics": ["Gouvernance et Compute", "Architecture de stockage"]
+              },
+              {
+                "day": 2,
+                "title": "Continuité & Sécurité",
+                "topics": [
+                  "Migration et Résilience",
+                  "Architecture réseau et sécurité"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "ms-az-500",
+          "title": "Azure - Technologies de sécurité (Microsoft AZ-500)",
+          "editor": "MICROSOFT",
+          "reference": "MS005",
+          "is_best_seller": false,
+          "duration_days": 5,
+          "level": "Intermédiaire (IP2)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 285,
+            "note": "Training Package (incl. voucher)"
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["azure", "security", "az-500", "cybersecurity"],
+          "search_keywords": [
+            "az-500",
+            "security engineer",
+            "identity management"
+          ],
+          "details": {
+            "description": "Maîtrisez la sécurité sur Azure. Implémentez les contrôles de sécurité, la gestion des menaces et la protection des identités.",
+            "target_audience": ["Ingénieurs Sécurité", "Administrateurs Azure"],
+            "objectives": [
+              "Gérer les identités et les accès",
+              "Sécuriser les applications et les données",
+              "Gérer les opérations de sécurité"
+            ],
+            "prerequisites": ["AZ-900 et AZ-104 recommandés"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Identité et Accès",
+                "topics": ["Azure AD", "Gestion des rôles (RBAC)"]
+              },
+              {
+                "day": 2,
+                "title": "Protection Plateforme",
+                "topics": ["Sécurité réseau", "Sécurité Hôte"]
+              },
+              {
+                "day": 3,
+                "title": "Opérations de Sécurité",
+                "topics": ["Azure Monitor", "Microsoft Sentinel"]
+              },
+              {
+                "day": 4,
+                "title": "Données et Applications",
+                "topics": ["Sécurité du stockage", "Key Vault"]
+              },
+              {
+                "day": 5,
+                "title": "Examen",
+                "topics": ["Révisions", "Passage de certification"]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    }
+  ]
+}

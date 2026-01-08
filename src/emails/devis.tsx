@@ -27,7 +27,7 @@ export const DevisEmail = ({
   return (
     <Html>
       <Head />
-      <Preview>JumpIT - Reçu de Devis</Preview>
+      <Preview>Jump iT - Reçu de Devis</Preview>
       <Body style={main}>
         <Container style={container}>
           <Section style={logo}>
@@ -96,7 +96,7 @@ export const DevisEmail = ({
             </Column>
           </Row>
           <Text style={{ textAlign: "center", color: "#706a7b" }}>
-            © 2023 JumpIT, Tout droit réservé <br />
+            © 2023 Jump iT, Tout droit réservé <br />
             350 Bush Street, 2nd Floor, San Francisco, CA, 94104 - USA
           </Text>
         </Section>

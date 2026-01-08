@@ -1,0 +1,158 @@
+{
+  "program": {
+    "id": "it-service-management",
+    "title": "GESTION DES SERVICES IT",
+    "description": "Formations certifiantes en gestion des services IT : ITIL® 4",
+    "categories": ["ITIL4"]
+  },
+  "filters": {
+    "categories": ["ITIL4"],
+    "editors": ["BCS", "PEOPLECERT"],
+    "durations": [2, 3],
+    "levels": ["Débutant", "Intermédiaire", "Avancé"],
+    "languages": ["FR", "EN"]
+  },
+  "categories": [
+    {
+      "id": "itil4",
+      "name": "ITIL4",
+      "description": "Le cadre de référence mondial pour la gestion des services IT à l'ère du numérique.",
+      "reference": "ITIL4",
+      "trainings": [
+        {
+          "id": "itil4-foundation",
+          "title": "ITIL4 Foundation",
+          "editor": "PEOPLECERT",
+          "reference": "SM101",
+          "is_best_seller": true,
+          "duration_days": 3,
+          "duration_display": "2 or 3d",
+          "level": "Débutant (IP1+)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 475,
+            "note": "Training Package (incl. voucher)"
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["itil", "itil4", "foundation", "itsm"],
+          "search_keywords": ["itil foundation", "service management", "itil4"],
+          "details": {
+            "description": "Découvrir la gestion moderne des services informatiques. Comprendre comment l'IT et le digital co-créent de la valeur.",
+            "target_audience": [
+              "Tout professionnel IT",
+              "Support",
+              "DevOps",
+              "Managers"
+            ],
+            "objectives": [
+              "Comprendre le Système de Valeur des Services (SVS)",
+              "Maîtriser les 7 principes directeurs",
+              "Connaître les pratiques clés (Incident, Change, etc.)"
+            ],
+            "prerequisites": ["Aucun"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Concepts Clés",
+                "topics": [
+                  "Co-création de valeur",
+                  "Les 4 Dimensions",
+                  "Système de Valeur des Services"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Principes et Chaîne de Valeur",
+                "topics": [
+                  "Les 7 Principes Directeurs",
+                  "La Chaîne de Valeur des Services (SVC)",
+                  "Amélioration Continue"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Pratiques",
+                "topics": [
+                  "Pratiques de gestion (Incident, Problème, Changement)",
+                  "Service Desk",
+                  "Préparation examen"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "itil4-specialist-modules",
+          "title": "ITIL4 Specialist (CDS, HVIT, DSV, DPI)",
+          "editor": "PEOPLECERT",
+          "reference": "SM102-105",
+          "is_best_seller": false,
+          "duration_days": 3,
+          "level": "Avancé (IP3)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 600,
+            "note": "Training Package (incl. voucher)"
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["itil", "specialist", "cds", "hvit", "dsv", "dpi"],
+          "search_keywords": [
+            "create deliver support",
+            "high velocity it",
+            "stakeholder value",
+            "direct plan improve"
+          ],
+          "details": {
+            "description": "Modules avancés ITIL4 Managing Professional. Choisissez votre spécialisation : Create Deliver & Support (CDS), High Velocity IT (HVIT), Drive Stakeholder Value (DSV) ou Direct Plan & Improve (DPI).",
+            "target_audience": [
+              "Managers ITSM",
+              "Praticiens expérimentés",
+              "Candidats Managing Professional"
+            ],
+            "objectives": [
+              "Approfondir une pratique spécifique",
+              "Aligner les services sur la stratégie business",
+              "Obtenir les crédits pour MP Designation"
+            ],
+            "prerequisites": ["Certification ITIL4 Foundation"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Concepts Avancés",
+                "topics": [
+                  "Concepts spécifiques au module choisi",
+                  "Alignement stratégique",
+                  "Modèles de flux de valeur"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Application Pratique",
+                "topics": [
+                  "Méthodes et techniques",
+                  "Outils et automatisation",
+                  "Gestion des parties prenantes"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Mise en situation",
+                "topics": [
+                  "Études de cas",
+                  "Examens blancs",
+                  "Passage de la certification"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    }
+  ]
+}

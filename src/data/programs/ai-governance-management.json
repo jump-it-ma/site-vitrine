@@ -1,0 +1,163 @@
+{
+  "program": {
+    "id": "ai-governance-management",
+    "title": "GESTION IA",
+    "description": "Formations certifiantes pour la gouvernance de l'IA, la conformité au EU AI Act et la norme ISO 42001.",
+    "categories": [
+      "AI Management & Compliance (EXIN)",
+      "ISO 42001 - AI Management System (PECB)"
+    ]
+  },
+  "filters": {
+    "categories": [
+      "AI Management & Compliance (EXIN)",
+      "ISO 42001 - AI Management System (PECB)"
+    ],
+    "editors": ["EXIN", "PECB"],
+    "durations": [2, 5],
+    "levels": ["Intermédiaire (IP2)", "Avancé (IP3/IP3+)"],
+    "languages": ["FR", "EN"]
+  },
+  "categories": [
+    {
+      "id": "iso-42001-pecb",
+      "name": "ISO 42001 - AI Management System (PECB)",
+      "description": "Première norme internationale pour les Systèmes de Management de l'IA (AIMS). Certifications PECB reconnues mondialement.",
+      "reference": "ISO42001",
+      "trainings": [
+        {
+          "id": "iso-42001-foundation",
+          "title": "ISO 42001 Foundation",
+          "editor": "PECB",
+          "reference": "AIM001",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Intermédiaire (IP2+)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 265,
+            "note": "Official Training Package (incl. voucher)"
+          },
+          "package_includes": "Support officiel PECB et Voucher Examen",
+          "languages": ["EN"],
+          "tags": ["iso 42001", "aims", "governance", "foundation"],
+          "search_keywords": [
+            "iso 42001 foundation",
+            "ai management system",
+            "aipgf"
+          ],
+          "details": {
+            "description": "Découvrez les éléments fondamentaux pour mettre en œuvre et gérer un Système de Management de l'IA (AIMS) conforme à la norme ISO/IEC 42001:2023.",
+            "target_audience": [
+              "Responsables IA",
+              "Consultants",
+              "Membres de comités d'éthique"
+            ],
+            "objectives": [
+              "Comprendre les concepts de l'AIMS",
+              "Connaître les exigences ISO 42001",
+              "Lier l'IA à la stratégie d'entreprise"
+            ],
+            "prerequisites": ["Aucun"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction AIMS",
+                "topics": [
+                  "Terminologie et Concepts IA",
+                  "Structure de la norme ISO 42001",
+                  "Contexte de l'organisme"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Exigences Normatives",
+                "topics": [
+                  "Leadership et Planification",
+                  "Évaluation des risques IA",
+                  "Contrôles opérationnels"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "iso-42001-lead",
+          "title": "ISO 42001 Lead Implementer / Auditor",
+          "editor": "PECB",
+          "reference": "AIM002, 003",
+          "is_best_seller": false,
+          "duration_days": 5,
+          "level": "Avancé (IP3 / IP3+)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 665,
+            "note": "Official Training Package (incl. voucher)"
+          },
+          "package_includes": "Support officiel PECB et Voucher Examen",
+          "languages": ["EN"],
+          "tags": ["iso 42001", "lead implementer", "lead auditor", "expert"],
+          "search_keywords": [
+            "lead implementer ai",
+            "auditeur iso 42001",
+            "certification expert"
+          ],
+          "details": {
+            "description": "Certification de niveau Expert. Choisissez Lead Implementer pour piloter le projet AIMS ou Lead Auditor pour auditer la conformité des systèmes d'IA.",
+            "target_audience": [
+              "Chefs de projet IA",
+              "Auditeurs internes/externes",
+              "Responsables conformité"
+            ],
+            "objectives": [
+              "Mener l'implémentation de ISO 42001 (LI)",
+              "Planifier et réaliser un audit d'IA (LA)",
+              "Gérer l'amélioration continue de l'AIMS"
+            ],
+            "prerequisites": ["Foundation recommandé"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Cadre ISO 42001",
+                "topics": [
+                  "Normes et cadres réglementaires",
+                  "Lancement du projet AIMS"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Planification & Risques",
+                "topics": [
+                  "Appréciation des risques IA",
+                  "Déclaration d'applicabilité"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Mise en œuvre / Audit",
+                "topics": ["Contrôles de l'Annexe A", "Preuves d'audit"]
+              },
+              {
+                "day": 4,
+                "title": "Surveillance",
+                "topics": [
+                  "Audit interne et Revue de direction",
+                  "Préparation à la certification"
+                ]
+              },
+              {
+                "day": 5,
+                "title": "Examen",
+                "topics": ["Examen de certification (3h)"]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    }
+  ]
+}

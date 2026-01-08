@@ -1,0 +1,469 @@
+{
+  "program": {
+    "id": "agile-management",
+    "title": "AGILITÉ",
+    "description": "Formations certifiantes en méthodologies Agile, Scrum, SAFe, DevOps Coach, Kanban et Design Thinking pour équipes et managers.",
+    "categories": [
+      "Agile - Scrum",
+      "SAFe 6",
+      "DevOps",
+      "Agile Coach",
+      "Kanban",
+      "Design Thinking",
+      "Agile Project Management"
+    ]
+  },
+  "filters": {
+    "categories": [
+      "Agile - Scrum",
+      "SAFe 6",
+      "DevOps",
+      "Agile Coach",
+      "Kanban",
+      "Design Thinking",
+      "Agile Project Management"
+    ],
+    "editors": ["EXIN", "SCRUM.ORG", "SAI", "PEOPLECERT", "ICAGILE", "APMG"],
+    "durations": [2, 3],
+    "levels": ["Débutant", "Intermédiaire", "Avancé", "Expert"],
+    "languages": ["FR", "EN"]
+  },
+  "categories": [
+    {
+      "id": "agile-scrum",
+      "name": "Agile - Scrum",
+      "description": "Excellence opérationnelle avec Scrum : de la fondation à la maîtrise avancée pour Scrum Masters et Product Owners.",
+      "reference": "SCRUM",
+      "trainings": [
+        {
+          "id": "psm1-pspo1-psd1",
+          "title": "PSM1 / PSPO1 / PSD1",
+          "editor": "SCRUM.ORG",
+          "reference": "AM001-003",
+          "is_best_seller": true,
+          "duration_days": 2,
+          "level": "Débutant/Intermédiaire",
+          "evaluation": "MCQ",
+          "package_includes": "Passage de certification",
+          "languages": ["FR", "EN"],
+          "tags": ["scrum.org", "psm", "pspo", "certification"],
+          "search_keywords": ["psm1", "pspo1", "psd1", "scrum.org"],
+          "details": {
+            "description": "Préparation aux certifications reconnues de Scrum.org : Professional Scrum Master I (PSM I), Product Owner I (PSPO I) ou Developer (PSD I).",
+            "target_audience": [
+              "Futurs Scrum Masters",
+              "Product Owners",
+              "Développeurs Scrum"
+            ],
+            "objectives": [
+              "Réussir la certification PSM1, PSPO1 ou PSD1",
+              "Approfondir la théorie Scrum"
+            ],
+            "prerequisites": ["Lecture du Scrum Guide"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Théorie et Principes",
+                "topics": [
+                  "Empirisme",
+                  "Valeurs Scrum",
+                  "Rôles et Responsabilités"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Mise en pratique",
+                "topics": [
+                  "Gestion des événements",
+                  "Artefacts et engagements",
+                  "Examens blancs"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "scrum-specialist",
+          "title": "Scrum Specialist (PSK / PAL / PSU)",
+          "editor": "SCRUM.ORG",
+          "reference": "AM004-006",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Intermédiaire/Avancé",
+          "evaluation": "MCQ",
+          "package_includes": "Voucher Examen",
+          "languages": ["EN"],
+          "tags": ["kanban", "leadership", "ux", "scrum.org"],
+          "search_keywords": ["psk", "pal", "psu", "kanban", "ux"],
+          "details": {
+            "description": "Certifications spécialisées Scrum.org : Professional Scrum with Kanban (PSK), Agile Leadership (PAL) ou with UX (PSU).",
+            "target_audience": ["Scrum Masters", "Managers", "UX Designers"],
+            "objectives": [
+              "Intégrer Kanban dans Scrum",
+              "Agile Leadership",
+              "Intégration UX/Scrum"
+            ],
+            "prerequisites": ["PSM1 recommandé"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Concepts Avancés",
+                "topics": [
+                  "Théorie du Flow (PSK)",
+                  "Leadership Agile (PAL)",
+                  "Lean UX (PSU)"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Application",
+                "topics": [
+                  "Métriques et Mesures",
+                  "Cas pratiques",
+                  "Préparation examen"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "psm2-pspo2",
+          "title": "Advanced Scrum (PSM2 / PSPO2)",
+          "editor": "SCRUM.ORG",
+          "reference": "AM008-009",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Avancé",
+          "evaluation": "MCQ",
+          "package_includes": "Voucher Examen",
+          "languages": ["EN"],
+          "tags": ["advanced", "mastery", "scrum.org"],
+          "search_keywords": ["psm2", "pspo2", "advanced scrum"],
+          "details": {
+            "description": "Niveau avancé pour les Scrum Masters et Product Owners expérimentés cherchant à maîtriser les défis complexes.",
+            "target_audience": [
+              "Scrum Masters (1+ an xp)",
+              "Product Owners expérimentés"
+            ],
+            "objectives": [
+              "Gérer les conflits complexes",
+              "Maximiser la valeur produit",
+              "Posture de serviteur-leader"
+            ],
+            "prerequisites": ["PSM1 ou PSPO1"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Posture et Services",
+                "topics": [
+                  "Services à l'équipe",
+                  "Services à l'organisation",
+                  "Services au PO"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Complexité",
+                "topics": [
+                  "Élimination des obstacles",
+                  "Techniques de facilitation avancées",
+                  "Scénarios d'examen"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "safe-6",
+      "name": "SAFe 6",
+      "description": "Scaled Agile Framework (SAFe) : L'agilité à l'échelle de l'entreprise. Formations certifiantes SAFe 6.0.",
+      "reference": "SAFE",
+      "trainings": [
+        {
+          "id": "leading-safe",
+          "title": "Leading SAFe (SAFe Agilist)",
+          "editor": "SAI",
+          "reference": "AM301-304",
+          "is_best_seller": true,
+          "duration_days": 2,
+          "level": "Intermédiaire",
+          "evaluation": "MCQ",
+          "package_includes": "Kit officiel SAFe et voucher examen",
+          "languages": ["FR", "EN"],
+          "tags": ["safe", "agile scale", "leading safe", "certification"],
+          "search_keywords": [
+            "leading safe",
+            "scaled agile",
+            "certification",
+            "management"
+          ],
+          "details": {
+            "description": "Devenez un leader Lean-Agile certifié SAFe® 6 Agilist (SA). Apprenez à diriger une transformation Lean-Agile à l'échelle de l'entreprise.",
+            "target_audience": [
+              "Dirigeants",
+              "Managers",
+              "Consultants",
+              "Leaders Agile"
+            ],
+            "objectives": [
+              "Diriger la transformation Lean-Agile",
+              "Aligner l'organisation",
+              "Mettre en œuvre SAFe"
+            ],
+            "prerequisites": ["Expérience en Scrum/Agile recommandée"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Bases de SAFe",
+                "topics": [
+                  "Compétences clés de l'Entreprise Lean",
+                  "Lean-Agile Leadership",
+                  "Principes SAFe"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Implémentation",
+                "topics": [
+                  "Planification d'un PI Planning",
+                  "Exécution et Inspect & Adapt",
+                  "Lean Portfolio Management"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "safe-popm",
+          "title": "SAFe Product Owner / Product Manager",
+          "editor": "SAI",
+          "reference": "AM301-304",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Intermédiaire",
+          "evaluation": "MCQ",
+          "package_includes": "Kit officiel et examen",
+          "languages": ["FR", "EN"],
+          "tags": ["safe", "popm", "product owner", "product manager"],
+          "search_keywords": ["popm", "safe", "product management"],
+          "details": {
+            "description": "Apprenez à livrer de la valeur dans une entreprise Lean avec la certification SAFe® Product Owner/Product Manager (POPM).",
+            "target_audience": [
+              "Product Owners",
+              "Product Managers",
+              "Business Owners"
+            ],
+            "objectives": [
+              "Gérer le Backlog ART",
+              "Participer au PI Planning",
+              "Livrer de la valeur continue"
+            ],
+            "prerequisites": ["Certification Leading SAFe recommandée"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Rôle du PO/PM",
+                "topics": [
+                  "Product Owner vs Product Manager",
+                  "Connection avec le client",
+                  "Définition de la valeur"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Exécution",
+                "topics": [
+                  "Préparation du PI Planning",
+                  "Itération Execution",
+                  "Inspection et Adaptation"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "devops-agile",
+      "name": "DevOps",
+      "description": "Culture, pratiques et automatisation DevOps pour transformer la livraison de logiciels. Certifications PeopleCert et EXIN.",
+      "reference": "DEVOPS",
+      "trainings": [
+        {
+          "id": "devops-foundation",
+          "title": "DevOps Foundation",
+          "editor": "PEOPLECERT/EXIN",
+          "reference": "AM420/501",
+          "is_best_seller": true,
+          "duration_days": 2,
+          "level": "Débutant",
+          "evaluation": "MCQ",
+          "package_includes": "Formation et voucher examen",
+          "languages": ["FR", "EN"],
+          "tags": ["devops", "foundation", "culture", "leads"],
+          "search_keywords": ["devops", "foundation", "culture", "calms"],
+          "details": {
+            "description": "Comprendre les principes fondamentaux de DevOps, la culture, l'automatisation et les pratiques LEAN. Un point de départ essentiel pour toute transformation DevOps.",
+            "target_audience": [
+              "Tous les professionnels IT",
+              "Développeurs",
+              "Ops",
+              "Managers"
+            ],
+            "objectives": [
+              "Comprendre les principes DevOps (C.A.L.M.S)",
+              "Connaître les bénéfices business",
+              "Préparer la certification Foundation"
+            ],
+            "prerequisites": ["Connaissances de base en IT"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction DevOps",
+                "topics": [
+                  "Histoire et définition",
+                  "Culture et Collaboration",
+                  "Principes Lean"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Pratiques et Outils",
+                "topics": [
+                  "Automatisation (CI/CD)",
+                  "Mesure et Partage",
+                  "Préparation examen"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "kanban",
+      "name": "Kanban",
+      "description": "Améliorez le flux de travail, visualisez les tâches et optimisez la livraison avec la méthode Kanban.",
+      "reference": "KANBAN",
+      "trainings": [
+        {
+          "id": "kanban-foundation",
+          "title": "Kanban Foundation",
+          "editor": "EXIN",
+          "reference": "AM701",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Intermédiaire",
+          "evaluation": "MCQ",
+          "package_includes": "Formation et examen",
+          "languages": ["FR", "EN"],
+          "tags": ["kanban", "flow", "lean", "visualization"],
+          "search_keywords": ["kanban", "workflow", "optimize", "limit wip"],
+          "details": {
+            "description": "Apprenez à concevoir, gérer et améliorer les systèmes Kanban. Comprenez comment visualiser le travail, limiter le WIP et gérer le flux.",
+            "target_audience": [
+              "Membres d'équipes",
+              "Managers",
+              "Toute personne voulant améliorer son flux"
+            ],
+            "objectives": [
+              "Visualiser le travail",
+              "Limiter le travail en cours (WIP)",
+              "Gérer le flux",
+              "Rendre les politiques explicites"
+            ],
+            "prerequisites": ["Aucun"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Principes Kanban",
+                "topics": [
+                  "Origines Lean",
+                  "Pratiques de base",
+                  "Simulation Kanban"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Systèmes Kanban",
+                "topics": [
+                  "Design de tableau",
+                  "WIP Limits",
+                  "Métriques (Cycle Time, Lead Time)",
+                  "Réunions Kanban"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "agile-pm",
+      "name": "Agile Project Management",
+      "description": "Certification Agile Project Management (AgilePM) pour gérer les projets agiles avec rigueur et flexibilité.",
+      "reference": "AGILEPM",
+      "trainings": [
+        {
+          "id": "agile-pm-foundation",
+          "title": "AgilePM Foundation",
+          "editor": "APMG",
+          "reference": "AM901",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Débutant/Intermédiaire",
+          "evaluation": "MCQ",
+          "package_includes": "Formation et examen",
+          "languages": ["FR", "EN"],
+          "tags": ["agile pm", "project management", "apmg", "foundation"],
+          "search_keywords": ["agilepm", "project management", "apmg"],
+          "details": {
+            "description": "La certification AgilePM® Foundation s'adresse aux chefs de projet et aux membres d'équipe projet qui souhaitent adopter une approche agile tout en conservant les normes, la rigueur et la visibilité nécessaires à la gestion de projet.",
+            "target_audience": [
+              "Chefs de projet",
+              "Membres d'équipe projet",
+              "Managers"
+            ],
+            "objectives": [
+              "Comprendre la philosophie AgilePM",
+              "Maîtriser les principes et le cycle de vie du projet",
+              "Préparer l'examen AgilePM Foundation"
+            ],
+            "prerequisites": ["Aucun"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Philosophie et Principes",
+                "topics": [
+                  "Philosophie AgilePM",
+                  "Les 8 Principes",
+                  "Le cycle de vie du projet"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Techniques et Produits",
+                "topics": [
+                  "Rôles et Responsabilités",
+                  "Produits et Documents",
+                  "Techniques (MoSCoW, Timeboxing)",
+                  "Examen blanc"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    }
+  ]
+}

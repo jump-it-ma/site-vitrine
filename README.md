@@ -1,8 +1,8 @@
-# Site Vitrine JumpIT
+# Site Vitrine Jump iT
 
 <div align="center"><img src="https://i.ibb.co/XXT3608/logo.png" /></div>
 
-Bienvenue sur le Site de JumpIT ! Ce site affiche nos solutions en domaines de formations technologiques d'automation et en domaine de conseil.
+Bienvenue sur le Site de Jump iT ! Ce site affiche nos solutions en domaines de formations technologiques d'automation et en domaine de conseil.
 
 ## Démo
 
@@ -57,4 +57,4 @@ Pour toute header ou demande, vous pouvez nous contacter à contact@example.com.
 
 ---
 
-© 2023 JumpIT. Tous droits réservés.
+© 2023 Jump iT. Tous droits réservés.

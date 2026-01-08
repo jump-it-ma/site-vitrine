@@ -49,7 +49,7 @@ export default function Hero({}: Props) {
                 " uppercase text-xl font-bold text-white group-hover:text-purple-600 transition duration-300"
               }
             >
-              Nos Services
+              Nos services
             </p>
           </div>
         </a>

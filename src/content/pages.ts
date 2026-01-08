@@ -1,17 +1,19 @@
 export const homepage = {
-    tagline: `Partenaire de confiance pour un accompagnement réussi`,
-    subtagline: ``,
-    formations: `Nous proposons des formations en différentes technologies en automatisation des tests`,
-    conseil: `Nous vous aidons à accroitre votre confiance dans la qualité de vos produits logiciels`,
-}
+  tagline: `Partenaire de confiance pour un accompagnement réussi`,
+  subtagline: ``,
+  formations: `Notre catalogue de formation évolue. Nous construisons également des parcours de formation sur-mesure, adaptés à votre stack technique et au niveau de vos équipes.`,
+  conseil: `Nous vous aidons à accroitre votre confiance dans la qualité de vos produits logiciels`,
+};
 
 export const conseil = {
-    hero: `Transformez votre vision en réalité avec notre service de conseil en test logiciel, votre partenaire pour des solutions innovantes et une qualité inégalée.`,
-    audit: `Explorez l’excellence à chaque ligne de code avec notre service d’audit en qualité logiciel. Notre équipe d’experts identifie minutieusement les lacunes et les opportunités d’amélioration, garantissant que votre logiciel atteigne des niveaux de qualité inégalés. Faites confiance à notre expertise pour élever votre logiciel vers de nouveaux sommets d’excellence.`,
-    prestation: `Atteignez vos objectifs logiciels avec notre service de prestation de pointe. Notre équipe dédiée met en œuvre des solutions sur mesure, garantissant des résultats exceptionnels à chaque étape. De la conception à la réalisation, nous travaillons en collaboration pour créer des applications fiables, performantes et innovantes. Faites confiance à notre expertise pour concrétiser vos idées en des solutions logicielles de qualité supérieure.`,
-    offshore: `Exploitez notre service de test en off-shore pour maximiser l’efficacité de vos tests logiciels. Notre équipe dévouée travaille en étroite collaboration pour garantir des tests complets et rigoureux, où que vous soyez. De la planification à l’exécution, nous collaborons pour assurer la qualité optimale de vos applications, quelle que soit la distance qui nous sépare. Faites confiance à notre expertise pour fournir une solution de test en off-shore hautement performante, permettant d’atteindre vos objectifs de qualité et de performance avec succès.`
-}
+  hero: `Transformez votre vision en réalité avec notre service de conseil en test logiciel, votre partenaire pour des solutions innovantes et une qualité inégalée.`,
+  audit: `Chez Jump iT, nous créons des écosystèmes digitaux complets et performants. Que vous ayez besoin d'une plateforme web robuste ou d'une application mobile native, nous maîtrisons les spécificités de chaque environnement. Nos experts conçoivent des applications iOS et Android de haute qualité, alliant fluidité de navigation, design intuitif et respect strict des standards des stores (App Store & Google Play). Du back-end complexe aux interfaces utilisateurs soignées, nous développons des solutions pérennes qui engagent vos utilisateurs, quel que soit leur appareil.`,
+  prestation: `Sécurisez vos déploiements et renforcez vos équipes techniques. Notre pôle conseil vous apporte une expertise ciblée en stratégie de Test et Automatisation pour garantir la fiabilité de vos logiciels. En parallèle, accédez instantanément à notre vaste catalogue de consultants : un vivier de talents variés maîtrisant les technologies les plus demandées du marché.`,
+  offshore: `Optez pour l'efficacité d'un véritable centre de services déporté. Nous proposons des modèles d'externalisation flexibles, allant de la Tierce Recette Applicative (TRA) pour industrialiser vos tests, à la mise en place de Squads Agiles complètes.
+
+Nos équipes sont constituées sur mesure pour couvrir l'ensemble du cycle de vie de vos projets : développement, gestion de produit et assurance qualité. Vous bénéficiez ainsi d'une force de frappe autonome, parfaitement intégrée à vos processus et garante de vos livrables.`,
+};
 
 export const formations = {
-    hero: `Monter en compétences techniques sur les sujets d'automatisation de tests logiciels pour répondre aux besoin du marché.`
-}
+  hero: `Notre catalogue de formation évolue. Nous construisons également des parcours de formation sur-mesure, adaptés à votre stack technique et au niveau de vos équipes.`,
+};
