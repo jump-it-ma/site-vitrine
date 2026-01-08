@@ -336,7 +336,6 @@ function InscriptionContent() {
                         >
                           <option value="company">Entreprise</option>
                           <option value="personal">Personnel</option>
-                          <option value="cpf">CPF / OPCO</option>
                           <option value="other">Autre / Ne sais pas</option>
                         </select>
                       </div>

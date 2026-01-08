@@ -123,14 +123,14 @@ export default function FAQPage() {
           <h1
             className={`${montserratFont.className} mb-6 text-4xl font-bold tracking-tight text-white sm:text-5xl`}
           >
-            Questions Fréquentes
+            Questions fréquentes
           </h1>
 
           <p
             className={`${latoFont.className} mx-auto max-w-2xl text-lg text-purple-100`}
           >
-            Trouvez rapidement les réponses à vos questions sur nos formations
-            et services de conseil.
+            Quelques réponses aux questions les plus courantes sur nos
+            formations et services de conseil.
           </p>
         </div>
       </section>
