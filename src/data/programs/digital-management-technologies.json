@@ -31,7 +31,7 @@
           "id": "ms-ai-900",
           "title": "Introduction to AI in Azure (AI-900)",
           "editor": "MICROSOFT",
-          "reference": "MS006",
+          "reference": "AI900",
           "is_best_seller": false,
           "duration_days": 1,
           "level": "Niveau 1",
@@ -52,33 +52,6 @@
             "curriculum": [],
             "faqs": []
           }
-        },
-        {
-          "id": "ms-ab-900",
-          "title": "Copilot and Agent Administration Fundamentals (AB-900)",
-          "editor": "MICROSOFT",
-          "reference": "MS013",
-          "is_best_seller": false,
-          "is_new": true,
-          "duration_days": 1,
-          "level": "Niveau 1",
-          "evaluation": "QCM",
-          "pricing": {
-            "currency": "EUR",
-            "package_price": 145,
-            "note": "Training Package (incl. voucher)"
-          },
-          "package_includes": "Formation et Voucher Examen",
-          "languages": ["FR", "EN"],
-          "tags": ["ab-900", "copilot", "admin"],
-          "details": {
-            "description": "Administrer, sécuriser et gérer Microsoft Copilot et les agents IA.",
-            "target_audience": ["Admins M365"],
-            "objectives": ["Configurer Copilot", "Gérer la sécurité"],
-            "prerequisites": ["Aucun"],
-            "curriculum": [],
-            "faqs": []
-          }
         }
       ]
     },
@@ -92,7 +65,7 @@
           "id": "ms-az-900",
           "title": "Introduction to Microsoft Azure (AZ-900)",
           "editor": "MICROSOFT",
-          "reference": "MS001",
+          "reference": "AZ900",
           "is_best_seller": false,
           "duration_days": 1,
           "level": "Niveau 1",
@@ -138,7 +111,7 @@
           "id": "ms-az-104",
           "title": "Microsoft Azure Administrator (AZ-104)",
           "editor": "MICROSOFT",
-          "reference": "MS002",
+          "reference": "AZ104",
           "is_best_seller": false,
           "duration_days": 1,
           "level": "Niveau 1",
@@ -179,7 +152,7 @@
           "id": "ms-az-400",
           "title": "Designing and Implementing Microsoft DevOps solutions (AZ-400)",
           "editor": "MICROSOFT",
-          "reference": "MS003",
+          "reference": "AZ400",
           "is_best_seller": false,
           "duration_days": 3,
           "level": "Niveau 1",
@@ -229,7 +202,7 @@
           "id": "ms-az-305",
           "title": "Designing and Implementing Azure Infrastructure Solutions (AZ-305)",
           "editor": "MICROSOFT",
-          "reference": "MS004",
+          "reference": "AZ305",
           "is_best_seller": false,
           "duration_days": 2,
           "level": "Niveau 2",
@@ -280,7 +253,7 @@
           "id": "ms-az-500",
           "title": "Azure - Technologies de sécurité (Microsoft AZ-500)",
           "editor": "MICROSOFT",
-          "reference": "MS005",
+          "reference": "AZ500",
           "is_best_seller": false,
           "duration_days": 5,
           "level": "Niveau 2",
