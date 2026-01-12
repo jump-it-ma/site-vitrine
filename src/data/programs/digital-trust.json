@@ -4,12 +4,13 @@
     "title": "CYBER RESILIENCE & QHSE",
     "description": "Formations en Cyber Résilience, Sécurité de l'Information, Gestion des Risques, Qualité, Hygiène, Sécurité, Environnement (QHSE), RSE et Continuité d'Activité.",
     "categories": [
+      "CISO",
       "ISO 27001",
       "ISO 27035",
       "ISO 27005 / EBIOS",
       "ISO 27032",
       "DORA",
-      "GDPR / ISO 27701",
+      "RGPD",
       "ISO 9001",
       "ISO 14001",
       "ISO 22301",
@@ -18,12 +19,13 @@
   },
   "filters": {
     "categories": [
+      "CISO",
       "ISO 27001",
       "ISO 27035",
       "ISO 27005 / EBIOS",
       "ISO 27032",
       "DORA",
-      "GDPR / ISO 27701",
+      "RGPD",
       "ISO 9001",
       "ISO 14001",
       "ISO 22301",
@@ -50,7 +52,7 @@
           "duration_days": 2,
           "level": "Niveau 2",
           "evaluation": "QCM",
-          "package_includes": "Official Training Package (incl. voucher)",
+          "package_includes": "Package de formation officiel (incl. voucher)",
           "languages": ["FR", "EN"],
           "tags": ["foundation", "security", "isms"],
           "search_keywords": [
@@ -113,8 +115,8 @@
           }
         },
         {
-          "id": "ISR002-003",
-          "title": "ISO27001 Lead Implementer / Lead Auditor",
+          "id": "ISR002",
+          "title": "ISO27001 Lead Implementer",
           "editor": "PECB",
           "reference": "ISO 27001 : 2022",
           "is_best_seller": true,
@@ -123,30 +125,27 @@
           "evaluation": "QCM",
           "package_includes": "Official Training Package (incl. voucher)",
           "languages": ["FR", "EN"],
-          "tags": ["lead", "implementer", "auditor", "security"],
+          "tags": ["lead", "implementer", "security"],
           "search_keywords": [
             "iso 27001",
             "lead implementer",
-            "lead auditor",
             "security",
-            "isms",
-            "audit"
+            "isms"
           ],
           "details": {
-            "description": "Cette formation intensive de 5 jours vous permet de maîtriser la mise en œuvre et/ou l'audit d'un SMSI selon ISO 27001. Vous acquerrez les compétences pour diriger un projet d'implémentation ou conduire des audits de certification.",
+            "description": "Cette formation intensive de 5 jours vous permet de maîtriser la mise en œuvre d'un SMSI selon ISO 27001. Vous acquerrez les compétences pour diriger un projet d'implémentation de A à Z.",
             "target_audience": [
               "Responsables de la mise en œuvre d'un SMSI",
               "Consultants et experts en sécurité de l'information",
-              "Auditeurs internes et externes ISO 27001",
               "Responsables conformité et sécurité",
               "Chefs de projet SMSI"
             ],
             "objectives": [
               "Expliquer les concepts et principes fondamentaux d'un SMSI basé sur ISO 27001",
-              "Interpréter les exigences d'ISO 27001 du point de vue d'un implémenteur/auditeur",
+              "Interpréter les exigences d'ISO 27001 du point de vue d'un implémenteur",
               "Initier et planifier la mise en œuvre d'un SMSI selon ISO 27001",
               "Préparer une organisation à un audit de certification tierce partie",
-              "Planifier, conduire et clôturer un audit de conformité ISO 27001"
+              "Conduire l'implémentation complète du SMSI"
             ],
             "curriculum": [
               {
@@ -181,7 +180,7 @@
               },
               {
                 "day": 4,
-                "title": "Surveillance et Amélioration / Audit",
+                "title": "Surveillance et Amélioration",
                 "topics": [
                   "Surveillance et mesure de la performance",
                   "Audit interne",
@@ -202,12 +201,8 @@
             ],
             "faqs": [
               {
-                "question": "Quelle est la différence entre Lead Implementer et Lead Auditor ?",
-                "answer": "Le Lead Implementer se concentre sur la mise en œuvre d'un SMSI tandis que le Lead Auditor se spécialise dans la conduite d'audits. Cette formation couvre les deux aspects."
-              },
-              {
                 "question": "Combien d'expérience est nécessaire pour la certification ?",
-                "answer": "Pour le Lead Implementer : 2 ans d'expérience en sécurité de l'information dont 1 an en implémentation SMSI. Pour le Lead Auditor : 2 ans d'expérience dont 300 heures d'audit."
+                "answer": "2 ans d'expérience en sécurité de l'information dont 1 an en implémentation SMSI."
               },
               {
                 "question": "Quel est le format de l'examen ?",
@@ -217,99 +212,93 @@
           }
         },
         {
-          "id": "ISR004",
-          "title": "Chief Information Security Officer",
+          "id": "ISR003",
+          "title": "ISO27001 Lead Auditor",
           "editor": "PECB",
           "reference": "ISO 27001 : 2022",
-          "is_best_seller": false,
+          "is_best_seller": true,
           "duration_days": 5,
           "level": "Niveau 3",
           "evaluation": "QCM",
-          "package_includes": "Official Training Package (incl. voucher)",
-          "languages": ["EN"],
-          "tags": ["ciso", "executive", "security", "management"],
-          "search_keywords": [
-            "ciso",
-            "chief information security officer",
-            "security officer",
-            "executive"
-          ],
+          "package_includes": "Package de formation officiel (incl. voucher)",
+          "languages": ["FR", "EN"],
+          "tags": ["lead", "auditor", "security"],
+          "search_keywords": ["iso 27001", "lead auditor", "security", "audit"],
           "details": {
-            "description": "Cette formation exécutive prépare les professionnels à assumer le rôle de CISO (Chief Information Security Officer). Elle couvre la conception, la mise en œuvre et la gestion d'un programme de sécurité de l'information au niveau stratégique.",
+            "description": "Cette formation intensive de 5 jours vous permet de maîtriser l'audit d'un SMSI selon ISO 27001. Vous acquerrez les compétences pour planifier, conduire et clôturer des audits de certification.",
             "target_audience": [
-              "Aspirants CISO et directeurs de la sécurité",
-              "Responsables sécurité expérimentés",
-              "Directeurs informatiques évoluant vers la sécurité",
-              "Consultants senior en cybersécurité",
-              "Responsables conformité et gouvernance"
+              "Auditeurs internes et externes ISO 27001",
+              "Consultants et experts en sécurité de l'information",
+              "Responsables d'audit de sécurité",
+              "Responsables conformité"
             ],
             "objectives": [
-              "Expliquer les principes fondamentaux de la sécurité de l'information",
-              "Comprendre les rôles, responsabilités et défis du CISO",
-              "Concevoir et développer un programme de sécurité de l'information efficace",
-              "Adopter les cadres, lois et réglementations applicables",
-              "Identifier, analyser et traiter les risques de sécurité de l'information"
+              "Expliquer les concepts et principes fondamentaux d'un SMSI basé sur ISO 27001",
+              "Interpréter les exigences d'ISO 27001 du point de vue d'un auditeur",
+              "Planifier et préparer un audit ISO 27001",
+              "Conduire un audit de conformité efficace",
+              "Clôturer un audit et rédiger le rapport de certification"
             ],
             "curriculum": [
               {
                 "day": 1,
-                "title": "Fondamentaux et Rôle du CISO",
+                "title": "Introduction et Principes d'Audit",
                 "topics": [
-                  "Principes de sécurité de l'information",
-                  "Rôle et responsabilités du CISO",
-                  "Considérations éthiques",
-                  "Défis actuels de la cybersécurité"
+                  "Normes et cadres réglementaires",
+                  "Concepts fondamentaux de la sécurité de l'information",
+                  "Principes et responsabilités de l'auditeur",
+                  "Normes d'audit (ISO 19011)"
                 ]
               },
               {
                 "day": 2,
-                "title": "Conception du Programme de Sécurité",
+                "title": "Planification de l'Audit",
                 "topics": [
-                  "Stratégie de sécurité alignée avec les objectifs métier",
-                  "Politique et gouvernance de sécurité",
-                  "Architecture de sécurité d'entreprise",
-                  "Gestion des parties prenantes"
+                  "Préparation et définition du périmètre",
+                  "Établissement du programme d'audit",
+                  "Checklist et processus d'audit",
+                  "Gestion des risques d'audit"
                 ]
               },
               {
                 "day": 3,
-                "title": "Gestion des Risques",
+                "title": "Conduite de l'Audit",
                 "topics": [
-                  "Cadres de gestion des risques",
-                  "Identification et analyse des risques",
-                  "Traitement des risques",
-                  "Communication des risques"
+                  "Réunion d'ouverture",
+                  "Collecte de preuves",
+                  "Entretiens et observations",
+                  "Identification des non-conformités"
                 ]
               },
               {
                 "day": 4,
-                "title": "Opérations de Sécurité",
+                "title": "Documentation et Clôture",
                 "topics": [
-                  "Contrôles de sécurité opérationnels",
-                  "Gestion des incidents",
-                  "Continuité d'activité",
-                  "Gestion du changement"
+                  "Évaluation des résultats",
+                  "Rédaction du rapport d'audit",
+                  "Réunion de clôture",
+                  "Suivi des actions correctives"
                 ]
               },
               {
                 "day": 5,
-                "title": "Leadership et Amélioration Continue",
+                "title": "Préparation à la Certification",
                 "topics": [
-                  "Culture de la sécurité de l'information",
-                  "Métriques et KPIs",
-                  "Amélioration continue",
+                  "Aspects légaux et confidentialité",
+                  "Gestion des conflits",
+                  "Révision et préparation à l'examen",
                   "Examen de certification"
                 ]
               }
             ],
             "faqs": [
               {
-                "question": "Quelle expérience est recommandée ?",
-                "answer": "Une expérience significative en sécurité de l'information (5+ ans) et en management est fortement recommandée."
+                "question": "Combien d'expérience est nécessaire pour la certification ?",
+                "answer": "2 ans d'expérience en sécurité de l'information dont 300 heures d'audit minimum."
               },
               {
-                "question": "Cette certification remplace-t-elle CISSP ?",
-                "answer": "Non, elle la complète. PECB CISO se concentre sur les aspects managériaux et stratégiques tandis que CISSP couvre davantage les aspects techniques."
+                "question": "Quel est le format de l'examen ?",
+                "answer": "L'examen est un essai de 3 heures composé de questions ouvertes basées sur des scénarios. Le score minimum est de 70%."
               }
             ]
           }
@@ -963,297 +952,8 @@
       ]
     },
     {
-      "id": "dora",
-      "name": "DORA",
-      "description": "Digital Operational Resilience Act",
-      "reference": "DORA",
-      "trainings": [
-        {
-          "id": "ISR015",
-          "title": "DORA Lead Manager",
-          "editor": "PECB",
-          "reference": "DORA",
-          "is_best_seller": false,
-          "duration_days": 5,
-          "level": "Niveau 3",
-          "evaluation": "QCM",
-          "package_includes": "Official Training Package (incl. voucher)",
-          "languages": ["FR", "EN"],
-          "tags": ["dora", "resilience", "digital", "regulation"],
-          "search_keywords": [
-            "dora",
-            "digital operational resilience",
-            "lead manager",
-            "regulation",
-            "european"
-          ],
-          "details": {
-            "description": "Cette formation vous prépare à diriger la mise en conformité DORA (Digital Operational Resilience Act), le règlement européen sur la résilience opérationnelle numérique pour le secteur financier.",
-            "target_audience": [
-              "Dirigeants et décideurs d'institutions financières",
-              "Responsables conformité et risques",
-              "Professionnels IT du secteur financier",
-              "Personnel juridique et réglementaire",
-              "Consultants en régulation financière et cybersécurité"
-            ],
-            "objectives": [
-              "Comprendre l'objectif de DORA et interpréter ses exigences",
-              "Maîtriser les fondamentaux de la gestion des risques ICT",
-              "Préparer et planifier la mise en œuvre des exigences DORA",
-              "Implémenter les 5 piliers de la résilience opérationnelle numérique",
-              "Réviser et améliorer continuellement la résilience opérationnelle"
-            ],
-            "curriculum": [
-              {
-                "day": 1,
-                "title": "Introduction à DORA",
-                "topics": [
-                  "Contexte réglementaire européen",
-                  "Objectifs et périmètre de DORA",
-                  "Entités concernées",
-                  "Les 5 piliers de DORA"
-                ]
-              },
-              {
-                "day": 2,
-                "title": "Gestion des Risques ICT",
-                "topics": [
-                  "Cadre de gestion des risques ICT",
-                  "Identification des risques",
-                  "Mesures de protection",
-                  "Détection des anomalies"
-                ]
-              },
-              {
-                "day": 3,
-                "title": "Gestion des Incidents ICT",
-                "topics": [
-                  "Classification des incidents",
-                  "Processus de signalement",
-                  "Communication aux autorités",
-                  "Documentation et reporting"
-                ]
-              },
-              {
-                "day": 4,
-                "title": "Tests et Tiers",
-                "topics": [
-                  "Tests de résilience opérationnelle",
-                  "Tests d'intrusion (TLPT)",
-                  "Gestion des risques tiers ICT",
-                  "Contrats avec prestataires critiques"
-                ]
-              },
-              {
-                "day": 5,
-                "title": "Mise en Œuvre et Certification",
-                "topics": [
-                  "Partage d'informations",
-                  "Surveillance et amélioration",
-                  "Révision générale",
-                  "Examen de certification"
-                ]
-              }
-            ],
-            "faqs": [
-              {
-                "question": "Qui est concerné par DORA ?",
-                "answer": "Les entités financières (banques, assurances, sociétés de gestion, etc.) et leurs prestataires ICT critiques au sein de l'UE."
-              },
-              {
-                "question": "Quelle est la date d'entrée en application ?",
-                "answer": "DORA est entré en application le 17 janvier 2025 après une période de transition de 2 ans."
-              },
-              {
-                "question": "Comment DORA se relie à d'autres réglementations ?",
-                "answer": "DORA complète NIS2 pour le secteur financier et s'articule avec ISO 27001, GDPR et les directives sectorielles."
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "gdpr-iso-27701",
-      "name": "GDPR / ISO 27701",
-      "description": "Data Protection and Privacy Management",
-      "reference": "GDPR",
-      "trainings": [
-        {
-          "id": "ISR016",
-          "title": "GDPR Foundation",
-          "editor": "PECB",
-          "reference": "GDPR",
-          "is_best_seller": false,
-          "duration_days": 2,
-          "level": "Niveau 2",
-          "evaluation": "QCM",
-          "package_includes": "Official Training Package (incl. voucher)",
-          "languages": ["FR", "EN"],
-          "tags": ["foundation", "gdpr", "privacy", "data protection"],
-          "search_keywords": [
-            "gdpr",
-            "foundation",
-            "data protection",
-            "privacy",
-            "rgpd"
-          ],
-          "details": {
-            "description": "Cette formation vous permet de comprendre les exigences essentielles du RGPD et les principes fondamentaux de la protection des données personnelles.",
-            "target_audience": [
-              "Professionnels impliqués dans la protection des données",
-              "Membres d'équipes de sécurité de l'information",
-              "Personnes souhaitant comprendre le RGPD",
-              "Futurs DPO cherchant une introduction"
-            ],
-            "objectives": [
-              "Comprendre les exigences essentielles du RGPD",
-              "Maîtriser les principes fondamentaux de la vie privée",
-              "Connaître le rôle et les responsabilités du DPO",
-              "Comprendre les approches pour établir un cadre de conformité"
-            ],
-            "curriculum": [
-              {
-                "day": 1,
-                "title": "Introduction au RGPD",
-                "topics": [
-                  "Historique et contexte",
-                  "Principes fondamentaux",
-                  "Droits des personnes concernées",
-                  "Bases légales du traitement"
-                ]
-              },
-              {
-                "day": 2,
-                "title": "Conformité et Certification",
-                "topics": [
-                  "Responsabilités organisationnelles",
-                  "Rôle du DPO",
-                  "Autorités de contrôle",
-                  "Préparation à l'examen"
-                ]
-              }
-            ],
-            "faqs": [
-              {
-                "question": "Quels sont les prérequis ?",
-                "answer": "Aucun prérequis formel n'est requis."
-              },
-              {
-                "question": "Cette formation est-elle suffisante pour devenir DPO ?",
-                "answer": "Non, la formation Foundation donne les bases. La formation CDPO (5 jours) est recommandée pour exercer comme DPO."
-              }
-            ]
-          }
-        },
-        {
-          "id": "ISR017",
-          "title": "Certified Data Protection Officer",
-          "editor": "PECB",
-          "reference": "GDPR",
-          "is_best_seller": false,
-          "duration_days": 5,
-          "level": "Niveau 3",
-          "evaluation": "QCM",
-          "package_includes": "Official Training Package (incl. voucher)",
-          "languages": ["FR", "EN"],
-          "tags": ["dpo", "data protection", "officer", "gdpr"],
-          "search_keywords": [
-            "dpo",
-            "data protection officer",
-            "gdpr",
-            "privacy",
-            "certified"
-          ],
-          "details": {
-            "description": "Cette formation vous prépare à exercer le rôle de Délégué à la Protection des Données (DPO) selon les exigences du RGPD. Vous acquerrez les compétences pour implémenter et gérer un programme de conformité RGPD.",
-            "target_audience": [
-              "DPO et futurs délégués à la protection des données",
-              "Responsables conformité RGPD",
-              "Consultants en protection des données",
-              "Membres d'équipes sécurité et conformité",
-              "Experts préparant une évolution vers un poste de DPO"
-            ],
-            "objectives": [
-              "Comprendre les concepts du RGPD et interpréter ses exigences",
-              "Acquérir les compétences pour exercer le rôle quotidien de DPO",
-              "Développer la capacité à informer, conseiller et surveiller la conformité",
-              "Coopérer efficacement avec les autorités de contrôle",
-              "Comprendre la corrélation entre RGPD, ISO 27701 et ISO 27001"
-            ],
-            "curriculum": [
-              {
-                "day": 1,
-                "title": "Introduction et Rôle du DPO",
-                "topics": [
-                  "Concepts et principes du RGPD",
-                  "Désignation et position du DPO",
-                  "Relation avec la direction",
-                  "Tâches quotidiennes du DPO"
-                ]
-              },
-              {
-                "day": 2,
-                "title": "Programme de Conformité",
-                "topics": [
-                  "Développement du programme RGPD",
-                  "Politiques de protection des données",
-                  "Registre des traitements",
-                  "Gestion documentaire"
-                ]
-              },
-              {
-                "day": 3,
-                "title": "Gestion des Risques et AIPD",
-                "topics": [
-                  "Processus de gestion des risques",
-                  "Analyse d'impact (DPIA/AIPD)",
-                  "Privacy by Design et by Default",
-                  "Mesures techniques et organisationnelles"
-                ]
-              },
-              {
-                "day": 4,
-                "title": "Sécurité et Incidents",
-                "topics": [
-                  "Exigences de sécurité RGPD",
-                  "Gestion des violations de données",
-                  "Notification aux autorités",
-                  "Communication aux personnes"
-                ]
-              },
-              {
-                "day": 5,
-                "title": "Surveillance et Certification",
-                "topics": [
-                  "Surveillance de la conformité",
-                  "Amélioration continue",
-                  "Corrélation ISO 27701",
-                  "Examen de certification"
-                ]
-              }
-            ],
-            "faqs": [
-              {
-                "question": "La certification CDPO est-elle obligatoire pour être DPO ?",
-                "answer": "Non, le RGPD n'impose pas de certification obligatoire, mais la certification PECB CDPO démontre vos compétences et est reconnue internationalement."
-              },
-              {
-                "question": "Quelle expérience est recommandée ?",
-                "answer": "Une connaissance fondamentale du RGPD et une expérience en protection des données ou sécurité de l'information sont recommandées."
-              },
-              {
-                "question": "La formation couvre-t-elle ISO 27701 ?",
-                "answer": "Oui, la corrélation entre RGPD et ISO 27701 (extension PIMS d'ISO 27001) est abordée dans la formation."
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
       "id": "iso-9001",
-      "name": "ISO 9001 - Quality Management",
+      "name": "ISO 9001",
       "description": "Systèmes de Management de la Qualité (SMQ). La norme internationale pour assurer la satisfaction client et l'amélioration continue.",
       "reference": "ISO9001",
       "trainings": [
@@ -1319,7 +1019,7 @@
     },
     {
       "id": "iso-14001",
-      "name": "ISO 14001 - Environmental Management",
+      "name": "ISO 1400",
       "description": "Systèmes de Management Environnemental (SME). Réduire l'impact environnemental et respecter la conformité réglementaire.",
       "reference": "ISO14001",
       "trainings": [
@@ -1385,7 +1085,7 @@
     },
     {
       "id": "iso-22301",
-      "name": "ISO 22301 - Business Continuity Management",
+      "name": "ISO 22301",
       "description": "Assurez la résilience de votre entreprise face aux perturbations avec un Système de Management de la Continuité d'Activité (SMCA).",
       "reference": "ISO22301",
       "trainings": [
@@ -1454,8 +1154,8 @@
           }
         },
         {
-          "id": "iso-22301-lead-implementer-auditor",
-          "title": "ISO 22301 Lead Implementer / Lead Auditor",
+          "id": "iso-22301-lead-implementer",
+          "title": "ISO 22301 Lead Implementer",
           "editor": "PECB",
           "reference": "ISR017",
           "is_best_seller": true,
@@ -1469,23 +1169,20 @@
           },
           "package_includes": "Support de cours officiel et Voucher Examen",
           "languages": ["FR", "EN"],
-          "tags": ["iso 22301", "lead implementer", "lead auditor", "advanced"],
+          "tags": ["iso 22301", "lead implementer", "advanced"],
           "search_keywords": [
             "lead implementer",
-            "lead auditor",
             "certification expert",
             "iso 22301"
           ],
           "details": {
-            "description": "Niveau Expert. Choisissez entre Lead Implementer (pour mettre en place le SMCA) ou Lead Auditor (pour auditer le SMCA).",
+            "description": "Niveau Expert. Formation pour mettre en place le SMCA.",
             "target_audience": [
               "Consultants",
-              "Auditeurs",
               "Responsables BCMS expérimentés"
             ],
             "objectives": [
-              "Mener une implémentation complète (LI)",
-              "Planifier et diriger un audit (LA)",
+              "Mener une implémentation complète",
               "Préparer la certification Lead"
             ],
             "prerequisites": ["Connaissance de base ISO 22301 recommandée"],
@@ -1493,10 +1190,7 @@
               {
                 "day": 1,
                 "title": "Introduction",
-                "topics": [
-                  "Cadre normatif",
-                  "Lancement du projet (LI) / Principes d'audit (LA)"
-                ]
+                "topics": ["Cadre normatif", "Lancement du projet"]
               },
               {
                 "day": 2,
@@ -1508,16 +1202,73 @@
               },
               {
                 "day": 3,
-                "title": "Mise en œuvre / Audit",
-                "topics": [
-                  "Procédures de continuité",
-                  "Réalisation de l'audit (LA)"
-                ]
+                "title": "Mise en œuvre",
+                "topics": ["Procédures de continuité"]
               },
               {
                 "day": 4,
                 "title": "Évaluation",
-                "topics": ["Tests et exercices", "Rapport d'audit et clôture"]
+                "topics": ["Tests et exercices"]
+              },
+              {
+                "day": 5,
+                "title": "Examen",
+                "topics": ["Passage de l'examen de certification"]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "iso-22301-lead-auditor",
+          "title": "ISO 22301 Lead Auditor",
+          "editor": "PECB",
+          "reference": "ISR017",
+          "is_best_seller": true,
+          "duration_days": 5,
+          "level": "Niveau 3",
+          "evaluation": "QCM",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 665,
+            "note": "Official Training Package (incl. voucher)"
+          },
+          "package_includes": "Support de cours officiel et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["iso 22301", "lead auditor", "advanced"],
+          "search_keywords": [
+            "lead auditor",
+            "certification expert",
+            "iso 22301"
+          ],
+          "details": {
+            "description": "Niveau Expert. Formation pour auditer le SMCA.",
+            "target_audience": ["Auditeurs", "Responsables BCMS expérimentés"],
+            "objectives": [
+              "Planifier et diriger un audit",
+              "Préparer la certification Lead"
+            ],
+            "prerequisites": ["Connaissance de base ISO 22301 recommandée"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction",
+                "topics": ["Principes d'audit", "Lancement du projet"]
+              },
+              {
+                "day": 2,
+                "title": "Planification",
+                "topics": ["Analyse d'Impact (BIA) et Risques"]
+              },
+              {
+                "day": 3,
+                "title": "Audit",
+                "topics": ["Réalisation de l'audit"]
+              },
+              {
+                "day": 4,
+                "title": "Évaluation",
+                "topics": ["Rapport d'audit et clôture"]
               },
               {
                 "day": 5,
@@ -1532,7 +1283,7 @@
     },
     {
       "id": "iso-31000",
-      "name": "ISO 31000 - Risk Management",
+      "name": "ISO 31000",
       "description": "Lignes directrices pour gérer les risques auxquels les organisations sont confrontées. Une approche stratégique et opérationnelle.",
       "reference": "ISO31000",
       "trainings": [
@@ -1668,6 +1419,489 @@
               }
             ],
             "faqs": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "ciso",
+      "name": "CISO",
+      "description": "Chief Information Security Officer - Leadership en Sécurité de l'Information",
+      "reference": "CISO",
+      "trainings": [
+        {
+          "id": "CISO001",
+          "title": "Chief Information Security Officer",
+          "editor": "PECB",
+          "reference": "CISO",
+          "is_best_seller": true,
+          "duration_days": 5,
+          "level": "Niveau 3",
+          "evaluation": "QCM",
+          "package_includes": "Package de formation officiel (incl. voucher)",
+          "languages": ["FR", "EN"],
+          "tags": ["ciso", "leadership", "security", "strategy"],
+          "search_keywords": [
+            "ciso",
+            "chief information security officer",
+            "leadership",
+            "security strategy",
+            "directeur sécurité"
+          ],
+          "details": {
+            "description": "Cette formation intensive de 5 jours vous prépare à diriger une fonction sécurité de l'information en tant que CISO (Chief Information Security Officer). Vous acquerrez les compétences stratégiques, opérationnelles et de leadership nécessaires pour piloter la sécurité de l'information au plus haut niveau de l'organisation.",
+            "target_audience": [
+              "Responsables sécurité souhaitant évoluer vers un poste de CISO",
+              "Directeurs IT ayant la responsabilité de la sécurité",
+              "Consultants en sécurité de l'information",
+              "Cadres dirigeants impliqués dans la gouvernance sécurité",
+              "RSSI souhaitant renforcer leurs compétences de leadership"
+            ],
+            "objectives": [
+              "Développer une vision stratégique de la sécurité de l'information",
+              "Établir et piloter un programme de gouvernance sécurité",
+              "Mettre en place une culture sécurité dans l'organisation",
+              "Gérer les risques cyber au niveau exécutif",
+              "Communiquer efficacement avec le conseil d'administration et la direction générale",
+              "Intégrer la sécurité dans la stratégie globale de l'entreprise"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Vision Stratégique et Gouvernance",
+                "topics": [
+                  "Rôle et responsabilités du CISO",
+                  "Positionnement dans l'organisation",
+                  "Gouvernance et cadre de contrôle",
+                  "Alignement stratégique avec les objectifs métier",
+                  "Leadership et management d'équipe sécurité"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Gestion des Risques Cyber",
+                "topics": [
+                  "Cadre de gestion des risques cyber",
+                  "Identification des risques critiques",
+                  "Évaluation et priorisation des risques",
+                  "Stratégie de traitement des risques",
+                  "Conformité et régulation (ISO 27001, DORA, NIS2, etc.)"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Programme Sécurité Opérationnel",
+                "topics": [
+                  "Conception d'un programme sécurité intégré",
+                  "Gestion des incidents et crises cyber",
+                  "Continuité d'activité et résilience",
+                  "Architecture sécurité et mesures techniques",
+                  "Gestion de la sécurité des tiers (supply chain)"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Culture et Communication",
+                "topics": [
+                  "Développement d'une culture sécurité",
+                  "Sensibilisation et formation des collaborateurs",
+                  "Communication de crise et gestion des incidents majeurs",
+                  "Reporting et métriques sécurité",
+                  "Engagement de la direction générale et du conseil"
+                ]
+              },
+              {
+                "day": 5,
+                "title": "Transformation et Excellence",
+                "topics": [
+                  "Transformation numérique et sécurité",
+                  "Innovation en sécurité",
+                  "Amélioration continue et excellence opérationnelle",
+                  "Études de cas et meilleures pratiques",
+                  "Examen de certification"
+                ]
+              }
+            ],
+            "faqs": [
+              {
+                "question": "Quels sont les prérequis pour cette formation ?",
+                "answer": "Une expérience minimale de 5 ans en sécurité de l'information et des connaissances dans ISO 27001 ou équivalent sont recommandées. Une formation PECB antérieure est un plus."
+              },
+              {
+                "question": "Quel est le format de l'examen ?",
+                "answer": "L'examen est un QCM de 100 questions à compléter en 2 heures 30. Le score minimum de réussite est de 70%."
+              },
+              {
+                "question": "Cette certification m'aidera-t-elle à obtenir un poste de CISO ?",
+                "answer": "Oui, cette certification PECB CISO valide vos compétences et est reconnue internationalement par les organisations recherchant des CISO expérimentés et certifiés."
+              },
+              {
+                "question": "Comment cette formation s'articule avec d'autres certifications ?",
+                "answer": "Elle complète les certifications techniques (ISO 27001, ISO 27035, etc.) en apportant une dimension stratégique et de leadership nécessaire pour un rôle exécutif."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dora",
+      "name": "DORA",
+      "description": "Digital Operational Resilience Act",
+      "reference": "DORA",
+      "trainings": [
+        {
+          "id": "ISR014",
+          "title": "DORA Foundation",
+          "editor": "PECB",
+          "reference": "DORA",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Niveau 2",
+          "evaluation": "QCM",
+          "package_includes": "Official Training Package (incl. voucher)",
+          "languages": ["FR", "EN"],
+          "tags": ["dora", "foundation", "resilience", "regulation"],
+          "search_keywords": [
+            "dora",
+            "digital operational resilience",
+            "foundation",
+            "regulation",
+            "european"
+          ],
+          "details": {
+            "description": "Cette formation vous permet de comprendre les éléments fondamentaux du DORA (Digital Operational Resilience Act), le règlement européen sur la résilience opérationnelle numérique pour le secteur financier.",
+            "target_audience": [
+              "Professionnels d'institutions financières souhaitant comprendre DORA",
+              "Responsables conformité et risques débutants",
+              "Membres d'équipes IT du secteur financier",
+              "Personnes cherchant une introduction à DORA"
+            ],
+            "objectives": [
+              "Comprendre les objectifs et le périmètre de DORA",
+              "Maîtriser les concepts fondamentaux de la résilience opérationnelle",
+              "Identifier les 5 piliers de DORA",
+              "Comprendre les exigences essentielles pour les entités financières"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction et Contexte",
+                "topics": [
+                  "Contexte réglementaire européen",
+                  "Objectifs et périmètre de DORA",
+                  "Entités concernées et périmètre d'application",
+                  "Évolution réglementaire du secteur financier"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Les 5 Piliers de DORA",
+                "topics": [
+                  "Pilier 1 : Gestion des risques ICT",
+                  "Pilier 2 : Gestion des incidents ICT",
+                  "Pilier 3 : Tests de résilience",
+                  "Pilier 4 : Tiers critiques et gestion des risques",
+                  "Pilier 5 : Partage d'informations",
+                  "Préparation à l'examen"
+                ]
+              }
+            ],
+            "faqs": [
+              {
+                "question": "Quels sont les prérequis ?",
+                "answer": "Aucun prérequis formel n'est requis. Une connaissance générale du secteur financier est recommandée."
+              },
+              {
+                "question": "Qui est concerné par DORA ?",
+                "answer": "Les entités financières (banques, assurances, sociétés de gestion, etc.) et leurs prestataires ICT critiques au sein de l'UE."
+              },
+              {
+                "question": "Quelle est la date d'entrée en application ?",
+                "answer": "DORA est entré en application le 17 janvier 2025 après une période de transition de 2 ans."
+              }
+            ]
+          }
+        },
+        {
+          "id": "ISR015",
+          "title": "DORA Lead Manager",
+          "editor": "PECB",
+          "reference": "DORA",
+          "is_best_seller": false,
+          "duration_days": 5,
+          "level": "Niveau 3",
+          "evaluation": "QCM",
+          "package_includes": "Official Training Package (incl. voucher)",
+          "languages": ["FR", "EN"],
+          "tags": ["dora", "resilience", "digital", "regulation"],
+          "search_keywords": [
+            "dora",
+            "digital operational resilience",
+            "lead manager",
+            "regulation",
+            "european"
+          ],
+          "details": {
+            "description": "Cette formation vous prépare à diriger la mise en conformité DORA (Digital Operational Resilience Act), le règlement européen sur la résilience opérationnelle numérique pour le secteur financier.",
+            "target_audience": [
+              "Dirigeants et décideurs d'institutions financières",
+              "Responsables conformité et risques",
+              "Professionnels IT du secteur financier",
+              "Personnel juridique et réglementaire",
+              "Consultants en régulation financière et cybersécurité"
+            ],
+            "objectives": [
+              "Comprendre l'objectif de DORA et interpréter ses exigences",
+              "Maîtriser les fondamentaux de la gestion des risques ICT",
+              "Préparer et planifier la mise en œuvre des exigences DORA",
+              "Implémenter les 5 piliers de la résilience opérationnelle numérique",
+              "Réviser et améliorer continuellement la résilience opérationnelle"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction à DORA",
+                "topics": [
+                  "Contexte réglementaire européen",
+                  "Objectifs et périmètre de DORA",
+                  "Entités concernées",
+                  "Les 5 piliers de DORA"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Gestion des Risques ICT",
+                "topics": [
+                  "Cadre de gestion des risques ICT",
+                  "Identification des risques",
+                  "Mesures de protection",
+                  "Détection des anomalies"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Gestion des Incidents ICT",
+                "topics": [
+                  "Classification des incidents",
+                  "Processus de signalement",
+                  "Communication aux autorités",
+                  "Documentation et reporting"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Tests et Tiers",
+                "topics": [
+                  "Tests de résilience opérationnelle",
+                  "Tests d'intrusion (TLPT)",
+                  "Gestion des risques tiers ICT",
+                  "Contrats avec prestataires critiques"
+                ]
+              },
+              {
+                "day": 5,
+                "title": "Mise en Œuvre et Certification",
+                "topics": [
+                  "Partage d'informations",
+                  "Surveillance et amélioration",
+                  "Révision générale",
+                  "Examen de certification"
+                ]
+              }
+            ],
+            "faqs": [
+              {
+                "question": "Qui est concerné par DORA ?",
+                "answer": "Les entités financières (banques, assurances, sociétés de gestion, etc.) et leurs prestataires ICT critiques au sein de l'UE."
+              },
+              {
+                "question": "Quelle est la date d'entrée en application ?",
+                "answer": "DORA est entré en application le 17 janvier 2025 après une période de transition de 2 ans."
+              },
+              {
+                "question": "Comment DORA se relie à d'autres réglementations ?",
+                "answer": "DORA complète NIS2 pour le secteur financier et s'articule avec ISO 27001, RGPD et les directives sectorielles."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "gdpr-iso-27701",
+      "name": "RGPD",
+      "description": "Data Protection and Privacy Management",
+      "reference": "RGPD",
+      "trainings": [
+        {
+          "id": "ISR016",
+          "title": "RGPD Foundation",
+          "editor": "PECB",
+          "reference": "RGPD",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Niveau 2",
+          "evaluation": "QCM",
+          "package_includes": "Official Training Package (incl. voucher)",
+          "languages": ["FR", "EN"],
+          "tags": ["foundation", "rgpd", "privacy", "data protection"],
+          "search_keywords": [
+            "rgpd",
+            "foundation",
+            "data protection",
+            "privacy",
+            "rgpd"
+          ],
+          "details": {
+            "description": "Cette formation vous permet de comprendre les exigences essentielles du RGPD et les principes fondamentaux de la protection des données personnelles.",
+            "target_audience": [
+              "Professionnels impliqués dans la protection des données",
+              "Membres d'équipes de sécurité de l'information",
+              "Personnes souhaitant comprendre le RGPD",
+              "Futurs DPO cherchant une introduction"
+            ],
+            "objectives": [
+              "Comprendre les exigences essentielles du RGPD",
+              "Maîtriser les principes fondamentaux de la vie privée",
+              "Connaître le rôle et les responsabilités du DPO",
+              "Comprendre les approches pour établir un cadre de conformité"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction au RGPD",
+                "topics": [
+                  "Historique et contexte",
+                  "Principes fondamentaux",
+                  "Droits des personnes concernées",
+                  "Bases légales du traitement"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Conformité et Certification",
+                "topics": [
+                  "Responsabilités organisationnelles",
+                  "Rôle du DPO",
+                  "Autorités de contrôle",
+                  "Préparation à l'examen"
+                ]
+              }
+            ],
+            "faqs": [
+              {
+                "question": "Quels sont les prérequis ?",
+                "answer": "Aucun prérequis formel n'est requis."
+              },
+              {
+                "question": "Cette formation est-elle suffisante pour devenir DPO ?",
+                "answer": "Non, la formation Foundation donne les bases. La formation CDPO (5 jours) est recommandée pour exercer comme DPO."
+              }
+            ]
+          }
+        },
+        {
+          "id": "ISR017",
+          "title": "Certified Data Protection Officer",
+          "editor": "PECB",
+          "reference": "RGPD",
+          "is_best_seller": false,
+          "duration_days": 5,
+          "level": "Niveau 3",
+          "evaluation": "QCM",
+          "package_includes": "Official Training Package (incl. voucher)",
+          "languages": ["FR", "EN"],
+          "tags": ["dpo", "data protection", "officer", "rgpd"],
+          "search_keywords": [
+            "dpo",
+            "data protection officer",
+            "rgpd",
+            "privacy",
+            "certified"
+          ],
+          "details": {
+            "description": "Cette formation vous prépare à exercer le rôle de Délégué à la Protection des Données (DPO) selon les exigences du RGPD. Vous acquerrez les compétences pour implémenter et gérer un programme de conformité RGPD.",
+            "target_audience": [
+              "DPO et futurs délégués à la protection des données",
+              "Responsables conformité RGPD",
+              "Consultants en protection des données",
+              "Membres d'équipes sécurité et conformité",
+              "Experts préparant une évolution vers un poste de DPO"
+            ],
+            "objectives": [
+              "Comprendre les concepts du RGPD et interpréter ses exigences",
+              "Acquérir les compétences pour exercer le rôle quotidien de DPO",
+              "Développer la capacité à informer, conseiller et surveiller la conformité",
+              "Coopérer efficacement avec les autorités de contrôle",
+              "Comprendre la corrélation entre RGPD, ISO 27701 et ISO 27001"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction et Rôle du DPO",
+                "topics": [
+                  "Concepts et principes du RGPD",
+                  "Désignation et position du DPO",
+                  "Relation avec la direction",
+                  "Tâches quotidiennes du DPO"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Programme de Conformité",
+                "topics": [
+                  "Développement du programme RGPD",
+                  "Politiques de protection des données",
+                  "Registre des traitements",
+                  "Gestion documentaire"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Gestion des Risques et AIPD",
+                "topics": [
+                  "Processus de gestion des risques",
+                  "Analyse d'impact (DPIA/AIPD)",
+                  "Privacy by Design et by Default",
+                  "Mesures techniques et organisationnelles"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Sécurité et Incidents",
+                "topics": [
+                  "Exigences de sécurité RGPD",
+                  "Gestion des violations de données",
+                  "Notification aux autorités",
+                  "Communication aux personnes"
+                ]
+              },
+              {
+                "day": 5,
+                "title": "Surveillance et Certification",
+                "topics": [
+                  "Surveillance de la conformité",
+                  "Amélioration continue",
+                  "Corrélation ISO 27701",
+                  "Examen de certification"
+                ]
+              }
+            ],
+            "faqs": [
+              {
+                "question": "La certification CDPO est-elle obligatoire pour être DPO ?",
+                "answer": "Non, le RGPD n'impose pas de certification obligatoire, mais la certification PECB CDPO démontre vos compétences et est reconnue internationalement."
+              },
+              {
+                "question": "Quelle expérience est recommandée ?",
+                "answer": "Une connaissance fondamentale du RGPD et une expérience en protection des données ou sécurité de l'information sont recommandées."
+              },
+              {
+                "question": "La formation couvre-t-elle ISO 27701 ?",
+                "answer": "Oui, la corrélation entre RGPD et ISO 27701 (extension PIMS d'ISO 27001) est abordée dans la formation."
+              }
+            ]
           }
         }
       ]

@@ -25,7 +25,7 @@
     ],
     "editors": ["EXIN", "SCRUM.ORG", "SAI", "PEOPLECERT", "ICAGILE", "APMG"],
     "durations": [2, 3],
-    "levels": ["Débutant", "Intermédiaire", "Avancé", "Expert"],
+    "levels": ["Niveau 1", "Niveau 2", "Niveau 3", "Niveau 4"],
     "languages": ["FR", "EN"]
   },
   "categories": [
@@ -36,28 +36,66 @@
       "reference": "SCRUM",
       "trainings": [
         {
-          "id": "psm1-pspo1-psd1",
-          "title": "PSM1 / PSPO1 / PSD1",
+          "id": "psm1",
+          "title": "PSM1 - Professional Scrum Master",
           "editor": "SCRUM.ORG",
-          "reference": "AM001-003",
+          "reference": "AM001",
           "is_best_seller": true,
           "duration_days": 2,
-          "level": "Débutant/Intermédiaire",
+          "level": "Niveau 1",
           "evaluation": "QCM",
           "package_includes": "Passage de certification",
           "languages": ["FR", "EN"],
-          "tags": ["scrum.org", "psm", "pspo", "certification"],
-          "search_keywords": ["psm1", "pspo1", "psd1", "scrum.org"],
+          "tags": ["scrum.org", "psm", "certification"],
+          "search_keywords": ["psm1", "scrum master", "scrum.org"],
           "details": {
-            "description": "Préparation aux certifications reconnues de Scrum.org : Professional Scrum Master I (PSM I), Product Owner I (PSPO I) ou Developer (PSD I).",
-            "target_audience": [
-              "Futurs Scrum Masters",
-              "Product Owners",
-              "Développeurs Scrum"
-            ],
+            "description": "Préparation à la certification Professional Scrum Master I (PSM I) reconnue de Scrum.org.",
+            "target_audience": ["Futurs Scrum Masters", "Managers Agile"],
             "objectives": [
-              "Réussir la certification PSM1, PSPO1 ou PSD1",
-              "Approfondir la théorie Scrum"
+              "Réussir la certification PSM1",
+              "Approfondir la théorie et les pratiques Scrum",
+              "Maîtriser le rôle de Scrum Master"
+            ],
+            "prerequisites": ["Lecture du Scrum Guide"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Théorie et Principes",
+                "topics": ["Empirisme", "Valeurs Scrum", "Rôle du Scrum Master"]
+              },
+              {
+                "day": 2,
+                "title": "Mise en pratique",
+                "topics": [
+                  "Gestion des événements Scrum",
+                  "Élimination des obstacles",
+                  "Examens blancs"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "pspo1",
+          "title": "PSPO1 - Professional Scrum Product Owner",
+          "editor": "SCRUM.ORG",
+          "reference": "AM002",
+          "is_best_seller": true,
+          "duration_days": 2,
+          "level": "Niveau 1",
+          "evaluation": "QCM",
+          "package_includes": "Passage de certification",
+          "languages": ["FR", "EN"],
+          "tags": ["scrum.org", "pspo", "certification"],
+          "search_keywords": ["pspo1", "product owner", "scrum.org"],
+          "details": {
+            "description": "Préparation à la certification Professional Scrum Product Owner I (PSPO I) reconnue de Scrum.org.",
+            "target_audience": ["Product Owners", "Business Owners"],
+            "objectives": [
+              "Réussir la certification PSPO1",
+              "Maîtriser la gestion du Product Backlog",
+              "Maximiser la valeur du produit"
             ],
             "prerequisites": ["Lecture du Scrum Guide"],
             "curriculum": [
@@ -67,15 +105,15 @@
                 "topics": [
                   "Empirisme",
                   "Valeurs Scrum",
-                  "Rôles et Responsabilités"
+                  "Rôle du Product Owner"
                 ]
               },
               {
                 "day": 2,
                 "title": "Mise en pratique",
                 "topics": [
-                  "Gestion des événements",
-                  "Artefacts et engagements",
+                  "Gestion du Product Backlog",
+                  "Engagement et valeur",
                   "Examens blancs"
                 ]
               }
@@ -84,43 +122,94 @@
           }
         },
         {
-          "id": "scrum-specialist",
-          "title": "Scrum Specialist (PSK / PAL / PSU)",
+          "id": "psd1",
+          "title": "PSD1 - Professional Scrum Developer",
           "editor": "SCRUM.ORG",
-          "reference": "AM004-006",
+          "reference": "AM003",
           "is_best_seller": false,
           "duration_days": 2,
-          "level": "Intermédiaire/Avancé",
+          "level": "Niveau 1",
+          "evaluation": "QCM",
+          "package_includes": "Passage de certification",
+          "languages": ["FR", "EN"],
+          "tags": ["scrum.org", "psd", "developer", "certification"],
+          "search_keywords": ["psd1", "developer", "scrum", "scrum.org"],
+          "details": {
+            "description": "Préparation à la certification Professional Scrum Developer I (PSD I) reconnue de Scrum.org.",
+            "target_audience": [
+              "Développeurs Scrum",
+              "Membres d'équipe technique"
+            ],
+            "objectives": [
+              "Réussir la certification PSD1",
+              "Approfondir les pratiques de développement Scrum",
+              "Maîtriser les techniques agiles"
+            ],
+            "prerequisites": [
+              "Lecture du Scrum Guide",
+              "Expérience en développement"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Théorie et Principes",
+                "topics": [
+                  "Empirisme",
+                  "Valeurs Scrum",
+                  "Équipe de développement"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Mise en pratique",
+                "topics": [
+                  "Définition de Fini",
+                  "Techniques agiles",
+                  "Examens blancs"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "psk",
+          "title": "PSK - Professional Scrum with Kanban",
+          "editor": "SCRUM.ORG",
+          "reference": "AM004",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Niveau 2",
           "evaluation": "QCM",
           "package_includes": "Voucher Examen",
           "languages": ["EN"],
-          "tags": ["kanban", "leadership", "ux", "scrum.org"],
-          "search_keywords": ["psk", "pal", "psu", "kanban", "ux"],
+          "tags": ["kanban", "scrum.org"],
+          "search_keywords": ["psk", "kanban", "scrum"],
           "details": {
-            "description": "Certifications spécialisées Scrum.org : Professional Scrum with Kanban (PSK), Agile Leadership (PAL) ou with UX (PSU).",
-            "target_audience": ["Scrum Masters", "Managers", "UX Designers"],
+            "description": "Certification Professional Scrum with Kanban (PSK) pour intégrer les pratiques Kanban dans Scrum.",
+            "target_audience": ["Scrum Masters", "Équipes Scrum"],
             "objectives": [
               "Intégrer Kanban dans Scrum",
-              "Agile Leadership",
-              "Intégration UX/Scrum"
+              "Maîtriser la théorie du Flow",
+              "Optimiser le flux de travail"
             ],
             "prerequisites": ["PSM1 recommandé"],
             "curriculum": [
               {
                 "day": 1,
-                "title": "Concepts Avancés",
+                "title": "Concepts Kanban",
                 "topics": [
-                  "Théorie du Flow (PSK)",
-                  "Leadership Agile (PAL)",
-                  "Lean UX (PSU)"
+                  "Théorie du Flow",
+                  "Principes Kanban",
+                  "WIP et métriques"
                 ]
               },
               {
                 "day": 2,
-                "title": "Application",
+                "title": "Application Scrum + Kanban",
                 "topics": [
-                  "Métriques et Mesures",
-                  "Cas pratiques",
+                  "Intégration pratique",
+                  "Métriques du Flow",
                   "Préparation examen"
                 ]
               }
@@ -129,30 +218,121 @@
           }
         },
         {
-          "id": "psm2-pspo2",
-          "title": "Advanced Scrum (PSM2 / PSPO2)",
+          "id": "pal",
+          "title": "PAL - Professional Agile Leadership",
           "editor": "SCRUM.ORG",
-          "reference": "AM008-009",
+          "reference": "AM005",
           "is_best_seller": false,
           "duration_days": 2,
-          "level": "Avancé",
+          "level": "Niveau 2",
           "evaluation": "QCM",
           "package_includes": "Voucher Examen",
           "languages": ["EN"],
-          "tags": ["advanced", "mastery", "scrum.org"],
-          "search_keywords": ["psm2", "pspo2", "advanced scrum"],
+          "tags": ["leadership", "scrum.org"],
+          "search_keywords": ["pal", "agile leadership", "managers"],
           "details": {
-            "description": "Niveau avancé pour les Scrum Masters et Product Owners expérimentés cherchant à maîtriser les défis complexes.",
+            "description": "Certification Professional Agile Leadership (PAL) pour les managers et leaders Agile.",
+            "target_audience": ["Managers", "Leaders Agile", "Cadres"],
+            "objectives": [
+              "Leadership Agile",
+              "Coaching et mentorat",
+              "Culture organisationnelle"
+            ],
+            "prerequisites": ["PSM1 ou PSPO1 recommandé"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Leadership Agile",
+                "topics": [
+                  "Posture de servant leader",
+                  "Empowerment",
+                  "Coaching"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Transformation Organisationnelle",
+                "topics": [
+                  "Changement culturel",
+                  "Métriques de succès",
+                  "Préparation examen"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "psu",
+          "title": "PSU - Professional Scrum with UX",
+          "editor": "SCRUM.ORG",
+          "reference": "AM006",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Niveau 2",
+          "evaluation": "QCM",
+          "package_includes": "Voucher Examen",
+          "languages": ["EN"],
+          "tags": ["ux", "design", "scrum.org"],
+          "search_keywords": ["psu", "ux", "design", "scrum"],
+          "details": {
+            "description": "Certification Professional Scrum with UX (PSU) pour intégrer les pratiques UX dans Scrum.",
             "target_audience": [
-              "Scrum Masters (1+ an xp)",
-              "Product Owners expérimentés"
+              "UX Designers",
+              "Product Owners",
+              "Équipes Scrum"
             ],
             "objectives": [
-              "Gérer les conflits complexes",
-              "Maximiser la valeur produit",
-              "Posture de serviteur-leader"
+              "Intégration UX/Scrum",
+              "Lean UX",
+              "Recherche utilisateur agile"
             ],
-            "prerequisites": ["PSM1 ou PSPO1"],
+            "prerequisites": ["PSM1 ou PSPO1 recommandé"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Lean UX",
+                "topics": [
+                  "Principes Lean UX",
+                  "Hypothèses et validation",
+                  "Design Thinking"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Collaboration dans Scrum",
+                "topics": [
+                  "Collaboration Designer-PO-Dev",
+                  "Prototypage rapide",
+                  "Préparation examen"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "psm2",
+          "title": "PSM2 - Professional Scrum Master Advanced",
+          "editor": "SCRUM.ORG",
+          "reference": "AM008",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Niveau 3",
+          "evaluation": "QCM",
+          "package_includes": "Voucher Examen",
+          "languages": ["EN"],
+          "tags": ["advanced", "mastery", "scrum.org", "psm2"],
+          "search_keywords": ["psm2", "advanced scrum master"],
+          "details": {
+            "description": "Certification Professional Scrum Master II (PSM II) pour les Scrum Masters expérimentés cherchant à maîtriser les défis complexes.",
+            "target_audience": ["Scrum Masters (1+ an xp)"],
+            "objectives": [
+              "Gérer les conflits complexes",
+              "Posture de serviteur-leader",
+              "Élimination des obstacles avancée"
+            ],
+            "prerequisites": ["PSM1"],
             "curriculum": [
               {
                 "day": 1,
@@ -160,15 +340,60 @@
                 "topics": [
                   "Services à l'équipe",
                   "Services à l'organisation",
-                  "Services au PO"
+                  "Servant Leadership"
                 ]
               },
               {
                 "day": 2,
-                "title": "Complexité",
+                "title": "Complexité et Facilitation",
                 "topics": [
                   "Élimination des obstacles",
                   "Techniques de facilitation avancées",
+                  "Scénarios d'examen"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "pspo2",
+          "title": "PSPO2 - Professional Scrum Product Owner Advanced",
+          "editor": "SCRUM.ORG",
+          "reference": "AM009",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Niveau 3",
+          "evaluation": "QCM",
+          "package_includes": "Voucher Examen",
+          "languages": ["EN"],
+          "tags": ["advanced", "mastery", "scrum.org", "pspo2"],
+          "search_keywords": ["pspo2", "advanced product owner"],
+          "details": {
+            "description": "Certification Professional Scrum Product Owner II (PSPO II) pour les Product Owners expérimentés cherchant à maximiser la valeur produit.",
+            "target_audience": ["Product Owners expérimentés (1+ an xp)"],
+            "objectives": [
+              "Maximiser la valeur produit",
+              "Gestion avancée du backlog",
+              "Stakeholder management"
+            ],
+            "prerequisites": ["PSPO1"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Valeur et Stratégie",
+                "topics": [
+                  "Définition de la valeur",
+                  "Stratégie produit",
+                  "Vision et objectifs"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Gestion et Engagement",
+                "topics": [
+                  "Gestion avancée du backlog",
+                  "Engagement des stakeholders",
                   "Scénarios d'examen"
                 ]
               }
@@ -191,7 +416,7 @@
           "reference": "AM301-304",
           "is_best_seller": true,
           "duration_days": 2,
-          "level": "Intermédiaire",
+          "level": "Niveau 2",
           "evaluation": "QCM",
           "package_includes": "Kit officiel SAFe et voucher examen",
           "languages": ["FR", "EN"],
@@ -246,7 +471,7 @@
           "reference": "AM301-304",
           "is_best_seller": false,
           "duration_days": 2,
-          "level": "Intermédiaire",
+          "level": "Niveau 2",
           "evaluation": "QCM",
           "package_includes": "Kit officiel et examen",
           "languages": ["FR", "EN"],
@@ -303,7 +528,7 @@
           "reference": "AM420/501",
           "is_best_seller": true,
           "duration_days": 2,
-          "level": "Débutant",
+          "level": "Niveau 1",
           "evaluation": "QCM",
           "package_includes": "Formation et voucher examen",
           "languages": ["FR", "EN"],
@@ -349,65 +574,6 @@
       ]
     },
     {
-      "id": "kanban",
-      "name": "Kanban",
-      "description": "Améliorez le flux de travail, visualisez les tâches et optimisez la livraison avec la méthode Kanban.",
-      "reference": "KANBAN",
-      "trainings": [
-        {
-          "id": "kanban-foundation",
-          "title": "Kanban Foundation",
-          "editor": "EXIN",
-          "reference": "AM701",
-          "is_best_seller": false,
-          "duration_days": 2,
-          "level": "Intermédiaire",
-          "evaluation": "QCM",
-          "package_includes": "Formation et examen",
-          "languages": ["FR", "EN"],
-          "tags": ["kanban", "flow", "lean", "visualization"],
-          "search_keywords": ["kanban", "workflow", "optimize", "limit wip"],
-          "details": {
-            "description": "Apprenez à concevoir, gérer et améliorer les systèmes Kanban. Comprenez comment visualiser le travail, limiter le WIP et gérer le flux.",
-            "target_audience": [
-              "Membres d'équipes",
-              "Managers",
-              "Toute personne voulant améliorer son flux"
-            ],
-            "objectives": [
-              "Visualiser le travail",
-              "Limiter le travail en cours (WIP)",
-              "Gérer le flux",
-              "Rendre les politiques explicites"
-            ],
-            "prerequisites": ["Aucun"],
-            "curriculum": [
-              {
-                "day": 1,
-                "title": "Principes Kanban",
-                "topics": [
-                  "Origines Lean",
-                  "Pratiques de base",
-                  "Simulation Kanban"
-                ]
-              },
-              {
-                "day": 2,
-                "title": "Systèmes Kanban",
-                "topics": [
-                  "Design de tableau",
-                  "WIP Limits",
-                  "Métriques (Cycle Time, Lead Time)",
-                  "Réunions Kanban"
-                ]
-              }
-            ],
-            "faqs": []
-          }
-        }
-      ]
-    },
-    {
       "id": "agile-pm",
       "name": "Agile Project Management",
       "description": "Certification Agile Project Management (AgilePM) pour gérer les projets agiles avec rigueur et flexibilité.",
@@ -420,7 +586,7 @@
           "reference": "AM901",
           "is_best_seller": false,
           "duration_days": 2,
-          "level": "Débutant/Intermédiaire",
+          "level": "Niveau 1",
           "evaluation": "QCM",
           "package_includes": "Formation et examen",
           "languages": ["FR", "EN"],
