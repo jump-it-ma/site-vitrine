@@ -210,62 +210,198 @@
           }
         },
         {
-          "id": "playwright",
-          "title": "Playwright",
+          "id": "playwright-initiation",
+          "title": "Playwright Initiation",
           "editor": "Jump iT",
           "is_best_seller": false,
+          "duration_days": 3,
+          "level": "Niveau 1",
+          "evaluation": "TP",
+          "package_includes": "Support de cours et exercices pratiques",
+          "languages": ["FR"],
+          "tags": ["test", "e2e", "automation", "beginner"],
+          "search_keywords": [
+            "playwright",
+            "test",
+            "e2e",
+            "automation",
+            "beginner"
+          ],
+          "details": {
+            "description": "Découvrez les bases de l'automatisation de tests web avec Playwright. Cette formation pratique vous initie aux concepts fondamentaux, à l'installation, à la création de vos premiers scénarios de test et à la structuration de projets de test robustes.",
+            "target_audience": [
+              "Testeurs débutants",
+              "Développeurs souhaitant apprendre le test d'automatisation",
+              "QA Engineers en reconversion"
+            ],
+            "objectives": [
+              "Installer et configurer Playwright",
+              "Créer et exécuter des scénarios de test simples",
+              "Interagir avec les éléments UI et formulaires",
+              "Écrire des assertions et validations",
+              "Organiser ses tests en suites cohérentes",
+              "Déboguer les tests et gérer les erreurs"
+            ],
+            "prerequisites": [
+              "Connaissance de base en programmation (JavaScript/TypeScript un plus)",
+              "Familiarité avec les navigateurs web",
+              "Compréhension basique des tests logiciels"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Installation et Concepts Fondamentaux",
+                "topics": [
+                  "Présentation de Playwright et avantages vs Selenium/Cypress",
+                  "Architecture multi-navigateurs (Chromium, Firefox, WebKit)",
+                  "Installation et configuration de l'environnement (Node.js, NPM)",
+                  "Création du premier projet Playwright",
+                  "Utilisation de l'enregistreur (Codegen)",
+                  "Exécution des premiers tests"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Interaction avec les Éléments et Navigation",
+                "topics": [
+                  "Sélecteurs et locateurs (CSS, XPath, Text, Role)",
+                  "Interaction avec les éléments (click, fill, select, type)",
+                  "Gestion des formulaires (input, textarea, checkbox, radio)",
+                  "Navigation entre pages et gestion des URLs",
+                  "Attente des éléments (waitFor, isVisible)",
+                  "Gestion des événements (hover, focus, blur)"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Assertions, Organisation et Débogage",
+                "topics": [
+                  "Assertions Playwright (expect, toContain, toHaveURL)",
+                  "Vérifications de visibilité et d'état des éléments",
+                  "Structure d'une suite de tests (describe, test)",
+                  "Gestion des fixtures et setup/teardown",
+                  "Gestion des captures d'écran et vidéos",
+                  "Débogage (debug mode, inspect, trace viewer)",
+                  "Bonnes pratiques et conventions de nommage"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "playwright-intermediate",
+          "title": "Playwright Intermédiaire",
+          "editor": "Jump iT",
+          "is_best_seller": true,
           "duration_days": 2,
           "level": "Niveau 2",
           "evaluation": "TP",
           "package_includes": "Support de cours et exercices pratiques",
           "languages": ["FR"],
-          "tags": ["test", "e2e", "modern", "automation"],
+          "tags": ["test", "e2e", "automation", "intermediate"],
           "search_keywords": [
             "playwright",
-            "microsoft",
             "test",
             "e2e",
-            "automation"
+            "automation",
+            "intermediate"
           ],
           "details": {
-            "description": "Découvrez les possibilités passionnantes de l'automatisation de tests web avec Playwright. Cette formation pratique est conçue pour les professionnels qui souhaitent maîtriser l'automatisation des tests pour les applications web, en mettant en avant les fonctionnalités avancées et intuitives de Playwright, comme le support multi-navigateurs et la gestion des éléments dynamiques.",
+            "description": "Approfondissez vos compétences Playwright avec cette formation intermédiaire. Maîtrisez les scénarios de test complexes, la gestion des éléments dynamiques, et l'intégration dans vos pipelines CI/CD.",
             "target_audience": [
-              "Testeurs Logiciels",
+              "Testeurs Logiciels confirmés",
               "Professionnels du Développement",
               "Analystes en Tests"
             ],
             "objectives": [
-              "Maîtrise de l'Automatisation des Tests Web avec Playwright",
-              "Création de Scénarios de Test Complexes",
-              "Intégration des Tests dans les Pipelines de Développement"
+              "Maîtriser la création de scénarios de test complexes",
+              "Gérer les éléments dynamiques et pop-ups",
+              "Intégrer Playwright dans un processus de développement"
             ],
             "prerequisites": [
-              "Connaissance de Base en Programmation",
-              "Familiarité avec les Technologies Web",
-              "Notions de Tests Logiciels"
+              "Connaissance des bases de Playwright",
+              "Expérience en tests logiciels"
             ],
             "curriculum": [
               {
                 "day": 1,
-                "title": "Fondamentaux de Playwright",
+                "title": "Scénarios et Éléments Dynamiques",
                 "topics": [
-                  "Aperçu et avantages de Playwright",
-                  "Installation et configuration",
-                  "Création de scénarios de test basiques",
-                  "Interaction avec les éléments UI",
-                  "Validation automatique et assertions",
-                  "Gestion des attentes (SLA)"
+                  "Structure avancée des tests (Page Object Model)",
+                  "Gestion des pop-ups et dialogues",
+                  "Éléments dynamiques et attentes explicites",
+                  "Validation automatique et assertions avancées"
                 ]
               },
               {
                 "day": 2,
-                "title": "Avancé et Intégration",
+                "title": "Intégration et CI/CD",
                 "topics": [
-                  "Tests multi-navigateurs",
-                  "Interaction avec pop-ups et éléments dynamiques",
-                  "Intégration CI/CD et débogage avancé",
-                  "Génération de rapports",
-                  "Pratique guidée et projets réels"
+                  "Tests multi-navigateurs (Chromium, Firefox, WebKit)",
+                  "Gestion des contextes et sessions",
+                  "Intégration dans les pipelines CI/CD",
+                  "Génération de rapports et screenshots"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "playwright-expert",
+          "title": "Playwright Expert",
+          "editor": "Jump iT",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Niveau 3",
+          "evaluation": "Projet",
+          "package_includes": "Support de cours expert et labs avancés",
+          "languages": ["FR"],
+          "tags": ["test", "e2e", "automation", "advanced", "performance"],
+          "search_keywords": [
+            "playwright",
+            "expert",
+            "advanced",
+            "performance",
+            "automation"
+          ],
+          "details": {
+            "description": "Maîtrisez les aspects avancés de Playwright pour construire une stratégie de test complète et performante. Débogage avancé, optimisation, patterns de conception et intégration avec des outils professionnels.",
+            "target_audience": [
+              "Testeurs Experts",
+              "Lead QA Engineers",
+              "Architectes en Test d'Automatisation"
+            ],
+            "objectives": [
+              "Implémenter des patterns avancés (BDD, Data-driven)",
+              "Optimiser les performances des tests",
+              "Déboguer et troubleshooter des scénarios complexes",
+              "Intégrer avec des frameworks et outils d'entreprise"
+            ],
+            "prerequisites": [
+              "Maîtrise de Playwright intermédiaire",
+              "Expérience solide en test d'automatisation"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Patterns et Optimisation",
+                "topics": [
+                  "BDD avec Cucumber et Playwright",
+                  "Data-driven testing et paramétrage",
+                  "Optimisation des performances (parallel execution)",
+                  "Gestion avancée des ressources et mémoire"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Débogage et Outils d'Entreprise",
+                "topics": [
+                  "Débogage avancé et inspection du DOM",
+                  "Trace et debugging timeline",
+                  "Intégration avec Allure Reports et TestRail",
+                  "API HTTP testing et mocking avec Playwright"
                 ]
               }
             ],
@@ -394,7 +530,6 @@
           "id": "appium",
           "title": "Appium",
           "editor": "Jump iT",
-          "reference": "APPIUM",
           "is_best_seller": false,
           "duration_days": 2,
           "level": "Niveau 2",
@@ -455,8 +590,8 @@
     {
       "id": "web-development",
       "name": "Développement Web",
-      "description": "Maîtrisez les compétences nécessaires pour créer des sites web modernes, interactifs et responsives adaptés aux besoins actuels.",
       "reference": "DEV-WEB",
+      "description": "Maîtrisez les compétences nécessaires pour créer des sites web modernes, interactifs et responsives adaptés aux besoins actuels.",
       "trainings": [
         {
           "id": "reactjs",
@@ -682,7 +817,6 @@
           "id": "angular-advanced",
           "title": "Angular Avancé",
           "editor": "Jump iT",
-          "reference": "ANGULAR-ADV",
           "is_best_seller": false,
           "duration_days": 3,
           "level": "Niveau 3",
@@ -793,7 +927,6 @@
           "id": "nextjs-advanced",
           "title": "Next.js Avancé",
           "editor": "Jump iT",
-          "reference": "NEXT-ADV",
           "is_best_seller": false,
           "duration_days": 2,
           "level": "Niveau 3",
@@ -847,7 +980,6 @@
           "id": "spring-java-intro",
           "title": "Introduction à Spring Java",
           "editor": "Jump iT",
-          "reference": "SPRING-BASICS",
           "is_best_seller": false,
           "duration_days": 4,
           "level": "Niveau 1",
@@ -915,7 +1047,6 @@
           "id": "spring-java-advanced",
           "title": "Spring Java Avancé",
           "editor": "Jump iT",
-          "reference": "SPRING-ADV",
           "is_best_seller": false,
           "duration_days": 3,
           "level": "Niveau 3",
@@ -979,7 +1110,6 @@
           "id": "nestjs-beginner",
           "title": "NestJS Débutant",
           "editor": "Jump iT",
-          "reference": "NEST-BASICS",
           "is_best_seller": false,
           "duration_days": 3,
           "level": "Niveau 1",
@@ -1262,7 +1392,6 @@
           "id": "react-native-beginner",
           "title": "React Native Débutant",
           "editor": "Jump iT",
-          "reference": "RN-BASICS",
           "is_best_seller": false,
           "duration_days": 3,
           "level": "Niveau 1",
@@ -1329,7 +1458,6 @@
           "id": "expo-go",
           "title": "Expo Go (React Native)",
           "editor": "Jump iT",
-          "reference": "EXPO-GO",
           "is_best_seller": false,
           "duration_days": 2,
           "level": "Niveau 1",
@@ -1439,6 +1567,7 @@
     {
       "id": "devops",
       "name": "DevOps",
+      "reference": "DEVOPS",
       "description": "Adoptez la culture DevOps. Automatisez le déploiement, gérez les conteneurs et orchestrez vos applications pour plus d'agilité.",
       "trainings": [
         {
@@ -1691,6 +1820,7 @@
     {
       "id": "rpa",
       "name": "RPA",
+      "reference": "RPA",
       "description": "Découvrez comment automatiser les tâches répétitives et améliorer l'efficacité opérationnelle grâce aux technologies d’automatisation robotisée des processus.",
       "trainings": [
         {

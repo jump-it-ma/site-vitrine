@@ -123,7 +123,7 @@ export default function TrainingDetailPage({
                 </div>
                 <div className="flex items-center gap-2">
                   <HiAcademicCap className="h-5 w-5" />
-                  <span>Niveau {training.level}</span>
+                  <span>{training.level}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <HiDocumentCheck className="h-5 w-5" />
@@ -158,10 +158,6 @@ export default function TrainingDetailPage({
                   <div className="flex items-center gap-2">
                     <HiCheckCircle className="h-5 w-5 text-green-500" />
                     <span>{training.package_includes}</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <HiCheckCircle className="h-5 w-5 text-green-500" />
-                    <span>Certification PECB mondialement reconnue</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <HiCheckCircle className="h-5 w-5 text-green-500" />
@@ -416,13 +412,6 @@ export default function TrainingDetailPage({
                         {training.duration_days} jours (
                         {training.duration_days * 7}h)
                       </p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <HiAcademicCap className="h-5 w-5 text-purple-500" />
-                    <div>
-                      <p className="font-medium text-gray-900">Certification</p>
-                      <p className="text-gray-500">PECB {training.level}</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
