@@ -160,7 +160,7 @@
           "reference": "AI003",
           "is_best_seller": false,
           "duration_days": 5,
-          "level": "Niveau 3",
+          "level": "Niveau 4",
           "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
