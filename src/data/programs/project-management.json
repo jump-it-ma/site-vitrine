@@ -125,7 +125,7 @@
           "reference": "PR701",
           "is_best_seller": false,
           "duration_days": 3,
-          "level": "Débutant/Intermédiaire",
+          "level": "Niveau 1",
           "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
@@ -194,7 +194,7 @@
           "reference": "PR702",
           "is_best_seller": false,
           "duration_days": 2,
-          "level": "Avancé",
+          "level": "Niveau 3",
           "evaluation": "Scenario-based QCM",
           "pricing": {
             "currency": "EUR",
