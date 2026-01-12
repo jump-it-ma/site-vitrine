@@ -1154,8 +1154,8 @@
           }
         },
         {
-          "id": "iso-22301-lead-implementer-auditor",
-          "title": "ISO 22301 Lead Implementer / Lead Auditor",
+          "id": "iso-22301-lead-implementer",
+          "title": "ISO 22301 Lead Implementer",
           "editor": "PECB",
           "reference": "ISR017",
           "is_best_seller": true,
@@ -1169,23 +1169,20 @@
           },
           "package_includes": "Support de cours officiel et Voucher Examen",
           "languages": ["FR", "EN"],
-          "tags": ["iso 22301", "lead implementer", "lead auditor", "advanced"],
+          "tags": ["iso 22301", "lead implementer", "advanced"],
           "search_keywords": [
             "lead implementer",
-            "lead auditor",
             "certification expert",
             "iso 22301"
           ],
           "details": {
-            "description": "Niveau Expert. Choisissez entre Lead Implementer (pour mettre en place le SMCA) ou Lead Auditor (pour auditer le SMCA).",
+            "description": "Niveau Expert. Formation pour mettre en place le SMCA.",
             "target_audience": [
               "Consultants",
-              "Auditeurs",
               "Responsables BCMS expérimentés"
             ],
             "objectives": [
-              "Mener une implémentation complète (LI)",
-              "Planifier et diriger un audit (LA)",
+              "Mener une implémentation complète",
               "Préparer la certification Lead"
             ],
             "prerequisites": ["Connaissance de base ISO 22301 recommandée"],
@@ -1193,10 +1190,7 @@
               {
                 "day": 1,
                 "title": "Introduction",
-                "topics": [
-                  "Cadre normatif",
-                  "Lancement du projet (LI) / Principes d'audit (LA)"
-                ]
+                "topics": ["Cadre normatif", "Lancement du projet"]
               },
               {
                 "day": 2,
@@ -1208,16 +1202,73 @@
               },
               {
                 "day": 3,
-                "title": "Mise en œuvre / Audit",
-                "topics": [
-                  "Procédures de continuité",
-                  "Réalisation de l'audit (LA)"
-                ]
+                "title": "Mise en œuvre",
+                "topics": ["Procédures de continuité"]
               },
               {
                 "day": 4,
                 "title": "Évaluation",
-                "topics": ["Tests et exercices", "Rapport d'audit et clôture"]
+                "topics": ["Tests et exercices"]
+              },
+              {
+                "day": 5,
+                "title": "Examen",
+                "topics": ["Passage de l'examen de certification"]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "iso-22301-lead-auditor",
+          "title": "ISO 22301 Lead Auditor",
+          "editor": "PECB",
+          "reference": "ISR017",
+          "is_best_seller": true,
+          "duration_days": 5,
+          "level": "Niveau 3",
+          "evaluation": "QCM",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 665,
+            "note": "Official Training Package (incl. voucher)"
+          },
+          "package_includes": "Support de cours officiel et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["iso 22301", "lead auditor", "advanced"],
+          "search_keywords": [
+            "lead auditor",
+            "certification expert",
+            "iso 22301"
+          ],
+          "details": {
+            "description": "Niveau Expert. Formation pour auditer le SMCA.",
+            "target_audience": ["Auditeurs", "Responsables BCMS expérimentés"],
+            "objectives": [
+              "Planifier et diriger un audit",
+              "Préparer la certification Lead"
+            ],
+            "prerequisites": ["Connaissance de base ISO 22301 recommandée"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction",
+                "topics": ["Principes d'audit", "Lancement du projet"]
+              },
+              {
+                "day": 2,
+                "title": "Planification",
+                "topics": ["Analyse d'Impact (BIA) et Risques"]
+              },
+              {
+                "day": 3,
+                "title": "Audit",
+                "topics": ["Réalisation de l'audit"]
+              },
+              {
+                "day": 4,
+                "title": "Évaluation",
+                "topics": ["Rapport d'audit et clôture"]
               },
               {
                 "day": 5,
