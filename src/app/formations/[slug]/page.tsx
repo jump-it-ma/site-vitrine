@@ -14,7 +14,6 @@ import ReturnToTop from "../../../components/ReturnToTop";
 import { pageMetadata } from "../../../content/general";
 import { formationsData } from "../../../data/formationsData";
 import {
-  currency,
   dailyHours,
   datesDisplayedNumber,
   fixedReferenceDate,
@@ -23,6 +22,39 @@ import {
   getNextMondaysSeparatedBy3Weeks,
   readableDateFromString,
 } from "../../../utils/functions";
+import { TrainingCatalog } from "@/components/Training";
+import { HierarchicalProgramData } from "@/types/training";
+import digitalTrustData from "@/data/programs/digital-trust.json";
+import technicalTrainingData from "@/data/programs/technical-training.json";
+import agileManagementData from "@/data/programs/agile-management.json";
+import projectManagementData from "@/data/programs/project-management.json";
+import itServiceManagementData from "@/data/programs/it-service-management.json";
+import enterpriseArchitectureData from "@/data/programs/enterprise-architecture.json";
+import softwareEngineeringData from "@/data/programs/software-engineering.json";
+import processManagementData from "@/data/programs/process-management.json";
+import digitalManagementTechnologiesData from "@/data/programs/digital-management-technologies.json";
+import aiGovernanceManagementData from "@/data/programs/ai-governance-management.json";
+
+// Map program slugs to data
+const programsMap: Record<string, HierarchicalProgramData> = {
+  "digital-trust": digitalTrustData as HierarchicalProgramData,
+  "technical-training": technicalTrainingData as HierarchicalProgramData,
+  "agile-management": agileManagementData as unknown as HierarchicalProgramData,
+  "project-management":
+    projectManagementData as unknown as HierarchicalProgramData,
+  "it-service-management":
+    itServiceManagementData as unknown as HierarchicalProgramData,
+  "enterprise-architecture":
+    enterpriseArchitectureData as unknown as HierarchicalProgramData,
+  "software-engineering":
+    softwareEngineeringData as unknown as HierarchicalProgramData,
+  "process-management":
+    processManagementData as unknown as HierarchicalProgramData,
+  "digital-management-technologies":
+    digitalManagementTechnologiesData as unknown as HierarchicalProgramData,
+  "ai-governance-management":
+    aiGovernanceManagementData as unknown as HierarchicalProgramData,
+};
 
 const ibmFont = ibmCondensedFont;
 
@@ -33,12 +65,41 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const formation_id = params.slug;
+  const slug = params.slug;
+
+  // Check if this is a program page
+  const programData = programsMap[slug];
+  if (programData) {
+    return {
+      title: `Jump iT - ${programData.program.title}`,
+      description: programData.program.description,
+      metadataBase: new URL(pageMetadata.baseUrl),
+      alternates: {
+        canonical: `/formations/${slug}`,
+        languages: { fr: `/formations/${slug}` },
+      },
+      openGraph: {
+        title: `Jump iT - ${programData.program.title}`,
+        description: programData.program.description,
+        siteName: pageMetadata.siteName,
+        url: `https://www.jumpit.ma/formations/${slug}`,
+        locale: "fr",
+        type: "website",
+      },
+      themeColor: "#644E9B",
+      category: "technology",
+    };
+  }
+
+  // Otherwise handle as formation
+  const formation_id = slug;
   const formation = formationsData.find(
     (formation) => formation.formation_id === formation_id
   );
   return {
-    title: formation ? "JumpIT - Formation " + formation.title : "JumpIT - 404",
+    title: formation
+      ? "Jump iT - Formation " + formation.title
+      : "Jump iT - 404",
     description: pageMetadata.description,
     metadataBase: new URL(pageMetadata.baseUrl),
     alternates: {
@@ -130,8 +191,37 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function Page({ params }: Props) {
-  const formation_id = params.slug;
+export default async function Page({
+  params,
+  searchParams,
+}: {
+  params: { slug: string };
+  searchParams: Promise<{ category?: string }>;
+}) {
+  const slug = params.slug;
+  const resolvedSearchParams = await searchParams;
+  const categoryId = resolvedSearchParams.category;
+
+  // Check if this is a new program page
+  const programData = programsMap[slug];
+  if (programData) {
+    return (
+      <div className="flex min-h-screen flex-col bg-ac-gray">
+        <ReturnToTop />
+        <Navbar />
+        <main className="flex-1">
+          <TrainingCatalog
+            programData={programData}
+            initialCategoryId={categoryId}
+          />
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+
+  // Otherwise, handle as existing formation
+  const formation_id = slug;
   const formation = formationsData.find(
     (formation) => formation.formation_id === formation_id
   );
@@ -168,7 +258,7 @@ export default function Page({ params }: Props) {
         },
         provider: {
           "@type": "Organization",
-          name: "JumpIT",
+          name: "Jump iT",
         },
         hasCourseInstance: {
           "@type": "CourseInstance",
@@ -195,7 +285,7 @@ export default function Page({ params }: Props) {
             description: course,
             provider: {
               "@type": "Organization",
-              name: "JumpIT",
+              name: "Jump iT",
             },
           };
         }),

@@ -1,0 +1,1684 @@
+{
+  "program": {
+    "id": "digital-trust",
+    "title": "CYBER RESILIENCE & QHSE",
+    "description": "Formations en Cyber Résilience, Sécurité de l'Information, Gestion des Risques, Qualité, Hygiène, Sécurité, Environnement (QHSE), RSE et Continuité d'Activité.",
+    "categories": [
+      "ISO 27001",
+      "ISO 27035",
+      "ISO 27005 / EBIOS",
+      "ISO 27032",
+      "DORA",
+      "GDPR / ISO 27701",
+      "ISO 9001",
+      "ISO 14001",
+      "ISO 22301",
+      "ISO 31000"
+    ]
+  },
+  "filters": {
+    "categories": [
+      "ISO 27001",
+      "ISO 27035",
+      "ISO 27005 / EBIOS",
+      "ISO 27032",
+      "DORA",
+      "GDPR / ISO 27701",
+      "ISO 9001",
+      "ISO 14001",
+      "ISO 22301",
+      "ISO 31000"
+    ],
+    "editors": ["PECB"],
+    "durations": [2, 3, 5],
+    "levels": [
+      "IP2",
+      "IP2+",
+      "IP3",
+      "IP3+",
+      "IP3 / IP3+",
+      "Intermédiaire (IP2)",
+      "Avancé (IP3/IP3+)"
+    ],
+    "languages": ["FR", "EN"]
+  },
+  "categories": [
+    {
+      "id": "iso-27001",
+      "name": "ISO 27001",
+      "description": "Information Security Management System",
+      "reference": "ISO 27001 : 2022",
+      "trainings": [
+        {
+          "id": "ISR001",
+          "title": "ISO27001 Foundation",
+          "editor": "PECB",
+          "reference": "ISO 27001 : 2022",
+          "is_best_seller": true,
+          "duration_days": 2,
+          "level": "IP2",
+          "evaluation": "MCQ",
+          "package_includes": "Official Training Package (incl. voucher)",
+          "languages": ["FR", "EN"],
+          "tags": ["foundation", "security", "isms"],
+          "search_keywords": [
+            "iso 27001",
+            "foundation",
+            "security",
+            "isms",
+            "information security"
+          ],
+          "details": {
+            "description": "La formation ISO/IEC 27001 Foundation vous permet de comprendre les éléments fondamentaux pour mettre en œuvre et gérer un Système de Management de la Sécurité de l'Information (SMSI). Cette formation certifiante PECB vous prépare à l'examen de certification ISO 27001 Foundation.",
+            "target_audience": [
+              "Toute personne impliquée dans la sécurité de l'information",
+              "Professionnels souhaitant acquérir des connaissances fondamentales sur les SMSI",
+              "Personnes cherchant à comprendre les exigences de la norme ISO 27001",
+              "Consultants et auditeurs débutants en sécurité de l'information"
+            ],
+            "objectives": [
+              "Comprendre les concepts, principes et terminologie de la sécurité de l'information",
+              "Expliquer les principales exigences de l'ISO/IEC 27001:2022 pour établir un SMSI",
+              "Identifier les approches pratiques, méthodes et techniques pour la mise en œuvre d'un SMSI",
+              "Comprendre la corrélation entre ISO 27001, ISO 27002 et autres normes connexes"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction à ISO/IEC 27001",
+                "topics": [
+                  "Introduction aux systèmes de management",
+                  "Concepts fondamentaux de la sécurité de l'information",
+                  "Cadre normatif et réglementation",
+                  "Présentation de la norme ISO/IEC 27001:2022"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Exigences du SMSI et Certification",
+                "topics": [
+                  "Exigences de la norme ISO 27001 (clauses 4-10)",
+                  "Annexe A : Mesures de sécurité",
+                  "Processus de certification",
+                  "Préparation à l'examen de certification"
+                ]
+              }
+            ],
+            "faqs": [
+              {
+                "question": "Quels sont les prérequis pour cette formation ?",
+                "answer": "Aucun prérequis spécifique n'est requis. Une connaissance générale des concepts de sécurité de l'information est recommandée."
+              },
+              {
+                "question": "Quel est le format de l'examen ?",
+                "answer": "L'examen consiste en un QCM de 75 questions à compléter en 1 heure 30. Le score minimum de réussite est de 70%."
+              },
+              {
+                "question": "La certification est-elle reconnue internationalement ?",
+                "answer": "Oui, la certification PECB ISO 27001 Foundation est reconnue internationalement et valide vos compétences en SMSI."
+              }
+            ]
+          }
+        },
+        {
+          "id": "ISR002-003",
+          "title": "ISO27001 Lead Implementer / Lead Auditor",
+          "editor": "PECB",
+          "reference": "ISO 27001 : 2022",
+          "is_best_seller": true,
+          "duration_days": 5,
+          "level": "IP3 / IP3+",
+          "evaluation": "MCQ",
+          "package_includes": "Official Training Package (incl. voucher)",
+          "languages": ["FR", "EN"],
+          "tags": ["lead", "implementer", "auditor", "security"],
+          "search_keywords": [
+            "iso 27001",
+            "lead implementer",
+            "lead auditor",
+            "security",
+            "isms",
+            "audit"
+          ],
+          "details": {
+            "description": "Cette formation intensive de 5 jours vous permet de maîtriser la mise en œuvre et/ou l'audit d'un SMSI selon ISO 27001. Vous acquerrez les compétences pour diriger un projet d'implémentation ou conduire des audits de certification.",
+            "target_audience": [
+              "Responsables de la mise en œuvre d'un SMSI",
+              "Consultants et experts en sécurité de l'information",
+              "Auditeurs internes et externes ISO 27001",
+              "Responsables conformité et sécurité",
+              "Chefs de projet SMSI"
+            ],
+            "objectives": [
+              "Expliquer les concepts et principes fondamentaux d'un SMSI basé sur ISO 27001",
+              "Interpréter les exigences d'ISO 27001 du point de vue d'un implémenteur/auditeur",
+              "Initier et planifier la mise en œuvre d'un SMSI selon ISO 27001",
+              "Préparer une organisation à un audit de certification tierce partie",
+              "Planifier, conduire et clôturer un audit de conformité ISO 27001"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction et Initiation du SMSI",
+                "topics": [
+                  "Normes et cadres réglementaires",
+                  "Concepts fondamentaux de la sécurité de l'information",
+                  "Initiation du SMSI et définition du périmètre",
+                  "Leadership et engagement de la direction"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Planification de la mise en œuvre",
+                "topics": [
+                  "Politique de sécurité de l'information",
+                  "Appréciation des risques",
+                  "Déclaration d'applicabilité",
+                  "Objectifs de sécurité"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Mise en œuvre du SMSI",
+                "topics": [
+                  "Mesures de sécurité de l'Annexe A",
+                  "Gestion des ressources et compétences",
+                  "Sensibilisation et communication",
+                  "Gestion documentaire"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Surveillance et Amélioration / Audit",
+                "topics": [
+                  "Surveillance et mesure de la performance",
+                  "Audit interne",
+                  "Revue de direction",
+                  "Non-conformités et actions correctives"
+                ]
+              },
+              {
+                "day": 5,
+                "title": "Préparation à la Certification",
+                "topics": [
+                  "Processus de certification",
+                  "Amélioration continue",
+                  "Révision et préparation à l'examen",
+                  "Examen de certification"
+                ]
+              }
+            ],
+            "faqs": [
+              {
+                "question": "Quelle est la différence entre Lead Implementer et Lead Auditor ?",
+                "answer": "Le Lead Implementer se concentre sur la mise en œuvre d'un SMSI tandis que le Lead Auditor se spécialise dans la conduite d'audits. Cette formation couvre les deux aspects."
+              },
+              {
+                "question": "Combien d'expérience est nécessaire pour la certification ?",
+                "answer": "Pour le Lead Implementer : 2 ans d'expérience en sécurité de l'information dont 1 an en implémentation SMSI. Pour le Lead Auditor : 2 ans d'expérience dont 300 heures d'audit."
+              },
+              {
+                "question": "Quel est le format de l'examen ?",
+                "answer": "L'examen est un essai de 3 heures composé de questions ouvertes basées sur des scénarios. Le score minimum est de 70%."
+              }
+            ]
+          }
+        },
+        {
+          "id": "ISR004",
+          "title": "Chief Information Security Officer",
+          "editor": "PECB",
+          "reference": "ISO 27001 : 2022",
+          "is_best_seller": false,
+          "duration_days": 5,
+          "level": "IP3+",
+          "evaluation": "MCQ",
+          "package_includes": "Official Training Package (incl. voucher)",
+          "languages": ["EN"],
+          "tags": ["ciso", "executive", "security", "management"],
+          "search_keywords": [
+            "ciso",
+            "chief information security officer",
+            "security officer",
+            "executive"
+          ],
+          "details": {
+            "description": "Cette formation exécutive prépare les professionnels à assumer le rôle de CISO (Chief Information Security Officer). Elle couvre la conception, la mise en œuvre et la gestion d'un programme de sécurité de l'information au niveau stratégique.",
+            "target_audience": [
+              "Aspirants CISO et directeurs de la sécurité",
+              "Responsables sécurité expérimentés",
+              "Directeurs informatiques évoluant vers la sécurité",
+              "Consultants senior en cybersécurité",
+              "Responsables conformité et gouvernance"
+            ],
+            "objectives": [
+              "Expliquer les principes fondamentaux de la sécurité de l'information",
+              "Comprendre les rôles, responsabilités et défis du CISO",
+              "Concevoir et développer un programme de sécurité de l'information efficace",
+              "Adopter les cadres, lois et réglementations applicables",
+              "Identifier, analyser et traiter les risques de sécurité de l'information"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Fondamentaux et Rôle du CISO",
+                "topics": [
+                  "Principes de sécurité de l'information",
+                  "Rôle et responsabilités du CISO",
+                  "Considérations éthiques",
+                  "Défis actuels de la cybersécurité"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Conception du Programme de Sécurité",
+                "topics": [
+                  "Stratégie de sécurité alignée avec les objectifs métier",
+                  "Politique et gouvernance de sécurité",
+                  "Architecture de sécurité d'entreprise",
+                  "Gestion des parties prenantes"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Gestion des Risques",
+                "topics": [
+                  "Cadres de gestion des risques",
+                  "Identification et analyse des risques",
+                  "Traitement des risques",
+                  "Communication des risques"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Opérations de Sécurité",
+                "topics": [
+                  "Contrôles de sécurité opérationnels",
+                  "Gestion des incidents",
+                  "Continuité d'activité",
+                  "Gestion du changement"
+                ]
+              },
+              {
+                "day": 5,
+                "title": "Leadership et Amélioration Continue",
+                "topics": [
+                  "Culture de la sécurité de l'information",
+                  "Métriques et KPIs",
+                  "Amélioration continue",
+                  "Examen de certification"
+                ]
+              }
+            ],
+            "faqs": [
+              {
+                "question": "Quelle expérience est recommandée ?",
+                "answer": "Une expérience significative en sécurité de l'information (5+ ans) et en management est fortement recommandée."
+              },
+              {
+                "question": "Cette certification remplace-t-elle CISSP ?",
+                "answer": "Non, elle la complète. PECB CISO se concentre sur les aspects managériaux et stratégiques tandis que CISSP couvre davantage les aspects techniques."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "iso-27035",
+      "name": "ISO 27035",
+      "description": "Security Incident Management",
+      "reference": "ISO 27035 : 2023",
+      "trainings": [
+        {
+          "id": "ISR005",
+          "title": "ISO27035 Foundation",
+          "editor": "PECB",
+          "reference": "ISO 27035 : 2023",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "IP2",
+          "evaluation": "MCQ",
+          "package_includes": "Official Training Package (incl. voucher)",
+          "languages": ["FR", "EN"],
+          "tags": ["foundation", "incident", "security"],
+          "search_keywords": [
+            "iso 27035",
+            "foundation",
+            "incident management",
+            "security incident"
+          ],
+          "details": {
+            "description": "Cette formation vous permet de comprendre les éléments fondamentaux pour implémenter un plan de gestion des incidents de sécurité de l'information selon ISO 27035.",
+            "target_audience": [
+              "Professionnels IT impliqués dans la gestion des incidents",
+              "Membres d'équipes de réponse aux incidents",
+              "Responsables sécurité souhaitant comprendre la gestion des incidents",
+              "Personnes débutant dans le domaine de la cybersécurité"
+            ],
+            "objectives": [
+              "Comprendre les processus de gestion des incidents de sécurité",
+              "Apprendre les éléments de base pour implémenter un plan de gestion des incidents",
+              "Identifier les phases clés de la gestion des incidents selon ISO 27035",
+              "Comprendre la corrélation avec ISO 27001 et autres normes"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction à la Gestion des Incidents",
+                "topics": [
+                  "Concepts fondamentaux",
+                  "Cadre normatif ISO 27035",
+                  "Phases de la gestion des incidents",
+                  "Rôles et responsabilités"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Mise en Œuvre et Certification",
+                "topics": [
+                  "Planification de la réponse aux incidents",
+                  "Détection et signalement",
+                  "Évaluation et décision",
+                  "Préparation à l'examen"
+                ]
+              }
+            ],
+            "faqs": [
+              {
+                "question": "Quels sont les prérequis ?",
+                "answer": "Aucun prérequis formel. Une connaissance de base de la sécurité informatique est recommandée."
+              }
+            ]
+          }
+        },
+        {
+          "id": "ISR006",
+          "title": "ISO27035 Lead Incident Manager",
+          "editor": "PECB",
+          "reference": "ISO 27035 : 2023",
+          "is_best_seller": false,
+          "duration_days": 5,
+          "level": "IP3",
+          "evaluation": "MCQ",
+          "package_includes": "Official Training Package (incl. voucher)",
+          "languages": ["FR", "EN"],
+          "tags": ["lead", "incident", "manager", "security"],
+          "search_keywords": [
+            "iso 27035",
+            "lead incident manager",
+            "incident management",
+            "security"
+          ],
+          "details": {
+            "description": "Cette formation vous permet de maîtriser la gestion des incidents de sécurité de l'information. Vous apprendrez à établir et gérer une équipe de réponse aux incidents (IRT) et à mettre en œuvre un processus complet de gestion des incidents.",
+            "target_audience": [
+              "Gestionnaires et consultants en gestion des incidents",
+              "Professionnels établissant des équipes de réponse aux incidents",
+              "Responsables sécurité et gestionnaires de risques IT",
+              "Membres d'équipes SOC (Security Operations Center)",
+              "Coordinateurs de réponse aux incidents"
+            ],
+            "objectives": [
+              "Expliquer les principes fondamentaux de la gestion des incidents",
+              "Développer et implémenter des plans de réponse aux incidents efficaces",
+              "Conduire des évaluations de risques pour identifier les menaces",
+              "Appliquer les bonnes pratiques internationales",
+              "Conduire des analyses post-incident et identifier les leçons apprises"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction et Planification",
+                "topics": [
+                  "Concepts et principes de la gestion des incidents",
+                  "Cadre normatif ISO 27035",
+                  "Politique de gestion des incidents",
+                  "Établissement d'une équipe IRT"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Détection et Analyse",
+                "topics": [
+                  "Mécanismes de détection",
+                  "Classification des incidents",
+                  "Analyse systématique",
+                  "Priorisation et escalade"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Réponse et Confinement",
+                "topics": [
+                  "Stratégies de confinement",
+                  "Éradication et récupération",
+                  "Coordination des équipes",
+                  "Communication de crise"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Post-Incident et Amélioration",
+                "topics": [
+                  "Analyse post-incident",
+                  "Préservation des preuves",
+                  "Conformité légale et forensique",
+                  "Intégration avec ISO 27001 et continuité d'activité"
+                ]
+              },
+              {
+                "day": 5,
+                "title": "Révision et Certification",
+                "topics": [
+                  "Études de cas pratiques",
+                  "Amélioration continue",
+                  "Révision générale",
+                  "Examen de certification"
+                ]
+              }
+            ],
+            "faqs": [
+              {
+                "question": "Quelle est la différence avec la formation Foundation ?",
+                "answer": "La formation Lead Incident Manager est plus approfondie et vous prépare à diriger la gestion des incidents, tandis que Foundation donne une vue d'ensemble."
+              },
+              {
+                "question": "Comment cette certification s'articule avec ISO 27001 ?",
+                "answer": "ISO 27035 complète ISO 27001 en détaillant le processus de gestion des incidents de sécurité mentionné dans l'Annexe A."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "iso-27005-ebios",
+      "name": "ISO 27005 / EBIOS",
+      "description": "Risk Management",
+      "reference": "ISO 27005 : 2022",
+      "trainings": [
+        {
+          "id": "ISR007",
+          "title": "ISO27005 Foundation",
+          "editor": "PECB",
+          "reference": "ISO 27005 : 2022",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "IP2",
+          "evaluation": "MCQ",
+          "package_includes": "Official Training Package (incl. voucher)",
+          "languages": ["FR", "EN"],
+          "tags": ["foundation", "risk", "security"],
+          "search_keywords": [
+            "iso 27005",
+            "foundation",
+            "risk management",
+            "security risk"
+          ],
+          "details": {
+            "description": "Cette formation vous permet de comprendre les concepts fondamentaux de la gestion des risques de sécurité de l'information selon ISO 27005.",
+            "target_audience": [
+              "Professionnels impliqués dans la gestion des risques",
+              "Membres d'équipes de sécurité de l'information",
+              "Personnes débutant dans l'analyse des risques",
+              "Consultants et auditeurs"
+            ],
+            "objectives": [
+              "Comprendre les principes de la gestion des risques selon ISO 27005 et ISO 31000",
+              "Identifier les différentes méthodes d'évaluation des risques",
+              "Comprendre le processus de traitement des risques",
+              "Connaître la corrélation avec ISO 27001"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Fondamentaux de la Gestion des Risques",
+                "topics": [
+                  "Concepts et principes",
+                  "Cadre normatif",
+                  "Processus de gestion des risques",
+                  "Contexte organisationnel"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Évaluation et Traitement des Risques",
+                "topics": [
+                  "Identification des risques",
+                  "Analyse et évaluation",
+                  "Options de traitement",
+                  "Préparation à l'examen"
+                ]
+              }
+            ],
+            "faqs": [
+              {
+                "question": "Quels sont les prérequis ?",
+                "answer": "Aucun prérequis formel n'est requis."
+              }
+            ]
+          }
+        },
+        {
+          "id": "ISR008",
+          "title": "ISO27005 Risk Manager",
+          "editor": "PECB",
+          "reference": "ISO 27005 : 2022",
+          "is_best_seller": false,
+          "duration_days": 3,
+          "level": "IP3",
+          "evaluation": "MCQ",
+          "package_includes": "Official Training Package (incl. voucher)",
+          "languages": ["FR", "EN"],
+          "tags": ["risk", "manager", "security"],
+          "search_keywords": [
+            "iso 27005",
+            "risk manager",
+            "risk management",
+            "security"
+          ],
+          "details": {
+            "description": "Cette formation vous permet de maîtriser les concepts et techniques de la gestion des risques de sécurité de l'information selon ISO 27005.",
+            "target_audience": [
+              "Gestionnaires de risques de sécurité de l'information",
+              "Responsables sécurité et conformité",
+              "Consultants en gestion des risques",
+              "Membres d'équipes SMSI"
+            ],
+            "objectives": [
+              "Comprendre les concepts et principes de gestion des risques basés sur ISO 27005",
+              "Appliquer les processus de gestion des risques",
+              "Conduire des évaluations de risques efficaces",
+              "Comprendre les différentes méthodologies (OCTAVE, EBIOS, MEHARI, etc.)"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Fondamentaux et Contexte",
+                "topics": [
+                  "Principes de gestion des risques",
+                  "Cadre ISO 27005 et ISO 31000",
+                  "Établissement du contexte",
+                  "Critères de risque"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Évaluation des Risques",
+                "topics": [
+                  "Identification des risques",
+                  "Analyse des risques",
+                  "Évaluation des risques",
+                  "Méthodologies (OCTAVE, EBIOS, MEHARI)"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Traitement et Certification",
+                "topics": [
+                  "Options de traitement des risques",
+                  "Communication des risques",
+                  "Surveillance et révision",
+                  "Examen de certification"
+                ]
+              }
+            ],
+            "faqs": [
+              {
+                "question": "Quelle est la différence entre Risk Manager et Lead Risk Manager ?",
+                "answer": "Le Risk Manager (3 jours) couvre les fondamentaux tandis que le Lead Risk Manager (5 jours) approfondit les aspects stratégiques et de leadership."
+              }
+            ]
+          }
+        },
+        {
+          "id": "ISR008-LRM",
+          "title": "ISO27005 Lead Risk Manager",
+          "editor": "PECB",
+          "reference": "ISO 27005 : 2022",
+          "is_best_seller": false,
+          "duration_days": 5,
+          "level": "IP3",
+          "evaluation": "MCQ",
+          "package_includes": "Official Training Package (incl. voucher)",
+          "languages": ["FR", "EN"],
+          "tags": ["lead", "risk", "manager", "security"],
+          "search_keywords": [
+            "iso 27005",
+            "lead risk manager",
+            "risk management",
+            "security"
+          ],
+          "details": {
+            "description": "Cette formation avancée vous permet de maîtriser la mise en œuvre et la gestion d'un programme de gestion des risques de sécurité de l'information selon ISO 27005.",
+            "target_audience": [
+              "Responsables de programmes de gestion des risques",
+              "Consultants senior en sécurité",
+              "RSSI et directeurs sécurité",
+              "Auditeurs et gestionnaires de conformité"
+            ],
+            "objectives": [
+              "Établir, maintenir et améliorer un cadre de gestion des risques",
+              "Appliquer les processus de gestion des risques selon ISO 27005",
+              "Planifier et établir des activités de communication et consultation",
+              "Maîtriser les différentes méthodologies d'évaluation des risques"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Fondamentaux et Cadre",
+                "topics": [
+                  "Principes selon ISO 27005 et ISO 31000",
+                  "Établissement du cadre de gestion",
+                  "Gouvernance des risques",
+                  "Intégration avec ISO 27001"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Identification et Analyse",
+                "topics": [
+                  "Identification des actifs et menaces",
+                  "Identification des vulnérabilités",
+                  "Analyse des risques",
+                  "Critères d'évaluation"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Évaluation et Traitement",
+                "topics": [
+                  "Évaluation des risques",
+                  "Décisions de traitement",
+                  "Plans de traitement",
+                  "Acceptation des risques résiduels"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Méthodologies et Communication",
+                "topics": [
+                  "OCTAVE, EBIOS, MEHARI, CRAMM, NIST",
+                  "Communication et consultation",
+                  "Documentation",
+                  "Surveillance et révision"
+                ]
+              },
+              {
+                "day": 5,
+                "title": "Amélioration et Certification",
+                "topics": [
+                  "Amélioration continue",
+                  "Études de cas",
+                  "Révision générale",
+                  "Examen de certification"
+                ]
+              }
+            ],
+            "faqs": [
+              {
+                "question": "Quelles méthodologies sont couvertes ?",
+                "answer": "OCTAVE, EBIOS, MEHARI, CRAMM, NIST et Harmonized TRA sont étudiées et comparées."
+              }
+            ]
+          }
+        },
+        {
+          "id": "ISR010",
+          "title": "EBIOS Risk Manager",
+          "editor": "PECB",
+          "reference": "EBIOS",
+          "is_best_seller": false,
+          "duration_days": 3,
+          "level": "IP3",
+          "evaluation": "MCQ",
+          "package_includes": "Official Training Package (incl. voucher)",
+          "languages": ["FR", "EN"],
+          "tags": ["ebios", "risk", "manager", "french"],
+          "search_keywords": [
+            "ebios",
+            "risk manager",
+            "risk management",
+            "french method",
+            "anssi"
+          ],
+          "details": {
+            "description": "Cette formation vous permet de maîtriser la méthode EBIOS (Expression des Besoins et Identification des Objectifs de Sécurité), méthode française de gestion des risques recommandée par l'ANSSI.",
+            "target_audience": [
+              "Professionnels souhaitant maîtriser la méthode EBIOS",
+              "Gestionnaires de risques cyber",
+              "Responsables sécurité dans des organisations françaises",
+              "Consultants GRC (Gouvernance, Risques, Conformité)"
+            ],
+            "objectives": [
+              "Comprendre les principes fondamentaux de la méthode EBIOS",
+              "Maîtriser les 5 phases clés de EBIOS",
+              "Conduire une étude EBIOS complète",
+              "Analyser et communiquer les résultats d'une étude"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction à EBIOS",
+                "topics": [
+                  "Historique et évolution de EBIOS",
+                  "Principes fondamentaux",
+                  "Phase 1 : Périmètre et socle de sécurité",
+                  "Phase 2 : Sources de risque"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Scénarios et Analyse",
+                "topics": [
+                  "Phase 3 : Scénarios stratégiques",
+                  "Phase 4 : Scénarios opérationnels",
+                  "Ateliers pratiques",
+                  "Évaluation des risques"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Traitement et Certification",
+                "topics": [
+                  "Phase 5 : Traitement du risque",
+                  "Documentation et communication",
+                  "Atelier de synthèse",
+                  "Examen de certification"
+                ]
+              }
+            ],
+            "faqs": [
+              {
+                "question": "EBIOS est-elle reconnue à l'international ?",
+                "answer": "EBIOS est principalement utilisée en France et dans les pays francophones, mais elle est compatible avec ISO 27005 et reconnue par l'ANSSI."
+              },
+              {
+                "question": "Quelle version d'EBIOS est couverte ?",
+                "answer": "La formation couvre EBIOS Risk Manager, la dernière version publiée par l'ANSSI en 2018."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "iso-27032",
+      "name": "ISO 27032",
+      "description": "Cybersecurity",
+      "reference": "ISO 27032 : 2012",
+      "trainings": [
+        {
+          "id": "ISR013",
+          "title": "ISO27032 Cybersecurity Foundation",
+          "editor": "PECB",
+          "reference": "ISO 27032 : 2012",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "IP2+",
+          "evaluation": "MCQ",
+          "package_includes": "Official Training Package (incl. voucher)",
+          "languages": ["FR", "EN"],
+          "tags": ["foundation", "cybersecurity", "security"],
+          "search_keywords": [
+            "iso 27032",
+            "cybersecurity",
+            "foundation",
+            "cyber"
+          ],
+          "details": {
+            "description": "Cette formation vous permet de comprendre les concepts fondamentaux de la cybersécurité selon ISO 27032 et le cadre NIST Cybersecurity Framework.",
+            "target_audience": [
+              "Professionnels IT intéressés par la cybersécurité",
+              "Membres d'équipes de sécurité",
+              "Personnes cherchant une introduction à la cybersécurité",
+              "Gestionnaires souhaitant comprendre les enjeux cyber"
+            ],
+            "objectives": [
+              "Comprendre les concepts fondamentaux de la cybersécurité",
+              "Connaître la relation entre ISO 27032 et le NIST Framework",
+              "Identifier les composantes d'un programme de cybersécurité",
+              "Comprendre les principaux types de cyberattaques"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Fondamentaux de la Cybersécurité",
+                "topics": [
+                  "Concepts et définitions",
+                  "Paysage des menaces cyber",
+                  "ISO 27032 et NIST Framework",
+                  "Parties prenantes de la cybersécurité"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Composantes et Certification",
+                "topics": [
+                  "Mécanismes d'attaque",
+                  "Contrôles de cybersécurité",
+                  "Partage d'informations",
+                  "Préparation à l'examen"
+                ]
+              }
+            ],
+            "faqs": [
+              {
+                "question": "Quels sont les prérequis ?",
+                "answer": "Aucun prérequis formel. Une connaissance générale de l'IT est recommandée."
+              }
+            ]
+          }
+        },
+        {
+          "id": "ISR014",
+          "title": "ISO27032 Lead Cybersecurity Manager",
+          "editor": "PECB",
+          "reference": "ISO 27032 : 2012",
+          "is_best_seller": false,
+          "duration_days": 5,
+          "level": "IP3+",
+          "evaluation": "MCQ",
+          "package_includes": "Official Training Package (incl. voucher)",
+          "languages": ["FR", "EN"],
+          "tags": ["lead", "cybersecurity", "manager", "security"],
+          "search_keywords": [
+            "iso 27032",
+            "lead cybersecurity manager",
+            "cybersecurity",
+            "cyber"
+          ],
+          "details": {
+            "description": "Cette formation vous permet de maîtriser la mise en œuvre et la gestion d'un programme de cybersécurité basé sur ISO 27032 et le NIST Cybersecurity Framework.",
+            "target_audience": [
+              "Responsables cybersécurité",
+              "Gestionnaires de programmes de sécurité",
+              "Consultants en cybersécurité",
+              "Professionnels SOC et CERT",
+              "RSSI et directeurs IT"
+            ],
+            "objectives": [
+              "Expliquer les concepts, stratégies et méthodologies de cybersécurité",
+              "Comprendre la relation entre ISO 27032 et NIST Framework",
+              "Supporter une organisation dans son programme de cybersécurité",
+              "Gérer les risques cyber et sélectionner les contrôles appropriés"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction et Gouvernance",
+                "topics": [
+                  "Concepts fondamentaux de cybersécurité",
+                  "Initiation du programme",
+                  "Gouvernance de la cybersécurité",
+                  "Rôles et responsabilités"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Politiques et Gestion des Risques",
+                "topics": [
+                  "Politiques de cybersécurité",
+                  "Gestion des risques cyber",
+                  "Identification des menaces",
+                  "Évaluation des vulnérabilités"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Contrôles et Protection",
+                "topics": [
+                  "Sélection des contrôles",
+                  "Mécanismes d'attaque",
+                  "Mesures de protection",
+                  "Détection et réponse"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Opérations et Continuité",
+                "topics": [
+                  "Partage d'informations",
+                  "Gestion des incidents cyber",
+                  "Continuité d'activité",
+                  "Communication et formation"
+                ]
+              },
+              {
+                "day": 5,
+                "title": "Amélioration et Certification",
+                "topics": [
+                  "Surveillance et mesure",
+                  "Amélioration continue",
+                  "Révision générale",
+                  "Examen de certification"
+                ]
+              }
+            ],
+            "faqs": [
+              {
+                "question": "Quelle est la différence avec ISO 27001 Lead Implementer ?",
+                "answer": "ISO 27032 se concentre spécifiquement sur la cybersécurité dans le cyberespace, tandis qu'ISO 27001 couvre la sécurité de l'information de manière plus large."
+              },
+              {
+                "question": "Le NIST Framework est-il couvert ?",
+                "answer": "Oui, la formation couvre les deux référentiels : ISO 27032 et le NIST Cybersecurity Framework."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dora",
+      "name": "DORA",
+      "description": "Digital Operational Resilience Act",
+      "reference": "DORA",
+      "trainings": [
+        {
+          "id": "ISR015",
+          "title": "DORA Lead Manager",
+          "editor": "PECB",
+          "reference": "DORA",
+          "is_best_seller": false,
+          "duration_days": 5,
+          "level": "IP3+",
+          "evaluation": "MCQ",
+          "package_includes": "Official Training Package (incl. voucher)",
+          "languages": ["FR", "EN"],
+          "tags": ["dora", "resilience", "digital", "regulation"],
+          "search_keywords": [
+            "dora",
+            "digital operational resilience",
+            "lead manager",
+            "regulation",
+            "european"
+          ],
+          "details": {
+            "description": "Cette formation vous prépare à diriger la mise en conformité DORA (Digital Operational Resilience Act), le règlement européen sur la résilience opérationnelle numérique pour le secteur financier.",
+            "target_audience": [
+              "Dirigeants et décideurs d'institutions financières",
+              "Responsables conformité et risques",
+              "Professionnels IT du secteur financier",
+              "Personnel juridique et réglementaire",
+              "Consultants en régulation financière et cybersécurité"
+            ],
+            "objectives": [
+              "Comprendre l'objectif de DORA et interpréter ses exigences",
+              "Maîtriser les fondamentaux de la gestion des risques ICT",
+              "Préparer et planifier la mise en œuvre des exigences DORA",
+              "Implémenter les 5 piliers de la résilience opérationnelle numérique",
+              "Réviser et améliorer continuellement la résilience opérationnelle"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction à DORA",
+                "topics": [
+                  "Contexte réglementaire européen",
+                  "Objectifs et périmètre de DORA",
+                  "Entités concernées",
+                  "Les 5 piliers de DORA"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Gestion des Risques ICT",
+                "topics": [
+                  "Cadre de gestion des risques ICT",
+                  "Identification des risques",
+                  "Mesures de protection",
+                  "Détection des anomalies"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Gestion des Incidents ICT",
+                "topics": [
+                  "Classification des incidents",
+                  "Processus de signalement",
+                  "Communication aux autorités",
+                  "Documentation et reporting"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Tests et Tiers",
+                "topics": [
+                  "Tests de résilience opérationnelle",
+                  "Tests d'intrusion (TLPT)",
+                  "Gestion des risques tiers ICT",
+                  "Contrats avec prestataires critiques"
+                ]
+              },
+              {
+                "day": 5,
+                "title": "Mise en Œuvre et Certification",
+                "topics": [
+                  "Partage d'informations",
+                  "Surveillance et amélioration",
+                  "Révision générale",
+                  "Examen de certification"
+                ]
+              }
+            ],
+            "faqs": [
+              {
+                "question": "Qui est concerné par DORA ?",
+                "answer": "Les entités financières (banques, assurances, sociétés de gestion, etc.) et leurs prestataires ICT critiques au sein de l'UE."
+              },
+              {
+                "question": "Quelle est la date d'entrée en application ?",
+                "answer": "DORA est entré en application le 17 janvier 2025 après une période de transition de 2 ans."
+              },
+              {
+                "question": "Comment DORA se relie à d'autres réglementations ?",
+                "answer": "DORA complète NIS2 pour le secteur financier et s'articule avec ISO 27001, GDPR et les directives sectorielles."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "gdpr-iso-27701",
+      "name": "GDPR / ISO 27701",
+      "description": "Data Protection and Privacy Management",
+      "reference": "GDPR",
+      "trainings": [
+        {
+          "id": "ISR016",
+          "title": "GDPR Foundation",
+          "editor": "PECB",
+          "reference": "GDPR",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "IP2",
+          "evaluation": "MCQ",
+          "package_includes": "Official Training Package (incl. voucher)",
+          "languages": ["FR", "EN"],
+          "tags": ["foundation", "gdpr", "privacy", "data protection"],
+          "search_keywords": [
+            "gdpr",
+            "foundation",
+            "data protection",
+            "privacy",
+            "rgpd"
+          ],
+          "details": {
+            "description": "Cette formation vous permet de comprendre les exigences essentielles du RGPD et les principes fondamentaux de la protection des données personnelles.",
+            "target_audience": [
+              "Professionnels impliqués dans la protection des données",
+              "Membres d'équipes de sécurité de l'information",
+              "Personnes souhaitant comprendre le RGPD",
+              "Futurs DPO cherchant une introduction"
+            ],
+            "objectives": [
+              "Comprendre les exigences essentielles du RGPD",
+              "Maîtriser les principes fondamentaux de la vie privée",
+              "Connaître le rôle et les responsabilités du DPO",
+              "Comprendre les approches pour établir un cadre de conformité"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction au RGPD",
+                "topics": [
+                  "Historique et contexte",
+                  "Principes fondamentaux",
+                  "Droits des personnes concernées",
+                  "Bases légales du traitement"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Conformité et Certification",
+                "topics": [
+                  "Responsabilités organisationnelles",
+                  "Rôle du DPO",
+                  "Autorités de contrôle",
+                  "Préparation à l'examen"
+                ]
+              }
+            ],
+            "faqs": [
+              {
+                "question": "Quels sont les prérequis ?",
+                "answer": "Aucun prérequis formel n'est requis."
+              },
+              {
+                "question": "Cette formation est-elle suffisante pour devenir DPO ?",
+                "answer": "Non, la formation Foundation donne les bases. La formation CDPO (5 jours) est recommandée pour exercer comme DPO."
+              }
+            ]
+          }
+        },
+        {
+          "id": "ISR017",
+          "title": "Certified Data Protection Officer",
+          "editor": "PECB",
+          "reference": "GDPR",
+          "is_best_seller": false,
+          "duration_days": 5,
+          "level": "IP3",
+          "evaluation": "MCQ",
+          "package_includes": "Official Training Package (incl. voucher)",
+          "languages": ["FR", "EN"],
+          "tags": ["dpo", "data protection", "officer", "gdpr"],
+          "search_keywords": [
+            "dpo",
+            "data protection officer",
+            "gdpr",
+            "privacy",
+            "certified"
+          ],
+          "details": {
+            "description": "Cette formation vous prépare à exercer le rôle de Délégué à la Protection des Données (DPO) selon les exigences du RGPD. Vous acquerrez les compétences pour implémenter et gérer un programme de conformité RGPD.",
+            "target_audience": [
+              "DPO et futurs délégués à la protection des données",
+              "Responsables conformité RGPD",
+              "Consultants en protection des données",
+              "Membres d'équipes sécurité et conformité",
+              "Experts préparant une évolution vers un poste de DPO"
+            ],
+            "objectives": [
+              "Comprendre les concepts du RGPD et interpréter ses exigences",
+              "Acquérir les compétences pour exercer le rôle quotidien de DPO",
+              "Développer la capacité à informer, conseiller et surveiller la conformité",
+              "Coopérer efficacement avec les autorités de contrôle",
+              "Comprendre la corrélation entre RGPD, ISO 27701 et ISO 27001"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction et Rôle du DPO",
+                "topics": [
+                  "Concepts et principes du RGPD",
+                  "Désignation et position du DPO",
+                  "Relation avec la direction",
+                  "Tâches quotidiennes du DPO"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Programme de Conformité",
+                "topics": [
+                  "Développement du programme RGPD",
+                  "Politiques de protection des données",
+                  "Registre des traitements",
+                  "Gestion documentaire"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Gestion des Risques et AIPD",
+                "topics": [
+                  "Processus de gestion des risques",
+                  "Analyse d'impact (DPIA/AIPD)",
+                  "Privacy by Design et by Default",
+                  "Mesures techniques et organisationnelles"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Sécurité et Incidents",
+                "topics": [
+                  "Exigences de sécurité RGPD",
+                  "Gestion des violations de données",
+                  "Notification aux autorités",
+                  "Communication aux personnes"
+                ]
+              },
+              {
+                "day": 5,
+                "title": "Surveillance et Certification",
+                "topics": [
+                  "Surveillance de la conformité",
+                  "Amélioration continue",
+                  "Corrélation ISO 27701",
+                  "Examen de certification"
+                ]
+              }
+            ],
+            "faqs": [
+              {
+                "question": "La certification CDPO est-elle obligatoire pour être DPO ?",
+                "answer": "Non, le RGPD n'impose pas de certification obligatoire, mais la certification PECB CDPO démontre vos compétences et est reconnue internationalement."
+              },
+              {
+                "question": "Quelle expérience est recommandée ?",
+                "answer": "Une connaissance fondamentale du RGPD et une expérience en protection des données ou sécurité de l'information sont recommandées."
+              },
+              {
+                "question": "La formation couvre-t-elle ISO 27701 ?",
+                "answer": "Oui, la corrélation entre RGPD et ISO 27701 (extension PIMS d'ISO 27001) est abordée dans la formation."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "iso-9001",
+      "name": "ISO 9001 - Quality Management",
+      "description": "Systèmes de Management de la Qualité (SMQ). La norme internationale pour assurer la satisfaction client et l'amélioration continue.",
+      "reference": "ISO9001",
+      "trainings": [
+        {
+          "id": "iso-9001-foundation",
+          "title": "ISO 9001 Foundation",
+          "editor": "PECB",
+          "reference": "ISR001",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Intermédiaire (IP2)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 265,
+            "note": "Official Training Package (incl. voucher)"
+          },
+          "package_includes": "Support de cours officiel et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["iso 9001", "quality", "foundation", "pecb"],
+          "search_keywords": [
+            "iso 9001 foundation",
+            "quality management",
+            "qms"
+          ],
+          "details": {
+            "description": "Ce cours permet d'appréhender les éléments fondamentaux pour mettre en œuvre et gérer un Système de Management de la Qualité (SMQ) conforme à la norme ISO 9001:2015.",
+            "target_audience": [
+              "Responsables Qualité",
+              "Membres d'une équipe qualité",
+              "Auditeurs débutants"
+            ],
+            "objectives": [
+              "Comprendre les principes du management de la qualité",
+              "Connaître les exigences de la norme ISO 9001",
+              "Comprendre les approches processus et PDCA"
+            ],
+            "prerequisites": ["Aucun"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction & Principes",
+                "topics": [
+                  "Introduction aux normes ISO",
+                  "Les 7 principes de management de la qualité",
+                  "Contexte de l'organisme et Leadership"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Exigences & Opérations",
+                "topics": [
+                  "Planification et Support",
+                  "Réalisation des activités opérationnelles",
+                  "Évaluation des performances et Amélioration"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "iso-14001",
+      "name": "ISO 14001 - Environmental Management",
+      "description": "Systèmes de Management Environnemental (SME). Réduire l'impact environnemental et respecter la conformité réglementaire.",
+      "reference": "ISO14001",
+      "trainings": [
+        {
+          "id": "iso-14001-foundation",
+          "title": "ISO 14001 Foundation",
+          "editor": "PECB",
+          "reference": "ISR005",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Intermédiaire (IP2)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 265,
+            "note": "Official Training Package (incl. voucher)"
+          },
+          "package_includes": "Support de cours officiel et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["iso 14001", "environment", "foundation", "sme", "green"],
+          "search_keywords": [
+            "iso 14001",
+            "environmental management",
+            "sustainability"
+          ],
+          "details": {
+            "description": "Appréhender les éléments fondamentaux pour mettre en œuvre et gérer un Système de Management Environnemental (SME) conforme à la norme ISO 14001:2015.",
+            "target_audience": [
+              "Responsables Environnement",
+              "Responsables RSE",
+              "Toute personne impliquée dans le management environnemental"
+            ],
+            "objectives": [
+              "Comprendre les concepts et principes environnementaux",
+              "Identifier les aspects et impacts environnementaux",
+              "Comprendre les exigences de la norme ISO 14001"
+            ],
+            "prerequisites": ["Aucun"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Fondamentaux Environnementaux",
+                "topics": [
+                  "Introduction à ISO 14001",
+                  "Contexte de l'organisme",
+                  "Leadership et Politique environnementale"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Planification & Opérations",
+                "topics": [
+                  "Aspects environnementaux et obligations de conformité",
+                  "Planification et Support",
+                  "Fonctionnement et Évaluation des performances"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "iso-22301",
+      "name": "ISO 22301 - Business Continuity Management",
+      "description": "Assurez la résilience de votre entreprise face aux perturbations avec un Système de Management de la Continuité d'Activité (SMCA).",
+      "reference": "ISO22301",
+      "trainings": [
+        {
+          "id": "iso-22301-foundation",
+          "title": "ISO 22301 Foundation",
+          "editor": "PECB",
+          "reference": "ISR016",
+          "is_best_seller": true,
+          "duration_days": 2,
+          "level": "Intermédiaire (IP2)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 265,
+            "note": "Official Training Package (incl. voucher)"
+          },
+          "package_includes": "Support de cours officiel et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": [
+            "iso 22301",
+            "business continuity",
+            "resilience",
+            "foundation"
+          ],
+          "search_keywords": [
+            "business continuity",
+            "pca",
+            "plan de continuité",
+            "iso 22301"
+          ],
+          "details": {
+            "description": "Apprenez les éléments fondamentaux pour mettre en œuvre et gérer un Système de Management de la Continuité d'Activité (SMCA) conforme à la norme ISO 22301.",
+            "target_audience": [
+              "Responsables Continuité d'Activité",
+              "Risk Managers",
+              "Membres de l'équipe BCMS"
+            ],
+            "objectives": [
+              "Comprendre les concepts de continuité d'activité",
+              "Connaître les exigences ISO 22301",
+              "Participer à la mise en œuvre d'un SMCA"
+            ],
+            "prerequisites": ["Aucun"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction & Principes",
+                "topics": [
+                  "Concepts de la continuité d'activité",
+                  "Norme ISO 22301",
+                  "Analyse d'impact métier (BIA)"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Mise en œuvre",
+                "topics": [
+                  "Stratégie de continuité",
+                  "Plans de continuité",
+                  "Tests et exercices"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "iso-22301-lead-implementer-auditor",
+          "title": "ISO 22301 Lead Implementer / Lead Auditor",
+          "editor": "PECB",
+          "reference": "ISR017",
+          "is_best_seller": true,
+          "duration_days": 5,
+          "level": "Avancé (IP3 / IP3+)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 665,
+            "note": "Official Training Package (incl. voucher)"
+          },
+          "package_includes": "Support de cours officiel et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["iso 22301", "lead implementer", "lead auditor", "advanced"],
+          "search_keywords": [
+            "lead implementer",
+            "lead auditor",
+            "certification expert",
+            "iso 22301"
+          ],
+          "details": {
+            "description": "Niveau Expert. Choisissez entre Lead Implementer (pour mettre en place le SMCA) ou Lead Auditor (pour auditer le SMCA).",
+            "target_audience": [
+              "Consultants",
+              "Auditeurs",
+              "Responsables BCMS expérimentés"
+            ],
+            "objectives": [
+              "Mener une implémentation complète (LI)",
+              "Planifier et diriger un audit (LA)",
+              "Préparer la certification Lead"
+            ],
+            "prerequisites": ["Connaissance de base ISO 22301 recommandée"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction",
+                "topics": [
+                  "Cadre normatif",
+                  "Lancement du projet (LI) / Principes d'audit (LA)"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Planification",
+                "topics": [
+                  "Leadership et planification",
+                  "Analyse d'Impact (BIA) et Risques"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Mise en œuvre / Audit",
+                "topics": [
+                  "Procédures de continuité",
+                  "Réalisation de l'audit (LA)"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Évaluation",
+                "topics": ["Tests et exercices", "Rapport d'audit et clôture"]
+              },
+              {
+                "day": 5,
+                "title": "Examen",
+                "topics": ["Passage de l'examen de certification"]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "iso-31000",
+      "name": "ISO 31000 - Risk Management",
+      "description": "Lignes directrices pour gérer les risques auxquels les organisations sont confrontées. Une approche stratégique et opérationnelle.",
+      "reference": "ISO31000",
+      "trainings": [
+        {
+          "id": "iso-31000-foundation",
+          "title": "ISO 31000 Foundation",
+          "editor": "PECB",
+          "reference": "ISR016",
+          "is_best_seller": true,
+          "duration_days": 2,
+          "level": "Intermédiaire (IP2)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 265,
+            "note": "Official Training Package (incl. voucher)"
+          },
+          "package_includes": "Support de cours officiel et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["iso 31000", "risk", "foundation", "management"],
+          "search_keywords": [
+            "risk management",
+            "gestion des risques",
+            "iso 31000 foundation"
+          ],
+          "details": {
+            "description": "Comprendre les principes fondamentaux, le cadre et le processus de management du risque selon la norme ISO 31000.",
+            "target_audience": [
+              "Risk Managers débutants",
+              "Chefs de projet",
+              "Direction"
+            ],
+            "objectives": [
+              "Comprendre le vocabulaire du risque",
+              "Maîtriser les principes de l'ISO 31000",
+              "Comprendre le processus de gestion des risques"
+            ],
+            "prerequisites": ["Aucun"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Principes du Risque",
+                "topics": [
+                  "Définitions et concepts",
+                  "Principes de management du risque",
+                  "Cadre organisationnel"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Processus",
+                "topics": [
+                  "Appréciation du risque (Identification, Analyse, Évaluation)",
+                  "Traitement du risque",
+                  "Communication et consultation"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "iso-31000-risk-manager",
+          "title": "ISO 31000 Risk Manager / Lead Risk Manager",
+          "editor": "PECB",
+          "reference": "ISR017",
+          "is_best_seller": true,
+          "duration_days": 3,
+          "duration_display": "3d / 5d",
+          "level": "Avancé (IP3)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": "400 / 665",
+            "note": "Risk Manager (3d): 400€ / Lead Risk Manager (5d): 665€"
+          },
+          "package_includes": "Support de cours officiel et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["iso 31000", "risk manager", "lead risk manager", "expert"],
+          "search_keywords": [
+            "risk manager certification",
+            "iec 31010",
+            "analyse de risques avancée"
+          ],
+          "details": {
+            "description": "Maîtrisez la mise en œuvre des processus de gestion des risques. Certification Risk Manager (3 jours) ou Lead Risk Manager (5 jours) incluant les techniques d'évaluation IEC 31010.",
+            "target_audience": [
+              "Risk Managers",
+              "Consultants",
+              "Responsables conformité"
+            ],
+            "objectives": [
+              "Établir un cadre de gestion des risques",
+              "Appliquer les techniques d'appréciation (IEC 31010)",
+              "Intégrer le risque dans la prise de décision"
+            ],
+            "prerequisites": ["Certification Foundation recommandée"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction & Cadre",
+                "topics": [
+                  "Cadre de référence ISO 31000",
+                  "Intégration dans l'organisation"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Appréciation du Risque",
+                "topics": [
+                  "Identification et Analyse",
+                  "Techniques d'évaluation des risques (IEC 31010)"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Traitement & Examen",
+                "topics": [
+                  "Options de traitement",
+                  "Suivi et revue",
+                  "Examen Risk Manager"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Lead Manager (Option 5j)",
+                "topics": ["Gestion avancée", "Communication de crise"]
+              },
+              {
+                "day": 5,
+                "title": "Examen Lead",
+                "topics": ["Examen Lead Risk Manager"]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,16 +1,19 @@
-import { latoFont, montserratFont, poppinsFont } from "../../utils/fonts";
-import Image from "next/image";
-import AnimatedElement from "../../components/AnimatedElement";
-import ConseilCurvyLine from "../../components/Conseil/ConseilCurvyLine";
+import { latoFont, montserratFont } from "../../utils/fonts";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import ReturnToTop from "../../components/ReturnToTop";
 import { pageMetadata } from "../../content/general";
 import { conseil } from "../../content/pages";
 import Script from "next/script";
+import {
+  HiCheckCircle,
+  HiCloudArrowUp,
+  HiShieldCheck,
+  HiGlobeAlt,
+} from "react-icons/hi2";
 
 export const metadata = {
-  title: "JumpIT - Conseil",
+  title: "Jump iT - Conseil & Audit IT",
   description: pageMetadata.description,
   metadataBase: new URL(pageMetadata.baseUrl),
   alternates: {
@@ -19,68 +22,12 @@ export const metadata = {
       fr: "/conseil",
     },
   },
-  icons: {
-    icon: { url: "/icones.png", type: "image/x-icon", sizes: "48x48" },
-    shortcut: [
-      {
-        url: "/icones.png",
-        sizes: "128x128",
-      },
-      {
-        url: "/icones.png",
-        sizes: "192x192",
-      },
-    ],
-    other: [
-      {
-        rel: "apple-touch-icon-precomposed",
-        url: "/icones.png",
-        sizes: "180x180",
-      },
-      {
-        rel: "apple-touch-icon",
-        url: "/icones.png",
-        sizes: "76x76",
-      },
-      {
-        rel: "apple-touch-icon",
-        url: "/icones.png",
-        sizes: "120x120",
-      },
-      {
-        rel: "apple-touch-icon",
-        url: "/icones.png",
-        sizes: "152x152",
-      },
-      {
-        rel: "apple-touch-icon",
-        url: "/icones.png",
-        sizes: "180x180",
-      },
-      {
-        rel: "icon",
-        url: "/icones.png",
-        type: "image/x-icon",
-        sizes: "16x16",
-      },
-      {
-        rel: "icon",
-        url: "/icones.png",
-        type: "image/x-icon",
-        sizes: "32x32",
-      },
-    ],
-  },
   openGraph: {
     title: pageMetadata.title,
     description: pageMetadata.description,
     siteName: pageMetadata.siteName,
     url: "https://www.jumpit.ma",
-    images: {
-      url: "/icones.png",
-      width: 48,
-      height: 48,
-    },
+    images: { url: "/icones.png", width: 48, height: 48 },
     locale: "fr",
     type: "website",
   },
@@ -101,224 +48,254 @@ export const metadata = {
   category: "technology",
 };
 
-type Props = {};
-
-export default function Conseil({}: Props) {
+export default function Conseil() {
   return (
-    <div className="flex flex-col justify-between items-center bg-ac-gray w-full min-h-[100vh]">
+    <div className="flex min-h-screen flex-col bg-white">
       <Script src="https://www.googletagmanager.com/gtag/js?id=G-6L5ZVZDMVJ" />
       <Script id="google-analytics">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
- 
           gtag('config', 'G-6L5ZVZDMVJ');
         `}
       </Script>
 
       <ReturnToTop />
-      <div className="flex flex-col justify-start items-center bg-ac-gray w-full">
-        <Navbar />
-        {/* Conseil Page Hero */}
-        <div className="flex justify-center sm:justify-end items-center w-full relative">
-          {/* Parallax Background */}
-          <div className="parallax-conseil absolute inset-0 bg-fixed bg-center"></div>
-          {/* Overlay */}
-          <div className="absolute top-0 left-0 w-full h-full z-20 bg-[#00000050]"></div>
-          <a
-            href="#formations"
-            className="flex flex-col justify-start items-center mt-20 mb-24 mx-4 sm:mr-[10%] xm:mr-[15%] rounded-xl bg-purple-600 gap-3 py-3 px-4 sm:py-6 sm:px-8 xm:px-12 z-30"
-          >
-            <h1
-              className={
-                montserratFont.className +
-                " text-3xl sm:text-4xl xm:text-5xl font-medium text-white text-center max-w-[270px] fold:max-w-[350px] xs:max-w-xs"
-              }
-            >
-              Conseil
-            </h1>
-            <h2
-              className={
-                latoFont.className +
-                " text-xs sm:text-sm xm:text-base font-medium text-white text-center max-w-[300px] sm:max-w-sm"
-              }
-            >
-              {conseil.hero}
-            </h2>
-          </a>
-        </div>
-        <div className="hidden">
-          <h2>
-            <strong>Consultation</strong>
-          </h2>
-          <h2>
-            <strong>Audit</strong>
-          </h2>
-          <h2>
-            <strong>Prestation</strong>
-          </h2>
-          <h2>
-            <strong>Off-Shore</strong>
-          </h2>
-          <h2>
-            <strong>Qualité Logicielle</strong>
-          </h2>
-          <h2>
-            <strong>{`Qualité Logicielle`}</strong>
-          </h2>
+      <Navbar />
 
-          <h2 className="">
-            <strong>{`Formation Cypress`}</strong>
-          </h2>
-          <h2 className="">
-            <strong>{`Formation Postman`}</strong>
-          </h2>
-          <h2 className="">
-            <strong>{`Cypress Formation`}</strong>
-          </h2>
-          <h2 className="">
-            <strong>{`Tests api`}</strong>
-          </h2>
-          <h2 className="">
-            <strong>{`Tests Cypress`}</strong>
-          </h2>
-          <h2 className="">
-            <strong>{`Formation Robot framework`}</strong>
-          </h2>
+      {/* Hero Section - Same style as Formations page */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-purple-700 to-purple-600 px-4 pb-16 pt-16 sm:px-8 md:px-16 lg:px-24">
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/30 via-transparent to-transparent" />
+
+        {/* Floating orbs - Left side */}
+        <div className="absolute -left-20 top-1/4 h-64 w-64 rounded-full bg-purple-400/20 blur-3xl" />
+        <div className="absolute left-10 top-10 h-32 w-32 rounded-full bg-white/5 blur-2xl" />
+
+        {/* Floating orbs - Right side */}
+        <div className="absolute -right-20 top-1/3 h-72 w-72 rounded-full bg-indigo-400/20 blur-3xl" />
+        <div className="absolute right-20 bottom-20 h-40 w-40 rounded-full bg-pink-400/10 blur-2xl" />
+
+        {/* Geometric shapes - Floating circles */}
+        <div className="absolute left-[10%] top-[20%] h-3 w-3 rounded-full bg-white/20" />
+        <div className="absolute left-[15%] top-[60%] h-2 w-2 rounded-full bg-white/30" />
+        <div className="absolute left-[25%] top-[80%] h-4 w-4 rounded-full bg-white/10" />
+        <div className="absolute right-[10%] top-[30%] h-2 w-2 rounded-full bg-white/25" />
+        <div className="absolute right-[20%] top-[70%] h-3 w-3 rounded-full bg-white/15" />
+        <div className="absolute right-[30%] top-[15%] h-2 w-2 rounded-full bg-white/20" />
+
+        {/* Content */}
+        <div className="relative z-10 mx-auto max-w-4xl text-center pt-24">
+          <span className="mb-4 inline-block rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-medium text-white backdrop-blur-sm">
+            Expertise IT & Accompagnement
+          </span>
+
+          <h1
+            className={`${montserratFont.className} mb-6 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl`}
+          >
+            Conseil & Audit
+          </h1>
+
+          <p
+            className={`${latoFont.className} mx-auto max-w-2xl text-lg text-slate-100 sm:text-xl`}
+          >
+            {conseil.hero}
+          </p>
         </div>
-        {/* Offres de Consultations */}
-        <div className="w-full flex flex-col justify-start items-center gap-16 rounded-t-3xl -translate-y-5 z-30 bg-ac-gray pt-14 pb-36 px-10 md:px-20">
-          <div className="flex justify-center items-center w-full relative">
-            <div className="flex justify-center items-center bg-ac-gray z-20 p-2 xm:p-4">
-              <h2
-                className={
-                  montserratFont.className +
-                  " text-purple-600 text-3xl xm:text-5xl font-semibold text-center"
-                }
+      </section>
+
+      {/* Services Section */}
+      <section className="bg-slate-50 px-4 py-16 sm:px-8 md:px-16 lg:px-24">
+        <div className="mx-auto max-w-7xl">
+          {/* Section Header */}
+          <div className="mb-16 text-center">
+            <h2
+              className={`${montserratFont.className} mb-4 text-3xl font-bold text-slate-900 sm:text-4xl`}
+            >
+              Nos Solutions
+            </h2>
+            <p
+              className={`${latoFont.className} mx-auto max-w-2xl text-lg text-slate-600`}
+            >
+              Une approche sur-mesure pour accompagner votre transformation
+              numérique
+            </p>
+          </div>
+
+          {/* Services Grid */}
+          <div className="grid gap-8 md:grid-cols-3">
+            {/* Card 1: Audit */}
+            <div className="group rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition-shadow hover:shadow-lg">
+              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-purple-100">
+                <HiCloudArrowUp className="h-8 w-8 text-purple-600" />
+              </div>
+              <div className="mb-3 inline-block rounded-full bg-purple-50 px-3 py-1 text-xs font-medium text-purple-700">
+                Stratégie
+              </div>
+              <h3
+                className={`${montserratFont.className} mb-4 text-xl font-bold text-slate-900`}
               >
-                Nos offres de Consultation
-              </h2>
+                Développement des solutions
+              </h3>
+              <p className={`${latoFont.className} mb-6 text-slate-600`}>
+                {conseil.audit}
+              </p>
+              <ul className="space-y-3">
+                {[
+                  "Analyse de l'existant",
+                  "Identification des risques",
+                  "Recommandations stratégiques",
+                ].map((item, i) => (
+                  <li
+                    key={i}
+                    className="flex items-center gap-2 text-sm text-slate-700"
+                  >
+                    <HiCheckCircle className="h-4 w-4 flex-shrink-0 text-purple-600" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <div className="absolute w-full h-px bg-purple-600 z-10"></div>
-          </div>
-          <ConseilCurvyLine />
-          {/* Liste des Offres */}
-          <div className="w-full flex flex-col justify-start items-center gap-40">
-            {/* Offre 1 */}
-            <div className="flex flex-row justify-center sm:justify-between items-center sm:mr-4 md:mr-10 xm:mr-20 w-full gap-4">
-              <AnimatedElement type="from-left" duration={500} delay={0}>
-                <Image
-                  className="hidden sm:block max-w-xs lg:max-w-md max-h-72 xm:max-h-60 lg:max-h-72 object-contain object-center"
-                  src="/Conseil/cloud.png"
-                  width={448}
-                  height={288}
-                  alt="audit"
-                />
-              </AnimatedElement>
-              <div className="flex flex-col justify-center items-center gap-8 sm:gap-16">
-                <h2
-                  className={
-                    poppinsFont.className +
-                    " font-semibold text-center text-4xl text-black"
-                  }
-                >
-                  <strong>Audit</strong>
-                </h2>
-                <Image
-                  className="sm:hidden w-full max-w-sm max-h-60 object-contain object-center"
-                  src="/Conseil/cloud.png"
-                  width={448}
-                  height={288}
-                  alt="Audit"
-                />
-                <h2
-                  className={
-                    montserratFont.className +
-                    " text-base text-black text-center font-medium w-full max-w-sm sm:max-w-md"
-                  }
-                >
-                  <strong>{conseil.audit}</strong>
-                </h2>
+
+            {/* Card 2: Prestation */}
+            <div className="group rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition-shadow hover:shadow-lg">
+              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-100">
+                <HiShieldCheck className="h-8 w-8 text-emerald-600" />
               </div>
+              <div className="mb-3 inline-block rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">
+                Expertise
+              </div>
+              <h3
+                className={`${montserratFont.className} mb-4 text-xl font-bold text-slate-900`}
+              >
+                Consulting
+              </h3>
+              <p className={`${latoFont.className} mb-6 text-slate-600`}>
+                {conseil.prestation}
+              </p>
+              <ul className="space-y-3">
+                {[
+                  "Développement sur mesure",
+                  "Renforcement d'équipes",
+                  "Technologies de pointe",
+                ].map((item, i) => (
+                  <li
+                    key={i}
+                    className="flex items-center gap-2 text-sm text-slate-700"
+                  >
+                    <HiCheckCircle className="h-4 w-4 flex-shrink-0 text-emerald-600" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
-            {/* Offre 2 */}
-            <div className="flex flex-row-reverse justify-center sm:justify-between items-center sm:ml-4 md:ml-10 xm:ml-20 w-full gap-4">
-              <AnimatedElement type="from-left" duration={500} delay={0}>
-                <Image
-                  className="hidden sm:block max-w-xs lg:max-w-md max-h-72 xm:max-h-60 lg:max-h-72 object-contain object-center"
-                  src="/Conseil/cyber-security.png"
-                  width={448}
-                  height={288}
-                  alt="prestation"
-                />
-              </AnimatedElement>
-              <div className="flex flex-col justify-center items-center gap-8 sm:gap-16">
-                <h2
-                  className={
-                    poppinsFont.className +
-                    " font-semibold text-center text-4xl text-black"
-                  }
-                >
-                  <strong>Prestation</strong>
-                </h2>
-                <Image
-                  className="sm:hidden w-full max-w-sm max-h-72 object-contain object-center"
-                  src="/Conseil/cyber-security.png"
-                  width={448}
-                  height={288}
-                  alt="Prestation"
-                />
-                <h3
-                  className={
-                    montserratFont.className +
-                    " text-base text-black text-center font-medium w-full max-w-sm sm:max-w-md"
-                  }
-                >
-                  <strong>{conseil.prestation}</strong>
-                </h3>
+
+            {/* Card 3: Off-Shore */}
+            <div className="group rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition-shadow hover:shadow-lg">
+              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-100">
+                <HiGlobeAlt className="h-8 w-8 text-blue-600" />
               </div>
-            </div>
-            {/* Offre 3 */}
-            <div className="flex flex-row justify-center sm:justify-between items-center sm:mr-4 md:mr-10 xm:mr-20 w-full gap-4">
-              <AnimatedElement type="from-left" duration={500} delay={0}>
-                <Image
-                  className="hidden sm:block max-w-sm lg:max-w-md max-h-72 xm:max-h-60 lg:max-h-72 object-contain object-center"
-                  src="/Conseil/testing.png"
-                  width={448}
-                  height={288}
-                  alt="off-shore"
-                />
-              </AnimatedElement>
-              <div className="flex flex-col justify-center items-center gap-8 sm:gap-16">
-                <h2
-                  className={
-                    poppinsFont.className +
-                    " font-semibold text-center text-4xl text-black"
-                  }
-                >
-                  <strong>Off-Shore</strong>
-                </h2>
-                <Image
-                  className="sm:hidden w-full max-w-sm max-h-72 object-contain object-center"
-                  src="/Conseil/testing.png"
-                  width={448}
-                  height={288}
-                  alt="Off-shore"
-                />
-                <h3
-                  className={
-                    montserratFont.className +
-                    " text-base text-black text-center font-medium w-full max-w-sm sm:max-w-md"
-                  }
-                >
-                  <strong>{conseil.offshore}</strong>
-                </h3>
+              <div className="mb-3 inline-block rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">
+                International
               </div>
+              <h3
+                className={`${montserratFont.className} mb-4 text-xl font-bold text-slate-900`}
+              >
+                Services nearshore
+              </h3>
+              <p className={`${latoFont.className} mb-6 text-slate-600`}>
+                {conseil.offshore}
+              </p>
+              <ul className="space-y-3">
+                {[
+                  "Optimisation des coûts",
+                  "Flexibilité opérationnelle",
+                  "Qualité garantie",
+                ].map((item, i) => (
+                  <li
+                    key={i}
+                    className="flex items-center gap-2 text-sm text-slate-700"
+                  >
+                    <HiCheckCircle className="h-4 w-4 flex-shrink-0 text-blue-600" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* Why Choose Us - Stats Section */}
+      <section className="bg-gradient-to-br from-purple-700 to-purple-600 px-4 py-16 sm:px-8 md:px-16 lg:px-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 text-center">
+            <h2
+              className={`${montserratFont.className} mb-4 text-3xl font-bold text-white sm:text-4xl`}
+            >
+              Pourquoi nous choisir ?
+            </h2>
+            <p
+              className={`${latoFont.className} mx-auto max-w-2xl text-lg text-purple-100`}
+            >
+              Des résultats concrets et mesurables pour votre entreprise
+            </p>
+          </div>
+
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { value: "100%", label: "Engagement qualité" },
+              { value: "Sur-mesure", label: "Solutions adaptées" },
+              { value: "Agile", label: "Méthodologie moderne" },
+              { value: "24/7", label: "Support disponible" },
+            ].map((stat, i) => (
+              <div
+                key={i}
+                className="rounded-2xl border border-white/20 bg-white/10 p-8 text-center backdrop-blur-sm"
+              >
+                <div
+                  className={`${montserratFont.className} mb-2 text-3xl font-bold text-white`}
+                >
+                  {stat.value}
+                </div>
+                <div className={`${latoFont.className} text-purple-100`}>
+                  {stat.label}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="bg-slate-50 px-4 py-20 sm:px-8 md:px-16 lg:px-24">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2
+            className={`${montserratFont.className} mb-6 text-3xl font-bold text-slate-900 sm:text-4xl`}
+          >
+            Prêt à transformer votre IT ?
+          </h2>
+          <p className={`${latoFont.className} mb-10 text-lg text-slate-600`}>
+            Contactez-nous dès aujourd&apos;hui pour discuter de vos besoins et
+            découvrir comment nous pouvons vous accompagner.
+          </p>
+          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <a
+              href="/contactez-nous"
+              className="rounded-full bg-purple-600 px-8 py-3.5 text-sm font-semibold text-white shadow-lg transition-all hover:bg-purple-500 hover:shadow-purple-500/25"
+            >
+              Contactez-nous
+            </a>
+            <a
+              href="mailto:contact@jumpit.ma"
+              className="rounded-full border border-slate-300 bg-transparent px-8 py-3.5 text-sm font-semibold text-slate-700 transition-all hover:bg-slate-100"
+            >
+              contact@jumpit.ma
+            </a>
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </div>

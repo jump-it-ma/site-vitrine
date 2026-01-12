@@ -2,17 +2,11 @@
 
 import { contactus } from "@/content/general";
 import { ContactUsPayload } from "@/utils/interfaces";
-
-import { montserratFont } from "@/utils/fonts";
+import { montserratFont, latoFont } from "@/utils/fonts";
 import { useRouter } from "next/navigation";
 import { ChangeEvent, useState } from "react";
-
 import "react-datepicker/dist/react-datepicker.css";
 import { toast } from "react-toastify";
-
-const montserratNormalFont = montserratFont;
-
-type Props = {};
 
 interface FormContactInputs {
   nom: string;
@@ -22,7 +16,7 @@ interface FormContactInputs {
   message: string;
 }
 
-export default function ContactUsForm({}: Props) {
+export default function ContactUsForm() {
   const router = useRouter();
 
   const [contactInputs, setContactInputs] = useState<FormContactInputs>({
@@ -32,6 +26,9 @@ export default function ContactUsForm({}: Props) {
     email: "",
     message: "",
   });
+
+  const [loading, setLoading] = useState(false);
+
   const handleContactInputChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -42,16 +39,14 @@ export default function ContactUsForm({}: Props) {
     }));
   };
 
-  const [loading, setLoading] = useState(false);
   const triggerToaster = (type: string, message: string) => {
     if (type === "success") {
       toast.success(message);
-    } else {
-      if (type === "error") {
-        toast.error(message);
-      }
+    } else if (type === "error") {
+      toast.error(message);
     }
   };
+
   const handleSendEmail = async (args: ContactUsPayload) => {
     try {
       setLoading(true);
@@ -60,23 +55,17 @@ export default function ContactUsForm({}: Props) {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          nom: args.nom,
-          prenom: args.prenom,
-          telephone: args.telephone,
-          email: args.email,
-          message: args.message,
-        }),
+        body: JSON.stringify(args),
       });
 
       const data = await response.json();
 
       if (!response.ok) {
-        console.log(data.message.message);
+        console.error(data.message.message);
         triggerToaster("error", "Erreur de configuration de serveur");
         throw new Error(data.message.message);
       }
-      triggerToaster("success", "Votre email a été envoyé avec succés");
+      triggerToaster("success", "Votre email a été envoyé avec succès");
       setContactInputs({
         nom: "",
         prenom: "",
@@ -85,182 +74,151 @@ export default function ContactUsForm({}: Props) {
         message: "",
       });
       setLoading(false);
-      setTimeout(() => {
-        router.replace("/");
-      }, 2750); // Redirect to /formations page after 2s
+      // Optional: Redirect or just clear form
+      // setTimeout(() => router.replace("/"), 2750);
     } catch (error) {
-      console.log(error);
+      console.error(error);
       setLoading(false);
     }
   };
+
   const handleSubmit = async () => {
     if (
       contactInputs.nom !== "" &&
-      contactInputs.prenom !== "" &&
-      contactInputs.telephone !== "" &&
       contactInputs.email !== "" &&
       contactInputs.message !== ""
     ) {
       if (!loading) {
-        await handleSendEmail({
-          nom: contactInputs.nom,
-          prenom: contactInputs.prenom,
-          telephone: contactInputs.telephone,
-          email: contactInputs.email,
-          message: contactInputs.message,
-        });
+        await handleSendEmail(contactInputs);
       }
     } else {
-      alert("Veuillez entrer les informations nécéssaires!");
+      triggerToaster(
+        "error",
+        "Veuillez remplir les champs obligatoires (Nom, Email, Message)"
+      );
     }
   };
 
   return (
-    <div className="flex flex-col justify-start items-center mb-4 mx-2 py-6 px-5 box-shadow2 max-w-[464px] bg-white gap-5">
-      <div className="flex flex-col justify-start items-start w-full gap-3">
-        <p className="text-black text-xs font-semibold text-left">
-          {contactus.description}
+    <div className="w-full bg-white rounded-3xl p-8 border border-slate-100 shadow-sm">
+      <div className="mb-8">
+        <h3
+          className={`${montserratFont.className} text-2xl font-bold text-slate-900 mb-2`}
+        >
+          Envoyez-nous un message
+        </h3>
+        <p className={`${latoFont.className} text-slate-500`}>
+          {contactus.description ||
+            "Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais."}
         </p>
       </div>
 
-      {/* Form */}
-      <form
-        className={
-          montserratNormalFont.className +
-          " flex flex-col justify-start items-stretch gap-3 w-full"
-        }
-      >
-        <div className="flex flex-col justify-center items-start w-full">
-          <label
-            htmlFor="nom"
-            className="flex justify-center items-center text-sm gap-1"
-          >
-            <h3 className="font-semibold text-sm text-black text-left">Nom</h3>
-            <span className="text-red-500">*</span>
-          </label>
-          <div className="flex justify-center items-center border border-zinc-300 w-full">
+      <form className="space-y-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="space-y-2">
+            <label
+              className={`${montserratFont.className} text-sm font-semibold text-slate-900 block`}
+            >
+              Nom <span className="text-purple-600">*</span>
+            </label>
             <input
               name="nom"
               type="text"
-              placeholder="Nom"
-              className="py-2 px-5 w-full text-black  focus:outline focus:outline-purple-600 focus:outline-2 focus:rounded  focus:outline focus:outline-purple-600 focus:outline-2 focus:rounded"
+              placeholder="Votre nom"
+              className={`${latoFont.className} w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-purple-500 focus:ring-4 focus:ring-purple-500/10 outline-none transition-all placeholder:text-slate-400 text-slate-900`}
               value={contactInputs.nom}
               onChange={handleContactInputChange}
             />
           </div>
-        </div>
 
-        <div className="flex flex-col justify-center items-start w-full">
-          <label
-            htmlFor="prenom"
-            className="flex justify-center items-center text-sm gap-1"
-          >
-            <h3 className="font-semibold text-sm text-black text-left">
+          <div className="space-y-2">
+            <label
+              className={`${montserratFont.className} text-sm font-semibold text-slate-900 block`}
+            >
               Prénom
-            </h3>
-            <span className="text-red-500">*</span>
-          </label>
-          <div className="flex justify-center items-center border border-zinc-300 w-full">
+            </label>
             <input
               name="prenom"
               type="text"
-              placeholder="Prénom"
-              className="py-2 px-5 w-full text-black  focus:outline focus:outline-purple-600 focus:outline-2 focus:rounded  focus:outline focus:outline-purple-600 focus:outline-2 focus:rounded"
+              placeholder="Votre prénom"
+              className={`${latoFont.className} w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-purple-500 focus:ring-4 focus:ring-purple-500/10 outline-none transition-all placeholder:text-slate-400 text-slate-900`}
               value={contactInputs.prenom}
               onChange={handleContactInputChange}
             />
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-start w-full">
-          <label
-            htmlFor="telephone"
-            className="flex justify-center items-center text-sm gap-1"
-          >
-            <h3 className="font-semibold text-sm text-black text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="space-y-2">
+            <label
+              className={`${montserratFont.className} text-sm font-semibold text-slate-900 block`}
+            >
+              Email <span className="text-purple-600">*</span>
+            </label>
+            <input
+              name="email"
+              type="email"
+              placeholder="votre@email.com"
+              className={`${latoFont.className} w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-purple-500 focus:ring-4 focus:ring-purple-500/10 outline-none transition-all placeholder:text-slate-400 text-slate-900`}
+              value={contactInputs.email}
+              onChange={handleContactInputChange}
+            />
+          </div>
+
+          <div className="space-y-2">
+            <label
+              className={`${montserratFont.className} text-sm font-semibold text-slate-900 block`}
+            >
               Téléphone
-            </h3>
-            <span className="text-red-500">*</span>
-          </label>
-          <div className="flex justify-center items-center border border-zinc-300 w-full">
+            </label>
             <input
               name="telephone"
               type="tel"
-              placeholder="Téléphone"
-              className="py-2 px-5 w-full text-black  focus:outline focus:outline-purple-600 focus:outline-2 focus:rounded"
+              placeholder="06 00 00 00 00"
+              className={`${latoFont.className} w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-purple-500 focus:ring-4 focus:ring-purple-500/10 outline-none transition-all placeholder:text-slate-400 text-slate-900`}
               value={contactInputs.telephone}
               onChange={handleContactInputChange}
             />
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-start w-full">
+        <div className="space-y-2">
           <label
-            htmlFor="email"
-            className="flex justify-center items-center text-sm gap-1"
+            className={`${montserratFont.className} text-sm font-semibold text-slate-900 block`}
           >
-            <h3 className="font-semibold text-sm text-black text-left">
-              Email
-            </h3>
-            <span className="text-red-500">*</span>
+            Message <span className="text-purple-600">*</span>
           </label>
-          <div className="flex justify-center items-center border border-zinc-300 w-full">
-            <input
-              name="email"
-              type="email"
-              placeholder="Email"
-              className="py-2 px-5 w-full text-black  focus:outline focus:outline-purple-600 focus:outline-2 focus:rounded"
-              value={contactInputs.email}
-              onChange={handleContactInputChange}
-            />
-          </div>
+          <textarea
+            name="message"
+            rows={4}
+            placeholder="Comment pouvons-nous vous aider ?"
+            className={`${latoFont.className} w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-purple-500 focus:ring-4 focus:ring-purple-500/10 outline-none transition-all placeholder:text-slate-400 text-slate-900 resize-none`}
+            value={contactInputs.message}
+            onChange={handleContactInputChange}
+          />
         </div>
 
-        <div className="flex flex-col justify-center items-start w-full">
-          <label
-            htmlFor="message"
-            className="flex justify-center items-center text-sm gap-1"
-          >
-            <h3 className="font-semibold text-sm text-black text-left">
-              Message
-            </h3>
-            <span className="text-red-500">*</span>
-          </label>
-          <div className="flex justify-center items-center border border-zinc-300 w-full">
-            <textarea
-              name="message"
-              placeholder="Message"
-              className="py-2 px-5 w-full text-black  focus:outline focus:outline-purple-600 focus:outline-2 focus:rounded min-h-[40px]"
-              value={contactInputs.message}
-              onChange={handleContactInputChange}
-            />
-          </div>
-        </div>
+        <button
+          type="button"
+          onClick={handleSubmit}
+          disabled={loading}
+          className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-purple-600/20 active:scale-[0.98] disabled:opacity-70 disabled:cursor-not-allowed"
+        >
+          {loading ? (
+            <div className="flex justify-center items-center gap-2">
+              <span className="w-2 h-2 bg-white rounded-full animate-bounce"></span>
+              <span className="w-2 h-2 bg-white rounded-full animate-bounce delay-75"></span>
+              <span className="w-2 h-2 bg-white rounded-full animate-bounce delay-150"></span>
+            </div>
+          ) : (
+            <span
+              className={`${montserratFont.className} tracking-wider uppercase text-sm`}
+            >
+              Envoyer le message
+            </span>
+          )}
+        </button>
       </form>
-
-      <div
-        onClick={handleSubmit}
-        className={
-          "bg-purple-600 py-3 px-6 w-full " + (!loading && "cursor-pointer")
-        }
-      >
-        {!loading ? (
-          <p
-            className={
-              montserratFont.className +
-              " text-white text-base font-bold text-center uppercase"
-            }
-          >
-            Envoyer
-          </p>
-        ) : (
-          <div className="flex justify-center items-center gap-2.5 p-[5px]">
-            <div className="rounded-full bg-white w-3.5 h-3.5 animate-loading1"></div>
-            <div className="rounded-full bg-white w-3.5 h-3.5 animate-loading2"></div>
-            <div className="rounded-full bg-white w-3.5 h-3.5 animate-loading3"></div>
-          </div>
-        )}
-      </div>
     </div>
   );
 }

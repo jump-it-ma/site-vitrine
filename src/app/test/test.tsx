@@ -43,7 +43,7 @@ export default function Homepage({}: Props) {
               src="../../public/icone.png"
               width={374}
               height={187}
-              alt="JumpIT"
+              alt="Jump iT"
             />
             <h1
               className={
@@ -145,7 +145,7 @@ export default function Homepage({}: Props) {
               src="/icone.png"
               width={118}
               height={62}
-              alt="JumpIT"
+              alt="Jump iT"
             />
           </div>
           <div className="relative flex justify-center items-center gap-8">
@@ -170,7 +170,7 @@ export default function Homepage({}: Props) {
           </div>
           <div className="flex flex-col justify-start items-center md:items-start w-[200px] lg:w-[300px] gap-1.5">
             <p className="text-sm text-center md:text-left text-white">
-              Copyright © 2024 JumpIT SARL
+              Copyright © 2026 Jump iT
             </p>
             <p className="text-sm text-center md:text-left text-white">
               Tout droit réservé

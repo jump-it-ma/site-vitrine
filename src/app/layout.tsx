@@ -81,8 +81,8 @@ export const metadata = {
 const jsonLd: WithContext<WebSite> = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "JumpIT",
-  alternateName: "JumpIT",
+  name: "Jump iT",
+  alternateName: "Jump iT",
   url: "https://www.jumpit.ma",
 };
 

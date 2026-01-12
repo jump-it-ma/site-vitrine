@@ -1,0 +1,246 @@
+{
+  "program": {
+    "id": "project-management",
+    "title": "GESTION DE PROJET",
+    "description": "Formations certifiantes en gestion de projet : PM² (UE), PMP® (PMI) et PRINCE2® 7.",
+    "categories": ["PM²", "PMBOK 7", "PRINCE2® 7"]
+  },
+  "filters": {
+    "categories": ["PM²", "PMBOK 7", "PRINCE2® 7"],
+    "editors": ["APMG", "PMI", "PEOPLECERT"],
+    "durations": [2, 3, 5],
+    "levels": ["Intermédiaire", "Avancé"],
+    "languages": ["EN", "FR"]
+  },
+  "categories": [
+    {
+      "id": "pmbok-7",
+      "name": "PMBOK 7",
+      "description": "Le standard mondial du PMI (Project Management Institute). Préparation à la certification PMP®.",
+      "reference": "PMI",
+      "trainings": [
+        {
+          "id": "pmp-preparation",
+          "title": "PMP Preparation",
+          "editor": "PMI",
+          "reference": "PM101",
+          "is_best_seller": true,
+          "duration_days": 5,
+          "level": "Avancé (IP3+)",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "exam_price": 155,
+            "training_price": 680
+          },
+          "package_includes": "Adhésion PMI 1 an (livres inclus), Vérification dossier PMP, Formation",
+          "languages": ["FR", "EN"],
+          "tags": ["pmp", "pmi", "pmbok", "certification", "gold standard"],
+          "search_keywords": [
+            "pmp",
+            "project management professional",
+            "pmi",
+            "pmbok 7"
+          ],
+          "details": {
+            "description": "La certification PMP® est la référence mondiale en gestion de projet. Ce cours prépare à l'examen basé sur le PMBOK 7 et le nouveau format d'examen.",
+            "target_audience": [
+              "Chefs de projet expérimentés",
+              "Directeurs de projet"
+            ],
+            "objectives": [
+              "Réussir l'examen PMP",
+              "Maîtriser les 3 domaines (People, Process, Business Environment)",
+              "Valider les 35 heures de contact obligatoires"
+            ],
+            "prerequisites": [
+              "3 à 5 ans d'expérience en gestion de projet",
+              "35h de formation (incluses)"
+            ],
+            "footnotes": [
+              "(3) Includes one year's PMI membership, allowing to download reference books (PMBOK7) and access PDU Program.",
+              "(4) Includes verification of the candidate's PMP exam application form before submission."
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Créer une équipe performante",
+                "topics": [
+                  "Définir les règles de l'équipe",
+                  "Responsabiliser les membres",
+                  "Gérer les conflits"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Démarrer le projet",
+                "topics": [
+                  "Planifier et gérer le périmètre",
+                  "Budget et ressources",
+                  "Stratégie de communication"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Exécuter le travail",
+                "topics": [
+                  "Gérer la qualité",
+                  "Gérer les risques",
+                  "Engager les parties prenantes"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Maintenir l'équipe sur la voie",
+                "topics": [
+                  "Leadership serviteur",
+                  "Intelligence émotionnelle",
+                  "Gestion du changement"
+                ]
+              },
+              {
+                "day": 5,
+                "title": "Business Environment",
+                "topics": [
+                  "Conformité et valeur",
+                  "Examens blancs et stratégie"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "prince2-v7",
+      "name": "PRINCE2® 7",
+      "description": "La méthode de gestion de projet la plus utilisée au monde. Version 7 incluant la gestion des personnes et la durabilité.",
+      "reference": "PRINCE2",
+      "trainings": [
+        {
+          "id": "prince2-foundation-v7",
+          "title": "PRINCE2® 7 Foundation",
+          "editor": "PEOPLECERT",
+          "reference": "PR701",
+          "is_best_seller": false,
+          "duration_days": 3,
+          "level": "Débutant/Intermédiaire",
+          "evaluation": "MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "exam_price": 0,
+            "training_price": 0
+          },
+          "package_includes": "Formation, Matériel officiel, eBook et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["prince2", "foundation", "v7", "peoplecert"],
+          "search_keywords": [
+            "prince2 foundation",
+            "project management",
+            "certification"
+          ],
+          "details": {
+            "description": "Introduction à la méthode PRINCE2® 7e édition. Apprenez les principes, pratiques et processus pour gérer des projets avec succès.",
+            "target_audience": [
+              "Chefs de projet débutants",
+              "Membres d'équipe projet",
+              "Managers"
+            ],
+            "objectives": [
+              "Comprendre le cadre PRINCE2",
+              "Connaître les 7 Principes, Pratiques et Processus",
+              "Réussir l'examen Foundation"
+            ],
+            "prerequisites": ["Aucun"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction & Principes",
+                "topics": [
+                  "Introduction à la gestion de projet",
+                  "Les 7 Principes",
+                  "L'élément Humain (People)"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Les Pratiques (Thèmes)",
+                "topics": [
+                  "Business Case",
+                  "Organisation",
+                  "Qualité",
+                  "Plans",
+                  "Risques"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Les Processus",
+                "topics": [
+                  "Cycle de vie du projet (SU, IP, CS, MP, SB, CP)",
+                  "Adaptation (Tailoring)",
+                  "Préparation examen"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "prince2-practitioner-v7",
+          "title": "PRINCE2® 7 Practitioner",
+          "editor": "PEOPLECERT",
+          "reference": "PR702",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Avancé",
+          "evaluation": "Scenario-based MCQ",
+          "pricing": {
+            "currency": "EUR",
+            "exam_price": 0,
+            "training_price": 0
+          },
+          "package_includes": "Formation, Matériel officiel et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["prince2", "practitioner", "v7", "application"],
+          "search_keywords": [
+            "prince2 practitioner",
+            "advanced project management"
+          ],
+          "details": {
+            "description": "Apprenez à appliquer et adapter la méthode PRINCE2® 7 à un scénario de projet réel.",
+            "target_audience": ["Chefs de projet certifiés Foundation", "PMO"],
+            "objectives": [
+              "Appliquer les principes PRINCE2",
+              "Adapter la méthode au contexte",
+              "Réussir l'examen Practitioner"
+            ],
+            "prerequisites": ["PRINCE2 Foundation (v6 ou v7)"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Application des Pratiques",
+                "topics": [
+                  "Analyse de scénarios",
+                  "Application du Business Case et des Risques",
+                  "Gestion de l'équipe et des parties prenantes"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Application des Processus",
+                "topics": [
+                  "Gérer les limites de séquence",
+                  "Clôturer un projet",
+                  "Examens blancs"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        }
+      ]
+    }
+  ]
+}
