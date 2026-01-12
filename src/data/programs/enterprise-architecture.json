@@ -9,7 +9,7 @@
     "categories": ["TOGAF EA", "ArchiMate 3", "COBIT 2019"],
     "editors": ["TOG", "ISACA"],
     "durations": [2, 3, 4, 5],
-    "levels": ["Intermédiaire", "Avancé", "Avancé (IP3+)"],
+    "levels": ["Intermédiaire", "Niveau 3"],
     "languages": ["FR", "EN"]
   },
   "categories": [
@@ -27,8 +27,8 @@
           "is_best_seller": false,
           "duration_days": 3,
           "duration_display": "2 or 3d",
-          "level": "Intermédiaire (IP3+)",
-          "evaluation": "MCQ",
+          "level": "Niveau 3",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "package_price": 650,
@@ -86,8 +86,8 @@
           "is_best_seller": false,
           "duration_days": 3,
           "duration_display": "2 or 3d",
-          "level": "Avancé (IP4)",
-          "evaluation": "MCQ",
+          "level": "Niveau 4",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "package_price": 650,
@@ -143,8 +143,8 @@
           "is_best_seller": false,
           "duration_days": 5,
           "duration_display": "4 or 5d",
-          "level": "Avancé (IP4)",
-          "evaluation": "MCQ",
+          "level": "Niveau 4",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "package_price": 1300,
@@ -221,7 +221,7 @@
           "is_best_seller": false,
           "duration_days": 2,
           "level": "Intermédiaire",
-          "evaluation": "MCQ",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "package_price": 0,
@@ -278,7 +278,7 @@
           "is_best_seller": false,
           "duration_days": 1,
           "level": "Avancé",
-          "evaluation": "Scenario-based MCQ",
+          "evaluation": "Scenario-based QCM",
           "pricing": {
             "currency": "EUR",
             "package_price": 0,
@@ -326,8 +326,8 @@
           "reference": "GV001",
           "is_best_seller": false,
           "duration_days": 3,
-          "level": "Avancé (IP3+)",
-          "evaluation": "MCQ",
+          "level": "Niveau 3",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "exam_price": 155,

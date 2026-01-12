@@ -17,7 +17,7 @@
     ],
     "editors": ["UIPATH", "MICROSOFT"],
     "durations": [1, 2, 3, 5],
-    "levels": ["Débutant (IP1)", "Intermédiaire (IP2)", "Avancé"],
+    "levels": ["Niveau 1", "Niveau 2", "Avancé"],
     "languages": ["FR", "EN"]
   },
   "categories": [
@@ -34,8 +34,8 @@
           "reference": "MS006",
           "is_best_seller": false,
           "duration_days": 1,
-          "level": "Débutant (IP1)",
-          "evaluation": "MCQ",
+          "level": "Niveau 1",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "package_price": 145,
@@ -61,8 +61,8 @@
           "is_best_seller": false,
           "is_new": true,
           "duration_days": 1,
-          "level": "Débutant (IP1+)",
-          "evaluation": "MCQ",
+          "level": "Niveau 1",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "package_price": 145,
@@ -95,8 +95,8 @@
           "reference": "MS001",
           "is_best_seller": false,
           "duration_days": 1,
-          "level": "Débutant (IP1)",
-          "evaluation": "MCQ",
+          "level": "Niveau 1",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "package_price": 145,
@@ -141,8 +141,8 @@
           "reference": "MS002",
           "is_best_seller": false,
           "duration_days": 1,
-          "level": "Débutant (IP1)",
-          "evaluation": "MCQ",
+          "level": "Niveau 1",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "package_price": 215,
@@ -182,8 +182,8 @@
           "reference": "MS003",
           "is_best_seller": false,
           "duration_days": 3,
-          "level": "Débutant (IP1)",
-          "evaluation": "MCQ",
+          "level": "Niveau 1",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "package_price": 260,
@@ -232,8 +232,8 @@
           "reference": "MS004",
           "is_best_seller": false,
           "duration_days": 2,
-          "level": "Intermédiaire (IP2)",
-          "evaluation": "MCQ",
+          "level": "Niveau 2",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "package_price": 260,
@@ -283,8 +283,8 @@
           "reference": "MS005",
           "is_best_seller": false,
           "duration_days": 5,
-          "level": "Intermédiaire (IP2)",
-          "evaluation": "MCQ",
+          "level": "Niveau 2",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "package_price": 285,

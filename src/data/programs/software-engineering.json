@@ -9,7 +9,7 @@
     "categories": ["IREB", "ISTQB", "IQBBA"],
     "editors": ["CERTIBLE", "GASQ"],
     "durations": [2, 3],
-    "levels": ["Intermédiaire (IP2)"],
+    "levels": ["Niveau 2"],
     "languages": ["FR", "EN"]
   },
   "categories": [
@@ -27,8 +27,8 @@
           "is_best_seller": false,
           "duration_days": 3,
           "duration_display": "2 or 3d",
-          "level": "Intermédiaire (IP2)",
-          "evaluation": "MCQ",
+          "level": "Niveau 2",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "exam_price": 40,
@@ -96,8 +96,8 @@
           "is_best_seller": true,
           "duration_days": 3,
           "duration_display": "2 or 3d",
-          "level": "Intermédiaire (IP2)",
-          "evaluation": "MCQ",
+          "level": "Niveau 2",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "exam_price": 40,
@@ -146,8 +146,8 @@
           "reference": "IL003",
           "is_best_seller": false,
           "duration_days": 2,
-          "level": "Intermédiaire (IP2)",
-          "evaluation": "MCQ",
+          "level": "Niveau 2",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "exam_price": 40,
@@ -196,8 +196,8 @@
           "is_best_seller": false,
           "is_new": true,
           "duration_days": 2,
-          "level": "Intermédiaire (IP2)",
-          "evaluation": "MCQ",
+          "level": "Niveau 2",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "exam_price": 40,

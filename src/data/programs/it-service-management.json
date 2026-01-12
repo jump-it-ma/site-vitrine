@@ -27,8 +27,8 @@
           "is_best_seller": true,
           "duration_days": 3,
           "duration_display": "2 or 3d",
-          "level": "Débutant (IP1+)",
-          "evaluation": "MCQ",
+          "level": "Niveau 1",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "package_price": 475,
@@ -91,8 +91,8 @@
           "reference": "SM102-105",
           "is_best_seller": false,
           "duration_days": 3,
-          "level": "Avancé (IP3)",
-          "evaluation": "MCQ",
+          "level": "Niveau 3",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "package_price": 600,

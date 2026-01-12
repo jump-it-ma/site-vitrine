@@ -26,8 +26,8 @@
           "reference": "PM101",
           "is_best_seller": true,
           "duration_days": 5,
-          "level": "Avancé (IP3+)",
-          "evaluation": "MCQ",
+          "level": "Niveau 3",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "exam_price": 155,
@@ -126,7 +126,7 @@
           "is_best_seller": false,
           "duration_days": 3,
           "level": "Débutant/Intermédiaire",
-          "evaluation": "MCQ",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "exam_price": 0,
@@ -195,7 +195,7 @@
           "is_best_seller": false,
           "duration_days": 2,
           "level": "Avancé",
-          "evaluation": "Scenario-based MCQ",
+          "evaluation": "Scenario-based QCM",
           "pricing": {
             "currency": "EUR",
             "exam_price": 0,

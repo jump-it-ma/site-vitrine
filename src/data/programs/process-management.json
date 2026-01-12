@@ -34,8 +34,8 @@
           "reference": "PR101",
           "is_best_seller": false,
           "duration_days": 2,
-          "level": "Intermédiaire (IP3)",
-          "evaluation": "MCQ",
+          "level": "Niveau 3",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "exam_price": 90,
@@ -87,8 +87,8 @@
           "reference": "PR102",
           "is_best_seller": false,
           "duration_days": 5,
-          "level": "Avancé (IP3+)",
-          "evaluation": "MCQ",
+          "level": "Niveau 3",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "exam_price": 180,
@@ -163,8 +163,8 @@
           "reference": "PR103",
           "is_best_seller": false,
           "duration_days": 5,
-          "level": "Expert (IP4+)",
-          "evaluation": "MCQ",
+          "level": "Niveau 4",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "exam_price": 240,
@@ -239,8 +239,8 @@
           "reference": "PR001",
           "is_best_seller": false,
           "duration_days": 2,
-          "level": "Intermédiaire (IP2+)",
-          "evaluation": "MCQ",
+          "level": "Niveau 2",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "exam_price": 90,

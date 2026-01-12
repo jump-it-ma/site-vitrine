@@ -15,7 +15,7 @@
     ],
     "editors": ["EXIN", "PECB"],
     "durations": [2, 5],
-    "levels": ["Intermédiaire (IP2)", "Avancé (IP3/IP3+)"],
+    "levels": ["Niveau 2", "Niveau 3"],
     "languages": ["FR", "EN"]
   },
   "categories": [
@@ -32,8 +32,8 @@
           "reference": "AIM001",
           "is_best_seller": false,
           "duration_days": 2,
-          "level": "Intermédiaire (IP2+)",
-          "evaluation": "MCQ",
+          "level": "Niveau 2",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "package_price": 265,
@@ -90,8 +90,8 @@
           "reference": "AIM002, 003",
           "is_best_seller": false,
           "duration_days": 5,
-          "level": "Avancé (IP3 / IP3+)",
-          "evaluation": "MCQ",
+          "level": "Niveau 3",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "package_price": 665,
