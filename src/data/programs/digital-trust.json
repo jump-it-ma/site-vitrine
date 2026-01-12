@@ -123,7 +123,7 @@
           "duration_days": 5,
           "level": "Niveau 3",
           "evaluation": "QCM",
-          "package_includes": "Official Training Package (incl. voucher)",
+          "package_includes": "Package de formation officiel (incl. voucher)",
           "languages": ["FR", "EN"],
           "tags": ["lead", "implementer", "security"],
           "search_keywords": [
@@ -320,7 +320,7 @@
           "duration_days": 2,
           "level": "Niveau 2",
           "evaluation": "QCM",
-          "package_includes": "Official Training Package (incl. voucher)",
+          "package_includes": "Package de formation officiel (incl. voucher)",
           "languages": ["FR", "EN"],
           "tags": ["foundation", "incident", "security"],
           "search_keywords": [
@@ -382,7 +382,7 @@
           "duration_days": 5,
           "level": "Niveau 3",
           "evaluation": "QCM",
-          "package_includes": "Official Training Package (incl. voucher)",
+          "package_includes": "Package de formation officiel (incl. voucher)",
           "languages": ["FR", "EN"],
           "tags": ["lead", "incident", "manager", "security"],
           "search_keywords": [
@@ -488,7 +488,7 @@
           "duration_days": 2,
           "level": "Niveau 2",
           "evaluation": "QCM",
-          "package_includes": "Official Training Package (incl. voucher)",
+          "package_includes": "Package de formation officiel (incl. voucher)",
           "languages": ["FR", "EN"],
           "tags": ["foundation", "risk", "security"],
           "search_keywords": [
@@ -550,7 +550,7 @@
           "duration_days": 3,
           "level": "Niveau 3",
           "evaluation": "QCM",
-          "package_includes": "Official Training Package (incl. voucher)",
+          "package_includes": "Package de formation officiel (incl. voucher)",
           "languages": ["FR", "EN"],
           "tags": ["risk", "manager", "security"],
           "search_keywords": [
@@ -622,7 +622,7 @@
           "duration_days": 5,
           "level": "Niveau 3",
           "evaluation": "QCM",
-          "package_includes": "Official Training Package (incl. voucher)",
+          "package_includes": "Package de formation officiel (incl. voucher)",
           "languages": ["FR", "EN"],
           "tags": ["lead", "risk", "manager", "security"],
           "search_keywords": [
@@ -714,7 +714,7 @@
           "duration_days": 3,
           "level": "Niveau 3",
           "evaluation": "QCM",
-          "package_includes": "Official Training Package (incl. voucher)",
+          "package_includes": "Package de formation officiel (incl. voucher)",
           "languages": ["FR", "EN"],
           "tags": ["ebios", "risk", "manager", "french"],
           "search_keywords": [
@@ -799,7 +799,7 @@
           "duration_days": 2,
           "level": "Niveau 2",
           "evaluation": "QCM",
-          "package_includes": "Official Training Package (incl. voucher)",
+          "package_includes": "Package de formation officiel (incl. voucher)",
           "languages": ["FR", "EN"],
           "tags": ["foundation", "cybersecurity", "security"],
           "search_keywords": [
@@ -861,7 +861,7 @@
           "duration_days": 5,
           "level": "Niveau 3",
           "evaluation": "QCM",
-          "package_includes": "Official Training Package (incl. voucher)",
+          "package_includes": "Package de formation officiel (incl. voucher)",
           "languages": ["FR", "EN"],
           "tags": ["lead", "cybersecurity", "manager", "security"],
           "search_keywords": [
@@ -969,7 +969,7 @@
           "pricing": {
             "currency": "EUR",
             "package_price": 265,
-            "note": "Official Training Package (incl. voucher)"
+            "note": "Package de formation officiel (incl. voucher)"
           },
           "package_includes": "Support de cours officiel et Voucher Examen",
           "languages": ["FR", "EN"],
@@ -1035,7 +1035,7 @@
           "pricing": {
             "currency": "EUR",
             "package_price": 265,
-            "note": "Official Training Package (incl. voucher)"
+            "note": "Package de formation officiel (incl. voucher)"
           },
           "package_includes": "Support de cours officiel et Voucher Examen",
           "languages": ["FR", "EN"],
@@ -1101,7 +1101,7 @@
           "pricing": {
             "currency": "EUR",
             "package_price": 265,
-            "note": "Official Training Package (incl. voucher)"
+            "note": "Package de formation officiel (incl. voucher)"
           },
           "package_includes": "Support de cours officiel et Voucher Examen",
           "languages": ["FR", "EN"],
@@ -1165,7 +1165,7 @@
           "pricing": {
             "currency": "EUR",
             "package_price": 665,
-            "note": "Official Training Package (incl. voucher)"
+            "note": "Package de formation officiel (incl. voucher)"
           },
           "package_includes": "Support de cours officiel et Voucher Examen",
           "languages": ["FR", "EN"],
@@ -1231,7 +1231,7 @@
           "pricing": {
             "currency": "EUR",
             "package_price": 665,
-            "note": "Official Training Package (incl. voucher)"
+            "note": "Package de formation officiel (incl. voucher)"
           },
           "package_includes": "Support de cours officiel et Voucher Examen",
           "languages": ["FR", "EN"],
@@ -1299,7 +1299,7 @@
           "pricing": {
             "currency": "EUR",
             "package_price": 265,
-            "note": "Official Training Package (incl. voucher)"
+            "note": "Package de formation officiel (incl. voucher)"
           },
           "package_includes": "Support de cours officiel et Voucher Examen",
           "languages": ["FR", "EN"],
@@ -1347,29 +1347,28 @@
         },
         {
           "id": "iso-31000-risk-manager",
-          "title": "ISO 31000 Risk Manager / Lead Risk Manager",
+          "title": "ISO 31000 Risk Manager",
           "editor": "PECB",
           "reference": "ISR017",
           "is_best_seller": true,
           "duration_days": 3,
-          "duration_display": "3d / 5d",
           "level": "Niveau 3",
           "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
-            "package_price": "400 / 665",
-            "note": "Risk Manager (3d): 400€ / Lead Risk Manager (5d): 665€"
+            "package_price": 400,
+            "note": "Package de formation officiel (incl. voucher)"
           },
           "package_includes": "Support de cours officiel et Voucher Examen",
           "languages": ["FR", "EN"],
-          "tags": ["iso 31000", "risk manager", "lead risk manager", "expert"],
+          "tags": ["iso 31000", "risk manager", "expert"],
           "search_keywords": [
             "risk manager certification",
             "iec 31010",
-            "analyse de risques avancée"
+            "analyse de risques"
           ],
           "details": {
-            "description": "Maîtrisez la mise en œuvre des processus de gestion des risques. Certification Risk Manager (3 jours) ou Lead Risk Manager (5 jours) incluant les techniques d'évaluation IEC 31010.",
+            "description": "Maîtrisez la mise en œuvre des processus de gestion des risques selon ISO 31000. Cette formation de 3 jours couvre les techniques d'évaluation et les méthodologies pratiques.",
             "target_audience": [
               "Risk Managers",
               "Consultants",
@@ -1387,7 +1386,8 @@
                 "title": "Introduction & Cadre",
                 "topics": [
                   "Cadre de référence ISO 31000",
-                  "Intégration dans l'organisation"
+                  "Intégration dans l'organisation",
+                  "Gouvernance des risques"
                 ]
               },
               {
@@ -1395,27 +1395,112 @@
                 "title": "Appréciation du Risque",
                 "topics": [
                   "Identification et Analyse",
-                  "Techniques d'évaluation des risques (IEC 31010)"
+                  "Techniques d'évaluation des risques (IEC 31010)",
+                  "Critères de risque"
                 ]
               },
               {
                 "day": 3,
-                "title": "Traitement & Examen",
+                "title": "Traitement & Certification",
                 "topics": [
                   "Options de traitement",
                   "Suivi et revue",
+                  "Communication des risques",
                   "Examen Risk Manager"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "iso-31000-lead-risk-manager",
+          "title": "ISO 31000 Lead Risk Manager",
+          "editor": "PECB",
+          "reference": "ISR018",
+          "is_best_seller": true,
+          "duration_days": 5,
+          "level": "Niveau 3",
+          "evaluation": "QCM",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 665,
+            "note": "Package de formation officiel (incl. voucher)"
+          },
+          "package_includes": "Support de cours officiel et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["iso 31000", "lead risk manager", "expert"],
+          "search_keywords": [
+            "lead risk manager certification",
+            "iec 31010",
+            "gestion des risques avancée"
+          ],
+          "details": {
+            "description": "Devenez expert en gestion des risques avec cette formation avancée de 5 jours. Vous acquerrez les compétences pour diriger un programme complet de gestion des risques organisationnels selon ISO 31000.",
+            "target_audience": [
+              "Risk Managers expérimentés",
+              "Consultants senior en risques",
+              "Responsables conformité et gouvernance",
+              "Directeurs sécurité et risques"
+            ],
+            "objectives": [
+              "Établir, maintenir et améliorer un cadre de gestion des risques",
+              "Diriger la mise en œuvre des processus de gestion des risques",
+              "Maîtriser les techniques avancées d'évaluation (IEC 31010)",
+              "Communiquer et piloter la stratégie risque auprès du management"
+            ],
+            "prerequisites": [
+              "Certification Risk Manager ou Formation Foundation recommandée"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction & Cadre Avancé",
+                "topics": [
+                  "Cadre de référence ISO 31000 et ISO 31010",
+                  "Intégration dans la gouvernance",
+                  "Leadership et gouvernance des risques"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Identification & Analyse",
+                "topics": [
+                  "Établissement du contexte avancé",
+                  "Identification des risques",
+                  "Analyse des risques",
+                  "Critères d'évaluation"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Techniques d'Appréciation",
+                "topics": [
+                  "Techniques d'évaluation des risques (IEC 31010)",
+                  "Comparaison des méthodologies",
+                  "Cas d'usage pratiques",
+                  "Ateliers d'application"
                 ]
               },
               {
                 "day": 4,
-                "title": "Lead Manager (Option 5j)",
-                "topics": ["Gestion avancée", "Communication de crise"]
+                "title": "Traitement & Gestion",
+                "topics": [
+                  "Options de traitement des risques",
+                  "Plans de traitement",
+                  "Communication et consultation",
+                  "Suivi et amélioration continue"
+                ]
               },
               {
                 "day": 5,
-                "title": "Examen Lead",
-                "topics": ["Examen Lead Risk Manager"]
+                "title": "Stratégie & Certification",
+                "topics": [
+                  "Leadership en gestion des risques",
+                  "Intégration à la stratégie organisationnelle",
+                  "Études de cas et projets réels",
+                  "Examen Lead Risk Manager"
+                ]
               }
             ],
             "faqs": []
@@ -1559,7 +1644,7 @@
           "duration_days": 2,
           "level": "Niveau 2",
           "evaluation": "QCM",
-          "package_includes": "Official Training Package (incl. voucher)",
+          "package_includes": "Package de formation officiel (incl. voucher)",
           "languages": ["FR", "EN"],
           "tags": ["dora", "foundation", "resilience", "regulation"],
           "search_keywords": [
@@ -1632,7 +1717,7 @@
           "duration_days": 5,
           "level": "Niveau 3",
           "evaluation": "QCM",
-          "package_includes": "Official Training Package (incl. voucher)",
+          "package_includes": "Package de formation officiel (incl. voucher)",
           "languages": ["FR", "EN"],
           "tags": ["dora", "resilience", "digital", "regulation"],
           "search_keywords": [
@@ -1743,7 +1828,7 @@
           "duration_days": 2,
           "level": "Niveau 2",
           "evaluation": "QCM",
-          "package_includes": "Official Training Package (incl. voucher)",
+          "package_includes": "Package de formation officiel (incl. voucher)",
           "languages": ["FR", "EN"],
           "tags": ["foundation", "rgpd", "privacy", "data protection"],
           "search_keywords": [
@@ -1810,7 +1895,7 @@
           "duration_days": 5,
           "level": "Niveau 3",
           "evaluation": "QCM",
-          "package_includes": "Official Training Package (incl. voucher)",
+          "package_includes": "Package de formation officiel (incl. voucher)",
           "languages": ["FR", "EN"],
           "tags": ["dpo", "data protection", "officer", "rgpd"],
           "search_keywords": [

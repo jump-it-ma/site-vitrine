@@ -37,7 +37,7 @@
           "pricing": {
             "currency": "EUR",
             "package_price": 265,
-            "note": "Official Training Package (incl. voucher)"
+            "note": "Package de formation officiel (incl. voucher)"
           },
           "package_includes": "Support officiel PECB et Voucher Examen",
           "languages": ["EN"],
@@ -95,7 +95,7 @@
           "pricing": {
             "currency": "EUR",
             "package_price": 665,
-            "note": "Official Training Package (incl. voucher)"
+            "note": "Package de formation officiel (incl. voucher)"
           },
           "package_includes": "Support officiel PECB et Voucher Examen",
           "languages": ["EN"],
