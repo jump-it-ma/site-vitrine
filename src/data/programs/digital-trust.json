@@ -10,7 +10,7 @@
       "ISO 27005 / EBIOS",
       "ISO 27032",
       "DORA",
-      "GDPR / ISO 27701",
+      "RGPD",
       "ISO 9001",
       "ISO 14001",
       "ISO 22301",
@@ -25,7 +25,7 @@
       "ISO 27005 / EBIOS",
       "ISO 27032",
       "DORA",
-      "GDPR / ISO 27701",
+      "RGPD",
       "ISO 9001",
       "ISO 14001",
       "ISO 22301",
@@ -952,297 +952,8 @@
       ]
     },
     {
-      "id": "dora",
-      "name": "DORA",
-      "description": "Digital Operational Resilience Act",
-      "reference": "DORA",
-      "trainings": [
-        {
-          "id": "ISR015",
-          "title": "DORA Lead Manager",
-          "editor": "PECB",
-          "reference": "DORA",
-          "is_best_seller": false,
-          "duration_days": 5,
-          "level": "Niveau 3",
-          "evaluation": "QCM",
-          "package_includes": "Official Training Package (incl. voucher)",
-          "languages": ["FR", "EN"],
-          "tags": ["dora", "resilience", "digital", "regulation"],
-          "search_keywords": [
-            "dora",
-            "digital operational resilience",
-            "lead manager",
-            "regulation",
-            "european"
-          ],
-          "details": {
-            "description": "Cette formation vous prépare à diriger la mise en conformité DORA (Digital Operational Resilience Act), le règlement européen sur la résilience opérationnelle numérique pour le secteur financier.",
-            "target_audience": [
-              "Dirigeants et décideurs d'institutions financières",
-              "Responsables conformité et risques",
-              "Professionnels IT du secteur financier",
-              "Personnel juridique et réglementaire",
-              "Consultants en régulation financière et cybersécurité"
-            ],
-            "objectives": [
-              "Comprendre l'objectif de DORA et interpréter ses exigences",
-              "Maîtriser les fondamentaux de la gestion des risques ICT",
-              "Préparer et planifier la mise en œuvre des exigences DORA",
-              "Implémenter les 5 piliers de la résilience opérationnelle numérique",
-              "Réviser et améliorer continuellement la résilience opérationnelle"
-            ],
-            "curriculum": [
-              {
-                "day": 1,
-                "title": "Introduction à DORA",
-                "topics": [
-                  "Contexte réglementaire européen",
-                  "Objectifs et périmètre de DORA",
-                  "Entités concernées",
-                  "Les 5 piliers de DORA"
-                ]
-              },
-              {
-                "day": 2,
-                "title": "Gestion des Risques ICT",
-                "topics": [
-                  "Cadre de gestion des risques ICT",
-                  "Identification des risques",
-                  "Mesures de protection",
-                  "Détection des anomalies"
-                ]
-              },
-              {
-                "day": 3,
-                "title": "Gestion des Incidents ICT",
-                "topics": [
-                  "Classification des incidents",
-                  "Processus de signalement",
-                  "Communication aux autorités",
-                  "Documentation et reporting"
-                ]
-              },
-              {
-                "day": 4,
-                "title": "Tests et Tiers",
-                "topics": [
-                  "Tests de résilience opérationnelle",
-                  "Tests d'intrusion (TLPT)",
-                  "Gestion des risques tiers ICT",
-                  "Contrats avec prestataires critiques"
-                ]
-              },
-              {
-                "day": 5,
-                "title": "Mise en Œuvre et Certification",
-                "topics": [
-                  "Partage d'informations",
-                  "Surveillance et amélioration",
-                  "Révision générale",
-                  "Examen de certification"
-                ]
-              }
-            ],
-            "faqs": [
-              {
-                "question": "Qui est concerné par DORA ?",
-                "answer": "Les entités financières (banques, assurances, sociétés de gestion, etc.) et leurs prestataires ICT critiques au sein de l'UE."
-              },
-              {
-                "question": "Quelle est la date d'entrée en application ?",
-                "answer": "DORA est entré en application le 17 janvier 2025 après une période de transition de 2 ans."
-              },
-              {
-                "question": "Comment DORA se relie à d'autres réglementations ?",
-                "answer": "DORA complète NIS2 pour le secteur financier et s'articule avec ISO 27001, GDPR et les directives sectorielles."
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "gdpr-iso-27701",
-      "name": "GDPR / ISO 27701",
-      "description": "Data Protection and Privacy Management",
-      "reference": "GDPR",
-      "trainings": [
-        {
-          "id": "ISR016",
-          "title": "GDPR Foundation",
-          "editor": "PECB",
-          "reference": "GDPR",
-          "is_best_seller": false,
-          "duration_days": 2,
-          "level": "Niveau 2",
-          "evaluation": "QCM",
-          "package_includes": "Official Training Package (incl. voucher)",
-          "languages": ["FR", "EN"],
-          "tags": ["foundation", "gdpr", "privacy", "data protection"],
-          "search_keywords": [
-            "gdpr",
-            "foundation",
-            "data protection",
-            "privacy",
-            "rgpd"
-          ],
-          "details": {
-            "description": "Cette formation vous permet de comprendre les exigences essentielles du RGPD et les principes fondamentaux de la protection des données personnelles.",
-            "target_audience": [
-              "Professionnels impliqués dans la protection des données",
-              "Membres d'équipes de sécurité de l'information",
-              "Personnes souhaitant comprendre le RGPD",
-              "Futurs DPO cherchant une introduction"
-            ],
-            "objectives": [
-              "Comprendre les exigences essentielles du RGPD",
-              "Maîtriser les principes fondamentaux de la vie privée",
-              "Connaître le rôle et les responsabilités du DPO",
-              "Comprendre les approches pour établir un cadre de conformité"
-            ],
-            "curriculum": [
-              {
-                "day": 1,
-                "title": "Introduction au RGPD",
-                "topics": [
-                  "Historique et contexte",
-                  "Principes fondamentaux",
-                  "Droits des personnes concernées",
-                  "Bases légales du traitement"
-                ]
-              },
-              {
-                "day": 2,
-                "title": "Conformité et Certification",
-                "topics": [
-                  "Responsabilités organisationnelles",
-                  "Rôle du DPO",
-                  "Autorités de contrôle",
-                  "Préparation à l'examen"
-                ]
-              }
-            ],
-            "faqs": [
-              {
-                "question": "Quels sont les prérequis ?",
-                "answer": "Aucun prérequis formel n'est requis."
-              },
-              {
-                "question": "Cette formation est-elle suffisante pour devenir DPO ?",
-                "answer": "Non, la formation Foundation donne les bases. La formation CDPO (5 jours) est recommandée pour exercer comme DPO."
-              }
-            ]
-          }
-        },
-        {
-          "id": "ISR017",
-          "title": "Certified Data Protection Officer",
-          "editor": "PECB",
-          "reference": "GDPR",
-          "is_best_seller": false,
-          "duration_days": 5,
-          "level": "Niveau 3",
-          "evaluation": "QCM",
-          "package_includes": "Official Training Package (incl. voucher)",
-          "languages": ["FR", "EN"],
-          "tags": ["dpo", "data protection", "officer", "gdpr"],
-          "search_keywords": [
-            "dpo",
-            "data protection officer",
-            "gdpr",
-            "privacy",
-            "certified"
-          ],
-          "details": {
-            "description": "Cette formation vous prépare à exercer le rôle de Délégué à la Protection des Données (DPO) selon les exigences du RGPD. Vous acquerrez les compétences pour implémenter et gérer un programme de conformité RGPD.",
-            "target_audience": [
-              "DPO et futurs délégués à la protection des données",
-              "Responsables conformité RGPD",
-              "Consultants en protection des données",
-              "Membres d'équipes sécurité et conformité",
-              "Experts préparant une évolution vers un poste de DPO"
-            ],
-            "objectives": [
-              "Comprendre les concepts du RGPD et interpréter ses exigences",
-              "Acquérir les compétences pour exercer le rôle quotidien de DPO",
-              "Développer la capacité à informer, conseiller et surveiller la conformité",
-              "Coopérer efficacement avec les autorités de contrôle",
-              "Comprendre la corrélation entre RGPD, ISO 27701 et ISO 27001"
-            ],
-            "curriculum": [
-              {
-                "day": 1,
-                "title": "Introduction et Rôle du DPO",
-                "topics": [
-                  "Concepts et principes du RGPD",
-                  "Désignation et position du DPO",
-                  "Relation avec la direction",
-                  "Tâches quotidiennes du DPO"
-                ]
-              },
-              {
-                "day": 2,
-                "title": "Programme de Conformité",
-                "topics": [
-                  "Développement du programme RGPD",
-                  "Politiques de protection des données",
-                  "Registre des traitements",
-                  "Gestion documentaire"
-                ]
-              },
-              {
-                "day": 3,
-                "title": "Gestion des Risques et AIPD",
-                "topics": [
-                  "Processus de gestion des risques",
-                  "Analyse d'impact (DPIA/AIPD)",
-                  "Privacy by Design et by Default",
-                  "Mesures techniques et organisationnelles"
-                ]
-              },
-              {
-                "day": 4,
-                "title": "Sécurité et Incidents",
-                "topics": [
-                  "Exigences de sécurité RGPD",
-                  "Gestion des violations de données",
-                  "Notification aux autorités",
-                  "Communication aux personnes"
-                ]
-              },
-              {
-                "day": 5,
-                "title": "Surveillance et Certification",
-                "topics": [
-                  "Surveillance de la conformité",
-                  "Amélioration continue",
-                  "Corrélation ISO 27701",
-                  "Examen de certification"
-                ]
-              }
-            ],
-            "faqs": [
-              {
-                "question": "La certification CDPO est-elle obligatoire pour être DPO ?",
-                "answer": "Non, le RGPD n'impose pas de certification obligatoire, mais la certification PECB CDPO démontre vos compétences et est reconnue internationalement."
-              },
-              {
-                "question": "Quelle expérience est recommandée ?",
-                "answer": "Une connaissance fondamentale du RGPD et une expérience en protection des données ou sécurité de l'information sont recommandées."
-              },
-              {
-                "question": "La formation couvre-t-elle ISO 27701 ?",
-                "answer": "Oui, la corrélation entre RGPD et ISO 27701 (extension PIMS d'ISO 27001) est abordée dans la formation."
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
       "id": "iso-9001",
-      "name": "ISO 9001 - Quality Management",
+      "name": "ISO 9001",
       "description": "Systèmes de Management de la Qualité (SMQ). La norme internationale pour assurer la satisfaction client et l'amélioration continue.",
       "reference": "ISO9001",
       "trainings": [
@@ -1308,7 +1019,7 @@
     },
     {
       "id": "iso-14001",
-      "name": "ISO 14001 - Environmental Management",
+      "name": "ISO 1400",
       "description": "Systèmes de Management Environnemental (SME). Réduire l'impact environnemental et respecter la conformité réglementaire.",
       "reference": "ISO14001",
       "trainings": [
@@ -1374,7 +1085,7 @@
     },
     {
       "id": "iso-22301",
-      "name": "ISO 22301 - Business Continuity Management",
+      "name": "ISO 22301",
       "description": "Assurez la résilience de votre entreprise face aux perturbations avec un Système de Management de la Continuité d'Activité (SMCA).",
       "reference": "ISO22301",
       "trainings": [
@@ -1521,7 +1232,7 @@
     },
     {
       "id": "iso-31000",
-      "name": "ISO 31000 - Risk Management",
+      "name": "ISO 31000",
       "description": "Lignes directrices pour gérer les risques auxquels les organisations sont confrontées. Une approche stratégique et opérationnelle.",
       "reference": "ISO31000",
       "trainings": [
@@ -1776,6 +1487,368 @@
               {
                 "question": "Comment cette formation s'articule avec d'autres certifications ?",
                 "answer": "Elle complète les certifications techniques (ISO 27001, ISO 27035, etc.) en apportant une dimension stratégique et de leadership nécessaire pour un rôle exécutif."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "dora",
+      "name": "DORA",
+      "description": "Digital Operational Resilience Act",
+      "reference": "DORA",
+      "trainings": [
+        {
+          "id": "ISR014",
+          "title": "DORA Foundation",
+          "editor": "PECB",
+          "reference": "DORA",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Niveau 2",
+          "evaluation": "QCM",
+          "package_includes": "Official Training Package (incl. voucher)",
+          "languages": ["FR", "EN"],
+          "tags": ["dora", "foundation", "resilience", "regulation"],
+          "search_keywords": [
+            "dora",
+            "digital operational resilience",
+            "foundation",
+            "regulation",
+            "european"
+          ],
+          "details": {
+            "description": "Cette formation vous permet de comprendre les éléments fondamentaux du DORA (Digital Operational Resilience Act), le règlement européen sur la résilience opérationnelle numérique pour le secteur financier.",
+            "target_audience": [
+              "Professionnels d'institutions financières souhaitant comprendre DORA",
+              "Responsables conformité et risques débutants",
+              "Membres d'équipes IT du secteur financier",
+              "Personnes cherchant une introduction à DORA"
+            ],
+            "objectives": [
+              "Comprendre les objectifs et le périmètre de DORA",
+              "Maîtriser les concepts fondamentaux de la résilience opérationnelle",
+              "Identifier les 5 piliers de DORA",
+              "Comprendre les exigences essentielles pour les entités financières"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction et Contexte",
+                "topics": [
+                  "Contexte réglementaire européen",
+                  "Objectifs et périmètre de DORA",
+                  "Entités concernées et périmètre d'application",
+                  "Évolution réglementaire du secteur financier"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Les 5 Piliers de DORA",
+                "topics": [
+                  "Pilier 1 : Gestion des risques ICT",
+                  "Pilier 2 : Gestion des incidents ICT",
+                  "Pilier 3 : Tests de résilience",
+                  "Pilier 4 : Tiers critiques et gestion des risques",
+                  "Pilier 5 : Partage d'informations",
+                  "Préparation à l'examen"
+                ]
+              }
+            ],
+            "faqs": [
+              {
+                "question": "Quels sont les prérequis ?",
+                "answer": "Aucun prérequis formel n'est requis. Une connaissance générale du secteur financier est recommandée."
+              },
+              {
+                "question": "Qui est concerné par DORA ?",
+                "answer": "Les entités financières (banques, assurances, sociétés de gestion, etc.) et leurs prestataires ICT critiques au sein de l'UE."
+              },
+              {
+                "question": "Quelle est la date d'entrée en application ?",
+                "answer": "DORA est entré en application le 17 janvier 2025 après une période de transition de 2 ans."
+              }
+            ]
+          }
+        },
+        {
+          "id": "ISR015",
+          "title": "DORA Lead Manager",
+          "editor": "PECB",
+          "reference": "DORA",
+          "is_best_seller": false,
+          "duration_days": 5,
+          "level": "Niveau 3",
+          "evaluation": "QCM",
+          "package_includes": "Official Training Package (incl. voucher)",
+          "languages": ["FR", "EN"],
+          "tags": ["dora", "resilience", "digital", "regulation"],
+          "search_keywords": [
+            "dora",
+            "digital operational resilience",
+            "lead manager",
+            "regulation",
+            "european"
+          ],
+          "details": {
+            "description": "Cette formation vous prépare à diriger la mise en conformité DORA (Digital Operational Resilience Act), le règlement européen sur la résilience opérationnelle numérique pour le secteur financier.",
+            "target_audience": [
+              "Dirigeants et décideurs d'institutions financières",
+              "Responsables conformité et risques",
+              "Professionnels IT du secteur financier",
+              "Personnel juridique et réglementaire",
+              "Consultants en régulation financière et cybersécurité"
+            ],
+            "objectives": [
+              "Comprendre l'objectif de DORA et interpréter ses exigences",
+              "Maîtriser les fondamentaux de la gestion des risques ICT",
+              "Préparer et planifier la mise en œuvre des exigences DORA",
+              "Implémenter les 5 piliers de la résilience opérationnelle numérique",
+              "Réviser et améliorer continuellement la résilience opérationnelle"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction à DORA",
+                "topics": [
+                  "Contexte réglementaire européen",
+                  "Objectifs et périmètre de DORA",
+                  "Entités concernées",
+                  "Les 5 piliers de DORA"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Gestion des Risques ICT",
+                "topics": [
+                  "Cadre de gestion des risques ICT",
+                  "Identification des risques",
+                  "Mesures de protection",
+                  "Détection des anomalies"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Gestion des Incidents ICT",
+                "topics": [
+                  "Classification des incidents",
+                  "Processus de signalement",
+                  "Communication aux autorités",
+                  "Documentation et reporting"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Tests et Tiers",
+                "topics": [
+                  "Tests de résilience opérationnelle",
+                  "Tests d'intrusion (TLPT)",
+                  "Gestion des risques tiers ICT",
+                  "Contrats avec prestataires critiques"
+                ]
+              },
+              {
+                "day": 5,
+                "title": "Mise en Œuvre et Certification",
+                "topics": [
+                  "Partage d'informations",
+                  "Surveillance et amélioration",
+                  "Révision générale",
+                  "Examen de certification"
+                ]
+              }
+            ],
+            "faqs": [
+              {
+                "question": "Qui est concerné par DORA ?",
+                "answer": "Les entités financières (banques, assurances, sociétés de gestion, etc.) et leurs prestataires ICT critiques au sein de l'UE."
+              },
+              {
+                "question": "Quelle est la date d'entrée en application ?",
+                "answer": "DORA est entré en application le 17 janvier 2025 après une période de transition de 2 ans."
+              },
+              {
+                "question": "Comment DORA se relie à d'autres réglementations ?",
+                "answer": "DORA complète NIS2 pour le secteur financier et s'articule avec ISO 27001, RGPD et les directives sectorielles."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "gdpr-iso-27701",
+      "name": "RGPD",
+      "description": "Data Protection and Privacy Management",
+      "reference": "RGPD",
+      "trainings": [
+        {
+          "id": "ISR016",
+          "title": "RGPD Foundation",
+          "editor": "PECB",
+          "reference": "RGPD",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Niveau 2",
+          "evaluation": "QCM",
+          "package_includes": "Official Training Package (incl. voucher)",
+          "languages": ["FR", "EN"],
+          "tags": ["foundation", "rgpd", "privacy", "data protection"],
+          "search_keywords": [
+            "rgpd",
+            "foundation",
+            "data protection",
+            "privacy",
+            "rgpd"
+          ],
+          "details": {
+            "description": "Cette formation vous permet de comprendre les exigences essentielles du RGPD et les principes fondamentaux de la protection des données personnelles.",
+            "target_audience": [
+              "Professionnels impliqués dans la protection des données",
+              "Membres d'équipes de sécurité de l'information",
+              "Personnes souhaitant comprendre le RGPD",
+              "Futurs DPO cherchant une introduction"
+            ],
+            "objectives": [
+              "Comprendre les exigences essentielles du RGPD",
+              "Maîtriser les principes fondamentaux de la vie privée",
+              "Connaître le rôle et les responsabilités du DPO",
+              "Comprendre les approches pour établir un cadre de conformité"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction au RGPD",
+                "topics": [
+                  "Historique et contexte",
+                  "Principes fondamentaux",
+                  "Droits des personnes concernées",
+                  "Bases légales du traitement"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Conformité et Certification",
+                "topics": [
+                  "Responsabilités organisationnelles",
+                  "Rôle du DPO",
+                  "Autorités de contrôle",
+                  "Préparation à l'examen"
+                ]
+              }
+            ],
+            "faqs": [
+              {
+                "question": "Quels sont les prérequis ?",
+                "answer": "Aucun prérequis formel n'est requis."
+              },
+              {
+                "question": "Cette formation est-elle suffisante pour devenir DPO ?",
+                "answer": "Non, la formation Foundation donne les bases. La formation CDPO (5 jours) est recommandée pour exercer comme DPO."
+              }
+            ]
+          }
+        },
+        {
+          "id": "ISR017",
+          "title": "Certified Data Protection Officer",
+          "editor": "PECB",
+          "reference": "RGPD",
+          "is_best_seller": false,
+          "duration_days": 5,
+          "level": "Niveau 3",
+          "evaluation": "QCM",
+          "package_includes": "Official Training Package (incl. voucher)",
+          "languages": ["FR", "EN"],
+          "tags": ["dpo", "data protection", "officer", "rgpd"],
+          "search_keywords": [
+            "dpo",
+            "data protection officer",
+            "rgpd",
+            "privacy",
+            "certified"
+          ],
+          "details": {
+            "description": "Cette formation vous prépare à exercer le rôle de Délégué à la Protection des Données (DPO) selon les exigences du RGPD. Vous acquerrez les compétences pour implémenter et gérer un programme de conformité RGPD.",
+            "target_audience": [
+              "DPO et futurs délégués à la protection des données",
+              "Responsables conformité RGPD",
+              "Consultants en protection des données",
+              "Membres d'équipes sécurité et conformité",
+              "Experts préparant une évolution vers un poste de DPO"
+            ],
+            "objectives": [
+              "Comprendre les concepts du RGPD et interpréter ses exigences",
+              "Acquérir les compétences pour exercer le rôle quotidien de DPO",
+              "Développer la capacité à informer, conseiller et surveiller la conformité",
+              "Coopérer efficacement avec les autorités de contrôle",
+              "Comprendre la corrélation entre RGPD, ISO 27701 et ISO 27001"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction et Rôle du DPO",
+                "topics": [
+                  "Concepts et principes du RGPD",
+                  "Désignation et position du DPO",
+                  "Relation avec la direction",
+                  "Tâches quotidiennes du DPO"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Programme de Conformité",
+                "topics": [
+                  "Développement du programme RGPD",
+                  "Politiques de protection des données",
+                  "Registre des traitements",
+                  "Gestion documentaire"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Gestion des Risques et AIPD",
+                "topics": [
+                  "Processus de gestion des risques",
+                  "Analyse d'impact (DPIA/AIPD)",
+                  "Privacy by Design et by Default",
+                  "Mesures techniques et organisationnelles"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Sécurité et Incidents",
+                "topics": [
+                  "Exigences de sécurité RGPD",
+                  "Gestion des violations de données",
+                  "Notification aux autorités",
+                  "Communication aux personnes"
+                ]
+              },
+              {
+                "day": 5,
+                "title": "Surveillance et Certification",
+                "topics": [
+                  "Surveillance de la conformité",
+                  "Amélioration continue",
+                  "Corrélation ISO 27701",
+                  "Examen de certification"
+                ]
+              }
+            ],
+            "faqs": [
+              {
+                "question": "La certification CDPO est-elle obligatoire pour être DPO ?",
+                "answer": "Non, le RGPD n'impose pas de certification obligatoire, mais la certification PECB CDPO démontre vos compétences et est reconnue internationalement."
+              },
+              {
+                "question": "Quelle expérience est recommandée ?",
+                "answer": "Une connaissance fondamentale du RGPD et une expérience en protection des données ou sécurité de l'information sont recommandées."
+              },
+              {
+                "question": "La formation couvre-t-elle ISO 27701 ?",
+                "answer": "Oui, la corrélation entre RGPD et ISO 27701 (extension PIMS d'ISO 27001) est abordée dans la formation."
               }
             ]
           }
