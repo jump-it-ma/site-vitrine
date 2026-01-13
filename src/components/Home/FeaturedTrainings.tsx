@@ -8,7 +8,12 @@ import { HiArrowRight, HiClock, HiAcademicCap } from "react-icons/hi2";
 
 import { CypressIcon, PlaywrightIcon, ReactIcon, SeleniumIcon } from "../icons";
 
-const FEATURED_IDS = ["cypress", "selenium", "reactjs", "playwright"];
+const FEATURED_IDS = [
+  "psm1",
+  "ISO27001LI",
+  "itil4-foundation",
+  "pmp-preparation",
+];
 
 const ICON_MAP: Record<
   string,
