@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import TrainingDetailPage from "@/components/Training/TrainingDetailPage";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 import digitalTrustData from "@/data/programs/digital-trust.json";
 import technicalTrainingData from "@/data/programs/technical-training.json";
 import agileManagementData from "@/data/programs/agile-management.json";
@@ -160,6 +161,7 @@ export default async function TrainingPage({
 
   return (
     <>
+      <ScrollToTop />
       <Navbar />
       <TrainingDetailPage
         training={training}
