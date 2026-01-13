@@ -8,31 +8,55 @@
         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
-        <loc>https://www.jumpit.ma/formations/postman</loc>
-        <lastmod>2026-01-13</lastmod>
-    </url>
-    <url>
-        <loc>https://www.jumpit.ma/formations/cypress</loc>
-        <lastmod>2026-01-13</lastmod>
-    </url>
-    <url>
-        <loc>https://www.jumpit.ma/formations/robot-framework</loc>
-        <lastmod>2026-01-13</lastmod>
-    </url>
-    <url>
-        <loc>https://www.jumpit.ma/formations/playwright</loc>
-        <lastmod>2026-01-13</lastmod>
-    </url>
-    <url>
-        <loc>https://www.jumpit.ma/formations/selenium</loc>
-        <lastmod>2026-01-13</lastmod>
-    </url>
-    <url>
-        <loc>https://www.jumpit.ma/formations/soapui</loc>
-        <lastmod>2026-01-13</lastmod>
-    </url>
-    <url>
         <loc>https://www.jumpit.ma/formations/agile-management</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/agile-management/psm1</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/agile-management/pspo1</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/agile-management/psd1</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/agile-management/psk</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/agile-management/pal</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/agile-management/psu</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/agile-management/psm2</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/agile-management/pspo2</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/agile-management/leading-safe</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/agile-management/safe-popm</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/agile-management/devops-foundation</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/agile-management/agile-pm-foundation</loc>
         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
@@ -40,7 +64,43 @@
         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
+        <loc>https://www.jumpit.ma/formations/ai-governance-management/iso-42001-foundation</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/ai-governance-management/iso-42001-lead-implementer</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/ai-governance-management/iso-42001-lead-auditor</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
         <loc>https://www.jumpit.ma/formations/digital-management-technologies</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/digital-management-technologies/ms-ai-900</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/digital-management-technologies/ms-az-900</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/digital-management-technologies/ms-az-104</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/digital-management-technologies/ms-az-400</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/digital-management-technologies/ms-az-305</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/digital-management-technologies/ms-az-500</loc>
         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
@@ -48,7 +108,99 @@
         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
+        <loc>https://www.jumpit.ma/formations/digital-trust/ISO27001F</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/digital-trust/ISO27001LI</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/digital-trust/ISO27001LA</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/digital-trust/ISO27035F</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/digital-trust/ISO27035LIM</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/digital-trust/ISO27005F</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/digital-trust/ISO27005RM</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/digital-trust/ISO27005LRM</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/digital-trust/EBIOSRM</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/digital-trust/ISO27032CF</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/digital-trust/ISO27032LCM</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/digital-trust/iso-9001-foundation</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/digital-trust/iso-14001-foundation</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/digital-trust/iso-22301-foundation</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/digital-trust/iso-31000-foundation</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/digital-trust/DORA</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/digital-trust/RGPD</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
         <loc>https://www.jumpit.ma/formations/enterprise-architecture</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/enterprise-architecture/togaf-understanding</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/enterprise-architecture/togaf-practicing</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/enterprise-architecture/togaf-combined</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/enterprise-architecture/archimate-foundation</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/enterprise-architecture/archimate-practitioner</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/enterprise-architecture/cobit-2019-foundation</loc>
         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
@@ -56,7 +208,31 @@
         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
+        <loc>https://www.jumpit.ma/formations/it-service-management/itil4-foundation</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/it-service-management/itil4-specialist-modules</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
         <loc>https://www.jumpit.ma/formations/process-management</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/process-management/lss-yellow-belt</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/process-management/lss-green-belt</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/process-management/lss-black-belt</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/process-management/lean-it-foundation</loc>
         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
@@ -64,11 +240,131 @@
         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
+        <loc>https://www.jumpit.ma/formations/project-management/pmp-preparation</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/project-management/prince2-foundation-v7</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/project-management/prince2-practitioner-v7</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
         <loc>https://www.jumpit.ma/formations/software-engineering</loc>
         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
+        <loc>https://www.jumpit.ma/formations/software-engineering/ireb-cpre-fl</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/software-engineering/istqb-ctfl-v4</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/software-engineering/istqb-agile-tester</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/software-engineering/istqb-gen-ai</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
         <loc>https://www.jumpit.ma/formations/technical-training</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/technical-training/postman</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/technical-training/cypress</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/technical-training/robot-framework</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/technical-training/playwright-initiation</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/technical-training/playwright-intermediate</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/technical-training/playwright-avance</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/technical-training/selenium</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/technical-training/soapui</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/technical-training/appium</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/technical-training/reactjs</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/technical-training/reactjs-advanced</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/technical-training/angular-beginner</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/technical-training/angular-advanced</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/technical-training/nextjs-beginner</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/technical-training/nextjs-advanced</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/technical-training/spring-java-intro</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/technical-training/spring-java-advanced</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/technical-training/docker-beginner</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/technical-training/docker-advanced</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/technical-training/kubernetes</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/technical-training/kubernetes-advanced</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/technical-training/uipath-debutant</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/technical-training/uipath-advanced</loc>
         <lastmod>2026-01-13</lastmod>
     </url>
     <url>
