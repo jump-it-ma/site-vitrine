@@ -349,8 +349,8 @@
           }
         },
         {
-          "id": "playwright-expert",
-          "title": "Playwright Expert",
+          "id": "playwright-avance",
+          "title": "Playwright Avancé",
           "editor": "Jump iT",
           "is_best_seller": false,
           "duration_days": 2,
@@ -371,7 +371,7 @@
             "target_audience": [
               "Testeurs Experts",
               "Lead QA Engineers",
-              "Architectes en Test d'Automatisation"
+              "Architectes en automatisation des tests"
             ],
             "objectives": [
               "Implémenter des patterns avancés (BDD, Data-driven)",
@@ -966,7 +966,7 @@
                 "day": 2,
                 "title": "Optimisation et Production",
                 "topics": [
-                  "Caching et Revalidation (ISR)",
+                  "Caching et Revalidation",
                   "Optimisation SEO avancée et Metadata",
                   "Gestion des erreurs et Loading UI",
                   "Déploiement sur Vercel/Docker"

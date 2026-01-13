@@ -44,7 +44,7 @@
       "reference": "ISO 27001 : 2022",
       "trainings": [
         {
-          "id": "ISR001",
+          "id": "ISO27001F",
           "title": "ISO27001 Foundation",
           "editor": "PECB",
           "reference": "ISO 27001 : 2022",
@@ -115,7 +115,7 @@
           }
         },
         {
-          "id": "ISR002",
+          "id": "ISO27001LI",
           "title": "ISO27001 Lead Implementer",
           "editor": "PECB",
           "reference": "ISO 27001 : 2022",
@@ -212,7 +212,7 @@
           }
         },
         {
-          "id": "ISR003",
+          "id": "ISO27001LA",
           "title": "ISO27001 Lead Auditor",
           "editor": "PECB",
           "reference": "ISO 27001 : 2022",
@@ -312,7 +312,7 @@
       "reference": "ISO 27035 : 2023",
       "trainings": [
         {
-          "id": "ISR005",
+          "id": "ISO27035F",
           "title": "ISO27035 Foundation",
           "editor": "PECB",
           "reference": "ISO 27035 : 2023",
@@ -374,7 +374,7 @@
           }
         },
         {
-          "id": "ISR006",
+          "id": "ISO27035LIM",
           "title": "ISO27035 Lead Incident Manager",
           "editor": "PECB",
           "reference": "ISO 27035 : 2023",
@@ -480,7 +480,7 @@
       "reference": "ISO 27005 : 2022",
       "trainings": [
         {
-          "id": "ISR007",
+          "id": "ISO27005F",
           "title": "ISO27005 Foundation",
           "editor": "PECB",
           "reference": "ISO 27005 : 2022",
@@ -542,7 +542,7 @@
           }
         },
         {
-          "id": "ISR008",
+          "id": "ISO27005RM",
           "title": "ISO27005 Risk Manager",
           "editor": "PECB",
           "reference": "ISO 27005 : 2022",
@@ -614,7 +614,7 @@
           }
         },
         {
-          "id": "ISR008-LRM",
+          "id": "ISO27005LRM",
           "title": "ISO27005 Lead Risk Manager",
           "editor": "PECB",
           "reference": "ISO 27005 : 2022",
@@ -706,7 +706,7 @@
           }
         },
         {
-          "id": "ISR010",
+          "id": "EBIOSRM",
           "title": "EBIOS Risk Manager",
           "editor": "PECB",
           "reference": "EBIOS",
@@ -791,7 +791,7 @@
       "reference": "ISO 27032 : 2012",
       "trainings": [
         {
-          "id": "ISR013",
+          "id": "ISO27032CF",
           "title": "ISO27032 Cybersecurity Foundation",
           "editor": "PECB",
           "reference": "ISO 27032 : 2012",
@@ -853,7 +853,7 @@
           }
         },
         {
-          "id": "ISR014",
+          "id": "ISO27032LCM",
           "title": "ISO27032 Lead Cybersecurity Manager",
           "editor": "PECB",
           "reference": "ISO 27032 : 2012",
@@ -1636,7 +1636,7 @@
       "reference": "DORA",
       "trainings": [
         {
-          "id": "ISR014",
+          "id": "DORAF",
           "title": "DORA Foundation",
           "editor": "PECB",
           "reference": "DORAF",
@@ -1709,7 +1709,7 @@
           }
         },
         {
-          "id": "ISR015",
+          "id": "DORALM",
           "title": "DORA Lead Manager",
           "editor": "PECB",
           "reference": "DORALM",
@@ -1820,7 +1820,7 @@
       "reference": "RGPD",
       "trainings": [
         {
-          "id": "ISR016",
+          "id": "RGPDF",
           "title": "RGPD Foundation",
           "editor": "PECB",
           "reference": "RGPDF",
@@ -1887,7 +1887,7 @@
           }
         },
         {
-          "id": "ISR017",
+          "id": "RGPDCPDO",
           "title": "Certified Data Protection Officer",
           "editor": "PECB",
           "reference": "CDPO",
