@@ -1,12 +1,12 @@
 "use client";
 
 import { montserratFont, latoFont } from "@/utils/fonts";
-import technicalTrainingData from "@/data/programs/technical-training.json"; // Import new JSON
-import Image from "next/image";
+import agileManagementData from "@/data/programs/agile-management.json";
+import digitalTrustData from "@/data/programs/digital-trust.json";
+import itServiceManagementData from "@/data/programs/it-service-management.json";
+import projectManagementData from "@/data/programs/project-management.json";
 import Link from "next/link";
 import { HiArrowRight, HiClock, HiAcademicCap } from "react-icons/hi2";
-
-import { CypressIcon, PlaywrightIcon, ReactIcon, SeleniumIcon } from "../icons";
 
 const FEATURED_IDS = [
   "psm1",
@@ -15,25 +15,30 @@ const FEATURED_IDS = [
   "pmp-preparation",
 ];
 
-const ICON_MAP: Record<
-  string,
-  React.ComponentType<React.SVGProps<SVGSVGElement>>
-> = {
-  cypress: CypressIcon,
-  selenium: SeleniumIcon,
-  reactjs: ReactIcon,
-  playwright: PlaywrightIcon,
-};
-
 export default function FeaturedTrainings() {
-  // Extract all trainings from categories into a flat list for filtering
-  const allTrainings = technicalTrainingData.categories.flatMap((cat) =>
-    cat.trainings.map((t) => ({ ...t, categoryName: cat.name }))
+  // Combine all training data from different programs
+  const allPrograms = [
+    agileManagementData,
+    digitalTrustData,
+    itServiceManagementData,
+    projectManagementData,
+  ];
+
+  // Extract all trainings from all programs into a flat list
+  const allTrainings = allPrograms.flatMap((program) =>
+    program.categories.flatMap((cat) =>
+      cat.trainings.map((t) => ({
+        ...t,
+        categoryName: cat.name,
+        programId: program.program.id,
+      }))
+    )
   );
 
-  const featuredTrainings = allTrainings.filter((t) =>
-    FEATURED_IDS.includes(t.id)
-  );
+  // Filter to get only featured trainings and maintain the order of FEATURED_IDS
+  const featuredTrainings = FEATURED_IDS.map((id) =>
+    allTrainings.find((t) => t.id === id)
+  ).filter(Boolean);
 
   return (
     <section className="py-16 bg-slate-50">
@@ -57,27 +62,18 @@ export default function FeaturedTrainings() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {featuredTrainings.map((training) => {
-            const IconComponent = ICON_MAP[training.id];
+            if (!training) return null;
             return (
               <Link
                 key={training.id}
-                href={`/formations/technical-training/${training.id}`}
+                href={`/formations/${training.programId}/${training.id}`}
                 className="group flex flex-col bg-white rounded-xl p-8 hover:shadow-xl hover:shadow-purple-100 transition-all duration-300 transform hover:-translate-y-1"
               >
-                {/* Icon Container */}
-                <div className="flex justify-center mb-6">
-                  <div className="relative w-24 h-24 flex items-center justify-center">
-                    {IconComponent ? (
-                      <IconComponent className="w-full h-full object-contain filter drop-shadow-sm group-hover:scale-110 transition-transform duration-500" />
-                    ) : (
-                      <Image
-                        src={`/Formations/${training.id}.png`}
-                        alt={training.title}
-                        fill
-                        className="object-contain group-hover:scale-110 transition-transform duration-500"
-                      />
-                    )}
-                  </div>
+                {/* Best Seller Badge */}
+                <div className="flex justify-center mb-4">
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-gradient-to-r from-amber-400 to-yellow-500 text-white shadow-md">
+                    ⭐ Best Seller
+                  </span>
                 </div>
 
                 {/* Badges */}
