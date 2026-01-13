@@ -1,54 +1,114 @@
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://www.jumpit.ma</loc>
-        <lastmod>2024-11-27</lastmod>
+        <lastmod>2026-01-13</lastmod>
     </url>
     <url>
         <loc>https://www.jumpit.ma/formations</loc>
-        <lastmod>2024-11-27</lastmod>
+        <lastmod>2026-01-13</lastmod>
     </url>
     <url>
         <loc>https://www.jumpit.ma/formations/postman</loc>
-        <lastmod>2024-11-27</lastmod>
+        <lastmod>2026-01-13</lastmod>
     </url>
     <url>
         <loc>https://www.jumpit.ma/formations/cypress</loc>
-        <lastmod>2024-11-27</lastmod>
+        <lastmod>2026-01-13</lastmod>
     </url>
     <url>
         <loc>https://www.jumpit.ma/formations/robot-framework</loc>
-        <lastmod>2024-11-27</lastmod>
+        <lastmod>2026-01-13</lastmod>
     </url>
     <url>
         <loc>https://www.jumpit.ma/formations/playwright</loc>
-        <lastmod>2024-11-27</lastmod>
+        <lastmod>2026-01-13</lastmod>
     </url>
     <url>
         <loc>https://www.jumpit.ma/formations/selenium</loc>
-        <lastmod>2024-11-27</lastmod>
+        <lastmod>2026-01-13</lastmod>
     </url>
     <url>
         <loc>https://www.jumpit.ma/formations/soapui</loc>
-        <lastmod>2024-11-27</lastmod>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/agile-management</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/ai-governance-management</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/digital-management-technologies</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/digital-trust</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/enterprise-architecture</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/it-service-management</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/process-management</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/project-management</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/software-engineering</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/formations/technical-training</loc>
+        <lastmod>2026-01-13</lastmod>
     </url>
     <url>
         <loc>https://www.jumpit.ma/conseil</loc>
-        <lastmod>2024-11-27</lastmod>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/demander-un-devis</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/faq</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/inscription</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/contactez-nous</loc>
+        <lastmod>2026-01-13</lastmod>
     </url>
     <url>
         <loc>https://www.jumpit.ma/blogs</loc>
-        <lastmod>2024-11-27</lastmod>
+        <lastmod>2026-01-13</lastmod>
     </url>
     <url>
         <loc>https://www.jumpit.ma/blogs/tests-api</loc>
-        <lastmod>2024-11-27</lastmod>
+        <lastmod>2026-01-13</lastmod>
     </url>
     <url>
         <loc>https://www.jumpit.ma/blogs/test-visuel</loc>
-        <lastmod>2024-11-27</lastmod>
+        <lastmod>2026-01-13</lastmod>
     </url>
     <url>
         <loc>https://www.jumpit.ma/blogs/automatisation-tests</loc>
-        <lastmod>2024-11-27</lastmod>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.jumpit.ma/blogs/reporting-notion</loc>
+        <lastmod>2026-01-13</lastmod>
     </url>
 </urlset>
