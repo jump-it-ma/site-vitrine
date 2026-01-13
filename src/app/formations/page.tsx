@@ -113,7 +113,7 @@ export default function Formations() {
       <ReturnToTop />
       <Navbar />
 
-      {/* Hero Section - Clean, professional design with decorations */}
+      {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-purple-700 to-purple-600 px-4 pb-16 pt-16 sm:px-8 md:px-16 lg:px-24">
         {/* Background decorations */}
 
@@ -156,7 +156,7 @@ export default function Formations() {
         </div>
       </section>
 
-      {/* Programs Section - Clean neutral background */}
+      {/* Programs Section */}
       <section
         id="formations"
         className="bg-slate-50 px-4 py-10 sm:px-8 md:px-16 lg:px-24"
