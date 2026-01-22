@@ -191,57 +191,6 @@
           }
         },
         {
-          "id": "ms-az-305",
-          "title": "Designing and Implementing Azure Infrastructure Solutions (AZ-305)",
-          "editor": "MICROSOFT",
-          "reference": "AZ305",
-          "is_best_seller": false,
-          "duration_days": 2,
-          "level": "Niveau 2",
-          "evaluation": "QCM",
-          "pricing": {
-            "currency": "EUR",
-            "package_price": 260,
-            "note": "Training Package (incl. voucher)"
-          },
-          "package_includes": "Formation et Voucher Examen",
-          "languages": ["FR", "EN"],
-          "tags": ["azure", "architecture", "az-305", "solutions"],
-          "search_keywords": ["az-305", "solution architect", "cloud design"],
-          "details": {
-            "description": "Certification pour les Architectes de Solutions Azure. Apprenez à concevoir des solutions d'infrastructure, de données et de sécurité.",
-            "target_audience": [
-              "Architectes de Solutions",
-              "Ingénieurs Senior"
-            ],
-            "objectives": [
-              "Concevoir des solutions d'identité et de gouvernance",
-              "Concevoir des solutions de stockage et de données",
-              "Concevoir des solutions de continuité d'activité"
-            ],
-            "prerequisites": [
-              "Certification AZ-104 recommandée",
-              "Expérience en architecture"
-            ],
-            "curriculum": [
-              {
-                "day": 1,
-                "title": "Design Architecture",
-                "topics": ["Gouvernance et Compute", "Architecture de stockage"]
-              },
-              {
-                "day": 2,
-                "title": "Continuité & Sécurité",
-                "topics": [
-                  "Migration et Résilience",
-                  "Architecture réseau et sécurité"
-                ]
-              }
-            ],
-            "faqs": []
-          }
-        },
-        {
           "id": "ms-az-500",
           "title": "Azure - Technologies de sécurité (Microsoft AZ-500)",
           "editor": "MICROSOFT",

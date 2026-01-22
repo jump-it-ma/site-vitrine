@@ -7,7 +7,7 @@
       "Test Logiciel",
       "Développement Web",
       "Développement Mobile",
-      "DevOps",
+      "Outils DevOps",
       "RPA"
     ]
   },
@@ -16,7 +16,7 @@
       "Test Logiciel",
       "Développement Web",
       "Développement Mobile",
-      "DevOps",
+      "Outils DevOps",
       "RPA"
     ],
     "editors": ["Jump iT"],
@@ -1565,9 +1565,9 @@
       ]
     },
     {
-      "id": "devops",
-      "name": "DevOps",
-      "reference": "DEVOPS",
+      "id": "tools-devops",
+      "name": "Outils DevOps",
+      "reference": "TOOLS-DEVOPS",
       "description": "Adoptez la culture DevOps. Automatisez le déploiement, gérez les conteneurs et orchestrez vos applications pour plus d'agilité.",
       "trainings": [
         {
