@@ -2,20 +2,12 @@
   "program": {
     "id": "digital-management-technologies",
     "title": "TECHNOLOGIES CLOUD & IA",
-    "description": "Formations sur les technologies émergentes : Automatisation Agentique (UiPath), Microsoft Azure AI & Data et Cloud Infrastructure.",
-    "categories": [
-      "UiPath - Agentic Automation",
-      "Microsoft AI-Data",
-      "Microsoft Azure Cloud"
-    ]
+    "description": "Formations sur les technologies Microsoft Azure AI & Data et Cloud Infrastructure.",
+    "categories": ["Microsoft AI-Data", "Microsoft Azure"]
   },
   "filters": {
-    "categories": [
-      "UiPath - Agentic Automation",
-      "Microsoft AI-Data",
-      "Microsoft Azure Cloud"
-    ],
-    "editors": ["UIPATH", "MICROSOFT"],
+    "categories": ["Microsoft AI-Data", "Microsoft Azure"],
+    "editors": ["MICROSOFT"],
     "durations": [1, 2, 3, 5],
     "levels": ["Niveau 1", "Niveau 2", "Avancé"],
     "languages": ["FR", "EN"]
@@ -57,7 +49,7 @@
     },
     {
       "id": "microsoft-azure-cloud",
-      "name": "Microsoft Azure Cloud",
+      "name": "Microsoft Azure",
       "description": "Architecture, Administration, Sécurité et DevOps sur la plateforme Cloud Azure.",
       "reference": "CLOUD",
       "trainings": [

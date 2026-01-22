@@ -7,7 +7,7 @@
   },
   "filters": {
     "categories": ["ITIL4"],
-    "editors": ["BCS", "PEOPLECERT"],
+    "editors": ["AXELOS"],
     "durations": [2, 3],
     "levels": ["Débutant", "Intermédiaire", "Avancé"],
     "languages": ["FR", "EN"]
@@ -22,7 +22,7 @@
         {
           "id": "itil4-foundation",
           "title": "ITIL4 Foundation",
-          "editor": "PEOPLECERT",
+          "editor": "AXELOS",
           "reference": "ITF",
           "is_best_seller": true,
           "duration_days": 3,
@@ -87,7 +87,7 @@
         {
           "id": "itil4-specialist-modules",
           "title": "ITIL4 Specialist (CDS, HVIT, DSV, DPI)",
-          "editor": "PEOPLECERT",
+          "editor": "AXELOS",
           "reference": "ITS",
           "is_best_seller": false,
           "duration_days": 3,

@@ -7,7 +7,7 @@
   },
   "filters": {
     "categories": ["PM²", "PMBOK 7", "PRINCE2® 7"],
-    "editors": ["APMG", "PMI", "PEOPLECERT"],
+    "editors": ["APMG", "PMI"],
     "durations": [2, 3, 5],
     "levels": ["Intermédiaire", "Avancé"],
     "languages": ["EN", "FR"]
@@ -121,7 +121,7 @@
         {
           "id": "prince2-foundation-v7",
           "title": "PRINCE2® 7 Foundation",
-          "editor": "PEOPLECERT",
+          "editor": "AXELOS",
           "reference": "PRF",
           "is_best_seller": false,
           "duration_days": 3,
@@ -134,7 +134,7 @@
           },
           "package_includes": "Formation, Matériel officiel, eBook et Voucher Examen",
           "languages": ["FR", "EN"],
-          "tags": ["prince2", "foundation", "v7", "peoplecert"],
+          "tags": ["prince2", "foundation", "v7", "AXELOS"],
           "search_keywords": [
             "prince2 foundation",
             "project management",
@@ -190,12 +190,12 @@
         {
           "id": "prince2-practitioner-v7",
           "title": "PRINCE2® 7 Practitioner",
-          "editor": "PEOPLECERT",
+          "editor": "AXELOS",
           "reference": "PRP",
           "is_best_seller": false,
           "duration_days": 2,
           "level": "Niveau 3",
-          "evaluation": "Scenario-based QCM",
+          "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "exam_price": 0,

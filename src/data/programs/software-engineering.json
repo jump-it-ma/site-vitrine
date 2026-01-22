@@ -2,11 +2,11 @@
   "program": {
     "id": "software-engineering",
     "title": "INGENIERIE LOGICIELLE",
-    "description": "Certifications internationales en ingénierie logicielle : Ingénierie des exigences (IREB), Tests Logiciels (ISTQB) et Business Analysis (IQBBA).",
-    "categories": ["IREB", "ISTQB", "IQBBA"]
+    "description": "Certifications internationales en ingénierie logicielle : Ingénierie des exigences (IREB) et Tests Logiciels (ISTQB).",
+    "categories": ["IREB", "ISTQB"]
   },
   "filters": {
-    "categories": ["IREB", "ISTQB", "IQBBA"],
+    "categories": ["IREB", "ISTQB"],
     "editors": ["CERTIBLE", "GASQ"],
     "durations": [2, 3],
     "levels": ["Niveau 2"],
@@ -22,7 +22,7 @@
         {
           "id": "ireb-cpre-fl",
           "title": "CPRE Foundation Level (CPRE FL)",
-          "editor": "CERTIBLE",
+          "editor": "GASQ",
           "reference": "IREBF",
           "is_best_seller": false,
           "duration_days": 3,

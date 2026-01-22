@@ -2,20 +2,12 @@
   "program": {
     "id": "process-management",
     "title": "EXCELLENCE OPERATIONNELLE",
-    "description": "Formations certifiantes pour l'optimisation des processus : RPA (Automatisation), Lean Six Sigma (Qualité) et Lean Management (Amélioration continue).",
-    "categories": [
-      "Robotic Process Automation",
-      "Lean Six Sigma",
-      "Lean Management"
-    ]
+    "description": "Formations certifiantes pour l'optimisation des processus : RPA (Automatisation), Lean Six Sigma (Qualité) et Lean IT (Amélioration continue).",
+    "categories": ["Robotic Process Automation", "Lean Six Sigma", "Lean IT"]
   },
   "filters": {
-    "categories": [
-      "Robotic Process Automation",
-      "Lean Six Sigma",
-      "Lean Management"
-    ],
-    "editors": ["APMG", "PEOPLECERT"],
+    "categories": ["Robotic Process Automation", "Lean Six Sigma", "Lean IT"],
+    "editors": ["APMG", "IASSC"],
     "durations": [2, 5],
     "levels": ["Intermédiaire", "Avancé", "Expert"],
     "languages": ["FR", "EN"]
@@ -30,16 +22,16 @@
         {
           "id": "lss-yellow-belt",
           "title": "Lean Six Sigma Yellow Belt",
-          "editor": "PEOPLECERT",
+          "editor": "IASSC",
           "reference": "LSSYB",
           "is_best_seller": false,
-          "duration_days": 2,
+          "duration_days": 4,
           "level": "Niveau 3",
           "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
             "exam_price": 90,
-            "training_price": 240
+            "training_price": 480
           },
           "package_includes": "Formation et Voucher Examen",
           "languages": ["FR", "EN"],
@@ -60,20 +52,42 @@
             "curriculum": [
               {
                 "day": 1,
-                "title": "Define & Measure",
+                "title": "Define",
                 "topics": [
                   "Introduction au Lean et Six Sigma",
                   "La voix du client (VOC)",
-                  "Cartographie des processus (SIPOC)"
+                  "Cartographie des processus (SIPOC)",
+                  "Définition du projet et périmètre"
                 ]
               },
               {
                 "day": 2,
-                "title": "Analyze, Improve, Control",
+                "title": "Measure",
+                "topics": [
+                  "Collecte de données",
+                  "Indicateurs de performance (KPI)",
+                  "Mesure de la capabilité processus",
+                  "Outils de mesure"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Analyze",
                 "topics": [
                   "Analyse des causes racines (5 Pourquoi, Ishikawa)",
+                  "Diagramme de Pareto",
+                  "Analyse de la valeur ajoutée",
+                  "Identification des gaspillages (Muda)"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Improve & Control",
+                "topics": [
                   "Techniques d'amélioration",
-                  "Standardisation (5S)"
+                  "Standardisation (5S)",
+                  "Plan de contrôle",
+                  "Cas pratiques et exercices"
                 ]
               }
             ],
@@ -83,7 +97,7 @@
         {
           "id": "lss-green-belt",
           "title": "Lean Six Sigma Green Belt",
-          "editor": "PEOPLECERT",
+          "editor": "IASSC",
           "reference": "LSSGB",
           "is_best_seller": false,
           "duration_days": 5,
@@ -159,7 +173,7 @@
         {
           "id": "lss-black-belt",
           "title": "Lean Six Sigma Black Belt",
-          "editor": "PEOPLECERT",
+          "editor": "IASSC",
           "reference": "LSSBB",
           "is_best_seller": false,
           "duration_days": 5,
@@ -190,7 +204,7 @@
               "Coacher les Green Belts",
               "Maîtriser Minitab/SigmaXL"
             ],
-            "prerequisites": ["Certification Green Belt requise"],
+            "prerequisites": ["Certification Green Belt est souhaitable"],
             "curriculum": [
               {
                 "day": 1,
@@ -227,8 +241,8 @@
       ]
     },
     {
-      "id": "lean-management",
-      "name": "Lean Management",
+      "id": "lean-it",
+      "name": "Lean IT",
       "description": "L'approche Lean pure pour l'IT et les services. Optimisation du flux de valeur.",
       "reference": "LEAN",
       "trainings": [

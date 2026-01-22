@@ -72,7 +72,7 @@ export default function TrainingDetailPage({
           {/* Back Button */}
           <Link
             href={`/formations/${programId}?category=${encodeURIComponent(
-              training.categoryId
+              training.categoryId,
             )}`}
             className="mb-8 inline-flex items-center gap-2 rounded-lg bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur transition-all hover:bg-white/20"
           >
@@ -430,7 +430,7 @@ export default function TrainingDetailPage({
                   Besoin d&apos;aide ?
                 </h3>
                 <p className="mb-4 text-sm text-purple-200">
-                  Notre équipe est là pour répondre à vos questions.
+                  Nous sommes là pour répondre à vos questions
                 </p>
                 <div className="space-y-2">
                   <a
@@ -544,7 +544,7 @@ export default function TrainingDetailPage({
             <div className="mt-10 text-center">
               <Link
                 href={`/formations/${programId}?category=${encodeURIComponent(
-                  training.categoryId
+                  training.categoryId,
                 )}`}
                 className="inline-flex items-center gap-2 rounded-xl border-2 border-purple-600 px-6 py-3 font-semibold text-purple-600 transition-all hover:bg-purple-600 hover:text-white"
               >

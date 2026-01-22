@@ -275,7 +275,7 @@
           "is_best_seller": false,
           "duration_days": 1,
           "level": "Avancé",
-          "evaluation": "Scenario-based QCM",
+          "evaluation": "SCM",
           "pricing": {
             "currency": "EUR",
             "package_price": 0,

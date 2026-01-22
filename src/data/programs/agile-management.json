@@ -23,7 +23,7 @@
       "Design Thinking",
       "Agile Project Management"
     ],
-    "editors": ["EXIN", "SCRUM.ORG", "SAI", "PEOPLECERT", "ICAGILE", "APMG"],
+    "editors": ["EXIN", "SCRUM.ORG", "SAI", "ICAGILE", "APMG"],
     "durations": [2, 3],
     "levels": ["Niveau 1", "Niveau 2", "Niveau 3", "Niveau 4"],
     "languages": ["FR", "EN"]
@@ -412,7 +412,7 @@
         {
           "id": "leading-safe",
           "title": "Leading SAFe (SAFe Agilist)",
-          "editor": "SAI",
+          "editor": "SAF",
           "reference": "SAFe6",
           "is_best_seller": true,
           "duration_days": 2,
@@ -467,7 +467,7 @@
         {
           "id": "safe-popm",
           "title": "SAFe Product Owner / Product Manager",
-          "editor": "SAI",
+          "editor": "SAF",
           "reference": "SAFePO",
           "is_best_seller": false,
           "duration_days": 2,
@@ -518,13 +518,13 @@
     {
       "id": "devops-agile",
       "name": "DevOps",
-      "description": "Culture, pratiques et automatisation DevOps pour transformer la livraison de logiciels. Certifications PeopleCert et EXIN.",
+      "description": "Culture, pratiques et automatisation DevOps pour transformer la livraison de logiciels",
       "reference": "DEVOPS",
       "trainings": [
         {
           "id": "devops-foundation",
           "title": "DevOps Foundation",
-          "editor": "PEOPLECERT/EXIN",
+          "editor": "DevOps Institute",
           "reference": "DevOps",
           "is_best_seller": true,
           "duration_days": 2,
