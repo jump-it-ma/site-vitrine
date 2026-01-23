@@ -24,7 +24,7 @@
           "title": "ITIL4 Foundation",
           "editor": "AXELOS",
           "reference": "ITF",
-          "is_best_seller": true,
+          "is_best_seller": false,
           "duration_days": 3,
           "duration_display": "2 or 3d",
           "level": "Niveau 1",
@@ -85,10 +85,10 @@
           }
         },
         {
-          "id": "itil4-specialist-modules",
-          "title": "ITIL4 Specialist (CDS, HVIT, DSV, DPI)",
+          "id": "itil4-cds",
+          "title": "ITIL4 Specialist: Create, Deliver & Support (CDS)",
           "editor": "AXELOS",
-          "reference": "ITS",
+          "reference": "CDS",
           "is_best_seller": false,
           "duration_days": 3,
           "level": "Niveau 3",
@@ -100,52 +100,277 @@
           },
           "package_includes": "Formation et Voucher Examen",
           "languages": ["FR", "EN"],
-          "tags": ["itil", "specialist", "cds", "hvit", "dsv", "dpi"],
+          "tags": ["itil", "specialist", "cds", "create deliver support"],
           "search_keywords": [
+            "cds",
             "create deliver support",
-            "high velocity it",
-            "stakeholder value",
-            "direct plan improve"
+            "service design"
           ],
           "details": {
-            "description": "Modules avancés ITIL4 Managing Professional. Choisissez votre spécialisation : Create Deliver & Support (CDS), High Velocity IT (HVIT), Drive Stakeholder Value (DSV) ou Direct Plan & Improve (DPI).",
+            "description": "Module ITIL4 CDS pour maîtriser la création, la livraison et le support des services IT. Apprenez à concevoir des services de qualité et à assurer leur support opérationnel.",
             "target_audience": [
-              "Managers ITSM",
-              "Praticiens expérimentés",
+              "Service Designers",
+              "Service Owners",
+              "Responsables Support",
               "Candidats Managing Professional"
             ],
             "objectives": [
-              "Approfondir une pratique spécifique",
-              "Aligner les services sur la stratégie business",
-              "Obtenir les crédits pour MP Designation"
+              "Concevoir et livrer des services IT de qualité",
+              "Maîtriser les pratiques de support opérationnel",
+              "Obtenir 5 crédits pour ITIL MP"
             ],
             "prerequisites": ["Certification ITIL4 Foundation"],
             "curriculum": [
               {
                 "day": 1,
-                "title": "Concepts Avancés",
+                "title": "Conception de services",
                 "topics": [
-                  "Concepts spécifiques au module choisi",
-                  "Alignement stratégique",
-                  "Modèles de flux de valeur"
+                  "Planification et conception des services",
+                  "Gestion des exigences",
+                  "Architecture de services",
+                  "Catalogue de services"
                 ]
               },
               {
                 "day": 2,
-                "title": "Application Pratique",
+                "title": "Livraison et Support",
                 "topics": [
-                  "Méthodes et techniques",
-                  "Outils et automatisation",
-                  "Gestion des parties prenantes"
+                  "Déploiement et gestion des releases",
+                  "Service Desk et gestion des incidents",
+                  "Gestion des problèmes",
+                  "Gestion des demandes de service"
                 ]
               },
               {
                 "day": 3,
-                "title": "Mise en situation",
+                "title": "Amélioration continue",
                 "topics": [
+                  "Mesure et reporting",
+                  "Amélioration des services",
                   "Études de cas",
-                  "Examens blancs",
-                  "Passage de la certification"
+                  "Préparation examen"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "itil4-hvit",
+          "title": "ITIL4 Specialist: High Velocity IT (HVIT)",
+          "editor": "AXELOS",
+          "reference": "HVIT",
+          "is_best_seller": false,
+          "duration_days": 3,
+          "level": "Niveau 3",
+          "evaluation": "QCM",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 600,
+            "note": "Training Package (incl. voucher)"
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["itil", "specialist", "hvit", "high velocity", "devops"],
+          "search_keywords": ["hvit", "high velocity it", "agile", "devops"],
+          "details": {
+            "description": "Module ITIL4 HVIT pour les environnements digitaux à haute vélocité. Intégrez ITIL avec Agile, DevOps et Lean pour livrer rapidement de la valeur.",
+            "target_audience": [
+              "DevOps Engineers",
+              "Agile Practitioners",
+              "Digital Transformation Leaders",
+              "Candidats Managing Professional"
+            ],
+            "objectives": [
+              "Travailler dans des environnements à haute vélocité",
+              "Intégrer ITIL, Agile et DevOps",
+              "Obtenir 5 crédits pour ITIL MP"
+            ],
+            "prerequisites": ["Certification ITIL4 Foundation"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Culture High Velocity",
+                "topics": [
+                  "Principes de haute vélocité",
+                  "Culture DevOps et Agile",
+                  "Organisations numériques",
+                  "Modèles opérationnels"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Pratiques techniques",
+                "topics": [
+                  "CI/CD et automatisation",
+                  "Infrastructure as Code",
+                  "Gestion des risques en haute vélocité",
+                  "Mesure et feedback rapide"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Transformation digitale",
+                "topics": [
+                  "Livraison de valeur rapide",
+                  "Résilience et fiabilité",
+                  "Études de cas",
+                  "Préparation examen"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "itil4-dsv",
+          "title": "ITIL4 Specialist: Drive Stakeholder Value (DSV)",
+          "editor": "AXELOS",
+          "reference": "DSV",
+          "is_best_seller": false,
+          "duration_days": 3,
+          "level": "Niveau 3",
+          "evaluation": "QCM",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 600,
+            "note": "Training Package (incl. voucher)"
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": [
+            "itil",
+            "specialist",
+            "dsv",
+            "stakeholder value",
+            "customer"
+          ],
+          "search_keywords": [
+            "dsv",
+            "stakeholder value",
+            "customer experience"
+          ],
+          "details": {
+            "description": "Module ITIL4 DSV pour maximiser la valeur délivrée aux parties prenantes. Maîtrisez l'engagement client, la gestion de la demande et les relations de service.",
+            "target_audience": [
+              "Service Managers",
+              "Customer Success Managers",
+              "Business Relationship Managers",
+              "Candidats Managing Professional"
+            ],
+            "objectives": [
+              "Comprendre et créer de la valeur pour les parties prenantes",
+              "Gérer la demande et les opportunités",
+              "Obtenir 5 crédits pour ITIL MP"
+            ],
+            "prerequisites": ["Certification ITIL4 Foundation"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Valeur et parties prenantes",
+                "topics": [
+                  "Comprendre la valeur",
+                  "Engagement des parties prenantes",
+                  "Customer Journey Mapping",
+                  "Service Relationship Management"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Gestion de la demande",
+                "topics": [
+                  "Gestion de la demande et des opportunités",
+                  "Design de l'expérience utilisateur",
+                  "Gestion du portefeuille de services",
+                  "Onboarding et offboarding"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Co-création de valeur",
+                "topics": [
+                  "Collaboration et feedback",
+                  "Mesure de la satisfaction",
+                  "Études de cas",
+                  "Préparation examen"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "itil4-dpi",
+          "title": "ITIL4 Specialist: Direct, Plan & Improve (DPI)",
+          "editor": "AXELOS",
+          "reference": "DPI",
+          "is_best_seller": false,
+          "duration_days": 3,
+          "level": "Niveau 3",
+          "evaluation": "QCM",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 600,
+            "note": "Training Package (incl. voucher)"
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": [
+            "itil",
+            "specialist",
+            "dpi",
+            "direct plan improve",
+            "strategy"
+          ],
+          "search_keywords": [
+            "dpi",
+            "direct plan improve",
+            "strategy",
+            "governance"
+          ],
+          "details": {
+            "description": "Module ITIL4 DPI pour diriger, planifier et améliorer les services IT. Apprenez à aligner la stratégie IT avec les objectifs business et à piloter l'amélioration continue.",
+            "target_audience": [
+              "IT Managers",
+              "Service Managers",
+              "Responsables Amélioration Continue",
+              "Candidats Managing Professional"
+            ],
+            "objectives": [
+              "Diriger et planifier la stratégie IT",
+              "Piloter l'amélioration continue",
+              "Obtenir 5 crédits pour ITIL MP"
+            ],
+            "prerequisites": ["Certification ITIL4 Foundation"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Direction et stratégie",
+                "topics": [
+                  "Gouvernance et stratégie",
+                  "Gestion du portefeuille",
+                  "Architecture et politiques",
+                  "Gestion des risques"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Planification et coordination",
+                "topics": [
+                  "Planification stratégique et tactique",
+                  "Gestion du changement organisationnel",
+                  "Coordination et contrôle",
+                  "Mesure et reporting"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Amélioration continue",
+                "topics": [
+                  "Modèle d'amélioration continue",
+                  "Méthodes et techniques d'amélioration",
+                  "Études de cas",
+                  "Préparation examen"
                 ]
               }
             ],

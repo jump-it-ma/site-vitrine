@@ -3,10 +3,10 @@
     "id": "enterprise-architecture",
     "title": "ARCHITECTURE & GOUVERNANCE IT",
     "description": "Formations en Architecture et gouvernance IT basées sur les standards de The Open Group : TOGAF® et ArchiMate®.",
-    "categories": ["TOGAF EA", "ArchiMate 3", "COBIT 2019"]
+    "categories": ["TOGAF", "ArchiMate 3", "COBIT 2019"]
   },
   "filters": {
-    "categories": ["TOGAF EA", "ArchiMate 3", "COBIT 2019"],
+    "categories": ["TOGAF", "ArchiMate 3", "COBIT 2019"],
     "editors": ["TOG", "ISACA"],
     "durations": [2, 3, 4, 5],
     "levels": ["Intermédiaire", "Niveau 3"],
@@ -14,19 +14,18 @@
   },
   "categories": [
     {
-      "id": "togaf-ea",
-      "name": "TOGAF EA",
+      "id": "togaf",
+      "name": "TOGAF",
       "description": "Le cadre de référence mondial pour l'architecture d'entreprise. Alignez l'IT sur la stratégie métier.",
       "reference": "TOGAF",
       "trainings": [
         {
-          "id": "togaf-understanding",
-          "title": "Understanding EA with TOGAF",
+          "id": "togaf-ea-foundation",
+          "title": "TOGAF EA Foundation",
           "editor": "TOG",
           "reference": "TOGF",
           "is_best_seller": false,
           "duration_days": 3,
-          "duration_display": "2 or 3d",
           "level": "Niveau 3",
           "evaluation": "QCM",
           "pricing": {
@@ -73,19 +72,27 @@
                   "Vues et points de vue",
                   "Modèles de référence"
                 ]
+              },
+              {
+                "day": 3,
+                "title": "Préparation certification",
+                "topics": [
+                  "Révision des concepts clés",
+                  "Examens blancs",
+                  "Stratégie d'examen"
+                ]
               }
             ],
             "faqs": []
           }
         },
         {
-          "id": "togaf-practicing",
-          "title": "Practicing EA with TOGAF",
+          "id": "togaf-ea-practitioner",
+          "title": "TOGAF EA Practitioner",
           "editor": "TOG",
           "reference": "TOGP",
           "is_best_seller": false,
-          "duration_days": 3,
-          "duration_display": "2 or 3d",
+          "duration_days": 2,
           "level": "Niveau 4",
           "evaluation": "QCM",
           "pricing": {
@@ -110,7 +117,7 @@
               "Préparer la certification Partie 2"
             ],
             "prerequisites": [
-              "Formation Understanding EA (AE101) ou certification Foundation"
+              "Formation TOGAF EA Foundation ou certification Foundation"
             ],
             "curriculum": [
               {
@@ -119,15 +126,16 @@
                 "topics": [
                   "Phases A à H en détail",
                   "Gestion des exigences",
-                  "Techniques de migration"
+                  "Techniques de migration",
+                  "Adaptation de l'ADM"
                 ]
               },
               {
                 "day": 2,
-                "title": "Scénarios",
+                "title": "Scénarios et certification",
                 "topics": [
                   "Études de cas pratiques",
-                  "Adaptation de l'ADM",
+                  "Création de livrables",
                   "Examens blancs basés sur des scénarios"
                 ]
               }
@@ -136,12 +144,11 @@
           }
         },
         {
-          "id": "togaf-combined",
-          "title": "Combined (Understanding + Practicing)",
+          "id": "togaf-ea-combined",
+          "title": "TOGAF EA Combined (Foundation + Practitioner)",
           "editor": "TOG",
           "is_best_seller": false,
           "duration_days": 5,
-          "duration_display": "4 or 5d",
           "level": "Niveau 4",
           "evaluation": "QCM",
           "pricing": {
@@ -158,7 +165,7 @@
             "full certification"
           ],
           "details": {
-            "description": "Parcours intensif combinant les niveaux 'Understanding' et 'Practicing'. De zéro à la certification complète TOGAF Certified en une semaine.",
+            "description": "Parcours intensif combinant Foundation et Practitioner. De zéro à la certification complète TOGAF Certified en une semaine.",
             "target_audience": [
               "Architectes souhaitant une certification rapide",
               "Consultants"
@@ -262,46 +269,6 @@
                   "Couche Business",
                   "Couche Application",
                   "Couche Technologie"
-                ]
-              }
-            ],
-            "faqs": []
-          }
-        },
-        {
-          "id": "archimate-practitioner",
-          "title": "ArchiMate 3 Practitioner",
-          "editor": "TOG",
-          "is_best_seller": false,
-          "duration_days": 1,
-          "level": "Avancé",
-          "evaluation": "SCM",
-          "pricing": {
-            "currency": "EUR",
-            "package_price": 0,
-            "note": "Contact for pricing"
-          },
-          "package_includes": "Formation et Voucher Examen",
-          "languages": ["FR", "EN"],
-          "tags": ["archimate", "practitioner", "advanced modeling"],
-          "search_keywords": ["archimate practitioner", "complex modeling"],
-          "details": {
-            "description": "Niveau avancé pour les praticiens. Apprenez à appliquer le langage ArchiMate pour des situations de modélisation complexes.",
-            "target_audience": ["Architectes certifiés Foundation"],
-            "objectives": [
-              "Utiliser les éléments avancés",
-              "Créer des vues complexes",
-              "Réussir l'examen Practitioner"
-            ],
-            "prerequisites": ["Certification ArchiMate Foundation"],
-            "curriculum": [
-              {
-                "day": 1,
-                "title": "Application Avancée",
-                "topics": [
-                  "Éléments de motivation et de stratégie",
-                  "Implémentation et Migration",
-                  "Points de vue et perspectives"
                 ]
               }
             ],

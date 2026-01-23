@@ -12,7 +12,7 @@ interface CategoryCardProps {
 export default function CategoryCard({ category, onClick }: CategoryCardProps) {
   const trainingCount = category.trainings.length;
   const bestSellerCount = category.trainings.filter(
-    (t) => t.is_best_seller
+    (t) => t.is_best_seller,
   ).length;
 
   return (

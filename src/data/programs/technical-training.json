@@ -35,7 +35,7 @@
           "id": "postman",
           "title": "Postman",
           "editor": "Jump iT",
-          "is_best_seller": true,
+          "is_best_seller": false,
           "duration_days": 2,
           "level": "Niveau 1",
           "evaluation": "TP",
@@ -93,7 +93,7 @@
           "id": "cypress",
           "title": "Cypress",
           "editor": "Jump iT",
-          "is_best_seller": true,
+          "is_best_seller": false,
           "duration_days": 2,
           "level": "Niveau 2",
           "evaluation": "TP",
@@ -293,7 +293,7 @@
           "id": "playwright-intermediate",
           "title": "Playwright Intermédiaire",
           "editor": "Jump iT",
-          "is_best_seller": true,
+          "is_best_seller": false,
           "duration_days": 2,
           "level": "Niveau 2",
           "evaluation": "TP",
@@ -597,7 +597,7 @@
           "id": "reactjs",
           "title": "ReactJS",
           "editor": "Jump iT",
-          "is_best_seller": true,
+          "is_best_seller": false,
           "duration_days": 4,
           "level": "Niveau 2",
           "evaluation": "Projet",
@@ -880,7 +880,7 @@
           "id": "nextjs-beginner",
           "title": "Next.js Débutant",
           "editor": "Jump iT",
-          "is_best_seller": true,
+          "is_best_seller": false,
           "duration_days": 2,
           "level": "Niveau 1",
           "evaluation": "TP",
@@ -1574,7 +1574,7 @@
           "id": "docker",
           "title": "Docker",
           "editor": "Jump iT",
-          "is_best_seller": true,
+          "is_best_seller": false,
           "duration_days": 2,
           "level": "Niveau 1",
           "evaluation": "TP",
@@ -1809,6 +1809,127 @@
                   "Gestion des Certificats (TLS)",
                   "Backup et Restore (Velero)",
                   "Stratégies de mise à jour Cluster"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "jenkins",
+          "title": "Jenkins",
+          "editor": "Jump iT",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Niveau 2",
+          "evaluation": "TP",
+          "package_includes": "Support de cours et labs CI/CD",
+          "languages": ["FR"],
+          "tags": ["devops", "ci/cd", "jenkins", "automation", "pipeline"],
+          "search_keywords": [
+            "jenkins",
+            "ci/cd",
+            "continuous integration",
+            "pipeline",
+            "automation"
+          ],
+          "details": {
+            "description": "Maîtrisez Jenkins, l'outil d'intégration et de déploiement continu le plus populaire. Apprenez à créer des pipelines CI/CD robustes, automatiser les builds et déploiements.",
+            "target_audience": [
+              "DevOps Engineers",
+              "Développeurs",
+              "Administrateurs Système",
+              "Release Managers"
+            ],
+            "objectives": [
+              "Installer et configurer Jenkins",
+              "Créer des pipelines déclaratifs et scriptés",
+              "Intégrer Jenkins avec Git, Docker et Kubernetes",
+              "Gérer les credentials et la sécurité"
+            ],
+            "prerequisites": ["Notions de base en Git et Linux"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Fondamentaux Jenkins",
+                "topics": [
+                  "Architecture Jenkins (Master/Agent)",
+                  "Installation et configuration",
+                  "Jobs et Builds basiques",
+                  "Intégration avec Git (Webhooks)",
+                  "Plugins essentiels"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Pipelines et Intégrations",
+                "topics": [
+                  "Pipeline as Code (Jenkinsfile)",
+                  "Pipelines déclaratifs vs scriptés",
+                  "Intégration Docker et Kubernetes",
+                  "Gestion des credentials et secrets",
+                  "Notifications et rapports"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "gitlab-ci",
+          "title": "GitLab CI/CD",
+          "editor": "Jump iT",
+          "is_best_seller": false,
+          "duration_days": 2,
+          "level": "Niveau 2",
+          "evaluation": "TP",
+          "package_includes": "Support de cours et labs GitLab",
+          "languages": ["FR"],
+          "tags": ["devops", "ci/cd", "gitlab", "automation", "pipeline"],
+          "search_keywords": [
+            "gitlab",
+            "ci/cd",
+            "gitlab ci",
+            "pipeline",
+            "devops"
+          ],
+          "details": {
+            "description": "Exploitez la puissance de GitLab CI/CD pour automatiser vos workflows de développement. Apprenez à créer des pipelines efficaces, gérer les runners et déployer en continu.",
+            "target_audience": [
+              "DevOps Engineers",
+              "Développeurs",
+              "Équipes Agile",
+              "Administrateurs GitLab"
+            ],
+            "objectives": [
+              "Comprendre l'architecture GitLab CI/CD",
+              "Créer des pipelines avec .gitlab-ci.yml",
+              "Configurer et gérer les GitLab Runners",
+              "Implémenter des stratégies de déploiement avancées"
+            ],
+            "prerequisites": ["Connaissances Git et bases DevOps"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "GitLab CI Fundamentals",
+                "topics": [
+                  "Architecture GitLab CI/CD",
+                  "Fichier .gitlab-ci.yml (syntaxe et structure)",
+                  "Jobs, Stages et Pipelines",
+                  "Variables et Secrets",
+                  "GitLab Runners (Shared vs Specific)"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Pipelines Avancés et Déploiement",
+                "topics": [
+                  "Cache et Artifacts",
+                  "Pipelines multi-projets et déclencheurs",
+                  "Déploiement avec GitLab (Auto DevOps)",
+                  "Intégration Docker et Kubernetes",
+                  "Review Apps et Environments",
+                  "Sécurité et scanning (SAST, DAST)"
                 ]
               }
             ],

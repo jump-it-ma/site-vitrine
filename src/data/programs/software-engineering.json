@@ -93,7 +93,7 @@
           "title": "Certified Tester Foundation Level (CTFL v4)",
           "editor": "GASQ",
           "reference": "CTFL",
-          "is_best_seller": true,
+          "is_best_seller": false,
           "duration_days": 3,
           "duration_display": "2 or 3d",
           "level": "Niveau 2",

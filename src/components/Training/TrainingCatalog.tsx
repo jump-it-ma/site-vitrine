@@ -36,7 +36,7 @@ export default function TrainingCatalog({
 
   // State for selected category
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(
-    initialCategory
+    initialCategory,
   );
 
   // Flatten trainings from selected category for filtering
@@ -63,7 +63,7 @@ export default function TrainingCatalog({
       categories: [selectedCategory.name],
       editors: Array.from(new Set(trainings.map((t) => t.editor))),
       durations: Array.from(
-        new Set(trainings.map((t) => t.duration_days))
+        new Set(trainings.map((t) => t.duration_days)),
       ).sort((a, b) => a - b),
       levels: Array.from(new Set(trainings.map((t) => t.level))),
       languages: Array.from(new Set(trainings.flatMap((t) => t.languages))),
@@ -82,7 +82,7 @@ export default function TrainingCatalog({
   const totalPages = Math.ceil(filteredTrainings.length / ITEMS_PER_PAGE);
   const paginatedTrainings = filteredTrainings.slice(
     (currentPage - 1) * ITEMS_PER_PAGE,
-    currentPage * ITEMS_PER_PAGE
+    currentPage * ITEMS_PER_PAGE,
   );
 
   return (
@@ -145,7 +145,7 @@ export default function TrainingCatalog({
           <div className="mt-6 flex flex-wrap gap-2">
             {selectedCategory ? (
               <span className="rounded-full bg-white/20 px-4 py-1.5 text-sm font-medium text-white backdrop-blur">
-                {selectedCategory.name} - {selectedCategory.reference}
+                {selectedCategory.name}
               </span>
             ) : (
               programData.program.categories.map((category) => (
@@ -324,7 +324,7 @@ export default function TrainingCatalog({
                   {selectedCategory.name}
                 </h2>
                 <p className={`${latoFont.className} mt-1 text-gray-500`}>
-                  {selectedCategory.description} • {selectedCategory.reference}
+                  {selectedCategory.description}
                 </p>
               </div>
 

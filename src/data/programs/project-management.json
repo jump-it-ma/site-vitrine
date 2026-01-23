@@ -3,10 +3,10 @@
     "id": "project-management",
     "title": "GESTION DE PROJET",
     "description": "Formations certifiantes en gestion de projet : PM² (UE), PMP® (PMI) et PRINCE2® 7.",
-    "categories": ["PM²", "PMBOK 7", "PRINCE2® 7"]
+    "categories": ["PM²", "PMBOK 8", "PRINCE2® 7"]
   },
   "filters": {
-    "categories": ["PM²", "PMBOK 7", "PRINCE2® 7"],
+    "categories": ["PM²", "PMBOK 8", "PRINCE2® 7"],
     "editors": ["APMG", "PMI"],
     "durations": [2, 3, 5],
     "levels": ["Intermédiaire", "Avancé"],
@@ -14,9 +14,9 @@
   },
   "categories": [
     {
-      "id": "pmbok-7",
-      "name": "PMBOK 7",
-      "description": "Le standard mondial du PMI (Project Management Institute). Préparation à la certification PMP®.",
+      "id": "pmbok-8",
+      "name": "PMBOK 8",
+      "description": "Le standard mondial du PMI (Project Management Institute). Préparation à la certification PMP® basée sur le PMBOK 8.",
       "reference": "PMI",
       "trainings": [
         {
@@ -24,7 +24,7 @@
           "title": "PMP - PMI®",
           "editor": "PMI",
           "reference": "PMP",
-          "is_best_seller": true,
+          "is_best_seller": false,
           "duration_days": 5,
           "level": "Niveau 3",
           "evaluation": "QCM",
@@ -40,10 +40,10 @@
             "pmp",
             "project management professional",
             "pmi",
-            "pmbok 7"
+            "pmbok 8"
           ],
           "details": {
-            "description": "La certification PMP® est la référence mondiale en gestion de projet. Ce cours prépare à l'examen basé sur le PMBOK 7 et le nouveau format d'examen.",
+            "description": "La certification PMP® est la référence mondiale en gestion de projet. Ce cours prépare à l'examen basé sur le PMBOK 8 et le format d'examen actuel.",
             "target_audience": [
               "Chefs de projet expérimentés",
               "Directeurs de projet"
@@ -53,12 +53,9 @@
               "Maîtriser les 3 domaines (People, Process, Business Environment)",
               "Valider les 35 heures de contact obligatoires"
             ],
-            "prerequisites": [
-              "3 à 5 ans d'expérience en gestion de projet",
-              "35h de formation (incluses)"
-            ],
+            "prerequisites": ["3 à 5 ans d'expérience en gestion de projet"],
             "footnotes": [
-              "(3) Includes one year's PMI membership, allowing to download reference books (PMBOK7) and access PDU Program.",
+              "(3) Includes one year's PMI membership, allowing to download reference books (PMBOK 8) and access PDU Program.",
               "(4) Includes verification of the candidate's PMP exam application form before submission."
             ],
             "curriculum": [
@@ -234,6 +231,96 @@
                   "Gérer les limites de séquence",
                   "Clôturer un projet",
                   "Examens blancs"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "prince2-combined-v7",
+          "title": "PRINCE2® 7 Combined (Foundation + Practitioner)",
+          "editor": "AXELOS",
+          "reference": "PRFP",
+          "is_best_seller": false,
+          "duration_days": 5,
+          "level": "Niveau 3",
+          "evaluation": "QCM",
+          "pricing": {
+            "currency": "EUR",
+            "exam_price": 0,
+            "training_price": 0
+          },
+          "package_includes": "Formation, Matériel officiel, eBooks et Vouchers Examens (Foundation + Practitioner)",
+          "languages": ["FR", "EN"],
+          "tags": ["prince2", "combined", "v7", "foundation", "practitioner"],
+          "search_keywords": [
+            "prince2 combined",
+            "prince2 foundation practitioner",
+            "certification complete"
+          ],
+          "details": {
+            "description": "Formation complète PRINCE2® 7 combinant Foundation et Practitioner en 5 jours. Obtenez les deux certifications et maîtrisez la méthode de bout en bout.",
+            "target_audience": [
+              "Chefs de projet",
+              "Futurs chefs de projet",
+              "Managers",
+              "PMO"
+            ],
+            "objectives": [
+              "Comprendre et appliquer le cadre PRINCE2® 7",
+              "Réussir les examens Foundation et Practitioner",
+              "Adapter la méthode à différents contextes projet"
+            ],
+            "prerequisites": ["Aucun"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Introduction & Principes",
+                "topics": [
+                  "Introduction à la gestion de projet",
+                  "Les 7 Principes PRINCE2",
+                  "L'élément Humain (People)",
+                  "Structure organisationnelle"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Les Pratiques (Thèmes)",
+                "topics": [
+                  "Business Case et Justification continue",
+                  "Organisation et Rôles",
+                  "Qualité et Gestion des risques",
+                  "Plans et Contrôle"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Les Processus & Examen Foundation",
+                "topics": [
+                  "Cycle de vie du projet (SU, IP, CS, MP, SB, CP)",
+                  "Adaptation (Tailoring)",
+                  "Révision et Examen Foundation"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Application Pratique - Niveau Practitioner",
+                "topics": [
+                  "Analyse de scénarios réels",
+                  "Application du Business Case",
+                  "Gestion des risques et des changements",
+                  "Gestion de l'équipe et des parties prenantes"
+                ]
+              },
+              {
+                "day": 5,
+                "title": "Maîtrise & Examen Practitioner",
+                "topics": [
+                  "Application des processus",
+                  "Gérer les limites de séquence",
+                  "Clôture de projet",
+                  "Examens blancs et Examen Practitioner"
                 ]
               }
             ],

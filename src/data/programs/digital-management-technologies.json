@@ -44,6 +44,128 @@
             "curriculum": [],
             "faqs": []
           }
+        },
+        {
+          "id": "ms-dp-900",
+          "title": "Azure Data Fundamentals (DP-900)",
+          "editor": "MICROSOFT",
+          "reference": "DP900",
+          "is_best_seller": false,
+          "duration_days": 1,
+          "level": "Niveau 1",
+          "evaluation": "QCM",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 145,
+            "note": "Training Package (incl. voucher)"
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["dp-900", "azure", "data", "fundamentals"],
+          "search_keywords": ["dp-900", "data fundamentals", "azure data"],
+          "details": {
+            "description": "Découvrez les concepts fondamentaux des données dans le cloud. Apprenez les bases des données relationnelles, non-relationnelles, du Big Data et de l'analytique sur Azure.",
+            "target_audience": [
+              "Débutants en Data",
+              "Business Analysts",
+              "Data Engineers débutants",
+              "Tous profils IT"
+            ],
+            "objectives": [
+              "Comprendre les concepts de données (relationnelles, NoSQL)",
+              "Décrire les services de données Azure",
+              "Identifier les charges de travail analytiques"
+            ],
+            "prerequisites": ["Aucun"],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Data Fundamentals",
+                "topics": [
+                  "Concepts de données core",
+                  "Données relationnelles sur Azure (SQL Database, SQL MI)",
+                  "Données non-relationnelles (Cosmos DB, Storage)",
+                  "Analytique moderne (Synapse, Data Factory, Databricks)"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "ms-ai-102",
+          "title": "Designing and Implementing Azure AI Solutions (AI-102)",
+          "editor": "MICROSOFT",
+          "reference": "AI102",
+          "is_best_seller": false,
+          "duration_days": 3,
+          "level": "Niveau 2",
+          "evaluation": "QCM",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 260,
+            "note": "Training Package (incl. voucher)"
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["ai-102", "azure", "ai engineer", "cognitive services"],
+          "search_keywords": [
+            "ai-102",
+            "ai engineer",
+            "cognitive services",
+            "azure ai"
+          ],
+          "details": {
+            "description": "Certification Azure AI Engineer Associate. Apprenez à concevoir et implémenter des solutions d'IA en utilisant Azure Cognitive Services, Azure Machine Learning et Knowledge Mining.",
+            "target_audience": [
+              "Ingénieurs IA",
+              "Développeurs",
+              "Data Scientists",
+              "Architectes de solutions IA"
+            ],
+            "objectives": [
+              "Implémenter des solutions de vision par ordinateur",
+              "Créer des solutions de traitement du langage naturel (NLP)",
+              "Développer des solutions de Knowledge Mining et d'IA conversationnelle"
+            ],
+            "prerequisites": [
+              "AI-900 recommandé",
+              "Expérience en programmation (Python ou C#)"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Azure Cognitive Services",
+                "topics": [
+                  "Introduction aux services cognitifs Azure",
+                  "Computer Vision et Custom Vision",
+                  "Face API et Form Recognizer",
+                  "Sécurité et monitoring des services IA"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Natural Language Processing",
+                "topics": [
+                  "Language Understanding (LUIS)",
+                  "Text Analytics et Translator",
+                  "Speech Services (Speech-to-Text, Text-to-Speech)",
+                  "Azure Bot Service et QnA Maker"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Knowledge Mining & ML",
+                "topics": [
+                  "Azure Cognitive Search",
+                  "Knowledge Mining avec enrichissement IA",
+                  "Azure Machine Learning (déploiement de modèles)",
+                  "Préparation à la certification"
+                ]
+              }
+            ],
+            "faqs": []
+          }
         }
       ]
     },
