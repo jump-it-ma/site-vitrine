@@ -96,8 +96,8 @@ export const DevisEmail = ({
             </Column>
           </Row>
           <Text style={{ textAlign: "center", color: "#706a7b" }}>
-            © 2023 Jump iT, Tout droit réservé <br />
-            350 Bush Street, 2nd Floor, San Francisco, CA, 94104 - USA
+            © 2026 Jump iT, Tout droit réservé <br />
+            Bureau N° 20, Imm 11, Rue sebata, Hassan, Rabat 10020, Maroc
           </Text>
         </Section>
       </Body>
