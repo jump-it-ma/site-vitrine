@@ -92,7 +92,7 @@
           "editor": "TOG",
           "reference": "TOGP",
           "is_best_seller": false,
-          "duration_days": 2,
+          "duration_days": 3,
           "level": "Niveau 4",
           "evaluation": "QCM",
           "pricing": {
@@ -269,6 +269,16 @@
                   "Couche Business",
                   "Couche Application",
                   "Couche Technologie"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Ateliers pratiques et cas d'usage",
+                "topics": [
+                  "Atelier de modélisation : du besoin à la vue",
+                  "Exercices d'alignement entre les couches Business/App/Tech",
+                  "Traduire exigences en vues et viewpoints",
+                  "Préparation à l'examen Foundation (révision + QCM)"
                 ]
               }
             ],

@@ -41,7 +41,7 @@
           "editor": "SCRUM.ORG",
           "reference": "PSM1",
           "is_best_seller": false,
-          "duration_days": 2,
+          "duration_days": 3,
           "level": "Niveau 1",
           "evaluation": "QCM",
           "package_includes": "Passage de certification",
@@ -82,7 +82,7 @@
           "editor": "SCRUM.ORG",
           "reference": "PSPO1",
           "is_best_seller": false,
-          "duration_days": 2,
+          "duration_days": 3,
           "level": "Niveau 1",
           "evaluation": "QCM",
           "package_includes": "Passage de certification",
@@ -127,7 +127,7 @@
           "editor": "SCRUM.ORG",
           "reference": "PSD1",
           "is_best_seller": false,
-          "duration_days": 2,
+          "duration_days": 3,
           "level": "Niveau 1",
           "evaluation": "QCM",
           "package_includes": "Passage de certification",
@@ -415,7 +415,7 @@
           "editor": "SAF",
           "reference": "SAFe6",
           "is_best_seller": false,
-          "duration_days": 2,
+          "duration_days": 3,
           "level": "Niveau 2",
           "evaluation": "QCM",
           "package_includes": "Kit officiel SAFe et voucher examen",
@@ -459,6 +459,16 @@
                   "Exécution et Inspect & Adapt",
                   "Lean Portfolio Management"
                 ]
+              },
+              {
+                "day": 3,
+                "title": "Ateliers pratiques & simulation PI Planning",
+                "topics": [
+                  "Simulation de PI Planning (exercice en équipes)",
+                  "Priorisation et dépendances inter-équipes",
+                  "Mesures Lean-Agile et KPI",
+                  "Feuille de route de transformation" 
+                ]
               }
             ],
             "faqs": []
@@ -470,7 +480,7 @@
           "editor": "SAF",
           "reference": "SAFePO",
           "is_best_seller": false,
-          "duration_days": 2,
+          "duration_days": 3,
           "level": "Niveau 2",
           "evaluation": "QCM",
           "package_includes": "Kit officiel et examen",
@@ -508,6 +518,16 @@
                   "Itération Execution",
                   "Inspection et Adaptation"
                 ]
+              },
+              {
+                "day": 3,
+                "title": "Atelier pratique PO/PM",
+                "topics": [
+                  "Atelier de priorisation et story mapping",
+                  "Exercice PI Planning : préparation et rôle du PO/PM",
+                  "Mesures de valeur et alignement stratégique",
+                  "Plan d'action pour le prochain PI"
+                ]
               }
             ],
             "faqs": []
@@ -519,7 +539,7 @@
           "editor": "SAF",
           "reference": "SAFeT",
           "is_best_seller": false,
-          "duration_days": 2,
+          "duration_days": 3,
           "level": "Niveau 1",
           "evaluation": "QCM",
           "package_includes": "Kit officiel SAFe et voucher examen",
@@ -564,6 +584,16 @@
                   "Collaboration inter-équipes et System Demo",
                   "Préparation à la certification"
                 ]
+              },
+              {
+                "day": 3,
+                "title": "Atelier équipe : PI Planning et intégration",
+                "topics": [
+                  "Exercice de participation au PI Planning en équipe",
+                  "System Demo & intégration inter-équipes",
+                  "Amélioration continue et rétro-action immédiate",
+                  "Actions pour le prochain PI"
+                ]
               }
             ],
             "faqs": []
@@ -607,20 +637,32 @@
             "curriculum": [
               {
                 "day": 1,
-                "title": "Introduction DevOps",
+                "title": "Introduction DevOps et culture",
                 "topics": [
                   "Histoire et définition",
                   "Culture et Collaboration",
-                  "Principes Lean"
+                  "Principes Lean",
+                  "Modèle C.A.L.M.S et exemples business"
                 ]
               },
               {
                 "day": 2,
-                "title": "Pratiques et Outils",
+                "title": "Pratiques, outils et automatisation",
                 "topics": [
-                  "Automatisation (CI/CD)",
-                  "Mesure et Partage",
-                  "Préparation examen"
+                  "CI/CD (pipelines, tests automatisés)",
+                  "Infrastructure as Code (IaC)",
+                  "Observabilité, monitoring et SLOs",
+                  "Sécurité dans le pipeline (shift-left)"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Ateliers pratiques & stratégie de transformation",
+                "topics": [
+                  "Atelier : concevoir un pipeline CI/CD (exercice en groupe)",
+                  "Gestion du changement et métriques (DORA, indicateurs)",
+                  "Gouvernance, rôles et partage de responsabilités",
+                  "Plan d'action pour la transformation DevOps"
                 ]
               }
             ],
@@ -667,18 +709,28 @@
                 "topics": [
                   "Histoire et philosophie SRE",
                   "SLI, SLO, SLA et Error Budget",
-                  "Toil et automatisation",
-                  "Monitoring et Observabilité"
+                  "Concepts de toil et automatisation",
+                  "Monitoring et Observabilité (bases)"
                 ]
               },
               {
                 "day": 2,
-                "title": "Pratiques SRE",
+                "title": "Pratiques SRE avancées",
                 "topics": [
                   "Incident Management et Post-Mortems",
-                  "Capacity Planning",
-                  "Release Engineering",
-                  "Préparation à la certification"
+                  "Capacity Planning et scalabilité",
+                  "Release Engineering et pratiques de déploiement",
+                  "Gestion des runbooks et playbooks"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Ateliers et exercices pratiques",
+                "topics": [
+                  "Table-top exercise: gérer un incident critique (exercice en groupe)",
+                  "Atelier: mise en place d'un SLI/SLO et calcul d'Error Budget",
+                  "Introduction au Chaos Engineering et tests de résilience",
+                  "Plan d'amélioration opérationnelle et métriques DORA"
                 ]
               }
             ],
@@ -718,19 +770,29 @@
                 "title": "Fondamentaux DevSecOps",
                 "topics": [
                   "Culture DevSecOps et Shift Left",
-                  "Threat Modeling",
+                  "Threat Modeling et risk assessment",
                   "Sécurité dans le SDLC",
-                  "Compliance as Code"
+                  "Compliance as Code et gouvernance"
                 ]
               },
               {
                 "day": 2,
-                "title": "Pratiques et Outils",
+                "title": "Pratiques, outils et tests de sécurité",
                 "topics": [
-                  "SAST, DAST et SCA",
-                  "Container Security",
-                  "Secrets Management",
-                  "Préparation à la certification"
+                  "SAST, DAST et SCA : méthodes et intégration",
+                  "Container & Kubernetes security",
+                  "Secrets Management et IAM",
+                  "Automatisation des tests de sécurité"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Ateliers pratiques et réponse aux incidents",
+                "topics": [
+                  "Pipeline security lab : intégrer SAST/DAST dans CI/CD",
+                  "Automatisation des checks de compliance (IaC scanning)",
+                  "Table-top exercise : incident de sécurité et playbooks",
+                  "Plan d'amélioration et roadmap sécurisé"
                 ]
               }
             ],
