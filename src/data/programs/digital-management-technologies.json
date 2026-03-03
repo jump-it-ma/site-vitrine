@@ -8,7 +8,7 @@
   "filters": {
     "categories": ["Microsoft AI-Data", "Microsoft Azure"],
     "editors": ["MICROSOFT"],
-    "durations": [1, 2, 3, 5],
+    "durations": [1, 2, 3, 4, 5],
     "levels": ["Niveau 1", "Niveau 2", "Avancé"],
     "languages": ["FR", "EN"]
   },
@@ -94,11 +94,11 @@
         },
         {
           "id": "ms-ai-102",
-          "title": "Designing and Implementing Azure AI Solutions (AI-102)",
+          "title": "Develop AI Solutions in Azure (AI-102)",
           "editor": "MICROSOFT",
           "reference": "AI102",
           "is_best_seller": false,
-          "duration_days": 3,
+          "duration_days": 5,
           "level": "Niveau 2",
           "evaluation": "QCM",
           "pricing": {
@@ -108,15 +108,16 @@
           },
           "package_includes": "Formation et Voucher Examen",
           "languages": ["FR", "EN"],
-          "tags": ["ai-102", "azure", "ai engineer", "cognitive services"],
+          "tags": ["ai-102", "azure", "ai engineer", "azure ai foundry", "generative ai"],
           "search_keywords": [
             "ai-102",
             "ai engineer",
-            "cognitive services",
-            "azure ai"
+            "azure ai foundry",
+            "azure ai",
+            "generative ai"
           ],
           "details": {
-            "description": "Certification Azure AI Engineer Associate. Apprenez à concevoir et implémenter des solutions d'IA en utilisant Azure Cognitive Services, Azure Machine Learning et Knowledge Mining.",
+            "description": "Certification Azure AI Engineer Associate. Apprenez à développer des solutions d'IA avec Azure AI Foundry et les services Azure AI : applications d'IA générative, agents IA, vision par ordinateur et extraction d'informations.",
             "target_audience": [
               "Ingénieurs IA",
               "Développeurs",
@@ -124,42 +125,65 @@
               "Architectes de solutions IA"
             ],
             "objectives": [
-              "Implémenter des solutions de vision par ordinateur",
-              "Créer des solutions de traitement du langage naturel (NLP)",
-              "Développer des solutions de Knowledge Mining et d'IA conversationnelle"
+              "Créer des copilots personnalisés avec Azure AI Foundry",
+              "Développer des agents IA sur Azure",
+              "Implémenter des solutions de traitement du langage naturel",
+              "Créer des solutions de vision par ordinateur",
+              "Extraire des informations avec les services Azure AI"
             ],
             "prerequisites": [
               "AI-900 recommandé",
-              "Expérience en programmation (Python ou C#)"
+              "Expérience en programmation (Python ou C#)",
+              "Connaissance des API REST et SDK"
             ],
             "curriculum": [
               {
                 "day": 1,
-                "title": "Azure Cognitive Services",
+                "title": "Copilots personnalisés avec Azure AI Foundry",
                 "topics": [
-                  "Introduction aux services cognitifs Azure",
-                  "Computer Vision et Custom Vision",
-                  "Face API et Form Recognizer",
-                  "Sécurité et monitoring des services IA"
+                  "Introduction à Azure AI Foundry",
+                  "Création d'applications d'IA générative",
+                  "Personnalisation de copilots",
+                  "Prompt engineering et orchestration"
                 ]
               },
               {
                 "day": 2,
-                "title": "Natural Language Processing",
+                "title": "Agents IA sur Azure",
                 "topics": [
-                  "Language Understanding (LUIS)",
-                  "Text Analytics et Translator",
-                  "Speech Services (Speech-to-Text, Text-to-Speech)",
-                  "Azure Bot Service et QnA Maker"
+                  "Conception d'agents IA",
+                  "Intégration de données et d'outils",
+                  "Déploiement et gestion d'agents",
+                  "Bonnes pratiques et sécurité"
                 ]
               },
               {
                 "day": 3,
-                "title": "Knowledge Mining & ML",
+                "title": "Solutions de langage avec Azure AI",
                 "topics": [
-                  "Azure Cognitive Search",
+                  "Azure AI Language Services",
+                  "Analyse de texte et traduction",
+                  "Speech Services (Speech-to-Text, Text-to-Speech)",
+                  "Conversational AI et compréhension du langage"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Vision par ordinateur avec Azure AI",
+                "topics": [
+                  "Azure AI Vision",
+                  "Analyse d'images et détection d'objets",
+                  "Custom Vision et classification",
+                  "Reconnaissance faciale et OCR"
+                ]
+              },
+              {
+                "day": 5,
+                "title": "Extraction d'informations",
+                "topics": [
+                  "Azure AI Document Intelligence",
+                  "Azure Cognitive Search et indexation",
                   "Knowledge Mining avec enrichissement IA",
-                  "Azure Machine Learning (déploiement de modèles)",
                   "Préparation à la certification"
                 ]
               }
@@ -177,10 +201,10 @@
       "trainings": [
         {
           "id": "ms-az-900",
-          "title": "Introduction to Microsoft Azure (AZ-900)",
+          "title": "Azure Fundamentals (AZ-900)",
           "editor": "MICROSOFT",
           "reference": "AZ900",
-          "is_best_seller": false,
+          "is_best_seller": true,
           "duration_days": 1,
           "level": "Niveau 1",
           "evaluation": "QCM",
@@ -191,30 +215,33 @@
           },
           "package_includes": "Formation et Voucher Examen",
           "languages": ["FR", "EN"],
-          "tags": ["azure", "cloud", "az-900", "foundation"],
-          "search_keywords": ["az-900", "azure fundamentals", "cloud basics"],
+          "tags": ["az-900", "azure", "cloud", "fundamentals"],
+          "search_keywords": ["az-900", "azure fundamentals", "cloud fundamentals", "microsoft azure"],
           "details": {
-            "description": "La première étape pour découvrir le Cloud Computing et Microsoft Azure. Comprendre les concepts de base, les services core et la tarification.",
+            "description": "Certification Azure Fundamentals. Découvrez les concepts fondamentaux du cloud computing et les services de base de Microsoft Azure : compute, réseau, stockage et sécurité.",
             "target_audience": [
-              "Tous profils",
-              "Commerciaux",
-              "Managers",
-              "Débutants techniques"
+              "Débutants en Cloud",
+              "Décideurs IT",
+              "Tous profils souhaitant comprendre Azure",
+              "Candidats à la certification AZ-900"
             ],
             "objectives": [
-              "Comprendre les concepts du Cloud (IaaS, PaaS, SaaS)",
-              "Décrire l'architecture Azure",
-              "Comprendre la gestion des coûts et SLAs"
+              "Décrire les concepts du cloud computing (IaaS, PaaS, SaaS)",
+              "Identifier les services Azure de base (compute, réseau, stockage)",
+              "Comprendre la sécurité, la conformité et la gouvernance Azure",
+              "Appréhender la gestion des coûts et les accords SLA"
             ],
             "prerequisites": ["Aucun"],
             "curriculum": [
               {
                 "day": 1,
-                "title": "Azure Fundamentals",
+                "title": "Fondamentaux Azure",
                 "topics": [
-                  "Concepts du Cloud",
-                  "Services Azure Core (Compute, Network, Storage)",
-                  "Sécurité, Confidentialité, Conformité"
+                  "Concepts du cloud (haute disponibilité, scalabilité, elasticité)",
+                  "Modèles de service : IaaS, PaaS, SaaS",
+                  "Services Azure core : Compute, Réseau, Stockage",
+                  "Sécurité, conformité et gouvernance",
+                  "Gestion des coûts et SLA Azure"
                 ]
               }
             ],
@@ -226,50 +253,9 @@
           "title": "Microsoft Azure Administrator (AZ-104)",
           "editor": "MICROSOFT",
           "reference": "AZ104",
-          "is_best_seller": false,
-          "duration_days": 1,
-          "level": "Niveau 1",
-          "evaluation": "QCM",
-          "pricing": {
-            "currency": "EUR",
-            "package_price": 215,
-            "note": "Training Package (incl. voucher)"
-          },
-          "package_includes": "Formation et Voucher Examen",
-          "languages": ["FR", "EN"],
-          "tags": ["azure", "admin", "az-104", "infrastructure"],
-          "search_keywords": ["az-104", "azure administrator", "cloud admin"],
-          "details": {
-            "description": "Apprenez à gérer votre abonnement Azure, sécuriser les identités, administrer l'infrastructure et configurer les réseaux virtuels.",
-            "target_audience": ["Administrateurs Azure", "Ingénieurs Système"],
-            "objectives": [
-              "Gérer les identités Azure AD",
-              "Implémenter et gérer le stockage",
-              "Déployer et gérer les ressources de calcul (VMs, Containers)"
-            ],
-            "prerequisites": ["AZ-900 recommandé", "Expérience système"],
-            "curriculum": [
-              {
-                "day": 1,
-                "title": "Administration Azure",
-                "topics": [
-                  "Identité et Gouvernance",
-                  "Stockage Azure",
-                  "Réseaux Virtuels"
-                ]
-              }
-            ],
-            "faqs": []
-          }
-        },
-        {
-          "id": "ms-az-400",
-          "title": "Designing and Implementing Microsoft DevOps solutions (AZ-400)",
-          "editor": "MICROSOFT",
-          "reference": "AZ400",
-          "is_best_seller": false,
-          "duration_days": 3,
-          "level": "Niveau 1",
+          "is_best_seller": true,
+          "duration_days": 5,
+          "level": "Niveau 2",
           "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
@@ -278,35 +264,269 @@
           },
           "package_includes": "Formation et Voucher Examen",
           "languages": ["FR", "EN"],
-          "tags": ["azure", "devops", "az-400", "ci/cd"],
-          "search_keywords": ["az-400", "devops engineer", "pipelines"],
+          "tags": ["az-104", "azure", "administration", "azure administrator"],
+          "search_keywords": ["az-104", "azure administrator", "azure admin", "administration azure"],
           "details": {
-            "description": "Devenez expert DevOps sur Azure. Apprenez à concevoir et implémenter des stratégies de collaboration, de code, d'infrastructure et de livraison continue.",
-            "target_audience": ["Ingénieurs DevOps", "Développeurs", "Ops"],
-            "objectives": [
-              "Concevoir une stratégie DevOps",
-              "Implémenter CI/CD avec Azure Pipelines",
-              "Gérer la configuration et les secrets"
+            "description": "Certification Azure Administrator Associate. Maîtrisez l'administration de l'infrastructure Azure : gestion des identités, gouvernance, stockage, compute, réseau et monitoring.",
+            "target_audience": [
+              "Administrateurs systèmes et réseaux",
+              "Ingénieurs infrastructure Cloud",
+              "Administrateurs Azure",
+              "Candidats à la certification AZ-104"
             ],
-            "prerequisites": ["Certification AZ-104 ou AZ-204"],
+            "objectives": [
+              "Gérer les identités et les accès Azure (Azure AD, RBAC)",
+              "Implémenter la gouvernance et la conformité",
+              "Administrer le stockage Azure",
+              "Déployer et gérer les ressources compute Azure",
+              "Configurer et gérer les réseaux virtuels Azure",
+              "Surveiller et sauvegarder les ressources Azure"
+            ],
+            "prerequisites": [
+              "AZ-900 recommandé",
+              "Expérience en administration système (Windows/Linux)",
+              "Notions de virtualisation et réseaux"
+            ],
             "curriculum": [
               {
                 "day": 1,
-                "title": "Stratégie & Source Control",
-                "topics": ["Planification DevOps", "Gestion de version (Git)"]
+                "title": "Identités et Gouvernance",
+                "topics": [
+                  "Gestion des utilisateurs et groupes Azure AD",
+                  "Contrôle d'accès basé sur les rôles (RBAC)",
+                  "Azure Policy et Blueprints",
+                  "Abonnements et groupes de gestion"
+                ]
               },
               {
                 "day": 2,
-                "title": "CI/CD & Infrastructure",
+                "title": "Stockage Azure",
                 "topics": [
-                  "Pipelines de build et release",
-                  "Infrastructure as Code (IaC)"
+                  "Comptes de stockage Azure",
+                  "Blob Storage, File Share, Table et Queue",
+                  "Sécurité et redondance du stockage",
+                  "Azure Import/Export et AzCopy"
                 ]
               },
               {
                 "day": 3,
-                "title": "Feedback & Sécurité",
-                "topics": ["Monitoring et Feedback", "DevSecOps"]
+                "title": "Compute Azure",
+                "topics": [
+                  "Machines virtuelles Azure (déploiement, dimensionnement, haute disponibilité)",
+                  "Azure App Service et Azure Container Instances",
+                  "Azure Kubernetes Service (AKS) — introduction",
+                  "Azure Functions et automatisation"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Réseau Azure",
+                "topics": [
+                  "Virtual Networks, sous-réseaux et peering",
+                  "Network Security Groups et Azure Firewall",
+                  "Azure Load Balancer et Application Gateway",
+                  "VPN Gateway et ExpressRoute"
+                ]
+              },
+              {
+                "day": 5,
+                "title": "Monitoring et Sauvegarde",
+                "topics": [
+                  "Azure Monitor et Log Analytics",
+                  "Azure Backup et Azure Site Recovery",
+                  "Alertes et métriques",
+                  "Préparation à la certification AZ-104"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "ms-az-204",
+          "title": "Developing Solutions for Microsoft Azure (AZ-204)",
+          "editor": "MICROSOFT",
+          "reference": "AZ204",
+          "is_best_seller": false,
+          "duration_days": 5,
+          "level": "Niveau 2",
+          "evaluation": "QCM",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 260,
+            "note": "Training Package (incl. voucher)"
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["az-204", "azure", "developer", "azure developer"],
+          "search_keywords": ["az-204", "azure developer", "développeur azure", "azure development"],
+          "details": {
+            "description": "Certification Azure Developer Associate. Apprenez à concevoir, développer et déployer des solutions cloud sur Microsoft Azure : APIs, fonctions serverless, stockage, sécurité et monitoring.",
+            "target_audience": [
+              "Développeurs Azure",
+              "Développeurs back-end et full-stack",
+              "Ingénieurs logiciels souhaitant migrer vers le cloud",
+              "Candidats à la certification AZ-204"
+            ],
+            "objectives": [
+              "Développer des solutions de calcul Azure (VMs, conteneurs, App Service)",
+              "Implémenter des fonctions Azure (serverless)",
+              "Développer des solutions de stockage Azure",
+              "Sécuriser les solutions cloud Azure",
+              "Surveiller, dépanner et optimiser les solutions Azure",
+              "Intégrer des services tiers et des services Azure"
+            ],
+            "prerequisites": [
+              "AZ-900 recommandé",
+              "Expérience en développement (1-2 ans)",
+              "Maîtrise d'un langage : .NET, Java, Python ou Node.js",
+              "Connaissance des API REST et services cloud"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Solutions de Calcul Azure",
+                "topics": [
+                  "Azure App Service : déploiement et configuration",
+                  "Azure Container Registry et Azure Container Apps",
+                  "Machines virtuelles et scripts d'automatisation",
+                  "Azure Batch pour les workloads parallèles"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Azure Functions et Stockage",
+                "topics": [
+                  "Développement de fonctions Azure (triggers, bindings)",
+                  "Durable Functions et orchestration",
+                  "Cosmos DB : modélisation et SDK",
+                  "Blob Storage et Azure Cache for Redis"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Sécurité et Identité",
+                "topics": [
+                  "Microsoft Identity Platform et OAuth 2.0",
+                  "Azure Key Vault : secrets, certificats, clés",
+                  "Managed Identities",
+                  "Sécurisation des APIs avec Azure API Management"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Intégration et Messagerie",
+                "topics": [
+                  "Azure Service Bus et Azure Event Hubs",
+                  "Azure Event Grid",
+                  "Azure API Management",
+                  "Logic Apps et intégrations"
+                ]
+              },
+              {
+                "day": 5,
+                "title": "Monitoring et Optimisation",
+                "topics": [
+                  "Application Insights et Azure Monitor",
+                  "Instrumentation et télémétrie",
+                  "Mise en cache et optimisation des performances",
+                  "Préparation à la certification AZ-204"
+                ]
+              }
+            ],
+            "faqs": []
+          }
+        },
+        {
+          "id": "ms-az-400",
+          "title": "Designing and Implementing Microsoft DevOps Solutions (AZ-400)",
+          "editor": "MICROSOFT",
+          "reference": "AZ400",
+          "is_best_seller": false,
+          "duration_days": 5,
+          "level": "Avancé",
+          "evaluation": "QCM",
+          "pricing": {
+            "currency": "EUR",
+            "package_price": 260,
+            "note": "Training Package (incl. voucher)"
+          },
+          "package_includes": "Formation et Voucher Examen",
+          "languages": ["FR", "EN"],
+          "tags": ["az-400", "azure", "devops", "azure devops", "cicd"],
+          "search_keywords": ["az-400", "azure devops", "devops engineer", "ci/cd azure", "pipelines"],
+          "details": {
+            "description": "Certification Azure DevOps Engineer Expert. Maîtrisez la conception et l'implémentation de pratiques DevOps sur Azure : CI/CD, Infrastructure as Code, gestion de la configuration, sécurité et monitoring.",
+            "target_audience": [
+              "Ingénieurs DevOps",
+              "Développeurs souhaitant adopter les pratiques DevOps",
+              "Administrateurs système orientés automatisation",
+              "Candidats à la certification AZ-400"
+            ],
+            "objectives": [
+              "Configurer des processus et communications DevOps",
+              "Concevoir et implémenter des pipelines CI/CD avec Azure Pipelines",
+              "Implémenter l'Infrastructure as Code (IaC) avec Bicep et Terraform",
+              "Gérer les dépendances, les packages et la sécurité",
+              "Implémenter une stratégie de conteneurisation",
+              "Assurer le feedback continu avec le monitoring"
+            ],
+            "prerequisites": [
+              "AZ-104 ou AZ-204 recommandé",
+              "Expérience en développement ou administration Azure",
+              "Connaissance des pratiques agiles",
+              "Notions de Git et contrôle de version"
+            ],
+            "curriculum": [
+              {
+                "day": 1,
+                "title": "Processus DevOps et Source Control",
+                "topics": [
+                  "Transformation DevOps et culture agile",
+                  "Azure DevOps et GitHub — vue d'ensemble",
+                  "Gestion du code source avec Git",
+                  "Stratégies de branching et pull requests"
+                ]
+              },
+              {
+                "day": 2,
+                "title": "Intégration Continue (CI)",
+                "topics": [
+                  "Azure Pipelines : build et agents",
+                  "Gestion des packages avec Azure Artifacts",
+                  "Qualité du code : tests unitaires et analyse statique",
+                  "Intégration de GitHub Actions"
+                ]
+              },
+              {
+                "day": 3,
+                "title": "Déploiement Continu (CD)",
+                "topics": [
+                  "Stratégies de déploiement (Blue/Green, Canary, Rolling)",
+                  "Gestion des environnements et des approbations",
+                  "Déploiement sur Azure App Service, AKS et VMs",
+                  "Feature flags et déploiements progressifs"
+                ]
+              },
+              {
+                "day": 4,
+                "title": "Infrastructure as Code et Conteneurs",
+                "topics": [
+                  "Azure Bicep et ARM Templates",
+                  "Terraform sur Azure",
+                  "Docker et Azure Container Registry",
+                  "Kubernetes et Helm Charts"
+                ]
+              },
+              {
+                "day": 5,
+                "title": "Sécurité DevSecOps et Monitoring",
+                "topics": [
+                  "Sécurité dans les pipelines CI/CD (secrets, SAST, DAST)",
+                  "Azure Key Vault dans les pipelines",
+                  "Monitoring : Azure Monitor, Application Insights",
+                  "Préparation à la certification AZ-400"
+                ]
               }
             ],
             "faqs": []
@@ -314,60 +534,83 @@
         },
         {
           "id": "ms-az-500",
-          "title": "Azure - Technologies de sécurité (Microsoft AZ-500)",
+          "title": "Microsoft Azure Security Technologies (AZ-500)",
           "editor": "MICROSOFT",
           "reference": "AZ500",
           "is_best_seller": false,
-          "duration_days": 5,
-          "level": "Niveau 2",
+          "duration_days": 4,
+          "level": "Avancé",
           "evaluation": "QCM",
           "pricing": {
             "currency": "EUR",
-            "package_price": 285,
+            "package_price": 260,
             "note": "Training Package (incl. voucher)"
           },
           "package_includes": "Formation et Voucher Examen",
           "languages": ["FR", "EN"],
-          "tags": ["azure", "security", "az-500", "cybersecurity"],
-          "search_keywords": [
-            "az-500",
-            "security engineer",
-            "identity management"
-          ],
+          "tags": ["az-500", "azure", "security", "azure security", "cybersécurité"],
+          "search_keywords": ["az-500", "azure security", "sécurité azure", "azure security engineer", "cybersécurité cloud"],
           "details": {
-            "description": "Maîtrisez la sécurité sur Azure. Implémentez les contrôles de sécurité, la gestion des menaces et la protection des identités.",
-            "target_audience": ["Ingénieurs Sécurité", "Administrateurs Azure"],
-            "objectives": [
-              "Gérer les identités et les accès",
-              "Sécuriser les applications et les données",
-              "Gérer les opérations de sécurité"
+            "description": "Certification Azure Security Engineer Associate. Maîtrisez la sécurisation des environnements Azure : gestion des identités, protection des plateformes, sécurité des données et des applications, gestion des opérations de sécurité.",
+            "target_audience": [
+              "Ingénieurs sécurité cloud",
+              "Administrateurs Azure spécialisés en sécurité",
+              "Analystes cybersécurité",
+              "Candidats à la certification AZ-500"
             ],
-            "prerequisites": ["AZ-900 et AZ-104 recommandés"],
+            "objectives": [
+              "Gérer les identités et les accès (Azure AD, PIM, MFA)",
+              "Sécuriser la plateforme Azure (réseau, compute, stockage)",
+              "Gérer les opérations de sécurité avec Microsoft Defender for Cloud",
+              "Sécuriser les données et les applications",
+              "Implémenter et gérer Azure Key Vault"
+            ],
+            "prerequisites": [
+              "AZ-104 recommandé",
+              "Expérience en administration Azure",
+              "Notions de cybersécurité et réseaux",
+              "Connaissance des services Azure core"
+            ],
             "curriculum": [
               {
                 "day": 1,
-                "title": "Identité et Accès",
-                "topics": ["Azure AD", "Gestion des rôles (RBAC)"]
+                "title": "Identités et Accès",
+                "topics": [
+                  "Azure Active Directory (Entra ID) et gestion des identités",
+                  "Authentification multifacteur (MFA) et accès conditionnel",
+                  "Privileged Identity Management (PIM)",
+                  "Azure AD Identity Protection et revues d'accès"
+                ]
               },
               {
                 "day": 2,
-                "title": "Protection Plateforme",
-                "topics": ["Sécurité réseau", "Sécurité Hôte"]
+                "title": "Sécurité de la Plateforme",
+                "topics": [
+                  "Sécurité réseau : NSG, Azure Firewall, DDoS Protection",
+                  "Azure Bastion et JIT VM Access",
+                  "Sécurité des conteneurs (AKS, ACR)",
+                  "Microsoft Defender for Servers et Endpoint"
+                ]
               },
               {
                 "day": 3,
-                "title": "Opérations de Sécurité",
-                "topics": ["Azure Monitor", "Microsoft Sentinel"]
+                "title": "Sécurité des Données et Applications",
+                "topics": [
+                  "Azure Key Vault : gestion des secrets et certificats",
+                  "Chiffrement des données au repos et en transit",
+                  "Sécurité des bases de données (SQL, Cosmos DB)",
+                  "Microsoft Defender for Storage et pour les applications"
+                ]
               },
               {
                 "day": 4,
-                "title": "Données et Applications",
-                "topics": ["Sécurité du stockage", "Key Vault"]
-              },
-              {
-                "day": 5,
-                "title": "Examen",
-                "topics": ["Révisions", "Passage de certification"]
+                "title": "Opérations de Sécurité",
+                "topics": [
+                  "Microsoft Defender for Cloud : posture et recommandations",
+                  "Microsoft Sentinel : SIEM et SOAR",
+                  "Gestion des incidents et investigation",
+                  "Préparation à la certification AZ-500"
+                ]
               }
             ],
             "faqs": []
